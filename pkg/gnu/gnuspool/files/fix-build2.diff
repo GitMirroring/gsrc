@@ -1,0 +1,322 @@
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/Makefile.in work/gnuspool-1.8/Makefile.in
+--- tmp/gnuspool-1.8/Makefile.in	2010-01-30 10:52:13.000000000 -0800
++++ work/gnuspool-1.8/Makefile.in	2021-11-22 09:03:34.184336310 -0800
+@@ -63,8 +63,8 @@
+ 	cp -r -p ptrinstall $(DATADIR)
+ 	cd doc;$(MAKE) install
+ 	cd cupspy;$(MAKE) install
+-	$(STAGED_INSTALL) || $(BINDIR)/gspl-uchange -R
+-	$(STAGED_INSTALL) || $(BINDIR)/gspl-uchange -p ALL `who am i|sed -e 's/ .*//'`
++#	$(STAGED_INSTALL) || $(BINDIR)/gspl-uchange -R
++#	$(STAGED_INSTALL) || $(BINDIR)/gspl-uchange -p ALL `who am i|sed -e 's/ .*//'`
+ 	cd udev;$(MAKE) install
+ 
+ install-strip:	all
+@@ -77,8 +77,8 @@
+ 	cp -r -p ptrinstall $(DATADIR)
+ 	cd doc;$(MAKE) install-strip
+ 	cd cupspy;$(MAKE) install-strip
+-	$(STAGED_INSTALL) || $(BINDIR)/gspl-uchange -R
+-	$(STAGED_INSTALL) || $(BINDIR)/gspl-uchange -p ALL `who am i|sed -e 's/ .*//'`
++#	$(STAGED_INSTALL) || $(BINDIR)/gspl-uchange -R
++#	$(STAGED_INSTALL) || $(BINDIR)/gspl-uchange -p ALL `who am i|sed -e 's/ .*//'`
+ 	cd udev;$(MAKE) install
+ 
+ install-user user-install:
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/doc/Makefile.in work/gnuspool-1.8/doc/Makefile.in
+--- tmp/gnuspool-1.8/doc/Makefile.in	2010-07-01 12:55:35.000000000 -0700
++++ work/gnuspool-1.8/doc/Makefile.in	2021-11-22 09:03:34.184336310 -0800
+@@ -40,6 +40,11 @@
+ 	# Currently don't do anything
+ 
+ install install-strip: all
++	$(INSTALL) -d -m 755 $(MANDIR)/man1
++	$(INSTALL) -d -m 755 $(MANDIR)/man3
++	$(INSTALL) -d -m 755 $(MANDIR)/man5
++	$(INSTALL) -d -m 755 $(MANDIR)/man8
++	$(INSTALL) -d -m 755 $(PDFDIR)
+ 	$(INSTALL_DATA) poddoc/man/*.1 $(MANDIR)/man1
+ 	$(INSTALL_DATA) poddoc/man/*.3 $(MANDIR)/man3
+ 	$(INSTALL_DATA) poddoc/man/*.5 $(MANDIR)/man5
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/src/apilib/Makefile.in work/gnuspool-1.8/src/apilib/Makefile.in
+--- tmp/gnuspool-1.8/src/apilib/Makefile.in	2010-02-01 07:59:36.000000000 -0800
++++ work/gnuspool-1.8/src/apilib/Makefile.in	2021-11-22 09:03:34.184336310 -0800
+@@ -73,11 +73,15 @@
+ 	sh ./Hdrmake.sh $(BASE)/config.h $(HDRS)
+ 
+ install: all
++	$(INSTALL) -d -m 755 $(INCLUDEDIR)
++	$(INSTALL) -d -m 755 $(LIBDIR)
+ 	libtool --mode=install $(INSTALL) $(APILIB) $(LIBDIR)
+ 	$(INSTALL_DATA) gspool.h $(INCLUDEDIR)
+ 	$(INSTALL_DATA) $(APILIB) $(LIBDIR)
+ 
+ install-strip: all
++	$(INSTALL) -d -m 755 $(INCLUDEDIR)
++	$(INSTALL) -d -m 755 $(LIBDIR)
+ 	libtool --mode=install $(INSTALL) -s $(APILIB) $(LIBDIR)/$(APILIB)
+ 	$(INSTALL_DATA) gspool.h $(INCLUDEDIR)
+ 	$(INSTALL_DATA) $(APILIB) $(LIBDIR)
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/src/ins/setspdir.c work/gnuspool-1.8/src/ins/setspdir.c
+--- tmp/gnuspool-1.8/src/ins/setspdir.c	2010-10-04 06:01:21.000000000 -0700
++++ work/gnuspool-1.8/src/ins/setspdir.c	2021-11-22 10:20:52.389707104 -0800
+@@ -70,8 +70,8 @@
+ 	renumber,		/* Keep jobs where they are - just renumber */
+ 	set_subs = -1;		/* >= 0 means set number of sub directories to that number */
+ 
+-char	*progname,		/* Program name */
+-	*requeue_form;		/* Form type to requeue with */
++extern char	*progname;		/* Program name */
++char	*requeue_form;		/* Form type to requeue with */
+ 
+ int	existing_subds,		/* Existing sub directories */
+ 	dupjoblist,		/* Duplicated jobs */
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/src/ins/spuconv.c work/gnuspool-1.8/src/ins/spuconv.c
+--- tmp/gnuspool-1.8/src/ins/spuconv.c	2010-10-01 15:36:56.000000000 -0700
++++ work/gnuspool-1.8/src/ins/spuconv.c	2021-11-22 10:21:02.489750429 -0800
+@@ -47,7 +47,7 @@
+ extern char *expand_srcdir(char *);
+ extern char *make_absolute(char *);
+ 
+-const	char	*progname;
++extern const	char	*progname;
+ 
+ /* For when we run out of memory.....  */
+ 
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/src/lib/Makefile.in work/gnuspool-1.8/src/lib/Makefile.in
+--- tmp/gnuspool-1.8/src/lib/Makefile.in	2010-10-04 04:12:51.000000000 -0700
++++ work/gnuspool-1.8/src/lib/Makefile.in	2021-11-22 09:03:34.184336310 -0800
+@@ -71,12 +71,14 @@
+ 	libtool --mode=link @CC@ $(CCFLAGS) -o $(LIBCURS) $(LIBCURSOBJS) $(LIB) $(LIBCURSES) -rpath $(RPATH) -version-info 0:0:0
+ 
+ install: all
++	$(INSTALL) -d -m 755 $(LIBDIR)
+ 	libtool --mode=install $(INSTALL) $(LIB) $(LIBDIR)
+ 	libtool --mode=install $(INSTALL) $(LIBCURS) $(LIBDIR)
+ 	$(RM) $(LIBDIR)/libgnuspool_int.a $(LIBDIR)/libgnuspool_curs.a 
+ 	$(INSTALL_DATA) $(LIB) $(LIBCURS) $(LIBDIR)
+ 
+ install-strip: all
++	$(INSTALL) -d -m 755 $(LIBDIR)
+ 	libtool --mode=install $(INSTALL) -s $(LIB) $(LIBDIR)
+ 	libtool --mode=install $(INSTALL) -s $(LIBCURS) $(LIBDIR)
+ 	$(RM) $(LIBDIR)/libgnuspool_int.a $(LIBDIR)/libgnuspool_curs.a 
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/src/lpdint/Makefile.in work/gnuspool-1.8/src/lpdint/Makefile.in
+--- tmp/gnuspool-1.8/src/lpdint/Makefile.in	2009-05-18 04:27:26.000000000 -0700
++++ work/gnuspool-1.8/src/lpdint/Makefile.in	2021-11-22 09:03:34.185336315 -0800
+@@ -85,6 +85,7 @@
+ 	sed -e 's|SPOOLDIR|@spooldir@|' -e 's|DATADIR|@pkgdatadir@|' xtlpc-ctrl >$(DATADIR)/xtlpc-ctrl
+ 	sed -e 's|SPOOLDIR|@spooldir@|' -e 's|DATADIR|@pkgdatadir@|' xtlpd-ctrl >$(DATADIR)/xtlpd-ctrl
+ 	chown $(SPOOLUSER) $(DATADIR)/xtlpc-ctrl $(DATADIR)/xtlpd-ctrl
++	$(INSTALL) -d -m 755 $(SYSCONFDIR)
+ 	echo '1  BSD  -  -' >$(SYSCONFDIR)/gnuspool.ext
+ 
+ install-strip:	all
+@@ -96,6 +97,7 @@
+ 	sed -e 's|SPOOLDIR|@spooldir@|' -e 's|DATADIR|@pkgdatadir@|' xtlpc-ctrl >$(DATADIR)/xtlpc-ctrl
+ 	sed -e 's|SPOOLDIR|@spooldir@|' -e 's|DATADIR|@pkgdatadir@|' xtlpd-ctrl >$(DATADIR)/xtlpd-ctrl
+ 	chown $(SPOOLUSER) $(DATADIR)/xtlpc-ctrl $(DATADIR)/xtlpd-ctrl
++	$(INSTALL) -d -m 755 $(SYSCONFDIR)
+ 	echo '1  BSD  -  -' >$(SYSCONFDIR)/gnuspool.ext
+ 
+ clean:
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/src/termserv/y.tab.h work/gnuspool-1.8/src/termserv/y.tab.h
+--- tmp/gnuspool-1.8/src/termserv/y.tab.h	2010-10-04 07:50:12.000000000 -0700
++++ work/gnuspool-1.8/src/termserv/y.tab.h	2021-11-22 09:05:49.262867157 -0800
+@@ -1,23 +1,22 @@
++/* A Bison parser, made by GNU Bison 3.8.2.  */
+ 
+-/* A Bison parser, made by GNU Bison 2.4.1.  */
++/* Bison interface for Yacc-like parsers in C
++
++   Copyright (C) 1984, 1989-1990, 2000-2015, 2018-2021 Free Software Foundation,
++   Inc.
+ 
+-/* Skeleton interface for Bison's Yacc-like parsers in C
+-   
+-      Copyright (C) 1984, 1989, 1990, 2000, 2001, 2002, 2003, 2004, 2005, 2006
+-   Free Software Foundation, Inc.
+-   
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+-   
++
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+-   
++
+    You should have received a copy of the GNU General Public License
+-   along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
++   along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
+ 
+ /* As a special exception, you may create a larger work that contains
+    part or all of the Bison parser skeleton and distribute that work
+@@ -28,51 +27,72 @@
+    special exception, which will cause the skeleton and the resulting
+    Bison output files to be licensed under the GNU General Public
+    License without this special exception.
+-   
++
+    This special exception was added by the Free Software Foundation in
+    version 2.2 of Bison.  */
+ 
++/* DO NOT RELY ON FEATURES THAT ARE NOT DOCUMENTED in the manual,
++   especially those whose name start with YY_ or yy_.  They are
++   private implementation details that can be changed or removed.  */
++
++#ifndef YY_YY_Y_TAB_H_INCLUDED
++# define YY_YY_Y_TAB_H_INCLUDED
++/* Debug traces.  */
++#ifndef YYDEBUG
++# define YYDEBUG 0
++#endif
++#if YYDEBUG
++extern int yydebug;
++#endif
+ 
+-/* Tokens.  */
++/* Token kinds.  */
+ #ifndef YYTOKENTYPE
+ # define YYTOKENTYPE
+-   /* Put the tokens into the symbol table, so that GDB and other debuggers
+-      know about them.  */
+-   enum yytokentype {
+-     NUMBER = 258,
+-     BACKQUOTESTR = 259,
+-     SQUOTESTR = 260,
+-     DQUOTESTR = 261,
+-     BRACKETSTR = 262,
+-     BRACESTR = 263,
+-     SNMPVARVAL = 264,
+-     SNMPSTRVAL = 265,
+-     SNMPDEFINED = 266,
+-     SNMPUNDEFINED = 267,
+-     NAME = 268,
+-     NUMERIC_COMP = 269,
+-     STRING_COMP = 270,
+-     BITOP = 271,
+-     ASSIGN = 272,
+-     ONEASSIGN = 273,
+-     IF = 274,
+-     THEN = 275,
+-     ELSE = 276,
+-     ELIF = 277,
+-     FI = 278,
+-     MSG = 279,
+-     EXIT = 280,
+-     FLUSH = 281,
+-     LASTVAL = 282,
+-     ISNUM = 283,
+-     ISSTRING = 284,
+-     NOT = 285,
+-     ALLCLEAR = 286,
+-     OROP = 287,
+-     ANDOP = 288
+-   };
++  enum yytokentype
++  {
++    YYEMPTY = -2,
++    YYEOF = 0,                     /* "end of file"  */
++    YYerror = 256,                 /* error  */
++    YYUNDEF = 257,                 /* "invalid token"  */
++    NUMBER = 258,                  /* NUMBER  */
++    BACKQUOTESTR = 259,            /* BACKQUOTESTR  */
++    SQUOTESTR = 260,               /* SQUOTESTR  */
++    DQUOTESTR = 261,               /* DQUOTESTR  */
++    BRACKETSTR = 262,              /* BRACKETSTR  */
++    BRACESTR = 263,                /* BRACESTR  */
++    SNMPVARVAL = 264,              /* SNMPVARVAL  */
++    SNMPSTRVAL = 265,              /* SNMPSTRVAL  */
++    SNMPDEFINED = 266,             /* SNMPDEFINED  */
++    SNMPUNDEFINED = 267,           /* SNMPUNDEFINED  */
++    NAME = 268,                    /* NAME  */
++    NUMERIC_COMP = 269,            /* NUMERIC_COMP  */
++    STRING_COMP = 270,             /* STRING_COMP  */
++    BITOP = 271,                   /* BITOP  */
++    ASSIGN = 272,                  /* ASSIGN  */
++    ONEASSIGN = 273,               /* ONEASSIGN  */
++    IF = 274,                      /* IF  */
++    THEN = 275,                    /* THEN  */
++    ELSE = 276,                    /* ELSE  */
++    ELIF = 277,                    /* ELIF  */
++    FI = 278,                      /* FI  */
++    MSG = 279,                     /* MSG  */
++    EXIT = 280,                    /* EXIT  */
++    FLUSH = 281,                   /* FLUSH  */
++    LASTVAL = 282,                 /* LASTVAL  */
++    ISNUM = 283,                   /* ISNUM  */
++    ISSTRING = 284,                /* ISSTRING  */
++    NOT = 285,                     /* NOT  */
++    ALLCLEAR = 286,                /* ALLCLEAR  */
++    OROP = 287,                    /* OROP  */
++    ANDOP = 288                    /* ANDOP  */
++  };
++  typedef enum yytokentype yytoken_kind_t;
+ #endif
+-/* Tokens.  */
++/* Token kinds.  */
++#define YYEMPTY -2
++#define YYEOF 0
++#define YYerror 256
++#define YYUNDEF 257
+ #define NUMBER 258
+ #define BACKQUOTESTR 259
+ #define SQUOTESTR 260
+@@ -105,14 +125,10 @@
+ #define OROP 287
+ #define ANDOP 288
+ 
+-
+-
+-
++/* Value type.  */
+ #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
+-typedef union YYSTYPE
++union YYSTYPE
+ {
+-
+-/* Line 1676 of yacc.c  */
+ #line 77 "xtlhpgram.y"
+ 
+ 	int		intval;
+@@ -124,16 +140,19 @@
+ 	struct	compare	*cmpval;
+ 	struct	command	*cmdval;
+ 
++#line 144 "y.tab.h"
+ 
+-
+-/* Line 1676 of yacc.c  */
+-#line 131 "y.tab.h"
+-} YYSTYPE;
++};
++typedef union YYSTYPE YYSTYPE;
+ # define YYSTYPE_IS_TRIVIAL 1
+-# define yystype YYSTYPE /* obsolescent; will be withdrawn */
+ # define YYSTYPE_IS_DECLARED 1
+ #endif
+ 
++
+ extern YYSTYPE yylval;
+ 
+ 
++int yyparse (void);
++
++
++#endif /* !YY_YY_Y_TAB_H_INCLUDED  */
+diff -x config.log -x config.status -ru tmp/gnuspool-1.8/util/Makefile.in work/gnuspool-1.8/util/Makefile.in
+--- tmp/gnuspool-1.8/util/Makefile.in	2010-07-01 12:33:09.000000000 -0700
++++ work/gnuspool-1.8/util/Makefile.in	2021-11-22 09:03:34.185336315 -0800
+@@ -36,7 +36,7 @@
+ LEX		=	@LEX@
+ LEXLIB		=	@LEXLIB@
+ RM		=	rm -f
+-PROGS		=	gspl-pmenu gspl-hostedit gspl-xhostedit gspl-passwd
++PROGS		=	gspl-pmenu gspl-hostedit gspl-passwd
+ BUILDPROGS	=	helpparse
+ BINDIR		=	$(DESTDIR)@bindir@
+ SBINDIR		=	$(DESTDIR)@sbindir@

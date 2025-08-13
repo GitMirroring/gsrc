@@ -1,0 +1,71 @@
+diff -x config.log -x config.status -ru tmp/bpel2owfn-2.0.4/src/ast-system-k.cc work/bpel2owfn-2.0.4/src/ast-system-k.cc
+--- tmp/bpel2owfn-2.0.4/src/ast-system-k.cc	2007-07-18 05:55:51.000000000 -0700
++++ work/bpel2owfn-2.0.4/src/ast-system-k.cc	2022-10-07 13:22:24.942519694 -0700
+@@ -26,6 +26,9 @@
+ #include <sys/types.h>
+ #include <stdlib.h>
+ 
++#include <cstring>
++#include <climits>
++
+ #ifdef _MSC_VER
+ #pragma warning( disable : 4786 )
+ #endif
+diff -x config.log -x config.status -ru tmp/bpel2owfn-2.0.4/src/bpel2owfn.cc work/bpel2owfn-2.0.4/src/bpel2owfn.cc
+--- tmp/bpel2owfn-2.0.4/src/bpel2owfn.cc	2007-07-25 23:12:24.000000000 -0700
++++ work/bpel2owfn-2.0.4/src/bpel2owfn.cc	2022-10-07 13:24:17.926117262 -0700
+@@ -70,6 +70,8 @@
+ #include "globals.h"
+ #include "extension-data.h"
+ 
++#include <cstdlib>
++
+ using std::cerr;
+ using std::cout;
+ using std::endl;
+diff -x config.log -x config.status -ru tmp/bpel2owfn-2.0.4/src/debug.cc work/bpel2owfn-2.0.4/src/debug.cc
+--- tmp/bpel2owfn-2.0.4/src/debug.cc	2007-07-25 23:12:24.000000000 -0700
++++ work/bpel2owfn-2.0.4/src/debug.cc	2022-10-07 13:26:56.205954371 -0700
+@@ -56,6 +56,7 @@
+ #include <iostream>
+ #include <fstream>
+ #include <iomanip>
++#include <cstdlib>
+ 
+ #include "debug.h"
+ #include "options.h"
+diff -x config.log -x config.status -ru tmp/bpel2owfn-2.0.4/src/helpers.cc work/bpel2owfn-2.0.4/src/helpers.cc
+--- tmp/bpel2owfn-2.0.4/src/helpers.cc	2007-07-18 05:52:44.000000000 -0700
++++ work/bpel2owfn-2.0.4/src/helpers.cc	2022-10-07 13:31:11.667307950 -0700
+@@ -53,6 +53,7 @@
+  * Headers
+  *****************************************************************************/
+ 
++#include <climits>
+ #include <iostream>
+ #include <fstream>	// (std::ofstream)
+ #include <sstream>	// (std::ostringstream, std::istringstream)
+diff -x config.log -x config.status -ru tmp/bpel2owfn-2.0.4/src/options.cc work/bpel2owfn-2.0.4/src/options.cc
+--- tmp/bpel2owfn-2.0.4/src/options.cc	2007-07-25 23:12:24.000000000 -0700
++++ work/bpel2owfn-2.0.4/src/options.cc	2022-10-07 13:30:31.542095287 -0700
+@@ -52,6 +52,8 @@
+  * Headers
+  *****************************************************************************/
+ 
++#include <cstdlib>
++#include <climits>
+ #include <iostream>
+ #include <fstream>
+ #include <string>
+diff -x config.log -x config.status -ru tmp/bpel2owfn-2.0.4/src/petrinet-patterns-structured.k work/bpel2owfn-2.0.4/src/petrinet-patterns-structured.k
+--- tmp/bpel2owfn-2.0.4/src/petrinet-patterns-structured.k	2007-07-16 06:21:30.000000000 -0700
++++ work/bpel2owfn-2.0.4/src/petrinet-patterns-structured.k	2022-10-07 13:29:02.358622608 -0700
+@@ -58,6 +58,8 @@
+ %}
+ 
+ %{
++#include <climits>
++
+ #include "ast-config.h"
+ #include "helpers.h"
+ #include "ast-tools.h"

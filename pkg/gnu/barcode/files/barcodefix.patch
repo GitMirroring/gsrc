@@ -1,0 +1,23 @@
+diff -x config.log -x config.status -ru tmp/barcode-0.99/barcode.h work/barcode-0.99/barcode.h
+--- tmp/barcode-0.99/barcode.h	2013-03-29 14:51:07.000000000 -0700
++++ work/barcode-0.99/barcode.h	2021-11-19 20:12:01.887614956 -0800
+@@ -123,6 +123,6 @@
+ }
+ #endif
+ 
+-int streaming;
++extern int streaming;
+ 
+ #endif /* _BARCODE_H_ */
+diff -x config.log -x config.status -ru tmp/barcode-0.99/pcl.c work/barcode-0.99/pcl.c
+--- tmp/barcode-0.99/pcl.c	2013-03-29 15:23:31.000000000 -0700
++++ work/barcode-0.99/pcl.c	2021-11-19 20:12:26.046746425 -0800
+@@ -29,7 +29,7 @@
+ 
+ #define SHRINK_AMOUNT 0.15  /* shrink the bars to account for ink spreading */
+ 
+-
++int streaming;
+ /*
+  * How do the "partial" and "textinfo" strings work? See file "ps.c"
+  */

@@ -1,0 +1,82 @@
+diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/error.c work/tile-forth-2.1/src/error.c
+--- tmp/tile-forth-2.1/src/error.c	1991-09-14 14:30:28.000000000 -0700
++++ work/tile-forth-2.1/src/error.c	2024-03-22 11:48:16.015335248 -0700
+@@ -40,7 +40,7 @@
+        the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA. 
+ 
+ */
+-
++#include <unistd.h>
+ #include <signal.h>
+ #include <fcntl.h>
+ #include "kernel.h"
+@@ -159,7 +159,10 @@
+     (VOID) signal(SIGILL,  error_restart);
+     (VOID) signal(SIGTRAP, error_fatal);
+     (VOID) signal(SIGIOT,  error_fatal);
+-    (VOID) signal(SIGEMT,  error_fatal);
++    // ?
++    //(VOID) signal(SIGEMT,  error_fatal);
++    (VOID) signal(SIGINT,  error_fatal);
++	// ??
+     (VOID) signal(SIGFPE,  error_restart);
+     (VOID) signal(SIGBUS,  error_restart);
+     (VOID) signal(SIGSEGV, error_restart);
+diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/forth.c work/tile-forth-2.1/src/forth.c
+--- tmp/tile-forth-2.1/src/forth.c	1991-09-14 14:30:28.000000000 -0700
++++ work/tile-forth-2.1/src/forth.c	2024-03-22 11:48:53.291266480 -0700
+@@ -108,7 +108,7 @@
+ 
+ 
+ /* MAIN WITH APPLICATION STARTUP OF FORTH TOP-LOOP */
+-
++int
+ main(argc, argv)
+     int argc;
+     char *argv[];
+diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/io.c work/tile-forth-2.1/src/io.c
+--- tmp/tile-forth-2.1/src/io.c	1991-09-14 14:30:32.000000000 -0700
++++ work/tile-forth-2.1/src/io.c	2024-03-22 11:47:08.099433167 -0700
+@@ -40,6 +40,7 @@
+ 
+ */
+ 
++#include <unistd.h>
+ 
+ #include <fcntl.h>
+ #include <errno.h>
+diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/kernel.c work/tile-forth-2.1/src/kernel.c
+--- tmp/tile-forth-2.1/src/kernel.c	1991-09-14 14:30:39.000000000 -0700
++++ work/tile-forth-2.1/src/kernel.c	2024-03-22 11:44:46.015503313 -0700
+@@ -64,13 +64,13 @@
+ 
+ /* INTERNAL FORWARD DECLARATIONS */
+ 
+-extern code_entry qnumber;
+-extern code_entry terminate;
+-extern code_entry abort_entry;
++static code_entry qnumber;
++static code_entry terminate;
++static code_entry abort_entry;
+ extern entry toexception;
+-extern entry span;
+-extern entry state;
+-extern code_entry vocabulary;
++static entry span;
++static entry state;
++static code_entry vocabulary;
+ 
+ 
+ /* VOCABULARY LISTING PARAMETERS */
+diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/kernel.h work/tile-forth-2.1/src/kernel.h
+--- tmp/tile-forth-2.1/src/kernel.h	1991-09-14 14:30:35.000000000 -0700
++++ work/tile-forth-2.1/src/kernel.h	2024-03-22 11:44:46.015503313 -0700
+@@ -9,6 +9,8 @@
+ /* INCLUDED SYSTEM FUNCTIONS */
+ 
+ #include <strings.h>
++#include <string.h>
++#include <stdlib.h>
+ 
+ 
+ /* TYPING SYSTEM AND MISC. STRING MACROS */

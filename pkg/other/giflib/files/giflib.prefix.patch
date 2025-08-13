@@ -1,0 +1,14 @@
+diff -x config.log -x config.status -ru tmp/giflib-5.2.2/Makefile work/giflib-5.2.2/Makefile
+--- tmp/giflib-5.2.2/Makefile	2024-02-18 17:01:50.000000000 -0800
++++ work/giflib-5.2.2/Makefile	2024-10-20 23:06:11.733523794 -0700
+@@ -14,7 +14,9 @@
+ TAR = tar
+ INSTALL = install
+ 
+-PREFIX = /usr/local
++#PREFIX = /usr/local
++PREFIX =  $(prefix)
++DESTDIR =  $(prefix)
+ BINDIR = $(PREFIX)/bin
+ INCDIR = $(PREFIX)/include
+ LIBDIR = $(PREFIX)/lib

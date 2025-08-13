@@ -1,0 +1,12 @@
+diff -x config.log -x config.status -ru tmp/mit-scheme-12.1/src/microcode/tterm.c work/mit-scheme-12.1/src/microcode/tterm.c
+--- tmp/mit-scheme-12.1/src/microcode/tterm.c	2022-09-06 23:01:33.000000000 -0700
++++ work/mit-scheme-12.1/src/microcode/tterm.c	2024-11-19 13:29:41.517196165 -0800
+@@ -69,7 +69,7 @@
+    extern speed_t ospeed;
+ #endif
+ 
+-extern char * tparam (const char *, void *, int, ...);
++// redundant extern char * tparam (const char *, void *, int, ...);
+ 
+ #ifndef TERMCAP_BUFFER_SIZE
+ #define TERMCAP_BUFFER_SIZE 2048

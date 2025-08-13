@@ -1,0 +1,12 @@
+diff -x config.log -x config.status -ru tmp/gcal-4.1/lib/fseeko.c work/gcal-4.1/lib/fseeko.c
+--- tmp/gcal-4.1/lib/fseeko.c	2017-01-22 09:09:38.000000000 -0800
++++ work/gcal-4.1/lib/fseeko.c	2024-02-02 18:36:43.108403702 -0800
+@@ -107,7 +107,7 @@
+      bug-gnulib.  */
+   if (0)
+ #else
+-  #error "Please port gnulib fseeko.c to your platform! Look at the code in fseeko.c, then report this to bug-gnulib."
++  #warning "Please port gnulib fseeko.c to your platform! Look at the code in fseeko.c, then report this to bug-gnulib."
+ #endif
+     {
+       /* We get here when an fflush() call immediately preceded this one (or

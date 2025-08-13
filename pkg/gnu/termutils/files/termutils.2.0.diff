@@ -1,0 +1,91 @@
+diff -x config.log -x config.status -ru tmp/termutils-2.0/Makefile.in work/termutils-2.0/Makefile.in
+--- tmp/termutils-2.0/Makefile.in	1995-12-01 07:39:01.000000000 -0800
++++ work/termutils-2.0/Makefile.in	2024-04-03 17:35:08.575542558 -0700
+@@ -103,9 +103,9 @@
+ install:: install-programs
+ 
+ install-programs: $(PROGRAMS) $(SCRIPTS)
+-	$(top_srcdir)/mkinstalldirs $(bindir)
++	$(top_srcdir)/mkinstalldirs $(DESTDIR)$(bindir)
+ 	for p in $(PROGRAMS) $(SCRIPTS); do \
+-	  $(INSTALL_PROGRAM) $$p $(bindir)/`echo $$p|sed '$(transform)'`; \
++	  $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed '$(transform)'`; \
+ 	done
+ 
+ uninstall:: uninstall-programs
+@@ -149,9 +149,9 @@
+ install:: install-info
+ 
+ install-info: $(INFO_DEPS)
+-	$(top_srcdir)/mkinstalldirs $(infodir)
++	$(top_srcdir)/mkinstalldirs $(DESTDIR)$(infodir)
+ 	cd $(srcdir); for file in *.info*; do \
+-	  $(INSTALL_DATA) $$file $(infodir)/$$file; \
++	  $(INSTALL_DATA) $$file $(DESTDIR)$(infodir)/$$file; \
+ 	done
+ 
+ uninstall:: uninstall-info
+diff -x config.log -x config.status -ru tmp/termutils-2.0/conversions.c work/termutils-2.0/conversions.c
+--- tmp/termutils-2.0/conversions.c	1995-09-02 17:04:46.000000000 -0700
++++ work/termutils-2.0/conversions.c	2024-04-03 17:35:08.575542558 -0700
+@@ -19,6 +19,7 @@
+ #include "config.h"
+ #endif
+ 
++#include <string.h>
+ #include "tput.h"
+ 
+ /* `conversions' is binary-searched to retrieve the termcap equivalent
+diff -x config.log -x config.status -ru tmp/termutils-2.0/tcutil.c work/termutils-2.0/tcutil.c
+--- tmp/termutils-2.0/tcutil.c	1995-09-02 17:05:05.000000000 -0700
++++ work/termutils-2.0/tcutil.c	2024-04-03 17:35:08.575542558 -0700
+@@ -19,6 +19,8 @@
+ #include "config.h"
+ #endif
+ 
++#include <stdlib.h>
++#include <unistd.h>
+ #include <tcutil.h>
+ #include <termcap.h>
+ #define ERROR_EXIT 5		/* Real error or signal. */
+diff -x config.log -x config.status -ru tmp/termutils-2.0/tcutil.h work/termutils-2.0/tcutil.h
+--- tmp/termutils-2.0/tcutil.h	1995-09-02 17:04:16.000000000 -0700
++++ work/termutils-2.0/tcutil.h	2024-04-03 17:39:24.037465953 -0700
+@@ -23,4 +23,5 @@
+ void enable_xtabs ();
+ void disable_xtabs ();
+ 
++
+ #endif /* TCUTIL_H */
+diff -x config.log -x config.status -ru tmp/termutils-2.0/tparam.c work/termutils-2.0/tparam.c
+--- tmp/termutils-2.0/tparam.c	1995-09-02 16:53:43.000000000 -0700
++++ work/termutils-2.0/tparam.c	2024-04-03 17:35:08.575542558 -0700
+@@ -15,13 +15,15 @@
+ along with this program; see the file COPYING.  If not, write to
+ the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.  */
+ 
++#include <unistd.h>
++
+ /* Emacs config.h may rename various library functions such as malloc.  */
+ #ifdef HAVE_CONFIG_H
+ #include <config.h>
+ #endif
+ 
+ #ifndef emacs
+-#if defined(HAVE_STRING_H) || defined(STDC_HEADERS)
++#if !defined(HAVE_STRING_H) || !defined(STDC_HEADERS)
+ #define bcopy(s, d, n) memcpy ((d), (s), (n))
+ #endif
+ 
+diff -x config.log -x config.status -ru tmp/termutils-2.0/tput.c work/termutils-2.0/tput.c
+--- tmp/termutils-2.0/tput.c	1995-11-30 13:39:00.000000000 -0800
++++ work/termutils-2.0/tput.c	2024-04-03 17:35:08.575542558 -0700
+@@ -32,6 +32,8 @@
+ #include <termcap.h>
+ #include <getopt.h>
+ #include <errno.h>
++#include <fcntl.h>
++#include <unistd.h>
+ 
+ #if STDC_HEADERS || HAVE_STRING_H
+ # include <string.h>

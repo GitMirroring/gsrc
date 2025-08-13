@@ -1,0 +1,11 @@
+diff -x config.log -x config.status -ru tmp/gnucobol-3.2/libcob/common.c work/gnucobol-3.2/libcob/common.c
+--- tmp/gnucobol-3.2/libcob/common.c	2023-07-28 10:16:38.000000000 -0700
++++ work/gnucobol-3.2/libcob/common.c	2024-03-17 18:50:13.293943495 -0700
+@@ -136,6 +136,7 @@
+ #if defined (WITH_XML2)
+ #include <libxml/xmlversion.h>
+ #include <libxml/xmlwriter.h>
++#include <libxml/parser.h>
+ #endif
+ 
+ #if defined (WITH_CJSON)

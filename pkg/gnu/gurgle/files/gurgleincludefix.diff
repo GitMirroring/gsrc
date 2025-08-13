@@ -1,0 +1,45 @@
+diff -x config.log -x config.status -ru tmp/gurgle-1.61/src/dbase/dbase.c work/gurgle-1.61/src/dbase/dbase.c
+--- tmp/gurgle-1.61/src/dbase/dbase.c	2010-01-20 16:44:20.000000000 -0800
++++ work/gurgle-1.61/src/dbase/dbase.c	2024-09-27 22:13:54.361136896 -0700
+@@ -36,6 +36,7 @@
+ #include <stdio.h>
+ #include <string.h>                                                             
+ #include <stdarg.h>
++#include <stdlib.h>
+ 
+ #include <dbase.h>
+ 
+diff -x config.log -x config.status -ru tmp/gurgle-1.61/src/grg.h work/gurgle-1.61/src/grg.h
+--- tmp/gurgle-1.61/src/grg.h	2010-01-20 16:46:28.000000000 -0800
++++ work/gurgle-1.61/src/grg.h	2024-09-27 20:59:59.984762233 -0700
+@@ -60,7 +60,7 @@
+  * Include the dBase3+ DBF file utilities
+  */
+ 
+-#include <dbase.h>
++#include <dbase/dbase.h>
+ 
+ #define TEXMAXTEX       4096
+ 
+diff -x config.log -x config.status -ru tmp/gurgle-1.61/src/main.c work/gurgle-1.61/src/main.c
+--- tmp/gurgle-1.61/src/main.c	2010-01-20 16:46:44.000000000 -0800
++++ work/gurgle-1.61/src/main.c	2024-09-27 22:15:51.456642238 -0700
+@@ -705,6 +705,7 @@
+ 
+ }
+ 
++int
+ main(argc,argv) int argc; char *argv[];
+ {
+ #ifdef GUILE
+diff -x config.log -x config.status -ru tmp/gurgle-1.61/src/pattern.c work/gurgle-1.61/src/pattern.c
+--- tmp/gurgle-1.61/src/pattern.c	2010-01-20 16:46:18.000000000 -0800
++++ work/gurgle-1.61/src/pattern.c	2024-09-27 20:59:59.984762233 -0700
+@@ -31,6 +31,7 @@
+  * GURGLE PATTERN AND DYNAMIC DBF HANDLING
+  */
+ 
++#include <ctype.h>
+ #include <grg.h>
+ 
+ /*
