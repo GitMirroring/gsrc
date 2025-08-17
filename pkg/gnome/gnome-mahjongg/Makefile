@@ -19,7 +19,7 @@
 
 NAME =    gnome-mahjongg
 GARNAME = gnome-mahjongg
-GARVERSION = 48.1
+GARVERSION = 49.beta
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Disassemble a pile of tiles by removing matching pairs gamme
 define BLURB

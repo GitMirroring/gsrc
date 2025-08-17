@@ -21,7 +21,7 @@
 
 NAME = Emacs
 GARNAME = emacs
-GARVERSION = 30.1
+GARVERSION = 30.2
 MINOR_UPDATE = ""
 HOME_URL = http://www.gnu.org/software/emacs/
 DESCRIPTION = The extensible, customizable, self-documenting text editor

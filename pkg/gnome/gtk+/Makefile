@@ -1,4 +1,4 @@
-# Copyright © 2016-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,10 +22,10 @@
 
 NAME =    GTK+ 3
 GARNAME = gtk+
-#UPSTREAMNAME = gtk+
+UPSTREAMNAME = gtk
 #GARVERSION = 3.94.0
 #GARVERSION = 3.24.41
-GARVERSION = 3.94.0
+GARVERSION = 3.24.50
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  gtk+ 3 GNOME toolkit
 define BLURB

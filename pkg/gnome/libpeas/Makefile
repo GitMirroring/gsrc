@@ -1,4 +1,4 @@
-# Copyright © 2016, 2024 Carl Hansen carlhansen@gnu.org
+# Copyright © 2016, 2024-2025 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    libpeas
 GARNAME = libpeas
-GARVERSION = 2.0.7
+GARVERSION = 2.1.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A GObject plugins library
 define BLURB

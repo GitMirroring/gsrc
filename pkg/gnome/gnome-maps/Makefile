@@ -20,7 +20,7 @@
 
 NAME =    gnome-maps
 GARNAME = gnome-maps
-GARVERSION = 49.alpha
+GARVERSION = 49.beta
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A simple GNOME 3 maps application
 define BLURB

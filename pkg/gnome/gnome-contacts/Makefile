@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2019 Carl Hansen carlhansen@gnu.org
+# Copyright © 2016,2018,2019,2025 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,11 +20,10 @@
 
 NAME =    gnome-contacts
 GARNAME = gnome-contacts
-GARVERSION = 48.0
+GARVERSION = 49.beta
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Contacts manager for GNOME
 define BLURB
-
 endef
 
 ######################################################################

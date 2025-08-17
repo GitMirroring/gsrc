@@ -21,7 +21,7 @@
 
 NAME =    snapshot
 GARNAME = snapshot
-GARVERSION = 49.alpha
+GARVERSION = 49.beta
 HOME_URL = http://gnome.org/
 DESCRIPTION =  snapshot
 define BLURB

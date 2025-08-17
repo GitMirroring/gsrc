@@ -19,7 +19,7 @@
 
 NAME =    gsettings-desktop-schemas
 GARNAME = gsettings-desktop-schemas
-GARVERSION = 49.alpha
+GARVERSION = 49.beta
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Shared GSettings schemas for the desktop 
 define BLURB

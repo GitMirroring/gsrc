@@ -434,6 +434,11 @@ clean:
 #  took out WORKSRC, a subdir of WORK anyway, usually
 # could be dangerous in previous case....
 
+cleanwork:
+	@printf "[$(OK)cleanwork$(OFF)] $(MSG)Removing working files and directories except DOWNLOADDIR $(OFF)\n"
+	rm --preserve-root=all -rf                $(COOKIEDIR) $(LOGDIR) $(WORKDIR) \
+        $(EXTRACTDIR) $(SCRATCHDIR) $(SCRATCHDIR)-$(COOKIEDIR) *~
+
 
 # these targets do not have actual corresponding files
 .PHONY: all info fetch-list fetch checksum makesum garchive extract patch makepatch configure build test install clean beaujolais update help help-config install-src uninstall-src

@@ -1,4 +1,3 @@
-
 # Copyright ©2017 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
@@ -24,7 +23,6 @@ GARVERSION = 0.42.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  access java wrapper lib
 define BLURB
-
 endef
 
 ######################################################################
@@ -44,6 +42,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

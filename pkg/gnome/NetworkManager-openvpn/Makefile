@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2022,2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    NetworkManager-openvpn
 GARNAME = NetworkManager-openvpn
-GARVERSION = 1.12.0
+GARVERSION = 1.12.2
 HOME_URL = https://wiki.gnome.org/Projects/NetworkManager
 DESCRIPTION =  NetworkManager-openvpn
 define BLURB
@@ -42,6 +42,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
