@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 15 development version
 GARNAME = gcc15snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 15-20250809
+GARVERSION = 15-20250816
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 15 snapshot
 define BLURB

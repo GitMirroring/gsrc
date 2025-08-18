@@ -23,6 +23,11 @@ GARVERSION = 3.37.1
 HOME_URL = https://wiki.gnome.org/Projects/
 DESCRIPTION = template-glib thingee
 define BLURB
+Template-GLib is a library to help you generate text based on a template and
+user defined state. Template-GLib does not use a language runtime, so it is
+safe to use from any GObject-Introspectable language.
+Template-GLib allows you to access properties on GObjects as well as call
+simple methods via GObject-Introspection.
 endef
 
 ######################################################################
