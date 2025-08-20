@@ -21,7 +21,7 @@
 
 NAME = gprofng-gui
 GARNAME = gprofng-gui
-GARVERSION = 2.1
+GARVERSION = 2.2
 HOME_URL = http://www.gnu.org/software/
 DESCRIPTION = gprofng-gui  a gui for gprofng
 define BLURB

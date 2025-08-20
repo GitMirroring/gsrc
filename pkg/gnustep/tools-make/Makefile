@@ -19,10 +19,8 @@
 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-
 # To use other GNUstep software first install these four packages in this order:
 # tools-make libs-base libs-gui libs-back
-
 
 NAME = GNUstep-tools-make
 #GARNAME = gnustep-make 

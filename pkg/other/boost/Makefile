@@ -21,7 +21,7 @@
 
 NAME =       boost
 GARNAME =    boost
-GARVERSION = 1.89.0.beta1
+GARVERSION = 1.89.0
 HOME_URL =   http://www.boost.org
 DESCRIPTION =  Peer-reviewed portable C++ source libraries.
 define BLURB

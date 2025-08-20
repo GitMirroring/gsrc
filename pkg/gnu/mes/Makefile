@@ -1,4 +1,4 @@
-# Copyright © 2018-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =  GNU Mes
 GARNAME = mes
-GARVERSION =  0.27
+GARVERSION =  0.27.1
 HOME_URL = http://www.gnu.org/software/mes/
 DESCRIPTION = GNU Mes is a Scheme interpreter and C compiler for bootstrapping the GNU System
 define BLURB
