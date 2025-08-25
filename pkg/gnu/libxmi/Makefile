@@ -40,13 +40,9 @@ LIBDEPS = libtool
 USE_AUTORECONF=y
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-
-# libxmi is known not to build correctly on some systems.
-# If the build fails and the you are able to fix it, please send an
-# email with a patch to bug-gsrc@gnu.org 
-# Some systems do indeed build ok.
+BUILD_ARGS = CFLAGS=-std=c99
 

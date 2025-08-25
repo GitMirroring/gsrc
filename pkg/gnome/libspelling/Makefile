@@ -19,7 +19,7 @@
 
 NAME =    libspelling
 GARNAME = libspelling
-GARVERSION = 0.4.8
+GARVERSION = 0.4.9
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  libspelling
 define BLURB

@@ -1,4 +1,4 @@
-# Copyright © 2016,2018, 2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018, 2022,2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    libgnome-games-support
 GARNAME = libgnome-games-support
-GARVERSION = 2.0.0
+GARVERSION = 2.0.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Code shared among GNOME games.
 define BLURB

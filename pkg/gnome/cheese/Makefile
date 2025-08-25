@@ -36,7 +36,7 @@ MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
-#
+
 # apt install  libcanberra-gtk3-0 libcanberra-gtk3-dev
 BUILDDEPS =
 LIBDEPS =
@@ -45,4 +45,5 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
+BUILD_ARGS = CFLAGS=Wno-incompatible-pointer-types
 

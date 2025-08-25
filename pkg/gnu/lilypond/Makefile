@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2022-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2022-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = LilyPond
 GARNAME = lilypond
-GARVERSION = 2.25.18
+GARVERSION = 2.25.28
 # no longer at HOME_URL = http://www.gnu.org/software/lilypond
 HOME_URL = http://lilypond.org/
 #HOME_URL = http://download.linuxaudio.org/lilypond/source/v2.19/

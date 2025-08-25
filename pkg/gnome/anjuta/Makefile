@@ -23,7 +23,6 @@ GARVERSION = 3.34.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Integrated Development Environment (IDE) on GNOME Desktop  
 define BLURB
-
 endef
 
 ######################################################################
@@ -43,6 +42,8 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types
 

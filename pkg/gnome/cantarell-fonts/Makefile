@@ -24,7 +24,6 @@ GARVERSION = 0.303.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Cantarell, a Humanist sans-serif font family
 define BLURB
-
 endef
 
 ######################################################################

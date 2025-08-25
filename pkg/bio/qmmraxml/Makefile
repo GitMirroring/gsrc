@@ -46,6 +46,8 @@ LIBDEPS =
 include ../../../gar/gar.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS="-Wno-incompatible-pointer-types -std=c99"
+
 install-program:
 	@printf "[$(OK)install$(OFF)] $(MSG)Installing $(NAME).$(OFF)\n"
 	$(INSTALL_BIN) $(WORKSRC)/qmmraxmlHPC

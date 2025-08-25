@@ -18,7 +18,7 @@
 
 NAME = ffmpeg
 GARNAME = ffmpeg
-GARVERSION = 7.1.1
+GARVERSION = 8.0
 HOME_URL =  http://ffmpeg.org
 DESCRIPTION = video player, transcoder, video format converter, etc
 define BLURB
@@ -37,9 +37,8 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+#  had to do "make -k" , not just "make"
+#  some missing .h files , or something
+# hmm
 BUILD_ARGS = CFLAGS+=-fPIC
-
-# HINT; do "make -k install"
-# something not right, but not a show stopper
-#
 

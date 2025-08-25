@@ -20,7 +20,7 @@
 
 NAME =    adwaita-icon-theme
 GARNAME = adwaita-icon-theme
-GARVERSION = 48.1
+GARVERSION = 49.beta
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Standard Icons gnome theme 
 define BLURB

@@ -14,14 +14,12 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
-#
-# Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
+# Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME =    liboop
 GARNAME = liboop
+GARVERSION = 1.0.1
 HOME_URL = http://www.lysator.liu.se/liboop/
 DESCRIPTION = low-level event loop management library  
 define BLURB
@@ -31,7 +29,6 @@ applications which may respond to events from several sources. It replaces
 the "select() loop" and allows the registration of event handlers for
 file and network I/O, timers and signals.
 endef
-GARVERSION = 1.0.1
 LICENSE = GNU LGPL
 
 ######################################################################
@@ -46,6 +43,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

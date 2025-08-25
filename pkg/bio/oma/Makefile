@@ -17,7 +17,7 @@
 
 NAME = OMA
 GARNAME = oma
-GARVERSION = 1.0.6
+GARVERSION = 2.7.0
 HOME_URL = http://omabrowser.org/standalone
 DESCRIPTION = Large-scale orthology inference
 define BLURB
@@ -28,7 +28,7 @@ CITE = doi:10.1186/1471-2105-9-518
 
 
 ######################################################################
-
+# https://omabrowser.org/standalone/OMA.2.7.0.tgz
 MASTER_SITES = $(HOME_URL)/
 MASTER_SUBDIR =
 DISTNAME = $(NAME).$(GARVERSION)
@@ -38,6 +38,8 @@ INSTALL_SCRIPTS = program
 BUILDDEPS =
 LIBDEPS =
 
+WORKOBJ = $(WORKSRC)
+
 ######################################################################
 
 include ../../../gar/gar.mk
@@ -46,7 +48,7 @@ include config.mk
 ifeq ($(GARARCH),x86_64)
 	DARWIN_BINARY = omadarwin.linux64
 else
-	DARWIN_BINARY = omadarwin.linu32
+	DARWIN_BINARY = omadarwin.linux32
 endif
 
 pre-install:

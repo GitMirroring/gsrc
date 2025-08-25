@@ -1,4 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
+# 2025
 #
 # This file is part of GSRC.
 #
@@ -17,7 +18,7 @@
 
 NAME = Primer3
 GARNAME = primer3
-GARVERSION = 2.3.6
+GARVERSION = 2.4.0
 HOME_URL = http://primer3.sourceforge.net/
 DESCRIPTION = Design PCR primers
 define BLURB
@@ -28,10 +29,12 @@ LICENSE = GPLv2+
 CITE = doi:10.1093/nar/gks596
 
 ######################################################################
-
+#https://sourceforge.net/projects/primer3/files/primer3/2.4.0/primer3-2.4.0.tar.gz/download
 MASTER_SITES = $(MASTER_SOURCEFORGE)
 MASTER_SUBDIR = $(GARNAME)/files/$(GARNAME)/$(GARVERSION)/
-DISTFILES = $(GARNAME)-src-$(GARVERSION).tar.gz
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
+
+WORKOBJ = $(WORKSRC)
 BUILD_SCRIPTS = $(WORKSRC)/src/Makefile
 TEST_SCRIPTS = $(WORKSRC)/src/Makefile
 INSTALL_SCRIPTS = bins
@@ -44,11 +47,17 @@ LIBDEPS =
 include ../../../gar/gar.mk
 include config.mk
 
-BINS = oligotm ntthal primer3_core ntdpal long_seq_tm_test
+BUILD_ARGS = CFLAGS=-fpermissive
+
+BINS = oligotm ntthal primer3_core ntdpal long_seq_tm_test primer3_masker
 
 install-bins:
 	@printf "[$(OK)install$(OFF)] $(MSG)Installing $(NAME).$(OFF)\n"
 	for bin in $(BINS); do \
 		$(INSTALL_BIN) $(WORKSRC)/src/$$bin; \
 	done
+	@printf "Many tests in source directory.\n"
 	$(MAKECOOKIE)
+
+# todo install docs primer3_manual.htm
+#

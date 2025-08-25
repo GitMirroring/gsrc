@@ -1,4 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
+# 2025
 #
 # This file is part of GSRC.
 #
@@ -18,7 +19,7 @@
 NAME = MACS 3
 GARNAME = macs
 UPSTREAMNAME = MACS
-GARVERSION = 3.0.0b1
+GARVERSION = 3.0.3
 HOME_URL = https://pypi.org/project/MACS3/
 #or https://github.com/macs3-project/MACS/
 DESCRIPTION = Model-based analysis for ChIP-Seq

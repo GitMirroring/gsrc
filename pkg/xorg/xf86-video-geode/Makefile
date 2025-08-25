@@ -20,7 +20,7 @@
 
 NAME =    xf86-video-geode
 GARNAME = xf86-video-geode
-GARVERSION = 2.18.1
+GARVERSION = 2.18.2
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = xf86 video geode driver
 define BLURB

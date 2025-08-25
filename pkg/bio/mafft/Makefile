@@ -1,5 +1,5 @@
 # Copyright © 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2023 Carl Hansen
+# Copyright © 2023,2025 Carl Hansen
 #
 # This file is part of BioSRC. and GSRC
 #
@@ -18,7 +18,7 @@
 
 NAME = MAFFT
 GARNAME = mafft
-GARVERSION = 7.505
+GARVERSION = 7.525
 HOME_URL = http://mafft.cbrc.jp/alignment/software/
 DESCRIPTION = A multiple sequence alignment program
 define BLURB
@@ -29,7 +29,7 @@ LICENSE = 3-clause BSD
 CITE = doi:10.1093/molbev/mst010
 
 ######################################################################
-
+# https://mafft.cbrc.jp/alignment/software/mafft-7.525-with-extensions-src.tgz
 MASTER_SITES = http://mafft.cbrc.jp/
 MASTER_SUBDIR = alignment/software/
 #DISTNAME = $(GARNAME)-$(GARVERSION)-without-extensions
@@ -37,18 +37,21 @@ DISTNAME = $(GARNAME)-$(GARVERSION)-with-extensions
 DISTFILES = $(DISTNAME)-src.tgz
 # PATCHFILES = $(GARNAME)-$(GARVERSION)-destdir-install.patch
 WORKSRC = $(WORKDIR)/$(DISTNAME)/core
+WORKOBJ = $(WORKDIR)/$(DISTNAME)-build
 BUILD_SCRIPTS = $(WORKSRC)/Makefile
 INSTALL_SCRIPTS = $(WORKSRC)/Makefile symlinks
 
 BUILDDEPS =
 LIBDEPS =
 
-PATCHOPTS = -p3
+#PATCHOPTS = -p3
 
 ######################################################################
 
 include ../../../gar/gar.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS=-std=c99
 
 INSTALL_ARGS += PREFIX=$(packageprefix)
 LINKED_PROGS = linsi ginsi einsi fftns fftnsi nwns nwnsi xinsi qinsi \
@@ -72,3 +75,4 @@ install-symlinks: install-$(WORKSRC)/Makefile
 	rm -f $(packageprefix)/bin/mafft-distance.exe
 	ln -s $(packagedir)/libexec/mafft/mafft-distance $(packageprefix)/bin/mafft-distance
 	$(MAKECOOKIE)
+

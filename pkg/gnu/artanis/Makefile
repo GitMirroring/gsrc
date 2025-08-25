@@ -21,7 +21,7 @@
 
 NAME = artanis
 GARNAME = artanis
-GARVERSION = 1.2.2
+GARVERSION = 1.3.0
 HOME_URL = http://www.gnu.org/software/artanis/
 DESCRIPTION = Web application framework written in Guile scheme
 define BLURB

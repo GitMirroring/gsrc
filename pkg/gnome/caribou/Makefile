@@ -1,4 +1,3 @@
-
 # Copyright © 2015 Brandon Invergo <brandon@invergo.net>
 # Copyright © 2016 Carl Hansen carlhansen@gnu.org
 #
@@ -25,7 +24,6 @@ GARVERSION = 0.4.21
 HOME_URL =  https://wiki.gnome.org/action/show/Projects/Caribou?action=show&redirect=Caribou
 DESCRIPTION = Text entry and UI navigation application
 define BLURB
-
 endef
 
 ######################################################################
@@ -45,6 +43,7 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
+BUILD_ARGS = CFLAGS=-Wno-discarded-qualifier
 

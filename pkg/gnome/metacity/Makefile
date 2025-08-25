@@ -1,4 +1,4 @@
-# Copyright © 2016, 2019, 2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2019, 2023-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,11 +20,12 @@
 
 NAME =    metacity
 GARNAME = metacity
-GARVERSION = 3.56.0
+GARVERSION = 3.57.1
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = Metacity is a simple compositing window manager that integrates nicely with GNOME
+DESCRIPTION = A simple compositing window manager  
 define BLURB
-
+Metacity is a simple compositing window manager that 
+integrates nicely with GNOME
 endef
 
 ######################################################################

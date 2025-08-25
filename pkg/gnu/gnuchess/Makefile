@@ -23,7 +23,7 @@
 
 NAME = GNUChess
 GARNAME = gnuchess
-GARVERSION = 6.2.11
+GARVERSION = 6.3.0
 HOME_URL = http://www.gnu.org/software/chess/
 DESCRIPTION = Full chess implementation
 define BLURB

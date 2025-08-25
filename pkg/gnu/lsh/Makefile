@@ -35,11 +35,14 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS =
-LIBDEPS = nettle liboop
+BUILDDEPS = nettle liboop
+LIBDEPS = 
 
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS="-std=c99 -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-function-declaration"
+
