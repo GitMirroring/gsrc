@@ -28,15 +28,6 @@ define BLURB
 GNU Pascal compiler, work in progress
 endef
 
-STATUSMESSAGE = "The GNU Pascal compiler must be built with the source of gcc and as \
-part of gcc.  Versions known to work: gcc-2.8.1, 2.95, 3.2.1, 3.3.3, \
-3.3.4, 3.3.5, 3.4.3, 3.4.4, 4.0.2, 4.0.3, 4.1.2, 4.2.4, 4.3.5. Currently \
-GSRC does not script the building of gpc because I have not figured it \
-out. Longer term prospect is to integrate into GNU Compiler Collection, \
-gcc, currently version 15, where it belongs. It is an all-volunteer project, \
-if someone moves forward on it, it would be great.  At least now you \
-have the source." 
-
 ######################################################################
 # https://github.com/hebisch/gpc.git
 
@@ -55,12 +46,7 @@ include ../../../gar/gar.lib/info.mk
 include config.mk
 
 
-
-CONFIGURE_SCRIPTS = tellthestatus
-BUILD_SCRIPTS = tellthestatus
-
 fetch: fetch-git
-
 
 post-fetch: fetch-git
 	mkdir -p $(WORKSRC)
@@ -76,7 +62,12 @@ tellthestatus:
 	@printf "==============================================================\n"
 	@printf "==============================================================\n"
 	@printf "==============================================================\n"
-	@echo "$(STATUSMESSAGE)"
+	@printf "The GNU Pascal compiler must be built with the source of gcc and as \n"
+	@printf "part of gcc.  Versions known to work: gcc-2.8.1, 2.95, 3.2.1, 3.3.3, \n"
+	@printf "3.3.4, 3.3.5, 3.4.3, 3.4.4, 4.0.2, 4.0.3, 4.1.2, 4.2.4, 4.3.5. Currently\n" 
+	@printf "GSRC does not script the building of gpc because of its age. \n"
+	@printf "To be done: integrate into GNU Compiler Collection, \n"
+	@printf "gcc, currently version 16, where it belongs.\n"
 	@printf "==============================================================\n"
 	@printf "==============================================================\n"
 	@printf "==============================================================\n"

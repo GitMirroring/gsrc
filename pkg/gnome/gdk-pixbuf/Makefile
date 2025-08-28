@@ -21,7 +21,7 @@
 
 NAME =    gdk-pixbuf
 GARNAME = gdk-pixbuf
-GARVERSION = 2.43.3
+GARVERSION = 2.43.5
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = An image loading library
 define BLURB

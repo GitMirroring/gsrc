@@ -43,6 +43,7 @@ include ../../../gar/gar.mk
 include config.mk
 
 CGI_DIR ?= $(packageprefix)/www/$(GARNAME)
+BUILD_ARGS = CFLAGS=-Wno-pointer-compare
 
 pre-install:
 	@sed -i -e 's|/usr/bin/perl|$(PERL)|' $(WORKSRC)/gnatsweb.pl

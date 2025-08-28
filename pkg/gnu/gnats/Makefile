@@ -45,5 +45,5 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
-BUILD_ARGS = "-Wno-error=implicit-fallthrough=yes -Wno-error=format-overflow=yes  -Wwarning=pointer-compare "
+BUILD_ARGS = "-Wno-error=implicit-fallthrough=yes -Wno-error=format-overflow=yes  -Wno-error=pointer-compare=yes"
 

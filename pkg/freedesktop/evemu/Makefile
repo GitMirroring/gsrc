@@ -33,7 +33,12 @@ from real devices.
 endef
 
 ######################################################################
-
+#$> git clone git://git.freedesktop.org/git/evemu
+#$> cd evemu
+#$> ./autogen.sh
+#$> ./configure --prefix=/usr
+#$> make && sudo make install
+# to fix
 MASTER_SITES = https://freedesktop.org/
 MASTER_SUBDIR =  /software/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.xz
@@ -44,6 +49,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

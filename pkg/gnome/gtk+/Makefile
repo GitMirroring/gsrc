@@ -32,7 +32,6 @@ define BLURB
 endef
 
 ######################################################################
-
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
@@ -46,11 +45,13 @@ SIGFILES =
 #WORKOBJ = $(WORKSRC).build
 
 BUILDDEPS =
+LIBDEPS =
+
 # HINT: it needs some things:
 # apt install libepoxy-dev libmount-dev libxcb-xkb-dev
 # libselinux-dev libsystemd-dev  libepoxy0 xorg-dev  gdk-pixbuf
 #  libsqlite3-dev libatk-bridge2.0-0 libatk-bridge2.0-dev
-LIBDEPS =
+
 # example of option, use as you wixh
 MESON_OPTS =  "-Dwayland_backend=false"
 ######################################################################

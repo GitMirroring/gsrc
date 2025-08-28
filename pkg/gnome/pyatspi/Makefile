@@ -1,5 +1,4 @@
-
-# Copyright © 2016 Carl Hansen carlhansen@gnu.org
+# Copyright © 2016,2025 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -24,7 +23,6 @@ GARVERSION = 2.57.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  pyatspi
 define BLURB
-
 endef
 
 ######################################################################
@@ -44,6 +42,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 

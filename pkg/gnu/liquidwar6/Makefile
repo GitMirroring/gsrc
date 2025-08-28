@@ -40,6 +40,9 @@ LIBDEPS =# guile gmp gc libtool zlib libpng libsdl libsdl_image	\
          # libcaca
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+CONFIGURE_ARGS = "GUILE_CONFIG=yes"
+

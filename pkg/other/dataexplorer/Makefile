@@ -20,7 +20,7 @@
 
 NAME =   DataExplorer 
 GARNAME = dataexplorer
-GARVERSION = 3.9.6
+GARVERSION = 3.9.8
 HOME_URL = http://www.nongnu.org/dataexplorer
 DESCRIPTION = data explorer, chart data from serial port, files, devices
 define BLURB

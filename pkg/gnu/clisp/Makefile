@@ -50,7 +50,9 @@ include ../../../gar/gar.lib/autotools.mk
 # header file for sigsegv.h in $prefix/lib
 
 CONFIGURE_ARGS = --ignore-absence-of-libsigsegv
+BUILD_ARGS  = CFLAGS="-Wno-int-conversion -std=c99"
 
 build-thething:
-	cd $(WORKSRC)/src && $(MAKE)
+	cd $(WORKSRC)/src && $(MAKE)  $(BUILD_ARGS)
+
 

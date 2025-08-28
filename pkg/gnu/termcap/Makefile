@@ -43,8 +43,10 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
 CONFIGURE_ARGS += oldincludedir=""
+BUILD_ARGS = CFLAGS="-std=c99 -Wno-implicit-function-declaration"
+

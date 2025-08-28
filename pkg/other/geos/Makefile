@@ -20,7 +20,7 @@
 
 NAME =    geos
 GARNAME = geos
-GARVERSION = 3.13.1
+GARVERSION = 3.14.0
 HOME_URL = http://libgeos.org/
 DESCRIPTION = geospatial library 
 define BLURB

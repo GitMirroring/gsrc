@@ -46,8 +46,8 @@ include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
 a:
-	echo $(BASEDIRABS)
-	echo $(WORKDIR)
-	echo $(WORKSRC)
-	echo $(WORKOBJ)
+	@echo b $(BASEDIRABS)
+	@echo w $(WORKDIR)
+	@echo s $(WORKSRC)
+	@echo o $(WORKOBJ)
 

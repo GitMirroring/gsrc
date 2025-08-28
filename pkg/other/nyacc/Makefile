@@ -20,7 +20,7 @@
 
 NAME = nyacc
 GARNAME = nyacc
-GARVERSION =  2.02.2
+GARVERSION =  2.02.3
 HOME_URL =  http://www.nongnu.org/nyacc
 DESCRIPTION =  Guile modules for nyacc compiler creation and parsers
 define BLURB
@@ -34,6 +34,7 @@ with Guile as extension languages.
 endef
 ######################################################################
 # https://download.savannah.gnu.org/releases/nyacc/nyacc-1.09.4.tar.gz.sig
+# future versions, see github
 MASTER_SITES =  https://download.savannah.gnu.org/
 MASTER_SUBDIR = releases/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz

@@ -23,7 +23,7 @@
 NAME = Biopython
 GARNAME = python-biopython
 UPSTREAMNAME = biopython
-GARVERSION = 1.84
+GARVERSION = 1.85
 HOME_URL = http://www.biopython.org
 DESCRIPTION = A set of Python modules for biological computation
 define BLURB
@@ -51,3 +51,4 @@ LIBDEPS =
 
 include ../../../gar/gar.mk
 include config.mk
+

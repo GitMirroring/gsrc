@@ -21,8 +21,8 @@
 
 NAME = gsequencer
 GARNAME = gsequencer
-GARVERSION = 8.0.8
-SUBDIR = 8.0.x
+GARVERSION = 8.1.4
+SUBDIR = 8.1.x
 HOME_URL = http://www.nongnu.org/gsequencer/ 
 DESCRIPTION = Audio processing, editing, sequencer.
 define BLURB 
@@ -58,7 +58,7 @@ SIGFILES  = $(DISTNAME).tar.gz.sig
 BUILDDEPS =  fftw
 #pulseaudio gdbm
 LIBDEPS = 
-BUILD_ARGS = "LDFLAGS=-L/usr/lib/x86_64-linux-gnu/pulseaudio -Wl,-lpulse -Wl,-lpulsecommon-16.1"
+BUILD_ARGS = LDFLAGS="-L/usr/lib/x86_64-linux-gnu/pulseaudio -Wl,-lpulse -Wl,-lpulsecommon-16.1"
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/varb.mk

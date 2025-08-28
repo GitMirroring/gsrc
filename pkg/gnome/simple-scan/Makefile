@@ -1,4 +1,4 @@
-# Copyright ©2016,2017,2018,2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2016-2019,2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,29 +20,32 @@
 
 NAME =    simple-scan
 GARNAME = simple-scan
-GARVERSION = 46.0
+GARVERSION = 48.1
 HOME_URL = https://launchpad.net/simple-scan/
 DESCRIPTION =  gnome GUI interface to SANE scanner library
 define BLURB
 endef
-######################################################################
+#:#####################################################################
+# https://gitlab.gnome.org/GNOME/simple-scan/-/archive/48.1/simple-scan-48.1.tar.bz2
+
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
 SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
 
-MASTER_SITES = $(MASTER_GNOME)
-MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
+#MASTER_SITES = $(MASTER_GNOME)
+#MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 #MASTER_SITES = https://launchpad.net/
 #MASTER_SUBDIR = $(GARNAME)/$(SERIES)/$(GARVERSION)$(RELEASE)/+download/
-DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
-SIGFILES =  
+#DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
+#SIGFILES =  
 
 # apt install libsane-dev sane  PackageKit colord vala libgusb
 BUILDDEPS =
 LIBDEPS = 
 
 ######################################################################
+include ../../../gar/gitlabgnome.mk
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 

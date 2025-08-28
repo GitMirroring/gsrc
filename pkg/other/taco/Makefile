@@ -65,12 +65,13 @@ LIBDEPS =
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-#CONFIGURE_ARGS = CPPFLAGS+=-Wno-error=narrowing
-#CMAKE_CONFIGURE_ARGS += CXXFLAGS=-Wno-error=narrowing
+# this is temporary fix for latest cmake. Might be better ways...
+CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
 #BUILD_ARGS += CXXFLAGS=-Wno-error=narrowing
 #BUILD_ARGS += CXXFLAGS=-Wno-narrowing
-
+#CONFIGURE_ARGS = CPPFLAGS+=-Wno-error=narrowing
+#CMAKE_CONFIGURE_ARGS += CXXFLAGS=-Wno-error=narrowing
 
 info:
 	@echo PWD  $(PWD)
@@ -85,6 +86,4 @@ post-fetch: fetch-gitrecursive
 	mkdir -p $(WORKSRC)
 	mkdir -p $(WORKOBJ)
 	cp -a $(GITSRC)/*  $(WORKSRC)
-
-
 
