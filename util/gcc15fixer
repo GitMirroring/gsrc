@@ -1,0 +1,14 @@
+#!/usr/bin/env bash 
+# 15
+
+set -e
+cd $GSRC/bin 
+
+a=$(/bin/ls *-15)
+#printf "$a"
+
+for it in  $a ; do
+	it2=$(  echo $it |sed   -e "s/-15//" )
+	echo rm -f "$it2" 
+	echo ln -s "$it" "$it2"
+done
