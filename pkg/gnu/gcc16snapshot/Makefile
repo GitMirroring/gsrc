@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 16 development version
 GARNAME = gcc16snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 16-20250824
+GARVERSION = 16-20250831
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 16 snapshot
 define BLURB
@@ -40,7 +40,7 @@ endef
 #HINT: working C compiler to compile gcc....
 
 ######################################################################
-# https://gcc.gnu.org/pub/gcc/snapshots/
+# https://gcc.gnu.org/pub/gcc/snapshots/16-20250831/gcc-16-20250831.tar.xz
 
 MASTER_SITES = https://gcc.gnu.org/
 MASTER_SUBDIR = pub/gcc/snapshots/$(GARVERSION)/

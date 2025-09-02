@@ -20,7 +20,7 @@
 
 NAME =    libdex
 GARNAME = libdex
-GARVERSION = 0.11.1
+GARVERSION = 1.0.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  libdex, concurrent code
 define BLURB

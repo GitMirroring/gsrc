@@ -30,20 +30,21 @@ LICENSE = GNU GPLv3
 ######################################################################
 
 #https://download.librepcb.org/releases/0.1.0/librepcb-0.1.0-source.zip
-
 MASTER_SITES = https://download.librepcb.org/
 MASTER_SUBDIR = releases/$(GARVERSION)/
 DISTFILES = $(DISTNAME)-source.zip
 
-#WORKSRC = $(WORKDIR)/$(DISTNAME)
-#WORKOBJ = $(WORKDIR)/$(DISTNAME).build
-#CONFIGURE_SCRIPTS =
-
 BUILDDEPS =
 LIBDEPS =
+######################################################################
+
+include ../../../gar/gar.lib/cmake.mk
+include config.mk
+
+BUILD_ARGS = Qt6_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake
 
 #FIXME
-CMAKE_COMMAND="/home/carl/gsrc/bin/cmake -DUSE_OPENCASCADE=0"
+#CMAKE_COMMAND="/home/carl/gsrc/bin/cmake -DUSE_OPENCASCADE=0"
 # still not right, need to look up right CMAKE variable name...
 
 #CONFIGURE_ENV = USE_OPENCASCADE=0
@@ -52,10 +53,6 @@ CMAKE_COMMAND="/home/carl/gsrc/bin/cmake -DUSE_OPENCASCADE=0"
 #  Did not find OpenCASCADE library! Consider passing '-DUSE_OPENCASCADE=0' to
 #  cmake.
 
-######################################################################
-
-include ../../../gar/gar.lib/cmake.mk
-include config.mk
 
 #pre-build:
 #	cd $(WORKSRC) &&  cmake   -DUSE_OPENCASCADE=0
@@ -84,3 +81,8 @@ include config.mk
 #  -DUSE_OPENCASCADE=0
     
 # -DCMAKE_POLICY_VERSION_MINIMUM=3.5    
+
+
+
+
+

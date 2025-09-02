@@ -19,7 +19,7 @@
 
 NAME =    libwnck
 GARNAME = libwnck
-GARVERSION = 43.2
+GARVERSION = 43.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Library to manage X windows and workspaces (via pagers, tasklists, etc.)
 define BLURB

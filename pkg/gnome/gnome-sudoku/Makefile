@@ -20,7 +20,7 @@
 
 NAME =    gnome-sudoku
 GARNAME = gnome-sudoku
-GARVERSION = 48.alpha
+GARVERSION = 49.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  Number grid puzzle 
 define BLURB

@@ -22,6 +22,7 @@
 NAME =    pango
 GARNAME = pango
 GARVERSION = 1.57.0
+#GARVERSION = 1.90.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Internationalized text layout and rendering library
 define BLURB

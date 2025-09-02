@@ -19,7 +19,7 @@
 
 NAME =    gnome-nibbles
 GARNAME = gnome-nibbles
-GARVERSION = 4.2.2
+GARVERSION = 4.4.rc1
 HOME_URL = https://wiki.gnome.org/Apps/Nibbles/
 DESCRIPTION = Guide a worm around a maze game
 define BLURB

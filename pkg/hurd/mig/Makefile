@@ -30,7 +30,7 @@ endef
 
 ######################################################################
 # https://git.savannah.gnu.org/cgit/hurd/hurd.git/
-MASTER_SITES = https://git.savannah.gnu.org
+MASTER_SITES = https://git.savannah.gnu.org/
 MASTER_SUBDIR = git/hurd
 
 GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/$(GARNAME).git

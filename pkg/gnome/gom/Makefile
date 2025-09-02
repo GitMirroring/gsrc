@@ -20,7 +20,7 @@
 
 NAME =    gom
 GARNAME = gom
-GARVERSION = 0.5.3
+GARVERSION = 0.5.4
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A GObject to SQLite object mapper. 
 define BLURB

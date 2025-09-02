@@ -19,7 +19,7 @@
 
 NAME =    sysprof
 GARNAME = sysprof
-GARVERSION = 48.0
+GARVERSION = 49.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Sysprof kernel based performance profiler for Linux
 define BLURB

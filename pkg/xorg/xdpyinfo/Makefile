@@ -1,4 +1,4 @@
-# Copyright ©2020-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -19,38 +19,30 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    GTK 4
-GARNAME = gtk
-GARVERSION = 4.20.0
-HOME_URL = http://www.gtk.org/
-DESCRIPTION =  gtk 4 GNOME toolkit,  create user interfaces
+NAME =    xdpyinfo
+GARNAME = xdpyinfo
+GARVERSION = 1.4.0
+HOME_URL = http://www.x.org
+DESCRIPTION = xdpyinfo  display info about an X server
 define BLURB
+xdpyinfo is a utility for displaying information about an X server.
+It is used to examine the capabilities of a server, the predefined
+values for various parameters used in communicating between clients
+and the server, and the different types of screens, visuals, and X11
+protocol extensions that are available.
 endef
 
 ######################################################################
+MASTER_SITES =  https://www.x.org/
+MASTER_SUBDIR = releases/individual/app/
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES = $(DISTNAME).tar.xz.sig
 
-empty:=
-space:= $(empty) $(empty)
-VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
-
-MASTER_SITES = $(MASTER_GNOME)
-MASTER_SUBDIR = $(UPSTREAMNAME)/$(SERIES)/
-DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum 
-#$(DISTNAME).news
-SIGFILES =
-
-BUILDDEPS =
-# might be needed:
-# apt install libepoxy-dev libmount-dev libxcb-xkb-dev
-# libselinux-dev libsystemd-dev  libepoxy0 xorg-dev  gdk-pixbuf
-#  libsqlite3-dev libatk-bridge2.0-0 libatk-bridge2.0-dev
-# gst-plugins-bad
-
-LIBDEPS =
+BUILDDEPS = 
+LIBDEPS = 
 
 ######################################################################
 
-include ../../../gar/gar.lib/mesonninja.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
