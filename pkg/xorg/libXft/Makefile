@@ -29,12 +29,15 @@ endef
 
 ######################################################################
 # https://xorg.freedesktop.org/releases/individual/lib/libX11-1.6.6.tar.bz2
+# or
+# https://gitlab.freedesktop.org/xorg/lib/libxft
 MASTER_SITES =  https://xorg.freedesktop.org/
 MASTER_SUBDIR = releases/individual/lib/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
 
-BUILDDEPS = 
+BUILDDEPS =  freetype fontconfig 
+# libX11 libXext libXrender
 LIBDEPS = 
 
 ######################################################################

@@ -24,7 +24,6 @@ HOME_URL = http://www.gnome.org/
 DESCRIPTION =  mail reader
 define BLURB
 endef
-
 ######################################################################
 
 empty:=
@@ -40,11 +39,10 @@ SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
-
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
+BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration -Wno-nested-externs"
 

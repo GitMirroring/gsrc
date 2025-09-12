@@ -41,11 +41,14 @@ LIBDEPS =
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
+#FIXME trying
 BUILD_ARGS = Qt6_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake
 
 #FIXME
 #CMAKE_COMMAND="/home/carl/gsrc/bin/cmake -DUSE_OPENCASCADE=0"
 # still not right, need to look up right CMAKE variable name...
+#
+# /usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake
 
 #CONFIGURE_ENV = USE_OPENCASCADE=0
 
@@ -53,36 +56,10 @@ BUILD_ARGS = Qt6_DIR=/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake
 #  Did not find OpenCASCADE library! Consider passing '-DUSE_OPENCASCADE=0' to
 #  cmake.
 
+# -DCMAKE_POLICY_VERSION_MINIMUM=3.5    
 
 #pre-build:
 #	cd $(WORKSRC) &&  cmake   -DUSE_OPENCASCADE=0
 
  
 # # from pari
-# #CONFIGURE_SCRIPTS = doconf
-# #BUILD_SCRIPTS = gpanddoc
-# 
-# configure-doconf:
-# 	cd $(WORKSRC) &&  ./configure   --prefix=$(prefix)/ $(CONFIGURE_OPTS)
-# 	$(MAKECOOKIE)
-# #
-# #build-gpanddoc:
-# #	cd $(WORKSRC) &&  $(MAKE) all
-# #	$(MAKECOOKIE)
-# 
-# 
-# pre-install:  build
-# 	mkdir -p $(prefix)/packages/$(DISTNAME)
-# 	mkdir -p $(prefix)/packages/$(DISTNAME)-DEST
-# 	$(MAKE)  -C $(WORKOBJ) -f Makefile DESTDIR=$(prefix)/packages/$(DISTNAME)-DEST   install 
-# 	$(MAKECOOKIE)
- 
-# # FIXME  install:
-#  -DUSE_OPENCASCADE=0
-    
-# -DCMAKE_POLICY_VERSION_MINIMUM=3.5    
-
-
-
-
-

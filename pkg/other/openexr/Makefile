@@ -20,7 +20,7 @@
 
 NAME =    OpenEXR
 GARNAME = openexr
-GARVERSION = 3.3.4
+GARVERSION = 3.4.0
 HOME_URL = http://www.openexr.com
 DESCRIPTION =  high dynamic-range (HDR) 2-d image file format
 define BLURB
@@ -53,27 +53,13 @@ WORKOBJ = $(WORKDIR)/$(DISTNAME).build
 
 BUILDDEPS = imath
 LIBDEPS =
-#PATCHFILES = includefileadded.diff
 
 ######################################################################
-
 
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-
-#	wget $(WGET_OPTS) -O $(DOWNLOADDIR)/$(notdir $(DISTNAME)).tar.gz.partial $(strip $(MASTER_SITES)$(MASTER_SUBDIR))$(UPSTREAMFILES)
-#	mv $(DOWNLOADDIR)/$(notdir $(DISTNAME)).tar.gz.partial $(DOWNLOADDIR)/$(notdir $(DISTNAME).tar.gz)
-
 custom-post-fetch:
 	cp download/$(DISTFILES) download/$(DISTNAME).tar.gz
 	$(MAKECOOKIE)
-
-
-#custom-build:
-##	mkdir $(WORKOBJ)
-##	cd $(WORKOBJ)
-##	cmake  $(WORKSRC)
-#	make
-
 

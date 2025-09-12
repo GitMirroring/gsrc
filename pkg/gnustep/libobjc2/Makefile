@@ -35,13 +35,12 @@ endef
 #https://github.com/gnustep/libobjc2/archive/v2.1.tar.gz
 #https://github.com/gnustep/libobjc2.git
 
-
 MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR = gnustep
 
 GIT_PATH = $(MASTER_SITES)$(MASTER_SUBDIR)/$(GARNAME).git --recursive
-#jDISTNAME = $(GARNAME)-$(GARVERSION)
-#jNOCHECKSUM = $(DISTFILES)
+# DISTNAME = $(GARNAME)-$(GARVERSION)
+# NOCHECKSUM = $(DISTFILES)
 SIGFILES =
 GIT_REVISION = master
 
@@ -73,9 +72,8 @@ pre-extract: fetch
 #HINT
 # doen't build with gcc, with latest capability; needs clang, unless someone fixes it
 
-CC=/usr/bin/clang
-cc=/usr/bin/clang
-C++=/usr/bin/clang
-c++=/usr/bin/clang
-CFLAGS+=-std=c11
+CONFIGURE_ARGS = "CC=/usr/bin/clang cc=/usr/bin/clang C++=/usr/bin/clang c++=/usr/bin/clang CFLAGS+=-std=c11"
+BUILD_ARGS = "CC=/usr/bin/clang cc=/usr/bin/clang C++=/usr/bin/clang c++=/usr/bin/clang CFLAGS+=-std=c11"
+
+
 

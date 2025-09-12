@@ -1,5 +1,5 @@
 # Copyright © 2014, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020, 2024-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of bioSRC and GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 #
 NAME = BLAST+
 GARNAME = ncbi-blast
-GARVERSION = 2.16.0
+GARVERSION = 2.17.0
 HOME_URL = http://blast.ncbi.nlm.nih.gov
 DESCRIPTION = Basic Local Alignment Search Tool
 define BLURB

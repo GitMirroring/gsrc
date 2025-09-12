@@ -20,7 +20,7 @@
 
 NAME =    gnome-kiosk
 GARNAME = gnome-kiosk
-GARVERSION = 49.alpha.1.2
+GARVERSION = 49.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = gnome-kiosk
 define BLURB

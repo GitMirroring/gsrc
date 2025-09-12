@@ -8,4 +8,4 @@ BUILD_OPTS ?=
 # adjust to your situation
 #PYTHON=/usr/bin/python3
 # or maybe
-PYTHON="/usr/bin/env python3"
+#PYTHON="/usr/bin/env python3"

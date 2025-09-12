@@ -26,10 +26,8 @@ DESCRIPTION = Download files from internet with command line
 define BLURB
 endef
 ######################################################################
-#https://curl.se/download/curl-8.12.1.tar.xz
 #https://github.com/curl/curl/releases/download/curl-8_12_0/curl-8.12.0.tar.xz
 MASTER_SITES =  https://github.com/
-
 MASTER_SUBDIR = curl/curl/releases/download/curl-8_15_0/
 # FIXME
 
@@ -43,6 +41,7 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+# adjust till it suits you
 #CONFIGURE_ARGS += --enable-versioned-symbols   --disable-symbol-hiding --with-gnutls
 #CONFIGURE_ARGS += --disable-versioned-symbols   --disable-symbol-hiding --with-openssl
 #CONFIGURE_ARGS +=  --enable-versioned-symbols --with-openssl

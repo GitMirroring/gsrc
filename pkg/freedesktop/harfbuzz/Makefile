@@ -22,7 +22,7 @@
 
 NAME =    harfbuzz
 GARNAME = harfbuzz
-GARVERSION = 11.4.4
+GARVERSION = 11.4.5
 HOME_URL = http://www.freedesktop.org/wiki/Software/HarfBuzz
 DESCRIPTION = An OpenType text-shaping engine, Middle Eastern scripts
 define BLURB
@@ -33,7 +33,7 @@ endef
 #
 
 ######################################################################
-#https://github.com/harfbuzz/harfbuzz/releases/download/2.7.2/harfbuzz-2.7.2.tar.xz
+#https://github.com/harfbuzz/
 MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR = $(GARNAME)/$(GARNAME)/releases/download/$(GARVERSION)/
 #GIT_PATH = $(MASTER_SITES)$(MASTER_SUBDIR)$(GARNAME).git
@@ -45,9 +45,6 @@ SIGFILES =
 
 BUILDDEPS = 
 LIBDEPS = #  c++ glib libicu ragel
-# might be needed:
-#LDFLAGS=-liconv
-# installation fails
 
 ######################################################################
 

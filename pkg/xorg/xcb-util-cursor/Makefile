@@ -1,4 +1,4 @@
-# Copyright ©2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022,2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,14 +23,13 @@
 
 NAME =    xcb-util-cursor
 GARNAME = xcb-util-cursor
-GARVERSION = 0.1.5
-HOME_URL = https://xorg.freedesktop.org
+GARVERSION = 0.1.6
+HOME_URL = https://www.x.org
 DESCRIPTION = xcb, library for xcb-util-cursor
 define BLURB
 endef
 
 ######################################################################
-# https://xcb.freedesktop.org/dist/libxcb-1.13.tar.bz2
 #https://xorg.freedesktop.org/archive/individual/lib/xcb-util-wm-0.4.2.tar.xz.sig
 MASTER_SITES = https://xorg.freedesktop.org/
 MASTER_SUBDIR = archive/individual/lib/

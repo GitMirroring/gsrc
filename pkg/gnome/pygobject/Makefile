@@ -20,7 +20,7 @@
 
 NAME =    pygobject
 GARNAME = pygobject
-GARVERSION = 3.53.0
+GARVERSION = 3.54.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Python bindings for GObject Introspection
 define BLURB

@@ -21,8 +21,9 @@
 
 NAME = WildMIDI
 GARNAME = wildmidi
-GARVERSION = 0.4.3
-HOME_URL =  http://www.mindwerks.net/projects/wildmidi/
+GARVERSION = 0.4.6
+#HOME_URL =  http://www.mindwerks.net/projects/wildmidi/
+HOME_URL = https://github.com/Mindwerks/wildmidi
 DESCRIPTION = Simple software midi player which has a core softsynth library
 define BLURB
 WildMIDI is a simple software midi player which has a core softsynth 
@@ -44,7 +45,6 @@ DISTFILES = $(DISTNAME).tar.gz
 
 BUILDDEPS =
 LIBDEPS =
-#USE_AUTORECONF = y
 
 ######################################################################
 

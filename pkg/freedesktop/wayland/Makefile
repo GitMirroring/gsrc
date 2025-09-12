@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2019, 2021, 2024  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2019, 2021, 2024-2025  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    Wayland
 GARNAME = wayland
-GARVERSION = 1.23.1
+GARVERSION = 1.24.0
 HOME_URL = https://wayland.freedesktop.org/
 DESCRIPTION = Wayland windowing, alternative to X
 define BLURB
@@ -31,17 +31,16 @@ clients as well as a C library implementation of that protocol.
 endef
 
 ######################################################################
-# https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.0/downloads/wayland-1.23.0.tar.xz
 # https://gitlab.freedesktop.org/wayland/wayland/-/releases/1.23.1/downloads/wayland-1.23.1.tar.xz
 MASTER_SITES = http://gitlab.freedesktop.org/
-	MASTER_SUBDIR = wayland/wayland/-/releases/$(GARVERSION)/downloads/
+MASTER_SUBDIR = wayland/wayland/-/releases/$(GARVERSION)/downloads/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =  $(DISTNAME).tar.xz.sig
 
 #consider: autogenargs = --disable-documentation
 BUILDDEPS = 
-# xmlto
 LIBDEPS = #  libffi doxygen 
+# xmlto
 
 ######################################################################
 

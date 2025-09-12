@@ -19,7 +19,7 @@
 
 NAME =    gnome-build-meta
 GARNAME = gnome-build-meta
-GARVERSION = 49.beta
+GARVERSION = 49.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Collection of build scripts for Gnome project, or something 
 define BLURB
@@ -40,8 +40,7 @@ CONFIGURE_SCRIPTS =
 
 BUILDDEPS =
 LIBDEPS =
-# FIXME
-WORKSRC = $(WORKDIR)/gnome-49.alpha.1
+WORKSRC = $(WORKDIR)/gnome-49.rc
 WORKOBJ = $(WORKSRC)
 ######################################################################
 

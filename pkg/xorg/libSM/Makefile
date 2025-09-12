@@ -1,4 +1,4 @@
-# Copyright © 2018, 2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2023, 2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc

@@ -20,10 +20,11 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 
-NAME =    Fontconfig
+NAME =    fontconfig
 GARNAME = fontconfig
 GARVERSION = 2.17.1
 HOME_URL = https://www.freedesktop.org/wiki/Software/fontconfig/
+	# or fontconfig.org
 DESCRIPTION = Library for configuring and customizing font access.
 define BLURB
 Fontconfig can discover new fonts when installed automatically, perform
@@ -35,7 +36,6 @@ and subpixel rendered text on a display.
 endef
 
 ######################################################################
-# https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.13.0.tar.bz2
 # https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.17.1/fontconfig-2.17.1.tar.xz.sha256sum
 MASTER_SITES = https://gitlab.freedesktop.org/
 MASTER_SUBDIR = api/v4/projects/890/packages/generic/fontconfig/2.17.1/
@@ -49,5 +49,4 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
-
 

@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017,2022-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017,2022-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -19,7 +19,7 @@
 
 NAME = GNU Coding Standards
 GARNAME = gnustandards
-GARVERSION = 2025.08
+GARVERSION = 2025.09.12
 HOME_URL = http://www.gnu.org/prep/
 DESCRIPTION = GNU coding standards and maintainer information
 define BLURB
@@ -31,8 +31,12 @@ endef
 ######################################################################
 #https://www.gnu.org/prep/standards/standards.info.tar.gz
 #https://www.gnu.org/prep/standards/standards.texi.tar.gz
+# skip texi here 
 #https://www.gnu.org/prep/maintain/maintain.texi.tar.gz
+# possible addition
+#
 # not in mirrors:
+
 MASTER_SITES = https://www.gnu.org/
 MASTER_SUBDIR = prep/standards/
 DISTFILES =   standards.info.tar.gz
@@ -54,7 +58,7 @@ include config.mk
 include ../../../gar/gar.mk
 include ../../../gar/gar.lib/info.mk
 
-# This install the .info version. If you desire html,pdf, etc
+# This install the .info version. If you desire html, pdf, etc
 # look at texinfo documentation.
 
 
@@ -63,5 +67,4 @@ install-infos:
 	mkdir -p $(packageprefix)/share/info
 	$(INSTALL_INFO) $(WORKSRC)/standards.info
 	@printf "to read, do:   info standards"
-	$(MAKECOOKIE)
 

@@ -39,11 +39,9 @@ SIGFILES  = $(DISTNAME).tar.gz.md5
 WORKSRC = $(WORKDIR)/proj-$(GARVERSION)
 WORKOBJ = $(WORKSRC)-build
 
-BUILDDEPS =# curl
+BUILDDEPS =
 LIBDEPS = 
-
 ######################################################################
-
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 

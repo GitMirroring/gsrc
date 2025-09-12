@@ -22,7 +22,7 @@
 NAME = Xerces-C++
 GARNAME = xerces
 UPSTREAMNAME = xerces-c
-GARVERSION = 3.2.5
+GARVERSION = 3.3.0
 HOME_URL = https://xerces.apache.org/xerces-c
 DESCRIPTION = A validating XML parser
 define BLURB
@@ -48,3 +48,4 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+

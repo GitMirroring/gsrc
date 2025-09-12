@@ -21,9 +21,9 @@
 
 NAME = GnuPG
 GARNAME = gnupg
-GARVERSION = 2.5.11
+GARVERSION = 2.5.12
 HOME_URL = http://www.gnu.org/software/gnupg
-DESCRIPTION = GNU Privacy Guard pgp
+DESCRIPTION = GNU Privacy Guard gpg gnupg
 define BLURB
 The GNU Privacy Guard is a complete implementation of the OpenPGP
 standard.  It is used to encrypt and sign data and communication.  It

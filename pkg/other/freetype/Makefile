@@ -1,8 +1,7 @@
-# Copyright © 2018-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
-#
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -16,19 +15,19 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-#
+
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 
 NAME =    freetype
 GARNAME = freetype
 UPSTREAMNAME = freetype
-GARVERSION = 2.13.3
+GARVERSION = 2.14.0
 HOME_URL = http://freetype.org
 DESCRIPTION =  Typeface renderer
 define BLURB
 library to render typefaces (fonts), in C,  producing high-quality output
-(glyph images) of most vector and bitmap font formats.
+(glyph images) of most vector and bitmap font formats.  
 endef
 
 # TODO, the docs:  freetype-doc-2.......tar.bz2
@@ -41,10 +40,8 @@ DISTFILES = $(DISTNAME).tar.xz \
 			 $(GARNAME)-doc-$(GARVERSION).tar.xz  
 SIGFILES  = $(DISTNAME).tar.xz.sig \
 			$(GARNAME)-doc-$(GARVERSION).tar.xz.sig
-
 BUILDDEPS =
 LIBDEPS =
-
 
 ######################################################################
 
@@ -52,6 +49,5 @@ include ../../../gar/gar.lib/mesonninja.mk
 # option, instead of mesonninja.mk :
 #include ../../../gar/gar.lib/autotools.mk
 include config.mk
-
 
 

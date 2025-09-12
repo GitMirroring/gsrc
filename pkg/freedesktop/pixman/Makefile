@@ -22,7 +22,7 @@
 
 NAME =    pixman
 GARNAME = pixman
-GARVERSION = 0.46.2
+GARVERSION = 0.46.4
 HOME_URL =  https://gitlab.freedesktop.org/pixman/pixman
     #    http://cairographics.org/
 	# related to gnome.org and xorg

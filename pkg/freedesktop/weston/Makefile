@@ -1,4 +1,4 @@
-# Copyright © 2019,2022,2024  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019,2022,2024-2025  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -15,15 +15,12 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
-#
-# Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
+# Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME =    Weston
 GARNAME = weston
-GARVERSION = 14.0.1
+GARVERSION = 14.0.2
 HOME_URL = https://wayland.freedesktop.org/
 DESCRIPTION = a compositor for Wayland
 define BLURB
@@ -39,7 +36,6 @@ SIGFILES =  $(DISTNAME).tar.xz.sig
 BUILDDEPS = 
 LIBDEPS = 
 # HINT apt install  freerdp2-dev  etc
-
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk

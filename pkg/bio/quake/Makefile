@@ -45,6 +45,7 @@ LIBDEPS =
 
 include ../../../gar/gar.mk
 include config.mk
+BUILD_ARGS = CFLAGS=-fpermissive
 
 BINS = build_bithash correct correct_stats count-kmers count_qmers	\
 	count-qmers reduce-kmers reduce-qmers trim

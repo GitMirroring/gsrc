@@ -1,4 +1,4 @@
-# Copyright ©2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -18,18 +18,16 @@
 # 
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
-#
  
 NAME = libgeotiff
 GARNAME = libgeotiff
-GARVERSION = 1.7.3
+GARVERSION = 1.7.4
 HOME_URL =	http://www.osgeo.org/
 DESCRIPTION =  libgeotiff, add geo coordinate info to tiff files
 define BLURB
 endef
 
 ######################################################################
-
 
 #https://download.osgeo.org/geotiff/libgeotiff/libgeotiff-1.7.1.tar.gz
 MASTER_SITES = https://download.osgeo.org/ 

@@ -1,4 +1,4 @@
-# Copyright ©2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,18 +21,18 @@
 
 NAME =    libXfixes
 GARNAME = libXfixes
-GARVERSION = 6.0.0
+GARVERSION = 6.0.2
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = libXfixes library
 define BLURB
 endef
 
 ######################################################################
-# https://xorg.freedesktop.org/releases/individual/lib/libX11-1.6.6.tar.bz2
+# https://xorg.freedesktop.org/releases/individual/lib
 MASTER_SITES =  https://xorg.freedesktop.org/
 MASTER_SUBDIR = releases/individual/lib/
-DISTFILES = $(DISTNAME).tar.bz2
-SIGFILES = $(DISTNAME).tar.bz2.sig
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES = $(DISTNAME).tar.xz.sig
 
 BUILDDEPS = 
 LIBDEPS = 
