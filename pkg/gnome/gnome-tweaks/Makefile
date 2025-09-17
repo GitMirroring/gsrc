@@ -19,7 +19,7 @@
 
 NAME =    gnome-tweaks
 GARNAME = gnome-tweaks
-GARVERSION = 46.1
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Customize advanced GNOME  options
 define BLURB

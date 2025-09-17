@@ -19,7 +19,7 @@
 
 NAME =    gexiv2
 GARNAME = gexiv2
-GARVERSION = 0.15.2
+GARVERSION = 0.16.0
 HOME_URL = https://wiki.gnome.org/gexiv2 
 DESCRIPTION = GObject-based wrapper around the Exiv2 library
 define BLURB

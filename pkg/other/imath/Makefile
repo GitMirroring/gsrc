@@ -20,7 +20,7 @@
 
 NAME =    Imath
 GARNAME = imath
-GARVERSION = 3.1.12
+GARVERSION = 3.2.1
 HOME_URL = http://www.openexr.com
 DESCRIPTION =  lib of 2D and 3D vectors, matrices, and functions for graphics
 define BLURB

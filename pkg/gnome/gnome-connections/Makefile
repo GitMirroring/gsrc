@@ -20,7 +20,7 @@
 
 NAME =    gnome-connections
 GARNAME = gnome-connections
-GARVERSION = 49.rc
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = remote desktop client for the GNOME desktop environment
 define BLURB

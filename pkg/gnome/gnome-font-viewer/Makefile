@@ -19,7 +19,7 @@
 
 NAME =    gnome-font-viewer
 GARNAME = gnome-font-viewer
-GARVERSION = 48.0
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A font viewer utility for GNOME
 define BLURB

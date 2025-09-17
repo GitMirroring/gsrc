@@ -20,7 +20,7 @@
 
 NAME =    yelp
 GARNAME = yelp
-GARVERSION = 42.2
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Get help with GNOME
 define BLURB

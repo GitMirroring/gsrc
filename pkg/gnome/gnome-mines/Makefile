@@ -20,7 +20,7 @@
 
 NAME =    gnome-mines
 GARNAME = gnome-mines
-GARVERSION = 48.1
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Clear hidden mines from a minefield game.
 define BLURB

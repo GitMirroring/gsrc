@@ -20,7 +20,7 @@
 
 NAME =    gucharmap
 GARNAME = gucharmap
-GARVERSION = 12.0.1
+GARVERSION = 17.0.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  gucharmap
 define BLURB

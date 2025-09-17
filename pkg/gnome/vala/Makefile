@@ -55,8 +55,9 @@ include config.mk
 pre-configure:
 	cd $(WORKSRC) && ./autogen.sh
 
+
 configure-my:
 	echo cd $(WORKSRC) 
-	cd $(WORKSRC) && VERSION=0.56 ./configure --prefix=$(prefix)
+	cd $(WORKSRC) && ./configure PACKAGE_VERSION=0.56.18  --prefix=$(prefix)
 
 

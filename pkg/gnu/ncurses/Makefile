@@ -16,13 +16,13 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-#
-# 
+
+ 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME = ncurses
 GARNAME = ncurses
-GARVERSION = 6.5-20250830
+GARVERSION = 6.5-20250913
 GARVERSIONMAJOR = 6.5
 
 HOME_URL = http://www.gnu.org/software/ncurses/
@@ -65,6 +65,5 @@ include config.mk
 
 CONFIGURE_ARGS  += --with-versioned-syms --enable-pc-files   --with-shared --with-normal    --enable-widec 
 # includes static ie with-normal
-
 
 

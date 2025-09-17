@@ -20,7 +20,7 @@
 
 NAME =    epiphany
 GARNAME = epiphany
-GARVERSION = 48.alpha
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A web browser
 define BLURB

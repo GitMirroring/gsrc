@@ -19,7 +19,7 @@
 
 NAME =    pyatspi
 GARNAME = pyatspi
-GARVERSION = 2.57.0
+GARVERSION = 2.58.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  pyatspi
 define BLURB

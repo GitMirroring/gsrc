@@ -45,12 +45,12 @@ DISTFILES = $(DISTNAME).tar.gz
 
 BUILDDEPS =
 LIBDEPS = # python2 seqan samtools
-
+WORKOBJ = $(WORKSRC)
 #USE_AUTORECONF = y
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 #CONFIGURE_ARGS += PYTHON=$(prefix)/bin/python2  --with-bam=$(prefix)
@@ -58,3 +58,5 @@ include config.mk
 pre-configure:
 	sed -i 's|-I./SeqAn-1.3||' $(WORKSRC)/configure.ac
 	$(MAKECOOKIE)
+
+

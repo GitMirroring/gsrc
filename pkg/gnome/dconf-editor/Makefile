@@ -19,7 +19,7 @@
 
 NAME =    dconf-editor
 GARNAME = dconf-editor
-GARVERSION = 45.0.1
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = dconf Editor
 define BLURB

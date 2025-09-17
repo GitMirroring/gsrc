@@ -20,7 +20,7 @@
 
 NAME =  Jami a.k.a. Ring
 GARNAME = jami
-GARVERSION = 20250815.1
+GARVERSION = 20250912.0
 HOME_URL = https://jami.net
 DESCRIPTION = A privacy-respecting comm program for video, voice, text, data
 define BLURB 

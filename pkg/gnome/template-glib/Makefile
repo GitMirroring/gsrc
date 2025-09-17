@@ -19,7 +19,7 @@
 
 NAME =    template-glib
 GARNAME = template-glib
-GARVERSION = 3.37.1
+GARVERSION = 3.38.0
 HOME_URL = https://wiki.gnome.org/Projects/
 DESCRIPTION = template-glib thingee
 define BLURB

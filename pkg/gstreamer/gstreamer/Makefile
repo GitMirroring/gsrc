@@ -21,7 +21,7 @@
 
 NAME =    gstreamer
 GARNAME = gstreamer
-GARVERSION = 1.26.5
+GARVERSION = 1.26.6
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION =  multimedia core library and elements
 define BLURB

@@ -33,22 +33,20 @@ LICENSE = Public Domain
 CITE = doi:10.1186/1471-2105-10-421.
 
 ######################################################################
-# ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/ncbi-blast-2.6.0+-src.tar.gz
-# https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.16.0/ncbi-blast-2.16.0+-src.tar.gz
+# https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/2.17.0/ncbi-blast-2.17.0+-src.tar.gz
 MASTER_SITES = https://ftp.ncbi.nlm.nih.gov/
 MASTER_SUBDIR = blast/executables/blast+/$(GARVERSION)/
 DISTNAME = $(GARNAME)-$(GARVERSION)+-src
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  = $(DISTNAME).tar.gz.md5
 #PATCHFILES = $(DISTNAME)-include-typeinfo.diff
+#PATCHOPTS = -p3
+
 WORKSRC = $(WORKDIR)/$(DISTNAME)/c++
+WORKOBJ = $(WORKSRC)
 
 BUILDDEPS =
 LIBDEPS =
-
-#PATCHOPTS = -p3
-WORKOBJ = $(WORKSRC)
-
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk

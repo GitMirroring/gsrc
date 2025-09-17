@@ -19,7 +19,7 @@
 
 NAME =    gnome-logs
 GARNAME = gnome-logs
-GARVERSION = 45.0
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A log viewer for the systemd journal
 define BLURB

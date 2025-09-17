@@ -1,6 +1,7 @@
 # Copyright © 2014 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2025 Carl Hansen
 #
-# This file is part of BioSRC.
+# This file is part of BioSRC and GSRC.
 #
 # BioSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -17,8 +18,9 @@
 
 NAME = PhyML
 GARNAME = phyml
-GARVERSION = 20140223
+GARVERSION = 3.3.20250515
 HOME_URL = https://code.google.com/p/phyml/
+	# https://github.com/stephaneguindon/phyml/
 DESCRIPTION = Estimate phylogenies by maximum likelihood
 define BLURB
 PhyML is a program for estimating maximum likelihood phylogenies from
@@ -30,16 +32,16 @@ LICENSE = GPLv2
 CITE = doi:10.1007/978-1-59745-251-9_6
 
 ######################################################################
-
-MASTER_SITES = https://googledrive.com/
-MASTER_SUBDIR = host/0Bwr9KQU1ZdE-Nk5rSHlsbTlhRWM/
-DISTFILES = $(DISTNAME).tar.gz
+# https://github.com/stephaneguindon/phyml/archive/refs/tags/v3.3.20250515.tar.gz
+MASTER_SITES = https://github.com/
+MASTER_SUBDIR = stephaneguindon/phyml/archive/refs/tags/
+DISTFILES = v$(GARVERSION).tar.gz
 
 BUILDDEPS =
 LIBDEPS =
-
+USE_AUTORECONF = y
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

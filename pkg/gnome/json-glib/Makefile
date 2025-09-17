@@ -20,7 +20,7 @@
 
 NAME =    json-glib
 GARNAME = json-glib
-GARVERSION = 1.10.6
+GARVERSION = 1.10.8
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GLib-based JSON manipulation library
 define BLURB

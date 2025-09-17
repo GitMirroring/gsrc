@@ -21,7 +21,7 @@
 
 NAME = FreeIPMI
 GARNAME = freeipmi
-GARVERSION = 1.6.15
+GARVERSION = 1.6.16
 HOME_URL = http://www.gnu.org/software/freeipmi/
 DESCRIPTION = Platform management, including sensor and power monitoring
 define BLURB

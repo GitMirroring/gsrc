@@ -19,7 +19,7 @@
 
 NAME =    ptyxis
 GARNAME = ptyxis
-GARVERSION = 48.alpha.2
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME ptyxis, a terminal for GNOME 
 define BLURB

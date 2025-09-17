@@ -21,7 +21,7 @@
 
 NAME =    gtksourceview
 GARNAME = gtksourceview
-GARVERSION = 5.17.1
+GARVERSION = 5.18.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Source code editing widget
 define BLURB

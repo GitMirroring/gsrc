@@ -19,7 +19,7 @@
 
 NAME =    yelp-xsl
 GARNAME = yelp-xsl
-GARVERSION = 42.1
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Document transformations from Yelp
 define BLURB

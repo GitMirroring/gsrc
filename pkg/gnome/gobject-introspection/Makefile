@@ -20,7 +20,7 @@
 
 NAME =    gobject-introspection
 GARNAME = gobject-introspection
-GARVERSION = 1.84.0
+GARVERSION = 1.86.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GObject introspection tools and libraries
 define BLURB

@@ -20,7 +20,7 @@
 
 NAME =    gnome-weather
 GARNAME = gnome-weather
-GARVERSION = 48.0
+GARVERSION = 49.0
 #HOME_URL = http://www.gnome.org/
 HOME_URL =	https://wiki.gnome.org/Apps/Weather
 DESCRIPTION = Access current weather conditions and forecasts

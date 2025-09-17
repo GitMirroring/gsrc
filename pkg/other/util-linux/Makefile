@@ -21,7 +21,7 @@
 
 NAME = util-linux
 GARNAME = util-linux
-GARVERSION = 2.41.1
+GARVERSION = 2.41.2-rc1
 VDIR= v2.41
 HOME_URL =  https://mirrors.edge.kernel.org/pub/linux/utils/util-linux
 DESCRIPTION = low level utilities for working with GNU-Linux systems
@@ -31,16 +31,16 @@ addpart agetty bits blkdiscard blkid blkpr blkzone blockdev cal cfdisk
 chcpu chfn chmem choom chrt chsh col colcrt colrm column coresched
 ctrlaltdel delpart dmesg eject enosys exch fadvise fallocate fdisk fincore
 findfs findmnt flock fsck fsck.cramfs fsck.minix fsfreeze fstrim getopt
-hardlink hexdump hwclock i386@ ionice ipcmk ipcrm ipcs irqtop isosize
-kill last lastb@ lastlog2 ldattach linux32@ linux64@ logger login look
+hardlink hexdump hwclock i386 ionice ipcmk ipcrm ipcs irqtop isosize
+kill last lastb lastlog2 ldattach linux32 linux64 logger login look
 losetup lsblk lsclocks lscpu lsfd lsipc lsirq lslocks lslogins lsmem
 lsns mcookie mesg mkfs mkfs.bfs mkfs.cramfs mkfs.minix mkswap more
 mount mountpoint namei nologin nsenter partx pipesz pivot_root prlimit
 readprofile rename renice resizepart rev rfkill rtcwake runuser script
 scriptlive scriptreplay setarch setpgid setpriv setsid setterm sfdisk
 su sulogin swaplabel swapoff swapon switch_root taskset uclampset ul
-umount uname26@ unshare utmpdump uuidd uuidgen uuidparse waitpid wall
-wdctl whereis wipefs x86_64@ zramctl
+umount uname26 unshare utmpdump uuidd uuidgen uuidparse waitpid wall
+wdctl whereis wipefs x86_64 zramctl
 endef
 ######################################################################
 
@@ -62,6 +62,6 @@ include config.mk
 # cd  ...-build && make ckeck
 #
 # might need to do this as root:
-# chgrp tty /home/carl/gsrc/packages/util-linux-2.40-DEST/home/carl/gsrc/bin/wall
-#
+# sudo chgrp tty /home/carl/gsrc/packages/util-linux-2.40-DEST/home/carl/gsrc/bin/wall
+
 

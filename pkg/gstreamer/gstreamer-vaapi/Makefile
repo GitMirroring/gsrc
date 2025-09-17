@@ -23,7 +23,7 @@
 
 NAME =    gstreamer-vaapi
 GARNAME = gstreamer-vaapi
-GARVERSION = 1.26.5
+GARVERSION = 1.26.6
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gstreamer VA-APR integration
 define BLURB
