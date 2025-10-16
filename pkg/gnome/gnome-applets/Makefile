@@ -20,7 +20,7 @@
 
 NAME =    gnome-applets
 GARNAME = gnome-applets
-GARVERSION = 3.56.0
+GARVERSION = 3.58.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Small programs for the panel
 define BLURB

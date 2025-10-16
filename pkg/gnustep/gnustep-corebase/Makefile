@@ -55,7 +55,6 @@ WORKOBJ = $(WORKSRC)
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
-
 # for now:
 CONFIGURE_ARGS = --without-icu
 

@@ -49,10 +49,10 @@ INSTALL_SCRIPTS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS="-Wno-old-style-definition -std=c90"
+BUILD_ARGS = CFLAGS="-Wno-old-style-definition -std=c89"
 
 build-forth: 
-	make -C work/tile-forth-2.1/src
+	make  -C work/tile-forth-2.1/src
 	$(MAKECOOKIE)
 
 custom-pre-install:  build

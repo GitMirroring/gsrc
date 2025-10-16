@@ -19,7 +19,7 @@
 
 NAME =    gnome-control-center
 GARNAME = gnome-control-center
-GARVERSION = 49.0
+GARVERSION = 49.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME s main interface to configure various aspects of the desktop
 define BLURB

@@ -19,7 +19,7 @@
 
 NAME =    gnome-tetravex
 GARNAME = gnome-tetravex
-GARVERSION = 3.38.2
+GARVERSION = 3.38.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Complete the puzzle by matching numbered tiles
 define BLURB

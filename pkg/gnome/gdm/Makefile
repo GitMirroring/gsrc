@@ -19,7 +19,7 @@
 
 NAME =    gdm
 GARNAME = gdm
-GARVERSION = 49.beta
+GARVERSION = 49.0.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Display manager and login screen
 define BLURB

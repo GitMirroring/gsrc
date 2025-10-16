@@ -39,8 +39,17 @@ CONFIGURE_SCRIPTS = $(WORKSRC)/CMakeLists.txt
 
 BUILDDEPS = #guile boost libsdl
 LIBDEPS =
-
 ######################################################################
 
 include ../../../gar/gar.mk
+include ../../../gar/gar.lib/cmake.mk
 include config.mk
+
+#CONFIGURE_ARGS = CFLAGS="CMAKE_CONFIGURE_ARGS=CMAKE_POLICY_VERSION_MINIMUM=3.5"
+#BUILD_ARGS = CFLAGS="CMAKE_CONFIGURE_ARGS=CMAKE_POLICY_VERSION_MINIMUM=3.5"
+
+
+CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+
+
+

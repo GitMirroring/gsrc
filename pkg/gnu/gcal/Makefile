@@ -1,4 +1,5 @@
 # Copyright © 2013, 2015 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2025 Carl Hansen
 #
 # This file is part of GSRC.
 #
@@ -17,7 +18,7 @@
 
 NAME = gcal
 GARNAME = gcal
-GARVERSION = 4.1
+GARVERSION = 4.2.0
 HOME_URL = http://www.gnu.org/software/gcal/
 DESCRIPTION = Calculating and printing a wide variety of calendars
 define BLURB
@@ -32,11 +33,14 @@ endef
 
 ######################################################################
 
-MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = $(GARNAME)/
+#MASTER_SITES = $(MASTER_GNU)
+#MASTER_SUBDIR = $(GARNAME)/
+MASTER_SITES = https://alteholz.dev/
+MASTER_SUBDIR = gnu/
+	
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
-PATCHFILES = gcal.fseeko.patch
+#PATCHFILES = gcal.fseeko.patch
 BUILDDEPS =
 LIBDEPS =
 

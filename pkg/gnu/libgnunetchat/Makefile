@@ -20,7 +20,7 @@
 
 NAME = libgnunetchat
 GARNAME = libgnunetchat
-GARVERSION = 0.5.3
+GARVERSION = 0.6.0
 HOME_URL = http://www.gnu.org/software/gnunet
 	# see https://gnunet.org/generic-installation-instructions
 DESCRIPTION = A client-side library for apps to utilize the messenger service of GNUnet.

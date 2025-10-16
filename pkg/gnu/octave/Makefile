@@ -22,7 +22,7 @@
 
 NAME = Octave
 GARNAME = octave
-GARVERSION = 10.2.0
+GARVERSION = 10.3.0
 HOME_URL = http://www.gnu.org/software/octave/
 DESCRIPTION = High-level language for numerical computation
 define BLURB

@@ -20,7 +20,7 @@
 
 NAME =    systemd
 GARNAME = systemd
-GARVERSION =  257.9
+GARVERSION =  258
 
 HOME_URL = https://systemd.io 
 #	www.freedesktop.org/wiki/Software/systemd/
@@ -29,7 +29,7 @@ define BLURB
 endef
 
 ######################################################################
-# https://github.com/systemd/systemd/archive/refs/tags/v248.tar.gz
+# https://github.com/systemd/systemd/archive/refs/tags/v258.tar.gz
 #
 MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR = $(GARNAME)/$(GARNAME)/archive/refs/tags/

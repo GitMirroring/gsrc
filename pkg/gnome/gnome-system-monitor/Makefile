@@ -19,7 +19,7 @@
 
 NAME =    gnome-system-monitor
 GARNAME = gnome-system-monitor
-GARVERSION = 1.1.3
+GARVERSION = 49.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = View current processes and monitor system state
 define BLURB

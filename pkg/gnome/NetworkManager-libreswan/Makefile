@@ -19,7 +19,7 @@
 
 NAME =    NetworkManager-libreswan
 GARNAME = NetworkManager-libreswan
-GARVERSION = 1.2.24
+GARVERSION = 1.2.27
 HOME_URL = https://wiki.gnome.org/Projects/NetworkManager
 DESCRIPTION =  NetworkManager-libreswan
 define BLURB

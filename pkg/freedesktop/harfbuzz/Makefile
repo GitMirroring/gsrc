@@ -22,7 +22,7 @@
 
 NAME =    harfbuzz
 GARNAME = harfbuzz
-GARVERSION = 11.4.5
+GARVERSION = 12.1.0
 HOME_URL = http://www.freedesktop.org/wiki/Software/HarfBuzz
 DESCRIPTION = An OpenType text-shaping engine, Middle Eastern scripts
 define BLURB

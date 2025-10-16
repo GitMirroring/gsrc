@@ -20,7 +20,7 @@
 
 NAME =    calls
 GARNAME = calls
-GARVERSION = 48.2
+GARVERSION = 49.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  phone dialer and calls handler
 define BLURB

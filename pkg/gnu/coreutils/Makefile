@@ -22,7 +22,7 @@
 
 NAME = coreutils
 GARNAME = coreutils
-GARVERSION = 9.7
+GARVERSION = 9.8
 HOME_URL = http://www.gnu.org/software/coreutils/
 DESCRIPTION = Core GNU utilities (file, text, shell)
 define BLURB
@@ -30,7 +30,7 @@ GNU Coreutils includes all of the basic command-line tools that are
 expected in a POSIX system.  These provide the basic file, shell and
 text manipulation functions of the GNU system.  Most of these tools
 offer extended functionality beyond that which is outlined in the
-POSIX standard. Behold:
+POSIX standard. They are:
 [ b2sum base32 base64 basename basenc cat chcon chgrp chmod chown chroot
 cksum comm cp csplit cut date dd df dir dircolors dirname du echo
 env expand expr factor false fmt fold groups head hostid id install

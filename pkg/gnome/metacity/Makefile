@@ -20,7 +20,7 @@
 
 NAME =    metacity
 GARNAME = metacity
-GARVERSION = 3.57.1
+GARVERSION = 3.58.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A simple compositing window manager  
 define BLURB

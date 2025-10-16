@@ -15,14 +15,13 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
+
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME =    cmake
 GARNAME = cmake
 #GARVERSION = 3.31.5
-GARVERSION = 4.1.0
+GARVERSION = 4.1.2
 HOME_URL = https://cmake.org/
 	# or http://kitware.com/cmake
 DESCRIPTION =  cmake build utility, works with or as "make" or other build systems

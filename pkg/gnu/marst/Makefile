@@ -1,4 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2025
 #
 # This file is part of GSRC.
 #
@@ -17,7 +18,7 @@
 
 NAME = MARST
 GARNAME = marst
-GARVERSION = 2.7
+GARVERSION = 2.8
 HOME_URL = http://www.gnu.org/software/marst/
 DESCRIPTION = Algol-to-C translator
 define BLURB

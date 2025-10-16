@@ -19,7 +19,7 @@
 
 NAME =    alacarte
 GARNAME = alacarte
-GARVERSION = 3.56.0
+GARVERSION = 3.58.0
 HOME_URL = https://wiki.gnome.org/Projects/alacarte
 DESCRIPTION = GUI for manipulation "desktop" files and menus
 define BLURB

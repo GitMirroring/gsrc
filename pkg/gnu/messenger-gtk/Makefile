@@ -20,7 +20,7 @@
 
 NAME    = messenger-gtk
 GARNAME = messenger-gtk
-GARVERSION = 0.10.2
+GARVERSION = 0.11.0
 HOME_URL = http://www.gnu.org/software/gnunet
 	# see https://gnunet.org/generic-installation-instructions
 	# https://www.gnunet.org/en/news/2022-05-messenger-gtk-0.7.0.html

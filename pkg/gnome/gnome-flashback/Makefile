@@ -20,7 +20,7 @@
 
 NAME =    gnome-flashback
 GARNAME = gnome-flashback
-GARVERSION = 3.56.0
+GARVERSION = 3.58.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME Flashback session and helper application
 define BLURB

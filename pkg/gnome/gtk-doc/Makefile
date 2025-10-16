@@ -20,7 +20,7 @@
 
 NAME =    gtk-doc
 GARNAME = gtk-doc
-GARVERSION = 1.34.0
+GARVERSION = 1.35.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GTK-Doc is used to document C code.
 define BLURB

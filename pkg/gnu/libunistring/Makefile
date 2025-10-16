@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2022, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = libunistring
 GARNAME = libunistring
-GARVERSION = 1.3
+GARVERSION = 1.4.1
 HOME_URL = http://www.gnu.org/software/libunistring/
 DESCRIPTION = C library for manipulating Unicode strings
 define BLURB

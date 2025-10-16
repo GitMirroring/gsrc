@@ -21,7 +21,7 @@
 
 NAME =    libadwaita
 GARNAME = libadwaita
-GARVERSION = 1.8.alpha
+GARVERSION = 1.8.1
 HOME_URL = http://gnome.org/
 DESCRIPTION =  libadwaita
 define BLURB

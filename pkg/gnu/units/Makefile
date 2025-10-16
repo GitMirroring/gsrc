@@ -43,13 +43,16 @@ SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-
+PATCHFILES = units2.24.patch
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 #include ../../../gar/gar.lib/info.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS="-std=c99"
+
+# is this really necessary?
 pre-install:
 	echo --------------------WORKSRC----------- $(WORKSRC)
 	# only if you have python cd  $(WORKSRC) &&  ./units_cur
@@ -57,7 +60,10 @@ pre-install:
 	cp  $(WORKSRC)/currency.units  $(WORKOBJ)
 
 post-install:
-	#if have python $(prefix)/bin/units_cur
+	#   ??? if have python $(prefix)/bin/units_cur
 	rm -f $(prefix)/share/units/currency.units
 	ln -s $(prefix)/com/units/currency.units $(prefix)/share/units/currency.units
+
+# note: seems to be a problem with unit "Hz" giving radians/sec instead of cycles/sec
+# to be fixed
 

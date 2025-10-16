@@ -21,7 +21,7 @@
 
 NAME = GNUnet
 GARNAME = gnunet
-GARVERSION = 0.24.3
+GARVERSION = 0.25.1
 HOME_URL = http://www.gnu.org/software/gnunet
 # see https://gnunet.org/generic-installation-instructions
 DESCRIPTION = Secured, decentralized, peer-to-peer networking framework
@@ -51,7 +51,5 @@ PACKAGE = gnunet
 include ../../../gar/gar.lib/mesonninja.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
-
-
 
 

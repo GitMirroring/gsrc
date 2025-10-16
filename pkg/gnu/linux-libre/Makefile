@@ -21,7 +21,7 @@
 
 NAME = Linux Libre kernel
 GARNAME = linux-libre
-GARVER     = 6.16
+GARVER     = 6.17
 GARVERSION = $(GARVER)-gnu
 HOME_URL = http://www.gnu.org/software/linux-libre
 #   http://linux-libre.fsfla.org/pub/linux-libre/releases/

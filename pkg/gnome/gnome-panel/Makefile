@@ -20,7 +20,7 @@
 
 NAME =    gnome-panel
 GARNAME = gnome-panel
-GARVERSION = 3.56.0
+GARVERSION = 3.58.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Launch other applications and provide various utilities to manage windows
 define BLURB

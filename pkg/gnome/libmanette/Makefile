@@ -20,7 +20,7 @@
 
 NAME =    libmanette
 GARNAME = libmanette
-GARVERSION = 0.2.12
+GARVERSION = 0.2.13
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = libmanette, GObject lib for game controllers 
 define BLURB

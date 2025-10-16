@@ -20,7 +20,7 @@
 
 NAME =    gnome-contacts
 GARNAME = gnome-contacts
-GARVERSION = 49.beta
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Contacts manager for GNOME
 define BLURB

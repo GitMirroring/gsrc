@@ -19,7 +19,7 @@
 
 NAME =    gnome-menus
 GARNAME = gnome-menus
-GARVERSION = 3.36.0
+GARVERSION = 3.38.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Library for the Desktop Menu specification
 define BLURB

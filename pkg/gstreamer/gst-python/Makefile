@@ -23,7 +23,7 @@
 
 NAME =    gst-python
 GARNAME = gst-python
-GARVERSION = 1.26.6
+GARVERSION = 1.26.7
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gstreamer python bindings
 define BLURB

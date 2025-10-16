@@ -24,8 +24,8 @@
 NAME = Python
 GARNAME = python
 UPSTREAMNAME = Python
-GARVERSION = 3.13.5
-BASEVERSION = 3.13
+GARVERSION = 3.14.0
+BASEVERSION = 3.14
 HOME_URL = http://python.org
 DESCRIPTION = A general-purpose, high-level programming language
 define BLURB
