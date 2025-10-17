@@ -36,13 +36,24 @@ MASTER_SUBDIR = proj/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  = $(DISTNAME).tar.gz.md5
 
-WORKSRC = $(WORKDIR)/proj-$(GARVERSION)
-WORKOBJ = $(WORKSRC)-build
-
 BUILDDEPS =
 LIBDEPS = 
 ######################################################################
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
+
+# to avoid downloading "googletest" which has some ssl keys problem. To be
+# firgured out someday.
+CMAKE_CONFIGURE_ARGS =  -DCMAKE_TLS_VERIFY=0 -DBUILD_TESTING=OFF 
+
+
+# kludge
+#pre-install:
+#	@echo mkdir -p $(packageDESTDIR)/ 
+#	mkdir -p $(packageDESTDIR)/ 
+#	cd $(packageDESTDIR)  &&  rm -rf *
+#	cd $(packageDESTDIR)  && mkdir -p opt  && mkdir -p usr/local && ln -s usr/local opt/gsrc
+
+FIXME = install correctly
 
 
