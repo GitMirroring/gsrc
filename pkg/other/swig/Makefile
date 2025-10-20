@@ -20,7 +20,7 @@
 
 NAME =    swig
 GARNAME = swig
-GARVERSION = 4.3.0
+GARVERSION = 4.3.1
 HOME_URL = http://www.swig.org
 DESCRIPTION =  swig interface compiler
 define BLURB

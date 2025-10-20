@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 13 development version
 GARNAME = gcc13snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 13-20250904
+GARVERSION = 13-20251016
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 13 snapshot
 define BLURB

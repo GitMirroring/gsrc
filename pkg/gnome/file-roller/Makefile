@@ -19,7 +19,7 @@
 
 NAME =    file-roller
 GARNAME = file-roller
-GARVERSION = 44.5
+GARVERSION = 44.6
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Create and modify archives
 define BLURB

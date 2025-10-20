@@ -46,3 +46,6 @@ LIBDEPS =#  intltool gtk libgnomecanvas libbonoboui gconf gnome-vfs \
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+FIXME = dependencies
+

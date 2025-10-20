@@ -19,7 +19,7 @@
 
 NAME =    java-atk-wrapper
 GARNAME = java-atk-wrapper
-GARVERSION = 0.42.1
+GARVERSION = 0.44.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  access java wrapper lib
 define BLURB

@@ -20,7 +20,7 @@
 
 NAME =    accerciser
 GARNAME = accerciser
-GARVERSION = 3.46.2
+GARVERSION = 3.48.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Interactive Python accessibility explorer
 define BLURB
