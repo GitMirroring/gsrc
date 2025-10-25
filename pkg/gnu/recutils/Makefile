@@ -1,5 +1,5 @@
-# Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2019, 2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2013,2014 Brandon Invergo <brandon@invergo.net>
+# Copyright ©2019,2022,2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -42,7 +42,8 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
