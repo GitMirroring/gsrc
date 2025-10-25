@@ -21,7 +21,7 @@
 
 NAME =    cairo
 GARNAME = cairo
-GARVERSION = 1.18.0
+GARVERSION = 1.18.4
 HOME_URL = http://cairographics.org
 DESCRIPTION = cairo, 2d graphics library
 define BLURB

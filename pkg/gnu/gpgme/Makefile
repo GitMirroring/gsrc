@@ -21,7 +21,7 @@
 
 NAME = gpgme
 GARNAME = gpgme
-GARVERSION =  2.0.0
+GARVERSION =  2.0.1
 HOME_URL = http://www.gnu.org/software/gnupg
 DESCRIPTION = gpgme, GPG Made Easy, library connection to GNU Privacy Guard
 define BLURB

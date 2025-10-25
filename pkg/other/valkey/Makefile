@@ -20,7 +20,7 @@
 
 NAME =    valkey
 GARNAME = valkey
-GARVERSION = 8.1.4
+GARVERSION = 9.0.0
 HOME_URL = http://github.com/valkey-io
 DESCRIPTION = in-memory data structure store
 define BLURB
