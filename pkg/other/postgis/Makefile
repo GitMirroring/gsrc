@@ -20,7 +20,7 @@
 
 NAME =    postgis
 GARNAME = postgis
-GARVERSION = 3.5.0
+GARVERSION = 3.6.0
 HOME_URL = http://osgeo.org/
 DESCRIPTION =  Geospatial Data in postgresql
 define BLURB
@@ -32,7 +32,6 @@ MASTER_SITES =  http://download.osgeo.org/
 MASTER_SUBDIR = $(GARNAME)/source/
 DISTFILES = $(DISTNAME).tar.gz  
 SIGFILES =  
-
 
 BUILDDEPS =
 LIBDEPS =

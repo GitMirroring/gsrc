@@ -21,7 +21,7 @@
 
 NAME = config
 GARNAME = config
-GARVERSION = $(strip 2022-10)
+GARVERSION = 20250710
 HOME_URL = http://www.gnu.org/software/config/
 DESCRIPTION =  config.guess and config.sub scripts
 define BLURB

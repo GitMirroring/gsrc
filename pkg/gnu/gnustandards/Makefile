@@ -19,7 +19,7 @@
 
 NAME = GNU Coding Standards
 GARNAME = gnustandards
-GARVERSION = 2025.09.12
+GARVERSION = 2025.07.05
 HOME_URL = http://www.gnu.org/prep/
 DESCRIPTION = GNU coding standards and maintainer information
 define BLURB
