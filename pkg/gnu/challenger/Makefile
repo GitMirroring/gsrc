@@ -21,7 +21,7 @@
 
 NAME = challenger
 GARNAME = challenger
-GARVERSION = 1.0.0
+GARVERSION = 1.1.0
 HOME_URL = http://taler.net
 DESCRIPTION = challenger is part of taler payment system
 define BLURB

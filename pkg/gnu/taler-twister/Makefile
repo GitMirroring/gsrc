@@ -22,7 +22,7 @@
 
 NAME = taler-twister
 GARNAME = taler-twister
-GARVERSION = 1.0.0
+GARVERSION = 1.1.0
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler-twister
 define BLURB

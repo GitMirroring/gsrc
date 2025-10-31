@@ -22,7 +22,7 @@
 
 NAME = less
 GARNAME = less
-GARVERSION = 679
+GARVERSION = 685
 HOME_URL = http://www.gnu.org/software/less/
 DESCRIPTION = Paginator for terminals
 define BLURB
