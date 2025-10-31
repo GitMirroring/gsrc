@@ -21,7 +21,7 @@
 
 NAME =    systemtap
 GARNAME = systemtap
-GARVERSION = 5.3
+GARVERSION = 5.4
 HOME_URL = http://sourceware.org/systemtap/wiki
 DESCRIPTION =  Linux kernel realtime diagnostics, tracing, probing
 define BLURB
@@ -44,5 +44,11 @@ include config.mk
 
 CONFIGURE_ARGS = CPPFLAGS=-UHAVE_LIBDEBUGINFOD
 BUILD_ARGS = CPPFLAGS=-UHAVE_LIBDEBUGINFOD
-FIXME = missing headers
+DESTDIR=$(packageDESTDIR)
 
+# FIXME = missing headers
+# HINT:    sudo apt install libdw-dev  libdw1t64 libdwarf\*
+# etc
+
+# FIXME, final installation is wrong usr
+#
