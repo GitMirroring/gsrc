@@ -21,7 +21,7 @@
 
 NAME = unifont
 GARNAME = unifont
-GARVERSION = 17.0.02
+GARVERSION = 17.0.03
 HOME_URL = http://unifoundry.com
 #HOME_URL = http://www.gnu.org/software/unifont/
 DESCRIPTION = Large bitmap font covering Unicode s Basic Multilingual Plane
@@ -45,7 +45,8 @@ BUILD_SCRIPTS =  maximally
 INSTALL_SCRIPTS = myinstall
 WORKOBJ = $(WORKSRC)
 
-# HINT: apt or dnf  install bdftopcf bdf2psf fontforge
+# HINT: apt (or dnf)  install  bdf2psf fontforge
+# cpan install GD
 # may have to "make -k install" more than once, seems to run off itself
 # something not perfect
 

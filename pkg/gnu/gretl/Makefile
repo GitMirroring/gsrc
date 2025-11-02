@@ -23,13 +23,12 @@ HOME_URL = http://www.gnu.org/software/gretl/
 DESCRIPTION = Statistical analysis of economic data (econometrics)
 define BLURB
 GNU Gretl is a package for performing statistical computations for
-econometrics.  It consists of both a command-line client and a
-graphical client.  It features a variety of estimators such as
-least-squares and maximum likelihood; several time series methods such
-as ARIMA and GARCH; limited dependent variables such as logit,
-probit and tobit; and a powerful scripting language.  It can output
-models as LaTeX files.  It also may be linked to
-GNU R and GNU Octave for further data analysis.
+econometrics.  It consists of both a command-line client and a graphical
+client.  It features a variety of estimators such as least-squares
+and maximum likelihood; several time series methods such as ARIMA and
+GARCH; limited dependent variables such as logit, probit and tobit;
+and a powerful scripting language.  It can output models as LaTeX files.
+It also may be linked to GNU R and GNU Octave for further data analysis.
 endef
 
 ######################################################################
@@ -49,4 +48,5 @@ include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 CONFIGURE_ARGS += --enable-gtk3 --with-readline --with-mpfr
+BUILD_ARGS = CFLAGS="-std=c99 -Wno-incompatible-pointer-types"
 

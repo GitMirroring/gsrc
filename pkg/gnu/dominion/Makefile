@@ -21,12 +21,12 @@ GARVERSION = 2.8.2
 HOME_URL = http://www.gnu.org/software/dominion/
 DESCRIPTION = Multi-player world simulation and role-playing game
 define BLURB
-GNU Dominion is a multi-player world simulation game.  In it,
-each player rules a nation and must maintain their nation in the face
-of competition from the other players.  Players must make political,
-economical, military and diplomatic decisions in order for their
-nations to survive.  This game is intended to be played by players all
-with access to the same computer system.
+GNU Dominion is a multi-player world simulation game.  In it, each player
+rules a nation and must maintain their nation in the face of competition
+from the other players.  Players must make political, economical,
+military and diplomatic decisions in order for their nations to survive.
+This game is intended to be played by players all with access to the
+same computer system.  
 endef
 
 ######################################################################
@@ -40,8 +40,8 @@ PATCHFILES = $(DISTNAME)-upstream-fixes.diff  $(DISTNAME)-remove-new-world-deps.
 #INSTALL_SCRIPTS =     $(WORKOBJ)/Makefile 
 INSTALL_SCRIPTS = it 
 
-BUILDDEPS =
-LIBDEPS = ncurses
+BUILDDEPS = ncurses
+LIBDEPS = 
 
 ######################################################################
 
@@ -49,7 +49,9 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS=--save-temps
+BUILD_ARGS = "CFLAGS=--save-temps -Wno-incompatible-pointer-types -std=c89"
+
+# NOT building yet
 
 #custom-post-install:
 #	cd $(WORKOBJ) &&  $(INSTALL_MAN) $(WORKSRC)/dominion.6 

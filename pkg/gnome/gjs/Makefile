@@ -38,7 +38,7 @@ DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
 # mozjs
-#HINT: apt install libmozjs-60-dev libmozjs-60-0
+#HINT: apt install libmozjs\*
 BUILDDEPS =
 LIBDEPS =
 

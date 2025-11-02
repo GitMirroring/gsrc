@@ -12,3 +12,5 @@ for it in  $a ; do
 	echo rm -f "$it2" 
 	echo ln -s "$it" "$it2"
 done
+
+ln -s gcc-15 gcc

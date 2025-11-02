@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 15 development version
 GARNAME = gcc15snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 15-20251025
+GARVERSION = 15-20251101
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 15 snapshot
 define BLURB
@@ -164,9 +164,10 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 #             CXXFLAGS+="--save-temps -Wall  -Wextra  -fno-split-stack"  \
 #             CPPFLAGS="-I. -I.. -fno-split-stack"
 # still doesn't fix it
-BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  " \
-             CXXFLAGS+="--save-temps -Wall  -Wextra  "  \
-             CPPFLAGS="-I. -I.. "
+BUILD_ARGS  =  "CFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration" \
+             "CXXFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration"  \
+             "CPPFLAGS=-I. -I.."  
+# --save-temps
 	     
 
 ######################################################################

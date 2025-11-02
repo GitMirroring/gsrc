@@ -21,7 +21,7 @@
 
 NAME =    GTK 4
 GARNAME = gtk
-GARVERSION = 4.21.0
+GARVERSION = 4.21.1
 HOME_URL = http://www.gtk.org/
 DESCRIPTION =  gtk 4 GNOME toolkit,  create user interfaces
 define BLURB
@@ -53,4 +53,5 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
+BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration]"
 
