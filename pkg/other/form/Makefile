@@ -24,7 +24,7 @@ GARVERSION = 5.0.0-beta.1
 #GARVERSION = 4.3.1
 HOME_URL = https://www.nikhef.nl/~form/
 # or https://github.com/vermaseren/form/
-DESCRIPTION =  FORM is a Symbolic Manipulation System.
+DESCRIPTION =  FORM is a symbolic manipulation system.
 define BLURB
 FORM is a symbolic equation manipulation system for very big expressions
 that tries to use the computer resources as efficiently as possible,

@@ -36,21 +36,21 @@ MASTER_SUBDIR = ccrtp/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-#WORKSRC = $(WORKDIR)/$*
-#WORKOBJ = $(WORKSRC)-build/
+WORKOBJ = $(WORKSRC)-build/
 
-#CONFIGURE_SCRIPTS = $(WORKSRC)/CMakeLists.txt
-CONFIGURE_SCRIPTS = 
+CONFIGURE_SCRIPTS = $(WORKSRC)/CMakeLists.txt
+#CONFIGURE_SCRIPTS = 
 
 BUILDDEPS =  
 LIBDEPS = #libgcrypt ccrtp openssl
-WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-# the following is inoperative.
+BUILD_ARGS = CFLAGS="-std=c89"
+
+# ****the following is inoperative.****
 # CMake seems to ignore most environment variables. In this case, 
 # libzrtp requires OpenSSL 0.98, which GSRC did  not provide, but 
 # since CMake does not seem to honor the PKG_CONFIG_PATH variable
@@ -58,6 +58,5 @@ include config.mk
 # find the library. Here we remove the argument to use GSRC's pkg-config
 # so that the thing will at least build. 
 #CMAKE_CONFIGURE_ARGS =	-DCMAKE_INSTALL_PREFIX=$(prefix) \
-#			-DSYSCONFDIR=$(sysconfdir) \
-#			$(CONFIGURE_OPTS)
+#			-DSYSCONFDIR=$(sysconfdir)  $(CONFIGURE_OPTS)
 #

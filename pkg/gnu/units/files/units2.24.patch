@@ -1,0 +1,12 @@
+diff -x config.log -x config.status -ru tmp/units-2.24/units.c work/units-2.24/units.c
+--- tmp/units-2.24/units.c	2024-11-25 15:47:38.000000000 -0800
++++ work/units-2.24/units.c	2025-09-17 14:45:11.793937013 -0700
+@@ -5524,7 +5524,7 @@
+     for(entry=unit.denominator;*entry;entry++)
+       if (*entry!=NULLUNIT) spaceneeded+=1+strlen(*entry);
+     reduced = (char *)mymalloc(spaceneeded,"(definevariable)");
+-    snprintf(reduced,spaceneeded, "%.*g ",DBL_DECIMAL_DIG,unit.factor);
++    snprintf(reduced,spaceneeded, "%.*g ",DECIMAL_DIG,unit.factor);
+     for(entry=unit.numerator;*entry;entry++){
+       if (*entry!=NULLUNIT){
+         strcat(reduced, *entry);

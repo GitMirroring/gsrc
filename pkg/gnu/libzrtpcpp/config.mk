@@ -1,4 +1,6 @@
 ## Configuration options for zrtp ##
 
-CONFIGURE_OPTS ?= -DENABLE_CRYPT_STANDALONE=true
-BUILD_OPTS ?= CXXFLAGS=-fpermissive
+#CONFIGURE_OPTS ?= -DENABLE_CRYPT_STANDALONE=true
+#BUILD_OPTS ?= CXXFLAGS=-fpermissive
+CONFIGURE_OPTS ?= 
+BUILD_OPTS ?= 
