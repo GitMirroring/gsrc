@@ -1,4 +1,4 @@
-# Copyright ©2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    xeus-gp
 GARNAME = xeus-gp
-GARVERSION =  0.1.0
+GARVERSION =  0.1.1
 HOME_URL = http://pari.math.u-bordeaux.fr/
 DESCRIPTION = juypiter kernel for gp
 define BLURB
