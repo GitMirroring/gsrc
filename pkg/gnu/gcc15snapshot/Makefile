@@ -101,6 +101,7 @@ include config.mk
 # Many options at just what Debian ships with;
 # adjust as necessary.
 # 
+# --enable-libssp \
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-15 \
 --enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada,cobol \
@@ -116,7 +117,6 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-gtk-cairo \
 --enable-host-shared  \
 --enable-libmpx \
---enable-libssp \
 --enable-libda \
 --enable-libgm2 \
 --enable-libstdcxx-debug \
@@ -164,9 +164,10 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 #             CXXFLAGS+="--save-temps -Wall  -Wextra  -fno-split-stack"  \
 #             CPPFLAGS="-I. -I.. -fno-split-stack"
 # still doesn't fix it
-BUILD_ARGS  =  "CFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration" \
-             "CXXFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration"  \
-             "CPPFLAGS=-I. -I.."  
+CONFIGURE_ARGS = GATHER_STATISTICS=true
+BUILD_ARGS  =  "CFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   " \
+             "CXXFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   "  \
+             "CPPFLAGS=-I. -I.." 
 # --save-temps
 	     
 
