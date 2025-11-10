@@ -23,7 +23,7 @@ NAME = libeufin
 GARNAME = libeufin
 GARVERSION = 1.1.1
 HOME_URL = http://taler.net
-DESCRIPTION = libeufin some EU thing for taler 
+DESCRIPTION = libeufin some EU thing for taler payment system
 define BLURB
 endef
 

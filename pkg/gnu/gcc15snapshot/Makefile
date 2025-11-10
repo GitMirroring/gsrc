@@ -164,7 +164,9 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 #             CXXFLAGS+="--save-temps -Wall  -Wextra  -fno-split-stack"  \
 #             CPPFLAGS="-I. -I.. -fno-split-stack"
 # still doesn't fix it
-CONFIGURE_ARGS = GATHER_STATISTICS=true
+#
+# other curious problems, nonsolutions
+# CONFIGURE_ARGS = GATHER_STATISTICS=true
 BUILD_ARGS  =  "CFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   " \
              "CXXFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   "  \
              "CPPFLAGS=-I. -I.." 

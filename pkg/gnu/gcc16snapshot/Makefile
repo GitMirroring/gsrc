@@ -103,7 +103,7 @@ include config.mk
 # 
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-16 \
---enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada,cobol \
+--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol \
 --with-gmp=$(prefix) \
 --with-mpfr=$(prefix) \
 --with-mpc=$(prefix) \

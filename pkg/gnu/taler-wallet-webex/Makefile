@@ -23,7 +23,6 @@ GARVERSION = 0.5.0
 HOME_URL = http://taler.net
 DESCRIPTION =  Electronic payments for a liberal society, wallet-webex part
 define BLURB 
-
 endef
 
 ######################################################################
@@ -36,11 +35,13 @@ SIGFILES =  $(DISTNAME)-src.tar.gz.sig
 # apt install  nodejs-legacy cmdtest translate-toolkit node-typescript
 #
 # still doesn't compile
+# FIXME
 
 BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
+

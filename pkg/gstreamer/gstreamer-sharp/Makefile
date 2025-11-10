@@ -23,7 +23,7 @@
 
 NAME =    gstreamer-sharp
 GARNAME = gstreamer-sharp
-GARVERSION = 1.26.7
+GARVERSION = 1.26.8
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gstreamer C sharp/.NET bindings
 define BLURB

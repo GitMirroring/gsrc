@@ -1,4 +1,4 @@
-# Copyright ©2016-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2016-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    gstreamer
 GARNAME = gstreamer
-GARVERSION = 1.26.7
+GARVERSION = 1.26.8
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION =  multimedia core library and elements
 define BLURB

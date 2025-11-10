@@ -20,7 +20,7 @@
 
 NAME = taler-wallet
 GARNAME = taler-wallet
-GARVERSION = v0.13.1
+GARVERSION = v1.1.0
 HOME_URL = http://taler.net
 DESCRIPTION =  Electronic payments for a liberal society, wallet part
 define BLURB 

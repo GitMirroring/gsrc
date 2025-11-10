@@ -23,7 +23,7 @@
 
 NAME =    gst-editing-services
 GARNAME = gst-editing-services
-GARVERSION = 1.26.7
+GARVERSION = 1.26.8
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gstreamer editing services
 define BLURB

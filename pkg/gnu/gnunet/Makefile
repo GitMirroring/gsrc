@@ -42,6 +42,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS = libunistring libgcrypt libmicrohttpd  libextractor gnurl
+# libsodium etc
 LIBDEPS = 
 
 PACKAGE = gnunet
