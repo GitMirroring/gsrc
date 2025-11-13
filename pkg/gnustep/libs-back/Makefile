@@ -46,8 +46,7 @@ WORKOBJ  = $(WORKSRC)
 
 SIGFILES =
 
-
-BUILDDEPS = tools-make libs-base  libs-gui cairo
+BUILDDEPS =# tools-make libs-base  libs-gui cairo
 LIBDEPS =
 ######################################################################
 

@@ -40,5 +40,5 @@ WORKOBJ = $(WORKSRC)
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
-BUILD_ARGS = GNUSTEP_SYSTEM_ROOT=$(prefix)
+#BUILD_ARGS = GNUSTEP_SYSTEM_ROOT=$(prefix)
 

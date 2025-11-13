@@ -59,7 +59,7 @@ GIT_PATH = $(MASTER_SITES)$(MASTER_SUBDIR)/libs-base.git
 GIT_REVISION = master
 GITSRC =  $(DOWNLOADDIRGIT)/$(GARNAME)
 WORKSRC  = $(WORKDIR)/$(DISTNAME)
-WORKOBJ  = $(WORKSRC)-build
+WORKOBJ  = $(WORKSRC)
 
 SIGFILES =
 
@@ -71,7 +71,7 @@ include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
 CONFIGURE_ARGS = --enable-libffi --enable-nxconstantstring 
-BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types
+#BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types
 
 .PHONY: post-install 
 

@@ -43,11 +43,12 @@ SIGFILES =
 
 GITSRC =   $(DOWNLOADDIRGIT)/
 WORKSRC =  $(WORKDIR)/$(DISTNAME)
-WORKOBJ =  $(WORKDIR)/$(DISTNAME)-build
+WORKOBJ =  $(WORKSRC)
 
 BUILDDEPS = 
 LIBDEPS =
-
+CONFIGURE_SCRIPTS = gsrc
+BUILD_SCRIPTS = nothing
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -60,7 +61,16 @@ pre-extract: fetch
 	mkdir -p $(WORKOBJ)
 	cp -a $(GITSRC)/$(GARNAME)/*   $(WORKSRC)/ 
 
+configure-gsrc:
+	@echo configuring
+	cd $(WORKSRC) &&  ./configure --with-layout=fhs  --prefix=$(prefix)
+
+build-nothing:
+	@echo Nothing to compile, just do make install
+
 post-install:
 	make -C $(WORKSRC)/Documentation/ install
+#info files; not right,not using DEST...
+
 
 
