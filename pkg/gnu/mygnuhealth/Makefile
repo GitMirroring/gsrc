@@ -1,4 +1,4 @@
-# Copyright ©2021,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2024-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -15,13 +15,12 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
+
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME = mygnuhealth
 GARNAME = mygnuhealth
-GARVERSION =  2.2.0
+GARVERSION =  2.2.1
 HOME_URL = http://www.gnu.org/software/health/
 DESCRIPTION = personal health and hospital information system
 define BLURB
@@ -30,19 +29,18 @@ endef
 ######################################################################
 
 MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = health/mygnuhealth
+MASTER_SUBDIR = health/mygnuhealth/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-
+CONFIGURE_SCRIPTS = holdit
 ######################################################################
-
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-configure  pre-build build  install:
+configure-holdit pre-build build  install:
 	@echo
 	@echo
 	@echo
@@ -61,3 +59,4 @@ configure  pre-build build  install:
 	@echo
 	@echo
 	@echo
+
