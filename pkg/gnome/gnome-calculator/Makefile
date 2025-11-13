@@ -19,7 +19,7 @@
 
 NAME =    gnome-calculator
 GARNAME = gnome-calculator
-GARVERSION = 49.1
+GARVERSION = 49.1.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Desktop calculator
 define BLURB

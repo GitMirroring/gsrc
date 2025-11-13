@@ -20,7 +20,7 @@
 
 NAME =    gnome-usage
 GARNAME = gnome-usage
-GARVERSION = 48.rc
+GARVERSION = 48.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = view use of system resources, like memory and disk space.
 define BLURB

@@ -19,7 +19,7 @@
 
 NAME =    d-spy
 GARNAME = d-spy
-GARVERSION = 49.1
+GARVERSION = 49.2
 HOME_URL = https://wiki.gnome.org/Projects/
 DESCRIPTION = d-spy
 define BLURB

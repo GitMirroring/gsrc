@@ -19,7 +19,7 @@
 
 NAME =    bijiben
 GARNAME = bijiben
-GARVERSION = 40.1
+GARVERSION = 40.2
 HOME_URL = https://wiki.gnome.org/action/show/Apps/Notes
 DESCRIPTION = Simple note editor, Notes, formerly Bijiben (Notebook in Chinese)
 define BLURB

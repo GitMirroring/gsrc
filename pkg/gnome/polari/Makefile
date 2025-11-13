@@ -20,7 +20,7 @@
 
 NAME =    polari
 GARNAME = polari
-GARVERSION = 46.0
+GARVERSION = 49.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = An IRC Client for GNOME
 define BLURB
