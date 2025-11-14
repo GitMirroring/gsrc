@@ -44,7 +44,7 @@ include config.mk
 
 # to avoid downloading "googletest" which has some ssl keys problem. To be
 # firgured out someday.
-CMAKE_CONFIGURE_ARGS =  -DCMAKE_TLS_VERIFY=0 -DBUILD_TESTING=OFF 
+CMAKE_CONFIGURE_ARGS =  -DCMAKE_TLS_VERIFY=0 -DBUILD_TESTING=OFF  PROJ_LIB=$(prefix)/share
 
 
 # kludge

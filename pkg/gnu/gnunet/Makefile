@@ -21,7 +21,7 @@
 
 NAME = GNUnet
 GARNAME = gnunet
-GARVERSION = 0.25.2
+GARVERSION = 0.26.0
 HOME_URL = http://www.gnu.org/software/gnunet
 # see https://gnunet.org/generic-installation-instructions
 DESCRIPTION = Secured, decentralized, peer-to-peer networking framework

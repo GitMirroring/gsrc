@@ -20,7 +20,7 @@
 
 NAME =    GDAL
 GARNAME = gdal
-GARVERSION = 3.11.4
+GARVERSION = 3.12.0
 HOME_URL = http://www.gdal.org/
 DESCRIPTION = GDAL - Geospatial Data Abstraction Library   
 define BLURB

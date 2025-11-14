@@ -23,7 +23,7 @@
 
 NAME = GNUnet-fuse
 GARNAME = gnunet-fuse
-GARVERSION = 0.25.0
+GARVERSION = 0.26.0
 HOME_URL = http://www.gnu.org/software/gnunet/
 DESCRIPTION = A FUSE filesystem client for GNUnet
 define BLURB

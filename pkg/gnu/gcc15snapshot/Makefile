@@ -125,7 +125,7 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-lto \
 --enable-year2038 \
 --enable-multiarch \
---disable-multilib  \
+--enable-multilib  \
 --enable-nls \
 --enable-objc-gc=auto \
 --enable-plugin \
