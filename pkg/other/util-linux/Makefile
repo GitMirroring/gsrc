@@ -62,6 +62,6 @@ include config.mk
 # cd  ...-build && make ckeck
 #
 # might need to do this as root:
-# sudo chgrp tty /home/carl/gsrc/packages/util-linux-2.40-DEST/home/carl/gsrc/bin/wall
+# sudo chgrp tty .../gsrc/packages/util-linux-2.40-DEST/home/carl/gsrc/bin/wall
 
 
