@@ -19,49 +19,37 @@
 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = IceCat
+NAME = GNUzilla and IceCat
 GARNAME = icecat
-GARVERSION = 115.22.0-gnu1
+GARVERSION = 140.4.0-gnu1
 HOME_URL = http://www.gnu.org/software/gnuzilla/
-	# icecatbrowser.org
+	#  see also icecatbrowser.org
+	#  also in gnuzilla
 DESCRIPTION = Entirely free browser derived from Mozilla Firefox
 define BLURB
 IceCat is the GNU version of the Firefox browser.  It is entirely
 free software, which does not recommend non-free plugins and addons.
-It also features built-in privacy-protecting features.
+It also features built-in privacy-protecting features. A script to
+download Firefox source, modify it, and build icecat.
 endef
 
-# If you want different language pack add-ons, go to
-# http://ftp.gnu.org/gnu/icecat/_version_/langpacks/
-
 ######################################################################
-# https://git.savannah.gnu.org/cgit/gnuzilla.git/
-# MASTER_SITES = $(MASTER_GNU)
-# MASTER_SUBDIR = icecat/$(GARVERSION)/
 
-# https://software.classictetris.net/icecat/115.10.0esr/icecat-115.10.0-1gnu1.tar.bz2
-# https://software.classictetris.net/icecat/128.0esr/icecat-128.0-2gnu1.tar.bz2
-#MASTER_SITES =  https://software.classictetris.net/
-#MASTER_SUBDIR = icecat/128.0esr/
-
-# https://git.savannah.gnu.org/cgit/gnuzilla.git/snapshot/gnuzilla-115.22.0-gnu1.tar.gz
-MASTER_SITES = https://git.savannah.gnu.org/
+# https://cgit.git.savannah.gnu.org/cgit/gnuzilla.git/snapshot/gnuzilla-140.4.0-gnu1.tar.gz
+MASTER_SITES = https://cgit.git.savannah.gnu.org/
 MASTER_SUBDIR = cgit/gnuzilla.git/snapshot/
 
-# HINT: apt install cbindgen
 
-# note: 1.5 gigabyte tar.bz2 file
-DISTFILES = $(DISTNAME).tar.gz
+DISTFILES = gnuzilla-$(GARVERSION).tar.gz
 SIGFILES  = 
 
 BUILDDEPS = 
 LIBDEPS =
-#WORKSRC = $(WORKDIR)/icecat-115.13.0
-#WORKOBJ = $(WORKDIR)/icecat-115.13.0-1gnu1-build
+WORKSRC = $(WORKDIR)/gnuzilla-$(GARVERSION)
+WORKOBJ = $(WORKSRC)-build
 ######################################################################
-# this might not be necessary, works for me
-#CONFIGURE_OPTS = --without-wasm-sandboxed-libraries
-
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+# run scripts in WORKSRC to actually build it. Downloads the Firefox source, etc
 
