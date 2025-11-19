@@ -22,7 +22,7 @@
 NAME = Gforth
 GARNAME = gforth
 #GARVERSION = 0.7.3
-GARVERSION = 0.7.9_20251001
+GARVERSION = 0.7.9_20251119
 HOME_URL = https://gforth.org
 # or HOME_URL = https://www.gnu.org/software/gforth/
 DESCRIPTION = Forth interpreter, with virtual machine generator "vmgen"
