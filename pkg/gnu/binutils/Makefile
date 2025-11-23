@@ -56,5 +56,5 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS=-std=c17
+#BUILD_ARGS = CFLAGS=-std=c17
 

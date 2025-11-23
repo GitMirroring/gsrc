@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2019, 2020, 2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,11 +20,11 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = taler-merchant
-GARNAME = taler-merchant
-GARVERSION = 1.2.2
+NAME = donau
+GARNAME = donau
+GARVERSION = 1.2.1
 HOME_URL = http://taler.net
-DESCRIPTION = GNU Taler is a privacy-preserving payment system, merchant part.
+DESCRIPTION = GNU Taler is a privacy-preserving payment system, donau part.
 define BLURB
 endef
 
@@ -36,8 +36,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
-LIBDEPS = # libgcrypt gnunet
-# libjansson , ? some json thing; postgresql
+LIBDEPS = 
 
 ######################################################################
 

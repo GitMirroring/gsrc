@@ -21,13 +21,14 @@
 
 NAME = libeufin
 GARNAME = libeufin
-GARVERSION = 1.1.1
+GARVERSION = 1.2.0
 HOME_URL = http://taler.net
 DESCRIPTION = libeufin some EU thing for taler payment system
 define BLURB
 endef
 
 ######################################################################
+#  https://ftp.gnu.org/gnu/taler/libeufin-1.2.0.tar.gz
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = taler/
@@ -36,7 +37,7 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-WORKSRC = #(WORKDIR)/libeufin-v1.1.1-git-50219939-sources
+WORKSRC = $(WORKDIR)/libeufin-v1.2.0-git-31486849-sources 
 WORKOBJ = $(WORKSRC)
 ######################################################################
 
@@ -46,5 +47,5 @@ include config.mk
 # downloads a bunch java gradle etc stuff....
 # FIXME
 #   What is it doing?
-#
+
 

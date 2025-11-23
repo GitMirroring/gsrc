@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2019,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019,2024-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -34,16 +34,32 @@ endef
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = $(DISTNAME).tar.gz.sig
+#DISTFILES = $(DISTNAME).tar.gz
+#SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
-LIBDEPS =
 # readline # lapack
+LIBDEPS =
+CONFIGURE_SCRIPTS =
+BUILD_SCRIPTS = me
 # move to SVN
-
+#svn co svn://svn.savannah.gnu.org/apl/trunk
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+SVN_PATH = svn://svn.savannah.gnu.org/apl/trunk
+SVN_CO_OPTS =
+WORKSRC = $(WORKDIR)/apl/trunk
+WORKOBJ = $(WORKSRC)
+
+fetch:
+	mkdir -p $(WORKSRC)
+	cd $(WORKSRC) && svn co $(SVN_CO_OPTS) $(SVN_PATH)
+
+build-me:
+	cd $(WORKSRC) &&  make all
+
+
