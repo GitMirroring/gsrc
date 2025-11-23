@@ -20,7 +20,7 @@
 
 NAME =    OpenEXR
 GARNAME = openexr
-GARVERSION = 3.4.0
+GARVERSION = 3.4.4
 HOME_URL = http://www.openexr.com
 DESCRIPTION =  high dynamic-range (HDR) 2-d image file format
 define BLURB
