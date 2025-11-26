@@ -20,16 +20,15 @@
 
 NAME =    curl
 GARNAME = curl
-GARVERSION =  8.16.0
+GARVERSION =  8.17.0
 HOME_URL = http://www.curl.se
 DESCRIPTION = Download files from internet with command line
 define BLURB
 endef
 ######################################################################
-#https://github.com/curl/curl/releases/download/curl-8_12_0/curl-8.12.0.tar.xz
+#https://github.com/curl/curl/releases/download/curl-8_17_0/curl-8.17.0.tar.xz
 MASTER_SITES =  https://github.com/
-MASTER_SUBDIR = curl/curl/releases/download/curl-8_16_0/
-# FIXME
+MASTER_SUBDIR = curl/curl/releases/download/curl-8_17_0/
 
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES  = $(DISTNAME).tar.xz.asc
