@@ -40,6 +40,7 @@ LIBDEPS =
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/varb.mk
 include config.mk
 
 #HINT; install needs to be worked on

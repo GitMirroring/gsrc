@@ -1,4 +1,4 @@
-# Copyright © 2016-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -26,7 +26,7 @@
 
 NAME = gnuastro
 GARNAME = gnuastro
-GARVERSION = 0.23
+GARVERSION = 0.24
 HOME_URL = http://www.gnu.org/software/gnuastro/
 DESCRIPTION =  Astronomy utilities
 define BLURB

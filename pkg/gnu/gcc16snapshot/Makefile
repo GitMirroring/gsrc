@@ -116,7 +116,7 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-gtk-cairo \
 --enable-host-shared  \
 --enable-libmpx \
---enable-libssp \
+--disable-libssp \
 --enable-libda \
 --enable-libgm2 \
 --enable-libstdcxx-debug \
@@ -164,8 +164,8 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 #             CXXFLAGS+="--save-temps -Wall  -Wextra  -fno-split-stack"  \
 #             CPPFLAGS="-I. -I.. -fno-split-stack"
 # still doesn't fix it
-BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  " \
-             CXXFLAGS+="--save-temps -Wall  -Wextra  "  \
+BUILD_ARGS  =   CFLAGS+="-v --save-temps -Wall  -Wextra  " \
+             CXXFLAGS+="-v --save-temps -Wall  -Wextra  "  \
              CPPFLAGS="-I. -I.. "
 	     
 
