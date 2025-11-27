@@ -21,7 +21,7 @@
 
 NAME =    mutter
 GARNAME = mutter
-GARVERSION = 49.1.1
+GARVERSION = 49.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Window and compositing manager based on Clutter
 define BLURB

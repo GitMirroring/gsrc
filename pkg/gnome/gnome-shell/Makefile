@@ -21,7 +21,7 @@
 
 NAME =    gnome-shell
 GARNAME = gnome-shell
-GARVERSION = 49.0
+GARVERSION = 49.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Next generation GNOME desktop shell
 define BLURB

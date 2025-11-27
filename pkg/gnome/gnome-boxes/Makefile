@@ -21,7 +21,7 @@
 NAME =    gnome-boxes
 GARNAME = gnome-boxes
 #GARVERSION = 48.0
-GARVERSION = 49.0
+GARVERSION = 49.1
 HOME_URL = https://wiki.gnome.org/Apps/Boxes 
 DESCRIPTION = A simple GNOME 3 application to access remote or virtual systems
 define BLURB

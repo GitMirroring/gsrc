@@ -20,7 +20,7 @@
 
 NAME =    gnome-user-share
 GARNAME = gnome-user-share
-GARVERSION = 48.1
+GARVERSION = 48.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Launch User Sharing if enabled
 define BLURB
