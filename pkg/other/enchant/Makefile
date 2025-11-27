@@ -1,4 +1,4 @@
-# Copyright © 2019,2021,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019,2021,2024-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    enchant
 GARNAME = enchant
-GARVERSION = 2.6.5
+GARVERSION = 2.8.14
 HOME_URL = http://github.com/AbiWord/enchant
 DESCRIPTION =  common interface to many spell-checkers
 define BLURB
