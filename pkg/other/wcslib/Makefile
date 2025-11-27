@@ -23,7 +23,7 @@
 NAME =    wcslib
 GARNAME = wcslib
 GARVERSION = 8.4
-HOME_URL = http://www.atnf.csiro.au/people/mcalabre/WCS/index.html
+HOME_URL = https://www.atnf.csiro.au/people/mcalabre/WCS/index.html
 	# see also https://www.gnu.org/software/gnuastro/manual/html_node/
 DESCRIPTION =  astronomical World Coordinate System library
 define BLURB 
@@ -34,7 +34,7 @@ endef
 
 ######################################################################
 # http://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-7.12.tar.bz2
-MASTER_SITES = http://www.atnf.csiro.au/
+MASTER_SITES = https://www.atnf.csiro.au/
 MASTER_SUBDIR =  people/mcalabre/WCS/
 DISTFILES =  $(DISTNAME).tar.bz2
 SIGFILES = 
