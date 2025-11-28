@@ -51,10 +51,12 @@ include ../../../gar/gar.lib/info.mk
 include config.mk
 
 
-BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
+BUILD_ARGS = CFLAGS="-std=c99 -Wno-implicit-function-declaration"
 
 a:
 	$(INSTALL_INFO) $(WORKSRC)/doc/gurgle.info
+
+
 
 
 
