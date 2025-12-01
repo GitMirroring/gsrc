@@ -21,7 +21,7 @@
 
 NAME =    gst-plugins-good
 GARNAME = gst-plugins-good
-GARVERSION = 1.26.8
+GARVERSION = 1.26.9
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gst-plugins-good 
 define BLURB

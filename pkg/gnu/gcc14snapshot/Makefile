@@ -119,9 +119,9 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-year2038 \
 --enable-gtk-cairo \
 --enable-host-shared  \
---enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada \
+--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d \
 --enable-libmpx \
---enable-libssp \
+--disable-libssp \
 --enable-libda \
 --enable-libgm2 \
 --enable-libgrust \

@@ -106,7 +106,7 @@ include config.mk
 # Many options at just what Debian ships with;
 # adjust as necessary.
 # 
-# no rust, in gcc13 
+# no rust, in gcc13 ; ada
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-13 \
 --with-gmp=$(prefix) \
@@ -120,9 +120,9 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-gnu-unique-object \
 --enable-gtk-cairo \
 --enable-host-shared  \
---enable-languages=c,c++,fortran,go,jit,objc,obj-c++,m2,d,ada \
+--enable-languages=c,c++,fortran,go,jit,objc,obj-c++,m2,d \
 --enable-libmpx \
---enable-libssp \
+--disable-libssp \
 --enable-libada \
 --enable-libgm2 \
 --enable-libstdcxx-debug \
