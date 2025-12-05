@@ -18,7 +18,7 @@
 
 NAME = a2ps
 GARNAME = a2ps
-GARVERSION = 4.15.7
+GARVERSION = 4.15.8
 HOME_URL = http://www.gnu.org/software/a2ps/
 DESCRIPTION = Any file to PostScript, including pretty-printing
 define BLURB
