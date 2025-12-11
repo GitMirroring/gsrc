@@ -22,7 +22,7 @@
 
 NAME = Mailutils
 GARNAME = mailutils
-GARVERSION = 3.20
+GARVERSION = 3.21
 HOME_URL = http://www.gnu.org/software/mailutils/
 	#	http://mailutils.org
 DESCRIPTION = Utilities and library for reading and serving mail
