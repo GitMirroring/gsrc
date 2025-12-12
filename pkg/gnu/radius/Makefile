@@ -1,4 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2025 
 #
 # This file is part of GSRC.
 #
@@ -17,7 +18,7 @@
 
 NAME = Radius
 GARNAME = radius
-GARVERSION = 1.6.1
+GARVERSION = 1.7
 HOME_URL = http://www.gnu.org/software/radius/
 DESCRIPTION = Authentication and accounting services and daemon
 define BLURB
@@ -40,6 +41,8 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS="-Wno-incompatible-pointer-types -Wno-old-style-definition"
