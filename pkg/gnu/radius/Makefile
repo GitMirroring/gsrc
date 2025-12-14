@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2025 
+# Copyright © 2025  ch
 #
 # This file is part of GSRC.
 #
