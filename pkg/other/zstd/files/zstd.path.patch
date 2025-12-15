@@ -1,0 +1,13 @@
+diff -x config.log -x config.status -ru tmp/zstd-1.5.7/programs/Makefile work/zstd-1.5.7/programs/Makefile
+--- tmp/zstd-1.5.7/programs/Makefile	2025-02-18 16:04:24.000000000 -0800
++++ work/zstd-1.5.7/programs/Makefile	2025-12-14 19:03:30.256905426 -0800
+@@ -379,7 +379,8 @@
+ # directory variables : GNU conventions prefer lowercase
+ # see https://www.gnu.org/prep/standards/html_node/Makefile-Conventions.html
+ # support both lower and uppercase (BSD), use uppercase in script
+-prefix      ?= /usr/local
++#prefix      ?= /usr/local
++prefix      ?= /opt/gsrc
+ PREFIX      ?= $(prefix)
+ exec_prefix ?= $(PREFIX)
+ bindir      ?= $(exec_prefix)/bin
