@@ -64,4 +64,5 @@ include config.mk
 # might need to do this as root:
 # sudo chgrp tty .../gsrc/packages/util-linux-2.40-DEST/home/carl/gsrc/bin/wall
 
+CONFIGURE_ARGS = --disable-liblastlog2 
 

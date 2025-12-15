@@ -59,8 +59,7 @@ CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 # break-before-br: yes
 #
 #
-#  #!/bin/sh
-#  #   /usr/bin/tidy   -config ~/.tidyrc  $@ | \
+#  #  #!/usr/bin/tidy   -config ~/.tidyrc  $@ | \
    #   sed -e "s/\n\?<p>/\n<p>/g" | \
    #   sed -e "s/\n\?<blockquote>/\n<blockquote>/g" | \
    #   sed -e "s/\n\?<li>/\n<li>/g"  | \

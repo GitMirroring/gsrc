@@ -422,6 +422,13 @@ extract-%.zip:
 	unzip -o $(patsubst extract-%,$(DOWNLOADDIR)/%,$@) -d $(EXTRACTDIR)
 	$(MAKECOOKIE)
 
+# rule to extract files with zstd
+extract-%.tar.zst:
+	@printf "[$(OK)extract$(OFF)] $(MSG)Extracting $(OFF)$(patsubst extract-%,$(DOWNLOADDIR)/%,$@)\n"
+	tar -xf $(patsubst extract-%,$(DOWNLOADDIR)/%,$@) $(TAR_OPTS) -C $(EXTRACTDIR)
+	$(MAKECOOKIE)
+
+
 # rule to extract RPM files with rpm2cpio and cpio
 extract-%.rpm:
 	@printf "[$(OK)extract$(OFF)] $(MSG)Extracting $(OFF)$(patsubst extract-%,$(DOWNLOADDIR)/%,$@)\n"

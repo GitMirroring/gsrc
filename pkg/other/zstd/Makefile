@@ -21,7 +21,7 @@
 
 NAME = zstd
 GARNAME = zstd
-GARVERSION = 1.5.6
+GARVERSION = 1.5.7
 HOME_URL =  https://github.com/facebook/zstd
 DESCRIPTION = zstd is free general-purpose data compression 
 define BLURB
@@ -41,14 +41,14 @@ LIBDEPS =
 CONFIGURE_SCRIPTS =
 # really WORKOBJ is handled by it's own makefile
 WORKOBJ = $(WORKSRC)
+
+BUILD_SCRIPTS = me
+INSTALL_SCRIPTS = me
+PATCHFILES = zstd.path.patch
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
-
-$prefix=$(prefix)
-BUILD_SCRIPTS = me
-#INSTALL_SCRIPTS = me
 
 .PHONY: build-me install-me 
 
@@ -61,10 +61,10 @@ build-me:
 install-me: 
 	@echo ------------------
 	@echo ------------------
-	@echo note:  INSTALL_ARGS=$(INSTALL_ARGS) 
+	@echo note:  INSTALL_ARGS=$(INSTALL_ARGS) prefix=$(prefix)
 	@echo ------------------
-	cd $(WORKSRC)/lib      && $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
-	cd $(WORKSRC)/programs && $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
+	cd $(WORKSRC)/lib      && $(MAKE) prefix=$(prefix)  DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
+	cd $(WORKSRC)/programs && $(MAKE) prefix=$(prefix)  DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
 	@echo ------------------
 	@echo ------------------
 
@@ -73,11 +73,14 @@ ime:
 	@echo ------------------
 	@echo note:  INSTALL_ARGS=$(INSTALL_ARGS) prefix=$(prefix)
 	@echo ------------------
-	@echo cd $(WORKSRC)/lib      && $(MAKE) prefix=$(prefix) $(INSTALL_ARGS)  install
-	@echo cd $(WORKSRC)/programs && $(MAKE) prefix=$(prefix) $(INSTALL_ARGS)  install
+	@echo cd $(WORKSRC)/lib      && echo $(MAKE) prefix=$(prefix) $(INSTALL_ARGS)  install
+	@echo cd $(WORKSRC)/programs && echo $(MAKE) prefix=$(prefix) $(INSTALL_ARGS)  install
+	@echo cd $(WORKSRC)/lib      && echo $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
+	@echo cd $(WORKSRC)/programs && echo $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
 	@echo ------------------
 	@echo ------------------
-
 
 a:
+	@echo  aaaa $(prefix)
 	@echo  aaaa $(packageDESTDIR)
+

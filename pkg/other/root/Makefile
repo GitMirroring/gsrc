@@ -30,7 +30,7 @@ functionalities needed to deal with big data processing, statistical
 analysis, visualisation and storage. It is mainly written in C++ but
 integrated with other languages such as Python and R. Include a C++
 interpreter, which might be the most widely usable feature. 
-Source code tar.gz is 196 megabytes.
+Source code tar.gz is 396 megabytes.
 endef
 
 ######################################################################

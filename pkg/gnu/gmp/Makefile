@@ -22,7 +22,7 @@
 
 NAME = GNU MP
 GARNAME = gmp
-GARVERSION = 6.3.0
+GARVERSION =  6.3.0-20250919151842
 HOME_URL = http://www.gnu.org/software/gmp/
 DESCRIPTION = Multiple-precision arithmetic library
 define BLURB
@@ -34,12 +34,14 @@ aimed at use in, for example, cryptography and computational algebra.
 endef
 
 ######################################################################
-
-MASTER_SITES = $(MASTER_GNU) 
+#https://gmplib.org/download/snapshot/gmp-next/gmp-6.3.0-20250919151842.tar.zst
 # other site, gmplib.org...
-MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.lz
-SIGFILES =  $(DISTNAME).tar.lz.sig
+#MASTER_SITES = $(MASTER_GNU) 
+#MASTER_SUBDIR = $(GARNAME)/
+MASTER_SITES =  https://gmplib.org/
+MASTER_SUBDIR = download/snapshot/gmp-next/
+DISTFILES = $(DISTNAME).tar.zst
+SIGFILES = # $(DISTNAME).tar.lz.sig
 
 BUILDDEPS =
 LIBDEPS =

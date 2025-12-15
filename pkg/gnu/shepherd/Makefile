@@ -21,7 +21,7 @@
 
 NAME = shepherd
 GARNAME = shepherd
-GARVERSION = 1.0.8
+GARVERSION = 1.0.9
 HOME_URL = http://www.gnu.org/software/shepherd/
 DESCRIPTION = System service manager daemon 
 define BLURB
