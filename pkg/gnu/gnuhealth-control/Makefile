@@ -21,7 +21,7 @@
 
 NAME = gnuhealth-control
 GARNAME = gnuhealth-control
-GARVERSION = 5.0.1
+GARVERSION = 5.0.2
 HOME_URL = http://www.gnu.org/software/health/
 DESCRIPTION = Health and hospital information system; control
 define BLURB

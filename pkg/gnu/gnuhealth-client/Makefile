@@ -20,7 +20,7 @@
 
 NAME = gnuhealth-client
 GARNAME = gnuhealth-client
-GARVERSION = 5.0.0
+GARVERSION = 5.0.1
 HOME_URL = http://www.gnu.org/software/health/
 DESCRIPTION = Health and hospital information system; client
 define BLURB
