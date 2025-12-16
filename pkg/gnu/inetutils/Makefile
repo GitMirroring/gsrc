@@ -22,7 +22,7 @@
 
 NAME = inetutils
 GARNAME = inetutils
-GARVERSION = 2.6
+GARVERSION = 2.7
 HOME_URL = http://www.gnu.org/software/inetutils/
 DESCRIPTION = Basic networking utilities
 define BLURB
@@ -37,8 +37,8 @@ endef
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.xz
-SIGFILES = $(DISTNAME).tar.xz.sig
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS = #ncurses
 LIBDEPS =
