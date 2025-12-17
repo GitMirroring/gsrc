@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2022, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME =    libxslt
 GARNAME = libxslt
-GARVERSION = 1.1.43
+GARVERSION = 1.1.45
 HOME_URL = https://gitlab.gnome.org/GNOME/libxslt/-/wikis
 # xmlsoft.org
 DESCRIPTION = XSLT transformation library 
