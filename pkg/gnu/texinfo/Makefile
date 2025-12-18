@@ -55,7 +55,8 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-BUILD_ARGS =  CFLAGS="-std=c89"
+#BUILD_ARGS =  CFLAGS="-std=c11"
+BUILD_ARGS = CFLAGS="-Wno-compare-distinct-pointer-types -std=c11"
 # some bug
 
 

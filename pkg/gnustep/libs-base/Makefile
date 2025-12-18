@@ -63,7 +63,8 @@ WORKOBJ  = $(WORKSRC)
 
 SIGFILES =
 
-BUILDDEPS = tools-make libffi gnutls libxml2
+BUILDDEPS = tools-make libffi libxml2
+#gnutls
 LIBDEPS =
 ######################################################################
 

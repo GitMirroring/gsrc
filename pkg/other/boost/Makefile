@@ -21,7 +21,7 @@
 
 NAME =       boost
 GARNAME =    boost
-GARVERSION = 1.89.0
+GARVERSION = 1.90.0
 HOME_URL =   http://www.boost.org
 DESCRIPTION =  Peer-reviewed portable C++ source libraries.
 define BLURB
@@ -34,20 +34,19 @@ libraries are suitable for eventual standardization.
 endef
 LICENSE =  Boost Software License, Version 1.0
 
-
 ######################################################################
-# https://archives.boost.io/release/1.88.0/source/boost_1_88_0.7z
 # https://github.com/boostorg/boost/releases/download/boost-1.89.0.beta1/boost-1.89.0.beta1-cmake.7z
-#MASTER_SITES = https://archives.boost.io/
+# https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2
+MASTER_SITES = https://archives.boost.io/
 	# fixed: . vs _
-#GARVERSIONDOT:= $(subst _,.,$(GARSHORT))
-#MASTER_SUBDIR  = release/$(GARVERSIONDOT)/source/
-MASTER_SITES = https://github.com/
-MASTER_SUBDIR = boostorg/boost/releases/download/boost-$(GARVERSION)/
-DISTFILES =   $(GARNAME)-$(GARVERSION)-cmake.7z
+MASTER_SUBDIR  = release/$(GARVERSION)/source/
+#MASTER_SITES = https://github.com/
+#MASTER_SUBDIR = boostorg/boost/releases/download/boost-$(GARVERSION)/
+GARVERSIONUNDER:= $(subst .,_,$(GARVERSION))
+DISTFILES =   $(GARNAME)_$(GARVERSIONUNDER).tar.bz2
 SIGFILES  =
 
-WORKSRC =  $(WORKDIR)/$(GARNAME)-$(GARVERSION)
+WORKSRC =  $(WORKDIR)/$(GARNAME)_$(GARVERSIONUNDER)
 WORKOBJ = $(WORKSRC)
 
 CONFIGURE_SCRIPTS = 
@@ -65,9 +64,9 @@ include config.mk
 
 .PHONY: pre-build build-customboost custom-pre-install
 
-extract:
-	cd $(WORKDIR)  &&  7z x ../download/$(DIST)
-	$(MAKECOOKIE)
+#extract:
+#	cd $(WORKDIR)  &&  7z x ../download/$(DIST)
+#	$(MAKECOOKIE)
 
 	
 # is this right? works...

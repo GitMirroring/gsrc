@@ -20,7 +20,7 @@
 
 NAME =    gegl
 GARNAME = gegl
-GARVERSION = 0.4.62
+GARVERSION = 0.4.66
 HOME_URL = http://www.gimp.org/
 DESCRIPTION = GEGL (Generic Graphics Library) is a data flow based image processing framework.
 define BLURB

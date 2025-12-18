@@ -20,7 +20,7 @@
 
 NAME =    swig
 GARNAME = swig
-GARVERSION = 4.3.1
+GARVERSION = 4.4.1
 HOME_URL = http://www.swig.org
 DESCRIPTION =  swig interface compiler
 define BLURB
@@ -33,16 +33,22 @@ endef
 
 ######################################################################
 #http://prdownloads.sourceforge.net/swig/swig-4.1.1.tar.gz
-MASTER_SITES = http://prdownloads.sourceforge.net/
-MASTER_SUBDIR =  swig/
-DISTFILES = $(DISTNAME).tar.gz 
+#https://github.com/swig/swig/archive/refs/tags/v4.4.1.tar.gz
+MASTER_SITES = http://github.com/
+MASTER_SUBDIR =  swig/swig/archive/refs/tags/
+DISTFILES = v$(GARVERSION).tar.gz 
 SIGFILES = 
 
 BUILDDEPS =
 LIBDEPS =
-
+#USE_AUTORECONF = yes
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+pre-configure:
+	@echo  autoreconf first
+	cd $(WORKSRC) && ./autogen.sh
+
 
