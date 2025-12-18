@@ -50,4 +50,7 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+# HINT   use:   make -i 
+# ignore errors
+
 
