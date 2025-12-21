@@ -23,7 +23,7 @@
 NAME = R
 GARNAME = r
 UPSTREAMNAME = R
-GARVERSION = 4.5.1
+GARVERSION = 4.5.2
 HOME_URL = https://cran.r-project.org 
 # mirrors https://cran.r-project.org/mirrors.html
 DESCRIPTION = Environment for statistical computing and graphics
