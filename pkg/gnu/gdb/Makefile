@@ -21,7 +21,7 @@
 
 NAME = GNU debugger
 GARNAME = gdb
-GARVERSION = 16.3
+GARVERSION = 17.1
 HOME_URL = http://www.gnu.org/software/gdb/
 DESCRIPTION = The GNU debugger
 define BLURB
