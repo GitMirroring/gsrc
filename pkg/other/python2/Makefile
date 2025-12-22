@@ -47,6 +47,7 @@ INSTALL_SCRIPTS = $(WORKSRC)/Makefile links pth
 BUILDDEPS =
 LIBDEPS =
 
+WORKSRC = $(WORKDIR)/Python-$(GARVERSION)
 WORKOBJ = $(WORKSRC)
 # Hint :  needs libbz2 in system before compiling this
 ######################################################################
@@ -73,4 +74,6 @@ install-pth:
 post-install:
 	sed -i 's|$(packageprefix)|$(prefix)|' $(packagedir)/bin/python$(BASEVERSION)-config
 	$(MAKECOOKIE)
+
+BUILD_ARGS = CFLAGS=-std=c11
 

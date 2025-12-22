@@ -21,7 +21,7 @@
 
 NAME = xterm
 GARNAME = xterm
-GARVERSION = 401
+GARVERSION = 405
 
 HOME_URL = http://invisible-island.net/xterm
 DESCRIPTION = famous terminal for X displays
