@@ -20,7 +20,7 @@
 
 NAME = taler-wallet
 GARNAME = taler-wallet
-GARVERSION = v1.1.0
+GARVERSION = 1.3.1
 HOME_URL = http://taler.net
 DESCRIPTION =  Electronic payments for a liberal society, wallet part
 define BLURB 
@@ -39,10 +39,14 @@ SIGFILES =  $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-#WORKSRC = the usual
+WORKSRC = $(WORKDIR)/taler-wallet-v$(GARVERSION)
 WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+build:
+	@echo unimplimented
+
 

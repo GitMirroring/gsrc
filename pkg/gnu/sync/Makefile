@@ -21,7 +21,7 @@
 
 NAME = sync
 GARNAME = sync
-GARVERSION = 1.1.0
+GARVERSION = 1.3.0
 HOME_URL = http://taler.net
 DESCRIPTION =  An HTTP server that allows clients to backup sensitive data.
 define BLURB

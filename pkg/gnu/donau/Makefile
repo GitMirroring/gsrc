@@ -22,7 +22,7 @@
 
 NAME = donau
 GARNAME = donau
-GARVERSION = 1.2.1
+GARVERSION = 1.3.0
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler is a privacy-preserving payment system, donau part.
 define BLURB

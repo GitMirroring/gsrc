@@ -22,7 +22,8 @@
 
 NAME = JACAL
 GARNAME = jacal
-GARVERSION = 1c8
+GARVERSION = 1c7
+#GARVERSION = 1c8 seems to have disappeared
 HOME_URL =  http://www.gnu.org/software/jacal
 DESCRIPTION = Symbolic mathematics system in scheme
 define BLURB
@@ -48,7 +49,7 @@ LIBDEPS = slib
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 

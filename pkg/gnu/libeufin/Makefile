@@ -21,7 +21,7 @@
 
 NAME = libeufin
 GARNAME = libeufin
-GARVERSION = 1.2.0
+GARVERSION = 1.3.0
 HOME_URL = http://taler.net
 DESCRIPTION = libeufin some EU thing for taler payment system
 define BLURB
@@ -37,7 +37,7 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-WORKSRC = $(WORKDIR)/libeufin-v1.2.0-git-31486849-sources 
+WORKSRC = $(WORKDIR)/libeufin-v1.3.0-git-96b71124-sources
 WORKOBJ = $(WORKSRC)
 ######################################################################
 
