@@ -49,7 +49,8 @@ DISTFILES =
 
 GITSRC =   $(DOWNLOADDIRGIT)/$(GARNAME)
 WORKSRC =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)
-WORKOBJ =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)-build
+#WORKOBJ =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)-build
+WORKOBJ =  $(WORKSRC)
 
 ######################################################################
 

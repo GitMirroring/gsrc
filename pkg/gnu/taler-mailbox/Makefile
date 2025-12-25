@@ -22,7 +22,7 @@
 
 NAME = taler-mailbox
 GARNAME = taler-mailbox
-GARVERSION = 1.0.0
+GARVERSION = 1.1.0
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler-mailbox is part of a privacy-preserving payment system
 define BLURB

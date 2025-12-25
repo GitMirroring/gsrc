@@ -22,7 +22,7 @@
 
 NAME = taldir
 GARNAME = taldir
-GARVERSION = 1.0.5
+GARVERSION = 1.1.0
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taldir is part of a privacy-preserving payment system
 define BLURB
