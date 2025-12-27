@@ -22,7 +22,7 @@
 
 NAME = HyPhy
 GARNAME = hyphy
-GARVERSION = 2.5.59
+GARVERSION = 2.5.93
 HOME_URL = http://www.hyphy.org
 DESCRIPTION = Hypothesis testing using Phylogenies
 define BLURB
@@ -48,6 +48,6 @@ LIBDEPS =
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-CMAKE_CONFIGURE_ARGS += -DINSTALL_PREFIX=$(prefix)
+CMAKE_CONFIGURE_ARGS += -DINSTALL_PREFIX=$(prefix) -DCMAKE_POLICY_VERSION_MINIMUM=3.5 
 
-
+# note: https://anaconda.org/channels/bioconda/packages/hyphy/overview
