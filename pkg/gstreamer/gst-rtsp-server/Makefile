@@ -23,7 +23,7 @@
 
 NAME =    gst-rtsp-server
 GARNAME = gst-rtsp-server
-GARVERSION = 1.26.9
+GARVERSION = 1.26.10
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gstreamer RTSP server
 define BLURB

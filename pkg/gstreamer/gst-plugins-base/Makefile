@@ -20,7 +20,7 @@
 
 NAME =    gst-plugins-base
 GARNAME = gst-plugins-base
-GARVERSION = 1.26.9
+GARVERSION = 1.26.10
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gst-plugins-base, essential exemplary set of elements
 define BLURB
