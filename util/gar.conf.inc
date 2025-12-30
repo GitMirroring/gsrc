@@ -2,7 +2,7 @@ keyring:
 	$(MAKE) fetch checksig GPGV=gpgcheck
 	make-keyring download/$(SIGFILES)
 	echo "Added gpg-keyring for $(GARNAME)" > logmsg.keyring
-	gpg2 --with-fingerprint gpg-keyring | egrep '(^pub|^sub|^ +Key fingerprint)'>> logmsg.keyring
+	gpg --with-fingerprint gpg-keyring | egrep '(^pub|^sub|^ +Key fingerprint)'>> logmsg.keyring
 	bzr add gpg-keyring
 	#bzr commit -F logmsg.keyring gpg-keyring
 	#rm logmsg.keyring
