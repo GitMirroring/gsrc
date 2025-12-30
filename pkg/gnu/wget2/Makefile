@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2019, 2021-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2019, 2021-2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 #
 NAME = Wget2
 GARNAME = wget2
-GARVERSION = 2.2.0
+GARVERSION = 2.2.1
 HOME_URL = http://www.gnu.org/software/wget/
 DESCRIPTION = Non-interactive command-line utility for downloading files
 define BLURB
@@ -47,3 +47,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
