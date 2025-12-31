@@ -40,8 +40,6 @@ endef
 #HINT: working C++ compiler to compile gcc....
 
 ######################################################################
-# https://gcc.gnu.org/pub/gcc/snapshots/
-
 MASTER_SITES = https://gcc.gnu.org/
 MASTER_SUBDIR = pub/gcc/snapshots/$(GARVERSION)/
 #MASTER_SITES = $(MASTER_GNU)
@@ -142,12 +140,12 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --without-cuda-driver  \
 --with-tune=generic \
 --disable-vtable-verify  \
---disable-werror 
+--disable-werror \
+--enable-bootstrap 
 
 
 #  -m32 -m32x?
 
-#--enable-bootstrap \
 #--build=x86_64-linux-gnu \
 #--host=x86_64-linux-gnu \
 #--target=x86_64-linux-gnu 
@@ -156,20 +154,12 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 # enable-bootstrap might not be necessary, but it solves some problems
 # of building when not using recent gcc to build.
 
-# due to compile problems with gccgo
-#
-# adjust if needed. ad hoc
-
-#BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  -fno-split-stack" \
-#             CXXFLAGS+="--save-temps -Wall  -Wextra  -fno-split-stack"  \
-#             CPPFLAGS="-I. -I.. -fno-split-stack"
-# still doesn't fix it
 #
 # other curious problems, nonsolutions
 # CONFIGURE_ARGS = GATHER_STATISTICS=true
-BUILD_ARGS  =  "CFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   " \
-             "CXXFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   "  \
-             "CPPFLAGS=-I. -I.." 
+#BUILD_ARGS  =  "CFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   " \
+#             "CXXFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   "  \
+#             "CPPFLAGS=-I. -I.." 
 # --save-temps
 	     
 
