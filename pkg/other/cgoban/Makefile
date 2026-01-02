@@ -1,4 +1,4 @@
-# Copyright © 2019,2020,2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2019,2020,2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -51,7 +51,6 @@ DISTFILES = $(DISTNAME).tar.gz
 
 SIGFILES =
 
-#INSTALL_SCRIPTS =
 BUILDDEPS =
 LIBDEPS =
 
@@ -60,4 +59,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/varb.mk
 include config.mk
-
+BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types
