@@ -18,7 +18,7 @@
 
 NAME = ffmpeg
 GARNAME = ffmpeg
-GARVERSION = 8.0
+GARVERSION = 8.0.1
 HOME_URL =  http://ffmpeg.org
 DESCRIPTION = video player, transcoder, video format converter, etc
 define BLURB

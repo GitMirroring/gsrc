@@ -24,7 +24,7 @@
 
 NAME = Texinfo
 GARNAME = texinfo
-GARVERSION = 7.1.1
+GARVERSION = 7.2
 RELEASE =
 HOME_URL = http://www.gnu.org/software/texinfo/
 DESCRIPTION = The GNU documentation format
@@ -55,8 +55,5 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-#BUILD_ARGS =  CFLAGS="-std=c11"
-BUILD_ARGS = CFLAGS="-Wno-compare-distinct-pointer-types -std=c11"
-# some bug
 
 

@@ -22,7 +22,7 @@
 
 NAME = tramp
 GARNAME = tramp
-GARVERSION = 2.8.0
+GARVERSION = 2.8.1
 HOME_URL = http://www.gnu.org/software/tramp/
 DESCRIPTION = Transparent Remote Access, Multiple Protocol GNU Emacs package
 define BLURB
@@ -45,17 +45,9 @@ LIBDEPS =
 
 WORKOBJ = $(WORKSRC)
 
-INFO_FILES = tramp.info	
-
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-post-build: build
-	cp $(WORKOBJ)/info/tramp  $(WORKOBJ)/info/tramp.info
-
-post-install:
-	$(INSTALL_INFO)  $(WORKOBJ)/info/tramp.info
-	
