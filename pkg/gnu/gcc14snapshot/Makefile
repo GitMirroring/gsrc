@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 14 development version
 GARNAME = gcc14snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 14-20251226
+GARVERSION = 14-20260102
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 14 snapshot
 define BLURBR
@@ -119,7 +119,7 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-year2038 \
 --enable-gtk-cairo \
 --enable-host-shared  \
---enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d \
+--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada \
 --enable-libmpx \
 --disable-libssp \
 --enable-libda \
