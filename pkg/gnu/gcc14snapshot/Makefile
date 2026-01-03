@@ -102,7 +102,7 @@ include config.mk
 # note: at end --target=x86_64-linux-gnu
 # Many options at just what Debian ships with;
 # adjust as necessary.
- 
+# ada 
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-14 \
 --with-gmp=$(prefix) \
@@ -119,7 +119,7 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-year2038 \
 --enable-gtk-cairo \
 --enable-host-shared  \
---enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada \
+--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d \
 --enable-libmpx \
 --disable-libssp \
 --enable-libda \
@@ -163,9 +163,9 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 
 # adjust if needed. ad hoc
 
-BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  " \
-             CXXFLAGS+="--save-temps -Wall  -Wextra  "  \
-             CPPFLAGS="-I. -I.. " 
+#BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  " \
+#             CXXFLAGS+="--save-temps -Wall  -Wextra  "  \
+#             CPPFLAGS="-I. -I.. " 
 	     
 
 ######################################################################
