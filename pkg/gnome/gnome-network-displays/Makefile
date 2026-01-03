@@ -19,7 +19,7 @@
 
 NAME =    gnome-network-displays
 GARNAME = gnome-network-displays
-GARVERSION = 0.97.0
+GARVERSION = 0.98.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = gnome-network-displays
 define BLURB

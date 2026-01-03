@@ -19,7 +19,7 @@
 
 NAME =    meld
 GARNAME = meld
-GARVERSION = 3.23.0
+GARVERSION = 3.23.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Compare files, directories and working copies
 define BLURB

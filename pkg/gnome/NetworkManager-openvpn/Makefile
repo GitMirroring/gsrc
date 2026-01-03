@@ -19,7 +19,7 @@
 
 NAME =    NetworkManager-openvpn
 GARNAME = NetworkManager-openvpn
-GARVERSION = 1.12.3
+GARVERSION = 1.12.5
 HOME_URL = https://wiki.gnome.org/Projects/NetworkManager
 DESCRIPTION =  NetworkManager-openvpn
 define BLURB

@@ -20,7 +20,7 @@
 
 NAME =    vte
 GARNAME = vte
-GARVERSION = 0.82.2
+GARVERSION = 0.82.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = vte terminal widget
 define BLURB

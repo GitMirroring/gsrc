@@ -21,7 +21,7 @@
 
 NAME =    gnome-remote-desktop
 GARNAME = gnome-remote-desktop
-GARVERSION = 49.alpha
+GARVERSION = 49.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = gnome-remote-desktop
 define BLURB

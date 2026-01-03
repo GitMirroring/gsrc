@@ -21,7 +21,7 @@
 
 NAME =    xdg-user-dirs-gtk
 GARNAME = xdg-user-dirs-gtk
-GARVERSION = 0.14
+GARVERSION = 0.16
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = xdg-user-dirs-gtk companion to xdg-user-dirs
 define BLURB
