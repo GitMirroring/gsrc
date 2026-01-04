@@ -28,7 +28,7 @@ DESCRIPTION = GNU Compiler Collection 16 snapshot
 define BLURB
 GCC is the GNU Compiler Collection.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
-Fortran, Ada, D, Go, Rust, Modula 2, and Cobol, with runtime 
+Fortran, Ada, D, Go, Rust, Modula 2, Cobol, and Algol68 with runtime 
 support libraries for these languages.
 endef
 
@@ -67,9 +67,10 @@ INFO_FILES =  \
 	gnat_ugn.info	  \
 	libgomp.info  \
 	libitm.info  \
-	libquadmath.info  
-
+	libquadmath.info  \
+         ga68.info
 #	libiberty.info  
+#	m2? 
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
@@ -101,9 +102,11 @@ include config.mk
 # Many options at just what Debian ships with;
 # adjust as necessary.
 # 
+#--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,algol68 \
+
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-16 \
---enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol, \
+--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,algol68,ada \
 --with-gmp=$(prefix) \
 --with-mpfr=$(prefix) \
 --with-mpc=$(prefix) \
@@ -156,17 +159,9 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 # enable-bootstrap might not be necessary, but it solves some problems
 # of building when not using recent gcc to build.
 
-# due to compile problems with gccgo
-#
-# adjust if needed. ad hoc
-
-#BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  -fno-split-stack" \
-#             CXXFLAGS+="--save-temps -Wall  -Wextra  -fno-split-stack"  \
-#             CPPFLAGS="-I. -I.. -fno-split-stack"
-# still doesn't fix it
-BUILD_ARGS  =   CFLAGS+="-v --save-temps -Wall  -Wextra  " \
-             CXXFLAGS+="-v --save-temps -Wall  -Wextra  "  \
-             CPPFLAGS="-I. -I.. "
+#BUILD_ARGS  =   CFLAGS+="-v --save-temps -Wall  -Wextra  " \
+#             CXXFLAGS+="-v --save-temps -Wall  -Wextra  "  \
+#             CPPFLAGS="-I. -I.. "
 	     
 
 ######################################################################
