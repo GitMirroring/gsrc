@@ -1,4 +1,4 @@
-# Copyright ©2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 16 development version
 GARNAME = gcc16snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 16-20251228
+GARVERSION = 16-20260104
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 16 snapshot
 define BLURB
@@ -36,8 +36,8 @@ endef
 # http://gcc.gnu.org/pub/gcc/snapshots/
 
 #HINT: To compile Ada aka "gnats", you need to have earlier Ada compiler.
-#HINT: Likewise for the D compliper, called "gdc". Of course you need a 
-#HINT: working C compiler to compile gcc....
+#HINT: Likewise for the D compiler, called "gdc". Of course you need a 
+#HINT: working C++ compiler to compile gcc....
 
 ######################################################################
 # https://gcc.gnu.org/pub/gcc/snapshots/16-20250831/gcc-16-20250831.tar.xz
@@ -67,7 +67,8 @@ INFO_FILES =  \
 	gnat_ugn.info	  \
 	libgomp.info  \
 	libitm.info  \
-	libquadmath.info  \
+	libquadmath.info \
+	gnats.info \
          ga68.info
 #	libiberty.info  
 #	m2? 
@@ -104,13 +105,12 @@ CONFIGURE_SCRIPTS = adhoc
 # Many options at just what Debian ships with;
 # adjust as necessary.
 # 
-#--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,algol68 \
 
-#--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,algol68,ada \
+#--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,ada,algol68 \
 
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-16 \
---enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,algol68,ada \
+--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,ada,algol68 \
 --with-gmp=$(prefix) \
 --with-mpfr=$(prefix) \
 --with-mpc=$(prefix) \
@@ -123,7 +123,6 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-gtk-cairo \
 --enable-host-shared  \
 --enable-libmpx \
---disable-libssp \
 --enable-libda \
 --enable-libgm2 \
 --enable-libstdcxx-debug \
@@ -149,17 +148,16 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --without-cuda-driver  \
 --with-tune=generic \
 --disable-vtable-verify  \
---disable-werror 
+--disable-werror \
+--enable-bootstrap 
 
 
-#  -m32 -m32x?
-
-#--enable-bootstrap \
 #--build=x86_64-linux-gnu \
 #--host=x86_64-linux-gnu \
 #--target=x86_64-linux-gnu 
-
+#  -m32 -m32x?
 # --with-arch-32=i686  \
+	#
 # enable-bootstrap might not be necessary, but it solves some problems
 # of building when not using recent gcc to build.
 

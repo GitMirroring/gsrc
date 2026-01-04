@@ -1,4 +1,4 @@
-# Copyright ©2017,2018,2019,2022-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017-2019,2022-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -29,13 +29,8 @@ define BLURB
 A fast and versatile library for linear and tensor algebra;
 converts tensor expressions to C++ code
 endef
-LICENSE = MIT
 
 ######################################################################
-
-.PHONY: manpages check gitpull fetch-git build-it pre-install  install-my
-	
-
 #https://github.com/tensor-compiler/taco.git
 MASTER_SITES = https://github.com
 MASTER_SUBDIR = tensor-compiler
@@ -43,37 +38,21 @@ GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/$(GARNAME).git
 GIT_REVISION = master
 SIGFILES =
 
-# PATCHFILES = taco.tests-tensor_types.cpp.patch
-
-
-
 GITSRC =   $(DOWNLOADDIRGIT)/$(GARNAME)
-#WORKSRC =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)/
-#WORKOBJ =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)-build
-
-#CONFIGURE_SCRIPTS  = $(WORKDIR)/$(DISTNAME)/CMakeLists.txt
 
 BUILDDEPS =
 LIBDEPS =
-
-
-# HINT:  add #include <limits.h> to pack.h , if needed.
-# HINT: multiprocessor library support, see READMEs.
-# apparent libiconv problem....
-# bug -Wnarrowing
+LICENSE = MIT
 ######################################################################
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-# this is temporary fix for latest cmake. Might be better ways...
+.PHONY: manpages check gitpull fetch-git build-it pre-install  install-my
+
+# this is temporary fix for latest cmake. Might be better ways to do this...
 CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
-#BUILD_ARGS += CXXFLAGS=-Wno-error=narrowing
-#BUILD_ARGS += CXXFLAGS=-Wno-narrowing
-#CONFIGURE_ARGS = CPPFLAGS+=-Wno-error=narrowing
-#CMAKE_CONFIGURE_ARGS += CXXFLAGS=-Wno-error=narrowing
-
-info:
+debuginfo:
 	@echo PWD  $(PWD)
 	@echo GITSRC $(GITSRC)
 	@echo WORKSRC $(WORKSRC)
@@ -86,4 +65,5 @@ post-fetch: fetch-gitrecursive
 	mkdir -p $(WORKSRC)
 	mkdir -p $(WORKOBJ)
 	cp -a $(GITSRC)/*  $(WORKSRC)
+
 

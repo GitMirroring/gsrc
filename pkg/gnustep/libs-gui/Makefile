@@ -52,6 +52,7 @@ endef
 #   Read the GNUstep-HOWTO for more information.  After installing this
 # library, install gnustep-back.
 #
+# apt install libjpeg-dev libtiff-dev libpng
 ######################################################################
 
 
@@ -67,7 +68,6 @@ SIGFILES =
 
 BUILDDEPS = tools-make libs-base  libtiff
 LIBDEPS = 
-# apt install libjpeg-dev libtiff-dev libpng
 ######################################################################
 
 include ../../../gar/gar.lib/gnustep.mk
@@ -87,4 +87,3 @@ post-install:
 check: build
 	cd $(WORKOBJ) && $(MAKE) check
  
-

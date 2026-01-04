@@ -40,12 +40,12 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 INFO_FILES = vcd-info.info vcdimager.info vcdxrip.info
 
-BUILDDEPS =
+BUILDDEPS = libcdio
 LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 

@@ -1,4 +1,4 @@
-# Copyright ©2021,2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
  
 NAME = libtiff
 GARNAME = libtiff
-GARVERSION = 4.6.0
+GARVERSION = 4.7.1
 #HOME_URL = http://gitlab.com/libtiff
 HOME_URL =	http://www.simplesystems.org/libtiff/
 	# www.libtiff.org

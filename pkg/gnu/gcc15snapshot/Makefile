@@ -1,4 +1,4 @@
-# Copyright ©2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 15 development version
 GARNAME = gcc15snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 15-20250103
+GARVERSION = 15-20260103
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 15 snapshot
 define BLURB
@@ -40,6 +40,7 @@ endef
 #HINT: working C++ compiler to compile gcc....
 
 ######################################################################
+#https://gcc.gnu.org/pub/gcc/snapshots/15-20260103/
 MASTER_SITES = https://gcc.gnu.org/
 MASTER_SUBDIR = pub/gcc/snapshots/$(GARVERSION)/
 #MASTER_SITES = $(MASTER_GNU)
@@ -100,7 +101,6 @@ include config.mk
 # Many options at just what Debian ships with;
 # adjust as necessary.
 # 
-# --enable-libssp \
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-15 \
 --enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada,cobol \
@@ -145,23 +145,18 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-bootstrap 
 
 
-#  -m32 -m32x?
-
 #--build=x86_64-linux-gnu \
 #--host=x86_64-linux-gnu \
 #--target=x86_64-linux-gnu 
-
+#  -m32 -m32x?
 # --with-arch-32=i686  \
+	#
 # enable-bootstrap might not be necessary, but it solves some problems
 # of building when not using recent gcc to build.
 
-#
-# other curious problems, nonsolutions
-# CONFIGURE_ARGS = GATHER_STATISTICS=true
-#BUILD_ARGS  =  "CFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   " \
-#             "CXXFLAGS+=-Wall  -Wextra   -Wno-template-body -Wno-implicit-function-declaration   "  \
-#             "CPPFLAGS=-I. -I.." 
-# --save-temps
+#BUILD_ARGS  =   CFLAGS+="-v --save-temps -Wall  -Wextra  " \
+#             CXXFLAGS+="-v --save-temps -Wall  -Wextra  "  \
+#             CPPFLAGS="-I. -I.. "
 	     
 
 ######################################################################
