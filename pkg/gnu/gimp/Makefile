@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = GNU Image Manipulation Program
 GARNAME = gimp
-GARVERSION = 3.0.4
+GARVERSION = 3.2.0-RC2
 HOME_URL = http://www.gnu.org/software/gimp
 DESCRIPTION = GNU Image Manipulation Program
 define BLURB
