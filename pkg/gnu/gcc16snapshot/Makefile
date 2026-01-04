@@ -77,6 +77,8 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+CONFIGURE_SCRIPTS = adhoc
+
 ## Configuration options for gcc ##
 ## Note: you must set up your environment (PATH, LDPATH, etc) to
 ## include GSRC-installed packages in order to install gcc as
@@ -103,6 +105,8 @@ include config.mk
 # adjust as necessary.
 # 
 #--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,algol68 \
+
+#--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,algol68,ada \
 
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-16 \
@@ -164,8 +168,14 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 #             CPPFLAGS="-I. -I.. "
 	     
 
+configure-adhoc:
+	@echo some bug in build files requires this odd step
+	cd $(WORKSRC) && ./configure
+	@echo configured
+
 ######################################################################
 .PHONY: checkall
+
 
 checkall: 
 	cd $(WORKOBJ)  &&  $(MAKE) -k check >  checkall.output.txt 2>&1

@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2019, 2020, 2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2019, 2020, 2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,9 +20,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Ddrescue
+NAME = ddrescue
 GARNAME = ddrescue
-GARVERSION = 1.29.1
+GARVERSION = 1.30
 HOME_URL = http://www.gnu.org/software/ddrescue/ddrescue.html/
 DESCRIPTION = Data recovery utility
 define BLURB
