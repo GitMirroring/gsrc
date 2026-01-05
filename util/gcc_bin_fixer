@@ -7,14 +7,14 @@ VERSION=16
 
 set -e
 
-# GSRC is installation prefix
-# after installing
-cd $GSRC/bin 
+# GSRC is installation prefix after installing
 
-a=$(/bin/ls *-$VERSION)
-#printf "$a"
+gcclist=$(/bin/ls $GSRC/bin/*-$VERSION)
+#printf "$gcclist"
 
-for it in  $a ; do
+
+for it in  $gcclist ; do
+	echo
 	it2=$(  echo $it |sed   -e "s/-$VERSION//" )
 	echo rm -f "$it2" 
 	echo ln -s "$it" "$it2"

@@ -55,23 +55,26 @@ LIBDEPS =
 INFO_FILES =  \
 	cpp.info  \
 	cppinternals.info  \
-	gccgo.info  \
+	ga68-internals.info  \
+	ga68.info  \
 	gcc.info  \
+	gccgo.info  \
 	gccinstall.info  \
 	gccint.info  \
 	gdc.info  \
 	gfc-internals.info  \
 	gfortran.info  \
-	gnat_rm.info  \
 	gnat-style.info  \
-	gnat_ugn.info	  \
+	gnat_rm.info  \
+	gnat_ugn.info  \
+	libffi.info  \
+	libgccjit.info  \
 	libgomp.info  \
 	libitm.info  \
-	libquadmath.info \
-	gnats.info \
-         ga68.info
+	libquadmath.info  \
+	m2.info
+
 #	libiberty.info  
-#	m2? 
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
