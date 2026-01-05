@@ -20,7 +20,7 @@
 
 NAME = nyacc
 GARNAME = nyacc
-GARVERSION =  3.00.0
+GARVERSION =  3.01.0
 HOME_URL =  http://www.nongnu.org/nyacc
 DESCRIPTION =  Guile modules for nyacc compiler creation and parsers
 define BLURB
@@ -40,7 +40,7 @@ endef
 # mwette/nyacc/archive/refs/tags/V3.00.0.tar.gz
 MASTER_SITES = https://github.com/
 MASTER_SUBDIR = mwette/nyacc/archive/refs/tags/
-DISTFILES = V3.00.0.tar.gz
+DISTFILES = V$(GARVERSION).tar.gz
 SIGFILES  =
 INFO_FILES = cdata.info nyacc-ug.info nyacc-c99-ug.info nyacc-fh-ug.info
 

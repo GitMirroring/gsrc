@@ -23,14 +23,14 @@
 #NAME = breezy formerly bazaar, brz formerly bzr
 NAME = breezy aka brz 
 GARNAME = breezy
-GARVERSION = 3.3.10
-HOME_URL = http://www.gnu.org/software/bzr
-DESCRIPTION = The GNU distributed version control system
+GARVERSION = 3.3.15
+HOME_URL = http://www.breezy-vcs.org
+DESCRIPTION =   distributed version control system
 define BLURB
-The GNU distributed version control system. Do not confuse this with
+The later version of GNU distributed version control system. Do not confuse this with
 another program on savannah.gnu.org also called "bazaar". Bazaar, aka bzr,
 a python 2 program, has been replaced with this python 3 program, breezy aka
-brz. Also handles git or bzr archives.  
+brz. Handles git as well as the earlier bzr archives.  
 endef
 
 ######################################################################
