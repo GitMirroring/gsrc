@@ -1,5 +1,4 @@
-
-# Copyright © 2016,2018 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -38,12 +37,11 @@ MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
-# apt install  libwebkit2gtk-4.0-dev
 BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 

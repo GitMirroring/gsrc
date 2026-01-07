@@ -1,4 +1,4 @@
-# Copyright © 2016, 2020 Carl Hansen carlhansen@gnu.org
+# Copyright © 2016,2020,2026 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -43,6 +43,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 

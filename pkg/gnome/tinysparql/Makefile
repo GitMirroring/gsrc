@@ -21,7 +21,7 @@
 
 NAME =    tinysparql
 GARNAME = tinysparql
-GARVERSION = 3.10.beta
+GARVERSION = 3.11.alpha
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = tinysparql
 define BLURB

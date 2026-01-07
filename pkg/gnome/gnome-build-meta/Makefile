@@ -1,4 +1,4 @@
-# Copyright © 2025 Carl Hansen carlhansen@gnu.org
+# Copyright © 2025-2026 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnome-build-meta
 GARNAME = gnome-build-meta
-GARVERSION = 49.2
+GARVERSION = 49.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Collection of build scripts for Gnome project, or something 
 define BLURB
@@ -40,8 +40,8 @@ CONFIGURE_SCRIPTS =
 
 BUILDDEPS =
 LIBDEPS =
-WORKSRC = $(WORKDIR)/gnome-49.rc
-WORKOBJ = $(WORKSRC)
+WORKSRC = $(WORKDIR)/gnome-$(GARVERSION)
+WORKOBJ = $(WORKSRC)-build
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
