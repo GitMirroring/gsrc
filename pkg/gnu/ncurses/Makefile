@@ -22,7 +22,7 @@
 
 NAME = ncurses
 GARNAME = ncurses
-GARVERSION = 6.6
+GARVERSION = 6.6-20260103
 GARVERSIONMAJOR = 6.6
 
 HOME_URL = http://www.gnu.org/software/ncurses/
@@ -38,19 +38,19 @@ support.
 endef
 
 ######################################################################
-MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz
-SIGFILES  = $(DISTNAME).tar.gz.sig
+#MASTER_SITES = $(MASTER_GNU)
+#MASTER_SUBDIR = $(GARNAME)/
+#DISTFILES = $(DISTNAME).tar.gz
+#SIGFILES  = $(DISTNAME).tar.gz.sig
 
 
 # https://invisible-island.net/archives/ncurses/current/ncurses-6.3-20220501.tgz
 # github.com/ThomasDickey/
 #
-#MASTER_SITES = http://invisible-island.net/
-#MASTER_SUBDIR = archives/$(GARNAME)/current/
-#DISTFILES = $(DISTNAME).tgz
-#SIGFILES  = $(DISTNAME).tgz.asc
+MASTER_SITES = http://invisible-island.net/
+MASTER_SUBDIR = archives/$(GARNAME)/current/
+DISTFILES = $(DISTNAME).tgz
+SIGFILES  = $(DISTNAME).tgz.asc
 BUILDDEPS = 
 LIBDEPS =
 
