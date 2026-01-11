@@ -1,5 +1,5 @@
 # Copyright © 2013, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2019, 2021-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2019, 2021-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -24,7 +24,7 @@
 
 NAME = Texinfo
 GARNAME = texinfo
-GARVERSION = 7.2
+GARVERSION = 7.2.90
 RELEASE =
 HOME_URL = http://www.gnu.org/software/texinfo/
 DESCRIPTION = The GNU documentation format
@@ -39,11 +39,12 @@ markup commands.
 endef
 
 ######################################################################
-
-MASTER_SITES = $(MASTER_GNU)
+#https://alpha.gnu.org/gnu/texinfo/texinfo-7.2.90.tar.xz
+#https://alpha.gnu.org/gnu/texinfo/texinfo-7.2.90.tar.xz.sig
+MASTER_SITES = $(MASTER_GNU_ALPHA)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME)$(RELEASE).tar.gz 
-SIGFILES  = $(DISTNAME)$(RELEASE).tar.gz.sig
+DISTFILES = $(DISTNAME)$(RELEASE).tar.xz 
+SIGFILES  = $(DISTNAME)$(RELEASE).tar.xz.sig
 INFO_FILES = info-stnd.info  texinfo.info 
 
 BUILDDEPS = # ncurses

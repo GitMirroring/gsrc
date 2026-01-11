@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017-2021,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2021,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = Libtasn1
 GARNAME = libtasn1
-GARVERSION = 4.20.0
+GARVERSION = 4.21.0
 HOME_URL = http://www.gnu.org/software/libtasn1/
 DESCRIPTION = ASN.1 library, machine-neutral encodings of data objects 
 define BLURB
