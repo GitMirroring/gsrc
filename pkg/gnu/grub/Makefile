@@ -22,7 +22,7 @@
 
 NAME = GRUB
 GARNAME = grub
-GARVERSION = 2.12
+GARVERSION = 2.14
 HOME_URL = http://www.gnu.org/software/grub/
 DESCRIPTION = GRand Unified Boot loader
 define BLURB

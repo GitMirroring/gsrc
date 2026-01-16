@@ -20,7 +20,7 @@
 
 NAME =    eog
 GARNAME = eog
-GARVERSION = 47.0
+GARVERSION = 49.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Image viewer, browse, rotate, display images. Slideshow.
 define BLURB

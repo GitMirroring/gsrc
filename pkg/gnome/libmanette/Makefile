@@ -50,3 +50,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
+ # HINT  sudo apt install libhidapi-hidraw0   ..-dev

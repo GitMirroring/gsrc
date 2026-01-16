@@ -1,4 +1,4 @@
-# Copyright ©2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024,2020 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,8 +20,8 @@
 
 NAME =    FORM
 GARNAME = form
-GARVERSION = 5.0.0-beta.1
-#GARVERSION = 4.3.1
+#GARVERSION = 5.0.0-beta.1
+GARVERSION = 4.3.1
 HOME_URL = https://www.nikhef.nl/~form/
 # or https://github.com/vermaseren/form/
 DESCRIPTION =  FORM is a symbolic manipulation system.
@@ -38,7 +38,7 @@ CITE = J.A.M.Vermaseren "New features of FORM" math-ph/0010025
 # https://github.com/vermaseren/form/releases/download/v4.3.0/form-4.3.0.tar.gz
 # https://github.com/vermaseren/form/archive/refs/tags/v5.0.0-beta.1.tar.gz
 MASTER_SITES = $(MASTER_GITHUB)
-MASTER_SUBDIR =  vermaseren/form/archive/refs/tags/
+MASTER_SUBDIR =  form-dev/form/archive/refs/tags/
 
 
 DISTFILES = v$(GARVERSION).tar.gz 

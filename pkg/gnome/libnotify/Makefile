@@ -21,7 +21,7 @@
 
 NAME =    libnotify
 GARNAME = libnotify
-GARVERSION = 0.8.7
+GARVERSION = 0.8.8
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = libnotify is a library for sending desktop notifications
 define BLURB

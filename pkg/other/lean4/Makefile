@@ -1,4 +1,4 @@
-# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    lean4
 GARNAME = lean4
-GARVERSION = 4.24.0
+GARVERSION = 4.26.0
 HOME_URL =  https://lean-lang.org
 DESCRIPTION = Lean4 theorem prover and functional language
 define BLURB

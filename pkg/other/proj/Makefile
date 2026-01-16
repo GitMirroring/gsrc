@@ -1,4 +1,4 @@
-# Copyright © 2019-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME =    proj
 GARNAME = proj
-GARVERSION =  9.7.0
+GARVERSION =  9.7.1
 HOME_URL = http://www.proj.org
 	# additional data and docs there
 DESCRIPTION =  library for doing geodesic and cartographic projections

@@ -20,7 +20,7 @@
 
 NAME =    blueprint-compiler
 GARNAME = blueprint-compiler
-GARVERSION = 0.18.0
+GARVERSION = 0.19.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = blueprint-compiler
 define BLURB

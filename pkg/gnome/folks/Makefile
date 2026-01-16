@@ -20,7 +20,7 @@
 
 NAME =    folks
 GARNAME = folks
-GARVERSION = 0.15.9
+GARVERSION = 0.15.12
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = People aggregation library
 define BLURB

@@ -1,4 +1,4 @@
-# Copyright ©2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 13 development version
 GARNAME = gcc13snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 13-20260101
+GARVERSION = 13-20260115
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 13 snapshot
 define BLURB
@@ -108,6 +108,7 @@ include config.mk
 # 
 # no rust, in gcc13 ; ada
 CONFIGURE_ARGS = --prefix=$(prefix)  \
+--enable-languages=c,c++,fortran,go,jit,objc,obj-c++,m2,d \
 --program-suffix=-13 \
 --with-gmp=$(prefix) \
 --with-mpfr=$(prefix) \
@@ -120,7 +121,6 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-gnu-unique-object \
 --enable-gtk-cairo \
 --enable-host-shared  \
---enable-languages=c,c++,fortran,go,jit,objc,obj-c++,m2,d \
 --enable-libmpx \
 --disable-libssp \
 --enable-libada \

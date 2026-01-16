@@ -21,7 +21,7 @@
 
 NAME =    WebKitGTK
 GARNAME = webkitgtk
-GARVERSION = 2.49.4
+GARVERSION = 2.51.4
 HOME_URL = https://www.webkitgtk.org/
 DESCRIPTION = lib for applications interacting with the WWW, using GTK
 define BLURB
@@ -33,10 +33,9 @@ MASTER_SUBDIR = releases/
 DISTFILES = $(DISTNAME).tar.xz  
 SIGFILES =
 
-BUILDDEPS =
-# fontconfig freetype2
+BUILDDEPS = libmanette
 # apt install unifdef  woff2 libhyphen-dev
-# 
+# fontconfig freetype2
 LIBDEPS =
 
 

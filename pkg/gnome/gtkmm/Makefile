@@ -20,7 +20,7 @@
 
 NAME =    gtkmm
 GARNAME = gtkmm
-GARVERSION = 4.21.1
+GARVERSION = 4.21.2
 #HOME_URL = http://www.gnome.org/
 HOME_URL = http://www.gtkmm.org/
 DESCRIPTION = C++ bindings for GTK+
