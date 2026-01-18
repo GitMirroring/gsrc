@@ -45,7 +45,7 @@ MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES = 
 
-BUILDDEPS =# gtk intltool goffice libgsf
+BUILDDEPS = #gtk intltool goffice libgsf
 LIBDEPS =
 
 ######################################################################
@@ -53,3 +53,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+#BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration

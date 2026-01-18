@@ -20,14 +20,14 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 # url escaping
 
-NAME =    GTK+ 3
-GARNAME = gtk+
-UPSTREAMNAME = gtk
+NAME =    GTK 3
+GARNAME = gtk3
+#UPSTREAMNAME = gtk
 #GARVERSION = 3.94.0
 #GARVERSION = 3.24.41
-GARVERSION = 3.24.50
+GARVERSION = 3.24.51
 HOME_URL = http://www.gnome.org/
-DESCRIPTION =  gtk+ 3 GNOME toolkit
+DESCRIPTION =  gtk 3 GNOME toolkit
 define BLURB
 endef
 
@@ -39,10 +39,11 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(UPSTREAMNAME)/$(SERIES)/
-DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
+DISTFILES = gtk-$(GARVERSION).tar.xz  gtk-$(GARVERSION).sha256sum
 SIGFILES =
-#WORKSRC = $(WORKDIR)/$(GARNAME)
-#WORKOBJ = $(WORKSRC).build
+# this change is annoying; gnome changed names
+WORKSRC = $(WORKDIR)/gtk-$(GARVERSION)
+WORKOBJ = $(WORKSRC).build
 
 BUILDDEPS =
 LIBDEPS =
@@ -53,7 +54,7 @@ LIBDEPS =
 #  libsqlite3-dev libatk-bridge2.0-0 libatk-bridge2.0-dev
 
 # example of option, use as you wixh
-MESON_OPTS =  "-Dwayland_backend=false"
+# MESON_OPTS =  "-Dwayland_backend=false"
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk

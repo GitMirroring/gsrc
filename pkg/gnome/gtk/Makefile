@@ -23,7 +23,7 @@ NAME =    GTK 4
 GARNAME = gtk
 GARVERSION = 4.21.4
 HOME_URL = http://www.gtk.org/
-DESCRIPTION =  gtk 4 GNOME toolkit,  create user interfaces
+DESCRIPTION =  gtk 4 GNOME toolkit, create user interfaces
 define BLURB
 endef
 
@@ -36,22 +36,21 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(UPSTREAMNAME)/$(SERIES)/
-DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum 
-#$(DISTNAME).news
+DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
 BUILDDEPS =
 # might be needed:
 # apt install libepoxy-dev libmount-dev libxcb-xkb-dev
-# libselinux-dev libsystemd-dev  libepoxy0 xorg-dev  gdk-pixbuf
-#  libsqlite3-dev libatk-bridge2.0-0 libatk-bridge2.0-dev
-# gst-plugins-bad
-
+#  libselinux-dev libsystemd-dev  libepoxy0 xorg-dev  gdk-pixbuf
+#  libsqlite3-dev libatk-bridge2.0-0 libatk-bridge2.0-dev  gst-plugins-bad
 LIBDEPS =
 
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
-BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration]"
+BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration"
+
+
 

@@ -1,4 +1,4 @@
-# Copyright © 2016-2019, 2021, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2019, 2021, 2022, 2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    librsvg
 GARNAME = librsvg
-GARVERSION = 2.61.3
+GARVERSION = 2.61.90
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = SVG rendering library
 define BLURB
@@ -37,13 +37,10 @@ MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
-
 BUILDDEPS =
 LIBDEPS =
-
 
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
-
