@@ -1,4 +1,4 @@
-# Copyright ©2017-2020,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017-2020,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME =    orc
 GARNAME = orc
-GARVERSION = 0.4.41
+GARVERSION = 0.4.42
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gstreamer, Optmised inner loop Runtime Compiler
 define BLURB

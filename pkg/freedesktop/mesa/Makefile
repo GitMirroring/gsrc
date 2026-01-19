@@ -1,4 +1,4 @@
-# Copyright ©2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME =    mesa
 GARNAME = mesa
-GARVERSION = 25.2.5
+GARVERSION = 25.3.3
 GVER = 25.0
 HOME_URL = http://www.mesa3d.org/
 DESCRIPTION = Mesa, 3D graphics, OpenGL 4.5 implementation and more

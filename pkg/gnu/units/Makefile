@@ -1,5 +1,5 @@
 # Copyright © 2013,2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017,2018,2019,2020,2022,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017,2018,2019,2020,2022,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = Units
 GARNAME = units
-GARVERSION = 2.24
+GARVERSION = 2.25
 HOME_URL = http://www.gnu.org/software/units/
 DESCRIPTION = Conversion between units of measure
 define BLURB
@@ -43,27 +43,27 @@ SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-PATCHFILES = units2.24.patch
+PATCHFILES = units2.25.patch
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
-#include ../../../gar/gar.lib/info.mk
+include ../../../gar/gar.lib/info.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS="-std=c99"
+#BUILD_ARGS = CFLAGS="-std=c99"
 
 # is this really necessary?
-pre-install:
-	echo --------------------WORKSRC----------- $(WORKSRC)
-	# only if you have python cd  $(WORKSRC) &&  ./units_cur
-	cp  $(WORKSRC)/units.info  $(WORKOBJ)
-	cp  $(WORKSRC)/currency.units  $(WORKOBJ)
-
-post-install:
-	#   ??? if have python $(prefix)/bin/units_cur
-	rm -f $(prefix)/share/units/currency.units
-	ln -s $(prefix)/com/units/currency.units $(prefix)/share/units/currency.units
-
-# note: seems to be a problem with unit "Hz" giving radians/sec instead of cycles/sec
-# to be fixed
+#pre-install:
+#	echo --------------------WORKSRC----------- $(WORKSRC)
+#	# only if you have python cd  $(WORKSRC) &&  ./units_cur
+#	cp  $(WORKSRC)/units.info  $(WORKOBJ)
+#	cp  $(WORKSRC)/currency.units  $(WORKOBJ)
+#
+#post-install:
+#	#   ??? if have python $(prefix)/bin/units_cur
+#	rm -f $(prefix)/share/units/currency.units
+#	ln -s $(prefix)/com/units/currency.units $(prefix)/share/units/currency.units
+#
+## note: seems to be a problem with unit "Hz" giving radians/sec instead of cycles/sec
+## to be fixed
 
