@@ -1,4 +1,4 @@
-# Copyright ©2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,15 +20,20 @@
 
 NAME =    curl
 GARNAME = curl
-GARVERSION =  8.17.0
+GARVERSION =  8.18.0-rc3
 HOME_URL = http://www.curl.se
 DESCRIPTION = Download files from internet with command line
 define BLURB
 endef
 ######################################################################
 #https://github.com/curl/curl/releases/download/curl-8_17_0/curl-8.17.0.tar.xz
-MASTER_SITES =  https://github.com/
-MASTER_SUBDIR = curl/curl/releases/download/curl-8_17_0/
+
+#MASTER_SITES =  https://github.com/
+#MASTER_SUBDIR = curl/curl/releases/download/curl-8_17_0/
+#https://curl.se/rc/curl-8.18.0-rc3.tar.xz
+MASTER_SITES = https://curl.se/
+MASTER_SUBDIR = rc/
+
 
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES  = $(DISTNAME).tar.xz.asc
