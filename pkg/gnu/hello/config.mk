@@ -1,6 +1,6 @@
 ## Configuration options for hello ##
 
 CONFIGURE_OPTS ?= 
-BUILD_OPTS ?= "LDFLAGS=-liconv"
+BUILD_OPTS ?= 
 
 
