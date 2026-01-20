@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    Glib
 GARNAME = glib
-GARVERSION = 2.87.1
+GARVERSION = 2.87.2
 HOME_URL = http://www.gnome.org/
       # or http://www.gtk.org
 DESCRIPTION = Low level core library for GNOME

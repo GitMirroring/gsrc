@@ -28,6 +28,7 @@ endef
 
 ######################################################################
 
+#https://https.git.savannah.gnu.org/git/gnushogi.git
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
