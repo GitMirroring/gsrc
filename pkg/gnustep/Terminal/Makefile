@@ -29,13 +29,13 @@ other GNUstep applications, which is one of GNUstep s nice features.
 endef
 
 ######################################################################
-
-MASTER_SITES = $(MASTER_SAVANNAH)
-MASTER_SUBDIR = gap/
+# https://download.savannah.gnu.org/releases/gap/Terminal-0.9.9.tar.gz
+MASTER_SITES = https://download.savannah.gnu.org/
+MASTER_SUBDIR = releases/gap/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = 
 
-PATCHFILES =  Terminalmakefileiconv.diff
+PATCHFILES =  Terminalmakefile.diff
 
 BUILDDEPS =
 LIBDEPS = 
@@ -46,4 +46,5 @@ CONFIGURE_SCRIPTS=
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=-D__GNU__
 
