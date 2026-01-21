@@ -19,7 +19,7 @@
 
 NAME =    gnome-build-meta
 GARNAME = gnome-build-meta
-GARVERSION = 49.3
+GARVERSION = 50.alpha
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Collection of build scripts for Gnome project, or something 
 define BLURB

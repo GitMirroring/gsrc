@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019,2020,2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2019,2020,2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    pygobject
 GARNAME = pygobject
-GARVERSION = 3.55.1
+GARVERSION = 3.55.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Python bindings for GObject Introspection
 define BLURB

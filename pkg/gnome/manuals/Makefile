@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -18,11 +18,11 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    gnome-software
-GARNAME = gnome-software
+NAME =    manuals
+GARNAME = manuals
 GARVERSION = 50.alpha
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = GNOME software tools
+DESCRIPTION = GNOME manuals
 define BLURB
 endef
 
@@ -38,11 +38,9 @@ MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
-# apt install libgtkspell3-3-dev valgrind fwupd   libfwupd-dev 
-# apt install libpolkit-gobject-1-0 libpolkit-gobject-1-dev libflatpak-dev
-# libflatpak-doc flatpak liboauth-dev oauth  librpm-dev 
-BUILDDEPS =
+BUILDDEPS = 
 LIBDEPS =
+
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk

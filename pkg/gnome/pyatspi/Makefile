@@ -1,4 +1,4 @@
-# Copyright © 2016,2025 Carl Hansen carlhansen@gnu.org
+# Copyright © 2016,2025-2026 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    pyatspi
 GARNAME = pyatspi
-GARVERSION = 2.58.0
+GARVERSION = 2.58.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  pyatspi
 define BLURB
