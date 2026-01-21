@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2019,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gnome-shell-extensions
 GARNAME = gnome-shell-extensions
-GARVERSION = 49.beta
+GARVERSION = 50.alpha
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Modify and extend GNOME Shell functionality and behavior
 define BLURB

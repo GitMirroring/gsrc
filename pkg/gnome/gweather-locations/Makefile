@@ -1,4 +1,4 @@
-# Copyright ©2024-2026  Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -17,11 +17,11 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    msgraph
-GARNAME = msgraph
-GARVERSION = 0.3.4
+NAME =    gweather-locations
+GARNAME = gweather-locations
+GARVERSION = 2025.1
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = lib to access msgraph protocol 
+DESCRIPTION = gweather locations
 define BLURB
 endef
 
@@ -30,7 +30,9 @@ endef
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
+#SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
+SERIES = 2025
+
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/

@@ -1,4 +1,4 @@
-# Copyright © 2022,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2022,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    d-spy
 GARNAME = d-spy
-GARVERSION = 49.2
+GARVERSION = 50.alpha
 HOME_URL = https://wiki.gnome.org/Projects/
 DESCRIPTION = d-spy
 define BLURB
@@ -45,5 +45,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
-BUILD_ARGS = -Wno-warning=undef
 

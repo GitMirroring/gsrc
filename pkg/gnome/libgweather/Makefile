@@ -38,7 +38,8 @@ MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
-BUILDDEPS = geocode-glib
+BUILDDEPS =  gweather-locations
+#geocode-glib
 LIBDEPS =
 
 ######################################################################
