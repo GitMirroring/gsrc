@@ -1,4 +1,4 @@
-# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    glycin
 GARNAME = glycin
-GARVERSION = 2.1.alpha
+GARVERSION = 2.1.alpha.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = glycin, loader of images
 define BLURB
