@@ -21,7 +21,7 @@
 
 NAME =    rgb
 GARNAME = rgb
-GARVERSION = 1.1.0
+GARVERSION = 1.1.1
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = rgb names to r g b list
 define BLURB

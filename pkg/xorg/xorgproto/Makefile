@@ -1,4 +1,4 @@
-# Copyright ©2018-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2018-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME =    xorgproto
 GARNAME = xorgproto
-GARVERSION = 2024.1
+GARVERSION = 2025.1
 HOME_URL = https://xorg.freedesktop.org
 DESCRIPTION = xorgproto, combines xproto and other protos
 # replaces xorg-xproto, etc.

@@ -55,3 +55,4 @@ WORKOBJ = $(WORKDIR)/$(SRC)-build
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
+#HINT  apt install bindgen libclc

@@ -1,4 +1,4 @@
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    xorg-server
 GARNAME = xorg-server
-GARVERSION = 21.1.18
+GARVERSION = 21.1.21
 HOME_URL = http://www.x.org
 	# same as http://xorg.freedesktop.org
 DESCRIPTION = xorg-server

@@ -1,4 +1,4 @@
-# Copyright ©2023,2025-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -19,23 +19,17 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    igt-gpu-tools
-GARNAME = igt-gpu-tools
-GARVERSION = 2.3
+NAME =    xauth
+GARNAME = xauth
+GARVERSION = 1.1.5
 HOME_URL = http://xorg.freedesktop.org
-DESCRIPTION = igt-gpu-tools
+DESCRIPTION = xauth
 define BLURB
-IGT GPU Tools is a collection of tools for development and testing of the DRM
-drivers. There are many macro-level test suites that get used against the
-drivers, including xtest, rendercheck, piglit, and oglconform, but failures from
-those can be difficult to track down to kernel changes, and many require
-complicated build procedures or specific testing environments to get useful
-results. Therefore, IGT GPU Tools includes low-level tools and tests
-specifically for development and testing of the DRM Drivers.
 endef
 
-######################################################################
-MASTER_SITES =  https://xorg.freedesktop.org/
+############r##########################################################
+https://www.x.org/releases/individual/app/xauth-1.1.5.tar.xz.sig
+MASTER_SITES =  https://www.x.org/
 MASTER_SUBDIR = releases/individual/app/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
@@ -46,6 +40,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/mesonninja.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

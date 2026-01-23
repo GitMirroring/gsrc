@@ -1,4 +1,4 @@
-# Copyright ©2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -21,7 +21,7 @@
 
 NAME =    libXres
 GARNAME = libXres
-GARVERSION = 1.2.2
+GARVERSION = 1.2.3
 HOME_URL = https://www.x.org
 DESCRIPTION = libXres X-Resource extension client library
 define BLURB

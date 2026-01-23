@@ -1,7 +1,6 @@
-# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
-# This file is part of GSRC, the GNU Source Release Collection.
-# http://www.gnu.org/software/gsrc
+# This file is part of GSRC.
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -19,24 +18,28 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    xwayland
-GARNAME = xwayland
-GARVERSION = 24.1.9
-HOME_URL = http://xorg.freedesktop.org
-DESCRIPTION = xorg-server using wayland
+
+NAME =    libXScrnSaver
+GARNAME = libXScrnSaver
+GARVERSION = 1.2.5
+HOME_URL = https://www.x.org
+DESCRIPTION = libXScrnSaver saves your Scrn library
 define BLURB
 endef
 
 ######################################################################
-MASTER_SITES = http://xorg.freedesktop.org/
-MASTER_SUBDIR = releases/individual/xserver/
+#  https://www.x.org/releases/individual/lib/libXres-1.2.2.tar.xz.sig
+#  https://www.x.org/releases/individual/lib/libXres-1.2.2.tar.xz
+MASTER_SITES = https://www.x.org/
+MASTER_SUBDIR =  releases/individual/lib/
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES = $(DISTNAME).tar.xz.sig
+SIGFILES =  $(DISTNAME).tar.xz.sig
 
 BUILDDEPS = 
 LIBDEPS = 
+
 ######################################################################
 
-include ../../../gar/gar.lib/mesonninja.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

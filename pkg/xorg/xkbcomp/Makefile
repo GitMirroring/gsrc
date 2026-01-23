@@ -1,4 +1,4 @@
-# Copyright ©2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    xkbcomp
 GARNAME = xkbcomp
-GARVERSION = 1.4.5
+GARVERSION = 1.5.0
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = x keyboard extension
 define BLURB
@@ -36,8 +36,8 @@ endef
 ######################################################################
 MASTER_SITES =  https://xorg.freedesktop.org/
 MASTER_SUBDIR = releases/individual/app/
-DISTFILES = $(DISTNAME).tar.bz2
-SIGFILES = $(DISTNAME).tar.bz2.sig
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES = $(DISTNAME).tar.xz.sig
 
 BUILDDEPS = 
 LIBDEPS = 
