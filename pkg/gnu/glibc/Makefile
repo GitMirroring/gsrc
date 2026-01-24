@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -24,7 +24,7 @@
 NAME = The GNU C Library glibc
 GARNAME = glibc
 # also called libc usually
-GARVERSION = 2.42
+GARVERSION = 2.43
 HOME_URL = http://www.gnu.org/software/libc/
 DESCRIPTION = GNU standard C library
 define BLURB
