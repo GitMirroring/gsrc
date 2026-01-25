@@ -50,7 +50,6 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-#BUILD_ARGS = CFLAGS="-std=c99"
 
 # is this really necessary?
 #pre-install:
@@ -67,4 +66,4 @@ include config.mk
 ## note: seems to be a problem with unit "Hz" giving radians/sec instead of cycles/sec
 ## to be fixed
 
-BUILD_ARGS = CFLAGS=--save-temps
+#BUILD_ARGS = CFLAGS=--save-temps
