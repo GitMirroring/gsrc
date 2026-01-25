@@ -43,7 +43,7 @@ SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-PATCHFILES = units2.25.patch
+#PATCHFILES = units2.25.patch
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -67,3 +67,4 @@ include config.mk
 ## note: seems to be a problem with unit "Hz" giving radians/sec instead of cycles/sec
 ## to be fixed
 
+BUILD_ARGS = CFLAGS=--save-temps

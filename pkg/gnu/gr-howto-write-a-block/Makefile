@@ -39,6 +39,7 @@ CONFIGURE_SCRIPTS = $(WORKSRC)/CMakeLists.txt
 
 BUILDDEPS = #guile boost libsdl
 LIBDEPS =
+WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.mk

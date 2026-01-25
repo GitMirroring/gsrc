@@ -43,4 +43,4 @@ include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 
-
+# FIXME, use git to get 2.0 version

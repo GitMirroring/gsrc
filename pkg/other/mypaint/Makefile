@@ -32,7 +32,7 @@ MASTER_SUBDIR = mypaint/mypaint/releases/download/v$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = 
 
-BUILDDEPS =
+BUILDDEPS = mypaint-brushes
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
 ######################################################################

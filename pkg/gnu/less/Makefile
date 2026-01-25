@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2020-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2020-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,8 +22,9 @@
 
 NAME = less
 GARNAME = less
-GARVERSION = 685
-HOME_URL = http://www.gnu.org/software/less/
+GARVERSION = 691
+#HOME_URL = http://www.gnu.org/software/less/
+HOME_URL = http://greenwoodsoftware.com/less/
 DESCRIPTION = Paginator for terminals
 define BLURB
 GNU less is a pager, a program that allows you to view large amounts
@@ -34,12 +35,12 @@ starts faster than most text editors.
 endef
 
 ######################################################################
-
-#MASTER_SITES = http://greenwoodsoftware.com/
-MASTER_SITES = $(MASTER_GNU)/
+#https://www.greenwoodsoftware.com/less/less-691.tar.gz
+MASTER_SITES = http://greenwoodsoftware.com/
+#MASTER_SITES = $(MASTER_GNU)/
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES =  $(DISTNAME).tar.gz.sig
+SIGFILES =#  $(DISTNAME).tar.gz.sig
 
 BUILDDEPS = 
 LIBDEPS = 
