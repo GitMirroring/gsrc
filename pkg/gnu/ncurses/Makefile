@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2020-2025 Carl Hansen <carlhansen@gnu.org> 
+# Copyright © 2017, 2018, 2020-2026 Carl Hansen <carlhansen@gnu.org> 
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = ncurses
 GARNAME = ncurses
-GARVERSION = 6.6-20260117
+GARVERSION = 6.6-20260124
 GARVERSIONMAJOR = 6.6
 
 HOME_URL = http://www.gnu.org/software/ncurses/
