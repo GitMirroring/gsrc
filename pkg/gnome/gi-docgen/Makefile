@@ -20,7 +20,7 @@
 
 NAME =    gi-docgen
 GARNAME = gi-docgen
-GARVERSION = 2025.4
+GARVERSION = 2026.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = gi docgen
 define BLURB

@@ -19,7 +19,7 @@
 
 NAME =    gthumb
 GARNAME = gthumb
-GARVERSION = 3.12.8
+GARVERSION = 3.12.9
 HOME_URL = https://wiki.gnome.org/Apps/Gthumb
 #http://www.gnome.org/
 DESCRIPTION = Image viewer and browser, also imports from cameras.
