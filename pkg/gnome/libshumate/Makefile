@@ -20,7 +20,7 @@
 
 NAME =    libshumate
 GARNAME = libshumate
-GARVERSION = 1.6.alpha
+GARVERSION = 1.6.beta
 HOME_URL = https://wiki.gnome.org/Projects/libshumate
 DESCRIPTION = libshumate is a GTK4 widget to display maps.
 define BLURB
