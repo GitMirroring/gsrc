@@ -23,12 +23,12 @@ HOME_URL = http://www.non-gnu.org/gap/remotedesk/
 DESCRIPTION = RemoteDesk is a remote XXXXXXX (non-free os) access tool. 
 define BLURB
 RemoteDesk is a graphical interface to rdesktop and it allows you to
-remotely access XXXXXXX computers, if you must.
+remotely access XXXXXXX (non-free os) computers, if you must.
 endef
 
 ######################################################################
 
-MASTER_SITES = $(MASTER_SAVANNAH)
+MASTER_SITES = $(MASTER_SAVANNAH_RELEASE)/
 MASTER_SUBDIR = gap/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig

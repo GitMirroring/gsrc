@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2016 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2016, 2017, 2018, 2019, 2020, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2019, 2020, 2022, 2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    gdk-pixbuf
 GARNAME = gdk-pixbuf
-GARVERSION = 2.44.4
+GARVERSION = 2.44.5
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = An image loading library
 define BLURB

@@ -20,7 +20,7 @@
 
 NAME =   DataExplorer 
 GARNAME = dataexplorer
-GARVERSION = 3.9.9
+GARVERSION = 4.0.1
 HOME_URL = http://www.nongnu.org/dataexplorer
 DESCRIPTION = data explorer, chart data from serial port, files, devices
 define BLURB
@@ -75,7 +75,7 @@ install-dataexplorerinstall: build
 #   just do
 #   make -k install
 #   and move on in life
-	
+
 # run like:
 # java -jar DataExplorer.jar
 

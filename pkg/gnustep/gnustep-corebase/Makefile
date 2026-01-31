@@ -59,3 +59,4 @@ include config.mk
 CONFIGURE_ARGS = --without-icu
 
 
+BUILD_ARGS = CFLAGS=--withound-icu

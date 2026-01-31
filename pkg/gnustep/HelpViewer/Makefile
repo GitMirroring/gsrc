@@ -29,8 +29,7 @@ endef
 
 ######################################################################
 
-MASTER_SITES = $(MASTER_SAVANNAH)
-# or MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)
+MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)/
 MASTER_SUBDIR = gap/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES =

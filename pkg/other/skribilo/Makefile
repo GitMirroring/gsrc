@@ -1,4 +1,4 @@
-# Copyright © 2018,2020,2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018,2020,2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME  =   skribilo
 GARNAME = skribilo
-GARVERSION = 0.10.0
+GARVERSION = 0.11.0
 HOME_URL = https://www.nongnu.org/skribilo/
 DESCRIPTION = document production tool using guile (scheme) 
 define BLURB
