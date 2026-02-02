@@ -30,7 +30,7 @@ GNU Parallel is a tool for executing shell jobs in parallel using one
 or more computers.  Jobs can consist of single commands or of scripts
 and they are executed on lists of files, hosts, users or other items.
 endef
-
+  
 ######################################################################
 
 MASTER_SITES = $(MASTER_GNU)

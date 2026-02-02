@@ -1,4 +1,4 @@
-# Copyright ©2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    openssl
 GARNAME = openssl
-GARVERSION = 3.6.0
+GARVERSION = 3.6.1
 HOME_URL = http://www.openssl.org/
 DESCRIPTION = Secure Sockets Layer, TLS, cryptography library 
 define BLURB

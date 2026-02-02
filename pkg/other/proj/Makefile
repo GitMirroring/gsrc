@@ -28,7 +28,7 @@ HOME_URL = http://www.proj.org
 DESCRIPTION =  library for doing geodesic and cartographic projections
 define BLURB
 endef
-LICENSE = MIT 
+LICENSE = MIT
 ######################################################################
 # http://download.osgeo.org/proj/proj-6.1.0.tar.gz 
 MASTER_SITES = http://download.osgeo.org/
@@ -49,8 +49,8 @@ CMAKE_CONFIGURE_ARGS =  -DCMAKE_TLS_VERIFY=0 -DBUILD_TESTING=OFF  PROJ_LIB=$(pre
 
 # kludge
 #pre-install:
-#	@echo mkdir -p $(packageDESTDIR)/ 
-#	mkdir -p $(packageDESTDIR)/ 
+#	@echo mkdir -p $(packageDESTDIR)/
+#	mkdir -p $(packageDESTDIR)/
 #	cd $(packageDESTDIR)  &&  rm -rf *
 #	cd $(packageDESTDIR)  && mkdir -p opt  && mkdir -p usr/local && ln -s usr/local opt/gsrc
 

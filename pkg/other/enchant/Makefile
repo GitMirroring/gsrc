@@ -43,15 +43,14 @@ LICENSE = LGPL-2.1
 BUILDDEPS =
 LIBDEPS =
 
-#USE_AUTORECONF = y
+USE_AUTORECONF = y
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 ##GNU_MAKE=make
-#
 #pre-configure: extract
-#	cd $(WORKSRC)  &&  ./bootstrap
+#	cd $(WORKSRC)  &&  autoreconf -vif
 #	$(MAKECOOKIE)
 
 

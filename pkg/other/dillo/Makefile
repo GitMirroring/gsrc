@@ -38,7 +38,8 @@ MASTER_SUBDIR = dillo-browser/$(GARNAME)/releases/download/v$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.bz2 
 SIGFILES  = $(DISTNAME).tar.bz2.asc
 
-BUILDDEPS = fltk
+BUILDDEPS =
+#fltk
 LIBDEPS =
 # Hint: States it uses FLTK 3, but might work with FLTK 4.
 #  just edit the "configure" script  

@@ -16,15 +16,17 @@
 # License for more details.
 #
 # You should have received a copy of the GNU General Public License
+#HOME_URL = http://eigen.tuxfamily.org
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 #
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Eigen
+NAME = eigen
 GARNAME = eigen
-GARVERSION = 3.4.0
-HOME_URL = http://eigen.tuxfamily.org
+GARVERSION = 5.0.0
+HOME_URL = http://libeigen.gitlab.io
+#HOME_URL = http://eigen.tuxfamily.org
 # old   http://bitbucket.org/
 DESCRIPTION = A C++ template library for linear algebra
 define BLURB
@@ -59,4 +61,4 @@ checks:
 	cd $(WORKOBJ) && make check
 
 
-	
+FIXME = proble make doc

@@ -36,9 +36,10 @@ DISTFILES = $(DISTNAME).tar.gz
 
 BUILDDEPS =
 LIBDEPS =
-PATCHFILES = argtable.2.13.patch
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
 

@@ -36,6 +36,7 @@ SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
+# funny name
 WORKSRC = $(WORKDIR)/audiofile-$(DISTNAME)
 WORKOBJ = $(WORKSRC)
 ######################################################################
@@ -43,7 +44,7 @@ WORKOBJ = $(WORKSRC)
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS=-fpermissive
+BUILD_ARGS = CFLAGS="-fpermissive"   CXXFLAGS=-fpermissive
 
 pre-configure:
 	cd $(WORKSRC) && ./autogen.sh
@@ -52,4 +53,6 @@ pre-configure:
 
 check test: build	
 	cd $(WORKOBJ) && $(MAKE) test
+
+FIXME = docs not made right, txt only, no man page. make -k install
 
