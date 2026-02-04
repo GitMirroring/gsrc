@@ -1,5 +1,5 @@
 # Copyright ©2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2017-2025 CarlHansen <carlhansen@gnu.org>
+# Copyright ©2017-2026 CarlHansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = coreutils
 GARNAME = coreutils
-GARVERSION = 9.9
+GARVERSION = 9.10
 HOME_URL = http://www.gnu.org/software/coreutils/
 DESCRIPTION = Core GNU utilities (file, text, shell)
 define BLURB
