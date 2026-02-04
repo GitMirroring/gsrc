@@ -1,4 +1,4 @@
-# Copyright © 2023,2026 Carl Hansne
+# Copyright ©2026 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -15,28 +15,34 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = fontforge
-GARNAME = fontforge
-GARVERSION =  20251009
-HOME_URL = http://fontforge.org
-DESCRIPTION = design fonts 
+NAME =   showtime
+GARNAME = showtime
+GARVERSION = 50.beta
+HOME_URL = http://www.gnome.org/
+DESCRIPTION = showtime video player
 define BLURB
-Design outline fonts, see http://designwithfontforge.com
 endef
-LICENSE = GPL
+
 ######################################################################
-# https://github.com/fontforge/fontforge/releases/download/20230101/fontforge-20230101.tar.xz
-# https://github.com/fontforge/fontforge/releases/download/20251009/fontforge-20251009.tar.xz
-MASTER_SITES = $(MASTER_GITHUB)
-MASTER_SUBDIR = fontforge/fontforge/releases/download/$(GARVERSION)/
-DISTFILES = $(DISTNAME).tar.xz
+
+empty:=
+space:= $(empty) $(empty)
+VERSION_LIST = $(subst .,$(space),$(GARVERSION))
+SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
+
+MASTER_SITES = $(MASTER_GNOME)
+MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
+DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
+SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/cmake.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 

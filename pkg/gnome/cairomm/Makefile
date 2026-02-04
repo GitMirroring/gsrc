@@ -38,7 +38,7 @@ DISTFILES = $(GARNAME)-$(GARVERSION).tar.xz
 SIGFILES =  
 
 
-BUILDDEPS =   cairo  libsigcplusplus
+BUILDDEPS =   cairo  libsigc++
 LIBDEPS =   
 ######################################################################
 

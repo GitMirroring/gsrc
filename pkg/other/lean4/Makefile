@@ -21,7 +21,7 @@
 
 NAME =    lean4
 GARNAME = lean4
-GARVERSION = 4.26.0
+GARVERSION = 4.27.0
 HOME_URL =  https://lean-lang.org
 DESCRIPTION = Lean4 theorem prover and functional language
 define BLURB
@@ -31,16 +31,18 @@ theorem prover. Lean programming primarily involves defining types
 and functions.  see https://leanprover-community.github.io
 endef
 
+
 ######################################################################
 # Gave up on git. Too many git fetch problems.
 #  https://github.com/leanprover/lean4.git
 #  https://github.com/leanprover/lean4/archive/refs/tags/v4.12.0.tar.gz
-	# problems with git, go with the tar.gz
+# https://github.com/leanprover/lean4/releases/download/v4.27.0/lean-4.27.0-linux.tar.zst
+# problems with git, go with the tar.gz
 MASTER_SITES =  https://github.com/
 MASTER_SUBDIR =  leanprover/lean4/archive/refs/tags/
 
 DISTFILES = v$(GARVERSION).tar.gz
-SIGFILES  = 
+SIGFILES  =
 
 #GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/$(GARNAME).git
 #GIT_REVISION = master
@@ -48,6 +50,8 @@ SIGFILES  =
 #fix this, do cp instead
 #WORKSRC =               $(DOWNLOADDIRGIT)/$(GARNAME)
 #WORKOBJ =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)-build
+WORKSRC = $(WORKDIR)/lean-$(GARVERSION)-linux
+WORKOBJ = $(WORKDIR)/lean-$(GARVERSION)-linux-build
 
 BUILDDEPS =
 LIBDEPS =

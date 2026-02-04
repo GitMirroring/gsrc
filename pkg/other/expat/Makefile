@@ -22,7 +22,7 @@
 
 NAME =    expat
 GARNAME = expat
-GARVERSION = 2.7.2
+GARVERSION = 2.7.4
 HOME_URL = https://libexpat.github.io/
 DESCRIPTION = XML parser c library
 define BLURB
@@ -32,7 +32,7 @@ LICENSE = same as the MIT/X Consortium
 ######################################################################
 # https://github.com/libexpat/libexpat/releases/download/R_2_7_2/expat-2.7.2.tar.lz
 MASTER_SITES = $(MASTER_GITHUB)  
-MASTER_SUBDIR = libexpat/libexpat/releases/download/R_2_7_2/ 
+MASTER_SUBDIR = libexpat/libexpat/releases/download/R_2_7_4/ 
 DISTFILES =  $(DISTNAME).tar.lz
 SIGFILES =    $(DISTNAME).tar.lz.asc 
 

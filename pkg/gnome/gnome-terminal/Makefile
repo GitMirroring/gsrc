@@ -19,7 +19,7 @@
 
 NAME =    gnome-terminal
 GARNAME = gnome-terminal
-GARVERSION = 3.58.1
+GARVERSION = 3.59.90
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Command line terminal
 define BLURB

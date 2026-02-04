@@ -21,7 +21,7 @@
 NAME =    FORM
 GARNAME = form
 #GARVERSION = 5.0.0-beta.1
-GARVERSION = 4.3.1
+GARVERSION = 5.0.0
 HOME_URL = https://www.nikhef.nl/~form/
 # or https://github.com/vermaseren/form/
 DESCRIPTION =  FORM is a symbolic manipulation system.

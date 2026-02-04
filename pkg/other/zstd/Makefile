@@ -62,25 +62,27 @@ install-me:
 	@echo ------------------
 	@echo ------------------
 	@echo note:  INSTALL_ARGS=$(INSTALL_ARGS) prefix=$(prefix)
-	@echo ------------------
-	cd $(WORKSRC)/lib      && $(MAKE) prefix=$(prefix)  DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
-	cd $(WORKSRC)/programs && $(MAKE) prefix=$(prefix)  DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
+	@echo -----------------prefix-
+	cd $(WORKSRC)/lib      && $(MAKE)   DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
+	cd $(WORKSRC)/programs && $(MAKE)   DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
 	@echo ------------------
 	@echo ------------------
 
 ime: 
-	@echo ------------------
+	@echo  prefix $(prefix)
+	echo ------------------
+	@echo  packageDESTDIR $(packageDESTDIR)
 	@echo ------------------
 	@echo note:  INSTALL_ARGS=$(INSTALL_ARGS) prefix=$(prefix)
+	echo ------------------
+	echo cd $(WORKSRC)/lib      && echo $(MAKE) prefix=$(prefix) $(INSTALL_ARGS)  install
+	echo ------------------
+	echo cd $(WORKSRC)/programs && echo $(MAKE) prefix=$(prefix) $(INSTALL_ARGS)  install
 	@echo ------------------
-	@echo cd $(WORKSRC)/lib      && echo $(MAKE) prefix=$(prefix) $(INSTALL_ARGS)  install
-	@echo cd $(WORKSRC)/programs && echo $(MAKE) prefix=$(prefix) $(INSTALL_ARGS)  install
-	@echo cd $(WORKSRC)/lib      && echo $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
-	@echo cd $(WORKSRC)/programs && echo $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
+	echo cd $(WORKSRC)/lib      && echo $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
+	echo ------------------
+	echo cd $(WORKSRC)/programs && echo $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
 	@echo ------------------
 	@echo ------------------
 
-a:
-	@echo  aaaa $(prefix)
-	@echo  aaaa $(packageDESTDIR)
-
+FIXME = non-fatal error on installation into package dir, ignore for now

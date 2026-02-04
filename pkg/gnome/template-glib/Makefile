@@ -1,4 +1,4 @@
-# Copyright ©2018,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2018,2025,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    template-glib
 GARNAME = template-glib
-GARVERSION = 3.38.0
+GARVERSION = 3.39.0
 HOME_URL = https://wiki.gnome.org/Projects/
 DESCRIPTION = template-glib thingee
 define BLURB

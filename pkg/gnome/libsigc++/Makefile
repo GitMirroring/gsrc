@@ -47,3 +47,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
+CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5
