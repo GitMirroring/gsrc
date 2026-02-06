@@ -22,9 +22,9 @@
 
 NAME = M4
 GARNAME = m4
-GARVERSION = 1.4.20
+GARVERSION = 1.4.21
 HOME_URL = http://www.gnu.org/software/m4/
-DESCRIPTION = Macro processor
+DESCRIPTION = m4 Macro processor
 define BLURB
 GNU M4 is an implementation of the M4 macro language, which features
 some extensions over other implementations, some of which are

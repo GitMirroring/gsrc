@@ -57,6 +57,6 @@ include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
 # This was needed for me , adjust as neccessary.
-CMAKE_CONFIGURE_ARGS += -Dgnuinstall=ON -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/XRootD
+# CMAKE_CONFIGURE_ARGS += -Dgnuinstall=ON -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/XRootD
 
 

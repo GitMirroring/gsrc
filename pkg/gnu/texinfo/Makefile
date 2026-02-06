@@ -24,7 +24,7 @@
 
 NAME = Texinfo
 GARNAME = texinfo
-GARVERSION = 7.2.90
+GARVERSION = 7.2.91
 RELEASE =
 HOME_URL = http://www.gnu.org/software/texinfo/
 DESCRIPTION = The GNU documentation format

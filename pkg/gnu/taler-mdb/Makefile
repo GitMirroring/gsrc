@@ -1,4 +1,4 @@
-# Copyright © 2020, 2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020, 2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = taler-mdb
 GARNAME = taler-mdb
-GARVERSION = 1.3.0
+GARVERSION = 1.4.0
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler is a privacy-preserving payment system, merchant snack machine
 define BLURB

@@ -1,4 +1,4 @@
-# Copyright ©2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024-2026 Carl Hansen <carlhansen@gnu.org>
  
 # This file is part of GSRC.
 
@@ -15,22 +15,23 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
-NAME = mineXpert
+NAME = MineXpert
 GARNAME = minexpert
-GARVERSION = 9.6.0
+GARVERSION = 3
 HOME_URL = http://msxpertsuite.org
 DESCRIPTION = mass spectometry data visualization
-define BLURB 
-minexpertis a desktop-oriented program that allows one to visualize mass
+define BLURB
+MineXpert is a desktop-oriented program that allows one to visualize mass
 spectrometric data in their full MS^n depth. Sophisticated mouse-driven
 mass data integrations are easily performed.
 endef
 ######################################################################
 #https://gitlab.com/msxpertsuite/massxpert2/-/archive/8.4.1-1/massxpert2-8.4.1-1.tar.bz2
 #https://gitlab.com/msxpertsuite/minexpert2/-/archive/main/minexpert2-main.tar.bz2
+#https://gitlab.com/msxpertsuite/MineXpert/-/archive/main/MineXpert-main.tar.bz2?ref_type=heads
 MASTER_SITES = https://gitlab.com/
-MASTER_SUBDIR =  msxpertsuite/minexpert2/-/archive/main/
-DISTFILES = $(GARNAME)-main.tar.bz2
+MASTER_SUBDIR =  msxpertsuite/MineXpert/-/archive/main/
+DISTFILES = $(NAME)-main.tar.bz2
 SIGFILES = 
 LICENSE = GNU GPL 3
 
@@ -38,7 +39,8 @@ LICENSE = GNU GPL 3
 BUILDDEPS = 
 LIBDEPS =
 
-WORKSRC = $(WORKDIR)/minexpert2-main-f8ae380f3a9a83c55fcea1a15158d1b001b61a99
+WORKSRC = $(WORKDIR)/$(NAME)-main
+WORKOBJ = $(WORKDIR)/$(NAME)-main-build
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk

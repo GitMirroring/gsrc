@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2019-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2019-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = Nettle
 GARNAME = nettle
-GARVERSION = 3.10.2
+GARVERSION = 4.0
 
 HOME_URL = http://www.gnu.org/software/nettle/
 DESCRIPTION = C library for low-level cryptographic functionality
