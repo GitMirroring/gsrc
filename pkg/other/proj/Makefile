@@ -24,7 +24,7 @@ NAME =    proj
 GARNAME = proj
 GARVERSION =  9.7.1
 HOME_URL = http://www.proj.org
-	# additional data and docs there
+# additional data and docs there
 DESCRIPTION =  library for doing geodesic and cartographic projections
 define BLURB
 endef
@@ -54,6 +54,6 @@ CMAKE_CONFIGURE_ARGS =  -DCMAKE_TLS_VERIFY=0 -DBUILD_TESTING=OFF  PROJ_LIB=$(pre
 #	cd $(packageDESTDIR)  &&  rm -rf *
 #	cd $(packageDESTDIR)  && mkdir -p opt  && mkdir -p usr/local && ln -s usr/local opt/gsrc
 
-FIXME = install correctly
+FIXME = to do install correctly
 
 

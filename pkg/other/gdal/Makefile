@@ -20,9 +20,9 @@
 
 NAME =    GDAL
 GARNAME = gdal
-GARVERSION = 3.12.0
+GARVERSION = 3.12.1
 HOME_URL = http://www.gdal.org/
-DESCRIPTION = GDAL - Geospatial Data Abstraction Library   
+DESCRIPTION = GDAL - Geospatial Data Abstraction Library
 define BLURB
 GDAL is a translator library for raster and vector geospatial data
 formats. As a library, it presents a single raster abstract data model
@@ -35,7 +35,7 @@ endef
 # http://download.osgeo.org/gdal/2.2.4/gdal-2.2.4.tar.xz
 MASTER_SITES =  https://download.osgeo.org/
 MASTER_SUBDIR = $(GARNAME)/$(GARVERSION)/
-DISTFILES = $(DISTNAME).tar.xz 
+DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =  $(DISTNAME).tar.xz.sig
 
 BUILDDEPS =

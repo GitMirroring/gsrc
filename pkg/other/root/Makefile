@@ -1,4 +1,4 @@
-# Copyright ©2016-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2016-2026 Carl Hansen <carlhansen@gnu.org>
 # 
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME = ROOT
 GARNAME = root
-GARVERSION = 6.38.00
+GARVERSION = 6.38.08
 
 HOME_URL = https://root.cern.ch 
 DESCRIPTION = Scientific data framework from CERN, includes a C++ interpreter.
@@ -35,11 +35,12 @@ endef
 
 ######################################################################
 # https://root.cern/download/root_v6.34.00-rc1.source.tar.gz
-MASTER_SITES =  https://root.cern/
-MASTER_SUBDIR =  download/
-DISTFILES =  $(GARNAME)_v$(GARVERSION).source.tar.gz
-SIGFILES = 
-LICENSE = LGPL 2.1 
+# https://github.com/root-project/root/archive/refs/tags/v6-36-08.tar.gz
+MASTER_SITES =  https://github.com/
+MASTER_SUBDIR =  root-project/root/archive/refs/tags/
+DISTFILES =  v6-36-08.tar.gz
+SIGFILES =
+LICENSE = LGPL 2.1
 
 BUILDDEPS =
 LIBDEPS =

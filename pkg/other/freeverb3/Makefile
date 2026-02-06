@@ -40,7 +40,7 @@ endef
 
 MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)/
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(GARNAME)-$(GARVERSION).tar.xz  
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.xz
 SIGFILES  = $(GARNAME)-$(GARVERSION).tar.xz.sig
 
 BUILDDEPS = fftw
@@ -50,4 +50,5 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
 
