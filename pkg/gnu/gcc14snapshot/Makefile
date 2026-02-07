@@ -1,4 +1,4 @@
-# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
 # 
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,13 +22,13 @@
 NAME = The GNU Compiler Collection version 14 development version
 GARNAME = gcc14snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 14-20260130
+GARVERSION = 14-20260206
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 14 snapshot
 define BLURBR
 GCC is the GNU Compiler Collection.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
-Fortran, Ada, D, Go, rust, and Modula 2. WIth runtime 
+Fortran, Ada, D, Go, rust, and Modula 2, with runtime 
 support libraries for these languages.
 endef
 
@@ -68,7 +68,7 @@ INFO_FILES =  \
 	gnat_ugn.info	  \
 	libgomp.info  \
 	libitm.info  \
-	libquadmath.info  
+	libquadmath.info
 
 
 
@@ -104,6 +104,7 @@ include config.mk
 # adjust as necessary.
 # ada 
 CONFIGURE_ARGS = --prefix=$(prefix)  \
+--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada \
 --program-suffix=-14 \
 --with-gmp=$(prefix) \
 --with-mpfr=$(prefix) \
@@ -119,7 +120,6 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-year2038 \
 --enable-gtk-cairo \
 --enable-host-shared  \
---enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d \
 --enable-libmpx \
 --disable-libssp \
 --enable-libda \

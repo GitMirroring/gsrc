@@ -57,7 +57,7 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS=-std=c11
+BUILD_ARGS = CFLAGS=-std=c99
 #manual  http://www.bengt-martensson.de/software/gnans/gnans.pdf
 
 

@@ -49,6 +49,7 @@ BUILDDEPS = #lasem openbabel
 LIBDEPS = 
 
 ######################################################################
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
 

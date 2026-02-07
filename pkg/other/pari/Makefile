@@ -1,4 +1,4 @@
-# Copyright ©2018-2025 Carl Hansen <carlhansen@gnu.org>
+# copyright ©2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    pari
 GARNAME = pari
-GARVERSION =  2.17.3
+GARVERSION =  2.18.0.alpha
 HOME_URL = http://pari.math.u-bordeaux.fr/
 DESCRIPTION = math library, calculator and library, unlimited-precision discrete math etc.
 define BLURB
@@ -31,9 +31,10 @@ endef
 # https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.13.0.tar.gz
 # https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.16.1.alpha.tar.gz
 # https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.16.2.beta.tar.gz
+# https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.18.0.alpha.tar.gz
 MASTER_SITES = https://pari.math.u-bordeaux.fr/
-#MASTER_SUBDIR = pub/pari/unstable/
-MASTER_SUBDIR = pub/pari/unix/
+MASTER_SUBDIR = pub/pari/unstable/
+#MASTER_SUBDIR = pub/pari/unix/
 DISTFILES = $(DISTNAME).tar.gz 
 SIGFILES  = $(DISTNAME).tar.gz.asc
 

@@ -20,7 +20,7 @@
 
 NAME =    gp2c
 GARNAME = gp2c
-GARVERSION =  0.0.14
+GARVERSION =  0.0.14pl1
 HOME_URL = http://pari.math.u-bordeaux.fr/
 DESCRIPTION = convert gp scripts to C code for pari math library
 define BLURB
@@ -29,7 +29,8 @@ endef
 ######################################################################
 #
 # http://pari.math.u-bordeaux.fr/pub/pari/GP2C/gp2c-0.0.12.tar.gz
-MASTER_SITES = http://pari.math.u-bordeaux.fr/
+# https://pari.math.u-bordeaux.fr/pub/pari/GP2C/gp2c-0.0.14pl1.tar.gz
+MASTER_SITES = https://pari.math.u-bordeaux.fr/
 MASTER_SUBDIR = pub/pari/GP2C/
 DISTFILES = $(DISTNAME).tar.gz 
 SIGFILES  = $(DISTNAME).tar.gz.asc 
