@@ -1,4 +1,4 @@
-# Copyright ©2020,2022-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2020,2022-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -19,7 +19,7 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 
-NAME =  GNU G-Golf    
+NAME =  GNU G-Golf
 GARNAME = g-golf
 GARVERSION = master 
 HOME_URL =   https://www.gnu.org/software/g-golf

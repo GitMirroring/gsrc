@@ -22,7 +22,7 @@
 
 NAME =    g-wrap
 GARNAME = g-wrap
-GARVERSION = 1.9.15 
+GARVERSION = 1.9.15
 HOME_URL =  https://savannah.gnu.org
 DESCRIPTION = program to make guile warpers for C library code
 define BLURB
@@ -34,10 +34,10 @@ endef
 
 MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)/
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz 
+DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  = $(DISTNAME).tar.gz.sig
 
-#INFO_FILES = 
+#INFO_FILES =
 BUILDDEPS =
 LIBDEPS =
 

@@ -21,7 +21,7 @@
 
 NAME = GNUzilla and IceCat
 GARNAME = icecat
-GARVERSION = 140.4.0-gnu1
+GARVERSION = 140.7.0-gnu1
 HOME_URL = http://www.gnu.org/software/gnuzilla/
 	#  see also icecatbrowser.org
 	#  also in gnuzilla

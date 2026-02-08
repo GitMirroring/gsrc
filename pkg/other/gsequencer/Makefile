@@ -1,4 +1,4 @@
-# Copyright ©2016-2025 Carl Hansen <carlhansen@gnu.com>
+# Copyright ©2016-2026 Carl Hansen <carlhansen@gnu.com>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,8 +21,8 @@
 
 NAME = gsequencer
 GARNAME = gsequencer
-GARVERSION = 8.2.12
-SUBDIR = 8.2.x
+GARVERSION = 8.3.1
+SUBDIR = 8.3.x
 HOME_URL = http://www.nongnu.org/gsequencer/ 
 DESCRIPTION = Audio processing, editing, sequencer.
 define BLURB 
