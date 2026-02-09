@@ -173,7 +173,7 @@ darcs//%:
 # sept 2022
 .PHONY: gitpull fetch-git fetch-gitrecursive
 #WORKSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
-GIT_REVISION ?= master    
+GIT_REVISION ?= master
 
 gitpull:
 	@printf "git pulling $(DOWNLOADDIRGIT)/$(GARNAME)\n"; 

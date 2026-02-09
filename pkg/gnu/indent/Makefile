@@ -41,7 +41,7 @@ SIGFILES = $(DISTNAME).tar.xz.sig
 
 BUILDDEPS =
 LIBDEPS =
-
+WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk

@@ -1,4 +1,4 @@
-# Copyright ©2018-2020, 2022-2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2018-2020, 2022-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    systemd
 GARNAME = systemd
-GARVERSION =  259
+GARVERSION =  259.1
 
 HOME_URL = https://systemd.io 
 #	www.freedesktop.org/wiki/Software/systemd/
