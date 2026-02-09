@@ -1,5 +1,5 @@
 # Copyright ©2013, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017-2026  <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,27 +22,28 @@
 
 NAME = Binutils
 GARNAME = binutils
-GARVERSION = 2.45
+GARVERSION = 2.46
 HOME_URL = http://www.gnu.org/software/binutils/
-	
+
 DESCRIPTION = binary utilities: bfd, gas, gprof, ld, nm, objdump etc.
-define BLURB 
+define BLURB
 GNU Binutils is a collection of tools for working with binary files.
 Perhaps the most notable are "ld", a linker, and "as", an assembler.
 Other tools include programs to display binary profiling information,
 list the strings in a binary file, and utilities for working with
 archives.  The "bfd" library for working with executable and object
-formats is also included. Programs: addr2line ar as c++filt elfedit
-gp-archive gp-collect-app gp-display-html gp-display-src gp-display-text
-gprof gprofng gprofng-archive gprofng-collect-app gprofng-display-html
-gprofng-display-src gprofng-display-text ld ld.bfd nm objcopy objdump
-ranlib readelf size strings strip
+formats is also included. Programs:
+addr2line ar as c++filt elfedit gp-archive gp-collect-app gp-display-html
+gp-display-src gp-display-text gprof gprofng gprofng-archive
+gprofng-collect-app gprofng-display-html gprofng-display-src
+gprofng-display-text gprofng-gmon ld ld.bfd nm objcopy objdump ranlib
+readelf size strings strip
 endef
 ######################################################################
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.lz
+DISTFILES = $(GARNAME)-with-gold-$(GARVERSION).tar.lz
 SIGFILES = $(DISTFILES).sig
 
 INFO_FILES = as.info bfd.info binutils.info ctf-spec.info gprof.info \
@@ -50,6 +51,8 @@ INFO_FILES = as.info bfd.info binutils.info ctf-spec.info gprof.info \
 
 BUILDDEPS =
 LIBDEPS =
+WORKSRC = $(WORKDIR)/binutils-with-gold-$(GARVERSION)
+WORKOBJ = $(WORKSRC)-build
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
