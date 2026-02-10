@@ -1,4 +1,4 @@
-# Copyright © 2016,2020,2023-2024 Carl Hansen <cWallace Smith Broecker - Wikipediaarlhansen@gnu.org>
+# Copyright © 2016,2020,2023-2024,2026 Carl Hansen <cWallace Smith Broecker - Wikipediaarlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME =    ibus
 GARNAME = ibus
-GARVERSION = 1.5.31
+GARVERSION = 1.5.33
 HOME_URL = http://github.com/ibus/ibus
 DESCRIPTION = ibus Intelligent Input Bus 
 define BLURB

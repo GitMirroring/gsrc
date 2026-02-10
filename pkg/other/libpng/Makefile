@@ -19,7 +19,7 @@
 
 NAME =    libpng
 GARNAME = libpng
-GARVERSION = 1.6.46
+GARVERSION = 1.6.55
 HOME_URL = http://libpng.org/
 DESCRIPTION =  libpng, official PNG reference library.
 define BLURB
@@ -39,7 +39,4 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
-
-
-
 
