@@ -27,9 +27,9 @@ program that runs in the background.
 endef
 
 ######################################################################
-
-MASTER_SITES = $(MASTER_SAVANNAH)
-MASTER_SUBDIR = $(GARNAME)/
+# https://download.savannah.gnu.org/releases/gmediaserver/gmediaserver-0.13.0.tar.gz.sig
+MASTER_SITES = https://download.savannah.gnu.org/
+MASTER_SUBDIR = releases/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 PATCHFILES = $(DISTNAME)-support-libupnp-1.6.12.diff

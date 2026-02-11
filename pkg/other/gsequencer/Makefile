@@ -21,7 +21,7 @@
 
 NAME = gsequencer
 GARNAME = gsequencer
-GARVERSION = 8.3.1
+GARVERSION = 8.3.2
 SUBDIR = 8.3.x
 HOME_URL = http://www.nongnu.org/gsequencer/ 
 DESCRIPTION = Audio processing, editing, sequencer.

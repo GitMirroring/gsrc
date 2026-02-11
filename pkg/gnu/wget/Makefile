@@ -50,4 +50,5 @@ include ../../../gar/gar.lib/info.mk
 include config.mk
 
 CONFIGURE_ARGS += --with-openssl=auto
+BUILD_ARGS = CFLAGS=-std=c99
 
