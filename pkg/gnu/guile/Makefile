@@ -56,5 +56,5 @@ include config.mk
 #		    --with-libgmp-prefix=$(prefix)
 #
 # TODO ln -s guild guild-3.0
-BUILD_ARGS = CFLAGS="-std=c23 -Wno-incompatible-pointer-types"
+#BUILD_ARGS = CFLAGS="-std=c23 -Wno-incompatible-pointer-types"
 

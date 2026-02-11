@@ -32,7 +32,6 @@ MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.bz2
 SIGFILES = $(DISTNAME).tar.bz2.sig
-#PATCHFILES = $(DISTNAME)-fix-doc-build.diff
 INFO_FILES = accounting.info
 
 BUILDDEPS =
@@ -40,6 +39,8 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS="-Wno-incompatible-pointer-types"

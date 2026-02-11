@@ -36,7 +36,7 @@ SIGFILES = $(DISTNAME).zip.sig
 
 BUILDDEPS =
 LIBDEPS =
-
+WORKOBJ = $(WORKSRC)
 ######################################################################
 CONFIGURE_SCRIPTS =
 include ../../../gar/gar.lib/autotools.mk
