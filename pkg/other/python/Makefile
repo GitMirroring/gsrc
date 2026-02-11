@@ -1,5 +1,5 @@
 # Copyright © 2014, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2017-2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of BioSRC and GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -24,7 +24,7 @@
 NAME = Python
 GARNAME = python
 UPSTREAMNAME = Python
-GARVERSION = 3.14.2
+GARVERSION = 3.14.3
 BASEVERSION = 3.14
 HOME_URL = http://python.org
 DESCRIPTION = A general-purpose, high-level programming language

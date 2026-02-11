@@ -22,7 +22,7 @@
 
 NAME = GnuTLS
 GARNAME = gnutls
-GARVERSION = 3.8.10
+GARVERSION = 3.8.12
 SERIES = 3.8
 HOME_URL =  http://gnutls.org
        # http://www.gnu.org/software/gnutls/
@@ -52,4 +52,7 @@ LIBDEPS = # lzo
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration"
+
 
