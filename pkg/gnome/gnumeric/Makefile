@@ -22,7 +22,7 @@
 
 NAME = Gnumeric
 GARNAME = gnumeric
-GARVERSION = 1.12.59
+GARVERSION = 1.12.60
 HOME_URL = http://www.gnome.org/projects/gnumeric/
 DESCRIPTION = The Gnome Office Spreadsheet - Free, Fast, Accurate: Pick any 3! 
 define BLURB

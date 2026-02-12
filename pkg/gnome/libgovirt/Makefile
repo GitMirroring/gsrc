@@ -20,7 +20,7 @@
 
 NAME =    libgovirt
 GARNAME = libgovirt
-GARVERSION = 0.3.9
+GARVERSION = 0.3.11
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GObject-based library to access oVirt REST API
 define BLURB

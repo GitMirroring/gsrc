@@ -20,7 +20,7 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Nettle
+NAME = nettle
 GARNAME = nettle
 GARVERSION = 4.0
 
@@ -39,7 +39,7 @@ endef
 MASTER_SITES = $(MASTER_GNU)/
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = $(DISTNAME).tar.gz.sig
+SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS = gmp
 LIBDEPS = 
@@ -50,3 +50,4 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=-I.

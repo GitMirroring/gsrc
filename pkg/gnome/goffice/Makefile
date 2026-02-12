@@ -22,7 +22,7 @@
 
 NAME = goffice
 GARNAME = goffice
-GARVERSION = 0.10.59
+GARVERSION = 0.10.60
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A GLib/GTK+ set of document-centric objects and charting library 
 define BLURB

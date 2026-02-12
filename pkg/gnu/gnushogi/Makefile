@@ -33,7 +33,7 @@ MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
-PATCHFILES = $(DISTNAME)-fix-install.diff
+#PATCHFILES = $(DISTNAME)-fix-install.diff
 
 BUILDDEPS =
 LIBDEPS = termcap

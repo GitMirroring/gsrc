@@ -50,8 +50,8 @@ SIGFILES  =
 #fix this, do cp instead
 #WORKSRC =               $(DOWNLOADDIRGIT)/$(GARNAME)
 #WORKOBJ =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)-build
-WORKSRC = $(WORKDIR)/lean-$(GARVERSION)-linux
-WORKOBJ = $(WORKDIR)/lean-$(GARVERSION)-linux-build
+WORKSRC = $(WORKDIR)/lean4-$(GARVERSION)
+WORKOBJ = $(WORKSRC)-build
 
 BUILDDEPS =
 LIBDEPS =

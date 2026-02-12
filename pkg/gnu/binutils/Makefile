@@ -20,9 +20,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Binutils
+NAME = binutils
 GARNAME = binutils
-GARVERSION = 2.46
+GARVERSION = 2.46.0
 HOME_URL = http://www.gnu.org/software/binutils/
 
 DESCRIPTION = binary utilities: bfd, gas, gprof, ld, nm, objdump etc.
@@ -43,7 +43,7 @@ endef
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(GARNAME)-with-gold-$(GARVERSION).tar.lz
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.lz
 SIGFILES = $(DISTFILES).sig
 
 INFO_FILES = as.info bfd.info binutils.info ctf-spec.info gprof.info \
@@ -51,13 +51,12 @@ INFO_FILES = as.info bfd.info binutils.info ctf-spec.info gprof.info \
 
 BUILDDEPS =
 LIBDEPS =
-WORKSRC = $(WORKDIR)/binutils-with-gold-$(GARVERSION)
-WORKOBJ = $(WORKSRC)-build
+#WORKSRC = $(WORKDIR)/binutils-with-gold-$(GARVERSION)
+#WORKOBJ = $(WORKSRC)-build
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-#BUILD_ARGS = CFLAGS=-std=c17
 

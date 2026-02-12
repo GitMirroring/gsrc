@@ -45,6 +45,8 @@ LICENSE = LGPL 2.1
 BUILDDEPS =
 LIBDEPS =
 
+WORKSRC = $(WORKDIR)/root-6-36-08
+WORKOBJ = $(WORKSRC)-build
 # HINT:
 # apt install openssl libxpm-dev libxpm4 libxft-dev libxft2  libxext-dev
  
@@ -57,6 +59,7 @@ include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
 # This was needed for me , adjust as neccessary.
-# CMAKE_CONFIGURE_ARGS += -Dgnuinstall=ON -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/XRootD
+ CMAKE_CONFIGURE_ARGS += -Dgnuinstall=ON -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/XRootD
+
 
 
