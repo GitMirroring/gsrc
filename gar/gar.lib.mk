@@ -176,11 +176,11 @@ darcs//%:
 GIT_REVISION ?= master
 
 gitpull:
-	@printf "git pulling $(DOWNLOADDIRGIT)/$(GARNAME)\n"; 
+	@printf "git pulling $(DOWNLOADDIRGIT)/$(GARNAME)\n";
 	(cd  $(DOWNLOADDIRGIT)/$(GARNAME) &&  git pull  )
 
 gitpullrecurse:
-	@printf "git pulling $(DOWNLOADDIRGIT)/$(GARNAME) with --recurse\n"; 
+	@printf "git pulling $(DOWNLOADDIRGIT)/$(GARNAME) with --recurse\n";
 	(cd  $(DOWNLOADDIRGIT)/$(GARNAME) &&  git pull --recurse  )
 
 # ?? --recurse or --recurse-submodules ??
@@ -188,21 +188,21 @@ gitpullrecurse:
 # don't MAKECOOKIE I think
 
 #-d $(DOWNLOADDIRGIT)/$(GARNAME)/.git ];  problematic if name is something else
-fetch-git:  
+fetch-git:
 	@if [ -d $(DOWNLOADDIRGIT)/$(GARNAME)/.git ]; then    $(MAKE) gitpull ;  else  \
         printf "git cloning and checking out $(GARNAME)\n"; \
                 mkdir -p $(DOWNLOADDIRGIT)/$(GARNAME);   \
               cd $(DOWNLOADDIRGIT)   &&  git clone --depth=1 $(GIT_PATH)   ; \
-             ( cd $(GARNAME) &&  git checkout $(GIT_REVISION) ) ;  fi 
+             ( cd $(GARNAME) &&  git checkout $(GIT_REVISION) ) ;  fi
 
 
 # almost same as above; this could be rewritten, using a variable for git options....
-fetch-gitrecursive:  
+fetch-gitrecursive:
 	@if [ -d $(DOWNLOADDIRGIT)/$(GARNAME)/.git ]; then    $(MAKE) gitpullrecurse ;  else  \
         printf "git cloning and checking out $(GARNAME)\n"; \
                 mkdir -p $(DOWNLOADDIRGIT)/$(GARNAME);   \
               cd $(DOWNLOADDIRGIT) &&  git clone --depth=1 --recursive $(GIT_PATH) $(GARNAME)  ; \
-             ( cd $(GARNAME) &&  git checkout $(GIT_REVISION) ) ;  fi 
+             ( cd $(GARNAME) &&  git checkout $(GIT_REVISION) ) ;  fi
 # don't MAKECOOKIE I think
 
 
@@ -1221,7 +1221,7 @@ sysinstall-uninstall:
 	rm -f $(dotgardir)/FILES $(dotgardir)/DIRS $(dotgardir)/VERSION $(dotgardir)/BUILD $(OUTPUT); \
 	rmdir $(dotgardir) $(OUTPUT))
 
-sysinstall-uninstall-pkg:  
+sysinstall-uninstall-pkg:
 	@printf "[$(OK)sysinstall-uninstall-pkg$(OFF)] $(MSG)removing $(packagedir) $(OFF)\n"
 	rm -rvf $(packagedir) $(OUTPUT)
 	rm -f $(COOKIEDIR)/sysinstall-* $(COOKIEDIR)/*-install $(OUTPUT)

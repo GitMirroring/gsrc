@@ -37,7 +37,7 @@ endef
 ######################################################################
 # https://github.com/didoudiaz/gprolog.git
 #MASTER_SITES = http://www.gprolog.org/
-#MASTER_SUBDIR = 
+#MASTER_SUBDIR =
 MASTER_SITES = https://github.com
 MASTER_SUBDIR =  didoudiaz
 
@@ -51,9 +51,9 @@ WORKSRC = $(WORKDIR)/$(DISTNAME)/src
 # seems to be needed for now:
 WORKOBJ = $(WORKSRC)
 
-BUILDDEPS = 
-LIBDEPS = 
-
+BUILDDEPS =
+LIBDEPS =
+CONFIGURE_ARGS = prefix=$(prefix)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -61,25 +61,23 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/varb.mk
 include config.mk
 
-#--with-install-dir=$(prefix)/packages/$(DISTNAME) 
+#--with-install-dir=$(prefix)/packages/$(DISTNAME)
 
-# --with-install-dir=$(packagedir) 
-# --with-install-dir=$(packagedir) 
-# --with-doc-dir=share/doc/$(GARNAME)   
+# --with-install-dir=$(packagedir)
+# --with-install-dir=$(packagedir)
+# --with-doc-dir=share/doc/$(GARNAME)
 
 #CONFIGURE_ARGS = --prefix=$(packagepredix) --exec-prefix=$(packagepredix)
-# --with-install-dir=$(prefix)/$(packages) 
+# --with-install-dir=$(prefix)/$(packages)
 #    --with-html-dir=share/doc/html \
 # --with-examples-dir=share/doc/examples
 
-# @echo $(packageexamples) 
-# @echo $(packagedocs) 
+# @echo $(packageexamples)
+# @echo $(packagedocs)
 # packageexamples := $(packagedocs)/examples
 
 # HINT: need latexmk for reproducing pdf docs
 # dnf install latexmk
-
-.PHONY: pre-install
 
 
 fetch: fetch-git
@@ -89,11 +87,16 @@ post-fetch: fetch-git
 	mkdir -p $(WORKSRC)
 	cp -a $(GITSRC)/* $(WORKSRC)/../
 
-#pre-install: 
+#pre-install:
 #	@echo pre-installing
 ##	$(INSTALL_DOCS) $(WORKSRC)/../doc/gprolog.html
 #	$(INSTALL_DOCS) $(WORKSRC)/../doc/gprolog.pdf
 #	$(INSTALL_DOCS) $(WORKSRC)/../doc/gprolog.chm
+
+#      - another location can be specified using --with-install-dir=INSTALL_DIR
+
+install:
+	cd $(WORKOBJ)  && make -n install --with-install-dir=$(packageEDESTDIR)
 
 check:
 	cd $(WORKSRC)   &&  $(MAKE) check
