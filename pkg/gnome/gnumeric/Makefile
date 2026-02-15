@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2019, 2022  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2019, 2022,2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -24,10 +24,10 @@ NAME = Gnumeric
 GARNAME = gnumeric
 GARVERSION = 1.12.60
 HOME_URL = http://www.gnome.org/projects/gnumeric/
-DESCRIPTION = The Gnome Office Spreadsheet - Free, Fast, Accurate: Pick any 3! 
+DESCRIPTION =  GNUmeric Gnu office spreadsheet 
 define BLURB
 GNUmeric is a GNU spreadsheet application, running under GNOME.  
-It is interoperable with other spreadsheet applications.  It
+It is interoperable with other spreadshet applications.  It
 has a vast array of features beyond typical spreadsheet functionality,
 such as support for linear and non-linear solvers, statistical
 analysis, and telecommunication engineering.

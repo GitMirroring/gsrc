@@ -20,7 +20,7 @@
 
 NAME =    libsoup
 GARNAME = libsoup
-GARVERSION = 3.6.5
+GARVERSION = 3.6.6
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = HTTP client/server library for GNOME
 define BLURB
