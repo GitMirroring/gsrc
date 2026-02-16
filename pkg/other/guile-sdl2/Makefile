@@ -30,10 +30,11 @@ Guile scheme SDL2 (Simple DirectMedia Layer 2)  wrapper. See also
 endef
 
 ######################################################################
+#https://files.dthompson.us/releases/guile-sdl2/guile-sdl2-0.8.0.tar.gz
 MASTER_SITES = https://files.dthompson.us/
-MASTER_SUBDIR = $(GARNAME)/
+MASTER_SUBDIR = releases/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz 
-SIGFILES  = #$(DISTNAME).tar.gz.asc
+SIGFILES  = $(DISTNAME).tar.gz.asc
 
 BUILDDEPS =
 LIBDEPS =

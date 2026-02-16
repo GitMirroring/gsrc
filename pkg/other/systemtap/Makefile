@@ -44,7 +44,7 @@ include config.mk
 
 CONFIGURE_ARGS = CPPFLAGS=-UHAVE_LIBDEBUGINFOD
 BUILD_ARGS = CPPFLAGS=-UHAVE_LIBDEBUGINFOD
-DESTDIR=$(packageDESTDIR)
+#DESTDIR=$(packageDESTDIR)
 
 # FIXME = missing headers
 # HINT:    sudo apt install libdw-dev  libdw1t64 libdwarf\*

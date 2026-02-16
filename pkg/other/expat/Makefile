@@ -1,4 +1,4 @@
-# Copyright ©2017, 2021, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017, 2021, 2022, 2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -31,13 +31,13 @@ endef
 LICENSE = same as the MIT/X Consortium
 ######################################################################
 # https://github.com/libexpat/libexpat/releases/download/R_2_7_2/expat-2.7.2.tar.lz
-MASTER_SITES = $(MASTER_GITHUB)  
-MASTER_SUBDIR = libexpat/libexpat/releases/download/R_2_7_4/ 
+MASTER_SITES = $(MASTER_GITHUB)
+MASTER_SUBDIR = libexpat/libexpat/releases/download/R_2_7_4/
 DISTFILES =  $(DISTNAME).tar.lz
-SIGFILES =    $(DISTNAME).tar.lz.asc 
+SIGFILES =    $(DISTNAME).tar.lz.asc
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

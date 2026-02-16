@@ -1,4 +1,4 @@
-# Copyright ©2018-2021, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2018-2021,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    guile-git
 GARNAME = guile-git
-GARVERSION = 0.5.2
+GARVERSION = 0.10.0
 HOME_URL = https://gitlab.com/guile-git/guile-git
 DESCRIPTION = a Guile interface to libgit2
 define BLURB
@@ -38,12 +38,13 @@ MASTER_SUBDIR = $(GARNAME)/$(GARNAME)/-/archive/v$(GARVERSION)/
 DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
 SIGFILES  = 
 
-#WORKSRC = $(WORKDIR)/guile-git-v0.5.1-e497146ce8f6a1aea9c34ed3bf9443afb14be9a0
+WORKSRC = $(WORKDIR)/guile-git-v0.10.0-05d4a48c811f29c8db80ee6697fe658950fb503e
+WORKOBJ = $(WORKSRC)-build
 
 BUILDDEPS =
 LIBDEPS =
 
-USE_AUTORECONF = y
+#USE_AUTORECONF = y
 
 ######################################################################
 
@@ -55,4 +56,5 @@ include config.mk
 #	cd $(WORKSRC)  && ./bootstrap
 #	$(MAKECOOKIE)
 
-
+pre-configure:
+	cd $(WORKSRC) && autoreconf -vif
