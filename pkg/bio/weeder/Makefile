@@ -18,8 +18,8 @@
 
 NAME = Weeder
 GARNAME = weeder
-GARVERSION = 2.0.1
-HOME_URL = http://159.149.160.51/modtools/
+GARVERSION = 2.0
+HOME_URL = http://159.149.160.88/modtools/
 	# see also  https://omictools.com/weeder-tool
 DESCRIPTION = MOtif discovery in nucleotide sequences from co-regulated genes
 define BLURB
@@ -33,8 +33,8 @@ CITE = PMID:16845071
 # The executable is called "weeder2"
 
 ######################################################################
-# http://159.149.160.51/modtools/downloads/weeder2.0.1.tar.gz
-MASTER_SITES = http://159.149.160.51/
+ # http://159.149.160.88/modtools/downloads/weeder2.0.tar.gz
+MASTER_SITES = http://159.149.160.88/
 MASTER_SUBDIR = modtools/downloads/
 DISTNAME = $(GARNAME)$(GARVERSION)
 DISTFILES = $(DISTNAME).tar.gz

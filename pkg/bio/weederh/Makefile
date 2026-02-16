@@ -19,18 +19,21 @@ NAME = WeederH
 GARNAME = weederh
 UPSTREAMNAME = weederH
 GARVERSION = 1.0
-HOME_URL = http://159.149.160.51/modtools/
+HOME_URL = https://mybiosoftware.com/weeder-1-4-2-motif-discovery-sequences-coregulated-genes-single-species.html
+# http://159.149.160.88/modtools/
 DESCRIPTION = Find conserved regulatory regions in homologous sequences
 define BLURB
-WeederH implements an algorithm for identifying conserved regulatory
-motifs and regions in homologous sequences.
+WeederH is a software for finding of conserved nucleotide motifs and
+regions through comparative genomics, tailored for the analysis of
+non-coding DNA and the identification of conserved TFBSs or whole
+enhancers or silencers.
 endef
 LICENSE = GPLv3
 CITE = doi:10.1186/1471-2105-8-46
 
 ######################################################################
-
-MASTER_SITES = http://159.149.160.51/
+# http://159.149.160.88/modtools/downloads/weederH.tar.gz
+MASTER_SITES = http://159.149.160.88/
 MASTER_SUBDIR = modtools/downloads/
 DISTNAME = $(UPSTREAMNAME)
 DISTFILES = $(DISTNAME).tar.gz
@@ -62,3 +65,6 @@ install-bin:
 	install -m755 $(WORKSRC)/weederH $(packageprefix)/share/weederh/weederH
 	$(SYMLINK_BIN) $(prefix)/share/weederh/weederH weederH
 	$(MAKECOOKIE)
+
+
+BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration -Wno-implicit-int"
