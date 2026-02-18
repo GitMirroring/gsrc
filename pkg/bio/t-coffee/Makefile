@@ -18,7 +18,7 @@
 NAME = T-Coffee
 GARNAME = t-coffee
 UPSTREAMNAME = T-COFFEE
-GARVERSION = 13.25.45.678c2fa
+GARVERSION = 13.46.0.919e8c6b
 HOME_URL = http://www.tcoffee.org/
 DESCRIPTION = A multiple sequence alignment package
 define BLURB
@@ -32,15 +32,14 @@ LICENSE = GPLv2 or later
 CITE = pmid:10964570
 
 ######################################################################
-# https://s3.eu-central-1.amazonaws.com/tcoffee-packages/sources/tcoffee/Stable/T-COFFEE_distribution.tar.gz
-# https://s3.eu-central-1.amazonaws.com/tcoffee-packages/sources/tcoffee/Beta/T-COFFEE_distribution.tar.gz
+# https://s3.eu-central-1.amazonaws.com/tcoffee-packages/Stable/Latest/T-COFFEE_distribution_Version_13.46.0.919e8c6b.tar.gz
 MASTER_SITES = https://s3.eu-central-1.amazonaws.com/
-MASTER_SUBDIR = tcoffee-packages/sources/tcoffee/Beta/
-DISTNAME = $(UPSTREAMNAME)_distribution
+MASTER_SUBDIR = tcoffee-packages/Stable/Latest/
+DISTNAME = $(UPSTREAMNAME)_distribution_Version_$(GARVERSION)
 DISTFILES = $(DISTNAME).tar.gz
-WORKSRC = $(WORKDIR)/T-COFFEE_distribution_Version_13.25.45.678c2fa
+WORKSRC = $(WORKDIR)/T-COFFEE_distribution_Version_13.46.0.919e8c6b
 BUILD_SCRIPTS = $(WORKSRC)/makefile
-INSTALL_SCRIPTS = programs
+#INSTALL_SCRIPTS = programs
 
 BUILDDEPS =
 LIBDEPS =
@@ -52,16 +51,18 @@ include config.mk
 
 BUILD_ARGS += FCC=gfortran
 
+# redo
 build-$(WORKSRC)/makefile:
 	@printf "[$(OK)build$(OFF)] $(MSG)Running make in $(OFF)$*\n"
-	$(BUILD_ENV) $(MAKE) -C $(WORKSRC) $(MAKE_ARGS) $(BUILD_ARGS) all $(OUTPUT) || \
-		$(BUILD_FAIL)
+	cd $(WORKSRC)  && ./install all
 	$(MAKECOOKIE)
 
-install-programs:
-	@printf "[$(OK)install$(OFF)] $(MSG)Installing $(NAME) programs. $(OFF)\n"
-	$(INSTALL_BIN) $(WORKSRC)/t_coffee
-	$(INSTALL_BIN) $(WORKSRC)/TMalign
-	$(MAKECOOKIE)
+#$(BUILD_ENV) $(MAKE) -C $(WORKSRC) $(MAKE_ARGS) $(BUILD_ARGS) all $(OUTPUT) || \
+#		$(BUILD_FAIL)
 
+#install-programs:
+#	@printf "[$(OK)install$(OFF)] $(MSG)Installing $(NAME) programs. $(OFF)\n"
+#	$(INSTALL_BIN) $(WORKSRC)/t_coffee
+#	$(INSTALL_BIN) $(WORKSRC)/TMalign
+#	$(MAKECOOKIE)
 

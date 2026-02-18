@@ -1,4 +1,4 @@
-# Copyright ©2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022-2026 Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    gnome-remote-desktop
 GARNAME = gnome-remote-desktop
-GARVERSION = 49.2
+GARVERSION = 49.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = gnome-remote-desktop
 define BLURB

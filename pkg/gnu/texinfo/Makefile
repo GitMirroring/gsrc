@@ -18,13 +18,11 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
-
-
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Texinfo
+NAME = texinfo
 GARNAME = texinfo
-GARVERSION = 7.2.91
+GARVERSION = 7.2.92
 RELEASE =
 HOME_URL = http://www.gnu.org/software/texinfo/
 DESCRIPTION = The GNU documentation format
@@ -43,9 +41,9 @@ endef
 #https://alpha.gnu.org/gnu/texinfo/texinfo-7.2.90.tar.xz.sig
 MASTER_SITES = $(MASTER_GNU_ALPHA)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME)$(RELEASE).tar.xz 
+DISTFILES = $(DISTNAME)$(RELEASE).tar.xz
 SIGFILES  = $(DISTNAME)$(RELEASE).tar.xz.sig
-INFO_FILES = info-stnd.info  texinfo.info 
+INFO_FILES = info-stnd.info  texinfo.info
 
 BUILDDEPS = # ncurses
 LIBDEPS =
@@ -55,6 +53,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
-
-
 

@@ -40,7 +40,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = 
 BUILD_SCRIPTS = $(WORKSRC)/Makefile
 INSTALL_SCRIPTS = bins
-PATCHFILES = treebest.patch
+#PATCHFILES = treebest.patch
 
 BUILDDEPS =
 LIBDEPS =
@@ -57,4 +57,4 @@ install-bins:
 	$(MAKECOOKIE)
 
 # todo, install docs, FLTK gui
-#
+

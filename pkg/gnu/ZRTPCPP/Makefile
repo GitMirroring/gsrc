@@ -46,5 +46,10 @@ PATCHFILES = ZRTPCPP.bool.patch
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
+# this is temporary fix for latest cmake. Might be better ways...
+CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+
 post-fetch:
 	cp download/$(GARVERSION).tar.gz  download/$(GARNAME)-$(GARVERSION).tar.gz
+
+

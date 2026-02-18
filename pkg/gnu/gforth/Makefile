@@ -66,13 +66,13 @@ include config.mk
 
 # Note: If you have old version of gforth, you might have to clear out
 # $HOME/.gforth before building.
-# and 
+# and
 # make uninstall
 # make uninstall-pkg
 #
 #  if needed:
 #pre-configure:
-#	BUILD_FROM=tarball . ./install-deps.sh 
+#	BUILD_FROM=tarball . ./install-deps.sh
 #	# installs the dependencies for a tarball build
 #	  look at install-deps.sh
 
@@ -85,17 +85,17 @@ configure-myconfigure:
 	mkdir -p $(WORKOBJ)
 	cd $(WORKOBJ) && BUILDFROM=tarball  ../$(DISTNAME)/configure  --prefix=$(prefix)
 	$(MAKECOOKIE)
-	
-build-mybuild: 
-	cd $(WORKOBJ) &&  VERBOSE=1 DESTDIR=$(packageDESTDIR) $(MAKE) 
+
+build-mybuild:
+	cd $(WORKOBJ) &&  VERBOSE=1 DESTDIR=$(packageDESTDIR) $(MAKE)
 
 pre-install:  build-mybuild
-	$(INSTALL_INFO) $(WORKSRC)/doc/vmgen.info 
-	$(INSTALL_INFO) $(WORKSRC)/doc/gforth.info 
+	$(INSTALL_INFO) $(WORKSRC)/doc/vmgen.info
+	$(INSTALL_INFO) $(WORKSRC)/doc/gforth.info
 
 # is this still needed?
 install-myinst: pre-install
-	cd $(WORKOBJ) && $(MAKE)  -k install  VERBOSE=1 DESTDIR=$(packageDESTDIR) 
+	cd $(WORKOBJ) && $(MAKE)  -k install  VERBOSE=1 DESTDIR=$(packageDESTDIR)
 	cd $(WORKOBJ)  && $(INSTALL_BIN)  gforth.fi
 
 

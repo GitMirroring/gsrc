@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2024 Carl Hansen
+# Copyright © 2024,2026 Carl Hansen
 
 
 # This file is part of GSRC.
@@ -19,7 +19,7 @@
 
 NAME = trimAl
 GARNAME = trimal
-GARVERSION = 1.5.0
+GARVERSION = 1.5.1
 HOME_URL = http://trimal.cgenomics.org/
 DESCRIPTION = A tool for automated alignment trimming
 define BLURB
