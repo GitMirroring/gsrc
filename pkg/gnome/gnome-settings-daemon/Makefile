@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2022,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2022,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gnome-settings-daemon
 GARNAME = gnome-settings-daemon
-GARVERSION = 49.beta
+GARVERSION = 50.beta
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME Settings Daemon
 define BLURB

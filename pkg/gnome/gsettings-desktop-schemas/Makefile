@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gsettings-desktop-schemas
 GARNAME = gsettings-desktop-schemas
-GARVERSION = 49.beta
+GARVERSION = 50.beta
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Shared GSettings schemas for the desktop 
 define BLURB
