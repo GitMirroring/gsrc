@@ -27,7 +27,7 @@ HOME_URL = http://freetype.org
 DESCRIPTION =  Typeface renderer
 define BLURB
 library to render typefaces (fonts), in C,  producing high-quality output
-(glyph images) of most vector and bitmap font formats.  
+(glyph images) of most vector and bitmap font formats.
 endef
 
 # TODO, the docs:  freetype-doc-2.......tar.bz2
@@ -37,7 +37,7 @@ endef
 MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)
 MASTER_SUBDIR = $(UPSTREAMNAME)/
 DISTFILES = $(DISTNAME).tar.xz \
-			 $(GARNAME)-doc-$(GARVERSION).tar.xz  
+			 $(GARNAME)-doc-$(GARVERSION).tar.xz
 SIGFILES  = $(DISTNAME).tar.xz.sig \
 			$(GARNAME)-doc-$(GARVERSION).tar.xz.sig
 BUILDDEPS =

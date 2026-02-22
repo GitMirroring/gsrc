@@ -20,7 +20,7 @@
 
 NAME = nyacc
 GARNAME = nyacc
-GARVERSION =  3.02.0
+GARVERSION =  3.02.1
 HOME_URL =  http://www.nongnu.org/nyacc
 DESCRIPTION =  Guile modules for nyacc compiler creation and parsers
 define BLURB
@@ -30,7 +30,7 @@ and pretty-printers using SXML trees as an intermediate representation.
 It provides a decent C parser and a FFI Helper tool to help create
 Guile Scheme bindings for C-based libraries.  It provides (partially
 implemented) compilers based on above mentioned parsers to allow execution
-with Guile as extension languages.  
+with Guile as extension languages.
 endef
 ######################################################################
 # https://download.savannah.gnu.org/releases/nyacc/nyacc-1.09.4.tar.gz.sig
