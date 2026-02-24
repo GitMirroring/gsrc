@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = Gawk
 GARNAME = gawk
-GARVERSION = 5.3.2
+GARVERSION = 5.4.0
 HOME_URL = http://www.gnu.org/software/gawk/
 DESCRIPTION = Text scanning and processing language
 define BLURB
