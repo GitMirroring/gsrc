@@ -1,4 +1,4 @@
-# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    guile-hoot
 GARNAME = guile-hoot
-GARVERSION = 0.6.0
+GARVERSION = 0.8.0
 HOME_URL = http://spritely.institute
 DESCRIPTION = guile-hoot, guile to WASM
 define BLURB
@@ -36,8 +36,8 @@ endef
 
 MASTER_SITES = https://spritely.institute/
 MASTER_SUBDIR = files/releases/guile-hoot/
-DISTFILES = $(DISTNAME).tar.gz 
-SIGFILES = 
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =

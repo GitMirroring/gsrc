@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020,2021,2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020,2021,2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,8 +22,7 @@
 
 NAME = Autoconf
 GARNAME = autoconf
-GARVERSION = 2.72e
-
+GARVERSION = 2.72.90
 HOME_URL = http://www.gnu.org/software/autoconf/
 DESCRIPTION = Create source code configuration scripts
 define BLURB

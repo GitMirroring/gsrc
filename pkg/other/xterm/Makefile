@@ -1,4 +1,4 @@
-# Copyright ©2022-2025 Carl Hansen <carlhansen@gnu.org> 
+# Copyright ©2022-2026 Carl Hansen <carlhansen@gnu.org> 
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = xterm
 GARNAME = xterm
-GARVERSION = 405
+GARVERSION = 407
 
 HOME_URL = http://invisible-island.net/xterm
 DESCRIPTION = famous terminal for X displays
@@ -41,5 +41,4 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
-
 

@@ -31,7 +31,7 @@ endef
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = acm/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = $(DISTNAME).tar.gz.sig
+SIGFILES  = $(DISTNAME).tar.gz.sig
 PATCHFILES = $(DISTNAME)-fix-install.diff
 
 BUILDDEPS =
@@ -39,6 +39,13 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS="-std=c89  -I. -I.. -Isrc  -I$(WORKSRC)/V/lib" 
+
+a:
+	cpp -I. -I.. -Isrc -IV/lib -I$(WORKSRC)/V/lib  -v 
+
+

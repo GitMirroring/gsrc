@@ -1,4 +1,4 @@
-# Copyright © 2016-2019, 2021, 2022, 2024-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -16,31 +16,32 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 #
+#
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    librsvg
-GARNAME = librsvg
-GARVERSION = 2.61.92
-HOME_URL = http://www.gnome.org/
-DESCRIPTION = SVG rendering library
+NAME =    bytestructures
+GARNAME = bytestructures
+GARVERSION = 2.0.2
+HOME_URL =  https://github.com/TaylanUB/scheme-bytestructures
+DESCRIPTION =  Guile scheme-bytestructures
 define BLURB
 endef
+# nneded by guix
+
 ######################################################################
+#git clone https://github.com/TaylanUB/scheme-bytestructures.git
+#https://github.com/TaylanUB/scheme-bytestructures/releases/download/v2.0.2/bytestructures-2.0.2.tar.gz
+MASTER_SITES = https://github.com/
+MASTER_SUBDIR = TaylanUB/scheme-bytestructures/releases/download/v$(GARVERSION)/
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
+SIGFILES  =
 
-empty:=
-space:= $(empty) $(empty)
-VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
-
-MASTER_SITES = $(MASTER_GNOME)
-MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
-DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
-SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
-
+#USE_AUTORECONF = yes
 ######################################################################
 
-include ../../../gar/gar.lib/mesonninja.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
+

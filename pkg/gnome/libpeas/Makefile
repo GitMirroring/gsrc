@@ -19,7 +19,7 @@
 
 NAME =    libpeas
 GARNAME = libpeas
-GARVERSION = 2.2.0
+GARVERSION = 2.2.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A GObject plugins library
 define BLURB
