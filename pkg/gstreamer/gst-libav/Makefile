@@ -23,7 +23,7 @@
 
 NAME =    gst-libav
 GARNAME = gst-libav
-GARVERSION = 1.26.10
+GARVERSION = 1.28.1
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = Libav-based plug-in 
 define BLURB
