@@ -22,7 +22,7 @@
 
 NAME = Units
 GARNAME = units
-GARVERSION = 2.25
+GARVERSION = 2.26
 HOME_URL = http://www.gnu.org/software/units/
 DESCRIPTION = Conversion between units of measure
 define BLURB
