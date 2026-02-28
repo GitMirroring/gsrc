@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2014, 2018, 2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2014, 2018, 2023, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -20,7 +20,7 @@
 
 NAME =  groff, troff etc
 GARNAME = groff
-GARVERSION = 1.23.0
+GARVERSION = 1.24.0
 HOME_URL = http://www.gnu.org/software/groff/
 DESCRIPTION = Typesetting from plain text mixed with formatting commands
 define BLURB

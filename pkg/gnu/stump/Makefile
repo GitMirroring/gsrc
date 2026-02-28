@@ -38,6 +38,7 @@ MASTER_SUBDIR = $(GARNAME)/download/
 DISTFILES = $(UPSTREAMNAME)_$(version).tar.gz
 SIGFILES =
 WORKSRC = $(WORKDIR)/$(GARNAME)/
+WORKOBJ = $(WORKSRC)
 
 BUILDDEPS =
 LIBDEPS =
@@ -47,3 +48,5 @@ LIBDEPS =
 include ../../../gar/gar.mk
 include config.mk
 
+
+#  probably all in local
