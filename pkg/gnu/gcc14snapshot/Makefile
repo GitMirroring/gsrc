@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 14 development version
 GARNAME = gcc14snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 14-20260213
+GARVERSION = 14-20260227
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 14 snapshot
 define BLURBR
