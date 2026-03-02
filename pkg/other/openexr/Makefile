@@ -1,4 +1,4 @@
-# Copyright ©2020-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2020-2026 Carl Hansen <carlhansen@gnu.org>
 # 
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    OpenEXR
 GARNAME = openexr
-GARVERSION = 3.4.4
+GARVERSION = 3.4.6
 HOME_URL = http://www.openexr.com
 DESCRIPTION =  high dynamic-range (HDR) 2-d image file format
 define BLURB
