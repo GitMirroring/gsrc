@@ -1,4 +1,4 @@
-# Copyright © 2016,2021,2022,2024-2025 Carl Hansen carlhansen@gnu.org
+# Copyright © 2016,2021,2022,2024-2026 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gnome-initial-setup
 GARNAME = gnome-initial-setup
-GARVERSION = 49.0
+GARVERSION = 50.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Bootstrapping your OS
 define BLURB

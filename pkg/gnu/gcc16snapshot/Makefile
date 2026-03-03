@@ -47,11 +47,11 @@ MASTER_SUBDIR = pub/gcc/snapshots/$(GARVERSION)/
 #MASTER_SITES = $(MASTER_GNU)
 #MASTER_SUBDIR = $(GARNAME)/$(DISTNAME)/
 DISTNAME= $(UPSTREAMNAME)-$(GARVERSION)
-DISTFILES = $(DISTNAME).tar.xz 
-SIGFILES = 
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES =
 
 BUILDDEPS = gmp mpfr mpc zlib
-LIBDEPS = 
+LIBDEPS =
 INFO_FILES =  \
 	cpp.info  \
 	cppinternals.info  \
@@ -74,7 +74,7 @@ INFO_FILES =  \
 	libquadmath.info  \
 	m2.info
 
-#	libiberty.info  
+#	libiberty.info
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
@@ -107,7 +107,6 @@ CONFIGURE_SCRIPTS = adhoc
 # note: at end --target=x86_64-linux-gnu
 # Many options at just what Debian ships with;
 # adjust as necessary.
-# 
 
 #--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,ada,algol68 \
 
@@ -152,22 +151,20 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --with-tune=generic \
 --disable-vtable-verify  \
 --disable-werror \
---enable-bootstrap 
-
+--enable-bootstrap
 
 #--build=x86_64-linux-gnu \
 #--host=x86_64-linux-gnu \
-#--target=x86_64-linux-gnu 
+#--target=x86_64-linux-gnu
 #  -m32 -m32x?
 # --with-arch-32=i686  \
-	#
+
 # enable-bootstrap might not be necessary, but it solves some problems
 # of building when not using recent gcc to build.
 
 #BUILD_ARGS  =   CFLAGS+="-v --save-temps -Wall  -Wextra  " \
 #             CXXFLAGS+="-v --save-temps -Wall  -Wextra  "  \
 #             CPPFLAGS="-I. -I.. "
-	     
 
 #configure-adhoc:
 #	@echo some bug in build files requires this odd step
@@ -176,7 +173,6 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 
 ######################################################################
 .PHONY: checkall
-
 
 checkall: 
 	cd $(WORKOBJ)  &&  $(MAKE) -k check >  checkall.output.txt 2>&1
