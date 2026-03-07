@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2020, 2022-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2020, 2022-2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME = PSPP
 GARNAME = pspp
-GARVERSION = 2.0.1
+GARVERSION = 2.1.1
 HOME_URL = http://www.gnu.org/software/pspp/
 DESCRIPTION = Statistical analysis
 define BLURB
