@@ -20,7 +20,7 @@
 
 NAME =    curl
 GARNAME = curl
-GARVERSION =  8.18.0-rc3
+GARVERSION =  8.18.0
 HOME_URL = http://www.curl.se
 DESCRIPTION = Download files from internet with command line
 define BLURB
@@ -28,18 +28,18 @@ endef
 ######################################################################
 #https://github.com/curl/curl/releases/download/curl-8_17_0/curl-8.17.0.tar.xz
 
-#MASTER_SITES =  https://github.com/
-#MASTER_SUBDIR = curl/curl/releases/download/curl-8_17_0/
-#https://curl.se/rc/curl-8.18.0-rc3.tar.xz
-MASTER_SITES = https://curl.se/
-MASTER_SUBDIR = rc/
+# https://github.com/curl/curl/releases/download/curl-8_18_0/curl-8.18.0.tar.xz
+MASTER_SITES =  https://github.com/
+MASTER_SUBDIR = curl/curl/releases/download/curl-8_18_0/
+#MASTER_SITES = https://curl.se/
+#MASTER_SUBDIR = rc/
 
 
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES  = $(DISTNAME).tar.xz.asc
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -53,7 +53,7 @@ include config.mk
 #CONFIGURE_ARGS += --disable-versioned-symbols   --disable-symbol-hiding --with-gnutls
 CONFIGURE_ARGS +=  --with-openssl --enable-versioned-symbols
 
-#--disable-dependency-tracking 
+#--disable-dependency-tracking
 
 #Select from these: in config.mk or above in CONFIGURE_ARGS
 # see configure --help

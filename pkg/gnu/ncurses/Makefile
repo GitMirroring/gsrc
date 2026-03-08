@@ -22,7 +22,7 @@
 
 NAME = ncurses
 GARNAME = ncurses
-GARVERSION = 6.6-20260301
+GARVERSION = 6.6-20260307
 GARVERSIONMAJOR = 6.6
 
 HOME_URL = http://www.gnu.org/software/ncurses/
@@ -51,7 +51,7 @@ MASTER_SITES = http://invisible-island.net/
 MASTER_SUBDIR = archives/$(GARNAME)/current/
 DISTFILES = $(DISTNAME).tgz
 SIGFILES  = $(DISTNAME).tgz.asc
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 
 
@@ -63,7 +63,7 @@ include config.mk
 # HINT. there are many config options. In the source directory, do "configure --help"
 # experimenting....
 
-CONFIGURE_ARGS  += --with-versioned-syms --enable-pc-files   --with-shared --with-normal    --enable-widec 
+CONFIGURE_ARGS  += --with-versioned-syms --enable-pc-files   --with-shared --with-normal    --enable-widec
 # includes static ie with-normal
 
 
