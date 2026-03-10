@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020, 2021, 2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020, 2021, 2023-2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME = GNUnited Nations
 GARNAME = gnun
-GARVERSION = 1.5
+GARVERSION = 1.6
 HOME_URL = http://www.gnu.org/software/gnun/
 DESCRIPTION = Build system for www.gnu.org translations
 define BLURB

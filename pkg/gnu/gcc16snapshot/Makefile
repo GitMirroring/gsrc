@@ -22,13 +22,13 @@
 NAME = The GNU Compiler Collection version 16 development version
 GARNAME = gcc16snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 16-20260301
+GARVERSION = 16-20260308
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 16 snapshot
 define BLURB
 GCC is the GNU Compiler Collection.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
-Fortran, Ada, D, Go, Rust, Modula 2, Cobol, and Algol68 with runtime 
+Fortran, Ada, D, Go, Rust, Modula 2, Cobol, and Algol68 with runtime
 support libraries for these languages.
 endef
 
@@ -36,7 +36,7 @@ endef
 # http://gcc.gnu.org/pub/gcc/snapshots/
 
 #HINT: To compile Ada aka "gnats", you need to have earlier Ada compiler.
-#HINT: Likewise for the D compiler, called "gdc". Of course you need a 
+#HINT: Likewise for the D compiler, called "gdc". Of course you need a
 #HINT: working C++ compiler to compile gcc....
 
 ######################################################################
