@@ -1,4 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
+# 2026
 #
 # This file is part of GSRC.
 #
@@ -18,7 +19,7 @@
 NAME = SciPy
 GARNAME = python-scipy
 UPSTREAMNAME = scipy
-GARVERSION = 0.17.1
+GARVERSION = 1.17.1
 HOME_URL = http://www.scipy.org
 DESCRIPTION = A mathematical library for Python
 define BLURB

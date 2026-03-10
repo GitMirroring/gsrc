@@ -30,7 +30,7 @@ functionalities needed to deal with big data processing, statistical
 analysis, visualisation and storage. It is mainly written in C++ but
 integrated with other languages such as Python and R. Include a C++
 interpreter, which might be the most widely usable feature. 
-Source code tar.gz is 396 megabytes.
+Source code tar.gz is 196 megabytes.
 endef
 
 ######################################################################
@@ -41,6 +41,10 @@ MASTER_SUBDIR =  root-project/root/archive/refs/tags/
 DISTFILES =  v6-36-08.tar.gz
 SIGFILES =
 LICENSE = LGPL 2.1
+
+CITE = Rene Brun and Fons Rademakers, ROOT - An Object Oriented Data \
+Analysis Framework, Proceedings AIHENP96 Workshop, Lausanne, Sep. 1996, \
+Nucl. Inst. Meth. in Phys. Res. A 389 (1997) 81-86.
 
 BUILDDEPS =
 LIBDEPS =
