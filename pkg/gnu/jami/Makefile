@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2019-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2019-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -18,7 +18,7 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =  Jami a.k.a. Ring
+NAME =  Jami , formerly Ring
 GARNAME = jami
 GARVERSION = 20260306.0
 HOME_URL = https://jami.net

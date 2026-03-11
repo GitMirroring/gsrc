@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = Libksba
 GARNAME = libksba
-GARVERSION = 1.6.7
+GARVERSION = 1.6.8
 HOME_URL = http://www.gnupg.org/related_software/libksba/index.en.html
 DESCRIPTION = A library for working with X.509 certificates and CMS  data
 define BLURB

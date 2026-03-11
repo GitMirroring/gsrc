@@ -1,4 +1,4 @@
-# Copyright ©2015,2018,2025 Carl Hansen
+# Copyright ©2015,2018,2025-2026 Carl Hansen
 #
 # This file is part of GSRC.
 #
@@ -20,7 +20,7 @@
 
 NAME = gpa
 GARNAME = gpa
-GARVERSION = 0.11.0
+GARVERSION = 0.11.1
 HOME_URL = http://www.gnu.org/software/gnupg
 DESCRIPTION = gpa is a graphical frontend to GnuPG. 
 define BLURB

@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2016 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = libgpg-error
 GARNAME = libgpg-error
-GARVERSION = 1.58
+GARVERSION = 1.59
 HOME_URL = http://www.gnupg.org/related_software/libgpg-error/index.en.html/
 DESCRIPTION = A library that defines common error values for GnuPG
 define BLURB
