@@ -31,7 +31,7 @@ goal is to provide a strong foundation of free software for a global,
 distributed network that provides security and privacy.  GNUnet in that
 sense aims to replace the current internet protocol stack.  Along with an
 application for secure publication of files, it has grown to include all
-kinds of basic applications for the foundation of a GNU internet.  
+kinds of basic applications for the foundation of a GNU internet.
 endef
 
 ######################################################################
@@ -43,7 +43,7 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS = libunistring libgcrypt libmicrohttpd  libextractor gnurl
 # libsodium etc
-LIBDEPS = 
+LIBDEPS =
 
 PACKAGE = gnunet
 
@@ -52,10 +52,10 @@ WORKOBJ = $(WORKSRC)-build
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
-include ../../../gar/gar.lib/info.mk
+#include ../../../gar/gar.lib/info.mk
 include config.mk
 
-
+FIXME = file gnunet.info is not an info file. TODO Make sane.
 
 
 

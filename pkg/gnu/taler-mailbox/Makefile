@@ -33,7 +33,8 @@ endef
 ######################################################################
 
 MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = taler/
+# this is correct, but unexpected: MASTER_SUBDIR = gnunet/
+MASTER_SUBDIR = gnunet/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 

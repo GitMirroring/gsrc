@@ -21,7 +21,7 @@
 NAME =    sdsl-lite
 GARNAME = sdsl-lite
 GARVERSION = 2.1.1
-HOME_URL = http://github.com/
+HOME_URL = https://github.com/simongog/sdsl-lite
 DESCRIPTION =  Succinct Data Structure Library
 define BLURB
 The Succinct Data Structure Library (SDSL) is a powerful and flexible
@@ -41,10 +41,10 @@ endef
 MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR =  simongog/sdsl-lite/releases/download/v$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.gz.offline.install.gz
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 
@@ -57,4 +57,6 @@ extract:
 
 post-build:
 	cd $(WORKSRC)/examples  && $(MAKE)
+
+FIXME = need to adjust INCLUDE_PATH  correctly
 
