@@ -20,10 +20,10 @@
 NAME =    SFCGAL
 GARNAME = sfcgal
 UPSTREAMNAME = SFCGAL
-GARVERSION = 1.5.2
+GARVERSION = 2.2.0
 HOME_URL = http://www.sfcgal.org/
-	# http://oslandia.github.io/SFCGAL
-DESCRIPTION = Simple Features Computational Geometry Algorithms Library 
+# http://oslandia.github.io/SFCGAL
+DESCRIPTION = Simple Features Computational Geometry Algorithms Library
 define BLURB
 SFCGAL is a C++ wrapper library around CGAL with the aim of supporting
 ISO 19107:2013 and OGC Simple Features Access 1.2 for 3D operations.
@@ -37,10 +37,11 @@ LICENSE = GNU LGPL2+
 
 MASTER_SITES = https://gitlab.com/
 MASTER_SUBDIR = Oslandia/$(UPSTREAMNAME)/-/archive/v$(GARVERSION)/
-DISTFILES = $(UPSTREAMNAME)-v$(GARVERSION).tar.gz  
+DISTFILES = $(UPSTREAMNAME)-v$(GARVERSION).tar.gz
 SIGFILES =
 
 WORKSRC = $(WORKDIR)/$(UPSTREAMNAME)-v$(GARVERSION)
+WORKOBJ = $(WORKSRC)-build
 
 BUILDDEPS =
 LIBDEPS =
@@ -49,4 +50,7 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
+
+# wrong FIXME
+CMAKE_CONFIGURE_ARGS = CMAKE_PREFIX_PATH="$(prefix)"
 

@@ -19,7 +19,7 @@
 
 NAME =    gnome-clocks
 GARNAME = gnome-clocks
-GARVERSION = 49.0
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Clocks applications for GNOME
 define BLURB
