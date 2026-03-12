@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2022,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2022,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    shotwell
 GARNAME = shotwell
-GARVERSION = 33.alpha
+GARVERSION = 0.32.15
 HOME_URL = https://wiki.gnome.org/Apps/Shotwell
 DESCRIPTION = Digital photo organizer
 define BLURB
