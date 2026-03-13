@@ -1,4 +1,4 @@
-# Copyright ©2016-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2016-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,9 +21,9 @@
 NAME =    cmake
 GARNAME = cmake
 #GARVERSION = 3.31.5
-GARVERSION = 4.3.0-rc2
+GARVERSION = 4.3.0-rc3
 HOME_URL = https://cmake.org/
-	# or http://kitware.com/cmake
+# or http://kitware.com/cmake
 DESCRIPTION =  cmake build utility, works with or as "make" or other build systems
 define BLURB
 endef
