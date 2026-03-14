@@ -1,5 +1,5 @@
 # Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
-# 
+#
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
 #
@@ -22,20 +22,20 @@
 NAME = The GNU Compiler Collection version 14 development version
 GARNAME = gcc14snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 14-20260306
+GARVERSION = 14-20260313
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 14 snapshot
 define BLURBR
 GCC is the GNU Compiler Collection.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
-Fortran, Ada, D, Go, rust, and Modula 2, with runtime 
-support libraries for these languages.
+Fortran, Ada, D, Go, rust, and Modula 2, with runtime support
+libraries for these languages.
 endef
 
 # if downloading not working, look here:
 # http://gcc.gnu.org/pub/gcc/snapshots/
 
-# HINT: to compile Ada aka "gnat", you need to have earlier Ada compiler 
+# HINT: to compile Ada aka "gnat", you need to have earlier Ada compiler
 # already installed....
 # Likewise for the D compliper, called "gdc"
 
@@ -49,10 +49,10 @@ MASTER_SUBDIR = pub/gcc/snapshots/$(GARVERSION)/
 #MASTER_SUBDIR = $(GARNAME)/$(DISTNAME)/
 DISTNAME= $(UPSTREAMNAME)-$(GARVERSION)
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES = 
+SIGFILES =
 
 BUILDDEPS = gmp mpfr mpc zlib
-LIBDEPS = 
+LIBDEPS =
 INFO_FILES =  \
 	cpp.info  \
 	cppinternals.info  \
@@ -72,7 +72,7 @@ INFO_FILES =  \
 
 
 
-#	libiberty.info  
+#	libiberty.info
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
@@ -102,7 +102,7 @@ include config.mk
 # note: at end --target=x86_64-linux-gnu
 # Many options at just what Debian ships with;
 # adjust as necessary.
-# ada 
+# ada
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada \
 --program-suffix=-14 \
@@ -147,7 +147,7 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --without-cuda-driver  \
 --with-tune=generic \
 --disable-vtable-verify  \
---disable-werror 
+--disable-werror
 
 
 #  -m32 -m32x?
@@ -155,7 +155,7 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 #--enable-bootstrap \
 #--build=x86_64-linux-gnu \
 #--host=x86_64-linux-gnu \
-#--target=x86_64-linux-gnu 
+#--target=x86_64-linux-gnu
 
 # --with-arch-32=i686  \
 # enable-bootstrap might not be necessary, but it solves some problems
@@ -165,15 +165,14 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 
 #BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  " \
 #             CXXFLAGS+="--save-temps -Wall  -Wextra  "  \
-#             CPPFLAGS="-I. -I.. " 
-	     
+#             CPPFLAGS="-I. -I.. "
 
 ######################################################################
 .PHONY: checkall
 
-checkall: 
+checkall:
 	cd $(WORKOBJ)  &&  $(MAKE) -k check >  checkall.output.txt 2>&1
-	echo checkall.output in file  $(WORKOBJ)/checkall.output.txt 
+	echo checkall.output in file  $(WORKOBJ)/checkall.output.txt
 	$(MAKECOOKIE)
 
 
