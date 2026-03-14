@@ -1,4 +1,4 @@
-# Copyright © 2016-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = unifont
 GARNAME = unifont
-GARVERSION = 17.0.03
+GARVERSION = 17.0.04
 HOME_URL = http://unifoundry.com
 #HOME_URL = http://www.gnu.org/software/unifont/
 DESCRIPTION = Large bitmap font covering Unicode s Basic Multilingual Plane
@@ -62,14 +62,14 @@ include config.mk
 build-maximally:
 	@echo  building....
 	cd $(WORKSRC) && $(MAKE) bindir
-	cd $(WORKSRC) && $(MAKE) libdir   
-	cd $(WORKSRC) && $(MAKE) docdir  
-	cd $(WORKSRC) && $(MAKE) mandir 
+	cd $(WORKSRC) && $(MAKE) libdir
+	cd $(WORKSRC) && $(MAKE) docdir
+	cd $(WORKSRC) && $(MAKE) mandir
 	cd $(WORKSRC) && $(MAKE) buildfont BUILDFONT=1
 	cd $(WORKSRC) && $(MAKE) doxygen
 
 # FIXME
-install-myinstall:  
+install-myinstall:
 	mkdir -p $(packageprefix)/share/info
 	mkdir -p $(packageprefix)/share/fonts/X11/misc
 	mkdir -p $(packageprefix)/share/fonts/truetype
@@ -88,8 +88,8 @@ install-myinstall:
 mftest:
 	@echo for debugging purposes:
 	@echo MAKEFILE_LIST  is ${MAKEFILE_LIST}
-	@echo prefix is  $(prefix) 
-	@echo packageDESTDIR is  $(packageDESTDIR) 
-	@echo 
+	@echo prefix is  $(prefix)
+	@echo packageDESTDIR is  $(packageDESTDIR)
+	@echo
 	@echo dotVariables is "$(.VARIABLES)"
 
