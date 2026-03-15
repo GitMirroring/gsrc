@@ -20,7 +20,7 @@
 
 NAME =  groff, troff etc
 GARNAME = groff
-GARVERSION = 1.24.0
+GARVERSION = 1.24.1
 HOME_URL = http://www.gnu.org/software/groff/
 DESCRIPTION = Typesetting from plain text mixed with formatting commands
 define BLURB
