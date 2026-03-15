@@ -90,6 +90,7 @@ mftest:
 	@echo MAKEFILE_LIST  is ${MAKEFILE_LIST}
 	@echo prefix is  $(prefix)
 	@echo packageDESTDIR is  $(packageDESTDIR)
+	@echo packageprefix is  $(packageprefix)
 	@echo
-	@echo dotVariables is "$(.VARIABLES)"
+	@echo dotVariables are "$(.VARIABLES)"
 

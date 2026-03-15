@@ -22,8 +22,15 @@ NAME =  openbabel
 GARNAME = openbabel
 GARVERSION =  3.1.1
 HOME_URL = http://openbabel.org
-DESCRIPTION =  chemistry utils, file converter etc
+DESCRIPTION =  chemistry utils, file converter, molecular modeling
 define BLURB
+Open Babel is a chemical toolbox designed to speak the many languages of
+chemical data. allowing anyone to search, convert, analyze, or store data
+from molecular modeling, chemistry, solid-state materials, biochemistry,
+cheminformatics, bioinformatics, organic chemistry, inorganic chemistry,
+nuclear chemistry...  Read, write and convert over 90 chemical file
+formats. Filter and search molecular files using SMARTS and other
+methods. Generate 2D and 3D coordinates for SMILES, InChI and other formats
 endef
 
 ######################################################################
@@ -33,8 +40,6 @@ MASTER_SUBDIR = $(GARNAME)/$(GARNAME)/releases/download/$(GARNAME)-3-1-1/
 DISTFILES = $(GARNAME)-$(GARVERSION)-source.tar.bz2
 SIGFILES =
 
-#WORKOBJ = $(WORKSRC)-build
-
 BUILDDEPS =
 LIBDEPS =
 
@@ -42,4 +47,7 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
+
+# this is temporary fix for latest cmake. Might be better ways...
+CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 
