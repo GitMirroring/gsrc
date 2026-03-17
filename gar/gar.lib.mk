@@ -208,7 +208,7 @@ fetch-gitrecursive:
 
 
 # paradigm:
-#git clone $(GIT_PATH) $(GARNAME) && 
+#git clone $(GIT_PATH) $(GARNAME) &&
 
 # Check out source from Git with https. , .tar.gz etc
 # main purpose is to save the download to DISTNAME rather that github goofy name
@@ -219,13 +219,13 @@ fetch-gitrecursive:
 #    mkdir -p $(DOWNLOADDIRGIT)`
 #    cd $(DOWNLOADDIR)-git && \
 #        git clone $(GIT_PATH) $(DISTNAME) && \
-#        (cd $(DISTNAME) && git checkout $(GIT_REVISION)) 
+#        (cd $(DISTNAME) && git checkout $(GIT_REVISION))
 
 
 
 #    @echo githttp $*
 #    wget $(WGET_OPTS) -O $(DOWNLOADDIR)/$(notdir $*).partial https://$*
-#    mv $(DOWNLOADDIR)/$(notdir $*).partial  $(DOWNLOADDIR)/$(notdir $*) 
+#    mv $(DOWNLOADDIR)/$(notdir $*).partial  $(DOWNLOADDIR)/$(notdir $*)
 #    cp $(DOWNLOADDIR)/$(notdir $*)          $(DOWNLOADDIR)/$(DISTNAME).tar.gz
 #    @echo before ----------------ALLFILES      $(ALLFILES)
 #    echo ALLFILES = $(subst    $(notdir $*) , $(DISTNAME).tar.gz, $(ALLFILES) )
@@ -233,17 +233,17 @@ fetch-gitrecursive:
 #    #$(MAKE) garchve-$(DOWNLOADDIR)/$(DISTNAME).tar.gz
 
 
-## working notes 
+## working notes
 ## # download an http URL (colons omitted)
 ## http//%:
 ##     wget $(WGET_OPTS) -O $(DOWNLOADDIR)/$(notdir $*).partial http://$*
 ##     mv $(DOWNLOADDIR)/$(notdir $*).partial $(DOWNLOADDIR)/$(notdir $*)
-## 
+##
 ## # download an https URL (colons omitted)
 ## https//%:
 ##     wget $(WGET_OPTS) -O $(DOWNLOADDIR)/$(notdir $*).partial https://$*
 ##     mv $(DOWNLOADDIR)/$(notdir $*).partial $(DOWNLOADDIR)/$(notdir $*)
-## 
+##
 ## ---
 ##     mkdir -p $(DOWNLOADDIR)/git
 ##     cd $(DOWNLOADDIR)/git && \
@@ -777,8 +777,8 @@ prepare-install:
 	@printf "[$(OK)prepare-install$(OFF)] $(MSG)Preparing staging area packageDESTDIR/prefix...$(OFF)\n"
 	@printf  "packageDESTDIR/prefix is $(packageDESTDIR)$(prefix) \n"
 	mkdir -p $(packageDESTDIR)$(prefix)
-	rm -rf    $(COOKIEDIR)/sysinstall* $(COOKIEDIR)/install* 
-	set -e; \
+	rm -rf    $(COOKIEDIR)/sysinstall* $(COOKIEDIR)/install*
+	@set -e; \
 		echo in function "prepare-install" \
               set -- $(CREATED_MERGE_DIRS); \
                   echo echoing 1 src... $$1 $$src; \
@@ -795,18 +795,18 @@ prepare-install:
               done $(OUTPUT)
 
 
-#rm -rf $$dest;   
+#rm -rf $$dest;
 #$(MAKECOOKIE)
 
 # install-something
 
 #carl rm -v $(packageDESTDIR)$$2 $(OUTPUT); \
 #@echo note, before copying.. ls  -Ra
-#ls -Ra $(packageDESTDIR)$(prefix) 
+#ls -Ra $(packageDESTDIR)$(prefix)
 #@echo note, after copying.. ls -Ra
 #ls -Ra $(packageDESTDIR)$(prefix) $(packagedir)
 
-finish-package-install: 
+finish-package-install:
 	@printf "[$(OK)finish-package-install$(OFF)] $(MSG)Moving files from staging area packageDESTDIR to packagedir$(OFF)\n"
 	@echo packageDESTDIR is $(packageDESTDIR) packagedir is $(packagedir)
 	rm -rf  $(packagedir) $(OUTPUT)
@@ -820,7 +820,7 @@ finish-package-install:
 	@echo making directory packagedir is $(packagedir)
 	mkdir -p $(packagedir) $(OUTPUT)
 	@echo  packageDESTDIR/prefix is $(packageDESTDIR)$(prefix)
-	cp -a $(packageDESTDIR)$(prefix)/* $(packagedir)  
+	cp -a $(packageDESTDIR)$(prefix)/* $(packagedir)
 	if [ -d $(packagedir)  ]    ; then \
 	    rm -rf $(packageDESTDIR) $(OUTPUT); \
 	    else echo "not erasing DESTDIR for now"; \

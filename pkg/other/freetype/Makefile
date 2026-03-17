@@ -1,4 +1,4 @@
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,12 +21,11 @@
 
 NAME =    freetype
 GARNAME = freetype
-UPSTREAMNAME = freetype
-GARVERSION = 2.14.1
+GARVERSION = 2.14.2
 HOME_URL = http://freetype.org
 DESCRIPTION =  Typeface renderer
 define BLURB
-library to render typefaces (fonts), in C,  producing high-quality output
+library to render typefaces (fonts), in C, producing high-quality output
 (glyph images) of most vector and bitmap font formats.
 endef
 
@@ -35,19 +34,25 @@ endef
 ######################################################################
 # https://download.savannah.gnu.org/releases/freetype/freetype-2.13.1.tar.xz
 MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)
-MASTER_SUBDIR = $(UPSTREAMNAME)/
-DISTFILES = $(DISTNAME).tar.xz \
-			 $(GARNAME)-doc-$(GARVERSION).tar.xz
-SIGFILES  = $(DISTNAME).tar.xz.sig \
-			$(GARNAME)-doc-$(GARVERSION).tar.xz.sig
+MASTER_SUBDIR = $(GARNAME)/
+DISTFILES = $(DISTNAME).tar.xz     $(GARNAME)-doc-$(GARVERSION).tar.xz
+SIGFILES  = $(DISTNAME).tar.xz.sig $(GARNAME)-doc-$(GARVERSION).tar.xz.sig
 BUILDDEPS =
 LIBDEPS =
+
+#INSTALL_SCRIPTS = me
 
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
-# option, instead of mesonninja.mk :
-#include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+post-extract:
+	@echo post-extract for docs
+	$(MAKE) extract-freetype-doc-2.14.2.tar.xz
+
+post-install:
+	@echo install docs
+	$(INSTALL_DOCS)  $(WORKSRC)/docs/*
 
 

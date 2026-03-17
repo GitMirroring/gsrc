@@ -1,4 +1,4 @@
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -18,7 +18,7 @@
 
 NAME = ffmpeg
 GARNAME = ffmpeg
-GARVERSION = 8.0.1
+GARVERSION = 8.1
 HOME_URL =  http://ffmpeg.org
 DESCRIPTION = video player, transcoder, video format converter, etc
 define BLURB
@@ -40,5 +40,5 @@ include config.mk
 #  had to do "make -k" , not just "make"
 #  some missing .h files , or something
 # hmm
-BUILD_ARGS = CFLAGS+=-fPIC
+#BUILD_ARGS = CFLAGS+=-fPIC
 
