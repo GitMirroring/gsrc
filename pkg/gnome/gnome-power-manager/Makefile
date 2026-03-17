@@ -19,7 +19,7 @@
 
 NAME =    gnome-power-manager
 GARNAME = gnome-power-manager
-GARVERSION = 43.0
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Power management tools 
 define BLURB

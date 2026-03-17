@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2019,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = GNU APL
 GARNAME = apl
-GARVERSION = 1.9
+GARVERSION = 2.0
 HOME_URL = http://www.gnu.org/software/apl/
 DESCRIPTION = APL interpreter
 define BLURB
@@ -52,7 +52,7 @@ include config.mk
 
 SVN_PATH = svn://svn.savannah.gnu.org/apl/trunk
 SVN_CO_OPTS =
-WORKSRC = $(WORKDIR)/apl/trunk
+WORKSRC = $(WORKDIR)/apl/trunk/trunk
 WORKOBJ = $(WORKSRC)
 
 fetch:
@@ -60,6 +60,7 @@ fetch:
 	cd $(WORKSRC) && svn co $(SVN_CO_OPTS) $(SVN_PATH)
 
 build-me:
-	cd $(WORKSRC) &&  make all
+	cd $(WORKSRC) &&  make
+
 
 

@@ -1,4 +1,4 @@
-# Copyright © 2022-2023 Carl Hansen carlhansen@gnu.org
+# Copyright © 2022-2023,2026 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    libshumate
 GARNAME = libshumate
-GARVERSION = 1.6.beta
+GARVERSION = 1.6.0
 HOME_URL = https://wiki.gnome.org/Projects/libshumate
 DESCRIPTION = libshumate is a GTK4 widget to display maps.
 define BLURB

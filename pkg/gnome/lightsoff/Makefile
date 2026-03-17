@@ -19,7 +19,7 @@
 
 NAME =    lightsoff
 GARNAME = lightsoff
-GARVERSION = 48.1
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Turn off all the lights game
 define BLURB

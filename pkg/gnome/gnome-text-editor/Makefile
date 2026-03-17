@@ -20,7 +20,7 @@
 
 NAME =    gnome-text-editor
 GARNAME = gnome-text-editor
-GARVERSION = 49.1
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME Text editor
 define BLURB

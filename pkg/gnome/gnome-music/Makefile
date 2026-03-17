@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnome-music
 GARNAME = gnome-music
-GARVERSION = 49.beta
+GARVERSION = 49.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Music player and management application
 define BLURB

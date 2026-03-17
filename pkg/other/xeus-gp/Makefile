@@ -20,22 +20,23 @@
 
 NAME =    xeus-gp
 GARNAME = xeus-gp
-GARVERSION =  0.1.2
+GARVERSION =  0.2.0
 HOME_URL = http://pari.math.u-bordeaux.fr/
 DESCRIPTION = jupyter kernel for gp
 define BLURB
 endef
+# needs xeus 6
 
 ######################################################################
 
 # https://pari.math.u-bordeaux.fr/pub/pari/XEUS-GP/xeus-gp-0.0.0.tar.gz
 MASTER_SITES = http://pari.math.u-bordeaux.fr/
 MASTER_SUBDIR = pub/pari/XEUS-GP/
-DISTFILES = $(DISTNAME).tar.gz 
-SIGFILES  = $(DISTNAME).tar.gz.asc 
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES  = $(DISTNAME).tar.gz.asc
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

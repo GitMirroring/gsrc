@@ -20,7 +20,7 @@
 
 NAME =    curl
 GARNAME = curl
-GARVERSION =  8.18.0
+GARVERSION =  8.19.0
 HOME_URL = http://www.curl.se
 DESCRIPTION = Download files from internet with command line
 define BLURB
@@ -30,7 +30,7 @@ endef
 
 # https://github.com/curl/curl/releases/download/curl-8_18_0/curl-8.18.0.tar.xz
 MASTER_SITES =  https://github.com/
-MASTER_SUBDIR = curl/curl/releases/download/curl-8_18_0/
+MASTER_SUBDIR = curl/curl/releases/download/curl-8_19_0/
 #MASTER_SITES = https://curl.se/
 #MASTER_SUBDIR = rc/
 

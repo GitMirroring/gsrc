@@ -20,7 +20,7 @@
 
 NAME =    baobab
 GARNAME = baobab
-GARVERSION = 49.1
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A graphical disk usage analyzer
 define BLURB

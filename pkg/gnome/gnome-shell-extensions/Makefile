@@ -20,7 +20,7 @@
 
 NAME =    gnome-shell-extensions
 GARNAME = gnome-shell-extensions
-GARVERSION = 50.alpha
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Modify and extend GNOME Shell functionality and behavior
 define BLURB

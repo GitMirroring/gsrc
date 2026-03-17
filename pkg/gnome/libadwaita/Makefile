@@ -1,4 +1,4 @@
-# Copyright ©2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    libadwaita
 GARNAME = libadwaita
-GARVERSION = 1.9.alpha
+GARVERSION = 1.9.0
 HOME_URL = http://gnome.org/
 DESCRIPTION =  libadwaita
 define BLURB

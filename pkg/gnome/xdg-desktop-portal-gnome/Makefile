@@ -20,7 +20,7 @@
 
 NAME =    xdg-desktop-portal-gnome
 GARNAME = xdg-desktop-portal-gnome
-GARVERSION = 49.beta
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = xdg-desktop-portal-gnome
 define BLURB

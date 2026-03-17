@@ -20,7 +20,7 @@
 
 NAME =    swell-foop
 GARNAME = swell-foop
-GARVERSION = 48.1
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Clear the screen by removing groups of colored and shaped tiles game
 define BLURB

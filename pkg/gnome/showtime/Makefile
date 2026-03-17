@@ -20,7 +20,7 @@
 
 NAME =   showtime
 GARNAME = showtime
-GARVERSION = 50.beta
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = showtime video player
 define BLURB

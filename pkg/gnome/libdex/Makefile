@@ -1,4 +1,4 @@
-# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,11 +20,11 @@
 
 NAME =    libdex
 GARNAME = libdex
-GARVERSION = 1.1.alpha
+GARVERSION = 1.1.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  libdex, concurrent code
 define BLURB
-Dex provides Future-based programming for GLib-based applications.
+Dex provides future-based programming for glib-based applications.
 It both integrates with and brings new features for application and library
 authors who want to structure concurrent code in an easy to manage way.
 endef

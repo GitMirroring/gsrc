@@ -19,7 +19,7 @@
 
 NAME =    glycin
 GARNAME = glycin
-GARVERSION = 2.1.alpha.3
+GARVERSION = 2.1.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = glycin, loader of images
 define BLURB

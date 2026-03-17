@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2019,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2019,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnome-backgrounds
 GARNAME = gnome-backgrounds
-GARVERSION = 50.alpha
+GARVERSION = 50.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Background images for the GNOME desktop
 define BLURB

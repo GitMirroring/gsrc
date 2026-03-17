@@ -20,7 +20,7 @@
 
 NAME =    gnome-builder
 GARNAME = gnome-builder
-GARVERSION = 50.alpha
+GARVERSION = 50.rc.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = An IDE for writing GNOME-based software
 define BLURB

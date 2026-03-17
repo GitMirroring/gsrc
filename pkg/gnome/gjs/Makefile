@@ -20,7 +20,7 @@
 
 NAME =    gjs
 GARNAME = gjs
-GARVERSION = 1.87.90
+GARVERSION = 1.88.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME JavaScript/Spidermonkey bindings
 define BLURB

@@ -19,7 +19,7 @@
 
 NAME =    gnome-user-docs
 GARNAME = gnome-user-docs
-GARVERSION = 48.2
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = User and system administration help
 define BLURB

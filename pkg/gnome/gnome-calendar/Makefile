@@ -20,7 +20,7 @@
 
 NAME =    gnome-calendar
 GARNAME = gnome-calendar
-GARVERSION = 49.alpha
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Calendar application for GNOME
 define BLURB

@@ -20,7 +20,7 @@
 
 NAME =    tecla
 GARNAME = tecla
-GARVERSION = 48.0.2
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  tecla  keyboard layout viewer
 define BLURB

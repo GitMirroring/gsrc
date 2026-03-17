@@ -20,7 +20,7 @@
 
 NAME =    gtranslator
 GARNAME = gtranslator
-GARVERSION = 49.0
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = gtranslator for working with translation of docs
 define BLURB

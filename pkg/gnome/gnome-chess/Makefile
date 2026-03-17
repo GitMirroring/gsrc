@@ -19,7 +19,7 @@
 
 NAME =    gnome-chess
 GARNAME = gnome-chess
-GARVERSION = 49.2
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Classic two-player board game of chess
 define BLURB

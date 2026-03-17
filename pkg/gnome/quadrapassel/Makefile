@@ -1,4 +1,4 @@
-# Copyright © 2016, 2021,2025 Carl Hansen carlhansen@gnu.org
+# Copyright © 2016, 2021,2025-2026 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    quadrapassel
 GARNAME = quadrapassel
-GARVERSION = 49.2.1
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = game of fitting falling blocks together
 define BLURB
@@ -35,7 +35,7 @@ SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
 
 MASTER_SITES = $(MASTER_GNOME)
 #FIXME
-MASTER_SUBDIR = $(GARNAME)/49/
+MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 

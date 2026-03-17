@@ -19,7 +19,7 @@
 
 NAME =    genius
 GARNAME = genius
-GARVERSION = 1.0.26
+GARVERSION = 1.0.29
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Genius Math Tool 
 define BLURB
