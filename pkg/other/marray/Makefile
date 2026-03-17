@@ -1,4 +1,4 @@
-# Copyright ©  2017, 2019-2021, 2024,2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -19,12 +19,21 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    lzip
-GARNAME = lzip
-GARVERSION =  1.26
-HOME_URL = http:/lzip.nongnu.org/
-DESCRIPTION = Compression utility, highly robust recoverability
+NAME =    marray
+GARNAME = marray
+GARVERSION =  2.0
+HOME_URL = https://savannah.nongnu.org/projects/marray/
+DESCRIPTION = higher dimensional numerical arrays
 define BLURB
+Library which is an extension for the GNU Scientific Library (GSL). It
+allows one to define and manipulate marrays, multidimensional arrays of
+arbitrary order and arbitrary dimension different for each index. Marrays
+generalize vectors and matrices, and are well suited to manipulate data
+grids.  The library interface is very similar to that of gsl_matrix,
+and most of the functions that exist for gsl_matrix are also implemented
+for marrays and have the same syntax.  Its sister project is "tensor",
+which defines a new type similar to marray but with the same dimension
+for each index.
 endef
 
 ######################################################################
@@ -36,7 +45,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
-LIBDEPS =
+LIBDEPS = gsl
 
 ######################################################################
 

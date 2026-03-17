@@ -1,4 +1,4 @@
-# Copyright © 2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =   DataExplorer 
 GARNAME = dataexplorer
-GARVERSION = 4.0.1
+GARVERSION = 4.0.3
 HOME_URL = http://www.nongnu.org/dataexplorer
 DESCRIPTION = data explorer, chart data from serial port, files, devices
 define BLURB

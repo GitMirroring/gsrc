@@ -31,7 +31,8 @@ and C++.  It includes a wide range of mathematical routines, with
 over 1000 functions in total.  Subject areas covered by the library
 include: differential equations, linear algebra, Fast Fourier
 Transforms and random numbers.
-endef 
+See also extension packages "marray" and "tensor".
+endef
 
 ######################################################################
 
@@ -41,8 +42,8 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 INFO_FILES = $(GARNAME)-ref.info
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

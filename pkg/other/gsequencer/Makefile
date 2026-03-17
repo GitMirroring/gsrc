@@ -21,11 +21,11 @@
 
 NAME = gsequencer
 GARNAME = gsequencer
-GARVERSION = 8.3.2
+GARVERSION = 8.3.12
 SUBDIR = 8.3.x
-HOME_URL = http://www.nongnu.org/gsequencer/ 
+HOME_URL = http://www.nongnu.org/gsequencer/
 DESCRIPTION = Audio processing, editing, sequencer.
-define BLURB 
+define BLURB
 Advanced Gtk+ Sequencer is a tree based audio processing engine. It
 uses extensively threads, supporting LADSPA, DSSI and Lv2 plugin format.
 Capable of doing multi-channel editing, it contains an automation editor
@@ -33,7 +33,7 @@ and live export to audio files. There are sequencer machines as well
 a fully featured notation editor. Supporting copy and paste, resizing
 audio channels or align in-/output pads.  Intended to use for music
 composition. It features a piano roll, as well a synth, matrix editor,
-drum machine, soundfont2 player, mixer and an output panel.  
+drum machine, soundfont2 player, mixer and an output panel.
 endef
 
 LICENSE = GNU GPLv3+
@@ -57,7 +57,7 @@ SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =  fftw
 #pulseaudio gdbm
-LIBDEPS = 
+LIBDEPS =
 #BUILD_ARGS = LDFLAGS="-L/usr/lib/x86_64-linux-gnu/pulseaudio -Wl,-lpulse -Wl,-lpulsecommon-16.1"
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
