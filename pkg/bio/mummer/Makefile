@@ -37,7 +37,7 @@ MASTER_SITES = https://github.com/
 MASTER_SUBDIR = mummer4/$(GARNAME)/releases/download/v$(GARVERSION)/
 #DISTNAME = $(UPSTREAMNAME)$(GARVERSION)
 DISTFILES = $(DISTNAME).tar.gz
-CONFIGURE_SCRIPTS = configme
+#CONFIGURE_SCRIPTS = configme
 BUILD_SCRIPTS = $(WORKSRC)/Makefile
 # INSTALL_SCRIPTS = bins
 
@@ -56,8 +56,8 @@ BINS = annotate combineMUMs delta-filter dnadiff exact-tandems gaps \
 	repeat-match run-mummer1 run-mummer3 show-aligns show-coords \
 	show-diff show-snps show-tiling
 
-configure-configme:
-	cd $(WORKSRC) && ./configure
+#configure-configme:
+#	cd $(WORKSRC) && ./configure
 
 # to do fix install
 #install-bins:
