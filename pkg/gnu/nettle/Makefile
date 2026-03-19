@@ -42,8 +42,9 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS = gmp
-LIBDEPS = 
+LIBDEPS =
 
+#WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -51,3 +52,5 @@ include ../../../gar/gar.lib/info.mk
 include config.mk
 
 BUILD_ARGS = CFLAGS=-I.
+
+

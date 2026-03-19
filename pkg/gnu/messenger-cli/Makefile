@@ -1,4 +1,4 @@
-# Copyright ©2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME = messenger-cli
 GARNAME = messenger-cli
-GARVERSION = 0.4.0
+GARVERSION = 0.5.0
 HOME_URL = http://www.gnu.org/software/gnunet
 	# see https://gnunet.org/generic-installation-instructions
 	# https://www.gnunet.org/en/news/2022-05-messenger-gtk-0.7.0.html
@@ -39,7 +39,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =  libgnunetchat
-LIBDEPS = 
+LIBDEPS =
 CONFIGURE_SCRIPTS =
 
 

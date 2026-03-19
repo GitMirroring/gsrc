@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = GNUnet
 GARNAME = gnunet
-GARVERSION = 0.26.2
+GARVERSION = 0.27.0
 HOME_URL = http://www.gnu.org/software/gnunet
 # see https://gnunet.org/generic-installation-instructions
 DESCRIPTION = Secured, decentralized, peer-to-peer networking framework
@@ -46,11 +46,7 @@ BUILDDEPS = libunistring libgcrypt libmicrohttpd  libextractor gnurl
 LIBDEPS =
 
 PACKAGE = gnunet
-
-WORKSRC = $(WORKDIR)/gnunet-0.26.2-1-gad3ced416
-WORKOBJ = $(WORKSRC)-build
 ######################################################################
-
 include ../../../gar/gar.lib/mesonninja.mk
 #include ../../../gar/gar.lib/info.mk
 include config.mk

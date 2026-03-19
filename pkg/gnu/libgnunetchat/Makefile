@@ -1,4 +1,4 @@
-# Copyright ©2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022-2026 Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME = libgnunetchat
 GARNAME = libgnunetchat
-GARVERSION = 0.6.0
+GARVERSION = 0.7.0
 HOME_URL = http://www.gnu.org/software/gnunet
 	# see https://gnunet.org/generic-installation-instructions
 DESCRIPTION = A client-side library for apps to utilize the messenger service of GNUnet.
@@ -35,11 +35,8 @@ MASTER_SUBDIR = gnunet/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-#CONFIGURE_SCRIPTS =
-BUILDDEPS = 
-LIBDEPS = 
-#BUILD_ARGS = CFLAGS=-I$(BASEDIRABS)/$(WORKSRC)/include/gnunet
-#BUILD_ARGS = CFLAGS=-I$(WORKSRC)/include/gnunet
+BUILDDEPS =
+LIBDEPS =
 ######################################################################
 include ../../../gar/gar.lib/mesonninja.mk
 include ../../../gar/gar.lib/info.mk
