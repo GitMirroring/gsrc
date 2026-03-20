@@ -1,4 +1,4 @@
-# Copyright © 2016-2021, 2023-2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2021, 2023-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    WebKitGTK
 GARNAME = webkitgtk
-GARVERSION = 2.51.4
+GARVERSION = 2.52.0
 HOME_URL = https://www.webkitgtk.org/
 DESCRIPTION = lib for applications interacting with the WWW, using GTK
 define BLURB
@@ -30,7 +30,7 @@ endef
 ######################################################################
 MASTER_SITES = https://webkitgtk.org/
 MASTER_SUBDIR = releases/
-DISTFILES = $(DISTNAME).tar.xz  
+DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =
 
 BUILDDEPS = libmanette

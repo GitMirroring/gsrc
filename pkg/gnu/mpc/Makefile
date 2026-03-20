@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2020, 2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2020, 2022, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = MPC
 GARNAME = mpc
-GARVERSION = 1.3.1
+GARVERSION = 1.4.0
 HOME_URL = http://www.multiprecision.org/
 #HOME_URL = http://www.gnu.org/software/mpc/
 DESCRIPTION = C library for arbitrary precision complex arithmetic
@@ -36,8 +36,8 @@ endef
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = $(DISTNAME).tar.gz.sig
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES = $(DISTNAME).tar.xz.sig
 
 BUILDDEPS =
 LIBDEPS =

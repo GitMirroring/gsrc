@@ -19,7 +19,7 @@
 
 NAME =    gnome-2048
 GARNAME = gnome-2048
-GARVERSION = 3.38.2
+GARVERSION = 50.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =   2048 game 
 define BLURB

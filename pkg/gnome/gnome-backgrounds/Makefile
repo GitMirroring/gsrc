@@ -19,7 +19,7 @@
 
 NAME =    gnome-backgrounds
 GARNAME = gnome-backgrounds
-GARVERSION = 50.rc
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Background images for the GNOME desktop
 define BLURB

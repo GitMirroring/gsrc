@@ -19,7 +19,7 @@
 
 NAME =    gspell
 GARNAME = gspell
-GARVERSION = 1.14.2
+GARVERSION = 1.14.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Spell-checking library for GTK+
 define BLURB

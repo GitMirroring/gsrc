@@ -19,7 +19,7 @@
 
 NAME =    zenity
 GARNAME = zenity
-GARVERSION = 4.2.1
+GARVERSION = 4.2.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Display dialog boxes from the command line and shell scripts
 define BLURB

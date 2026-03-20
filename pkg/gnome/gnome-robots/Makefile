@@ -19,7 +19,7 @@
 
 NAME =    gnome-robots
 GARNAME = gnome-robots
-GARVERSION = 41.2
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Avoid the robots and make them crash into each other
 define BLURB

@@ -35,7 +35,7 @@ MASTER_SUBDIR = gnunet/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS =
+BUILDDEPS = gnunet
 LIBDEPS =
 ######################################################################
 include ../../../gar/gar.lib/mesonninja.mk

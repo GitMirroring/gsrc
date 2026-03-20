@@ -20,9 +20,9 @@
 
 NAME =    systemd
 GARNAME = systemd
-GARVERSION =  259.1
+GARVERSION =  260
 
-HOME_URL = https://systemd.io 
+HOME_URL = https://systemd.io
 #	www.freedesktop.org/wiki/Software/systemd/
 DESCRIPTION = Init replacement, daemon manager, and more.
 define BLURB
@@ -39,10 +39,10 @@ MASTER_SUBDIR = $(GARNAME)/$(GARNAME)/archive/refs/tags/
 #NOCHECKSUM = $(DISTFILES)
 
 DISTFILES = v$(GARVERSION).tar.gz
-SIGFILES =  
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

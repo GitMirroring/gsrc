@@ -20,7 +20,7 @@
 
 NAME =    manuals
 GARNAME = manuals
-GARVERSION = 50.rc
+GARVERSION = 50.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME manuals
 define BLURB

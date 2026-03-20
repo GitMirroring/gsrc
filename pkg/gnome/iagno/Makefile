@@ -19,7 +19,7 @@
 
 NAME =    iagno
 GARNAME = iagno
-GARVERSION = 3.38.1
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Dominate the board in a classic version of Reversi
 define BLURB
