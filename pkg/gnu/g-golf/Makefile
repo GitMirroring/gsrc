@@ -61,7 +61,7 @@ fetch: fetch-git
 
 post-fetch: fetch-git
 	mkdir -p $(WORKSRC)
-	cp -a $(GITSRC)/* $(WORKSRC) 
+	cp -a $(GITSRC)/* $(WORKSRC)
 
 # .dot dirs? what to do?
 # make dist-clean first?

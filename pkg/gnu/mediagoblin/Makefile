@@ -42,7 +42,8 @@ GITSRC =   $(DOWNLOADDIRGIT)/$(GARNAME)
 GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/$(GARNAME).git
 GIT_REVISION = master
 WORKSRC =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)
-WORKOBJ =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)-build
+# for now
+WORKOBJ =  $(WORKSRC)
 
 BUILDDEPS =
 LIBDEPS =
@@ -62,6 +63,5 @@ pre-configure: fetch
 	@echo  running autogen.sh
 	cd $(WORKSRC) && ./autogen.sh
 	@echo  ran autogen.sh
-
 
 

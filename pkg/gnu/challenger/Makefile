@@ -1,4 +1,4 @@
-# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = challenger
 GARNAME = challenger
-GARVERSION = 1.3.0
+GARVERSION = 1.5.0
 HOME_URL = http://taler.net
 DESCRIPTION = challenger is part of taler payment system
 define BLURB

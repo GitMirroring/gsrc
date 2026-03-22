@@ -22,7 +22,7 @@
 
 NAME = taler-exchange
 GARNAME = taler-exchange
-GARVERSION = 1.4.0
+GARVERSION = 1.5.2
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler is a privacy-preserving payment system. Exchange part.
 define BLURB

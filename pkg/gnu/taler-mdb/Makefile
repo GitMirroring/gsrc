@@ -21,7 +21,7 @@
 
 NAME = taler-mdb
 GARNAME = taler-mdb
-GARVERSION = 1.4.0
+GARVERSION = 1.5.0
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler is a privacy-preserving payment system, merchant snack machine
 define BLURB
