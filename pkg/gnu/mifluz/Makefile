@@ -36,13 +36,14 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS = zlib
-WORKOBJ = $(WORKSRC)
+#WORKOBJ = $(WORKSRC)
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
 CONFIGURE_ARGS += --with-zlib=$(prefix)
+BUILD_ARGS = CFLAGS=-std=c99
 
 

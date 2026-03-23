@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = FreeIPMI
 GARNAME = freeipmi
-GARVERSION = 1.6.16
+GARVERSION = 1.6.17
 HOME_URL = http://www.gnu.org/software/freeipmi/
 DESCRIPTION = Platform management, including sensor and power monitoring
 define BLURB
