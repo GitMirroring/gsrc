@@ -32,10 +32,14 @@ GARVERSION = 0.1.1
 HOME_URL = http://www.gnustep.org/
 DESCRIPTION = GNUstep corebase library
 define BLURB
-A GNUstep developer library, poorly named because it might be optional
-and sounds like some other libraries. 
+The GNUstep CoreBase Library is a library of general-purpose,
+non-graphical C objects.  For example, it includes types for strings,
+collections, byte streams, typed coders, invocations, notifications,
+notification dispatchers, moments in time, network ports, and event loops.
+It provides functionality that aims to implement the non-graphical
+portion of Apple.s CoreFoundation framework.
 endef
-
+LICENSE = LGPL
 PATCHFILES = corebase-extern.diff
 
 ######################################################################
@@ -55,8 +59,8 @@ WORKOBJ = $(WORKSRC)
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
-# for now:
+# for now: seems ineffective
 CONFIGURE_ARGS = --without-icu
 
 
-BUILD_ARGS = CFLAGS=--withound-icu
+
