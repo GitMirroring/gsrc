@@ -65,4 +65,6 @@ include config.mk
 CONFIGURE_ARGS = --without-icu
 
 
+check:
+	cd $(WORKSRC) && make check
 
