@@ -81,7 +81,7 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-CONFIGURE_SCRIPTS = adhoc
+#CONFIGURE_SCRIPTS = adhoc
 
 ## Configuration options for gcc ##
 ## Note: you must set up your environment (PATH, LDPATH, etc) to
