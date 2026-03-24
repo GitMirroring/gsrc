@@ -26,7 +26,7 @@ GARVERSION = 407
 HOME_URL = http://invisible-island.net/xterm
 DESCRIPTION = famous terminal for X displays
 define BLURB
-famous terminal for X displays, decades old, updated 2025
+famous terminal for X displays, decades old, updated 2026
 endef
 
 ######################################################################
@@ -36,7 +36,7 @@ MASTER_SUBDIR = archives/$(GARNAME)/
 DISTFILES = $(DISTNAME).tgz
 SIGFILES = $(DISTNAME).tgz.asc
 
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk

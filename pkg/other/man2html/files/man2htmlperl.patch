@@ -1,0 +1,18 @@
+diff -x config.log -x config.status -ru tmp/man2html-20251206/man.cgi work/man2html-20251206/man.cgi
+--- tmp/man2html-20251206/man.cgi	1997-08-12 10:19:18.000000000 -0700
++++ work/man2html-20251206/man.cgi	2026-03-24 10:33:50.487036776 -0700
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl
++#!/usr/bin/env perl
+ ##---------------------------------------------------------------------------##
+ ##  File:
+ ##      @(#) man.cgi 1.2 97/08/12 12:58:26 @(#)
+diff -x config.log -x config.status -ru tmp/man2html-20251206/man2html work/man2html-20251206/man2html
+--- tmp/man2html-20251206/man2html	2025-12-06 11:00:57.000000000 -0800
++++ work/man2html-20251206/man2html	2026-03-24 10:32:50.960120132 -0700
+@@ -1,4 +1,4 @@
+-#!/usr/bin/perl
++#!/usr/bin/env perl
+ ##---------------------------------------------------------------------------##
+ ##  File:
+ ##      @(#) man2html 1.2 97/08/12 12:57:30 @(#)

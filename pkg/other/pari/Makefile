@@ -21,27 +21,28 @@
 
 NAME =    pari
 GARNAME = pari
-GARVERSION =  2.18.0.alpha
+GARVERSION =  2.18.0-908-g6b81f1f3fa
 HOME_URL = http://pari.math.u-bordeaux.fr/
-DESCRIPTION = math library, calculator and library, unlimited-precision discrete math etc.
+DESCRIPTION = math calculator and library, unlimited-precision, discrete math etc.
 define BLURB
 endef
 
 ######################################################################
-# https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.13.0.tar.gz
-# https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.16.1.alpha.tar.gz
 # https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.16.2.beta.tar.gz
 # https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.18.0.alpha.tar.gz
+# https://pari.math.u-bordeaux.fr/pub/pari/snapshots/pari-git-latest.tar.gz
+# https://pari.math.u-bordeaux.fr/pub/pari/snapshots/pari-2.18.0-908-g6b81f1f3fa.tar.gz
 MASTER_SITES = https://pari.math.u-bordeaux.fr/
-MASTER_SUBDIR = pub/pari/unstable/
+#MASTER_SUBDIR = pub/pari/unstable/
 #MASTER_SUBDIR = pub/pari/unix/
-DISTFILES = $(DISTNAME).tar.gz 
-SIGFILES  = $(DISTNAME).tar.gz.asc
+MASTER_SUBDIR = pub/pari/snapshots/
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES  = #$(DISTNAME).tar.gz.asc
 
 CONFIGURE_SCRIPTS = doconf
 BUILD_SCRIPTS = gpanddoc
 
-BUILDDEPS = gmp 
+BUILDDEPS = gmp
 # readline
 LIBDEPS =
 

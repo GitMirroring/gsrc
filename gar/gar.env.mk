@@ -35,6 +35,7 @@ endif
 # retro:::: illogical, might not exist yet...
 PKG_CONFIG := $(prefix)/bin/pkg-config
 
+# hmm, might be incomplete...
 PKG_CONFIG_PATH := $(prefix)/lib/pkgconfig:$(prefix)/share/pkgconfig:$(PKG_CONFIG_PATH)
 FAKE_PKG_CONFIG_LOG = $(CURDIR)/$(COOKIEDIR)/fpc.log
 
@@ -47,7 +48,7 @@ XDG_DATA_DIRS := $(prefix)/share
 # Choose your Python binary
 PYTHON ?= python3
 PYTHON2_VER := 2.7
-PYTHON3_VER := 3.11
+PYTHON3_VER := 3.13
 PYTHON_PATH := $(prefix)/lib/python${PYTHON2_VER}/site-packages/:$(prefix)/lib/python${PYTHON3_VER}:$(PYTHON_PATH)
 
 # Export variables to the build environment.

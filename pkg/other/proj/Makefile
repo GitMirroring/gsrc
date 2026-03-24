@@ -22,7 +22,7 @@
 
 NAME =    proj
 GARNAME = proj
-GARVERSION =  9.7.1
+GARVERSION =  9.8.0
 HOME_URL = http://www.proj.org
 # additional data and docs there
 DESCRIPTION =  library for doing geodesic and cartographic projections
@@ -48,11 +48,12 @@ CMAKE_CONFIGURE_ARGS =  -DCMAKE_TLS_VERIFY=0 -DBUILD_TESTING=OFF  PROJ_LIB=$(pre
 
 
 # kludge
-#pre-install:
-#	@echo mkdir -p $(packageDESTDIR)/
-#	mkdir -p $(packageDESTDIR)/
-#	cd $(packageDESTDIR)  &&  rm -rf *
-#	cd $(packageDESTDIR)  && mkdir -p opt  && mkdir -p usr/local && ln -s usr/local opt/gsrc
+pre-install:
+	@echo mkdir -p $(packageDESTDIR)/
+	mkdir -p $(packageDESTDIR)/
+	cd  $(packageDESTDIR)/ && rm -rf  ./*
+	cd  $(packageDESTDIR)/ && ln -s ./usr/local ./$(prefix)
+	cd  $(packageDESTDIR)/ && ls -Ra
 
 FIXME = to do install correctly
 
