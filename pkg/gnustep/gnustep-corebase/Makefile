@@ -47,7 +47,8 @@ PATCHFILES = corebase-extern.diff
 MASTER_SITES = $(MASTER_GNUSTEP)
 MASTER_SUBDIR = libs/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = $(DISTNAME).tar.gz.sig
+SIGFILES = $(DISTNAME).tar.gz.sig 
+
 
 BUILDDEPS =
 LIBDEPS = tools-make libs-base  libs-gui libs-back
@@ -59,7 +60,8 @@ WORKOBJ = $(WORKSRC)
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
-# for now: seems ineffective
+# for now: seems ineffective; had to patch "configure" to ignore ICU
+# pending a better solution; no icu-config
 CONFIGURE_ARGS = --without-icu
 
 

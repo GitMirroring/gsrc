@@ -1,6 +1,6 @@
 diff -x config.log -x config.status -ru tmp/gnustep-corebase-0.1.1/Headers/CoreFoundation/CFError.h work/gnustep-corebase-0.1.1/Headers/CoreFoundation/CFError.h
 --- tmp/gnustep-corebase-0.1.1/Headers/CoreFoundation/CFError.h	2012-07-18 17:00:25.000000000 -0700
-+++ work/gnustep-corebase-0.1.1/Headers/CoreFoundation/CFError.h	2021-12-08 21:36:27.166046983 -0800
++++ work/gnustep-corebase-0.1.1/Headers/CoreFoundation/CFError.h	2026-03-24 13:45:21.957255573 -0700
 @@ -39,16 +39,16 @@
  typedef const struct __CFError * CFErrorRef;
  #endif
@@ -27,3 +27,25 @@ diff -x config.log -x config.status -ru tmp/gnustep-corebase-0.1.1/Headers/CoreF
  
  
  
+diff -x config.log -x config.status -ru tmp/gnustep-corebase-0.1.1/configure work/gnustep-corebase-0.1.1/configure
+--- tmp/gnustep-corebase-0.1.1/configure	2012-08-26 18:59:15.000000000 -0700
++++ work/gnustep-corebase-0.1.1/configure	2026-03-24 13:50:50.251718809 -0700
+@@ -4236,7 +4236,8 @@
+ 
+ 
+   if test "$ICU_CONFIG" = "no"; then
+-    as_fn_error $? "Could not find 'icu-config'.  Please install ICU or specify --without-icu." "$LINENO" 5
++#    as_fn_error $? "Could not find 'icu-config'.  Please install ICU or specify --without-icu." "$LINENO" 5
++      echo ignoring no ICU
+   fi
+ 
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for ICU $ICU_MIN_VERSION or later" >&5
+@@ -4251,7 +4252,7 @@
+   else
+     { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
+ $as_echo "no" >&6; }
+-    as_fn_error $? "Could not find ICU $ICU_MIN_VERSION or later" "$LINENO" 5
++#    as_fn_error $? "Could not find ICU $ICU_MIN_VERSION or later" "$LINENO" 5
+   fi
+ 
+   for ac_header in unicode/uloc.h unicode/ulocdata.h unicode/ucol.h unicode/ucurr.h unicode/ucal.h unicode/unum.h unicode/udat.h unicode/udatpg.h unicode/usearch.h
