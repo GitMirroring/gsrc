@@ -1,4 +1,4 @@
-# Copyright © 2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2023-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnuplot
 GARNAME = gnuplot
-GARVERSION =  6.0.2
+GARVERSION =  6.0.3
 HOME_URL = http://gnuplot.sourceforge.net
 DESCRIPTION =  plotting tool, not related to GNU organization
 define BLURB
@@ -35,9 +35,13 @@ SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
-
+# need: apt install lua5.1
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+# not sure way:
+BUILD_ARGS = LDFLAGS=-liconv
+
 

@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2019, 2021, 2024-2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2019, 2021, 2024-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -19,9 +19,9 @@
 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    Wayland
+NAME =    wayland
 GARNAME = wayland
-GARVERSION = 1.24.0
+GARVERSION = 1.25.0
 HOME_URL = https://wayland.freedesktop.org/
 DESCRIPTION = Wayland windowing, alternative to X
 define BLURB

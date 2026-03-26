@@ -40,10 +40,10 @@ endef
 MASTER_SITES = https://gitlab.freedesktop.org/
 MASTER_SUBDIR = api/v4/projects/890/packages/generic/fontconfig/2.17.1/
 DISTFILES = $(GARNAME)-$(GARVERSION).tar.xz $(GARNAME)-$(GARVERSION).tar.xz.sha256sum
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 
