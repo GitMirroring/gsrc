@@ -71,3 +71,4 @@ pre-build:
 	sed -i -e '/\@include csharp/d' $(WORKSRC)/wb.texi
 	$(MAKECOOKIE)
 
+BUILD_ARGS = CFLAGS+="-Wno-incompatible-pointer-types -Wno-pointer-sign"
