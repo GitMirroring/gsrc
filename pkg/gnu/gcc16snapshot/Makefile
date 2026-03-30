@@ -174,9 +174,11 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 ######################################################################
 .PHONY: checkall
 
-checkall: 
+checkall:
 	cd $(WORKOBJ)  &&  $(MAKE) -k check >  checkall.output.txt 2>&1
-	echo checkall.output in file  $(WORKOBJ)/checkall.output.txt 
+	echo checkall.output in file  $(WORKOBJ)/checkall.output.txt
 	$(MAKECOOKIE)
+
+BUILD_ARGS = LDFLAGS=-liconv
 
 

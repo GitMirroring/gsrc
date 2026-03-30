@@ -33,9 +33,12 @@ defines the system calls and other basic functionality necessary to
 write programs in the C language.  It handles low-level functionality
 that communicates with the kernel, such as process and file
 management, as well as higher-level functionality such as string
-manipulation or command-line argument handling.
+manipulation or command-line argument handling. Command line utilities
+included are:
+gencat getconf getent iconv iconvconfig ld.so ldconfig ldd makedb memusage
+memusagestat mtrace nscd pcprofiledump pldd sln sotruss sprof tzselect
+xtrace zdump zic
 endef
-
 
 ######################################################################
 
@@ -78,7 +81,7 @@ post-build: build
 	@echo  read Makefile and https://sourceware.org/glibc/wiki/Testing/Builds
 	@echo =================================================
 	@echo A warning
-	@echo do not "make install" until you are confident about recovering back
+	@echo do not "make install" until you are confident about recovering if it fails.
 	@echo =================================================
 	@echo =================================================
 	@echo =================================================
@@ -92,7 +95,7 @@ post-build: build
 # your PATH. The easiest solution is to just prevent installing them.
 # If you're using GSRC to install programs system-wide and you intend
 # for this to be the main glibc for the system, you may remove this
-# line in config.mk.
+# line in config.mk of GSRC.
 # COLLISIONS += bin/locale bin/localedef sbin/locale-gen
 
 
