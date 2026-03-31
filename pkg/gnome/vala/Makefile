@@ -1,4 +1,4 @@
-# Copyright © 2016-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2026 Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    vala
 GARNAME = vala
-GARVERSION = 0.56.18
+GARVERSION = 0.56.19
 HOME_URL = https://wiki.gnome.org/Projects/Vala/
 DESCRIPTION = Vala compiler-to-C for the GNOME GObject type system
 define BLURB
