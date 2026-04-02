@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2019, 2020, 2021,2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2019, 2020, 2021,2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -17,12 +17,12 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 #
-# 
+#
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME = libmicrohttpd
 GARNAME = libmicrohttpd
-GARVERSION = 1.0.2
+GARVERSION = 1.0.3
 HOME_URL = http://www.gnu.org/software/libmicrohttpd/
 DESCRIPTION = C library implementing an HTTP 1.1 server
 define BLURB
@@ -42,7 +42,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 INFO_FILES = $(GARNAME).info $(GARNAME)-tutorial.info
 
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
