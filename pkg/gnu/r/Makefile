@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2019, 2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2019, 2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 NAME = R
 GARNAME = r
 UPSTREAMNAME = R
-GARVERSION = 4.5.2
+GARVERSION = 4.5.3
 HOME_URL = https://cran.r-project.org 
 # mirrors https://cran.r-project.org/mirrors.html
 DESCRIPTION = Environment for statistical computing and graphics
