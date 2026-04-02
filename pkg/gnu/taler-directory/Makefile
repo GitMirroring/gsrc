@@ -1,7 +1,8 @@
-# Copyright © 2020-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
+#
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -19,15 +20,12 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = sync
-GARNAME = sync
-GARVERSION = 1.5.0
+NAME = taler-directory
+GARNAME = taler-directory
+GARVERSION = 1.5.1
 HOME_URL = http://taler.net
-DESCRIPTION =  An HTTP server that allows clients to backup sensitive data.
+DESCRIPTION = GNU Taler-directory, part of a privacy-preserving payment system
 define BLURB
-Sync implements an HTTP server that allows clients to backup data.
-Envisioned use-cases are the creation of backups for Taler wallets and
-(GnuPG) key rings and other small but essential sensitive information.
 endef
 
 ######################################################################
@@ -39,8 +37,8 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-#You need libjansson to build this program.
-
+#CONFIGURE_SCRIPTS =
+#WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
