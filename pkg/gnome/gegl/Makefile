@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019,2021,2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2019,2021,2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gegl
 GARNAME = gegl
-GARVERSION = 0.4.66
+GARVERSION = 0.4.70
 HOME_URL = http://www.gimp.org/
 DESCRIPTION = GEGL (Generic Graphics Library) is a data flow based image processing framework.
 define BLURB
@@ -41,15 +41,14 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 MASTER_SITES = http://download.gimp.org/
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES =    
+SIGFILES =
 
 BUILDDEPS = babl
-LIBDEPS = 
+LIBDEPS =
 
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
-#BUILD_ARGS = CFLAGS+=-fPIC
 

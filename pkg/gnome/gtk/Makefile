@@ -21,7 +21,7 @@
 
 NAME =    GTK 4
 GARNAME = gtk
-GARVERSION = 4.22.1
+GARVERSION = 4.22.2
 HOME_URL = http://www.gtk.org/
 DESCRIPTION =  gtk 4 GNOME toolkit, create user interfaces
 define BLURB

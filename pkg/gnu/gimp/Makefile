@@ -22,7 +22,7 @@
 
 NAME = GNU Image Manipulation Program
 GARNAME = gimp
-GARVERSION = 3.2.0-RC2
+GARVERSION = 3.2.2
 HOME_URL = http://www.gnu.org/software/gimp
 DESCRIPTION = GNU Image Manipulation Program
 define BLURB
@@ -42,7 +42,7 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 MASTER_SITES = http://download.gimp.org/
 MASTER_SUBDIR = $(GARNAME)/v$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES = 
+SIGFILES =
 
 #  HINT: apt install libgexiv2-dev
 BUILDDEPS =   gegl babl

@@ -37,8 +37,7 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-#  had to do "make -k" , not just "make"
-#  some missing .h files , or something
-# hmm
-#BUILD_ARGS = CFLAGS+=-fPIC
+# couldn't find drm.h without this. Adjust as necessary.
+# some evidence this needed; complaints from ld in other projects
+BUILD_ARGS = "CFLAGS+=-fPIC CPPFLAGS='INCLUDE_DIR=/usr/include/drm'"
 

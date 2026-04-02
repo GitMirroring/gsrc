@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2019, 2021, 2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2019, 2021, 2023, 2026 Carl Hansen <carlhansen@gnu.org>
 
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = xorriso
 GARNAME = xorriso
-GARVERSION = 1.5.6.pl02
+GARVERSION = 1.5.8
 HOME_URL = http://www.gnu.org/software/xorriso/
    #  also   http://libburnia-project.org
 DESCRIPTION = Create, manipulate, burn ISO-9660 filesystems
@@ -46,7 +46,6 @@ INFO_FILES = xorriso.info xorrisofs.info xorrecord.info
 BUILDDEPS =
 LIBDEPS =
 
-WORKSRC = $(WORKDIR)/$(GARNAME)-1.5.6
 
 ######################################################################
 

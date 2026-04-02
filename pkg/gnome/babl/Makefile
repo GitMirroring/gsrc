@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2019, 2021, 2023-2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2019, 2021, 2023-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,10 +21,11 @@
 
 NAME =    babl
 GARNAME = babl
-GARVERSION = 0.1.118
+GARVERSION = 0.1.124
 HOME_URL = http://www.gimp.org/
-DESCRIPTION =  babl is a dynamic, any to any, pixel format translation library. 
+DESCRIPTION =  babl is a dynamic, any to any, pixel format translation library.
 define BLURB
+babl is a dynamic, any to any, pixel format translation library. Used by gimp.
 endef
 
 ######################################################################
@@ -37,10 +38,10 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 MASTER_SITES = http://download.gimp.org/pub/
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES = 
+SIGFILES =
 
 BUILDDEPS =
-LIBDEPS = 
+LIBDEPS =
 
 ######################################################################
 

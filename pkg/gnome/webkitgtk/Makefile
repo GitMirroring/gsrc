@@ -21,7 +21,7 @@
 
 NAME =    WebKitGTK
 GARNAME = webkitgtk
-GARVERSION = 2.52.0
+GARVERSION = 2.52.1
 HOME_URL = https://www.webkitgtk.org/
 DESCRIPTION = lib for applications interacting with the WWW, using GTK
 define BLURB

@@ -1,4 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2026
 #
 # This file is part of GSRC.
 #
@@ -17,7 +18,7 @@
 
 NAME = GCompris
 GARNAME = gcompris
-GARVERSION = 15.02
+GARVERSION = 26.1
 HOME_URL = http://www.gnu.org/software/gcompris/
 DESCRIPTION = Educational games for small children
 define BLURB
@@ -25,14 +26,15 @@ GCompris is a suite of educational software for children.  It
 features a variety of activities suitable for kids aged 2 to 10 years
 old.  The suite includes activities to introduce and develop skills
 in computer use, algebra, science, reading and more.  It also
-features some games such as chess and sudoku.
+features some games such as chess and sudoku. Comment: Better to
+educate human children with real humans.
 endef
 
 ######################################################################
-
-MASTER_SITES = $(MASTER_SOURCEFORGE)
-MASTER_SUBDIR = $(GARNAME)/files/$(GARVERSION)/
-DISTFILES = $(DISTNAME).tar.bz2
+#https://download.kde.org/stable/gcompris/qt/src/gcompris-qt-26.1.tar.xz
+MASTER_SITES = https://download.kde.org/
+MASTER_SUBDIR = stable/gcompris/qt/src/
+DISTFILES = $(GARNAME)-qt-$(GARVERSION).tar.xz
 SIGFILES =
 
 BUILDDEPS =  glib gtk pango gdk-pixbuf libxml2
@@ -44,7 +46,6 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-CONFIGURE_ARGS += GCOMPRIS_LIBS="-lgmodule-2.0 -lgtk-x11-2.0 -lglib-2.0 \
-				 -lgdk-x11-2.0 -lgdk_pixbuf-2.0 -lpango-1.0 \
-				 -lgobject-2.0 -lrsvg-2 -lxml2"
-# uses python2
+#CONFIGURE_ARGS += GCOMPRIS_LIBS="-lgmodule-2.0 -lgtk-x11-2.0 -lglib-2.0 \
+##				 -lgdk-x11-2.0 -lgdk_pixbuf-2.0 -lpango-1.0 \
+#				 -lgobject-2.0 -lrsvg-2 -lxml2"

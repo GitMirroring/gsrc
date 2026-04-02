@@ -20,7 +20,7 @@
 
 NAME =    simple-scan
 GARNAME = simple-scan
-GARVERSION = 49.1
+GARVERSION = 50.0
 HOME_URL = https://launchpad.net/simple-scan/
 DESCRIPTION =  gnome GUI interface to SANE scanner library
 define BLURB
