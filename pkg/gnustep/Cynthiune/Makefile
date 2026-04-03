@@ -20,12 +20,12 @@ GARNAME = Cynthiune
 GARVERSION = 1.0.0
 HOME_URL = http://www.non-gnu.org/gap/cynthiune/
 DESCRIPTION = GNUstep music file player
-define BLURB 
-Cynthiune is a free-software and romantic music player for GNUstep (and
-unmentionable non-free o.s.es), able to play a lot of different audio
-formats. The author, Wolfgang Sourdeau, wrote it originally as a Christmas
-gift to a girl that he liked because she could not listen to music on
-her XXX computer with a free program.
+define BLURB
+Cynthiune is a free-software and romantic music player for GNUstep on
+GNU/Linux (and also on unmentionable non-free o.s.es), able to play a
+lot of different audio formats. The author, Wolfgang Sourdeau, wrote
+it originally as a Christmas gift to a girl that he liked because she
+could not listen to music on her XXX computer with a free program.
 endef
 
 # install note.  There are many dependencies to handle numerous file formats.
@@ -35,6 +35,9 @@ endef
 #  audiofile-tools libaudiofile-dev  libaudiofile1
 #   libavifile-0.7-bin libavifile-0.7-common  libavifile-0.7-dev
 #   libavifile-0.7c2     musepack-tools  and others
+#
+#  see script deps.sh
+# FIXME. currently seems to need esound, which seems obsolete
 
 
 ######################################################################
@@ -42,7 +45,7 @@ endef
 MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)/
 MASTER_SUBDIR = gap/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = 
+SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =

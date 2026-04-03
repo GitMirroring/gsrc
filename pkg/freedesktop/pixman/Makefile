@@ -25,8 +25,8 @@ GARNAME = pixman
 GARVERSION = 0.46.4
 HOME_URL =  https://gitlab.freedesktop.org/pixman/pixman
     #    http://cairographics.org/
-	# related to gnome.org and xorg
-DESCRIPTION = pixman, low level pixel manipulations 
+    # related to gnome.org and xorg
+DESCRIPTION = pixman, low level pixel manipulations
 define BLURB
 endef
 
@@ -39,10 +39,10 @@ MASTER_SITES = https://gitlab.freedesktop.org/
 MASTER_SUBDIR = pixman/pixman/-/archive/$(GARNAME)-$(GARVERSION)/
 # looks like upstream error
 DISTFILES = $(GARNAME)-$(GARNAME)-$(GARVERSION).tar.bz2
-SIGFILES =  
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 # sic:
 WORKSRC = $(WORKDIR)/$(GARNAME)-$(GARNAME)-$(GARVERSION)
 WORKOBJ = $(WORKDIR)/$(GARNAME)-$(GARNAME)-$(GARVERSION)-build

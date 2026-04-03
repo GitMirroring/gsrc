@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2019,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2019,2024,2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME =    colord
 GARNAME = colord
-GARVERSION = 1.4.7
+GARVERSION = 1.4.8
 HOME_URL = http://www.freedesktop.org/
 DESCRIPTION = color management daemon
 define BLURB
