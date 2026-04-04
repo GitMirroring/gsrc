@@ -20,7 +20,7 @@
 
 NAME =    OpenEXR
 GARNAME = openexr
-GARVERSION = 3.4.6
+GARVERSION = 3.4.9
 HOME_URL = http://www.openexr.com
 DESCRIPTION =  high dynamic-range (HDR) 2-d image file format
 define BLURB
@@ -41,10 +41,10 @@ endef
 ######################################################################
 #https://github.com/AcademySoftwareFoundation/openexr/archive/v2.5.4.tar.gz
 MASTER_SITES = $(MASTER_GITHUB)
-MASTER_SUBDIR = AcademySoftwareFoundation/openexr/archive/ 
+MASTER_SUBDIR = AcademySoftwareFoundation/openexr/archive/
 DISTFILES =  $(strip v$(GARVERSION).tar.gz)
 
-SIGFILES = 
+SIGFILES =
 NOCHECKSUM = $(DISTNAME).tar.gz
 
 LICENSE = Modified BSD License, 3 clause 
