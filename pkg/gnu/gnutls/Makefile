@@ -55,4 +55,5 @@ include config.mk
 
 BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration"
 
-
+#  DOES NOT COMPILE WITH nettle 4.0
+# MUST use earlier version of nettle
