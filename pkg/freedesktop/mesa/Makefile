@@ -22,7 +22,7 @@
 
 NAME =    mesa
 GARNAME = mesa
-GARVERSION = 26.0.3
+GARVERSION = 26.0.4
 GVER = 26.0
 HOME_URL = http://www.mesa3d.org/
 DESCRIPTION = Mesa, 3D graphics, OpenGL 4.5 implementation and more
@@ -34,19 +34,19 @@ endef
 MASTER_SITES =  https://gitlab.freedesktop.org/
 MASTER_SUBDIR = mesa/mesa/-/archive/$(GVER)/
 DISTFILES = $(DISTNAME).tar.bz2
-SIGFILES =  
+SIGFILES =
 
 
 # apt install  libomxil-bellagio-dev libelf-dev llvm-dev \
 #   libelf1 libelf-dev libva-dev  libxvmc-dev libxvmc1  \
 #   libxcb-glx0 libxcb-glx0-dev libxcb-dri2-0-dev libxcb-dri3-0 libxcb-dri3-dev \
 #   libxcb-present-dev libxcb-present0 libxshmfence-dev bindgen libclc
- 
+
 BUILDDEPS = libffi
-LIBDEPS =   
+LIBDEPS =
 ######################################################################
 # this is annoying
-SRC = mesa-26.0-1897b18965ce173c2253ed7de52d8473eb3df254
+SRC = mesa-26.0-bbc23bed47f2c37b4cb5a9428d98640d89b2224a
 WORKSRC = $(WORKDIR)/$(SRC)
 WORKOBJ = $(WORKDIR)/$(SRC)-build
 

@@ -28,15 +28,14 @@ GARVERSION = 5.0.0
 HOME_URL = http://libeigen.gitlab.io
 #HOME_URL = http://eigen.tuxfamily.org
 # old   http://bitbucket.org/
-DESCRIPTION = A C++ template library for linear algebra
+DESCRIPTION = A C++ template library for linear algebra, aka eigen3
 define BLURB
-Eigen is a C++ template library for linear algebra.  It can handle
+Eigen, aka eigen3, is a C++ template library for linear algebra.  It can handle
 matrices, vectors, numerical solvers and related algorithms.
 endef
 LICENSE = MPL2
 
 ######################################################################
-# old http://bitbucket.org/eigen/eigen/get/3.3.7.tar.bz2 old
 # https://gitlab.com/libeigen/eigen/-/archive/3.3.7/eigen-3.3.7.tar.bz2
 
 MASTER_SITES = http://gitlab.com/
@@ -61,4 +60,4 @@ checks:
 	cd $(WORKOBJ) && make check
 
 
-FIXME = proble make doc
+FIXME = problem make doc

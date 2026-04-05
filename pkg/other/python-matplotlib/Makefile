@@ -18,7 +18,7 @@
 NAME = Matplotlib
 GARNAME = python-matplotlib
 UPSTREAMNAME = matplotlib
-GARVERSION = 1.4.3
+GARVERSION = 3.10.8
 HOME_URL = http://matplotlib.org
 DESCRIPTION = 2-D plotting library for Python
 define BLURB
@@ -30,10 +30,10 @@ LICENSE = PSF
 CITE =
 
 ######################################################################
-
-MASTER_SITES = $(MASTER_SOURCEFORGE)
-MASTER_SUBDIR = $(UPSTREAMNAME)/files/$(UPSTREAMNAME)/$(DISTNAME)/
-DISTFILES = $(DISTNAME).tar.gz
+# https://github.com/matplotlib/matplotlib/archive/refs/tags/v3.10.8.tar.gz
+MASTER_SITES = $(MASTER_GITHUB)
+MASTER_SUBDIR = $(UPSTREAMNAME)/$(UPSTREAMNAME)/archive/refs/tags/
+DISTFILES = v$(GARVERSION).tar.gz
 
 BUILDDEPS = python-setuptools
 LIBDEPS = python-six python-numpy
