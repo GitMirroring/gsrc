@@ -22,13 +22,13 @@
 NAME = The GNU Compiler Collection version 15 development version
 GARNAME = gcc15snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 15-20260328
+GARVERSION = 15-20260404
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 15 snapshot
 define BLURB
 GCC is the GNU Compiler Collection.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
-Fortran, Ada, D, Go, Rust, Modula 2, and Cobol, with runtime 
+Fortran, Ada, D, Go, Rust, Modula 2, and Cobol, with runtime
 support libraries for these languages.
 endef
 
@@ -36,7 +36,7 @@ endef
 # http://gcc.gnu.org/pub/gcc/snapshots/
 
 #HINT: To compile Ada aka "gnats", you need to have earlier Ada compiler.
-#HINT: Likewise for the D compiler, called "gdc". Of course you need a 
+#HINT: Likewise for the D compiler, called "gdc". Of course you need a
 #HINT: working C++ compiler to compile gcc....
 
 ######################################################################
@@ -46,11 +46,11 @@ MASTER_SUBDIR = pub/gcc/snapshots/$(GARVERSION)/
 #MASTER_SITES = $(MASTER_GNU)
 #MASTER_SUBDIR = $(GARNAME)/$(DISTNAME)/
 DISTNAME= $(UPSTREAMNAME)-$(GARVERSION)
-DISTFILES = $(DISTNAME).tar.xz 
-SIGFILES = 
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES =
 
 BUILDDEPS = gmp mpfr mpc zlib
-LIBDEPS = 
+LIBDEPS =
 INFO_FILES =  \
 	cpp.info  \
 	cppinternals.info  \
@@ -69,7 +69,7 @@ INFO_FILES =  \
 	libquadmath.info \
 	gnats.info
 
-#	libiberty.info  
+#	libiberty.info
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
@@ -100,7 +100,7 @@ include config.mk
 # note: at end --target=x86_64-linux-gnu
 # Many options at just what Debian ships with;
 # adjust as necessary.
-# 
+#
 CONFIGURE_ARGS = --prefix=$(prefix)  \
 --program-suffix=-15 \
 --enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,ada,cobol \
@@ -142,29 +142,29 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --with-tune=generic \
 --disable-vtable-verify  \
 --disable-werror \
---enable-bootstrap 
+--enable-bootstrap
 
 
 #--build=x86_64-linux-gnu \
 #--host=x86_64-linux-gnu \
-#--target=x86_64-linux-gnu 
+#--target=x86_64-linux-gnu
 #  -m32 -m32x?
 # --with-arch-32=i686  \
-	#
+#
 # enable-bootstrap might not be necessary, but it solves some problems
 # of building when not using recent gcc to build.
 
 #BUILD_ARGS  =   CFLAGS+="-v --save-temps -Wall  -Wextra  " \
 #             CXXFLAGS+="-v --save-temps -Wall  -Wextra  "  \
 #             CPPFLAGS="-I. -I.. "
-	     
+
 
 ######################################################################
 .PHONY: checkall
 
-checkall: 
+checkall:
 	cd $(WORKOBJ)  &&  $(MAKE) -k check >  checkall.output.txt 2>&1
-	echo checkall.output in file  $(WORKOBJ)/checkall.output.txt 
+	echo checkall.output in file  $(WORKOBJ)/checkall.output.txt
 	$(MAKECOOKIE)
 
 

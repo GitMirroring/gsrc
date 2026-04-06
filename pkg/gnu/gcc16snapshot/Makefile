@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 16 development version
 GARNAME = gcc16snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 16-20260329
+GARVERSION = 16-20260405
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 16 snapshot
 define BLURB
@@ -179,6 +179,5 @@ checkall:
 	echo checkall.output in file  $(WORKOBJ)/checkall.output.txt
 	$(MAKECOOKIE)
 
-BUILD_ARGS = LDFLAGS=-liconv
 
 

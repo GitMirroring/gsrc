@@ -20,7 +20,7 @@
 
 NAME =    gnome-tour
 GARNAME = gnome-tour
-GARVERSION = 49.0
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Tour  of GNOME
 define BLURB

@@ -29,6 +29,7 @@ define BLURB
 GNU Parallel is a tool for executing shell jobs in parallel using one
 or more computers.  Jobs can consist of single commands or of scripts
 and they are executed on lists of files, hosts, users or other items.
+Can extend 'xargs' type functionality.
 endef
   
 ######################################################################
@@ -42,7 +43,11 @@ BUILDDEPS =
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
 
-CITE = O. Tange (2018): GNU Parallel 2018, Mar 2018, ISBN 9781387509881, DOI https://doi.org/10.5281/zenodo.11460
+CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ('این آخرین نبرده،'). \
+  Zenodo. https://doi.org/10.5281/zenodo.19321428
+
+
+
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk

@@ -44,8 +44,10 @@ SIGFILES  = $(DISTNAME).tar.xz.sig
 INFO_FILES = $(GARNAME).info $(GARNAME)-guile.info
 
 
+#  DOES NOT COMPILE WITH nettle 4.0
+# MUST use earlier version of nettle
 # see INSTALL for full rundown:
-BUILDDEPS = # autogen bdw-gc libunistring   libgcrypt nettle gmp  zlib 
+BUILDDEPS = # autogen bdw-gc libunistring   libgcrypt nettle gmp  zlib
 LIBDEPS = # lzo
 ######################################################################
 
@@ -53,7 +55,4 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration"
 
-#  DOES NOT COMPILE WITH nettle 4.0
-# MUST use earlier version of nettle
