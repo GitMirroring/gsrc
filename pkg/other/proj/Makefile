@@ -29,6 +29,10 @@ DESCRIPTION =  library for doing geodesic and cartographic projections
 define BLURB
 endef
 LICENSE = MIT
+CITE = PROJ contributors (2026). PROJ coordinate transformation \
+ software library. Open Source Geospatial Foundation. URL https://proj.org/. \
+ DOI: 10.5281/zenodo.5884394
+
 ######################################################################
 # http://download.osgeo.org/proj/proj-6.1.0.tar.gz 
 MASTER_SITES = http://download.osgeo.org/
@@ -37,14 +41,14 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  = $(DISTNAME).tar.gz.md5
 
 BUILDDEPS =
-LIBDEPS = 
+LIBDEPS =
 ######################################################################
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
 # to avoid downloading "googletest" which has some ssl keys problem. To be
 # firgured out someday.
-CMAKE_CONFIGURE_ARGS =  -DCMAKE_TLS_VERIFY=0 -DBUILD_TESTING=OFF  PROJ_LIB=$(prefix)/share
+CMAKE_CONFIGURE_ARGS =  -DCMAKE_TLS_VERIFY=0 -DBUILD_TESTING=OFF  PROJ_LIB=$(prefix)/share/proj
 
 
 # kludge
@@ -52,7 +56,9 @@ pre-install:
 	@echo mkdir -p $(packageDESTDIR)/
 	mkdir -p $(packageDESTDIR)/
 	cd  $(packageDESTDIR)/ && rm -rf  ./*
-	cd  $(packageDESTDIR)/ && ln -s ./usr/local ./$(prefix)
+	cd  $(packageDESTDIR)/ &&  mkdir -p ./usr/local
+	cd  $(packageDESTDIR)/ &&  mkdir -p ./opt
+	cd  $(packageDESTDIR)/ && ln -s ../usr/local .$(prefix)
 	cd  $(packageDESTDIR)/ && ls -Ra
 
 FIXME = to do install correctly

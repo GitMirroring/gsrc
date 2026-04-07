@@ -1,10 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # -*- coding: utf-8 -*-
 #
 #       gsrc
-#       
+#
 #       Copyright © 2012, 2013, 2014 Brandon Invergo <brandon@invergo.net>
-#       
+#
 #       This file is part of GSRC.
 #
 #       GSRC is free software: you can redistribute it and/or modify
@@ -36,7 +36,7 @@ print_usage () {
 cat <<EOF
 Usage: gsrc [info|path|search] [PACKAGE|TERMS]
 Install, uninstall and discover info about GSRC packages
-    
+
   info        display info about PACKAGE
   path        display the path to PACKAGE
   search      search for packages relevant to TERMS
@@ -44,12 +44,12 @@ Install, uninstall and discover info about GSRC packages
   uninstall   uninstall PACKAGE
   remove      completely remove PACKAGE
   update      update PACKAGE
-    
-PACKAGE names may be passed with or without their project dirname (i.e.
-both 'pkg/gnu/hello' and 'hello' are fine). 
 
-Searches are performed using extended regular expressions. See the 
-'grep' documentation for more information. A list of packages matching 
+PACKAGE names may be passed with or without their project dirname (i.e.
+both 'pkg/gnu/hello' and 'hello' are fine).
+
+Searches are performed using extended regular expressions. See the
+'grep' documentation for more information. A list of packages matching
 any of the TERMS will be displayed.
 
 Report bugs to: bug-gsrc@gnu.org
@@ -67,7 +67,7 @@ get_pkg_path () {
 	pkg_path=$GSRCDIR/$1
     else
 	for dir in pkg/{ $DIRS }; do
-	    p=$GSRCDIR/$dir/$1
+	    p=$GSRCDIR/pkg/$dir/$1
 	    if [ -d $p ]; then
 		pkg_path=$p
 		break
@@ -94,7 +94,7 @@ do_remove () {
     get_pkg_path $1
     do_uninstall $1
     make $MAKE_ARGS -C $pkg_path uninstall-pkg
-} 
+}
 
 do_update () {
     get_pkg_path $1
@@ -103,7 +103,7 @@ do_update () {
 
 do_info () {
     get_pkg_path $1
-    make $MAKE_ARGS -C $pkg_path pkg-info 
+    make $MAKE_ARGS -C $pkg_path pkg-info
 }
 
 do_search () {
@@ -112,7 +112,7 @@ do_search () {
 	terms="$terms -e$term"
     done
     # This is insane and stupid and slow.
-    # My kingdom for a grep option that restricts the search to the 
+    # My kingdom for a grep option that restricts the search to the
     # first N lines so I can do this:
     # grep -E -q i $terms ${GSRCDIR}/{bio,libs,tools}/*/Makefile
     for pkg in ${GSRCDIR}/pkg/{ $DIRS }/*; do

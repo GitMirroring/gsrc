@@ -19,7 +19,7 @@
 
 NAME =    gnuplot
 GARNAME = gnuplot
-GARVERSION =  6.0.3
+GARVERSION =  6.0.4
 HOME_URL = http://gnuplot.sourceforge.net
 DESCRIPTION =  plotting tool, not related to GNU organization
 define BLURB
@@ -41,7 +41,6 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-# not sure way:
-BUILD_ARGS = LDFLAGS=-liconv
+#BUILD_ARGS = CFLAGS=-std=c99
 
 
