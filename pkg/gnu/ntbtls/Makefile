@@ -23,8 +23,9 @@ NAME = ntbTLS
 GARNAME = ntbtls
 GARVERSION = 0.3.2
 HOME_URL = https://gnupg.org/software/ntbtls/index.html
-DESCRIPTION = a tiny TLS 1.2 only implementation to be used with Libgcrypt and LibKSBA
+DESCRIPTION = not too bad tiny TLS 1.2 only library  used with Libgcrypt and LibKSBA
 define BLURB
+not too bad tiny TLS 1.2 only library  used with Libgcrypt and LibKSBA
 endef
 
 ######################################################################

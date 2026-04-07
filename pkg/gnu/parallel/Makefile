@@ -43,7 +43,7 @@ BUILDDEPS =
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
 
-CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ('این آخرین نبرده،'). \
+CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ("این آخرین نبرده،"). \
   Zenodo. https://doi.org/10.5281/zenodo.19321428
 
 

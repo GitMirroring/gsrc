@@ -27,8 +27,8 @@ SLiMSuite contains software for short linear motif discovery and sequence
 analysis 
 endef
 LICENSE = GPLv2 or later
-CITE =  Edwards et al. (2020), Methods Mol Biol. 2141:37-72. [PMID: 32696352]
-CITE = Old citation: Edwards RJ & Palopoli N (2015): Methods Mol Biol. 1268:89-141. [PMID: 25555723]
+CITE =  Edwards et al. (2020), Methods Mol Biol. 2141:37-72. [PMID: 32696352] \
+ Old citation: Edwards RJ & Palopoli N (2015): Methods Mol Biol. 1268:89-141. [PMID: 25555723]
 
 ######################################################################
 #MASTER_SITES = http://www.southampton.ac.uk/

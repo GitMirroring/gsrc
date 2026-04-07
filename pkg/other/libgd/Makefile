@@ -24,7 +24,7 @@ NAME =    libgd
 GARNAME = libgd
 GARVERSION = 2.3.3
 HOME_URL = https://github.com/libgd
-DESCRIPTION =  programatic creation of images
+DESCRIPTION =  dynamic programatic creation of images
 define BLURB
 endef
 

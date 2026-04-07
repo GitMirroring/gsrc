@@ -59,8 +59,8 @@ work.</p>
 <p>
 <table style="table-layout: fixed; width: 100%">
   <tr>
-    <th width="15%">Name   dir/name  Version</th>
-    <th width="85%">Description</th>
+    <th width="15%">Name   </th>
+    <th width="85%">dir/name  Version <br>Description</th>
   </tr>
 PACKAGE_LIST
 </table>

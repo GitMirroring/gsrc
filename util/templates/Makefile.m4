@@ -25,7 +25,6 @@ HOME_URL = __URL
 DESCRIPTION = 
 LICENSE = 
 define BLURB
-
 endef
 
 ######################################################################
