@@ -60,7 +60,7 @@ work.</p>
 <table style="table-layout: fixed; width: 100%">
   <tr>
     <th width="15%">Name   </th>
-    <th width="85%">dir/name  Version <br>Description</th>
+    <th width="85%"> Description <br> dir/name  Version </th>
   </tr>
 PACKAGE_LIST
 </table>

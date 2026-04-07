@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2022-2026 Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -41,8 +41,8 @@ DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 # might need to 'apt-get install python python-dev' to get Python.h
 

@@ -1,4 +1,4 @@
-# Copyright © 2016-2020, 2022-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2020, 2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    NetworkManager
 GARNAME = NetworkManager
-GARVERSION = 1.51.4
+GARVERSION = 1.56.0
 HOME_URL = https://wiki.gnome.org/Projects/NetworkManager
 DESCRIPTION =  NetworkManager
 define BLURB
@@ -28,20 +28,24 @@ endef
 
 ######################################################################
 
-empty:=
-space:= $(empty) $(empty)
-VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
-
-MASTER_SITES = $(MASTER_GNOME)
-MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
-DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
-SIGFILES =
+#empty:=
+#space:= $(empty) $(empty)
+#VERSION_LIST = $(subst .,$(space),$(GARVERSION))
+#SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
+#
+#MASTER_SITES = $(MASTER_GNOME)
+#MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
+#DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
+#SIGFILES =
+# https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/archive/1.56.0/NetworkManager-1.56.0.tar.bz2
+MASTER_SITES = https://gitlab.freedesktop.org/
+MASTER_SUBDIR = NetworkManager/NetworkManager/-/archive/1.56.0/
+DISTFILES  = $(DISTNAME).tar.bz2
 
 # HINT:
 #  apt install  libudev-dev   libgudev-1.0-dev  libnl-3-dev ppp-dev  \
 #  libndp-dev libnl-3-200 libnl-3-dev libjansson-dev \
-#  libnetw-dev libaudit-dev  libndp 
+#  libnetw-dev libaudit-dev  libndp
 BUILDDEPS =
 LIBDEPS =
 

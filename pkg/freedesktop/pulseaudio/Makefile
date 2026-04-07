@@ -21,7 +21,7 @@
 
 NAME =    pulseaudio
 GARNAME = pulseaudio
-GARVERSION = 16.2
+GARVERSION = 17.0
 HOME_URL = https://www.freedesktop.org/wiki/Software/PulseAudio/
 DESCRIPTION = pulseaudio
 define BLURB
