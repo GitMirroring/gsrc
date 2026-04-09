@@ -22,7 +22,8 @@
 
 NAME = xorriso
 GARNAME = xorriso
-GARVERSION = 1.5.8
+GARVERSION = 1.5.8.pl01
+GARADHOC = 1.5.8
 HOME_URL = http://www.gnu.org/software/xorriso/
    #  also   http://libburnia-project.org
 DESCRIPTION = Create, manipulate, burn ISO-9660 filesystems
@@ -43,9 +44,10 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 INFO_FILES = xorriso.info xorrisofs.info xorrecord.info
 
+WORKSRC=  $(WORKDIR)/$(GARNAME)-$(GARADHOC)
+WORKOBJ=  $(WORKSRC)-build
 BUILDDEPS =
 LIBDEPS =
-
 
 ######################################################################
 

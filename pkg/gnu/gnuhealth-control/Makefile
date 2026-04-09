@@ -1,4 +1,4 @@
-# Copyright ©2020,2023,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2020,2023,2025-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = gnuhealth-control
 GARNAME = gnuhealth-control
-GARVERSION = 5.0.2
+GARVERSION = 5.0.3
 HOME_URL = http://www.gnu.org/software/health/
 DESCRIPTION = Health and hospital information system; control
 define BLURB
@@ -44,6 +44,9 @@ CONFIGURE_SCRIPTS =
 
 BUILDDEPS =
 LIBDEPS =
+
+WORKSRC = $(WORKDIR)/$(GARNAME)
+WORKOBJ = $(WORKSRC)
 
 ######################################################################
 

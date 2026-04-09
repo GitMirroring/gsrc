@@ -23,7 +23,7 @@
 
 NAME = Parted
 GARNAME = parted
-GARVERSION = 3.6
+GARVERSION = 3.7
 HOME_URL = http://www.gnu.org/software/parted/
 DESCRIPTION = Disk partition editor
 define BLURB

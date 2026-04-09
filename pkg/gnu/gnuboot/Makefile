@@ -21,16 +21,17 @@
 
 NAME = gnuboot
 GARNAME = gnuboot
-GARVERSION = 0.1-rc6
+GARVERSION = 0.1-rc6-1
+GARVER = 0.1-rc6
 HOME_URL = http://www.gnu.org/software/
-	
-DESCRIPTION = gnuboot source, 138 MB
-define BLURB 
+
+DESCRIPTION = gnuboot source, 301 MB
+define BLURB
 endef
 ######################################################################
-# https://ftp.gnu.org/gnu/gnuboot/mirrors/acpica.org/acpica-unix2-20220331.tar.gz.sig
+# https://ftp.gnu.org/gnu/gnuboot/gnuboot-0.1-rc6/gnuboot-0.1-rc6-1_src.tar.xz
 MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = $(GARNAME)/$(GARNAME)-$(GARVERSION)/
+MASTER_SUBDIR = $(GARNAME)/$(GARNAME)-$(GARVER)/
 DISTFILES = gnuboot-$(GARVERSION)_src.tar.xz
 SIGFILES = $(DISTFILES).sig
 
