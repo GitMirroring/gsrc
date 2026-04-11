@@ -21,7 +21,7 @@
 
 NAME =    papers
 GARNAME = papers
-GARVERSION = 50.0
+GARVERSION = 50.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = papers, a fork of evince PDF reader
 define BLURB

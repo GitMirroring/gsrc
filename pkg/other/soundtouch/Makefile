@@ -22,7 +22,7 @@
  
 NAME = SoundTouch
 GARNAME = soundtouch
-GARVERSION = 2.3.2
+GARVERSION = 2.4.1
 HOME_URL = http://www.surina.net/soundtouch/
 DESCRIPTION = Audio processing library for changing the tempo, pitch and playback rates
 define BLURB
@@ -36,7 +36,7 @@ tempo (speed).  Playback Rate : Changes both tempo and pitch together
 as if a vinyl disc was played at different RPM rate.  The SoundTouch
 library is intended  for application developers writing sound processing
 tools that require tempo/pitch control functionality, or just for playing
-around with the sound effects.  
+around with the sound effects.
 endef
 
 ######################################################################

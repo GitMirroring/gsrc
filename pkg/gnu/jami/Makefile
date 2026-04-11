@@ -18,12 +18,12 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =  Jami , formerly Ring
+NAME =  Jami, formerly Ring
 GARNAME = jami
-GARVERSION = 20260306.0
+GARVERSION = 20260403.0
 HOME_URL = https://jami.net
 DESCRIPTION = A privacy-respecting comm program for video, voice, text, data
-define BLURB 
+define BLURB
 Jami is a program for universal communication which respects freedoms and
 privacy of its users. Jami uses distributed hash tables for establishing
 communication. This avoids keeping centralized registries of users and

@@ -18,7 +18,7 @@
 
 NAME = BamTools
 GARNAME = bamtools
-GARVERSION = 2.5.2
+GARVERSION = 2.5.3
 HOME_URL = https://github.com/pezmaster31/bamtools
 DESCRIPTION = A library and toolkit for handling BAM files
 define BLURB

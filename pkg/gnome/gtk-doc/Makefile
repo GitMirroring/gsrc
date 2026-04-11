@@ -1,4 +1,4 @@
-# Copyright © 2016, 2018, 2020, 2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2018, 2020, 2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gtk-doc
 GARNAME = gtk-doc
-GARVERSION = 1.36.0
+GARVERSION = 1.36.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GTK-Doc is used to document C code.
 define BLURB

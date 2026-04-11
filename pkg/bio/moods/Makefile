@@ -29,9 +29,7 @@ endef
 LICENSE = dual-licenced under GPL version 3 license and Biopython license
 CITE = doi:10.1093/bioinformatics/btp554
 
-# Note: a python2 program
-# also installable as
-# pip install --user MOODS-python
+# also installable with pip or pipx
 
 ######################################################################
 #https://github.com/jhkorhonen/MOODS/releases/download/v1.9.4.1/MOODS-python-1.9.4.1.tar.gz
@@ -44,22 +42,21 @@ DISTFILES = $(DISTNAME).tar.gz
 
 # NOTE:  this python2 relic is annoying, I haven't figured this out... on your own. Use pip
 BUILD_SCRIPTS =  $(WORKSRC)/setup.py 
-INSTALL_SCRIPTS = bin lib $(WORKSRC)/python/setup.py  $(WORKSRC)/perl/Makefile
+#INSTALL_SCRIPTS = bin lib $(WORKSRC)/python/setup.py  $(WORKSRC)/perl/Makefile
 
 BUILDDEPS =
-LIBDEPS = #python2
+LIBDEPS = 
 
-PYTHON ?= $(prefix)/bin/python2
 
 ######################################################################
 
 include ../../../gar/gar.mk
 include config.mk
 
-install-bin:
-	$(INSTALL_BIN) $(WORKSRC)/find_pssm_dna
-	$(MAKECOOKIE)
-
-install-lib:
-	$(INSTALL_LIB) $(WORKSRC)/libpssm.a
-	$(MAKECOOKIE)
+#install-bin:
+#	$(INSTALL_BIN) $(WORKSRC)/find_pssm_dna
+#	$(MAKECOOKIE)
+#
+#install-lib:
+#	$(INSTALL_LIB) $(WORKSRC)/libpssm.a
+#	$(MAKECOOKIE)

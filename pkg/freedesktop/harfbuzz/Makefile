@@ -22,7 +22,7 @@
 
 NAME =    harfbuzz
 GARNAME = harfbuzz
-GARVERSION = 13.2.1
+GARVERSION = 14.1.0
 HOME_URL = http://www.freedesktop.org/wiki/Software/HarfBuzz
 DESCRIPTION = An OpenType text-shaping engine, Middle Eastern scripts
 define BLURB
@@ -30,7 +30,8 @@ endef
 
 # HINT: You might want to disable benchmarks in meson_config.text
 # if things aren't compiling , because it's trying to download something.
-#
+# also
+# make -k install
 
 ######################################################################
 #https://github.com/harfbuzz/
@@ -44,7 +45,7 @@ SIGFILES =
 #GIT_REVISION = master	
 
 BUILDDEPS = 
-LIBDEPS = #  c++ glib libicu ragel
+LIBDEPS = #   glib libicu ragel
 
 ######################################################################
 

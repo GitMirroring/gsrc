@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2019,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,11 +20,10 @@
 
 NAME =    evolution
 GARNAME = evolution
-GARVERSION = 3.60.0
+GARVERSION = 3.60.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Manage your email, contacts and schedule
 define BLURB
-
 endef
 
 ######################################################################

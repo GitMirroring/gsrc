@@ -85,4 +85,4 @@ ime:
 	@echo cd $(WORKSRC)/programs && echo $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
 	@echo ------------------
 
-FIXME = non-fatal error on installation into package dir, ignore for now
+FIXME =  ALL WRONG non-fatal error on installation into package dir, ignore for now

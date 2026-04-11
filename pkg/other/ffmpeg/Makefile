@@ -39,5 +39,5 @@ include config.mk
 
 # couldn't find drm.h without this. Adjust as necessary.
 # some evidence this needed; complaints from ld in other projects
-BUILD_ARGS = "CFLAGS+=-fPIC CPPFLAGS='INCLUDE_DIR=/usr/include/drm'"
+BUILD_ARGS = CFLAGS+='-fPIC -I/usr/include/drm'
 
