@@ -1,4 +1,4 @@
-# Copyright ©2016-2019,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2016-2019,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -38,11 +38,11 @@ SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
 #MASTER_SITES = https://launchpad.net/
 #MASTER_SUBDIR = $(GARNAME)/$(SERIES)/$(GARVERSION)$(RELEASE)/+download/
 #DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
-#SIGFILES =  
+#SIGFILES =
 
 # apt install libsane-dev sane  PackageKit colord vala libgusb
 BUILDDEPS =
-LIBDEPS = 
+LIBDEPS =
 
 ######################################################################
 include ../../../gar/gitlabgnome.mk
