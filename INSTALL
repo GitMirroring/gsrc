@@ -1,9 +1,15 @@
 The install process for GSRC is straight forward.
 
-Grab the current package description files from the internet with "bzr checkout" or "brz checkout", (the python 3 version):
+Grab the current package description files from the internet with "git clone", "bzr checkout"
+or "brz checkout", (the python 3 version):
 
-     $ bzr checkout bzr://bzr.savannah.gnu.org/gsrc/trunk/ gsrc
-        # (use "bzr checkout --lightweight" to download the latest revision only)
+     $ bzr checkout --lightweight bzr://bzr.savannah.gnu.org/gsrc/trunk/ gsrc
+
+    or insted use git (recommended)
+
+     $ git clone --depth=1 https://https.git.savannah.gnu.org/git/gsrc.git
+
+(Download by tarball from ftp.gnu.org is obsolete.)
 
 Then
 
@@ -11,10 +17,12 @@ Then
      $ ./bootstrap                       # to create the configure script
      $ ./configure --prefix=$HOME/gnu    # --prefix is directory to install the compiled packages
                                          # Pick your --prefix by your wishes.
-
+                                         # other single user choices might include
+                                         # $HOME/.local
+                                         # all user choice might be
+                                         # /opt/gsrc
                                          # You can give `./configure' the normal GNU configure arguments.
-					 # If you decide to change these, either reconfigure, 
-					 # or edit `config.mk'.
+					 # If you decide to change these,   edit `config.mk' and/or rerun the above steps.
 
 
      $ . ./setup.sh                      # This just sets some ENV variables and appends to PATH
