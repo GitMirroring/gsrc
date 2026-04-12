@@ -18,7 +18,7 @@ dnl You should have received a copy of the GNU General Public License
 dnl along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
-AC_INIT(gsrc, 2014.10.11, bug-gsrc@gnu.org)
+AC_INIT(gsrc, 2026.04.11, bug-gsrc@gnu.org)
 AC_CONFIG_SRCDIR([gsrc.in])
 
 AM_INIT_AUTOMAKE([foreign])
@@ -26,6 +26,10 @@ AM_INIT_AUTOMAKE([foreign])
 AC_PATH_PROG([RECSEL], [recsel])
 AC_PATH_PROG([RECFMT], [recfmt])
 
-AC_CONFIG_FILES([gsrc gar/config.mk setup.sh GNUmakefile doc/Makefile], [chmod +x gsrc])
+AC_CONFIG_FILES([gsrc ]           , [chmod +x gsrc ])
+AC_CONFIG_FILES([setup.sh ]       , [chmod +x setup.sh ])
+AC_CONFIG_FILES([ gar/config.mk  ], [chmod +r gar/config.mk ])
+AC_CONFIG_FILES([ GNUmakefile    ], [chmod +r GNUmakefile ])
+AC_CONFIG_FILES([ doc/Makefile   ], [chmod +r doc/Makefile ])
 AC_SUBST(CONFIGURE_ARGS,$ac_configure_args)
 AC_OUTPUT

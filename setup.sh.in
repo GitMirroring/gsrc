@@ -51,7 +51,7 @@ export INFOPATH=$GSRC/share/info:$GSRC/info${INFOPATH:+:$INFOPATH}
 
 # MANPATH gives the locations of `man' documentation files.
 export ORIG_MANPATH=$MANPATH
-export MANPATH=$GSRC/share/man:$MANPATH
+export MANPATH=$GSRC/share/man${MANPATH:+:$MANPATH}
 
 # PKG_CONFIG_PATH gives the locations of pkg-config package 
 # descriptions. Note that, like LD_LIBRARY_PATH, use of this variable 
@@ -70,5 +70,8 @@ export PYTHONPATH=$GSRC/lib/python3.13/site-packages:$GSRC/lib64/python3.13/site
 # for GNOME programs, this might be needed:
 #                    this might vary on your system:
 export ORIG_GI_TYPELIB_PATH=$GI_TYPELIB_PATH
-export GI_TYPELIB_PATH=$GSRC/lib64/girepository-1.0:$GSRC/lib/girepository-1.0:/usr/lib/girepository-1.0:$GI_TYPELIB_PATH
+export GI_TYPELIB_PATH=$GSRC/lib64/girepository-1.0:$GSRC/lib/girepository-1.0:/usr/lib/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}
 
+# for systems using XDG, needed to make icons work right
+export ORIG_XDG_DATA_DIRS=$XDG_DATA_DIRS
+export XDG_DATA_DIRS=$GSRC/share${XDG_DATA_DIRS:+:$XDG_DATA_DIRS}
