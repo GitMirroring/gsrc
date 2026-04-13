@@ -19,7 +19,7 @@
 
 NAME =    gnome-online-accounts
 GARNAME = gnome-online-accounts
-GARVERSION = 3.58.0
+GARVERSION = 3.58.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Single sign-on framework for GNOME
 define BLURB

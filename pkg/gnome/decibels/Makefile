@@ -20,7 +20,7 @@
 
 NAME =    decibels 
 GARNAME = decibels
-GARVERSION = 49.0
+GARVERSION = 49.6.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = decibels audio player
 define BLURB

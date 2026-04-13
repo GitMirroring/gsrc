@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2019,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -23,7 +23,6 @@ GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Dominate the board in a classic version of Reversi
 define BLURB
-
 endef
 
 ######################################################################
@@ -31,7 +30,7 @@ endef
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
+SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/

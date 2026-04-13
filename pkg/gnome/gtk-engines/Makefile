@@ -22,9 +22,8 @@ NAME =    gtk-engines
 GARNAME = gtk-engines
 GARVERSION = 2.91.1
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = Several GTK+ engines and default themes
+DESCRIPTION = Several GTK+ engines and default themes, from 2010
 define BLURB
-
 endef
 
 ######################################################################
@@ -44,6 +43,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

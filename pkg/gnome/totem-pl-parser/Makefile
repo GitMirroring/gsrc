@@ -19,7 +19,7 @@
 
 NAME =    totem-pl-parser
 GARNAME = totem-pl-parser
-GARVERSION = 3.26.6
+GARVERSION = 3.26.7
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Simple GObject-based library to parse and save a host of playlist formats
 define BLURB

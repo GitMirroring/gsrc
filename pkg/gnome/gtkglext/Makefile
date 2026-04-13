@@ -24,24 +24,28 @@ GARVERSION = 1.2.0
 HOME_URL = http://projects.gnome.org/gtkglext/
 DESCRIPTION =  OpenGL extension to gtk
 define BLURB
-
 endef
 LICENSE = GNU LGPL 2.1
 
 ######################################################################
-#http://downloads.sourceforge.net/gtkglext/gtkglext-1.2.0.tar.gz
 
-MASTER_SITES =  http://downloads.sourceforge.net/
-MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz 
+
+empty:=
+space:= $(empty) $(empty)
+VERSION_LIST = $(subst .,$(space),$(GARVERSION))
+SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
+
+MASTER_SITES = $(MASTER_GNOME)
+MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
+DISTFILES = $(DISTNAME).tar.bz2  $(DISTNAME).sha256sum
 SIGFILES =
 
-# apt install libpangox-1.0-0 libpangox-1.0-dev  xorg-dev
 BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+# missiong pangox dependency; old 2010
