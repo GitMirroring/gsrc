@@ -22,7 +22,7 @@
 
 NAME = libmicrohttpd
 GARNAME = libmicrohttpd
-GARVERSION = 1.0.3
+GARVERSION = 1.0.4
 HOME_URL = http://www.gnu.org/software/libmicrohttpd/
 DESCRIPTION = C library implementing an HTTP 1.1 server
 define BLURB

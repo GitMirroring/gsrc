@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 NAME = Gforth
 GARNAME = gforth
 #GARVERSION = 0.7.3
-GARVERSION = 0.7.9_20260109
+GARVERSION = 0.7.9_20260410
 HOME_URL = https://gforth.org
 # or HOME_URL = https://www.gnu.org/software/gforth/
 DESCRIPTION = Forth interpreter, with virtual machine generator "vmgen"
@@ -49,18 +49,20 @@ BUILDDEPS =
 # maybe swig
 LIBDEPS =
 
-#needed:
+#needed:  to find generated config.h . could be different
 WORKOBJ = $(WORKSRC)
 
-CONFIGURE_SCRIPTS = myconfigure
-BUILD_SCRIPTS = mybuild
-INSTALL_SCRIPTS = myinst
+#CONFIGURE_SCRIPTS = myconfigure
+#BUILD_SCRIPTS = mybuild
+#INSTALL_SCRIPTS = myinst
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include ../../../gar/varb.mk
 include config.mk
+
+# HINT:  apt install texi2html
 
 #BUILD_ARGS = CFLAGS+="-Wno-implicit-function-declaration  -Iwayland"
 
@@ -76,26 +78,31 @@ include config.mk
 #	# installs the dependencies for a tarball build
 #	  look at install-deps.sh
 
-BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
+#BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
+CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) 
+BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) CFLAGS=-Wno-implicit-function-declaration
 
-.PHONY: configure-myconfigure build-mybuild install-myinstall
+.PHONY: configure-myconfigure
+#build-mybuild install-myinstall
 
-configure-myconfigure:
-	echo $(prefix)
-	mkdir -p $(WORKOBJ)
-	cd $(WORKOBJ) && BUILDFROM=tarball  ../$(DISTNAME)/configure  --prefix=$(prefix)
-	$(MAKECOOKIE)
+#configure-myconfigure:
+#	echo $(prefix)
+#	mkdir -p $(WORKOBJ)
+#	cd $(WORKOBJ) && BUILDFROM=tarball configure  --prefix=$(prefix)
+#	$(MAKECOOKIE)
 
-build-mybuild:
-	cd $(WORKOBJ) &&  VERBOSE=1 DESTDIR=$(packageDESTDIR) $(MAKE)
+#build-mybuild:
+#	cd $(WORKOBJ) && BUILDFROM=tarball  VERBOSE=1 DESTDIR=$(packageDESTDIR) $(MAKE)
 
-pre-install:  build-mybuild
-	$(INSTALL_INFO) $(WORKSRC)/doc/vmgen.info
-	$(INSTALL_INFO) $(WORKSRC)/doc/gforth.info
+#pre-install:
+#	$(INSTALL_INFO) $(WORKSRC)/doc/vmgen.info
+#	$(INSTALL_INFO) $(WORKSRC)/doc/gforth.info
 
 # is this still needed?
-install-myinst: pre-install
-	cd $(WORKOBJ) && $(MAKE)  -k install  VERBOSE=1 DESTDIR=$(packageDESTDIR)
-	cd $(WORKOBJ)  && $(INSTALL_BIN)  gforth.fi
+#install-myinst: pre-install
+#	cd $(WORKOBJ) && $(MAKE)  -k install  VERBOSE=1 DESTDIR=$(packageDESTDIR)
+#	cd $(WORKOBJ)  && $(INSTALL_BIN)  gforth.fi
+
+
 
 

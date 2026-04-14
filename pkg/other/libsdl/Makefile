@@ -21,12 +21,13 @@
 NAME =    libsdl
 GARNAME = libsdl
 UPSTREAMNAME = SDL3
-GARVERSION = 3.4.0
+HOME_URL = https://www.libsdl.org
+GARVERSION = 3.4.4
 DESCRIPTION = simple direct media layer library
 define BLURB
 Simple DirectMedia Layer is a cross-platform development library designed
 to provide low level access to audio, keyboard, mouse, joystick, and
-graphics hardware via OpenGL and Direct3D.  
+graphics hardware via OpenGL and Direct3D.
 endef
 
 LICENSE = 1.2 and earlier, GNU LGPL; 2.0 and later, the zlib license
@@ -36,7 +37,7 @@ LICENSE = 1.2 and earlier, GNU LGPL; 2.0 and later, the zlib license
 #https://github.com/libsdl-org/SDL/releases/download/release-3.2.16/SDL3-3.2.16.tar.gz.sig
 MASTER_SITES = http://github.org/
 MASTER_SUBDIR = libsdl-org/SDL/releases/download/release-$(GARVERSION)/
-DISTFILES = $(DISTNAME).tar.gz 
+DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
