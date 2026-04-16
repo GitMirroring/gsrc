@@ -20,7 +20,7 @@
 
 NAME =    orca
 GARNAME = orca
-GARVERSION = 50.0.9
+GARVERSION = 50.1.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Screen reader for individuals who are blind or visually impaired
 define BLURB
