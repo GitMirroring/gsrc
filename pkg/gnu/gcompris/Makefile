@@ -22,7 +22,7 @@ GARVERSION = 26.1
 HOME_URL = http://www.gnu.org/software/gcompris/
 DESCRIPTION = "Educational" games for small children
 define BLURB
-GCompris is a suite of educational software for children.  It features a
+GCompris is a suite of "educational" software for children.  It features a
 variety of activities suitable for kids aged 2 to 10 years old.  The suite
 includes activities to introduce and develop skills in computer use,
 algebra, science, reading and more.  It also features some games such
@@ -32,7 +32,7 @@ you show love. However, software is provided here in the interests of
 freedom. Former users of gcompris, now you are old enough to read the
 source code of the software you were programmed on. Do you feel resentment
 or gratefulness? If you are reading this, please consider whether or not
-you have an unhealty addiction to computers.
+you have an unhealthy addiction to computers.
 endef
 
 ######################################################################
