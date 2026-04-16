@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2026
+# Copyright © 2026 Carl Hansen
 #
 # This file is part of GSRC.
 #
@@ -20,17 +20,19 @@ NAME = GCompris
 GARNAME = gcompris
 GARVERSION = 26.1
 HOME_URL = http://www.gnu.org/software/gcompris/
-DESCRIPTION = Educational games for small children
+DESCRIPTION = "Educational" games for small children
 define BLURB
 GCompris is a suite of educational software for children.  It features a
 variety of activities suitable for kids aged 2 to 10 years old.  The suite
 includes activities to introduce and develop skills in computer use,
 algebra, science, reading and more.  It also features some games such
-as chess and sudoku. Comment: Better to educate human children with real
-humans, not a device. You will get more love if you give love. Software
-is provided in the interests of freedom. Former users of gcompris,
-now you are old enough to read the source code of the software you were
-programmed on. Do you feel resentment or gratefulness?
+as chess and sudoku. Comment: Better to educate human children with
+humans, not a device. You will get more love from your children if
+you show love. However, software is provided here in the interests of
+freedom. Former users of gcompris, now you are old enough to read the
+source code of the software you were programmed on. Do you feel resentment
+or gratefulness? If you are reading this, please consider whether or not
+you have an unhealty addiction to computers.
 endef
 
 ######################################################################
@@ -40,15 +42,18 @@ MASTER_SUBDIR = stable/gcompris/qt/src/
 DISTFILES = $(GARNAME)-qt-$(GARVERSION).tar.xz
 SIGFILES =
 
-BUILDDEPS =  glib gtk pango gdk-pixbuf libxml2
+BUILDDEPS =
+# to be debugged, what goes here
+#glib gtk pango gdk-pixbuf libxml2
 # chess libsdl_mixer glib gtk pango gdk-pixbuf libxml2
+# bunch of prerequisits
 LIBDEPS =
 
+WORKSRC = $(WORKDIR)/gcompris-qt-26.1
+WORKOBJ = $(WORKDIR)/gcompris-qt-26.1-build
 ######################################################################
 
-include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-#CONFIGURE_ARGS += GCOMPRIS_LIBS="-lgmodule-2.0 -lgtk-x11-2.0 -lglib-2.0 \
-##				 -lgdk-x11-2.0 -lgdk_pixbuf-2.0 -lpango-1.0 \
-#				 -lgobject-2.0 -lrsvg-2 -lxml2"
+CMAKE_CONFIGURE_ARGS = "-DQT_DEBUG_FIND_PACKAGE=ON --debug-find-pkg=Qt6Multimedia "
