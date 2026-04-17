@@ -1,5 +1,4 @@
-# Copyright © 2013, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,41 +19,44 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = GNU Health
-GARNAME = gnuhealth
-GARVERSION = 5.0.7
-UPSTREAMNAME = gnuhealth-his-server-patchset
+NAME = thalamus
+GARNAME = thalamus
+GARVERSION = 0.9.18
 HOME_URL = http://www.gnu.org/software/health/
-DESCRIPTION = Health and hospital information system
+DESCRIPTION = Thalamus  The GNU Health Federation Message and Authentication Server
 define BLURB
-GNU Health is a free medical software system, including support
-for electronic medical records (EMR), a hospital information system
-(HIS), and health information system.  It supports both Spanish and
-English interfaces.  It has been adopted by the United Nations
-University for implementation and training, and several hospitals and
-health ministries around the world.
+Thalamus: The GNU Health Federation Message and Authentication Server.
+The Thalamus project provides a RESTful API hub to all the GNU Health
+Federation nodes. The main functions are: 1. Message server: A concentrator
+and message relay from and to the participating nodes in the GNU Health
+Federation and the GNU Health Information System (PgSQL). Some of the
+participating nodes include the GNU Health HMIS, MyGNUHealth mobile
+PHR application, laboratories, research institutions and civil offices.
+2. Authentication Server: Thalamus also serves as an authentication and
+authorization server to interact with the GNUHealth Information System.
+Thalamus is part of the GNU Health project, but it is a self contained,
+independent server that can be used in different health related scenarios.
 endef
 
 ######################################################################
 
 MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = health/
-DISTFILES = $(UPSTREAMNAME)-$(GARVERSION)-bundle.tar.gz
-SIGFILES = $(UPSTREAMNAME)-$(GARVERSION)-bundle.tar.gz.sig
+MASTER_SUBDIR = health/thalamus/
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES = $(DISTNAME).tar.gz.sig
 CONFIGURE_SCRIPTS =
-
-WORKSRC = $(WORKDIR)/his
-WORKOBJ = $(WORKDIR)/his
+BUILD_SCRIPTS =
 
 BUILDDEPS =
 LIBDEPS =
-
+WORKSRC = $(WORKDIR)/thalamus
+WORKOBJ = $(WORKDIR)/thalamus
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-post-extract pre-build build install:
+post-extract pre-build configure build install:
 	@echo
 	@echo
 	@echo
@@ -63,8 +65,8 @@ post-extract pre-build build install:
 	@echo =======================================================
 	@echo =======================================================
 	@echo This script makes no attempt to install the program, it simply
-	@echo downloads it. Installation must be customized to your
-	@echo situation. Start with the online manual at http://health.gnu.org
+	@echo downloads it. Installation must be customized to your system.
+	@echo It is python, use pip.
 	@echo =======================================================
 	@echo =======================================================
 	@echo =======================================================

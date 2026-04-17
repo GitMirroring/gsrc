@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017,2018 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017,2018,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -22,7 +22,7 @@
 
 NAME = time
 GARNAME = time
-GARVERSION = 1.9
+GARVERSION = 1.10
 HOME_URL = http://www.gnu.org/software/time/
 DESCRIPTION = Run a command, then display its resource usage
 define BLURB
@@ -44,6 +44,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk

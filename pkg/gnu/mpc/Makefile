@@ -22,7 +22,7 @@
 
 NAME = MPC
 GARNAME = mpc
-GARVERSION = 1.4.0
+GARVERSION = 1.4.1
 HOME_URL = http://www.multiprecision.org/
 #HOME_URL = http://www.gnu.org/software/mpc/
 DESCRIPTION = C library for arbitrary precision complex arithmetic

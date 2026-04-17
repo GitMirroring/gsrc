@@ -19,14 +19,22 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = gnuboot
+NAME = GNU Boot
 GARNAME = gnuboot
 GARVERSION = 0.1-rc6-1
 GARVER = 0.1-rc6
-HOME_URL = http://www.gnu.org/software/
+HOME_URL = http://www.gnu.org/software/gnuboot
 
 DESCRIPTION = gnuboot source, 301 MB
 define BLURB
+GNU Boot is a 100% free software project aimed at replacing the nonfree
+boot software (like BIOS or UEFI) of computers with free boot software.
+GNU Boot is only a distribution: it reuses existing software projects like
+Coreboot, GRUB, SeaBIOS, etc.  It tries to: To find and remove nonfree
+software in projects it reuses.  To build the software and assemble it in
+something that can be installed. To test it and to provide installation
+and upgrade instructions.  To provide good default configuration that
+work for most users.
 endef
 ######################################################################
 # https://ftp.gnu.org/gnu/gnuboot/gnuboot-0.1-rc6/gnuboot-0.1-rc6-1_src.tar.xz
@@ -41,7 +49,7 @@ LIBDEPS =
 WORKSRC = $(WORKDIR)/$(GARNAME)-$(GARVERSION)_src
 WORKOBJ = $(WORKSRC)
 CONFIGURE_SCRIPTS =
-#BUILD_SCRIPTS = my
+BUILD_SCRIPTS =
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -50,7 +58,7 @@ include config.mk
 
 configure: note
 
-#buildy: note
+build: note
 
 note: extract
 	@echo ====================================================
