@@ -18,7 +18,7 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =  Jami, formerly Ring
+NAME =  Jami, formerly "Ring"
 GARNAME = jami
 GARVERSION = 20260403.0
 HOME_URL = https://jami.net

@@ -19,7 +19,7 @@
 
 NAME =    gnome-bluetooth
 GARNAME = gnome-bluetooth
-GARVERSION = 47.1
+GARVERSION = 47.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME Bluetooth Subsystem
 define BLURB

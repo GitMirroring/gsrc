@@ -38,7 +38,6 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 #DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 #SIGFILES =
 
-include  ../../../gar/gitlabgnome.mk
 
 WORKOBJ = $(WORKSRC)
 
@@ -48,6 +47,7 @@ LIBDEPS =
 CONFIGURE_SCRIPTS = my
 ######################################################################
 
+include  ../../../gar/gitlabgnome.mk
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
@@ -58,6 +58,6 @@ pre-configure:
 
 configure-my:
 	echo cd $(WORKSRC) 
-	cd $(WORKSRC) && ./configure PACKAGE_VERSION=0.56.18  --prefix=$(prefix)
+	cd $(WORKSRC) && ./configure PACKAGE_VERSION=$(GARVERSION)  --prefix=$(prefix)
 
 

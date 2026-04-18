@@ -39,8 +39,7 @@ MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
-# libmapi 
-BUILDDEPS = 
+BUILDDEPS =  evolution-data-server
 LIBDEPS =
 
 ######################################################################

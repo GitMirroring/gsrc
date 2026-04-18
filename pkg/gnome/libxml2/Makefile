@@ -21,7 +21,7 @@
 
 NAME =    libxml2
 GARNAME = libxml2
-GARVERSION = 2.15.2
+GARVERSION = 2.15.3
 #HOME_URL = http://xmlsoft.org/
 HOME_URL = https://gitlab.gnome.org/GNOME/libxml2/-/wikis/home
 DESCRIPTION = XML parser and markup toolkit 

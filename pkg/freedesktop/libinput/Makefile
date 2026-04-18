@@ -21,7 +21,7 @@
 
 NAME =    libinput
 GARNAME = libinput
-GARVERSION = 1.29.1
+GARVERSION = 1.31-branch
 HOME_URL = http://www.freedesktop.org/
 DESCRIPTION =  wrapper library for input devices.
 define BLURB
@@ -29,14 +29,15 @@ endef
 
 ######################################################################
 # https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.25.0/libinput-1.25.0.tar.bz2
+# https://gitlab.freedesktop.org/libinput/libinput/-/archive/1.31-branch/libinput-1.31-branch.tar.bz2
 MASTER_SITES =  https://gitlab.freedesktop.org/
 MASTER_SUBDIR = libinput/libinput/-/archive/$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.bz2
 SIGFILES  =
 
-BUILDDEPS =  
-LIBDEPS = 
-# apt install libwacom doxygen libmtdev-dev  libudev-dev check libunwind-dev  libgudev-1.0-dev 
+BUILDDEPS =
+LIBDEPS =
+#Hint apt install libwacom doxygen libmtdev-dev  libudev-dev check libunwind-dev  libgudev-1.0-dev
 #
 ######################################################################
 
@@ -44,3 +45,4 @@ include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
 BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
+
