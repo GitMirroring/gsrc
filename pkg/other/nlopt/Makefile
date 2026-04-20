@@ -1,5 +1,5 @@
 # Copyright © 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020, 2022, 2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.:
 # http://www.gnu.org/software/gsrc
@@ -25,14 +25,16 @@ GARNAME = nlopt
 #UPSTREAMNAME = v
 # FIXME
 
-GARVERSION = 2.10.0
+GARVERSION = 2.10.1
 HOME_URL = http://ab-initio.mit.edu/nlopt
 DESCRIPTION = A library for nonlinear optimization
 define BLURB
-NLopt is a library for nonlinear optimization, providing a common
-interface for a number of different optimization routines.  It
-features bindings for a wide array of languages, such as C/C++,
-Python, and R.
+NLopt is a library for nonlinear local and global optimization, for
+functions with and without gradient information. It is designed as a
+simple, unified interface and packaging of several free/open-source
+nonlinear optimization libraries. There are also interfaces for C++,
+Fortran, Python, Matlab or GNU Octave, OCaml, GNU Guile, GNU R, Lua,
+Perl, Rust, Ruby, Julia, and Java.
 endef
 LICENSE = LGPLv2.1 or later
 CITE = Steven G. Johnson, The NLopt nonlinear-optimization package, http://ab-initio.mit.edu/nlopt
@@ -42,10 +44,10 @@ CITE = Steven G. Johnson, The NLopt nonlinear-optimization package, http://ab-in
 MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR = stevengj/$(GARNAME)/archive/refs/tags/
 DISTFILES = v$(GARVERSION).tar.gz
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 
 ######################################################################
