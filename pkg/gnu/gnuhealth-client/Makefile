@@ -1,4 +1,4 @@
-# Copyright ©2018-2023,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2018-2023,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME = gnuhealth-client
 GARNAME = gnuhealth-client
-GARVERSION = 5.0.1
+GARVERSION = 5.0.2
 HOME_URL = http://www.gnu.org/software/health/
 DESCRIPTION = Health and hospital information system; client
 define BLURB

@@ -1,5 +1,5 @@
 # Copyright © 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2021, 2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2021, 2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -18,7 +18,7 @@
 
 NAME =  libsvm
 GARNAME = libsvm
-GARVERSION = 3.36
+GARVERSION = 3.37
 HOME_URL = http://www.csie.ntu.edu.tw/~cjlin/libsvm/
 DESCRIPTION = A library for Support Vector Machines
 define BLURB
@@ -69,7 +69,7 @@ install-java:
 # both python2 and python3
 #
 install-python:
-	@echo "assuming python 2.7 and 3.12, adjust Makefile otherwise..."  
+	@echo "assuming python 2.7 and 3.13, adjust Makefile below"  
 	for f in svm.py svmutil.py; do \
 		sed -i '1s/python/python2/' $(WORKSRC)/python/libsvm/$$f; \
 		install -D -m644 $(WORKSRC)/python/libsvm/$$f $(packageprefix)/lib/python2.7/$$f; \
@@ -77,7 +77,7 @@ install-python:
 	@echo 
 	for f in svm.py svmutil.py; do \
 		sed -i '1s/python2/python3/' $(WORKSRC)/python/libsvm/$$f; \
-		install -D -m644 $(WORKSRC)/python/libsvm/$$f $(packageprefix)/lib/python3.12/$$f; \
+		install -D -m644 $(WORKSRC)/python/libsvm/$$f $(packageprefix)/lib/python3.13/$$f; \
 	done
 	$(MAKECOOKIE)
 
