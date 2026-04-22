@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2020 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2020, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -24,7 +24,7 @@
 
 NAME = sed
 GARNAME = sed
-GARVERSION = 4.9
+GARVERSION = 4.10
 HOME_URL = http://www.gnu.org/software/sed/
 DESCRIPTION = Stream editor
 define BLURB
@@ -48,6 +48,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
