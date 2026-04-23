@@ -22,7 +22,7 @@
 
 NAME = Parallel
 GARNAME = parallel
-GARVERSION = 20260322
+GARVERSION = 20260422
 HOME_URL = http://www.gnu.org/software/parallel/
 DESCRIPTION = Build and execute command lines in parallel
 define BLURB
@@ -46,11 +46,7 @@ WORKOBJ = $(WORKSRC)
 CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ("این آخرین نبرده،"). \
   Zenodo. https://doi.org/10.5281/zenodo.19321428
 
-
-
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
-
-
