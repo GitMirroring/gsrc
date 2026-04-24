@@ -21,7 +21,7 @@
 
 NAME = GnuPG
 GARNAME = gnupg
-GARVERSION = 2.5.18
+GARVERSION = 2.5.19
 HOME_URL = http://www.gnu.org/software/gnupg
 DESCRIPTION = GNU Privacy Guard gpg gnupg
 define BLURB
