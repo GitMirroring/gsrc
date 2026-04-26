@@ -1,4 +1,4 @@
-# Copyright © 2016-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =       boost
 GARNAME =    boost
-GARVERSION = 1.90.0
+GARVERSION = 1.91.0
 HOME_URL =   http://www.boost.org
 DESCRIPTION =  Peer-reviewed portable C++ source libraries.
 define BLURB
@@ -49,18 +49,17 @@ SIGFILES  =
 WORKSRC =  $(WORKDIR)/$(GARNAME)_$(GARVERSIONUNDER)
 WORKOBJ = $(WORKSRC)
 
-CONFIGURE_SCRIPTS = 
+CONFIGURE_SCRIPTS =
 BUILD_SCRIPTS = customboost
 CXXFLAGS = -std=c++11
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 ######################################################################
 USE_PARALLEL ?= y
 include ../../../gar/gar.mk
 BUILD_ARGS += $(if $(USE_PARALLEL),$(MAKE_ARGS_PARALLEL),)
 include config.mk
-
 
 .PHONY: pre-build build-customboost custom-pre-install
 
@@ -68,7 +67,7 @@ include config.mk
 #	cd $(WORKDIR)  &&  7z x ../download/$(DIST)
 #	$(MAKECOOKIE)
 
-	
+
 # is this right? works...
 # that chmod is probably to be fixed in later release...
 pre-build:
@@ -88,4 +87,6 @@ custom-pre-install:
 	(cd $(WORKSRC) && ./b2 install --prefix=$(packageprefix) ;  )
 	$(MAKECOOKIE)
 
+# HINT
+# put  "BOOST_ROOT=/yourgsrcpreix"  in your .profile
 
