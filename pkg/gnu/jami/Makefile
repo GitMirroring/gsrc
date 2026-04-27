@@ -20,9 +20,9 @@
 
 NAME =  Jami, formerly "Ring"
 GARNAME = jami
-GARVERSION = 20260403.0
+GARVERSION = 20260420.0
 HOME_URL = https://jami.net
-DESCRIPTION = A privacy-respecting comm program for video, voice, text, data
+DESCRIPTION = A privacy-respecting communication program for video, voice, text, data
 define BLURB
 Jami is a program for universal communication which respects freedoms and
 privacy of its users. Jami uses distributed hash tables for establishing
