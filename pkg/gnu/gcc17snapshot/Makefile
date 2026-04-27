@@ -22,7 +22,6 @@
 NAME = The GNU Compiler Collection version 17 development version
 GARNAME = gcc17snapshot
 UPSTREAMNAME = gcc
-#GARVERSION = 16-20260419
 GARVERSION = 17-20260426
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 17 snapshot
@@ -43,7 +42,6 @@ endef
 ######################################################################
 # https://gcc.gnu.org/pub/gcc/snapshots/16-20250831/gcc-16-20250831.tar.xz
 
-# https://gcc.gnu.org/pub/gcc/snapshots/16.1.0-RC-20260424/gcc-16.1.0-RC-20260424.tar.xz
 MASTER_SITES = https://gcc.gnu.org/
 MASTER_SUBDIR = pub/gcc/snapshots/$(GARVERSION)/
 #MASTER_SITES = $(MASTER_GNU)
@@ -64,7 +62,7 @@ INFO_FILES =  \
 	gccinstall.info  \
 	gccint.info  \
 	gdc.info  \
-	gfc-internals.info  \
+  gfc-internals.info  \
 	gfortran.info  \
 	gnat-style.info  \
 	gnat_rm.info  \
@@ -76,20 +74,19 @@ INFO_FILES =  \
 	libquadmath.info  \
 	m2.info
 
-#	libiberty.info
+
+# fix	libiberty.info gfcinternals libffi
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-#CONFIGURE_SCRIPTS = adhoc
-
 ## Configuration options for gcc ##
 ## Note: you must set up your environment (PATH, LDPATH, etc) to
 ## include GSRC-installed packages in order to install gcc as
 ## configured below. You can do this easily like so in Bash:
-## $ source $(your_gsrc_dir) setup.sh
+## $ source $(your_gsrc_dir)/setup.sh
 
 ## adjust --enable-languages=   to your liking; this is maximal.
 ## gnat (ada) is a special case;  requires a working ada compiler to
@@ -113,7 +110,7 @@ include config.mk
 #--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,ada,algol68 \
 
 CONFIGURE_ARGS = --prefix=$(prefix)  \
---program-suffix=-16 \
+--program-suffix=-17 \
 --enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,ada,algol68 \
 --with-gmp=$(prefix) \
 --with-mpfr=$(prefix) \

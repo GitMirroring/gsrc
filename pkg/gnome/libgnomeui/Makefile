@@ -19,7 +19,10 @@ NAME = libgnomeui
 GARNAME = libgnomeui
 GARVERSION = 2.24.5
 HOME_URL = http://www.gtk.org/
-DESCRIPTION = GNOME 2 UI library 
+DESCRIPTION = GNOME 2 UI library
+define BLURB
+endef
+
 
 ######################################################################
 
@@ -31,15 +34,15 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = 
+SIGFILES =
 
 # libgnome
-BUILDDEPS = 
-LIBDEPS = libbonoboui
+BUILDDEPS =
+LIBDEPS = #libbonoboui
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 
