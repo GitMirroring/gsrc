@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2019, 2021-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2019, 2021-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = GnuTLS
 GARNAME = gnutls
-GARVERSION = 3.8.12
+GARVERSION = 3.8.13
 SERIES = 3.8
 HOME_URL =  http://gnutls.org
        # http://www.gnu.org/software/gnutls/
@@ -44,10 +44,9 @@ SIGFILES  = $(DISTNAME).tar.xz.sig
 INFO_FILES = $(GARNAME).info $(GARNAME)-guile.info
 
 
-#  DOES NOT COMPILE WITH nettle 4.0
-# MUST use earlier version of nettle
-# see INSTALL for full rundown:
-BUILDDEPS = # autogen bdw-gc libunistring   libgcrypt nettle gmp  zlib
+#  This version DOES COMPILE WITH nettle 4.0, unlike previous version.
+
+BUILDDEPS =  # autogen bdw-gc libunistring   libgcrypt nettle gmp  zlib
 LIBDEPS = # lzo
 ######################################################################
 

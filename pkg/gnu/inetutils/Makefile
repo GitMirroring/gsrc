@@ -22,22 +22,24 @@
 
 NAME = inetutils
 GARNAME = inetutils
-GARVERSION = 2.7
+GARVERSION = 2.8
 HOME_URL = http://www.gnu.org/software/inetutils/
 DESCRIPTION = Basic networking utilities
 define BLURB
-Inetutils is a collection of common network programs;  ftp client
-and server, telnet client and server, rsh client and server. Also:
-dnsdomainname  hostname ifconfig inetd logger ping ping6 rcp rexec rexecd
-rlogin rlogind syslogd talk talkd tftp tftpd traceroute uucpd whois
+Inetutils is a collection of common network programs;
+dnsdomainname ftp ftpd hostname ifconfig inetd logger ping ping6 rcp
+rexec rexecd rlogin rlogind rsh rshd syslogd talk talkd telnet telnetd
+tftp tftpd traceroute uucpd whois
 endef
 
 ######################################################################
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz
+DISTFILES = $(DISTNAME).tar.gz $(DISTNAME).tar.gz.proof.sig $(DISTNAME).tar.gz.proof
 SIGFILES = $(DISTNAME).tar.gz.sig
+
+# proof files, not sure what are yet...
 
 BUILDDEPS = #ncurses
 LIBDEPS =

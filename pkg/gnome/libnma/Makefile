@@ -21,14 +21,12 @@
 NAME =    libnma
 GARNAME = libnma
 GARVERSION = 1.10.6
-HOME_URL = https://wiki.gnome.org/Projects/
-DESCRIPTION = libnma
+HOME_URL = https://gitlab.gnome.org/GNOME/libnma
+DESCRIPTION = libnma, networkmanager applet
 define BLURB
 endef
 
-
 ######################################################################
-
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
