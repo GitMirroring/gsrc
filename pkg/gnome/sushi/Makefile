@@ -20,7 +20,7 @@
 
 NAME =    sushi
 GARNAME = sushi
-GARVERSION = 46.0
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A quick previewer for Nautilus
 define BLURB
