@@ -156,6 +156,7 @@ custom-%:
 # The main rules also run the $(DONADA) code, which prints out
 # what just happened when all the dependencies are finished.
 
+
 pkg-info:
 	@printf "$(MSG)Name:$(OFF)        $(NAME)\n"
 	@printf "$(MSG)Version:$(OFF)     $(GARVERSION)$(if $(PATCHNUM),-$(strip $(PATCHNUM)))\n"
