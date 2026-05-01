@@ -1,4 +1,4 @@
-# Copyright ©2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    systemtap
 GARNAME = systemtap
-GARVERSION = 5.4
+GARVERSION = 5.5
 HOME_URL = http://sourceware.org/systemtap/wiki
 DESCRIPTION =  Linux kernel realtime diagnostics, tracing, probing
 define BLURB
@@ -42,13 +42,11 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-CONFIGURE_ARGS = CPPFLAGS=-UHAVE_LIBDEBUGINFOD
-BUILD_ARGS = CPPFLAGS=-UHAVE_LIBDEBUGINFOD
+#CONFIGURE_ARGS = CPPFLAGS=-UHAVE_LIBDEBUGINFOD
+#BUILD_ARGS = CPPFLAGS=-UHAVE_LIBDEBUGINFOD
 #DESTDIR=$(packageDESTDIR)
 
 # FIXME = missing headers
 # HINT:    sudo apt install libdw-dev  libdw1t64 libdwarf\*
 # etc
 
-# FIXME, final installation is wrong usr
-#

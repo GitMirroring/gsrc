@@ -1,6 +1,5 @@
 ## Configuration options ##
 ## adjust as needed
 
-CONFIGURE_OPTS ?= 
+CONFIGURE_OPTS ?=
 BUILD_OPTS ?=
-# CPPFLAGS=-Wno-deprecated-declarations
