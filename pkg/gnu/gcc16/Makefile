@@ -1,0 +1,176 @@
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
+#
+# This file is part of GSRC, the GNU Source Release Collection.
+# http://www.gnu.org/software/gsrc
+#
+# GSRC is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# GSRC is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+# or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public
+# License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
+#
+#
+# Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
+
+NAME = The GNU Compiler Collection version 16
+GARNAME = gcc16
+UPSTREAMNAME = gcc
+GARVERSION = 16.1.0
+HOME_URL = https://www.gnu.org/software/gcc
+DESCRIPTION = GNU Compiler Collection 16
+define BLURB
+GCC is the GNU Compiler Collection.  It provides compiler front-ends
+for several languages, including C, C++, Objective-C, Objective-C++,
+Fortran, Ada, D, Go, Rust, Modula 2, Cobol, and Algol68 with runtime
+support libraries for these languages.
+endef
+
+#HINT: To compile Ada aka "gnats", you need to have earlier Ada compiler.
+#HINT: Likewise for the D compiler, called "gdc". Of course you need a
+#HINT: working C++ compiler to compile gcc itself....
+
+######################################################################
+# https://ftp.gnu.org/gnu/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz
+
+#MASTER_SITES = $(MASTER_GNU)
+MASTER_SUBDIR = gnu/gcc/gcc-$(GARVERSION)/
+DISTNAME= $(UPSTREAMNAME)-$(GARVERSION)
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES =
+
+BUILDDEPS = gmp mpfr mpc zlib
+LIBDEPS =
+INFO_FILES =  \
+	cpp.info  \
+	cppinternals.info  \
+	ga68-internals.info  \
+	ga68.info  \
+	gcc.info  \
+	gccgo.info  \
+	gccinstall.info  \
+	gccint.info  \
+	gdc.info  \
+	gfc-internals.info  \
+	gfortran.info  \
+	gnat-style.info  \
+	gnat_rm.info  \
+	gnat_ugn.info  \
+	libffi.info  \
+	libgccjit.info  \
+	libgomp.info  \
+	libitm.info  \
+	libquadmath.info  \
+	m2.info
+
+#	libiberty.info
+
+######################################################################
+include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/info.mk
+include config.mk
+
+## Configuration options for gcc ##
+## Note: you must set up your environment (PATH, LDPATH, etc) to
+## include GSRC-installed packages in order to install gcc as
+## configured below. You can do this easily like so in Bash:
+## $ source $(your_gsrc_dir) setup.sh
+
+## adjust --enable-languages=   to your liking; this is maximal.
+## gnat (ada) is a special case;  requires a working ada compiler to
+## already be installed, the compiler you are using to compile the rest.
+
+# jit requires --enable-host-shared
+# --enable-host-shared typically slows the rest of the compiler down by
+# a few %, so you must explicitly enable it.
+
+# If you want to build both the jit and the regular compiler, it is often
+# best to do this via two separate configure/builds, in separate
+# directories, to avoid imposing the performance cost of
+# --enable-host-shared on the regular compiler.
+
+#--enable-cloog-backend=isl \
+
+# note: at end --target=x86_64-linux-gnu
+# Many options at just what Debian ships with;
+# adjust as necessary.
+
+#--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,ada,algol68 \
+
+CONFIGURE_ARGS = --prefix=$(prefix)  \
+--program-suffix=-16 \
+--enable-languages=c,c++,fortran,objc,obj-c++,jit,lto,go,m2,rust,d,cobol,ada,algol68 \
+--with-gmp=$(prefix) \
+--with-mpfr=$(prefix) \
+--with-mpc=$(prefix) \
+--with-target-bdw-gc=$(prefix) \
+--enable-checking=release \
+--enable-clocale=gnu \
+--enable-__cxa_atexit \
+--enable-default-pie \
+--enable-gnu-unique-object \
+--enable-gtk-cairo \
+--enable-host-shared  \
+--enable-libmpx \
+--enable-libda \
+--enable-libgm2 \
+--enable-libstdcxx-debug \
+--enable-libstdcxx-time=yes \
+--enable-linker-build-id \
+--enable-lto \
+--enable-year2038 \
+--enable-multiarch \
+--disable-multilib  \
+--enable-nls \
+--enable-objc-gc=auto \
+--enable-plugin \
+--enable-shared \
+--enable-threads=posix \
+--with-default-libstdcxx-abi=new \
+--libexecdir=$(prefix)/lib  \
+--libdir=$(prefix)/lib  \
+--with-abi=m64 \
+--without-included-gettext  \
+--with-system-zlib \
+--with-target-system-zlib \
+--enable-offload-targets=nvptx-none  \
+--without-cuda-driver  \
+--with-tune=generic \
+--disable-vtable-verify  \
+--disable-werror \
+--enable-bootstrap
+
+#--build=x86_64-linux-gnu \
+#--host=x86_64-linux-gnu \
+#--target=x86_64-linux-gnu
+#  -m32 -m32x?
+# --with-arch-32=i686  \
+
+# enable-bootstrap might not be necessary, but it solves some problems
+# of building when not using recent gcc to build.
+
+#BUILD_ARGS  =   CFLAGS+="-v --save-temps -Wall  -Wextra  " \
+#             CXXFLAGS+="-v --save-temps -Wall  -Wextra  "  \
+#             CPPFLAGS="-I. -I.. "
+
+#configure-adhoc:
+#	@echo some bug in build files requires this odd step
+#	cd $(WORKSRC) && ./configure
+#	@echo configured
+
+######################################################################
+.PHONY: checkall
+
+checkall:
+	cd $(WORKOBJ)  &&  $(MAKE) -k check >  checkall.output.txt 2>&1
+	echo checkall.output in file  $(WORKOBJ)/checkall.output.txt
+	$(MAKECOOKIE)
+
+
+
