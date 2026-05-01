@@ -1,4 +1,4 @@
-# Copyright © 2016 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2026
 #
 # This file is part of GSRC.
 #

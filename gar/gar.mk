@@ -179,6 +179,7 @@ pkg-info-curt:
 #@printf "Download_URL: $(MASTER_SITES)$(MASTER_SUBDIR)$(DISTFILES)\n"
 pkg-rec:
 	@printf "Garname: $(GARNAME)\n"
+	@printf "Name: $(NAME)\n"
 	@printf "Upstream_name: $(UPSTREAMNAME)\n"
 	@printf "Version: $(GARVERSION)\n"
 	@printf "Home_URL: $(subst %,%%,$(HOME_URL))\n"
