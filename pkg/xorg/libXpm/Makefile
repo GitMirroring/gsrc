@@ -1,4 +1,4 @@
-# Copyright ©2021,2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME =    libXpm
 GARNAME = libXpm
-GARVERSION = 3.5.17
+GARVERSION = 3.5.19
 HOME_URL = https://xorg.freedesktop.org
 DESCRIPTION = libXpm, library for libXpm pixmap
 define BLURB
@@ -35,8 +35,8 @@ MASTER_SUBDIR = releases/individual/lib/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

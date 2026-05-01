@@ -1,4 +1,4 @@
-# Copyright ©2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,10 +21,10 @@
 
 NAME =     xbitmaps
 GARNAME =  xbitmaps
-GARVERSION = 1.1.2
+GARVERSION = 1.1.4
 HOME_URL = http://www.x.org
 #HOME_URL = http://xorg.freedesktop.org
-DESCRIPTION = X bitmaps for xorg 
+DESCRIPTION = X bitmaps for xorg
 define BLURB
 endef
 
@@ -32,11 +32,11 @@ endef
 # https://www.x.org/releases/individual/data/xbitmaps-1.1.2.tar.gz.sig
 MASTER_SITES =  https://www.x.org/
 MASTER_SUBDIR = releases/individual/data/
-DISTFILES = $(DISTNAME).tar.bz2
-SIGFILES = $(DISTNAME).tar.bz2.sig
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES = $(DISTNAME).tar.xz.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 
 ######################################################################

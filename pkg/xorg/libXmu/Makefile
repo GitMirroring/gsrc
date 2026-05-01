@@ -1,4 +1,4 @@
-# Copyright ©2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,9 +22,9 @@
 
 NAME =    libXmu
 GARNAME = libXmu
-GARVERSION = 1.2.1
+GARVERSION = 1.3.1
 HOME_URL = https://xorg.freedesktop.org
-DESCRIPTION = libXmu, library 
+DESCRIPTION = libXmu library
 define BLURB
 endef
 
@@ -34,8 +34,8 @@ MASTER_SUBDIR = releases/individual/lib/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

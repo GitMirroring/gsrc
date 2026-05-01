@@ -1,4 +1,4 @@
-# Copyright ©2019,2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2019,2022,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,9 +21,9 @@
 
 NAME =    encodings
 GARNAME = encodings
-GARVERSION = 1.0.6
+GARVERSION = 1.1.0
 HOME_URL = http://xorg.freedesktop.org
-DESCRIPTION = font encodings
+DESCRIPTION = x font encodings
 define BLURB
 endef
 
@@ -34,8 +34,8 @@ MASTER_SUBDIR = releases/individual/font/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

@@ -21,7 +21,7 @@
 
 NAME =    libgsf
 GARNAME = libgsf
-GARVERSION = 1.14.57
+GARVERSION = 1.14.58
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = An extensible I/O abstraction library for dealing with structured file formats
 define BLURB

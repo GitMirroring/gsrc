@@ -1,4 +1,4 @@
-# Copyright © 2018, 2019, 2021-2026 Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -19,19 +19,18 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    libX11
-GARNAME = libX11
-GARVERSION = 1.8.13
+NAME =    font-alias
+GARNAME = font-alias
+GARVERSION = 1.0.6
 HOME_URL = http://xorg.freedesktop.org
-DESCRIPTION = libX11 library
+DESCRIPTION = X font-alias 
 define BLURB
 endef
 
-#WORKOBJ = $(WORKSRC)
 ######################################################################
 # https://xorg.freedesktop.org/releases/individual/lib/libX11-1.6.6.tar.bz2
-MASTER_SITES =  https://www.x.org/
-MASTER_SUBDIR = releases/individual/lib/
+MASTER_SITES =  https://xorg.freedesktop.org/
+MASTER_SUBDIR = releases/individual/font/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
 
@@ -42,4 +41,5 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
 

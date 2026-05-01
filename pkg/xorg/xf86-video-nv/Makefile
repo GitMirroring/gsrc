@@ -1,7 +1,6 @@
-# Copyright © 2018, 2019, 2021-2026 Hansen <carlhansen@gnu.org>
+# Copyright © 2026 Carl Hansen <carlhansen@gnu.org>
 #
-# This file is part of GSRC, the GNU Source Release Collection.
-# http://www.gnu.org/software/gsrc
+# This file is part of GSRC.
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -19,19 +18,17 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    libX11
-GARNAME = libX11
-GARVERSION = 1.8.13
+NAME =    xf86-video-nv
+GARNAME = xf86-video-nv
+GARVERSION = 2.1.24
 HOME_URL = http://xorg.freedesktop.org
-DESCRIPTION = libX11 library
+DESCRIPTION = nv video driver
 define BLURB
 endef
 
-#WORKOBJ = $(WORKSRC)
 ######################################################################
-# https://xorg.freedesktop.org/releases/individual/lib/libX11-1.6.6.tar.bz2
-MASTER_SITES =  https://www.x.org/
-MASTER_SUBDIR = releases/individual/lib/
+MASTER_SITES =  https://xorg.freedesktop.org/
+MASTER_SUBDIR = releases/individual/driver/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
 
