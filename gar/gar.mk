@@ -160,7 +160,7 @@ pkg-info:
 	@printf "$(MSG)Name:$(OFF)        $(NAME)\n"
 	@printf "$(MSG)Version:$(OFF)     $(GARVERSION)$(if $(PATCHNUM),-$(strip $(PATCHNUM)))\n"
 	@printf "$(MSG)URL:$(OFF)         $(subst %,%%,$(HOME_URL))\n"
-	@printf "$(MSG)Cite:$(OFF)        $(CITE)\n" 
+	@printf "$(MSG)Cite:$(OFF)        $(CITE)\n"
 	@printf "$(MSG)Description:$(OFF)\n"
 	@printf ' $(if $(BLURB),$(subst %,%%,$(subst $(newline),\n ,$(BLURB))), $(DESCRIPTION))\n'
 	@printf "$(MSG)License:$(OFF)     $(LICENSE)\n"
@@ -176,14 +176,13 @@ pkg-info-curt:
 
 # pkg-rec: generate GNU Recutils-friendly package listings. In other words, this
 # output is more easily machine-readable than that of pkg-info
+#@printf "Download_URL: $(MASTER_SITES)$(MASTER_SUBDIR)$(DISTFILES)\n"
 pkg-rec:
 	@printf "Garname: $(GARNAME)\n"
-	@printf "Name: $(NAME)\n"
 	@printf "Upstream_name: $(UPSTREAMNAME)\n"
 	@printf "Version: $(GARVERSION)\n"
 	@printf "Home_URL: $(subst %,%%,$(HOME_URL))\n"
-	@printf "Download_URL: $(subst %,%%,$(firstword $(MASTER_SITES))$(MASTER_SUBDIR))\n"
-	#@printf "Download_URL: $(MASTER_SITES)$(MASTER_SUBDIR)$(DISTFILES)\n"
+	@printf "Download_URL: $(subst %,%%,$(firstword $(MASTER_SITES))$(MASTER_SUBDIR)$(DISTFILES))\n"
 	@printf "Cite: $(CITE)\n"
 	@printf "Description: $(DESCRIPTION)\n"
 	@printf 'Blurb: $(subst %,%%,$(subst $(newline),\n+ ,$(BLURB)))\n'

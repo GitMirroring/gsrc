@@ -1093,7 +1093,11 @@ COLLISIONS ?= \
     share/info/dir.old \
     lib/libiberty.* \
     lib/perl5/*/*/perllocal.pod \
-    lib/perl5/site_perl/*/*/perllocal.pod \ share/applications/mimeinfo.cache \ share/fonts/X11/*/fonts.cache* \ share/fonts/X11/*/fonts.dir \ share/fonts/X11/*/fonts.scale \
+    lib/perl5/site_perl/*/*/perllocal.pod \
+    share/applications/mimeinfo.cache \
+    share/fonts/X11/*/fonts.cache* \
+    share/fonts/X11/*/fonts.dir \
+    share/fonts/X11/*/fonts.scale \
     share/mime/XMLnamespaces \
     share/mime/aliases \
     share/mime/generic-icons \
