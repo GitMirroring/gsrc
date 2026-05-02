@@ -23,16 +23,16 @@ GARNAME = libtomfloat
 UPSTREAMNAME = ltf
 GARVERSION = 0.02
 HOME_URL = https://www.libtom.net/
-DESCRIPTION = cryptgraphic libraries, for use and study, with much tutorial info
+DESCRIPTION = cryptgraphic libraries, multiprecision floating point
 define BLURB
-Modular cryptgraphic libraries, for use and study, with much tutorial info. Warning:
-Cryptologic software. Do not do anything to anger your local Overloads.
 endef
+
 LICENSE = WTFPL - Do What the F[un thing] You Want to Public License  www.wtfpl.net and/or public domain
 
 CONFIGURE_SCRIPTS =
 
-WORKSRC = $(WORKDIR)/$(GARNAME)-$(GARVERSION)/
+WORKSRC = $(WORKDIR)/$(GARNAME)-$(GARVERSION)
+WORKOBJ = $(WORKSRC)
 
 ######################################################################
 #https://github.com/libtom/libtomfloat/releases/download/0.02/ltf-0.02.tar.bz2

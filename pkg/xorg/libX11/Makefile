@@ -27,7 +27,6 @@ DESCRIPTION = libX11 library
 define BLURB
 endef
 
-#WORKOBJ = $(WORKSRC)
 ######################################################################
 # https://xorg.freedesktop.org/releases/individual/lib/libX11-1.6.6.tar.bz2
 MASTER_SITES =  https://www.x.org/

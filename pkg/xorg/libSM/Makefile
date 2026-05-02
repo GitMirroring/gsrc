@@ -22,7 +22,7 @@
 NAME =    libSM
 GARNAME = libSM
 GARVERSION = 1.2.6
-HOME_URL = http://xorg.freedesktop.org
+HOME_URL = http://www.x.org
 DESCRIPTION = libSM xsession management
 define BLURB
 endef

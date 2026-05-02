@@ -26,13 +26,14 @@ HOME_URL = https://www.libtom.net/
 DESCRIPTION = cryptgraphic libraries, for use and study, with much tutorial info
 define BLURB
 Modular cryptgraphic libraries, for use and study, with much tutorial info. Warning:
-Cryptologic software. Do not do anything to anger your local Overloads.
+Cryptologic software. Do not do anything to anger your local Overlords.
 endef
 LICENSE = WTFPL - Do What the F[un thing] You Want to Public License  www.wtfpl.net and/or public domain
 
 CONFIGURE_SCRIPTS =
 
-WORKSRC = $(WORKDIR)/$(GARNAME)-$(GARVERSION)/
+WORKSRC = $(WORKDIR)/$(GARNAME)-$(GARVERSION)
+WORKOBJ = $(WORKSRC)
 
 ######################################################################
 # https://github.com/libtom/libtompoly/releases/download/0.04/ltp-0.04.tar.bz2

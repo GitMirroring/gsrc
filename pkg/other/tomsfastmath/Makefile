@@ -24,11 +24,10 @@ GARNAME = tomsfastmath
 UPSTREAMNAME = tfm
 GARVERSION = 0.13.1
 HOME_URL = https://www.libtom.net/
-DESCRIPTION = cryptgraphic libraries, for use and study, with much tutorial info
+DESCRIPTION =  large interger arithmetic
 define BLURB
-Modular cryptgraphic libraries, for use and study, with much tutorial
-info. Warning: Cryptologic software. Do not do anything to anger your
-local Overloads.
+TomsFastMath is a fast public domain, open source, large integer arithmetic
+library written in portable ISO C.
 endef
 
 LICENSE = WTFPL - Do What the F[un thing] You Want to Public License  www.wtfpl.net and/or public domain
@@ -44,8 +43,8 @@ MASTER_SUBDIR = libtom/$(GARNAME)/releases/download/v$(GARVERSION)/
 DISTFILES = tfm-$(GARVERSION).tar.xz
 SIGFILES =  tfm-$(GARVERSION).tar.xz.asc
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 CONFIGURE_SCRIPTS =
 BUILD_SCRIPTS = this
@@ -66,10 +65,11 @@ include ../../../gar/varb.mk
 #	$(MAKECOOKIE)
 
 build-this:
-	cd $(WORKSRC) && $(MAKE) 
+	cd $(WORKSRC) && $(MAKE)
 
 install-this:
 	echo installing to packagedir DEST   packageprefix...
 	cd $(WORKSRC) && $(MAKE) DESTDIR=$(packageprefix) -n install
 
 
+# FIXME installation
