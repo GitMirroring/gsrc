@@ -24,9 +24,18 @@ GARVERSION = 1.24.1
 HOME_URL = http://www.gnu.org/software/groff/
 DESCRIPTION = Typesetting from plain text mixed with formatting commands
 define BLURB
-Groff is a typesetting package that reads plain text and produces
-formatted output based on formatting commands contained within the
-text.  It is traditionally the formatter of "man" documentation pages.
+groff (GNU roff) is a typesetting system that reads plain text input
+that includes formatting commands to produce output in PostScript,
+PDF, HTML, or DVI formats or for display to a terminal.  Formatting
+commands can be low-level typesetting primitives, macros from a
+supplied package, or user-defined macros.  All three approaches can
+be combined.
+A reimplementation and extension of troff and other programs from
+AT&T Unix, groff is widely available on POSIX and other systems owing
+to its long association with Unix manuals, including man pages.  It
+and its predecessor have produced several best-selling software
+engineering texts.  groff can create typographically sophisticated
+documents while consuming minimal system resources.
 endef
 
 ######################################################################
@@ -38,7 +47,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =# ghostscript #perl
-LIBDEPS = 
+LIBDEPS =
 
 ######################################################################
 
