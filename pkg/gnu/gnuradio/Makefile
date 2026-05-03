@@ -20,9 +20,10 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = GNU Radio
+NAME = GNU Radio 3
 GARNAME = gnuradio
-GARVERSION = 3.10.12.0
+#GARVERSION = 3.10.12.0
+GARVERSION = 3.11.0.0git
 HOME_URL = http://www.gnu.org/software/gnuradio
 DESCRIPTION = Software-defined radio implementations
 define BLURB
@@ -38,14 +39,14 @@ endef
 #https://github.com/gnuradio/gnuradio/archive/refs/tags/v3.10.0.0-rc1.tar.gz
 MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR = /$(GARNAME)/$(GARNAME)/archive/refs/tags/
-DISTFILES = v$(GARVERSION).tar.gz 
+DISTFILES = v$(GARVERSION).tar.gz
 SIGFILES =
 #https://github.com/gnuradio/gnuradio/releases/download/v3.10.11.0/gnuradio-3.10.11.0.tar.gz.asc
 CONFIGURE_SCRIPTS = $(WORKSRC)/CMakeLists.txt
 BUILD_SCRIPTS = $(WORKOBJ)/Makefile
 INSTALL_SCRIPTS = $(WORKOBJ)/cmake_install.cmake
 
-BUILDDEPS =  volk 
+BUILDDEPS =  volk
 # guile boost libsdl log4cpp
 LIBDEPS =
 

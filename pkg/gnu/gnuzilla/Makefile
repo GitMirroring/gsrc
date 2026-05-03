@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2019, 2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2019, 2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,30 +20,30 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME = GNUzilla and IceCat
-GARNAME = icecat
-GARVERSION = 140.7.0-gnu1
-HOME_URL = http://www.gnu.org/software/gnuzilla/
-	#  see also icecatbrowser.org
+GARNAME = gnuzilla
+GARVERSION = master
+HOME_URL = https://www.gnu.org/software/gnuzilla/
+	#  see also https://icecatbrowser.org independent site
 	#  also in gnuzilla
 DESCRIPTION = Entirely free browser derived from Mozilla Firefox
 define BLURB
-IceCat is the GNU version of the Firefox browser.  It is entirely
-free software, which does not recommend non-free plugins and addons.
-It also features built-in privacy-protecting features. A script to
-download Firefox source, modify it, and build icecat.
+GNUzilla is GNU version of Mozilla suite, IceCat is the GNU version of the
+Firefox browser.  It is entirely free software, which does not recommend
+non-free plugins and addons.  It also features built-in privacy-protecting
+features. A script to download Firefox source, modify it, and build icecat.
 endef
 
 ######################################################################
+#	https://git.savannah.gnu.org/git/gnuzilla.git
+# https://cgit.git.savannah.gnu.org/cgit/gnuzilla.git/tag/?h=v140.10.1-gnu1
+MASTER_SITES = https://git.savannah.gnu.org
+MASTER_SUBDIR = git/
+GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/gnuzilla.gi
+GIT_REVISION = master
+SIGFILES =
+GITSRC = $(DOWNLOADDIRGII)/$(GARNAME)
 
-# https://cgit.git.savannah.gnu.org/cgit/gnuzilla.git/snapshot/gnuzilla-140.4.0-gnu1.tar.gz
-MASTER_SITES = https://cgit.git.savannah.gnu.org/
-MASTER_SUBDIR = cgit/gnuzilla.git/snapshot/
-
-
-DISTFILES = gnuzilla-$(GARVERSION).tar.gz
-SIGFILES  = 
-
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 WORKSRC = $(WORKDIR)/gnuzilla-$(GARVERSION)
 WORKOBJ = $(WORKSRC)-build
@@ -52,4 +52,17 @@ include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 # run scripts in WORKSRC to actually build it. Downloads the Firefox source, etc
+debuginfo:
+	@echo PWD  $(PWD)
+	@echo GITSRC $(GITSRC)
+	@echo WORKSRC $(WORKSRC)
+	@echo WORKOBJ $(WORKOBJ)
+	cd $(BASEDIRABS)  && pwd
+
+fetch: fetch-gitrecursive
+
+post-fetch: fetch-gitrecursive
+	mkdir -p $(WORKSRC)
+	mkdir -p $(WORKOBJ)
+	cp -a $(GITSRC)/*  $(WORKSRC)
 
