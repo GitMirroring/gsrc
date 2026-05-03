@@ -23,7 +23,7 @@ NAME =    libadwaita
 GARNAME = libadwaita
 GARVERSION = 1.9.0
 HOME_URL = http://gnome.org/
-DESCRIPTION =  libadwaita
+DESCRIPTION =  libadwaita, building blocks for Gnome applications
 define BLURB
 libadwaita, building blocks for Gnome applications
 endef
