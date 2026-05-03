@@ -46,13 +46,12 @@ GITSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
 BUILDDEPS =
 LIBDEPS =
 CONFIGURE_SCRIPTS =
-BUILD_SCRIPTS = tryandbuildit
+BUILD_SCRIPTS = tryandcleanit
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-# run scripts in WORKSRC to actually build it. Downloads the Firefox source, etc
 debuginfo:
 	@echo PWD  $(PWD)
 	@echo GITSRC $(GITSRC)
@@ -63,10 +62,26 @@ fetch: fetch-gitrecursive
 
 post-fetch: 
 	mkdir -p $(WORKSRC)
-	mkdir -p $(WORKOBJ)
 	cp -a $(GITSRC)/*  $(WORKSRC)
 
-build-tryandbuildit:  fetch
+build-tryandcleanit:  fetch
 	@echo now running a build script which will download the source, etc
+	@echo firefox source is over 600 megabytes
 	@echo maybe read it first...
+	@echo This will create and icecat directory that then has to be built
 	cd $(WORKSRC) && ./makeicecat
+	@echo ----------------------------------------------------------------------------
+	@echo ----------------------------------------------------------------------------
+	@echo ----------------------------------------------------------------------------
+	@echo ----------------------------------------------------------------------------
+	@echo to do
+	@echo need to really BUILD icecat.... a work in progress...
+	@echo  run scripts in WORKSRC to actually build it. Downloads the Firefox source, etc
+	@echo It is in work/gnuzilla-master/output/icecat...
+	@echo ----------------------------------------------------------------------------
+	@echo ----------------------------------------------------------------------------
+	@echo ----------------------------------------------------------------------------
+	@echo ----------------------------------------------------------------------------
+
+
+

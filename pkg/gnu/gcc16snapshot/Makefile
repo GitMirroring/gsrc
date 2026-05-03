@@ -22,8 +22,7 @@
 NAME = The GNU Compiler Collection version 16 development version
 GARNAME = gcc16snapshot
 UPSTREAMNAME = gcc
-#GARVERSION = 16-20260419
-GARVERSION = 16.1.0-RC-20260424
+GARVERSION = 16-20260502
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 16 snapshot
 define BLURB

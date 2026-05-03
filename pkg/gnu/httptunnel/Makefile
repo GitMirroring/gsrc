@@ -32,15 +32,16 @@ endef
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = 
-PATCHFILES = httptunnel3.3.patch
+BUILDDEPS =
+LIBDEPS =
+#PATCHFILES = httptunnel3.3.patch
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
-BUILD_ARGS = CFLAGS="-std=c99 -Wno-int-conversion -Wno-implicit-function-declaration --save-temps"
-#BUILD_ARGS = CFLAGS="-std=c99 -Wno-int-conversion "
+# BUILD_ARGS = CFLAGS="-std=c99 -Wno-int-conversion -Wno-implicit-function-declaration --save-temps"
+# BUILD_ARGS = CFLAGS="-std=c99 -Wno-int-conversion "
+
 
