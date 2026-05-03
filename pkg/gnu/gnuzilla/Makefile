@@ -24,29 +24,30 @@ GARNAME = gnuzilla
 GARVERSION = master
 HOME_URL = https://www.gnu.org/software/gnuzilla/
 	#  see also https://icecatbrowser.org independent site
-	#  also in gnuzilla
+	#  icecat in gnuzilla
 DESCRIPTION = Entirely free browser derived from Mozilla Firefox
 define BLURB
-GNUzilla is GNU version of Mozilla suite, IceCat is the GNU version of the
-Firefox browser.  It is entirely free software, which does not recommend
-non-free plugins and addons.  It also features built-in privacy-protecting
-features. A script to download Firefox source, modify it, and build icecat.
+GNUzilla is GNU version of Mozilla suite, including IceCat, which is
+the GNU version of the Firefox browser.  It is entirely free software,
+which does not recommend non-free plugins and addons.  It also features
+built-in privacy-protecting features. A script to download Firefox source,
+modify it, and build icecat.
 endef
 
 ######################################################################
 #	https://git.savannah.gnu.org/git/gnuzilla.git
-# https://cgit.git.savannah.gnu.org/cgit/gnuzilla.git/tag/?h=v140.10.1-gnu1
 MASTER_SITES = https://git.savannah.gnu.org
-MASTER_SUBDIR = git/
-GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/gnuzilla.gi
+MASTER_SUBDIR = git
+GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/gnuzilla.git
 GIT_REVISION = master
 SIGFILES =
-GITSRC = $(DOWNLOADDIRGII)/$(GARNAME)
+GITSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
 
 BUILDDEPS =
 LIBDEPS =
-WORKSRC = $(WORKDIR)/gnuzilla-$(GARVERSION)
-WORKOBJ = $(WORKSRC)-build
+CONFIGURE_SCRIPTS =
+BUILD_SCRIPTS = tryandbuildit
+
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
@@ -57,12 +58,15 @@ debuginfo:
 	@echo GITSRC $(GITSRC)
 	@echo WORKSRC $(WORKSRC)
 	@echo WORKOBJ $(WORKOBJ)
-	cd $(BASEDIRABS)  && pwd
 
 fetch: fetch-gitrecursive
 
-post-fetch: fetch-gitrecursive
+post-fetch: 
 	mkdir -p $(WORKSRC)
 	mkdir -p $(WORKOBJ)
 	cp -a $(GITSRC)/*  $(WORKSRC)
 
+build-tryandbuildit:  fetch
+	@echo now running a build script which will download the source, etc
+	@echo maybe read it first...
+	cd $(WORKSRC) && ./makeicecat
