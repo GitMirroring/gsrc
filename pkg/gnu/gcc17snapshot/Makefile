@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 17 development version
 GARNAME = gcc17snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 17-20260426
+GARVERSION = 17-20260503
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 17 snapshot
 define BLURB

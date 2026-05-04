@@ -22,7 +22,7 @@ NAME =    libsdl
 GARNAME = libsdl
 UPSTREAMNAME = SDL3
 HOME_URL = https://www.libsdl.org
-GARVERSION = 3.4.4
+GARVERSION = 3.4.8
 DESCRIPTION = simple direct media layer library
 define BLURB
 Simple DirectMedia Layer is a cross-platform development library designed

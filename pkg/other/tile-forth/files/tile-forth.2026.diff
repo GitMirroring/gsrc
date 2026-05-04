@@ -1,6 +1,6 @@
 diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/error.c work/tile-forth-2.1/src/error.c
 --- tmp/tile-forth-2.1/src/error.c	1991-09-14 14:30:28.000000000 -0700
-+++ work/tile-forth-2.1/src/error.c	2024-03-22 11:48:16.015335248 -0700
++++ work/tile-forth-2.1/src/error.c	2026-05-03 23:30:37.462446898 -0700
 @@ -40,7 +40,7 @@
         the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA. 
  
@@ -10,21 +10,30 @@ diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/error.c work/tile
  #include <signal.h>
  #include <fcntl.h>
  #include "kernel.h"
-@@ -159,7 +159,10 @@
+@@ -48,6 +48,8 @@
+ #include "io.h"
+ #include "error.h"
+ 
++#define  FNDELAY O_NDELAY
++
+ 
+ /* ENVIRONMENT FOR LONGJMP AND RESTART AFTER ERROR SIGNAL */
+ 
+@@ -159,7 +161,10 @@
      (VOID) signal(SIGILL,  error_restart);
      (VOID) signal(SIGTRAP, error_fatal);
      (VOID) signal(SIGIOT,  error_fatal);
 -    (VOID) signal(SIGEMT,  error_fatal);
-+    // ?
-+    //(VOID) signal(SIGEMT,  error_fatal);
++
++    /* (VOID) signal(SIGEMT,  error_fatal); */
 +    (VOID) signal(SIGINT,  error_fatal);
-+	// ??
++
      (VOID) signal(SIGFPE,  error_restart);
      (VOID) signal(SIGBUS,  error_restart);
      (VOID) signal(SIGSEGV, error_restart);
 diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/forth.c work/tile-forth-2.1/src/forth.c
 --- tmp/tile-forth-2.1/src/forth.c	1991-09-14 14:30:28.000000000 -0700
-+++ work/tile-forth-2.1/src/forth.c	2024-03-22 11:48:53.291266480 -0700
++++ work/tile-forth-2.1/src/forth.c	2026-05-03 21:22:48.198255410 -0700
 @@ -108,7 +108,7 @@
  
  
@@ -36,7 +45,7 @@ diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/forth.c work/tile
      char *argv[];
 diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/io.c work/tile-forth-2.1/src/io.c
 --- tmp/tile-forth-2.1/src/io.c	1991-09-14 14:30:32.000000000 -0700
-+++ work/tile-forth-2.1/src/io.c	2024-03-22 11:47:08.099433167 -0700
++++ work/tile-forth-2.1/src/io.c	2026-05-03 23:28:00.380686179 -0700
 @@ -40,6 +40,7 @@
  
  */
@@ -45,9 +54,18 @@ diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/io.c work/tile-fo
  
  #include <fcntl.h>
  #include <errno.h>
+@@ -47,7 +48,7 @@
+ #include "error.h"
+ #include "memory.h"
+ #include "io.h"
+-
++#define  FNDELAY O_NDELAY
+ 
+ /* EXTERNAL DEFINED IO DISPATCH ROUTINE, ENVIRONMENT ACCESS AND ERROR CODE */
+ 
 diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/kernel.c work/tile-forth-2.1/src/kernel.c
 --- tmp/tile-forth-2.1/src/kernel.c	1991-09-14 14:30:39.000000000 -0700
-+++ work/tile-forth-2.1/src/kernel.c	2024-03-22 11:44:46.015503313 -0700
++++ work/tile-forth-2.1/src/kernel.c	2026-05-03 21:22:48.198757896 -0700
 @@ -64,13 +64,13 @@
  
  /* INTERNAL FORWARD DECLARATIONS */
@@ -70,7 +88,7 @@ diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/kernel.c work/til
  /* VOCABULARY LISTING PARAMETERS */
 diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/kernel.h work/tile-forth-2.1/src/kernel.h
 --- tmp/tile-forth-2.1/src/kernel.h	1991-09-14 14:30:35.000000000 -0700
-+++ work/tile-forth-2.1/src/kernel.h	2024-03-22 11:44:46.015503313 -0700
++++ work/tile-forth-2.1/src/kernel.h	2026-05-03 21:22:48.199143674 -0700
 @@ -9,6 +9,8 @@
  /* INCLUDED SYSTEM FUNCTIONS */
  
@@ -80,3 +98,7 @@ diff -x config.log -x config.status -ru tmp/tile-forth-2.1/src/kernel.h work/til
  
  
  /* TYPING SYSTEM AND MISC. STRING MACROS */
+
+
+
+

@@ -55,7 +55,7 @@ include config.mk
 # let it do it its way, makes its own build dir
 build-me:   
 	@echo   make and build.args $(MAKE) $(MAKE_ARGS) $(BUILD_ARGS)
-	cd $(WORKSRC) && $(MAKE) $(MAKE_ARGS)  $(BUILD_ARGS)
+	cd $(WORKSRC) && $(MAKE) $(MAKE_ARGS)  $(BUILD_ARGS) all
 	$(MAKECOOKIE)
 
 install-me: 
@@ -86,3 +86,5 @@ ime:
 	@echo ------------------
 
 FIXME =  ALL WRONG non-fatal error on installation into package dir, ignore for now
+
+# make check test

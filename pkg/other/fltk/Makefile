@@ -1,4 +1,4 @@
-# Copyright ©2022,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -18,9 +18,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =   fltk 
+NAME =   fltk
 GARNAME =  fltk
-GARVERSION = 1.4.4
+GARVERSION = 1.4.5
 HOME_URL = https://www.fltk.org
 DESCRIPTION = gui designer using gui and C++
 define BLURB
@@ -34,7 +34,7 @@ MASTER_SUBDIR = fltk/fltk/releases/download/release-$(GARVERSION)/
 
 #MASTER_SITES = $(MASTER_GITHUB)
 #MASTER_SUBDIR = fltk
-#GIT_REVISION = master	
+#GIT_REVISION = master
 #GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/$(GARNAME).git
 #GITSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
 #USE_AUTORECONF = yes
@@ -42,7 +42,7 @@ MASTER_SUBDIR = fltk/fltk/releases/download/release-$(GARVERSION)/
 DISTFILES = $(DISTNAME)-source.tar.bz2
 SIGFILES  =
 
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 
 LICENSE = LGPL

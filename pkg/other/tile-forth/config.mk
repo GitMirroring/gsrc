@@ -1,5 +1,5 @@
 ## Configuration options  ##
 
-CONFIGURE_OPTS ?= 
-BUILD_OPTS ?= 
+CONFIGURE_OPTS ?=
+BUILD_OPTS ?=
 

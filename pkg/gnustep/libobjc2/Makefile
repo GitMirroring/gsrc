@@ -72,8 +72,8 @@ pre-extract: fetch
 #HINT
 # doen't build with gcc, with latest capability; needs clang, unless someone fixes it
 
-CONFIGURE_ARGS = "CC=/usr/bin/clang cc=/usr/bin/clang C++=/usr/bin/clang c++=/usr/bin/clang CFLAGS+=-std=c11"
-BUILD_ARGS = "CC=/usr/bin/clang cc=/usr/bin/clang C++=/usr/bin/clang c++=/usr/bin/clang CFLAGS+=-std=c11"
+CONFIGURE_ARGS = "CC=/usr/bin/clang cc=/usr/bin/clang C++=/usr/bin/clang++ c++=/usr/bin/clang++ CFLAGS+=-std=c11"
+BUILD_ARGS = "CC=/usr/bin/clang cc=/usr/bin/clang C++=/usr/bin/clang++ c++=/usr/bin/clang++ CFLAGS+=-std=c11"
 
 
 

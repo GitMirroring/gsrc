@@ -22,46 +22,47 @@ NAME = tile-forth
 GARNAME = tile-forth
 GARVERSION = 2.1
 
-HOME_URL =  https://ftp.gnu.org/non-gnu/tile-forth/tile-forth-2.1.tar.gz
+HOME_URL =  https://ftp.gnu.org/non-gnu/tile-forth/
+#HOME_URL =  https://ftp.gnu.org/non-gnu/tile-forth/tile-forth-2.1.tar.gz
 
 DESCRIPTION = demo Forth interpreter written in understandable C
-define BLURB 
+define BLURB
 Demo Forth F83 interpreter written in understandable C. Due to assigning
 each Forth "word" to a C function, it is slower than a native forth.
 32 bit, it says.
 endef
 
 ######################################################################
-MASTER_SITES = $(MASTER_GNU)/
-MASTER_SUBDIR = /non-gnu/tile-forth/ 
+MASTER_SITES = $(MASTER_GNU)
+MASTER_SUBDIR = /non-gnu/tile-forth/
 DISTFILES =  $(GARNAME)-$(GARVERSION).tar.gz
-SIGFILES = 
+SIGFILES =
 LICENSE = GNU GPL 1 or later
 
 BUILDDEPS =
 LIBDEPS =
-PATCHFILES = tile-forth.2024.diff
+PATCHFILES = tile-forth.2026.diff
 
-BUILD_SCRIPTS = forth
 CONFIGURE_SCRIPTS =
+BUILD_SCRIPTS = doforth
 INSTALL_SCRIPTS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS="-Wno-old-style-definition -std=c89"
+BUILD_ARGS = CFLAGS="-Wno-old-style-definition -Wno-builtin-declaration-mismatch -std=c89"
 
-build-forth: 
-	make  -C work/tile-forth-2.1/src
+build-doforth:
+	$(MAKE)  $(BUILD_ARGS)  -C work/tile-forth-2.1/src
 	$(MAKECOOKIE)
 
-custom-pre-install:  build
+custom-pre-install:  build-doforth
 	mkdir -p $(prefix)/packages/$(DISTNAME)
 	mkdir -p $(prefix)/packages/$(DISTNAME)-DEST/$(prefix)/bin
 	mkdir -p $(prefix)/packages/$(DISTNAME)-DEST/$(prefix)/share/man
 	mkdir -p $(prefix)/packages/$(DISTNAME)-DEST/$(prefix)/share/tile-forth/lib
-	cp     $(WORKSRC)/bin/* $(prefix)/packages/$(DISTNAME)-DEST/$(prefix)/bin/    
-	cp -r  $(WORKSRC)/man/* $(prefix)/packages/$(DISTNAME)-DEST/$(prefix)/share/man/ 
+	cp     $(WORKSRC)/bin/* $(prefix)/packages/$(DISTNAME)-DEST/$(prefix)/bin/
+	cp -r  $(WORKSRC)/man/* $(prefix)/packages/$(DISTNAME)-DEST/$(prefix)/share/man/
 	cp     $(WORKSRC)/lib/* $(prefix)/packages/$(DISTNAME)-DEST/$(prefix)/share/tile-forth/lib/
 	$(MAKECOOKIE)
 
@@ -73,6 +74,5 @@ custom-pre-install:  build
 
 custom-install: custom-pre-install
 	$(MAKECOOKIE)
-
 
 
