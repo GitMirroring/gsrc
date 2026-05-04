@@ -162,14 +162,14 @@ pkg-info:
 	@printf "$(MSG)Version:$(OFF)     $(GARVERSION)$(if $(PATCHNUM),-$(strip $(PATCHNUM)))\n"
 	@printf "$(MSG)URL:$(OFF)         $(subst %,%%,$(HOME_URL))\n"
 	@printf "$(MSG)Cite:$(OFF)        $(CITE)\n"
-	@printf "$(MSG)Description:$(OFF)\n"
+	@printf "$(MSG)Description:$(OFF) "
 	@printf ' $(if $(BLURB),$(subst %,%%,$(subst $(newline),\n ,$(BLURB))), $(DESCRIPTION))\n'
 	@printf "$(MSG)License:$(OFF)     $(LICENSE)\n"
 	@($(MAKE) install-p >/dev/null 2>/dev/null && \
-        printf "$(MSG)Status$(OFF):      installed (stowed)\n") || \
+        printf "$(MSG)Status$(OFF):      installed and stowed\n") || \
         ($(MAKE) reinstall-p >/dev/null 2>/dev/null && \
-        printf "$(MSG)Status:$(OFF)      installed (not stowed)\n") || \
-        printf "$(MSG)Status:$(OFF)      not installed\n"
+        printf "$(MSG)Status:$(OFF)      built but not stowed\n") || \
+        printf "$(MSG)Status:$(OFF)      not built and not installed\n"
 
 pkg-info-curt:
 	@printf "$(OK)$(lastword $(subst /, ,$(dir $(shell pwd))))/$(MSG2)$(GARNAME) $(OFF)$(GARVERSION)\n"
