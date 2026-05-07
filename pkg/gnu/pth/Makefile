@@ -15,11 +15,11 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
-NAME = Pth
+NAME = pth
 GARNAME = pth
 GARVERSION = 2.0.7
 HOME_URL = http://www.gnu.org/software/pth/
-DESCRIPTION = Portable thread library
+DESCRIPTION = GNU Portable threads library
 define BLURB
 GNU Pth is a portable library providing non-preemptive, priority-based
 scheduling for multiple execution threads.  Each thread has its own
@@ -37,10 +37,17 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
+
+# to fix:
+#WORKOBJ = $(WORKSRC)
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+
+BUILD_ARGS = CFLAGS="-I."
+
