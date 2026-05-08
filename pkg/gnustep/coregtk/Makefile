@@ -16,14 +16,13 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
+
 
 NAME = CoreGTK
 GARNAME = coregtk
 GARVERSION = 3.22.0
 HOME_URL = https://github.com/coregtk/coregtk
-	# or https://www.tylerburton.ca/coregtk
+# or https://www.tylerburton.ca/coregtk
 DESCRIPTION = CoreGTK is an Objective-C language binding for GTK+ 3
 define BLURB
 CoreGTK is an Objective-C language binding for the GTK+ 3 widget
@@ -33,12 +32,11 @@ endef
 LICENSE = GNU LGPL
 
 ######################################################################
-# https://www.tylerburton.ca/files/apps/coregtk-3.18.0.tar.gz
 # https://github.com/coregtk/coregtk/archive/refs/tags/v3.22.0.tar.gz
-MASTER_SITES =  $(MASTER_GITHUB) 
+MASTER_SITES =  $(MASTER_GITHUB)
 MASTER_SUBDIR =  coregtk/coregtk/archive/refs/tags/
 DISTFILES = v$(GARVERSION).tar.gz
-SIGFILES = 
+SIGFILES =
 
 WORKSRC = $(WORKDIR)/$(DISTNAME)/src
 WORKOBJ = $(WORKSRC)
@@ -55,16 +53,22 @@ include config.mk
 
 install-it: build
 	@echo INSTALLATIN needs fixing,....
-	mkdir -p $(packageprefix) 
+	mkdir -p $(packageprefix)
 	cd $(WORKSRC)/CoreGTK && $(MAKE) install
-
-
-#	@echo Does not actually install anything at this time.
-#	@echo Just grab appropiate files and add to your project.
-#	@echo A library might be created in the future.
-#	@echo
-#	@echo There is an example executable created,  work/coregtk*/src/coregtk_test
-#	@echo
-#	$(MAKECOOKIE)
+	@echo --------------------------------------------------------------
+	@echo --------------------------------------------------------------
+	@echo --------------------------------------------------------------
+	@echo --------------------------------------------------------------
+	@echo Does not actually install anything at this time.
+	@echo Just grab appropiate files and add to your project.
+	@echo A library might be created in the future.
+	@echo
+	@echo There is an example executable created,  work/coregtk*/src/coregtk_test
+	@echo
+	@echo --------------------------------------------------------------
+	@echo --------------------------------------------------------------
+	@echo --------------------------------------------------------------
+	@echo --------------------------------------------------------------
+	$(MAKECOOKIE)
 
 

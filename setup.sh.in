@@ -65,7 +65,7 @@ export PKG_CONFIG_PATH=$GSRC/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}
 export ORIG_PYTHONPATH=$PYTHONPATH
 #export PYTHONPATH=$GSRC/lib/python2.7/site-packages/:$GSRC/lib/python3.11/site-packages:$GSRC/lib64/python3.11/site-packages:$PYTHONPATH
 # remove python2. adjust as needed,   check version number on your system
-export PYTHONPATH=$GSRC/lib/python3.13/site-packages:$GSRC/lib64/python3.13/site-packages${PYTHONPATH:+:$PYTHONPATH}
+export PYTHONPATH=$GSRC/lib/python3.13:$GSRC/lib64/python3.13${PYTHONPATH:+:$PYTHONPATH}
 
 # for GNOME programs, this might be needed:
 #                    this might vary on your system:
