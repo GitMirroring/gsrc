@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = GNU debugger
 GARNAME = gdb
-GARVERSION = 17.1
+GARVERSION = 17.2
 HOME_URL = http://www.gnu.org/software/gdb/
 DESCRIPTION = The GNU debugger
 define BLURB
@@ -42,7 +42,7 @@ SIGFILES = $(DISTNAME).tar.xz.sig
 INFO_FILES = $(GARNAME).info annotate.info bfd.info stabs.info
 
 
-BUILDDEPS =  
+BUILDDEPS =
 LIBDEPS =
 ######################################################################
 
