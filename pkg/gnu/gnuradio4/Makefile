@@ -53,3 +53,5 @@ LIBDEPS =
 include ../../../gar/gar.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=Wno-error=unused-result
+

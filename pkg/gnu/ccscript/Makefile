@@ -38,6 +38,7 @@ LIBDEPS = ucommon
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=-std=c89
