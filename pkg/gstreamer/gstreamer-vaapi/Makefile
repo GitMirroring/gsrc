@@ -1,4 +1,4 @@
-# Copyright © 2017-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME =    gstreamer-vaapi
 GARNAME = gstreamer-vaapi
-GARVERSION = 1.28.1
+GARVERSION = 1.26.11
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gstreamer VA-APR integration
 define BLURB
@@ -37,8 +37,8 @@ DISTFILES = $(DISTNAME).tar.xz $(DISTNAME).tar.xz.sha256sum
 SIGFILES  = $(DISTNAME).tar.xz.asc
 
 # HINTS: apt install  libva-dev
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 
