@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020,2022,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020,2022,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,9 +20,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = GNU SASL
+NAME = GNU sasl
 GARNAME = gsasl
-GARVERSION = 2.2.2
+GARVERSION = 2.2.3
 HOME_URL = http://www.gnu.org/software/gsasl/
 DESCRIPTION = Simple Authentication and Security Layer command tools
 define BLURB

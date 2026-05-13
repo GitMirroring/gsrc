@@ -20,7 +20,7 @@
 
 NAME =    guile-hoot
 GARNAME = guile-hoot
-GARVERSION = 0.8.0
+GARVERSION = 0.9.0
 HOME_URL = http://spritely.institute
 DESCRIPTION = guile-hoot, guile to WASM
 define BLURB

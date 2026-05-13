@@ -21,7 +21,7 @@
 
 NAME = libgpg-error
 GARNAME = libgpg-error
-GARVERSION = 1.60
+GARVERSION = 1.61
 HOME_URL = http://www.gnupg.org/related_software/libgpg-error/index.en.html/
 DESCRIPTION = A library that defines common error values for GnuPG
 define BLURB
@@ -34,8 +34,8 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.bz2
 SIGFILES = $(DISTNAME).tar.bz2.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

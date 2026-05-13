@@ -22,7 +22,7 @@
 
 NAME = Libksba
 GARNAME = libksba
-GARVERSION = 1.6.8
+GARVERSION = 1.8.0
 HOME_URL = http://www.gnupg.org/related_software/libksba/index.en.html
 DESCRIPTION = A library for working with X.509 certificates and CMS  data
 define BLURB
