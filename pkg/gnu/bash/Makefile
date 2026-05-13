@@ -22,7 +22,7 @@
 
 NAME = Bash
 GARNAME = bash
-PATCHNUM = 3
+PATCHNUM = 9
 GARVERSION = 5.3
 HOME_URL = http://www.gnu.org/software/bash/
 DESCRIPTION = The GNU Bourne-Again SHell

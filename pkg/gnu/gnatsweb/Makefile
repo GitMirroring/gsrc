@@ -43,13 +43,14 @@ include ../../../gar/gar.mk
 include config.mk
 
 CGI_DIR ?= $(packageprefix)/www/$(GARNAME)
-BUILD_ARGS = CFLAGS=-Wno-pointer-compare
+BUILD_ARGS = CFLAGS="-Wno-pointer-compare -std=c89 -Wno-error=pointer-compare]"
 
 pre-install:
-	@sed -i -e 's|/usr/bin/perl|$(PERL)|' $(WORKSRC)/gnatsweb.pl
+	sed -i -e 's|/usr/bin/perl|$(PERL)|' $(WORKSRC)/gnatsweb.pl
 	$(MAKECOOKIE)
 
 install-%/Makefile-DESTDIR:
 	install -d $(CGI_DIR)
 	$(MAKE) -C $* install CGI_DIR=$(DESTDIR)$(CGI_DIR)
 	$(MAKECOOKIE)
+
