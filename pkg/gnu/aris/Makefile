@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Aris
+NAME = aris
 GARNAME = aris
 GARVERSION = 2.2
 HOME_URL = http://www.gnu.org/software/aris/
@@ -48,9 +48,13 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+# guess: this could be fixed better
+# FIXME   segfaults 
+BUILD_ARGS = CFLAGS="--save-temps -D__GLIBC_USE -std=c99 -Wno-implicit-function-declaration -Wno-int-conversion"
 
 install-doc:
 	$(INSTALL_INFO) $(WORKSRC)/doc/aris.info
