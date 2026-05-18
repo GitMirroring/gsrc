@@ -20,7 +20,7 @@
 
 NAME =    librsvg
 GARNAME = librsvg
-GARVERSION = 2.62.1
+GARVERSION = 2.62.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = SVG rendering library
 define BLURB
