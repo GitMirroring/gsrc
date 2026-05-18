@@ -1,4 +1,4 @@
-# Copyright © 2016-2023,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2023,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    iso-codes
 GARNAME = iso-codes
-GARVERSION = v4.18.0
+GARVERSION = v4.20.1
 HOME_URL =  https://salsa.debian.org/iso-codes-team/
 DESCRIPTION = ISO-codes, centralized repository
 define BLURB
@@ -31,14 +31,14 @@ MASTER_SITES = https://salsa.debian.org/
 MASTER_SUBDIR = iso-codes-team/iso-codes/-/archive/$(GARVERSION)/
 
 DISTFILES = iso-codes-$(GARVERSION).tar.bz2
-SIGFILES  = 
+SIGFILES  =
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
 
