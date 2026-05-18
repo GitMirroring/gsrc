@@ -19,7 +19,7 @@
 NAME = MACS 3
 GARNAME = macs
 UPSTREAMNAME = MACS
-GARVERSION = 3.0.3
+GARVERSION = 3.0.4
 HOME_URL = https://pypi.org/project/MACS3/
 #or https://github.com/macs3-project/MACS/
 DESCRIPTION = Model-based analysis for ChIP-Seq

@@ -22,7 +22,7 @@
 
 NAME = MediaGoblin
 GARNAME = mediagoblin
-GARVERSION = 0.14.0
+GARVERSION = 0.15.0
 HOME_URL = http://www.mediagoblin.org/
 	# see http://mediagoblin.readthedocs.io
 DESCRIPTION = Photo, audio, video media sharing to the net
