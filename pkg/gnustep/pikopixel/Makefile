@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2021, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = PikoPixel
 GARNAME = pikopixel
-GARVERSION = 1.0-b10a
+GARVERSION = 1.0-b10c
 HOME_URL = http://twilightedge.com/mac/pikopixel/
 	# see also http://www.gnustep.org/softwareindex
 DESCRIPTION = PikoPixel is a free app for drawing and editing pixel-art images.
