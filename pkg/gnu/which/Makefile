@@ -1,5 +1,5 @@
 # Copyright ©2013, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2025 Carl Hansen
+# Copyright ©2025-2026 Carl Hansen
 #
 # This file is part of GSRC.
 #
@@ -18,7 +18,7 @@
 
 NAME = which
 GARNAME = which
-GARVERSION = 2.22
+GARVERSION = 2.25
 HOME_URL = http://www.gnu.org/software/which
 DESCRIPTION = Find full path of shell commands
 define BLURB
