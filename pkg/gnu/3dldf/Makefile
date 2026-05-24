@@ -43,7 +43,7 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-BUILD_ARGS =  CFLAGS="-fpermissive -Wno-register"
+BUILD_ARGS =  CFLAGS="-std=c89 -fpermissive -Wno-register"
 
 pre-build:
 	pwd
