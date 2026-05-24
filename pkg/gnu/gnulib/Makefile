@@ -56,7 +56,7 @@ INSTALL_SCRIPTS = gl
 WORKSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
 WORKOBJ = $(WORKDIR)/$(GARNAME)
 
-GNULIB_SRCDIR = $(WORKSRC)  
+GNULIB_SRCDIR = $(WORKSRC)
 # HINT: set GNULIB_SRCDIR= to the DOWNLOADDIRGIT/GARNAME (download-git/gnulib) in your .bashrc
 # for other programs to use it the way it was designed
 
@@ -66,21 +66,21 @@ include ../../../gar/gar.mk
 include config.mk
 
 
-.PHONY:   fetch-my   makedoc  install-gl 
+.PHONY:   fetch-my   makedoc  install-gl
 
 fetch-my: fetch-git
 
-build-gl: fetch-my  
-	
+build-gl: fetch-my
+
 makedoc: fetch-my
 	$(MAKE) -C $(WORKSRC)/doc/  info html dvi pdf
 	$(MAKECOOKIE)
 
-post-build: makedoc  
+post-build: makedoc
 
 install-gl:  post-build
 	@echo ------------------------------------------------------
-	@echo installing gnulib.info  gnulib-tool  
+	@echo installing gnulib.info  gnulib-tool
 	mkdir -p $(packagesdir)/$(DISTNAME)
 	$(INSTALL_INFO) $(WORKSRC)/doc/gnulib.info
 	$(INSTALL_DOCS) $(WORKSRC)/doc/gnulib.html
@@ -89,6 +89,7 @@ install-gl:  post-build
 	$(INSTALL_BIN)  $(WORKSRC)/gnulib-tool.py
 	$(INSTALL_BIN)  $(WORKSRC)/.gnulib-tool.py
 	$(INSTALL_BIN)  $(WORKSRC)/gnulib-tool
+	$(INSTALL_BIN)  $(WORKSRC)/gnulib-tool.sh
 	$(MAKECOOKIE)
 
 
@@ -97,12 +98,12 @@ post-install: pre-install
 	@echo =============================================================
 	@echo =============================================================
 	@echo =============================================================
-	@echo Put GNULIB_SRCDIR and GNULIB_REFDIR into your .bashrc 
+	@echo Put GNULIB_SRCDIR and GNULIB_REFDIR into your .bashrc
 	@echo    to use GNULIB the way it is intended.
 	@echo like:
-	@echo GNULIB_SRCDIR=$(PWD)/$(WORKSRC)  
+	@echo GNULIB_SRCDIR=$(PWD)/$(WORKSRC)
 	@echo export GNULIB_SRCDIR
-	@echo GNULIB_REFDIR=$(PWD)/$(WORKSRC)  
+	@echo GNULIB_REFDIR=$(PWD)/$(WORKSRC)
 	@echo export GNULIB_REFDIR
 	@echo =============================================================
 	@echo =============================================================
@@ -116,9 +117,9 @@ testdir: install
 	cd $(WORKSRC) &&  ./gnulib-tool --create-testdir --dir=../../work/testdir-all \
 		--with-c++-tests --without-privileged-tests --single-configure `./all-modules`
 
-# "and test this directory on various plaforms: +  - Linux/glibc systems etc" 
+# "and test this directory on various plaforms: +  - Linux/glibc systems etc"
 #
-# cd  testdir-all ; configure ; make 
+# cd  testdir-all ; configure ; make
 # as usual
 #
 

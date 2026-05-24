@@ -40,8 +40,10 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+BUILD_ARGS =  CFLAGS="-fpermissive -Wno-register"
 
 pre-build:
 	pwd
@@ -49,4 +51,6 @@ pre-build:
 	touch ./work/3DLDF-2.0.3/src/parser_1.h++
 
 # to do : do something with examples
+# FIXME
+# patch ??
 

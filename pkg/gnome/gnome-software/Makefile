@@ -20,7 +20,7 @@
 
 NAME =    gnome-software
 GARNAME = gnome-software
-GARVERSION = 50.1
+GARVERSION = 50.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME software tools
 define BLURB
