@@ -22,7 +22,7 @@
 
 NAME = xorriso
 GARNAME = xorriso
-GARVERSION = 1.5.8.pl01
+GARVERSION = 1.5.8.pl02
 GARADHOC = 1.5.8
 HOME_URL = http://www.gnu.org/software/xorriso/
    #  also   http://libburnia-project.org
