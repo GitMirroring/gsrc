@@ -21,9 +21,15 @@ GARVERSION = 0.8
 HOME_URL = http://www.gnu.org/software/inklingreader/
 DESCRIPTION = Wacom Inkling sketch format conversion and manipulation
 define BLURB
-GNU InklingReader is a package to support the
-Wacom Inkling device, including data conversion to various free formats,
-basic editing features, and an Inkscape plugin.
+GNU free/libre version of the Wacom Inkling SketchManager. Instead of
+integrating with proprietary programs, this program aims to be compatible
+with free software alternatives like Inkscape.  It can  display and
+merge WPI files, export to Inkscape SVG (preserving layers), PDF, PNG
+and JSON,  convert all WPI files in a directory to SVG, automatically
+use different colors when the "new layer" is pressed multiple times,
+give control over stroke pressure,  export timing information in JSON,
+interact with the timeline of your drawing.  There is an Inkscape extension
+available that allows you to open WPI files with Inkscape "directly".
 endef
 
 ######################################################################
@@ -34,11 +40,13 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
-
 # see README:
-LIBDEPS = 
+LIBDEPS =
+# FIXME
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types

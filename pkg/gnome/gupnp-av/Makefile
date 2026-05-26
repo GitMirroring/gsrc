@@ -20,7 +20,7 @@
 
 NAME =    gupnp-av
 GARNAME = gupnp-av
-GARVERSION = 0.14.1
+GARVERSION = 0.14.5
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Utility library that eases the handling and implementation of UPnP A/V profiles. 
 define BLURB

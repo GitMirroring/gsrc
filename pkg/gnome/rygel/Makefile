@@ -19,7 +19,7 @@
 
 NAME =    rygel
 GARNAME = rygel
-GARVERSION = 45.1
+GARVERSION = 45.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A UPnP AV media server and renderer
 define BLURB

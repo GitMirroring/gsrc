@@ -19,7 +19,7 @@
 
 NAME =    gssdp
 GARNAME = gssdp
-GARVERSION = 1.6.4
+GARVERSION = 1.6.5
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A GObject-based API for handling resource discovery and announcement over SSDP.
 define BLURB

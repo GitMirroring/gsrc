@@ -21,7 +21,7 @@
 
 NAME =    nautilus
 GARNAME = nautilus
-GARVERSION = 50.1
+GARVERSION = 50.2.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A file manager for GNOME, also is web-browser
 define BLURB

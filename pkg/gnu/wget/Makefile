@@ -20,7 +20,7 @@
 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Wget
+NAME = wget
 GARNAME = wget
 GARVERSION = 1.25.0
 HOME_URL = http://www.gnu.org/software/wget/

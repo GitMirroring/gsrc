@@ -23,7 +23,7 @@
 
 NAME =    gupnp
 GARNAME = gupnp
-GARVERSION = 1.6.9
+GARVERSION = 1.6.10
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Core UPnP API built on top of gssdp.
 define BLURB
