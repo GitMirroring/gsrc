@@ -21,8 +21,7 @@ NAME =    SFCGAL
 GARNAME = sfcgal
 UPSTREAMNAME = SFCGAL
 GARVERSION = 2.2.0
-HOME_URL = http://www.sfcgal.org/
-# http://oslandia.github.io/SFCGAL
+HOME_URL = https://sfcgal.gitlab.io/SFCGAL/
 DESCRIPTION = Simple Features Computational Geometry Algorithms Library
 define BLURB
 SFCGAL is a C++ wrapper library around CGAL with the aim of supporting
@@ -33,10 +32,10 @@ to expose some SFCGAL''s functions in spatial databases.
 endef
 LICENSE = GNU LGPL2+
 ######################################################################
-#https://gitlab.com/Oslandia/SFCGAL/-/archive/v1.3.8/SFCGAL-v1.3.8.tar.gz
+#https://gitlab.com/sfcgal/SFCGAL/-/archive/v2.3.0/SFCGAL-v2.3.0.tar.gz
 
 MASTER_SITES = https://gitlab.com/
-MASTER_SUBDIR = Oslandia/$(UPSTREAMNAME)/-/archive/v$(GARVERSION)/
+MASTER_SUBDIR = sfcgal/$(UPSTREAMNAME)/-/archive/v$(GARVERSION)/
 DISTFILES = $(UPSTREAMNAME)-v$(GARVERSION).tar.gz
 SIGFILES =
 
@@ -51,6 +50,8 @@ LIBDEPS =
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-# wrong FIXME
-CMAKE_CONFIGURE_ARGS = CMAKE_PREFIX_PATH="$(prefix)"
+# FIXME
+# CMAKE_CONFIGURE_ARGS = CMAKE_PREFIX_PATH="$(prefix)"
+# this is temporary fix for latest cmake. Might be better ways...
+CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5 CMAKE_PREFIX_PATH="$(prefix)"
 
