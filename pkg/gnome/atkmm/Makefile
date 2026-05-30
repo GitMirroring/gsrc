@@ -20,7 +20,7 @@
 
 NAME =    atkmm
 GARNAME = atkmm
-GARVERSION = 2.36.3
+GARVERSION = 2.36.4
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = C++ bindings for the ATK library
 define BLURB

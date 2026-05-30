@@ -1,5 +1,5 @@
 # Copyright © 2013, 2017  Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017-2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,11 +20,11 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Mailutils
+NAME = mailutils
 GARNAME = mailutils
-GARVERSION = 3.21
+GARVERSION = 3.21.90
 HOME_URL = http://www.gnu.org/software/mailutils/
-	#	http://mailutils.org
+#	http://mailutils.org
 DESCRIPTION = Utilities and library for reading and serving mail
 define BLURB
 GNU Mailutils is a collection of programs for managing, viewing and
@@ -38,8 +38,9 @@ endef
 
 ######################################################################
 
-MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = $(GARNAME)/
+#MASTER_SITES = $(MASTER_GNU)
+MASTER_SITES = https://alpha.gnu.org/
+MASTER_SUBDIR = gnu/$(GARNAME)/
 
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
@@ -54,7 +55,6 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-#CONFIGURE_ARGS += "LIBS=-lguile"
 # is this just papering over a bug?:
-BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types
+BUILD_ARGS = CFLAGS+="-Wno-incompatible-pointer-types"
 

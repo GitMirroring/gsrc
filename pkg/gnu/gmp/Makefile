@@ -22,7 +22,7 @@
 
 NAME = GNU MP
 GARNAME = gmp
-GARVERSION =  6.3.0-20250919151842
+GARVERSION =  6.3.0-20260404125625
 HOME_URL = http://www.gnu.org/software/gmp/
 DESCRIPTION = Multiple-precision arithmetic library
 define BLURB

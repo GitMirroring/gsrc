@@ -1,4 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2026
 #
 # This file is part of GSRC.
 #
@@ -17,7 +18,7 @@
 
 NAME = GNUtrition
 GARNAME = gnutrition
-GARVERSION = 0.33.0rc2
+GARVERSION = 0.33.0rc4
 HOME_URL = http://www.gnu.org/software/gnutrition/
 DESCRIPTION = Nutrition analysis
 define BLURB
@@ -54,4 +55,9 @@ post-install:
 	@echo -----------------------------------------------------------------------------
 	gnutrition-updatedb
 	@echo -----------------------------------------------------------------------------
+	@echo -----------------------------------------------------------------------------
+	@echo -----------------------------------------------------------------------------
 	@echo now try "gnutrition-gui"
+	@echo -----------------------------------------------------------------------------
+	@echo -----------------------------------------------------------------------------
+	@echo -----------------------------------------------------------------------------

@@ -20,7 +20,7 @@
 
 NAME =    gnome-commander
 GARNAME = gnome-commander
-GARVERSION = 2.0.0
+GARVERSION = 2.0.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Light and fast file manager for GNOME
 define BLURB

@@ -19,7 +19,7 @@
 
 NAME =    gnome-session
 GARNAME = gnome-session
-GARVERSION = 50.0
+GARVERSION = 50.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = The GNOME Session Manager
 define BLURB
