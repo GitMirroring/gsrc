@@ -1209,6 +1209,7 @@ sysinstall-packagevars:
 
 SYSINSTALL_FAIL = (rm -f $(packagesdir)/$(strip $(GARNAME)) $(COOKIEDIR)/sysinstall-*; false)
 
+# actual STOWing todo change names..
 sysinstall-install:
 	@printf "[$(OK)sysinstall-install$(OFF)] $(MSG)Stowing from packages to working directories $(OFF)\n"
 	(cp -r -v -f --symbolic-link --target-directory=$(prefix) $(packagedir)/* $(OUTPUT) && \

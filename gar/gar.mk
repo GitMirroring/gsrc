@@ -366,11 +366,12 @@ uninstall-src-old:
 	     $(MAKE) uninstall-src GARVERSION=$$v; \
 	done
 
-# uninstall     - Remove the installation.
+# uninstall     - unstow the package
 uninstall: pre-uninstall custom-pre-uninstall sysinstall-uninstall post-uninstall custom-post-uninstall
 	$(DONADA)
 
-uninstall-pkg: sysinstall-uninstall-pkg 
+# uninstall     - Remove the installation completely.
+uninstall-pkg:   sysinstall-uninstall-pkg  uninstall
 	$(DONADA)
 
 uninstall-pkg-old:
