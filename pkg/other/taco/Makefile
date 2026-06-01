@@ -19,15 +19,21 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 #
- 
+
 NAME = Tensor Algebra Compiler, taco
 GARNAME = taco
 GARVERSION = master
-HOME_URL = http://tensor-compiler.org/ 
+HOME_URL = http://tensor-compiler.org/
 DESCRIPTION =  converts tensor expressions to C++ code
 define BLURB
-A fast and versatile library for linear and tensor algebra;
-converts tensor expressions to C++ code
+The Tensor Algebra Compiler (taco) is a C++ library that computes tensor
+algebra expressions on sparse and dense tensors.  It uses novel compiler
+techniques to get performance competitive with hand-optimized kernels in
+widely used libraries for both sparse tensor algebra and sparse linear
+algebra.  You can use taco as a C++ library that lets you load tensors,
+read tensors from files, and compute tensor expressions.  You can also
+use taco as a code generator that generates C functions that compute
+tensor expressions.
 endef
 
 ######################################################################

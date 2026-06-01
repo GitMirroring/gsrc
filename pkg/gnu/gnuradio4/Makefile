@@ -21,7 +21,7 @@
 
 NAME = GNU Radio 4
 GARNAME = gnuradio4
-GARVERSION =  4.0.0-RC1
+GARVERSION =  4.0.0-RC2
 HOME_URL = http://www.gnu.org/software/gnuradio
 # see also http://wiki.gnuradio.org
 DESCRIPTION = Software-defined radio signal processing
@@ -53,5 +53,4 @@ LIBDEPS =
 include ../../../gar/gar.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS=Wno-error=unused-result
 

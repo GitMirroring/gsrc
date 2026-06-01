@@ -45,7 +45,7 @@ GITSRC =   $(DOWNLOADDIRGIT)/
 WORKSRC =  $(WORKDIR)/$(DISTNAME)
 WORKOBJ =  $(WORKSRC)
 
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 CONFIGURE_SCRIPTS = gsrc
 BUILD_SCRIPTS = nothing
@@ -62,7 +62,7 @@ pre-extract: fetch
 	cp -a $(GITSRC)/$(GARNAME)/*   $(WORKSRC)/ 
 
 configure-gsrc:
-	@echo configuring
+	@echo configuring --with-layout=fhs  --prefix=$(prefix)
 	cd $(WORKSRC) &&  ./configure --with-layout=fhs  --prefix=$(prefix)
 
 build-nothing:
@@ -70,6 +70,7 @@ build-nothing:
 
 post-install:
 	make -C $(WORKSRC)/Documentation/ install
+
 #info files; not right,not using DEST...
 
 

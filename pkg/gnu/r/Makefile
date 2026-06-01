@@ -23,8 +23,8 @@
 NAME = R
 GARNAME = r
 UPSTREAMNAME = R
-GARVERSION = 4.5.3
-HOME_URL = https://cran.r-project.org 
+GARVERSION = 4.6.0
+HOME_URL = https://cran.r-project.org
 # mirrors https://cran.r-project.org/mirrors.html
 DESCRIPTION = Environment for statistical computing and graphics
 define BLURB

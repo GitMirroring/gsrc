@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019,2021  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2019,2021,2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,11 +20,10 @@
 
 NAME =    polari
 GARNAME = polari
-GARVERSION = 49.0
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = An IRC Client for GNOME
 define BLURB
-
 endef
 
 ######################################################################

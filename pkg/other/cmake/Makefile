@@ -21,7 +21,7 @@
 NAME =    cmake
 GARNAME = cmake
 #GARVERSION = 3.31.5
-GARVERSION = 4.3.2
+GARVERSION = 4.3.3
 HOME_URL = https://cmake.org/
 # or http://kitware.com/cmake
 DESCRIPTION =  cmake build utility, works with or as "make" or other build systems
