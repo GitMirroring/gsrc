@@ -21,7 +21,7 @@
 
 NAME =    pari
 GARNAME = pari
-GARVERSION =  2.18.0-908-g6b81f1f3fa
+GARVERSION =  	2.18.0-1052-g8e92567d7f
 HOME_URL = http://pari.math.u-bordeaux.fr/
 DESCRIPTION = math calculator and library, unlimited-precision, discrete math etc.
 define BLURB

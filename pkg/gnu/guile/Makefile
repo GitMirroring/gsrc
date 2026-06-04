@@ -44,7 +44,7 @@ INFO_FILES = $(DISTNAME).info r5rs.info
 
 BUILDDEPS =
 # gmp libtool libunistring libffi readline gc
-LIBDEPS =  
+LIBDEPS =
 #USE_AUTORECONF = y
 ######################################################################
 
@@ -57,4 +57,5 @@ include config.mk
 #
 # TODO ln -s guild guild-3.0
 #BUILD_ARGS = CFLAGS="-std=c23 -Wno-incompatible-pointer-types"
+# guile2.2
 
