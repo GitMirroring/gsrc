@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2025  
+# Copyright © 2025-2026
 #
 # This file is part of GSRC.
 #
@@ -19,7 +19,7 @@
 NAME = SQLAlchemy
 GARNAME = python-sqlalchemy
 UPSTREAMNAME = sqlalchemy
-GARVERSION = 2.0.37
+GARVERSION = 2.1.0b2
 #GARVERSION = 0.9.4
 HOME_URL = http://www.sqlalchemy.org
 DESCRIPTION = The Python SQL toolkit and Object Relational Mapper

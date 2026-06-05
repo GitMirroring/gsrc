@@ -21,7 +21,7 @@
 
 NAME = util-linux
 GARNAME = util-linux
-GARVERSION = 2.42
+GARVERSION = 2.42.1
 VDIR= v2.42
 HOME_URL =  https://mirrors.edge.kernel.org/pub/linux/utils/util-linux
 DESCRIPTION = low level utilities for working with GNU-Linux systems
