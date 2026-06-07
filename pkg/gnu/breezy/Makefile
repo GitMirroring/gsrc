@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2021-2024 Carl Hansen <carhnansen@gnu.org>
+# Copyright © 2021-2024,2026 Carl Hansen <carhnansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,41 +21,37 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 #NAME = breezy formerly bazaar, brz formerly bzr
-NAME = breezy aka brz 
-GARNAME = breezy
-GARVERSION = 3.3.15
+NAME = breezy aka brz
+GARNAME = brz
+GARVERSION = 3.3.22
 HOME_URL = http://www.breezy-vcs.org
+# and githup.com
 DESCRIPTION =   distributed version control system
 define BLURB
 The later version of GNU distributed version control system. Do not confuse this with
 another program on savannah.gnu.org also called "bazaar". Bazaar, aka bzr,
 a python 2 program, has been replaced with this python 3 program, breezy aka
-brz. Handles git as well as the earlier bzr archives.  
+brz. Handles git as well as the earlier bzr archives.
 endef
 
 ######################################################################
-#https://launchpad.net/brz/3.2/3.2.1/+download/breezy-3.2.1.tar.gz
-#https://github.com/breezy-team/breezy/archive/refs/tags/brz-3.3.5.tar.gz
+# https://github.com/breezy-team/breezy/archive/refs/tags/brz-3.3.22.tar.gz
 
-DISTNAME = $(GARNAME)-$(GARVERSION)
-empty:=
-space:= $(empty) $(empty)
-VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 
-MASTER_SITES = "https://launchpad.net/"
-MASTER_SUBDIR = brz/$(SERIES)/$(GARVERSION)/+download/
-# note brz name in path
+MASTER_SITES = https://github.com/
+MASTER_SUBDIR = breezy-team/breezy/archive/refs/tags/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = 
+SIGFILES =
 CONFIGURE_SCRIPTS =
 BUILD_SCRIPTS = $(WORKSRC)/setup.py
 INSTALL_SCRIPTS = $(WORKSRC)/setup.py
 WORKOBJ = $(WORKSRC)
 
 BUILDDEPS =
-LIBDEPS = 
+LIBDEPS =
 
+WORKSRC = $(WORKDIR)/breezy-brz-$(GARVERSION)
+WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.mk

@@ -22,7 +22,7 @@
 NAME = Gforth
 GARNAME = gforth
 #GARVERSION = 0.7.3
-GARVERSION = 0.7.9_20260415
+GARVERSION = 0.7.9_20260513
 HOME_URL = https://gforth.org
 # or HOME_URL = https://www.gnu.org/software/gforth/
 DESCRIPTION = Forth interpreter, with virtual machine generator "vmgen"
@@ -78,7 +78,6 @@ include config.mk
 #	# installs the dependencies for a tarball build
 #	  look at install-deps.sh
 
-#BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
 CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) 
 BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) CFLAGS=-Wno-implicit-function-declaration
 

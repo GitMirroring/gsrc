@@ -1,5 +1,5 @@
 # Copyright © 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2019, 2021a,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019, 2021,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = Direvent
 GARNAME = direvent
-GARVERSION = 5.4
+GARVERSION = 5.5
 HOME_URL = http://www.gnu.org/software/direvent/
 DESCRIPTION = Daemon to monitor directories for events such as file removal
 define BLURB

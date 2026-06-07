@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2026
+# Copyright © 2026 Carl Hansen
 #
 # This file is part of GSRC.
 #
@@ -18,7 +18,7 @@
 
 NAME = GNUtrition
 GARNAME = gnutrition
-GARVERSION = 0.33.0rc4
+GARVERSION = 0.33
 HOME_URL = http://www.gnu.org/software/gnutrition/
 DESCRIPTION = Nutrition analysis
 define BLURB
@@ -29,7 +29,7 @@ Agriculture as a source of food nutrient information.
 endef
 ######################################################################
 
-MASTER_SITES = https://alpha.gnu.org/
+MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = gnu/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
@@ -42,22 +42,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-post-install:
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	@echo Now downloading the USDA data from the internet and entering data into database
-	@echo in $(GSRC)/share/gnutrition, using "gnutrition-updatedb" which was just installed and wget.
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	gnutrition-updatedb
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	@echo now try "gnutrition-gui"
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
-	@echo -----------------------------------------------------------------------------
+
