@@ -52,4 +52,3 @@ include ../../../gar/gar.lib/cmake.mk
 #include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-
