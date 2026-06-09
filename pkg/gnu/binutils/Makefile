@@ -22,7 +22,7 @@
 
 NAME = binutils
 GARNAME = binutils
-GARVERSION = 2.46.0
+GARVERSION = 2.46.1
 HOME_URL = http://www.gnu.org/software/binutils/
 
 DESCRIPTION = binary utilities: bfd, gas, gprof, ld, nm, objdump etc.

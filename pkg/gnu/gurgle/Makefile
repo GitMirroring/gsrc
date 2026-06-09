@@ -53,8 +53,8 @@ include config.mk
 
 BUILD_ARGS = CFLAGS="-std=c99 -Wno-implicit-function-declaration"
 
-a:
-	$(INSTALL_INFO) $(WORKSRC)/doc/gurgle.info
+#a:
+#	$(INSTALL_INFO) $(WORKSRC)/doc/gurgle.info
 
 
 

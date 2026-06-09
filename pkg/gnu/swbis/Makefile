@@ -47,6 +47,7 @@ LIBDEPS =
 
 # suboptimal; for now:
 WORKOBJ = $(WORKSRC)
+PATCHFILES = swbis.patch
 
 ######################################################################
 
@@ -54,7 +55,5 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-#CONFIGURE_OPTS = CFLAGS=-Wimplicit-function-declaration
-#BUILD_ARGS = CFLAGS=-Wimplicit-function-declaration
-BUILD_ARGS  = CFLAGS+="-Wno-implicit-function-declaration -I/home/carl/build/gsrc/pkg/gnu/swbis/work/swbis-1.13.3/include -Wno-int-conversion -I/home/carl/build/gsrc/pkg/gnu/swbis/work/swbis-1.13.3/swsupplib/um_rpm/rpm-3.0.5/lib"
+BUILD_ARGS  = CFLAGS+=" -DHAVE_INET_ATON -Wno-implicit-function-declaration -I/home/carl/build/gsrc/pkg/gnu/swbis/work/swbis-1.13.3/include -Wno-int-conversion -I/home/carl/build/gsrc/pkg/gnu/swbis/work/swbis-1.13.3/swsupplib/um_rpm/rpm-3.0.5/lib -Wno-old-style-definition  -DSWBISLIBEXECDIR=${prefix}/libexec -DSWBISLIBDIR=${prefix}/lib -Wno-builtin-declaration-mismatch"
 
