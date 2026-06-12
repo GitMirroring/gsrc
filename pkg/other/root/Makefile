@@ -20,17 +20,17 @@
 
 NAME = ROOT
 GARNAME = root
-GARVERSION = 6.38.10
+GARVERSION = 6.40.02
 
-HOME_URL = https://root.cern.ch 
+HOME_URL = https://root.cern.ch
 DESCRIPTION = Scientific data framework from CERN, includes a C++ interpreter.
-define BLURB 
+define BLURB
 ROOT is a modular scientific software framework. It provides all the
 functionalities needed to deal with big data processing, statistical
 analysis, visualisation and storage. It is mainly written in C++ but
 integrated with other languages such as Python and R. Include a C++
-interpreter, which might be the most widely usable feature. 
-Source code tar.gz is 196 megabytes.
+interpreter, which might be the most widely usable feature.
+Source code tar.gz is 328 megabytes.
 endef
 
 ######################################################################
@@ -38,7 +38,7 @@ endef
 # https://github.com/root-project/root/archive/refs/tags/v6-36-08.tar.gz
 MASTER_SITES =  https://github.com/
 MASTER_SUBDIR =  root-project/root/archive/refs/tags/
-DISTFILES =  v6-36-10.tar.gz
+DISTFILES =  v6-40-02.tar.gz
 SIGFILES =
 LICENSE = LGPL 2.1
 
@@ -49,7 +49,7 @@ Nucl. Inst. Meth. in Phys. Res. A 389 (1997) 81-86.
 BUILDDEPS =
 LIBDEPS =
 
-WORKSRC = $(WORKDIR)/root-6-36-10
+WORKSRC = $(WORKDIR)/root-6-40-02
 WORKOBJ = $(WORKSRC)-build
 # HINT:
 # apt install openssl libxpm-dev libxpm4 libxft-dev libxft2  libxext-dev

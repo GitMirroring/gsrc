@@ -1,4 +1,4 @@
-# Copyright ©2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 15
 GARNAME = gcc15
 UPSTREAMNAME = gcc
-GARVERSION =  15.2.0
+GARVERSION =  15.3.0
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 15 snapshot
 define BLURB
@@ -147,10 +147,9 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 #
 # adjust if needed. ad hoc
 
-BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  " \
-             CXXFLAGS+="--save-temps -Wall  -Wextra  "  \
-             CPPFLAGS="-I. -I.. "
-	     
+#BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  " \
+#             CXXFLAGS+="--save-temps -Wall  -Wextra  "  \
+#             CPPFLAGS="-I. -I.. "
 
 ######################################################################
 .PHONY: checkall
