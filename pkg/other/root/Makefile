@@ -57,12 +57,13 @@ WORKOBJ = $(WORKSRC)-build
 # HINT, maybe before building upgraded version : make uninstall
 # to uninstall the old version before building, so doesn't look at
 # old include files..
+# HINT  apt install xrootd-server
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
 # This was needed for me , adjust as neccessary.
- CMAKE_CONFIGURE_ARGS += -Dgnuinstall=ON -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/XRootD
+# CMAKE_CONFIGURE_ARGS += -Dgnuinstall=ON -D CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/XRootD
 
-
+#BUILD_A$GS =  CXXFLAGS=-Wno-permissive 
