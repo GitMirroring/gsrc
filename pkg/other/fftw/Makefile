@@ -1,4 +1,4 @@
-# Copyright © 2018, 2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2021,2-26 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    fftw
 GARNAME = fftw
-GARVERSION = 3.3.10
+GARVERSION = 3.3.11
 HOME_URL = http://www.fftw.org
 DESCRIPTION =  fastest fourier transform in the west
 define BLURB

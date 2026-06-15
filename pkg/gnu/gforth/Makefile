@@ -22,7 +22,7 @@
 NAME = Gforth
 GARNAME = gforth
 #GARVERSION = 0.7.3
-GARVERSION = 0.7.9_20260513
+GARVERSION = 0.7.9_20260610
 HOME_URL = https://gforth.org
 # or HOME_URL = https://www.gnu.org/software/gforth/
 DESCRIPTION = Forth interpreter, with virtual machine generator "vmgen"
@@ -50,7 +50,7 @@ BUILDDEPS =
 LIBDEPS =
 
 #needed:  to find generated config.h . could be different
-WORKOBJ = $(WORKSRC)
+#WORKOBJ = $(WORKSRC)
 
 #CONFIGURE_SCRIPTS = myconfigure
 #BUILD_SCRIPTS = mybuild
@@ -79,7 +79,9 @@ include config.mk
 #	  look at install-deps.sh
 
 CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) 
-BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) CFLAGS=-Wno-implicit-function-declaration
+BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)
+
+#CFLAGS=-Wno-implicit-function-declaration
 
 .PHONY: configure-myconfigure
 #build-mybuild install-myinstall
