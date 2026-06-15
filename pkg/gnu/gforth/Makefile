@@ -50,7 +50,7 @@ BUILDDEPS =
 LIBDEPS =
 
 #needed:  to find generated config.h . could be different
-#WORKOBJ = $(WORKSRC)
+WORKOBJ = $(WORKSRC)
 
 #CONFIGURE_SCRIPTS = myconfigure
 #BUILD_SCRIPTS = mybuild
@@ -79,7 +79,8 @@ include config.mk
 #	  look at install-deps.sh
 
 CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) 
-BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)
+BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)   CFLAGS+="-I./wayland -I./generic -I./arch/amd64"
+#./gforth-0.7.9_20260610/wayland/
 
 #CFLAGS=-Wno-implicit-function-declaration
 

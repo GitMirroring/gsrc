@@ -22,7 +22,7 @@
 
 NAME = GNU sasl
 GARNAME = gsasl
-GARVERSION = 2.2.3
+GARVERSION = 2.2.4
 HOME_URL = http://www.gnu.org/software/gsasl/
 DESCRIPTION = Simple Authentication and Security Layer command tools
 define BLURB

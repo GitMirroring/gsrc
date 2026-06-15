@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2019, 2021, 2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2019, 2021, 2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = global
 GARNAME = global
-GARVERSION = 6.6.14
+GARVERSION = 6.6.15
 HOME_URL = http://www.gnu.org/software/global/
 DESCRIPTION = Cross-environment source code tag system
 define BLURB
@@ -47,6 +47,5 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
-BUILD_ARGS =  CFLAGS=-Wno-incompatible-pointer-types
 
 

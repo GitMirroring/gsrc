@@ -21,7 +21,7 @@
 
 NAME =    xwayland
 GARNAME = xwayland
-GARVERSION = 24.1.11
+GARVERSION = 24.1.12
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = xorg-server using wayland
 define BLURB
