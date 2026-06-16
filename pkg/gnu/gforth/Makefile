@@ -79,7 +79,7 @@ include config.mk
 #	  look at install-deps.sh
 
 CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) 
-BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)   CFLAGS+="-I./wayland -I./generic -I./arch/amd64"
+BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)   CFLAGS+="-I./wayland -I./generic -I./arch/amd64 -I./arch -UBUGGY_LL_MUL"
 #./gforth-0.7.9_20260610/wayland/
 
 #CFLAGS=-Wno-implicit-function-declaration
@@ -105,6 +105,6 @@ BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)   CFLAGS+="-I.
 #	cd $(WORKOBJ) && $(MAKE)  -k install  VERBOSE=1 DESTDIR=$(packageDESTDIR)
 #	cd $(WORKOBJ)  && $(INSTALL_BIN)  gforth.fi
 
-
+# HINT rm -rf ~/.cache/gforth ; old stuff
 
 

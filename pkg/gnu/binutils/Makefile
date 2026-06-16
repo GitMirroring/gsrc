@@ -24,7 +24,6 @@ NAME = binutils
 GARNAME = binutils
 GARVERSION = 2.46.1
 HOME_URL = http://www.gnu.org/software/binutils/
-
 DESCRIPTION = binary utilities: bfd, gas, gprof, ld, nm, objdump etc.
 define BLURB
 GNU Binutils is a collection of tools for working with binary files.
@@ -59,4 +58,6 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+# based on message from other compilation; needed?
+BUILD_ARGS = CFLAGS=-fPIC
 
