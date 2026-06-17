@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2020, 2021, 2022, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2020, 2021, 2022, 2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,16 +21,19 @@
 # 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = IDN Library
+NAME = lib IDN Library
 GARNAME = libidn
-GARVERSION = 1.43
+GARVERSION = 1.44
 HOME_URL = http://www.gnu.org/software/libidn/
 DESCRIPTION = Internationalized domain name string processing library
 define BLURB
 GNU Libidn is a fully documented implementation of the Stringprep,
-Punycode and IDNA specifications.  Libidn.s purpose is to encode and
-decode internationalized domain name strings.  There are native C, Csharp
-and Java libraries.  Note, there is also libidn2, intended as successor.
+Punycode and IDNA2003 specifications.  Libidn,s purpose is to encode and
+decode internationalized domain name strings.  There are native C, C#
+and Java libraries.  Be aware that IDNA2003 and libidn are primarily for
+historic or compatibility use, and libidn2 is the successor with IDNA2008
+and Unicode TR46 implementation and also provides a compatibility layer
+for GNU libidn.
 endef
 
 ######################################################################
