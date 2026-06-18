@@ -20,7 +20,7 @@
 
 NAME =    openssl
 GARNAME = openssl
-GARVERSION = 4.0.0
+GARVERSION = 4.0.1
 HOME_URL = http://www.openssl.org/
 DESCRIPTION = Secure Sockets Layer, TLS, cryptography library 
 define BLURB

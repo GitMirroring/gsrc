@@ -21,7 +21,7 @@
 
 NAME = guile-GnuTLS
 GARNAME = guile-gnutls
-GARVERSION = 5.0.1
+GARVERSION = 5.0.2
 HOME_URL = http://www.gnu.org/software/guile-gnutls/
 	# or http://gnutls.org
 DESCRIPTION = Transport layer security library, guile interface

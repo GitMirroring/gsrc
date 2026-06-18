@@ -22,8 +22,8 @@
 
 NAME =    mesa
 GARNAME = mesa
-GARVERSION = 26.0.4
-GVER = 26.0
+GARVERSION = 26.1.2
+GVER = 26.1
 HOME_URL = http://www.mesa3d.org/
 DESCRIPTION = Mesa, 3D graphics, OpenGL 4.5 implementation and more
 define BLURB
@@ -45,8 +45,8 @@ SIGFILES =
 BUILDDEPS = libffi
 LIBDEPS =
 ######################################################################
-# this is annoying
-SRC = mesa-26.0-bbc23bed47f2c37b4cb5a9428d98640d89b2224a
+# this is annoying:
+SRC = mesa-26.0-dd22869be45c8d41a8ed7598f52c5c2c8cf00f58
 WORKSRC = $(WORKDIR)/$(SRC)
 WORKOBJ = $(WORKDIR)/$(SRC)-build
 
