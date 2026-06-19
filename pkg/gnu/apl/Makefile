@@ -1,3 +1,4 @@
+
 # Copyright © 2013, 2014, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
 # Copyright © 2019,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
@@ -26,8 +27,9 @@ GARVERSION = 2.0
 HOME_URL = http://www.gnu.org/software/apl/
 DESCRIPTION = APL interpreter
 define BLURB
-GNU APL is a free interpreter for the programming language APL.  It is
-an implementation of the ISO standard 13751.
+GNU APL is a free version of the programming language APL and is intended
+to be a full implementation of what is known as "Programming Language APL,
+Extended", "APL with nested arrays", or "ISO/IEC13751".
 endef
 
 ######################################################################
@@ -41,7 +43,7 @@ BUILDDEPS =
 # readline # lapack
 LIBDEPS =
 CONFIGURE_SCRIPTS =
-BUILD_SCRIPTS = me
+#BUILD_SCRIPTS = me
 # move to SVN
 #svn co svn://svn.savannah.gnu.org/apl/trunk
 ######################################################################
@@ -52,15 +54,15 @@ include config.mk
 
 SVN_PATH = svn://svn.savannah.gnu.org/apl/trunk
 SVN_CO_OPTS =
-WORKSRC = $(WORKDIR)/apl/trunk/trunk
+WORKSRC = $(WORKDIR)/apl/trunk/
 WORKOBJ = $(WORKSRC)
 
 fetch:
 	mkdir -p $(WORKSRC)
-	cd $(WORKSRC) && svn co $(SVN_CO_OPTS) $(SVN_PATH)
+	cd $(WORKDIR)/apl && svn co $(SVN_CO_OPTS) $(SVN_PATH)
 
-build-me:
-	cd $(WORKSRC) &&  make
+#build-me:
+#	cd $(WORKSRC) &&  make
 
 
 
