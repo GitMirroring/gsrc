@@ -22,7 +22,7 @@
 
 NAME =    fontconfig
 GARNAME = fontconfig
-GARVERSION = 2.17.1
+GARVERSION = 2.18.1
 HOME_URL = https://www.freedesktop.org/wiki/Software/fontconfig/
 	# or fontconfig.org
 DESCRIPTION = Library for configuring and customizing font access.
@@ -36,9 +36,9 @@ and subpixel rendered text on a display.
 endef
 
 ######################################################################
-# https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.17.1/fontconfig-2.17.1.tar.xz.sha256sum
+# https://gitlab.freedesktop.org/api/v4/projects/890/packages/generic/fontconfig/2.18.1/fontconfig-2.18.1.tar.xz
 MASTER_SITES = https://gitlab.freedesktop.org/
-MASTER_SUBDIR = api/v4/projects/890/packages/generic/fontconfig/2.17.1/
+MASTER_SUBDIR = api/v4/projects/890/packages/generic/fontconfig/$(GARVERSION)/
 DISTFILES = $(GARNAME)-$(GARVERSION).tar.xz $(GARNAME)-$(GARVERSION).tar.xz.sha256sum
 SIGFILES =
 

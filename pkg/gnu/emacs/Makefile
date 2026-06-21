@@ -75,3 +75,7 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+# lucid optional
+CONFIGURE_ARGS = --prefix=$(prefix) --with-x-toolkit=lucid 
+
+
