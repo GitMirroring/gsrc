@@ -1,4 +1,3 @@
-
 # Copyright © 2013, 2014, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
 # Copyright © 2019,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
@@ -27,9 +26,10 @@ GARVERSION = 2.0
 HOME_URL = http://www.gnu.org/software/apl/
 DESCRIPTION = APL interpreter
 define BLURB
-GNU APL is a free version of the programming language APL and is intended
-to be a full implementation of what is known as "Programming Language APL,
-Extended", "APL with nested arrays", or "ISO/IEC13751".
+GNU APL is a free version of a programming language, GNU APL ("
+GNUS Not Unix A Programing Language"), and is intended to be a full
+implementation of what is known as "Programming Language APL, Extended",
+"APL with nested arrays", or "ISO/IEC13751".
 endef
 
 ######################################################################
@@ -42,10 +42,12 @@ MASTER_SUBDIR = $(GARNAME)/
 BUILDDEPS =
 # readline # lapack
 LIBDEPS =
-CONFIGURE_SCRIPTS =
-#BUILD_SCRIPTS = me
-# move to SVN
-#svn co svn://svn.savannah.gnu.org/apl/trunk
+
+
+#  move to SVN  for up to date version
+#  svn co svn://svn.savannah.gnu.org/apl/trunk
+WORKSRC = $(WORKDIR)/apl-2.0
+WORKOBJ = $(WORKDIR)/apl-2.0
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -54,15 +56,20 @@ include config.mk
 
 SVN_PATH = svn://svn.savannah.gnu.org/apl/trunk
 SVN_CO_OPTS =
-WORKSRC = $(WORKDIR)/apl/trunk/
-WORKOBJ = $(WORKSRC)
+
+CONFIGURE_ARGS = "--prefix=$(prefix)"
 
 fetch:
-	mkdir -p $(WORKSRC)
+	mkdir -p $(WORKDIR)/apl
+	mkdir -p $(WORKDIR)/apl-2.0
 	cd $(WORKDIR)/apl && svn co $(SVN_CO_OPTS) $(SVN_PATH)
+	cp -a $(WORKDIR)/apl/trunk/*   $(WORKSRC)/
+	$(MAKECOOKIE)
 
-#build-me:
-#	cd $(WORKSRC) &&  make
+a:
+	ls $(WORKSRC)
+
+
 
 
 

@@ -23,7 +23,7 @@ NAME = zstd
 GARNAME = zstd
 GARVERSION = 1.5.7
 HOME_URL =  https://github.com/facebook/zstd
-DESCRIPTION = zstd is free general-purpose data compression 
+DESCRIPTION = zstd is free general-purpose data compression
 define BLURB
 zstd is free general-purpose data compression program
 endef
@@ -50,15 +50,15 @@ PATCHFILES = zstd.path.patch
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-.PHONY: build-me install-me 
+.PHONY: build-me install-me
 
 # let it do it its way, makes its own build dir
-build-me:   
+build-me:
 	@echo   make and build.args $(MAKE) $(MAKE_ARGS) $(BUILD_ARGS)
 	cd $(WORKSRC) && $(MAKE) $(MAKE_ARGS)  $(BUILD_ARGS) all
 	$(MAKECOOKIE)
 
-install-me: 
+install-me:
 	@echo ------------------
 	@echo ------------------
 	@echo note:  INSTALL_ARGS=$(INSTALL_ARGS) prefix=$(prefix)
@@ -66,6 +66,18 @@ install-me:
 	cd $(WORKSRC)/lib      && $(MAKE)   DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
 	cd $(WORKSRC)/programs && $(MAKE)   DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
 	@echo ------------------
+	@echo ------------------
+
+
+post-install:  install-me
+	@echo ------------------ remove quirk
+	@echo ------------------ remove quirk
+	@echo ------------------ remove quirk
+	@echo ------------------ remove quirk
+	@echo ------------------ remove quirk
+	@echo ------------------ remove quirk
+	@echo cd $(packagedir) &&  rm  -rf packages
+	cd $(packagedir) &&  rm  -rf packages
 	@echo ------------------
 
 ime: 
@@ -84,7 +96,10 @@ ime:
 	@echo ------------------
 	@echo cd $(WORKSRC)/programs && echo $(MAKE) DESTDIR=$(packageDESTDIR) $(INSTALL_ARGS)  install
 	@echo ------------------
+	@echo  echo packagedir $(packagedir)
+	@echo  echo packagesdir $(packagesdir)
 
 FIXME =  ALL WRONG non-fatal error on installation into package dir, ignore for now
 
 # make check test
+
