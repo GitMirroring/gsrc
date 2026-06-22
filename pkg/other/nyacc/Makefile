@@ -20,7 +20,7 @@
 
 NAME = nyacc
 GARNAME = nyacc
-GARVERSION =  3.04.5
+GARVERSION =  3.04.6
 HOME_URL =  http://www.nongnu.org/nyacc
 DESCRIPTION =  Guile modules for nyacc compiler creation and parsers
 define BLURB

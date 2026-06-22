@@ -1,4 +1,4 @@
-# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -15,41 +15,31 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-
+#
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-
-NAME =    freetype
-GARNAME = freetype
-GARVERSION = 2.14.3
-HOME_URL = http://freetype.org
-DESCRIPTION =  Typeface renderer
+NAME =   guile-fluidsynth
+GARNAME = guile-fluidsynth
+GARVERSION = 0.3.0
+HOME_URL = http://www.nongnu.org/guile-fluidsynth
+DESCRIPTION = guile bindings, fluidsynth
 define BLURB
-library to render typefaces (fonts), in C, producing high-quality output
-(glyph images) of most vector and bitmap font formats.
 endef
 
-# TODO,  ft2demos
 ######################################################################
-# https://download.savannah.gnu.org/releases/freetype/freetype-2.13.1.tar.xz
-MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)
-MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.xz     $(GARNAME)-doc-$(GARVERSION).tar.xz
-SIGFILES  = $(DISTNAME).tar.xz.sig $(GARNAME)-doc-$(GARVERSION).tar.xz.sig
+
+MASTER_SITES = http://download.savannah.nongnu.org/
+MASTER_SUBDIR = releases/$(GARNAME)/
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES  = $(DISTNAME).tar.gz.sig
+
+
 BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/mesonninja.mk
-# or autotools or cmake ???
+include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/varb.mk
 include config.mk
-
-
-custom-post-install: install
-	@echo install docs
-	$(INSTALL_DOCS)  $(WORKSRC)/docs/*
-
-
-
 

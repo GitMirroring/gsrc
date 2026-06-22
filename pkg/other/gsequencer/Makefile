@@ -21,8 +21,8 @@
 
 NAME = gsequencer
 GARNAME = gsequencer
-GARVERSION = 8.3.12
-SUBDIR = 8.3.x
+GARVERSION = 9.0.7
+SUBDIR = 9.0.x
 HOME_URL = http://www.nongnu.org/gsequencer/
 DESCRIPTION = Audio processing, editing, sequencer.
 define BLURB

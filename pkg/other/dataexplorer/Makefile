@@ -18,9 +18,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =   DataExplorer 
+NAME =   DataExplorer
 GARNAME = dataexplorer
-GARVERSION = 4.0.3
+GARVERSION = 4.0.6
 HOME_URL = http://www.nongnu.org/dataexplorer
 DESCRIPTION = data explorer, chart data from serial port, files, devices
 define BLURB

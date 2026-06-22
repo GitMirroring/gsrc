@@ -21,18 +21,17 @@
 
 NAME = jansson
 GARNAME = jansson
-GARVERSION = 2.14
+GARVERSION = 2.15.0
 HOME_URL =  http://www.digip.org/jansson/
 DESCRIPTION = json parser and manipulator
 define BLURB
 endef
 
 ######################################################################
-#http://www.digip.org/jansson/releases/
-#https://github.com/akheron/jansson/releases/download/v2.14/jansson-2.14.tar.bz2
-
+# http://www.digip.org/jansson/releases/
+# https://github.com/akheron/jansson/releases/download/v2.15.0/jansson-2.15.0.tar.bz2
 MASTER_SITES =  https://github.com/
-MASTER_SUBDIR = akheron/jansson/releases/download/v2.14/
+MASTER_SUBDIR = akheron/jansson/releases/download/v$(GARVERSION)/
 
 DISTFILES = $(DISTNAME).tar.bz2
 SIGFILES = $(DISTNAME).tar.bz2.asc

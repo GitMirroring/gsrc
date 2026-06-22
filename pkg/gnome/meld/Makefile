@@ -1,4 +1,4 @@
-# Copyright ©2016,2018,2019,2022,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2016,2018,2019,2022,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    meld
 GARNAME = meld
-GARVERSION = 3.23.1
+GARVERSION = 3.24.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Compare files, directories and working copies
 define BLURB
@@ -39,9 +39,9 @@ SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
-WORKOBJ = $(WORKSRC)
 ######################################################################
 
-include ../../../gar/gar.lib/python.mk
+#include ../../../gar/gar.lib/python.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
