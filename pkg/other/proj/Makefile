@@ -22,7 +22,7 @@
 
 NAME =    proj
 GARNAME = proj
-GARVERSION =  9.8.0
+GARVERSION =  9.8.1
 HOME_URL = http://www.proj.org
 # additional data and docs there
 DESCRIPTION =  library for doing geodesic and cartographic projections

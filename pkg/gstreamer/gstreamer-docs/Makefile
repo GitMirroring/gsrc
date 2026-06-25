@@ -21,7 +21,7 @@
 
 NAME =    gstreamer-docs
 GARNAME = gstreamer-docs
-GARVERSION = 1.28.3
+GARVERSION = 1.28.4
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION =  gstreamer documentation
 define BLURB

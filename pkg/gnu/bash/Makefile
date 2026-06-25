@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2019, 2020, 2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2019, 2020, 2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,9 +20,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Bash
+NAME = bash
 GARNAME = bash
-PATCHNUM = 9
+PATCHNUM = 15
 GARVERSION = 5.3
 HOME_URL = http://www.gnu.org/software/bash/
 DESCRIPTION = The GNU Bourne-Again SHell

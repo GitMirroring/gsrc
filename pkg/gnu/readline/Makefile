@@ -24,6 +24,7 @@
 NAME = Readline
 GARNAME = readline
 GARVERSION = 8.3
+PATCHNUM = 3
 HOME_URL = http://www.gnu.org/software/readline/
 DESCRIPTION = Edit command lines while typing, with history support
 define BLURB
@@ -40,7 +41,6 @@ MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
 PATCHFILE_SITES = $(MASTER_GNU)
 PATCHFILE_SUBDIR = $(GARNAME)/$(DISTNAME)-patches/
-PATCHNUM = 1
 SIGFILE_SITES = $(MASTER_GNU)
 SIGFILE_SUBDIR = $(PATCHFILE_SUBDIR)
 DISTFILES = $(DISTNAME).tar.gz
@@ -50,7 +50,7 @@ ifneq ($(PATCHNUM),)
 			$(GARNAME)$(subst .,,$(GARVERSION))-$(num))
 	PATCHFILES = $(upstream_patches)
 endif
-	   
+
 SIGFILES = $(DISTNAME).tar.gz.sig \
 	   $(foreach patchfile, $(upstream_patches), $(patchfile).sig)
 INFO_FILES = $(GARNAME).info history.info rluserman.info
