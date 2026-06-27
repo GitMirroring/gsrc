@@ -1,4 +1,4 @@
-# Copyright ©2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 14 
 GARNAME = gcc14
 UPSTREAMNAME = gcc
-GARVERSION = 14.3.0
+GARVERSION = 14.4.0
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 14 
 define BLURB
@@ -44,7 +44,7 @@ endef
 MASTER_SITES = $(MASTER_GNU)
 DISTNAME= $(UPSTREAMNAME)-$(GARVERSION)
 MASTER_SUBDIR = $(UPSTREAMNAME)/$(DISTNAME)/
-DISTFILES = $(DISTNAME).tar.xz 
+DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =  $(DISTNAME).tar.xz.sig
 
 BUILDDEPS = gmp mpfr mpc zlib
