@@ -19,7 +19,7 @@
 
 NAME =    gnome-music
 GARNAME = gnome-music
-GARVERSION = 49.1
+GARVERSION = 50.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Music player and management application
 define BLURB

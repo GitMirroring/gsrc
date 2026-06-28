@@ -23,7 +23,7 @@
 
 NAME =    gupnp-tools
 GARNAME = gupnp-tools
-GARVERSION = 0.12.2
+GARVERSION = 0.12.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = some gupnp things
 define BLURB

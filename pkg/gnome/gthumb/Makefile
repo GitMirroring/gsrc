@@ -46,3 +46,5 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
+BUILD_ARGS =  CFLAGS=-Wno-incompatible-pointer-types
+

@@ -20,7 +20,7 @@
 
 NAME =    glib-networking
 GARNAME = glib-networking
-GARVERSION = 2.80.1
+GARVERSION = 2.90.alpha
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Network extensions for GLib
 define BLURB

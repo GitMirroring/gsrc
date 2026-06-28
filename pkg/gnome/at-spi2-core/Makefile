@@ -20,7 +20,7 @@
 
 NAME =    at-spi2-core
 GARNAME = at-spi2-core
-GARVERSION = 2.60.4
+GARVERSION = 2.61.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = D-Bus accessibility specifications and registration daemon
 define BLURB

@@ -1,4 +1,4 @@
-# Copyright ©2024,2020 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,9 +20,9 @@
 
 NAME =    FORM
 GARNAME = form
-GARVERSION = 5.0.0
+GARVERSION = 5.0.1
 HOME_URL = https://www.nikhef.nl/~form/
-# or https://github.com/vermaseren/form/
+# or https://github.com/form-dev/form/
 DESCRIPTION =  FORM is a symbolic equation manipulation system.
 define BLURB
 FORM is a symbolic equation manipulation system for very big expressions
@@ -34,18 +34,17 @@ endef
 LICENSE = GNU GPL 3 or later
 CITE = J.A.M.Vermaseren, New features of FORM, math-ph/0010025
 ######################################################################
-# https://github.com/vermaseren/form/releases/download/v4.3.0/form-4.3.0.tar.gz
-# https://github.com/vermaseren/form/archive/refs/tags/v5.0.0-beta.1.tar.gz
+# https://github.com/form-dev/form/releases/download/v5.0.1/form-5.0.1.tar.gz
+
 MASTER_SITES = $(MASTER_GITHUB)
-MASTER_SUBDIR =  form-dev/form/archive/refs/tags/
+MASTER_SUBDIR =  form-dev/form/releases/download/v$(GARVERSION)/
 
 
-DISTFILES = v$(GARVERSION).tar.gz
+DISTFILES = $(DISTNAME).tar.gz
 SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
-USE_AUTORECONF = yes
 
 ######################################################################
 
