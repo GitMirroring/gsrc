@@ -34,8 +34,8 @@ MASTER_SUBDIR =  src/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.xz $(DISTNAME).tar.xz.sha256sum
 SIGFILES  = $(DISTNAME).tar.xz.asc
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

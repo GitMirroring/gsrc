@@ -1,0 +1,12 @@
+diff -x config.log -x config.status -ru tmp/evince-49.alpha.1/libview/ev-view-presentation.c work/evince-49.alpha.1/libview/ev-view-presentation.c
+--- tmp/evince-49.alpha.1/libview/ev-view-presentation.c	2026-05-20 14:37:34.000000000 -0700
++++ work/evince-49.alpha.1/libview/ev-view-presentation.c	2026-06-28 09:22:35.449030377 -0700
+@@ -22,7 +22,7 @@
+ 
+ #include <stdlib.h>
+ #include <glib/gi18n-lib.h>
+-#include <gdk/gdkkeysyms.h>
++#include <gdk/gdk.h>
+ 
+ #include "ev-view-presentation.h"
+ #include "ev-jobs.h"

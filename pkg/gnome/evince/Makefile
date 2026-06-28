@@ -1,4 +1,4 @@
-# Copyright © 2016-2022,2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016-2022,2025-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,13 +20,13 @@
 
 NAME =    evince
 GARNAME = evince
-GARVERSION = 49.alpha
-HOME_URL = https://wiki.gnome.org/Apps/Evince 
-DESCRIPTION = View multipage documents, ps pdf etc
+GARVERSION = 49.alpha.1
+HOME_URL = https://wiki.gnome.org/Apps/Evince
+DESCRIPTION = View multipage documents, ps pdf dvi djvu etc
 define BLURB
 View multipage documents. File types it can display include
-PDF, Postscript, djvu, tiff, dvi, XPS, SyncTex support with gedit, 
-comics books (cbr, cbz, cb7 and cbt), and more
+PDF, Postscript, djvu, tiff, dvi, XPS, SyncTex support with gedit,
+comics books (cbr, cbz, cb7 and cbt), and more.
 endef
 
 ######################################################################
@@ -44,6 +44,8 @@ SIGFILES =
 # apt install libpoppler-glib-dev libpoppler-glib-doc  libnautilus-extension-dev
 BUILDDEPS =
 LIBDEPS =
+PATCHFILES = evince.49.alpha.1.patch
+
 
 ######################################################################
 

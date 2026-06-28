@@ -21,14 +21,14 @@
 
 NAME =    pari
 GARNAME = pari
-GARVERSION = 2.18.0-1054-gcea32ebc88
+GARVERSION = 2.18.0-1109-gfe71f20e54
 HOME_URL = http://pari.math.u-bordeaux.fr/
 DESCRIPTION = math calculator and library, unlimited-precision, discrete math etc.
 define BLURB
 endef
 
 ######################################################################
-# https://pari.math.u-bordeaux.fr/pub/pari/snapshots/pari-2.18.0-908-g6b81f1f3fa.tar.gz
+# https://pari.math.u-bordeaux.fr/pub/pari/snapshots/pari-2.18.0-1109-gfe71f20e54.tar.gz
 MASTER_SITES = https://pari.math.u-bordeaux.fr/
 #MASTER_SUBDIR = pub/pari/unstable/
 #MASTER_SUBDIR = pub/pari/unix/
@@ -52,8 +52,7 @@ include config.mk
 
 CONFIGURE_ARGS := --with-readline=$(prefix) --with-gmp --with-qt
 
-# HINT: bug, need '-lcurses' if using readline
-#LDFLAGS+=-lcurses
+# HINT: 
 
 .PHONY: configure-doconf build-gpanddoc pre-install bench
 
