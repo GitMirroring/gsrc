@@ -21,7 +21,7 @@
 
 NAME = unifont
 GARNAME = unifont
-GARVERSION = 17.0.04
+GARVERSION = 17.0.05
 HOME_URL = http://unifoundry.com
 #HOME_URL = http://www.gnu.org/software/unifont/
 DESCRIPTION = Large bitmap font covering Unicode s Basic Multilingual Plane

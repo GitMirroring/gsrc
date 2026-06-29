@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = tramp
 GARNAME = tramp
-GARVERSION = 2.8.1
+GARVERSION = 2.8.2
 HOME_URL = http://www.gnu.org/software/tramp/
 DESCRIPTION = Transparent Remote Access, Multiple Protocol GNU Emacs package
 define BLURB
