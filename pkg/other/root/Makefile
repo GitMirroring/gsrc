@@ -25,16 +25,25 @@ GARVERSION = 6.40.02
 HOME_URL = https://root.cern.ch
 DESCRIPTION = Scientific data framework from CERN, includes a C++ interpreter.
 define BLURB
-ROOT is a modular scientific software framework. It provides all the
+ROOT is an OO framework for large scale scientific data analysis and
+data mining. It has been developed at CERN with the sponsorship of HP
+and is currently being used by a number of large high energy physics
+experiments. The ROOT system, written in C++, contains, among others,
+an efficient hierarchical OO database, a C++ interpreter, advanced
+statistical analysis (multi dimensional histogramming, fitting and
+minimization algorithms) and visualization tools. The user interacts with
+ROOT via a graphical user interface, the command line or batch scripts. The
+command and scripting language is C++ (using the interpreter) and large
+scripts can be compiled and dynamically linked in. ROOT also provides
+a rich set of interprocess communication classes allowing the transfer
+of complete objects from one process to another.  It provides all the
 functionalities needed to deal with big data processing, statistical
 analysis, visualisation and storage. It is mainly written in C++ but
-integrated with other languages such as Python and R. Include a C++
-interpreter, which might be the most widely usable feature.
-Source code tar.gz is 328 megabytes.
+integrated with other languages such as Python and R. Includes a C++
+interpreter, cling, (Source code tar.gz is 328 megabytes.)
 endef
 
 ######################################################################
-# https://root.cern/download/root_v6.34.00-rc1.source.tar.gz
 # https://github.com/root-project/root/archive/refs/tags/v6-36-08.tar.gz
 MASTER_SITES =  https://github.com/
 MASTER_SUBDIR =  root-project/root/archive/refs/tags/
@@ -48,10 +57,10 @@ Nucl. Inst. Meth. in Phys. Res. A 389 (1997) 81-86.
 
 BUILDDEPS =
 LIBDEPS =
-
+PATCHFILES = root6-40-02.patch
 WORKSRC = $(WORKDIR)/root-6-40-02
 WORKOBJ = $(WORKSRC)-build
-# HINT:
+# HINT if problems:
 # apt install openssl libxpm-dev libxpm4 libxft-dev libxft2  libxext-dev
  
 # HINT, maybe before building upgraded version : make uninstall
@@ -64,7 +73,8 @@ include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
 # This was needed for me , adjust as neccessary.
- CMAKE_CONFIGURE_ARGS +=  -Dgnuinstall=ON -DCMAKE_PREFIX_PATH+=/usr/lib/x86_64-linux-gnu/cmake/XRootD
+CMAKE_CONFIGURE_ARGS +=  -Dgnuinstall=ON
+#-DCMAKE_PREFIX_PATH+=/usr/lib/x86_64-linux-gnu/cmake/XRootD
 CMAKE_INSTALL_PREFIX = $(prefix)
 
 
