@@ -1,4 +1,4 @@
-# Copyright ©2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # https://gnu.org/s/gsrc
@@ -20,32 +20,40 @@
 
 NAME =    dillo
 GARNAME = dillo
-GARVERSION = 3.2.0
-HOME_URL = https://dillo-browser.github.io
+GARVERSION = 3.3.0
+HOME_URL = https://dillo-browser.org
 DESCRIPTION = web browser with low requirements
 define BLURB
+j
 Dillo displays HTML, text, PNG, JPEG, and GIF files.  It handles cookies,
 HTTP authentication (basic and digest), proxying (basic), and some CSS.
 Framesets are displayed as links to frames, and there is currently no
 support for javascript or video. Some consider this an advantage.
+not 'dillo.org'
+command line
+webpage fixes
+
 endef
 
 ######################################################################
-# https://github.com/dillo-browser/dillo/releases/download/v3.1.0/dillo-3.1.0.tar.bz2
-# https://github.com/dillo-browser/dillo/releases/download/v3.1.1/dillo-3.1.1.tar.bz2
-MASTER_SITES = https://github.com/
-MASTER_SUBDIR = dillo-browser/$(GARNAME)/releases/download/v$(GARVERSION)/
-DISTFILES = $(DISTNAME).tar.bz2 
-SIGFILES  = $(DISTNAME).tar.bz2.asc
+#   https://dillo-browser.org/release/3.3.0/dillo-3.3.0.tar.gz
+MASTER_SITES = https://dillo-browser.org/
+MASTER_SUBDIR = release/$(GARVERSION)/
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES  = $(DISTNAME).tar.gz.asc
 
-BUILDDEPS =
-#fltk
+BUILDDEPS = fltk
 LIBDEPS =
-# Hint: States it uses FLTK 3, but might work with FLTK 4.
-#  just edit the "configure" script  
+
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+# Hint: Docs say it uses FLTK 1.3, but might work with FLTK 1.4.5 thusly:
+CONFIGURE_ARGS = --enable-experimental-fltk
+# seems to work for me
+
+
 

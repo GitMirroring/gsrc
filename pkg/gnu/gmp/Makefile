@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020, 2021, 2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020, 2021, 2023, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = GNU MP
 GARNAME = gmp
-GARVERSION =  6.3.0-20260404125625
+GARVERSION =  6.3.0-20260702124647
 HOME_URL = http://www.gnu.org/software/gmp/
 DESCRIPTION = Multiple-precision arithmetic library
 define BLURB
@@ -34,9 +34,9 @@ aimed at use in, for example, cryptography and computational algebra.
 endef
 
 ######################################################################
-#https://gmplib.org/download/snapshot/gmp-next/gmp-6.3.0-20250919151842.tar.zst
+# https://gmplib.org/download/snapshot/gmp-next/gmp-6.3.0-20260702124647.tar.zst
 # other site, gmplib.org...
-#MASTER_SITES = $(MASTER_GNU) 
+#MASTER_SITES = $(MASTER_GNU)
 #MASTER_SUBDIR = $(GARNAME)/
 MASTER_SITES =  https://gmplib.org/
 MASTER_SUBDIR = download/snapshot/gmp-next/

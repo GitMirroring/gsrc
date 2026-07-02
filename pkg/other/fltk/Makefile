@@ -22,7 +22,7 @@ NAME =   fltk
 GARNAME =  fltk
 GARVERSION = 1.4.5
 HOME_URL = https://www.fltk.org
-DESCRIPTION = gui designer using gui and C++
+DESCRIPTION = Fast light toolkit gui designer using gui and C++
 define BLURB
 endef
 
