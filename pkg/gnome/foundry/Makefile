@@ -20,7 +20,7 @@
 
 NAME =    foundry
 GARNAME = foundry
-GARVERSION = 1.1.1
+GARVERSION = 1.2.alpha
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = foundry GNOME
 define BLURB

@@ -19,7 +19,7 @@
 
 NAME =    gtkmm-documentation
 GARNAME = gtkmm-documentation
-GARVERSION = 4.12.0
+GARVERSION = 4.14.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME C++ bindings documentation 
 define BLURB

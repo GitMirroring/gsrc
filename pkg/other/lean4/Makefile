@@ -31,7 +31,6 @@ theorem prover. Lean programming primarily involves defining types
 and functions.  see https://leanprover-community.github.io
 endef
 
-
 ######################################################################
 # Gave up on git. Too many git fetch problems.
 #  https://github.com/leanprover/lean4.git
@@ -63,6 +62,9 @@ LICENSE = apache
 include ../../../gar/gar.lib/cmake.mk
 include ../../../gar/varb.mk
 include config.mk
+
+CMAKE_CONFIGURE_ARGS += --preset=release -B . -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$(prefix)
+CMAKE_INSTALL_PREFIX = $(prefix)
 
 # abandon git approach for now:
 #.PHONY: build-it
