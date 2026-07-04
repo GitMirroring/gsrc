@@ -19,17 +19,17 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = The GNU Compiler Collection version 14 
+NAME = The GNU Compiler Collection version 14
 GARNAME = gcc14
 UPSTREAMNAME = gcc
 GARVERSION = 14.4.0
 HOME_URL = https://www.gnu.org/software/gcc
-DESCRIPTION = GNU Compiler Collection 14 
+DESCRIPTION = GNU Compiler Collection 14
 define BLURB
 GCC is the GNU Compiler Collection.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
-Fortran, Ada, D, Go, and Modula 2. WIth runtime 
-support libraries for these languages.
+Fortran, Ada, D, Go, and Modula 2. With runtime support libraries for
+these languages.
 endef
 
 
@@ -64,11 +64,11 @@ INFO_FILES =  \
 	gnat_ugn.info	  \
 	libgomp.info  \
 	libitm.info  \
-	libquadmath.info  
+	libquadmath.info
 
 
 
-#	libiberty.info  
+#	libiberty.info
 
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk

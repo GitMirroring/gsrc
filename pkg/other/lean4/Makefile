@@ -63,7 +63,7 @@ include ../../../gar/gar.lib/cmake.mk
 include ../../../gar/varb.mk
 include config.mk
 
-CMAKE_CONFIGURE_ARGS += --preset=release -B . -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$(prefix)
+CMAKE_CONFIGURE_ARGS += --preset="release" -B . -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$(prefix) -DINSTALL_PREFIX=$(prefix)
 CMAKE_INSTALL_PREFIX = $(prefix)
 
 # abandon git approach for now:

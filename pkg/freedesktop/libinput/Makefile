@@ -21,7 +21,7 @@
 
 NAME =    libinput
 GARNAME = libinput
-GARVERSION = 1.31-branch
+GARVERSION = 1.31.3
 HOME_URL = http://www.freedesktop.org/
 DESCRIPTION =  wrapper library for input devices.
 define BLURB

@@ -1,4 +1,4 @@
-# Copyright © 2016, 2018, 2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2018, 2021, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    sushi
 GARNAME = sushi
-GARVERSION = 50.0
+GARVERSION = 51.alpha
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A quick previewer for Nautilus
 define BLURB

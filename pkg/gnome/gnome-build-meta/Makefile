@@ -23,6 +23,8 @@ GARVERSION = 50.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Collection of build scripts for Gnome project, or something 
 define BLURB
+Collection of build scripts for Gnome project, or something. Needs better
+description.
 endef
 
 ######################################################################

@@ -24,15 +24,18 @@ GARVERSION = 3.3.0
 HOME_URL = https://dillo-browser.org
 DESCRIPTION = web browser with low requirements
 define BLURB
-j
-Dillo displays HTML, text, PNG, JPEG, and GIF files.  It handles cookies,
-HTTP authentication (basic and digest), proxying (basic), and some CSS.
-Framesets are displayed as links to frames, and there is currently no
-support for javascript or video. Some consider this an advantage.
-not 'dillo.org'
-command line
-webpage fixes
-
+Dillo is a fast and small graphical web browser with the following
+features: Multi-platform.  Written in C and C++ with few dependencies
+(fits in a floppy disk!).  Implements its own real-time rendering engine.
+Low memory usage and fast rendering, even with large pages.  Uses the
+fast and bloat-free FLTK GUI library.  Extensible with plugins written
+in any language.  Helps authors to comply with web standards by using
+the bug meter Bugmeter icon.  Has "dilloc", a command line controlled
+web tool.  It handles cookies, HTTP authentication (basic and digest),
+proxying (basic), and some CSS.  Framesets are displayed as links to
+frames, and there is currently no support for javascript or video. Some
+consider this an advantage.  Note: the site "dillo.org" is not under
+control of the developers anymore, use site above.
 endef
 
 ######################################################################
@@ -44,6 +47,7 @@ SIGFILES  = $(DISTNAME).tar.gz.asc
 
 BUILDDEPS = fltk
 LIBDEPS =
+LICENSE = GPLv3
 
 ######################################################################
 
@@ -52,8 +56,9 @@ include ../../../gar/gar.lib/info.mk
 include config.mk
 
 # Hint: Docs say it uses FLTK 1.3, but might work with FLTK 1.4.5 thusly:
-CONFIGURE_ARGS = --enable-experimental-fltk
+CONFIGURE_ARGS = "--enable-experimental-fltk  DESTDIR=$(packageDESTDIR) "
 # seems to work for me
+
 
 
 
