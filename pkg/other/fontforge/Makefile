@@ -20,8 +20,8 @@ NAME = fontforge
 GARNAME = fontforge
 GARVERSION =  20251009
 HOME_URL = http://fontforge.org
-DESCRIPTION = design fonts 
-define BLURB
+DESCRIPTION = design outline fonts
+define BLUR
 Design outline fonts, see http://designwithfontforge.com
 endef
 LICENSE = GPL

@@ -22,12 +22,12 @@
 
 NAME = ncurses
 GARNAME = ncurses
-GARVERSION = 6.6-20260627
+GARVERSION = 6.6-20260704
 GARVERSIONMAJOR = 6.6
 
 HOME_URL = http://www.gnu.org/software/ncurses/
 #HOME_URL = http://invisible-island.net/ncurses
-DESCRIPTION = text-to-termimal library
+DESCRIPTION = ncurses text-to-termimal library
 define BLURB
 GNU Ncurses is a library which provides capabilities to write text to a
 terminal in a terminal-independent manner.  It supports pads and

@@ -1,4 +1,4 @@
-# Copyright ©2018,2019,2020,2022,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2018,2019,2020,2022,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,26 +20,22 @@
 
 NAME =    mobile-broadband-provider-info
 GARNAME = mobile-broadband-provider-info
-GARVERSION =  20240407
+GARVERSION =  20251101
 HOME_URL =  https://wiki.gnome.org/
-DESCRIPTION = mobile broadband provider info 
+DESCRIPTION = mobile broadband provider info
 define BLURB
 endef
 
 CONFIGURE_SCRIPTS =
 ######################################################################
+#https://gitlab.gnome.org/GNOME/mobile-broadband-provider-info/-/archive/20251101/mobile-broadband-provider-info-20251101.tar.bz2
 
-empty:=
-space:= $(empty) $(empty)
-VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
-
-MASTER_SITES = $(MASTER_GNOME)/
-MASTER_SUBDIR = $(GARNAME)/$(GARVERSION)/
-DISTFILES = $(GARNAME)-$(GARVERSION).tar.xz  
+MASTER_SITES =  https://gitlab.gnome.org/
+MASTER_SUBDIR = GNOME/$(GARNAME)/-/archive/$(GARVERSION)/
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.bz2
 SIGFILES =
 
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 ######################################################################
 

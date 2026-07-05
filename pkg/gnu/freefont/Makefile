@@ -48,6 +48,7 @@ BUILD_SCRIPTS = $(WORKSRC)/sfd/Makefile
 
 # set in config.mk: all
 #INSTALL_SCRIPTS = $(BUILD_TARGET)
+CONFIGURE_SCRIPTS = 
 INSTALL_SCRIPTS = all
 
 BUILDDEPS = fontforge
@@ -82,7 +83,7 @@ build-%/Makefile:
 
 install-all:
 	mkdir -p $(packageprefix)/share/fonts/
-	cd $(WORKOBJ) &&  $(INSTALL_FONTS) ./sfd/*.otf 
+	cd $(WORKOBJ) &&  $(INSTALL_FONTS) ./sfd/*.otf
 	cd $(WORKOBJ) &&  $(INSTALL_FONTS) ./sfd/*.ttf
 	cd $(WORKOBJ) &&  $(INSTALL_FONTS) ./sfd/*.woff
 

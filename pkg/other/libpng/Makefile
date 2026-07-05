@@ -1,6 +1,5 @@
-# Copyright © 2016, 2017, 2018, 2019, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
-#
-# This file is part of GSRC, the GNU Source Release Collection.
+# Copyright © 2016, 2017, 2018, 2019, 2022, 2024-2026 Hansen <carlhansen@gnu.org>
+
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -19,7 +18,7 @@
 
 NAME =    libpng
 GARNAME = libpng
-GARVERSION = 1.6.55
+GARVERSION = 1.6.58
 HOME_URL = http://libpng.org/
 DESCRIPTION =  libpng, official PNG reference library.
 define BLURB
@@ -29,7 +28,7 @@ endef
 # https://sourceforge.net/projects/libpng/files/libpng16/1.6.46/libpng-1.6.46.tar.xz/download
 MASTER_SITES =  https://sourceforge.net/
 MASTER_SUBDIR =  projects/$(GARNAME)/files/libpng16/$(GARVERSION)/
-DISTFILES = $(DISTNAME).tar.xz  
+DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =
 
 BUILDDEPS =

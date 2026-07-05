@@ -30,7 +30,7 @@ The goals of the Glean project are to provide a highly personal learning
 environmentd that is nonetheless capable of building on collaborative
 content contributions,  which provides the means to build hierarchies of
 content, and that is deployable in different ways (web service, self-hosted,
-single executable).
+single executable). Content writen in "guile".
 endef
 
 ######################################################################
@@ -49,8 +49,8 @@ DISTFILES =
 
 GITSRC =   $(DOWNLOADDIRGIT)/$(GARNAME)
 WORKSRC =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)
-#WORKOBJ =  $(WORKDIR)/$(GARNAME)-$(GIT_REVISION)-build
-WORKOBJ =  $(WORKSRC)
+WORKOBJ =  $(WORKSRC)-build
+#WORKOBJ =  $(WORKSRC)
 
 ######################################################################
 
