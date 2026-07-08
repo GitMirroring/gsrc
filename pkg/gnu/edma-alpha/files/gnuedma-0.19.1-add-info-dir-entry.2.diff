@@ -1,0 +1,45 @@
+diff -x config.log -x config.status -ru tmp/gnuedma-0.19.1/doc/tutorials/edma_tutorial.texi work/gnuedma-0.19.1/doc/tutorials/edma_tutorial.texi
+--- tmp/gnuedma-0.19.1/doc/tutorials/edma_tutorial.texi	2021-06-06 01:41:18.986071313 -0700
++++ work/gnuedma-0.19.1/doc/tutorials/edma_tutorial.texi	2026-07-07 15:43:26.229898319 -0700
+@@ -14,11 +14,16 @@
+ \input texinfo @c -*-texinfo-*-
+ @c %**start of header
+ @setfilename edma_tutorial.info
+-@settitle Getting Started with GNU/EDMA. 
++@settitle Getting Started with GNU/EDMA.
+ @setchapternewpage odd
+ @exampleindent 3
+ @c %**end of header
+ 
++@dircategory GNU programming tools
++@direntry
++* edma-tutorial: (edma_tutorial).       Getting started with GNU/EDMA
++@end direntry
++
+ @ifinfo
+ Getting Started with GNU/EDMA
+ 
+diff -x config.log -x config.status -ru tmp/gnuedma-0.19.1/include/edma.h work/gnuedma-0.19.1/include/edma.h
+--- tmp/gnuedma-0.19.1/include/edma.h	2021-06-05 01:09:53.569794993 -0700
++++ work/gnuedma-0.19.1/include/edma.h	2026-07-07 15:50:00.170925296 -0700
+@@ -53,7 +53,7 @@
+ 
+ #include <stdio.h>
+ #include <setjmp.h>
+-#include <portable.h>
++#include "portable.h"
+ 
+ #ifdef __cplusplus
+ extern "C"{
+diff -x config.log -x config.status -ru tmp/gnuedma-0.19.1/install-components.sh work/gnuedma-0.19.1/install-components.sh
+--- tmp/gnuedma-0.19.1/install-components.sh	2021-06-06 02:11:07.347578519 -0700
++++ work/gnuedma-0.19.1/install-components.sh	2026-07-07 15:43:32.979939191 -0700
+@@ -20,7 +20,7 @@
+ #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ #
+ 
+-BASEDIR=/opt/edma_test
++BASEDIR=/opt/gsrc/packages/edma-alpha-0.19.1-DEST/opt/gsrc
+ EXT=so
+ 
+ export EDMA_SYSTEM_PATH=${BASEDIR}

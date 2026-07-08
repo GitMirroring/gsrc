@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2021-2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2021-2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -39,12 +39,12 @@ browser, gecb.
 endef
 
 ######################################################################
-
-MASTER_SITES = $(MASTER_GNU_ALPHA)
-MASTER_SUBDIR = $(GARNAME)/
+#https://alpha.gnu.org/gnu/edma/gnuedma-0.19.1.tar.gz.sig
+MASTER_SITES = https://alpha.gnu.org/
+MASTER_SUBDIR = gnu/edma/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
-PATCHFILES = gnuedma-$(GARVERSION)-add-info-dir-entry.diff
+PATCHFILES = gnuedma-$(GARVERSION)-add-info-dir-entry.2.diff
 INFO_FILES = edma_tutorial.info
 
 BUILDDEPS =
@@ -67,3 +67,5 @@ post-configure:
 	$(MAKECOOKIE)
 
 
+# FIX
+BUILD_ARGS = CFLAGS="-std=c99 -DGCC -Wno-implicit-function-declaration -Wno-int-conversion -Wno-incompatible-pointer-types"

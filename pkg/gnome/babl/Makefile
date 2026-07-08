@@ -21,7 +21,7 @@
 
 NAME =    babl
 GARNAME = babl
-GARVERSION = 0.1.124
+GARVERSION = 0.1.126
 HOME_URL = http://www.gimp.org/
 DESCRIPTION =  babl is a dynamic, any to any, pixel format translation library.
 define BLURB

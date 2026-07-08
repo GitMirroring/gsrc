@@ -20,7 +20,7 @@
 
 NAME =    valkey
 GARNAME = valkey
-GARVERSION = 9.0.3
+GARVERSION = 9.1.0
 HOME_URL = http://github.com/valkey-io
 DESCRIPTION = in-memory data structure store
 define BLURB
@@ -37,7 +37,7 @@ endef
 #https://github.com/valkey-io/valkey/archive/refs/tags/8.0.1.tar.gz
 MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR = valkey-io/valkey/archive/refs/tags/
-DISTFILES = $(GARVERSION).tar.gz 
+DISTFILES = $(GARVERSION).tar.gz
 SIGFILES =
 LICENSE =  BSD
 

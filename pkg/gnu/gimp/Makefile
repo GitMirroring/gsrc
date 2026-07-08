@@ -22,7 +22,7 @@
 
 NAME = GNU Image Manipulation Program
 GARNAME = gimp
-GARVERSION = 3.2.2
+GARVERSION = 3.2.4
 HOME_URL = http://www.gnu.org/software/gimp
 DESCRIPTION = GNU Image Manipulation Program
 define BLURB

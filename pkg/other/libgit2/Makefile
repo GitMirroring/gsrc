@@ -39,14 +39,15 @@ MASTER_SUBDIR = $(GARNAME)
 
 GIT_PATH = $(MASTER_SITES)/$(GARNAME)/$(GARNAME).git
 GIT_REVISION = main
+GITSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
 
 #DISTNAME = v$(GARVERSION)
 #DISTFILES = $(DISTNAME).tar.gz
-NOCHECKSUM = $(DISTFILES)
+#NOCHECKSUM = $(DISTFILES)
 SIGFILES =
 
-WORKSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
-WORKOBJ = $(WORKSRC)-build
+#WORKSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
+#WORKOBJ = $(WORKSRC)-build
 #CONFIGURE_SCRIPTS  = $(WORKDIR)/    /CMakeLists.txt
 
 LICENSE = GPLv2 with Linking Exception
@@ -58,4 +59,9 @@ include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
 fetch: fetch-git
+
+post-fetch: 
+	mkdir -p $(WORKSRC)
+	mkdir -p $(WORKOBJ)
+	cp -a $(GITSRC)/* $(WORKSRC)
 

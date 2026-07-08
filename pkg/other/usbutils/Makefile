@@ -23,9 +23,9 @@ NAME = usbutils
 GARNAME = usbutils
 GARVERSION = 019
 HOME_URL =  https://mirrors.edge.kernel.org/pub/linux/utils/
-DESCRIPTION = Utilies for examining usb devices.
+DESCRIPTION = Utilities for examining usb devices.
 define BLURB
-Utilies for examining usb devices. lsusb lsusb.py usb-devices usbhid-dump
+Utilities for examining usb devices. lsusb lsusb.py usb-devices usbhid-dump
 endef
 ######################################################################
 # https://www.kernel.org/pub/linux/utils/usb/usbutils/usbutils-019.tar.xz
