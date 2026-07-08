@@ -1,7 +1,8 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2026 
+# Copyright © 2021-2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
-# This file is part of GSRC.
+# This file is part of GSRC, the GNU Source Release Collection.
+# http://www.gnu.org/software/gsrc
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -15,15 +16,16 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = GNU EDMA
-GARNAME = gnuedma
-# was edma
-GARVERSION = 0.19.2
+NAME =  EDMA alpha
+GARNAME = edma-alpha
+UPSTREAMNAME = gnuedma
+GARVERSION = 0.19.1
 HOME_URL = http://www.gnu.org/software/edma/
 DESCRIPTION = Object-oriented component-based development environment
-define BLURB
-"Entorno de Desarrollo Modular y Abierto"
+define BLURB 
 GNU EDMA is a development environment that combines ideas from both
 object-oriented programming and component-based systems.  It is used
 to build modular, evolving applications as well as reusable components.
@@ -33,18 +35,17 @@ other free software component-based systems which imitate the design of
 proprietary counterparts.  It includes a graphical wizard, gidfwizard,
 a tool for building GNU EDMA Interface definition files and to create
 skeleton files necessary to build EDMA classes, and a graphical class
-browser, gecb.
+browser, gecb.  
 endef
 
 ######################################################################
-# https://alpha.gnu.org/gnu/edma/gnuedma-0.19.1.tar.gz
-# http://papermint-designs.com/dmo-blog/download/gnuedma-0.19.2.tar.gz
-MASTER_SITES = https://www.papermint-designs.com/
-MASTER_SUBDIR = dmo-blog/download/
+#https://alpha.gnu.org/gnu/edma/gnuedma-0.19.1.tar.gz.sig
+MASTER_SITES = https://alpha.gnu.org/
+MASTER_SUBDIR = gnu/edma/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
-#PATCHFILES = $(DISTNAME)-add-info-dir-entry.diff
-#INFO_FILES = edma_tutorial.info
+PATCHFILES = gnuedma-$(GARVERSION)-add-info-dir-entry.2.diff
+INFO_FILES = edma_tutorial.info
 
 BUILDDEPS =
 LIBDEPS =
@@ -55,13 +56,16 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-#BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration"
-#
+.PHONY: post-configure
+
 #pre-configure:
 #	sed -i 's/\-m32//' $(WORKSRC)/configure
 #	$(MAKECOOKIE)
-#
-#post-configure:
-#	sed -i 's|BASEDIR=.*$$|BASEDIR=$(packageprefix)|' $(WORKSRC)/install-components.sh
-#	$(MAKECOOKIE)
-#
+
+post-configure:
+	sed -i 's|BASEDIR=.*$$|BASEDIR=$(packageprefix)|' $(WORKSRC)/install-components.sh
+	$(MAKECOOKIE)
+
+
+# FIX
+BUILD_ARGS = CFLAGS="-std=c99 -DGCC -Wno-implicit-function-declaration -Wno-int-conversion -Wno-incompatible-pointer-types"
