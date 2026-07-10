@@ -20,9 +20,10 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Parallel
+NAME = parallel
 GARNAME = parallel
-GARVERSION = 20260622
+GARVERSION = 20260522
+#GARVERSION = 20260622  apparently is withdrawn
 HOME_URL = http://www.gnu.org/software/parallel/
 DESCRIPTION = Build and execute command lines in parallel
 define BLURB
@@ -43,10 +44,23 @@ BUILDDEPS =
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
 
-CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ("این آخرین نبرده،"). \
-  Zenodo. https://doi.org/10.5281/zenodo.19321428
+# Academic tradition requires you to cite works you base your article on.
+# If you use programs that use GNU Parallel to process data for an article in a
+# scientific publication, please cite:
+
+# CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ("این آخرین نبرده،"). \
+#  Zenodo. https://doi.org/10.5281/zenodo.19321428
+
+# CITE = Tange, O. (2026, June 22). GNU Parallel 20260622 ('Rape Gang Inquiry'). \
+#  Zenodo. https://doi.org/10.5281/zenodo.20959929
+
+CITE =  Tange, O. (2026, May 22). GNU Parallel 20260522 ('Hantavirus'). \
+  Zenodo. https://doi.org/10.5281/zenodo.20402000
+
+
 
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+

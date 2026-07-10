@@ -22,7 +22,7 @@
 
 NAME = Gawk
 GARNAME = gawk
-GARVERSION = 5.4.0
+GARVERSION = 5.4.1
 HOME_URL = http://www.gnu.org/software/gawk/
 DESCRIPTION = Text scanning and processing language
 define BLURB
