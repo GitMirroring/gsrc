@@ -31,7 +31,7 @@ define BLURB
 The later version of GNU distributed version control system. Do not confuse this with
 another program on savannah.gnu.org also called "bazaar". Bazaar, aka bzr,
 a python 2 program, has been replaced with this python 3 program, breezy aka
-brz. Handles git as well as the earlier bzr archives.
+brz. Handles git archives as well as the earlier bzr archives.
 endef
 
 ######################################################################
