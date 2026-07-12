@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2019, 2021, 2022, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019, 2021, 2022, 2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = Findutils
 GARNAME = findutils
-GARVERSION = 4.10.0
+GARVERSION = 4.11.0
 HOME_URL = http://www.gnu.org/software/findutils/
 DESCRIPTION = Operating on files matching given criteria
 define BLURB
