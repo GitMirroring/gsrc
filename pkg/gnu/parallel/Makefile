@@ -32,7 +32,7 @@ or more computers.  Jobs can consist of single commands or of scripts
 and they are executed on lists of files, hosts, users or other items.
 Can extend 'xargs' type functionality.
 endef
-  
+
 ######################################################################
 
 MASTER_SITES = $(MASTER_GNU)
@@ -51,13 +51,10 @@ WORKOBJ = $(WORKSRC)
 # CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ("این آخرین نبرده،"). \
 #  Zenodo. https://doi.org/10.5281/zenodo.19321428
 
-# CITE = Tange, O. (2026, June 22). GNU Parallel 20260622 ('Rape Gang Inquiry'). \
+# CITE = Tange, O. (2026, June 22). GNU Parallel 20260622 ("Rape Gang Inquiry"). \
 #  Zenodo. https://doi.org/10.5281/zenodo.20959929
 
-CITE =  Tange, O. (2026, May 22). GNU Parallel 20260522 ('Hantavirus'). \
-  Zenodo. https://doi.org/10.5281/zenodo.20402000
-
-
+CITE =  Tange, Ole (2026, May 22). GNU Parallel 20260522  ("Hantavirus") . Zenodo. https://doi.org/10.5281/zenodo.20402000
 
 ######################################################################
 

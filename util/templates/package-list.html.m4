@@ -17,10 +17,10 @@ td { vertical-align: top;}
   Free Software Directory</a>.
 
  <p>If you're interested in a complete source-based GNU/Linux
-  distribution that is well-debugged, see the project 
+  distribution that is well-debugged, see the project
   Gentoo [GNU/]Linux, although it is not recommended
-  by the GNU project because it offers some non-free software in its installation scripts. 
- (<a href="/distros/common-distros.html"> 
+  by the GNU project because it offers some non-free software in its installation scripts.
+ (<a href="/distros/common-distros.html">
   Explaining Why We Don't Endorse Other Systems</a>). Just don't install the non-free software part.
  See also: <a href="/distros/distros.html"> GNU/Linux distros recommended by GNU.org</a>.
    The very wonderful <a href="/software/guix/"> Guix System
@@ -97,17 +97,17 @@ to <a href="mailto:bug-gsrc@gnu.org">&lt;bug-gsrc@gnu.org&gt;</a>.</p>
      Please make sure the copyright date is consistent with the
      document.  For web pages, it is ok to list just the latest year the
      document was modified, or published.
-     
+
      If you wish to list earlier years, that is ok too.
      Either "2001, 2002, 2003" or "2001-2003" are ok for specifying
      years, as long as each year in the range is in fact a copyrightable
      year, i.e., a year in which the document was published (including
      being publicly visible on the web or in a revision control system).
-     
+
      There is more detail about copyright years in the GNU Maintainers
      Information document, www.gnu.org/prep/maintain. -->
 
-<p>Copyright &copy; 2016-2025 Free Software Foundation, Inc.</p>
+<p>Copyright &copy; 2016-2026 Free Software Foundation, Inc.</p>
 
 <p>This page is licensed under a <a rel="license"
 href="http://creativecommons.org/licenses/by-nd/4.0/">Creative
