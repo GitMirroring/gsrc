@@ -20,7 +20,7 @@
 # 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Gawk
+NAME = gawk
 GARNAME = gawk
 GARVERSION = 5.4.1
 HOME_URL = http://www.gnu.org/software/gawk/
