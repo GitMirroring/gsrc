@@ -48,7 +48,7 @@ LIBDEPS =
 #  move to SVN  for up to date version
 #  svn co svn://svn.savannah.gnu.org/apl/trunk
 WORKSRC = $(WORKDIR)/apl-2.0
-WORKOBJ = $(WORKDIR)/apl-2.0
+WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -58,7 +58,7 @@ include config.mk
 SVN_PATH = svn://svn.savannah.gnu.org/apl/trunk
 SVN_CO_OPTS =
 
-CONFIGURE_ARGS = "--prefix=$(prefix)"
+CONFIGURE_ARGS = --prefix=$(prefix)  DESTDIR=$(packageDESTDIR)
 
 fetch:
 	mkdir -p $(WORKDIR)/apl

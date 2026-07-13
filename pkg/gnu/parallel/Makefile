@@ -54,7 +54,7 @@ WORKOBJ = $(WORKSRC)
 # CITE = Tange, O. (2026, June 22). GNU Parallel 20260622 ("Rape Gang Inquiry"). \
 #  Zenodo. https://doi.org/10.5281/zenodo.20959929
 
-CITE =  Tange, Ole (2026, May 22). GNU Parallel 20260522  ("Hantavirus") . Zenodo. https://doi.org/10.5281/zenodo.20402000
+CITE =  Tange, Ole (2026, May 22). GNU Parallel 20260522  (\"Hantavirus\") . Zenodo. https://doi.org/10.5281/zenodo.20402000
 
 ######################################################################
 
