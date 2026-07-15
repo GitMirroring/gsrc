@@ -1,5 +1,4 @@
-# Copyright © 2013, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2017-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,36 +19,32 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = GNU Image Manipulation Program
-GARNAME = gimp
-GARVERSION = 3.2.4
-HOME_URL = http://www.gnu.org/software/gimp
-DESCRIPTION = GNU Image Manipulation Program
+NAME =    ministream
+GARNAME = ministream
+GARVERSION = 0.99.1
+HOME_URL = http://www.gnome.org/
+DESCRIPTION = W
 define BLURB
-GIMP is an application for image manipulation tasks such as photo
-retouching, composition and authoring.  It supports all common image
-formats as well as specialized ones.  It features a highly
-customizable interface that is extensible via a plugin system.
 endef
 
 ######################################################################
-#https://download.gimp.org/gimp/v3.0/gimp-3.0.0.tar.xz
+
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
+SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
 
-MASTER_SITES = http://download.gimp.org/
-MASTER_SUBDIR = $(GARNAME)/v$(SERIES)/
-DISTFILES = $(DISTNAME).tar.xz
+MASTER_SITES = $(MASTER_GNOME)
+MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
+DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
-#  HINT: apt install libgexiv2-dev
-BUILDDEPS = #   gegl babl
+BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
+
 

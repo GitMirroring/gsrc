@@ -28,13 +28,13 @@ Imath is a basic, light-weight, and efficient C++ and python
 representation of 2D and 3D vectors and matrices and other simple
 but useful mathematical objects, functions, and data types common in
 computer graphics applications, including the half 16-bit floating-point
-type. Previously part of OpenEXR, now distributed separately.  
+type. Previously part of OpenEXR, now distributed separately.
 endef
 
 ######################################################################
 #https://github.com/AcademySoftwareFoundation/openexr/archive/v2.5.4.tar.gz
 MASTER_SITES = $(MASTER_GITHUB)
-MASTER_SUBDIR = AcademySoftwareFoundation/imath/archive/ 
+MASTER_SUBDIR = AcademySoftwareFoundation/imath/archive/
 DISTFILES =  $(strip v$(GARVERSION).tar.gz)
 
 SIGFILES = 
