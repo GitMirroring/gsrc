@@ -45,7 +45,7 @@ DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =
 
 #  HINT: apt install libgexiv2-dev
-BUILDDEPS = #   gegl babl
+BUILDDEPS =    gegl babl
 LIBDEPS =
 
 ######################################################################
