@@ -22,7 +22,7 @@
 
 NAME = libtool
 GARNAME = libtool
-GARVERSION = 2.6.1
+GARVERSION = 2.6.2
 HOME_URL = http://www.gnu.org/software/libtool/
 DESCRIPTION = Generic shared library support tools
 define BLURB
@@ -32,7 +32,7 @@ usual complexity of working with shared libraries across platforms.
 endef
 
 ######################################################################
-MASTER_SITES =  https://alpha.gnu.org/
+MASTER_SITES =  $(MASTER_GNU)/
 MASTER_SUBDIR = gnu/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
