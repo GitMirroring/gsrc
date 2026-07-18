@@ -22,7 +22,7 @@
 NAME = Gforth
 GARNAME = gforth
 #GARVERSION = 0.7.3
-GARVERSION = 0.7.9_20260703
+GARVERSION = 0.7.9_20260715
 HOME_URL = https://gforth.org
 # or HOME_URL = https://www.gnu.org/software/gforth/
 DESCRIPTION = Forth interpreter, with virtual machine generator "vmgen"
@@ -78,7 +78,7 @@ include config.mk
 #	# installs the dependencies for a tarball build
 #	  look at install-deps.sh
 
-CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR) 
+CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)  INCLUDE_PATH=arch/amd64
 BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)   CFLAGS+="-I./wayland -I./generic -I./arch/amd64 -I./arch -UBUGGY_LL_MUL"
 #./gforth-0.7.9_20260610/wayland/
 

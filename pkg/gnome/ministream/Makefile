@@ -23,8 +23,12 @@ NAME =    ministream
 GARNAME = ministream
 GARVERSION = 0.99.1
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = W
+DESCRIPTION =  Ministream is a small subset of libappstream
 define BLURB
+Ministream is a small subset of libappstream, intended to be used by
+libadwaita to automatically populate its AboutDialog with data
+contained in the applications AppStream manifest. Unlike libappstream,
+this library only depends on GLib.
 endef
 
 ######################################################################

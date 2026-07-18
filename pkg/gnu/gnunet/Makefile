@@ -21,7 +21,7 @@
 
 NAME = GNUnet
 GARNAME = gnunet
-GARVERSION = 0.27.0
+GARVERSION = 0.28.0
 HOME_URL = http://www.gnu.org/software/gnunet
 # see https://gnunet.org/generic-installation-instructions
 DESCRIPTION = Secured, decentralized, peer-to-peer networking framework
@@ -48,10 +48,10 @@ LIBDEPS =
 PACKAGE = gnunet
 ######################################################################
 include ../../../gar/gar.lib/mesonninja.mk
-#include ../../../gar/gar.lib/info.mk
+include ../../../gar/gar.lib/info.mk
 include config.mk
 
-FIXME = file gnunet.info is not an info file. TODO Make sane.
+FIXME = "info" is txt
 
 
 
