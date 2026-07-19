@@ -17,12 +17,12 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
- 
+
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME = ncurses
 GARNAME = ncurses
-GARVERSION = 6.6-20260711
+GARVERSION = 6.6-20260718
 GARVERSIONMAJOR = 6.6
 
 HOME_URL = http://www.gnu.org/software/ncurses/
@@ -60,10 +60,10 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/varb.mk
 include config.mk
 
-# HINT. there are many config options. In the source directory, do "configure --help"
+# HINT. there are many config options. In the source directory, do "configure --help" .
 # experimenting....
 
 CONFIGURE_ARGS  += --with-versioned-syms --enable-pc-files   --with-shared --with-normal    --enable-widec
-# includes static ie with-normal
+# includes static lib, i.e. "--with-normal"
 
 

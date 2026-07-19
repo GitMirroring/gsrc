@@ -32,17 +32,17 @@ MASTER_SITES = https://www.gnuradio.org/
 MASTER_SUBDIR = /releases/gnuradio/
 DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
 SIGFILES = 
-CONFIGURE_SCRIPTS = $(WORKSRC)/CMakeLists.txt
+#CONFIGURE_SCRIPTS = $(WORKSRC)/CMakeLists.txt
 #BUILD_SCRIPTS = $(WORKOBJ)/Makefile
 #INSTALL_SCRIPTS = $(WORKOBJ)/cmake_install.cmake
 # being tested
 
-BUILDDEPS = #guile boost libsdl
+BUILDDEPS = gnuradio #guile boost libsdl
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
 ######################################################################
 
-include ../../../gar/gar.mk
+#include ../../../gar/gar.mk
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
