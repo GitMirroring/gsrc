@@ -38,7 +38,7 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 INFO_FILES = $(UPSTREAMNAME).info
 
 BUILDDEPS =
-LIBDEPS = ucommon
+LIBDEPS =# ucommon
 
 ######################################################################
 
@@ -49,3 +49,4 @@ include config.mk
 #pre-build:
 #	sed -i -e '50 a\#include <sys/stat.h>' $(WORKSRC)/inc/cc++/applog.h
 #	$(MAKECOOKIE)
+BUILD_ARGS = CFLAGS=-std=c99

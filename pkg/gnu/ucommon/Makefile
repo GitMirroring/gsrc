@@ -1,4 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
+# 2026
 #
 # This file is part of GSRC.
 #
@@ -18,10 +19,26 @@
 NAME = uCommon C++
 GARNAME = ucommon
 GARVERSION = 7.0.0
-HOME_URL = http://www.gnu.org/software/commoncpp/
+HOME_URL = https://www.gnu.org/software/commoncpp/
 DESCRIPTION = A portable C++ library
-define BLURB 
-
+define BLURB
+GNU uCommon C++ is meant as a very light-weight C++ library to facilitate
+using C++ design patterns even for very deeply embedded applications,
+such as for systems using uclibc along with posix threading support.
+For this reason, uCommon disables language features that consume memory
+or introduce runtime overhead, such as rtti and exception handling,
+and assumes one will mostly be linking applications with other pure
+C based libraries rather than using the overhead of the standard C++
+library and other class frameworks.  GNU uCommon C++ introduces some
+Objective-C based design patterns, such as reference counted objects,
+memory pools, smart pointers, and offers dynamic typing through very
+light use of inline templates for pure type translation that are then
+tied to concrete base classes to avoid template instantiation issues.
+C++ auto-variable automation is also used to enable referenced objects
+to be deleted and threading locks to be released that are acquired
+automatically when methods return rather than requiring one to explicitly
+code for these things. Programs included are: args car commoncpp-config
+keywait mdsum pdetach scrub-files sockaddr ucommon-config urlout zerofill
 endef
 
 ######################################################################
@@ -31,10 +48,10 @@ MASTER_SUBDIR = commoncpp/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS = gnutls
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
