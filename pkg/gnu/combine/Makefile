@@ -37,9 +37,14 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
+PATCHFILES = combine.0.4.0.patch
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS="-Wno-builtin-declaration-mismatch \
+  -Wno-old-style-definition -Wno-implicit-function-declaration \
+    -Wno-implicit-int -Wno-multichar"
