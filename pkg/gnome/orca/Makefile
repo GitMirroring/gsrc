@@ -1,4 +1,4 @@
-# Copyright © 2016, 2018, 2019, 2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2018, 2019, 2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    orca
 GARNAME = orca
-GARVERSION = 50.2
+GARVERSION = 51.alpha.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Screen reader for individuals who are blind or visually impaired
 define BLURB

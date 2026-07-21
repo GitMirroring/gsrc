@@ -22,15 +22,15 @@
 
 NAME = parallel
 GARNAME = parallel
-GARVERSION = 20260522
-#GARVERSION = 20260622  apparently is withdrawn
+GARVERSION = 20260722
 HOME_URL = http://www.gnu.org/software/parallel/
 DESCRIPTION = Build and execute command lines in parallel
 define BLURB
 GNU Parallel is a tool for executing shell jobs in parallel using one
 or more computers.  Jobs can consist of single commands or of scripts
 and they are executed on lists of files, hosts, users or other items.
-Can extend 'xargs' type functionality.
+Can extend 'xargs' type functionality.  Also includes the programs:
+env_parallel niceload parallel parcat parset parsort sem sql
 endef
 
 ######################################################################
@@ -43,21 +43,29 @@ SIGFILES  = $(DISTNAME).tar.bz2.sig
 BUILDDEPS =
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
+# CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ("این آخرین نبرده،").  Zenodo. https://doi.org/10.5281/zenodo.19321428
+# CITE =  Tange, Ole (2026, May 22). GNU Parallel 20260522  (\"Hantavirus\") . Zenodo. https://doi.org/10.5281/zenodo.20402000
+# CITE = Tange, O. (2026, June 22). GNU Parallel 20260622 ("Rape Gang Inquiry"). Zenodo. https://doi.org/10.5281/zenodo.20959929
+#   622 version withdrawn
 
-# Academic tradition requires you to cite works you base your article on.
-# If you use programs that use GNU Parallel to process data for an article in a
-# scientific publication, please cite:
+CITE =  Tange, Ole (2026, July 22). GNU Parallel 20260722 (\"Chat Control\"). Zenodo. https://doi.org/10.5281/zenodo.21476260
 
-# CITE = Tange, O. (2026, March 22). GNU Parallel 20260322 ("این آخرین نبرده،"). \
-#  Zenodo. https://doi.org/10.5281/zenodo.19321428
-
-# CITE = Tange, O. (2026, June 22). GNU Parallel 20260622 ("Rape Gang Inquiry"). \
-#  Zenodo. https://doi.org/10.5281/zenodo.20959929
-
-CITE =  Tange, Ole (2026, May 22). GNU Parallel 20260522  (\"Hantavirus\") . Zenodo. https://doi.org/10.5281/zenodo.20402000
+LICENSE = GNU GPL 3 or later
 
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+post-install:
+	@echo ==============================================================================
+	@echo ==============================================================================
+	@echo ==============================================================================
+	@echo Academic tradition requires you to cite works you base your article on.
+	@echo If you use programs that use GNU Parallel to process data for an article in a
+	@echo scientific publication, please cite:
+	@echo "$(CITE)"
+	@echo ==============================================================================
+	@echo ==============================================================================
+	@echo ==============================================================================
 

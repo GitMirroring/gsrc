@@ -21,8 +21,8 @@
 
 NAME =       boost
 GARNAME =    boost
-GARVERSION = 1.91.0
-HOME_URL =   http://www.boost.org
+GARVERSION = 1.92.0.beta1
+HOME_URL =   https://www.boost.org
 DESCRIPTION =  Peer-reviewed portable C++ source libraries.
 define BLURB
 Boost.org emphasize libraries that work well with the C++ Standard
@@ -30,23 +30,28 @@ Library. Boost libraries are intended to be widely useful, and usable
 across a broad spectrum of applications. The Boost license encourages
 both commercial and non-commercial use. Boost.org aims to establish
 "existing practice" and provide reference implementations so that Boost
-libraries are suitable for eventual standardization.  
+libraries are suitable for eventual standardization.
 endef
 LICENSE =  Boost Software License, Version 1.0
 
 ######################################################################
 # https://github.com/boostorg/boost/releases/download/boost-1.89.0.beta1/boost-1.89.0.beta1-cmake.7z
 # https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2
+# https://archives.boost.io/beta/1.92.0.beta1/source/boost_1_92_0_b1.tar.bz2
 MASTER_SITES = https://archives.boost.io/
 	# fixed: . vs _
-MASTER_SUBDIR  = release/$(GARVERSION)/source/
+#MASTER_SUBDIR  = release/$(GARVERSION)/source/
+MASTER_SUBDIR  = beta/$(GARVERSION)/source/
 #MASTER_SITES = https://github.com/
 #MASTER_SUBDIR = boostorg/boost/releases/download/boost-$(GARVERSION)/
 GARVERSIONUNDER:= $(subst .,_,$(GARVERSION))
-DISTFILES =   $(GARNAME)_$(GARVERSIONUNDER).tar.bz2
+#DISTFILES =   $(GARNAME)_$(GARVERSIONUNDER).tar.bz2
+# annoying beta name
+DISTFILES =   $(GARNAME)_1_92_0_b1.tar.bz2
 SIGFILES  =
 
-WORKSRC =  $(WORKDIR)/$(GARNAME)_$(GARVERSIONUNDER)
+#WORKSRC =  $(WORKDIR)/$(GARNAME)_$(GARVERSIONUNDER)
+WORKSRC =  $(WORKDIR)/$(GARNAME)_1_92_0
 WORKOBJ = $(WORKSRC)
 
 CONFIGURE_SCRIPTS =
@@ -62,10 +67,6 @@ BUILD_ARGS += $(if $(USE_PARALLEL),$(MAKE_ARGS_PARALLEL),)
 include config.mk
 
 .PHONY: pre-build build-customboost custom-pre-install
-
-#extract:
-#	cd $(WORKDIR)  &&  7z x ../download/$(DIST)
-#	$(MAKECOOKIE)
 
 
 # is this right? works...
@@ -87,6 +88,12 @@ custom-pre-install:
 	(cd $(WORKSRC) && ./b2 install --prefix=$(packageprefix) ;  )
 	$(MAKECOOKIE)
 
-# HINT
-# put  "BOOST_ROOT=/yourgsrcpreix"  in your .profile
+custom-post-install:
+	@echo ===================================================================
+	@echo ===================================================================
+	@echo ===================================================================
+	@echo put  \"BOOST_ROOT=/your/gsrc/prefix\"  in your .profile or .bashrc
+	@echo ===================================================================
+	@echo ===================================================================
+	@echo ===================================================================
 
