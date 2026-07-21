@@ -1,6 +1,7 @@
-# Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
-# This file is part of GSRC.
+# This file is part of GSRC, the GNU Source Release Collection.
+# http://www.gnu.org/software/gsrc
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -14,34 +15,30 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = SIP Witch
-GARNAME = sipwitch
-GARVERSION = 1.9.15
-HOME_URL = http://www.gnu.org/software/sipwitch/
-DESCRIPTION = Secure peer-to-peer VoIP server for the SIP protocol
+NAME = libexosip2
+GARNAME = libexosip2
+GARVERSION =  5.3.0
+HOME_URL =  http://www.nongnu.org/
+DESCRIPTION = lib to manage SIP protocol
 define BLURB
-GNU SIP Witch is a peer-to-peer Voice-over-IP server that uses the
-SIP protocol.  Calls can be made from behind NAT firewalls and
-without the need for a service provider.  Its peer-to-peer design
-ensures that there is no central point for media intercept or capture
-and thus it can be used to construct a secure telephone system that
-operates over the public internet.
 endef
-
 ######################################################################
+# https://download.savannah.nongnu.org/releases/exosip/libexosip2-5.3.0.tar.gz.sig
+MASTER_SITES  = https://download.savannah.nongnu.org/
+MASTER_SUBDIR = releases/exosip/
+DISTFILES =  $(DISTNAME).tar.gz
+SIGFILES  =  $(DISTNAME).tar.gz.sig
 
-MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = $(DISTNAME).tar.gz.sig
-
-BUILDDEPS = libexosip2
-LIBDEPS = ucommon gnutls
-
+BUILDDEPS =
+LIBDEPS =
+# depended on by sipwitch
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/info.mk
 include config.mk
 
 

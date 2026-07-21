@@ -19,13 +19,13 @@
 
 NAME = GNU Coding Standards
 GARNAME = gnustandards
-GARVERSION = 2025.07.05
-HOME_URL = http://www.gnu.org/prep/
+GARVERSION = 2026.04.28
+HOME_URL = https://www.gnu.org/prep/standards/
 DESCRIPTION = GNU coding standards and maintainer information
 define BLURB
 This package contains info documents, in info form, outlining the GNU
-coding standards.  See http://www.gnu.org/prep/ to see it all online,
-ready to read; otherwise "info standards"
+coding standards.  See http://www.gnu.org/prep/standards to see it all online,
+ready to read; otherwise do \"info standards\"
 endef
 
 ######################################################################
@@ -44,13 +44,14 @@ SIGFILES =
 
 INSTALL_SCRIPTS = infos
 
-INFO_FILES =  standards.info 
+INFO_FILES =  standards.info
 COLLISIONS = share/info/dir
 
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 
 WORKSRC = $(WORKDIR)
+WORKOBJ = $(WORKSRC)
 
 ######################################################################
 
