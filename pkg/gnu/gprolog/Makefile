@@ -1,5 +1,5 @@
 # Copyright ©2013 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2021,2022,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2022,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = gprolog
 GARNAME = gprolog
-GARVERSION = 1.6-rc
+GARVERSION = 1.6git
 #HOME_URL = http://www.gnu.org/software/gprolog/
 HOME_URL = http://www.gprolog.org
  # https://github.com/didoudiaz/gprolog.git
@@ -54,23 +54,17 @@ WORKOBJ = $(WORKSRC)
 BUILDDEPS =
 LIBDEPS =
 CONFIGURE_ARGS = prefix=$(prefix)
+LICENSE = dual GPL and-or LGPL, see COPYING
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
-#include ../../../gar/gar.lib/info.mk
 include ../../../gar/varb.mk
 include config.mk
 
 #--with-install-dir=$(prefix)/packages/$(DISTNAME)
-
 # --with-install-dir=$(packagedir)
 # --with-install-dir=$(packagedir)
 # --with-doc-dir=share/doc/$(GARNAME)
-
-#CONFIGURE_ARGS = --prefix=$(packagepredix) --exec-prefix=$(packagepredix)
-# --with-install-dir=$(prefix)/$(packages)
-#    --with-html-dir=share/doc/html \
-# --with-examples-dir=share/doc/examples
 
 # @echo $(packageexamples)
 # @echo $(packagedocs)
@@ -78,7 +72,6 @@ include config.mk
 
 # HINT: need latexmk for reproducing pdf docs
 # dnf install latexmk
-
 
 fetch: fetch-git
 
@@ -95,10 +88,9 @@ post-fetch: fetch-git
 
 #      - another location can be specified using --with-install-dir=INSTALL_DIR
 
-install:
-	cd $(WORKOBJ)  && make -n install --with-install-dir=$(packageEDESTDIR)
+#install:
+#	cd $(WORKOBJ)  && make -n install --with-install-dir=$(packageEDESTDIR)
 
 check:
 	cd $(WORKSRC)   &&  $(MAKE) check
-
 

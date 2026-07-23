@@ -44,7 +44,7 @@ MASTER_SUBDIR = releases/$(GARNAME)/
 DISTFILES =  $(DISTNAME).tar.gz
 SIGFILES  =  $(DISTNAME).tar.gz.sig
 
-BUILDDEPS =
+BUILDDEPS =  scmackerel
 LIBDEPS =
 ######################################################################
 

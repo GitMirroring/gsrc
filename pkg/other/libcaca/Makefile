@@ -22,7 +22,7 @@ NAME =    libcaca
 GARNAME = libcaca
 GARVERSION =  0.99.beta19
 HOME_URL = http://caca.zoy.org/
-DESCRIPTION = Color ascii-art library 
+DESCRIPTION = Color ascii-art library
 define BLURB
 Color ascii-art library, used by liquidwar6 game.
 endef
@@ -32,7 +32,7 @@ endef
 
 MASTER_SITES = http://caca.zoy.org/
 MASTER_SUBDIR = files/$(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz 
+DISTFILES = $(DISTNAME).tar.gz
 SIGFILES =
 
 BUILDDEPS =
@@ -43,4 +43,7 @@ LICENSE = WTFPL Do What You Want To Public License http://www.wtfpl.net/
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+# might not be needed, see what works for you:
+CONFIGURE_ARGS = --disable-doc
 
