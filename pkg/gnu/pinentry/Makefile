@@ -1,4 +1,4 @@
-# Copyright © 2015,2017,2021,2022,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2015,2017,2021,2022,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,9 +21,9 @@
 
 NAME = pinentry
 GARNAME = pinentry
-GARVERSION =  1.3.2
+GARVERSION =  1.3.3
 HOME_URL = http://www.gnu.org/software/gnupg
-DESCRIPTION = pinentry, needed for GNU Privacy Guard
+DESCRIPTION = pin entry, needed for GNU Privacy Guard
 define BLURB
 endef
 
@@ -36,7 +36,7 @@ SIGFILES = $(DISTNAME).tar.bz2.sig
 INFO_FILES = pinentry.info
 
 BUILDDEPS =
-LIBDEPS = 
+LIBDEPS =
 
 ######################################################################
 
