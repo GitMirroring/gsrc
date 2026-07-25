@@ -1,0 +1,17 @@
+Description: Fix a trivial typo leading to build failure.
+Author: Yavor Doganov <yavor@gnu.org>
+Forwarded: http://savannah.nongnu.org/bugs/index.php?42475
+Last-Update: 2014-05-31
+---
+
+--- charmap.app.orig/Controller.m
++++ charmap.app/Controller.m
+@@ -28,7 +28,7 @@
+   RELEASE(largeDict);
+   RELEASE(cellDict);
+   RELEASE(display);
+-  RELEASE(CJKInspector);
++  RELEASE(cjkInspector);
+   RELEASE(cjkChar);
+   RELEASE(cjkDefinition);
+   RELEASE(cjkMenuItem);

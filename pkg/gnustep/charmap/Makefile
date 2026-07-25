@@ -1,7 +1,6 @@
-# Copyright © 2015, 2017-2026  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2026 Carl Hansen <carlhansen@gnu.org>
 #
-# This file is part of GSRC, the GNU Source Release Collection.
-# http://www.gnu.org/software/gsrc
+# This file is part of GSRC.
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -19,27 +18,31 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = gpgme
-GARNAME = gpgme
-GARVERSION =  2.1.2
-HOME_URL = http://www.gnu.org/software/gnupg
-DESCRIPTION = gpgme, GPG Made Easy, library connection to GNU Privacy Guard
+NAME = charmap
+GARNAME = charmap
+GARVERSION = 0.3rc1
+HOME_URL =  https://gnustep.org
+DESCRIPTION = character map
 define BLURB
 endef
 
 ######################################################################
+#https://download.savannah.gnu.org/releases/charmap/charmap-0.3rc1.tar.gz
+MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)
+MASTER_SUBDIR =  $(GARNAME)/
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES =
+CONFIGURE_SCRIPTS =
 
-MASTER_SITES = $(MASTER_GNUPG)
-MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.bz2
-SIGFILES = $(DISTNAME).tar.bz2.sig
-
-BUILDDEPS =
+BUILDDEPS =  libs-back
 LIBDEPS =
+WORKSRC = $(WORKDIR)/charmap-0.3
+WORKOBJ = $(WORKSRC)
+PATCHFILES = ftbfs-fix.patch gcc-warnings.patch fix-exception-gui0.24.patch
+PATCHOPTS = -p1
+
 
 ######################################################################
 
-include ../../../gar/gar.lib/autotools.mk
-include ../../../gar/gar.lib/info.mk
+include ../../../gar/gar.lib/gnustep.mk
 include config.mk
-

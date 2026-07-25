@@ -29,7 +29,7 @@ DESCRIPTION = A GNUstep e-mail application
 define BLURB
 GNUMail is a fully featured e-mail application made with GNUstep.  It
 uses Pantomime as its backend, so it supports POP3, IMAP and local
-mailboxes. 
+mailboxes.
 endef
 
 ######################################################################
@@ -37,11 +37,11 @@ endef
 MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)
 MASTER_SUBDIR =  gnustep-nonfsf/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = 
+SIGFILES =
 CONFIGURE_SCRIPTS =
 
 BUILDDEPS =  pantomime Addresses
-LIBDEPS = 
+LIBDEPS =
 
 WORKOBJ = $(WORKSRC)
 
@@ -50,4 +50,3 @@ WORKOBJ = $(WORKSRC)
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
-health.org

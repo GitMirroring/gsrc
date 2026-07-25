@@ -1,0 +1,17 @@
+Description: Fix exception when loading the main gorm file with gnustep-gui/0.24.
+Author: Yavor Doganov <yavor@gnu.org>
+Forwarded: http://savannah.nongnu.org/bugs/index.php?42477
+Last-Update: 2014-06-01
+---
+
+--- charmap.app-0.3~rc1.orig/Controller.m
++++ charmap.app-0.3~rc1/Controller.m
+@@ -129,7 +129,7 @@
+   [[cjkDefinition textContainer] setWidthTracksTextView: YES];
+   [[cjkDefinition textStorage] setAttributedString:
+ 				 [[NSAttributedString alloc]
+-				   initWithString: nil]];
++				   initWithString: @""]];
+ 
+ 
+   [self generateCharmap];

@@ -19,11 +19,11 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Pantomime
+NAME = pantomime
 GARNAME = pantomime
 UPSTREAMNAME = Pantomime
 GARVERSION = 1.4.0
-HOME_URL = http://www.collaboration-world.com/cgi-bin/project/index.cgi?pid=3
+HOME_URL =  https://gnustep.org
 DESCRIPTION = An e-mail framework
 define BLURB
  Pantomime provides an e-mail framework, primarily for the GNUstep
@@ -41,13 +41,12 @@ MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)
 MASTER_SUBDIR =  gnustep-nonfsf/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES =
-CONFIGURE_SCRIPTS = 
+CONFIGURE_SCRIPTS =
 
 BUILDDEPS = tools-make libs-base
-LIBDEPS = 
+LIBDEPS =
 
 ######################################################################
 
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
-

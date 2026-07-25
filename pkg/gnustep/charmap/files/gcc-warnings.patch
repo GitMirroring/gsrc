@@ -1,0 +1,76 @@
+Description: Fix some GCC warnings.
+ Fixes the following warnings:
+ .
+ initialization from distinct Objective-C type
+ pointer targets in assignment differ in signedness
+ variable 'charTag' set but not used
+Author: Yavor Doganov <yavor@gnu.org>
+Forwarded: http://savannah.nongnu.org/bugs/index.php?42476
+Bug-Debian: https://bugs.debian.org/749737
+Last-Update: 2016-09-06
+---
+
+--- charmap.app.orig/CharInspector.m
++++ charmap.app/CharInspector.m
+@@ -43,8 +43,10 @@
+ 
+ - (id) init
+ {
+-  NSMutableParagraphStyle * paragraphStyle = [NSMutableParagraphStyle
+-					       defaultParagraphStyle];
++  NSMutableParagraphStyle * paragraphStyle;
++
++  paragraphStyle = [[[NSParagraphStyle defaultParagraphStyle] mutableCopy]
++		     autorelease];
+   [paragraphStyle setAlignment: NSCenterTextAlignment];
+ 
+   ASSIGN(largeDict, ([NSDictionary dictionaryWithObjectsAndKeys:
+@@ -133,7 +135,7 @@
+   NSString *character;
+   NSString *charNameString = nil;
+   NSString *name = nil;
+-  const unsigned char * cs;
++  const char * cs;
+ 
+   if (position < 55296 || position > 56316)
+     character = [[NSString alloc] initWithCharacters: &position length: 1];
+--- charmap.app.orig/CJKInspector.m
++++ charmap.app/CJKInspector.m
+@@ -39,8 +39,10 @@
+ 
+ - (id) init
+ {
+-  NSMutableParagraphStyle * paragraphStyle = [NSMutableParagraphStyle
+-					       defaultParagraphStyle];
++  NSMutableParagraphStyle * paragraphStyle;
++
++  paragraphStyle = [[[NSParagraphStyle defaultParagraphStyle] mutableCopy]
++		     autorelease];
+   [paragraphStyle setAlignment: NSCenterTextAlignment];
+ 
+   ASSIGN(nonCJKDict, ([NSDictionary dictionaryWithObjectsAndKeys:
+--- charmap.app.orig/Controller.m
++++ charmap.app/Controller.m
+@@ -63,8 +63,10 @@
+ {
+   short int i;
+   
+-  NSMutableParagraphStyle * paragraphStyle = [NSMutableParagraphStyle
+-					       defaultParagraphStyle];
++  NSMutableParagraphStyle * paragraphStyle;
++
++  paragraphStyle = [[[NSParagraphStyle defaultParagraphStyle] mutableCopy]
++		     autorelease];
+   [paragraphStyle setAlignment: NSCenterTextAlignment];
+   ASSIGN(cellDict, ([NSMutableDictionary dictionaryWithObjectsAndKeys:
+ 					   [NSFont systemFontOfSize: 14],
+@@ -230,9 +232,7 @@
+ - (void) putSelected: (id) sender
+ {
+   NSMutableString *selectedString;
+-  int charTag;
+ 
+-  charTag = [[charmapMatrix selectedCell] tag];
+   selectedString = [[NSMutableString alloc] init];
+   [selectedString appendString: [display stringValue]];
+   [selectedString appendString: [[charmapMatrix selectedCell] stringValue]];

@@ -22,7 +22,7 @@
 NAME = libgpg-error
 GARNAME = libgpg-error
 GARVERSION = 1.61
-HOME_URL = http://www.gnupg.org/related_software/libgpg-error/index.en.html/
+HOME_URL = http://gnupg.org/software/libgpg-error
 DESCRIPTION = A library that defines common error values for GnuPG
 define BLURB
 endef
