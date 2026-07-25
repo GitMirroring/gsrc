@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,15 +20,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-
-#
-# To use GNUstep software first install these four packages in this order:
-# gnustep-make gnustep-base gnustep-gui gnustep-back
-#
-
 NAME = GNUstep CoreBase
 GARNAME = gnustep-corebase
-GARVERSION = 0.1.1
+GARVERSION = 0.1.1git
 HOME_URL = http://www.gnustep.org/
 DESCRIPTION = GNUstep corebase library
 define BLURB
@@ -40,31 +34,44 @@ It provides functionality that aims to implement the non-graphical
 portion of Apple.s CoreFoundation framework.
 endef
 LICENSE = LGPL
-PATCHFILES = corebase-extern.diff
+#PATCHFILES = corebase-extern.diff
 
 ######################################################################
 
-MASTER_SITES = $(MASTER_GNUSTEP)
-MASTER_SUBDIR = libs/
-DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = $(DISTNAME).tar.gz.sig 
+MASTER_SITES = $(MASTER_GITHUB)
+MASTER_SUBDIR = gnustep
+GIT_PATH = $(MASTER_SITES)$(MASTER_SUBDIR)/libs-corebase.git
 
+GIT_REVISION = master
+GITSRC =  $(DOWNLOADDIRGIT)/libs-corebase
+WORKSRC  = $(WORKDIR)/$(DISTNAME)
+WORKOBJ  = $(WORKSRC)
 
-BUILDDEPS =
-LIBDEPS = tools-make libs-base  libs-gui libs-back
-
-WORKOBJ = $(WORKSRC)
-
+BUILDDEPS = tools-make
+LIBDEPS =
 ######################################################################
 
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
-# for now: seems ineffective; had to patch "configure" to ignore ICU
-# pending a better solution; no icu-config
-CONFIGURE_ARGS = --without-icu
+
+# for now:
+CONFIGURE_ARGS = -without-gcd
 
 
-check:
-	cd $(WORKSRC) && make check
+fetch: fetch-git
+
+post-fetch: fetch-git
+	mkdir -p $(WORKSRC)
+	cp -a $(GITSRC)/*  $(WORKSRC)
+
+# docs use doxygen, not figured out yet
+#
+# post-install:
+#	make -C $(WORKOBJ)/Documentation/ install
+#	$(MAKECOOKIE)
+
+check: build
+	cd $(WORKOBJ) && $(MAKE) check
+#  or make -C $(WORKOBJ) check
 

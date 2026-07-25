@@ -177,11 +177,11 @@ GIT_REVISION ?= master
 
 gitpull:
 	@printf "git pulling $(DOWNLOADDIRGIT)/$(GARNAME)\n";
-	(cd  $(DOWNLOADDIRGIT)/$(GARNAME) &&  git pull  )
+	(cd  $(DOWNLOADDIRGIT)/$(GARNAME) &&  git pull --progress  )
 
 gitpullrecurse:
 	@printf "git pulling $(DOWNLOADDIRGIT)/$(GARNAME) with --recurse\n";
-	(cd  $(DOWNLOADDIRGIT)/$(GARNAME) &&  git pull --recurse  )
+	(cd  $(DOWNLOADDIRGIT)/$(GARNAME) &&  git pull --recurse --progress  )
 
 # ?? --recurse or --recurse-submodules ??
 
