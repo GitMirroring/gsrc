@@ -24,7 +24,7 @@
 NAME = The GNU C Library glibc
 GARNAME = glibc
 # also called libc usually
-GARVERSION = 2.43
+GARVERSION = 2.44
 HOME_URL = http://www.gnu.org/software/libc/
 DESCRIPTION = GNU standard C library
 define BLURB
