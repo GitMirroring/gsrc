@@ -1,3 +1,4 @@
+
 # Copyright © 2023-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
@@ -41,6 +42,6 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-#BUILD_ARGS = CFLAGS=-std=c99
-
+BUILD_ARGS = CXXFLAGS="-Wno-template-body -std=c++11"
+## FIXME not working
 
