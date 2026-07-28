@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2016 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2022,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2022,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of BioSRC and GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 NAME = Biopython
 GARNAME = python-biopython
 UPSTREAMNAME = biopython
-GARVERSION = 1.85
+GARVERSION = 1.87
 HOME_URL = http://www.biopython.org
 DESCRIPTION = A set of Python modules for biological computation
 define BLURB

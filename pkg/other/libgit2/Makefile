@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019,2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2019,2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,12 +21,12 @@
 
 NAME    = libgit2
 GARNAME = libgit2
-GARVERSION = 1.6.2
+GARVERSION = 1.9.6
 HOME_URL = https://libgit2.github.com/
-DESCRIPTION = libgit2 is a portable, pure C implementation of the Git core methods    
+DESCRIPTION = libgit2 is a portable, pure C implementation of the Git core methods
 LICENSE = GPLv2 with Linking Exception
 define BLURB
-libgit2 is a portable, pure C implementation of the Git core methods 
+libgit2 is a portable, pure C implementation of the Git core methods
 provided as a re-entrant linkable library with a solid API
 endef
 
