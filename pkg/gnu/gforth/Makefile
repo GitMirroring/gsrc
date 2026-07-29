@@ -80,7 +80,6 @@ include config.mk
 
 CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)  INCLUDE_PATH=arch/amd64
 BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)   CFLAGS+="-I./wayland -I./generic -I./arch/amd64 -I./arch -UBUGGY_LL_MUL -I./work/gforth-0.7.9_20260715/arch/amd64"
-/home/carl/topics/prog/gsrc/pkg/gnu/gforth/work/gforth-0.7.9_20260715/engine
 
 #./gforth-0.7.9_20260610/wayland/
 
