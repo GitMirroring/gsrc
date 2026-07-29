@@ -59,8 +59,7 @@ install-it: build
 	@echo --------------------------------------------------------------
 	@echo --------------------------------------------------------------
 	@echo --------------------------------------------------------------
-	@echo Does not actually install anything at this time.
-	@echo Just grab appropiate files and add to your project.
+	@echo Grab appropiate files and add to your project.
 	@echo A library might be created in the future.
 	@echo
 	@echo There is an example executable created,  work/coregtk*/src/coregtk_test
@@ -68,7 +67,7 @@ install-it: build
 	@echo --------------------------------------------------------------
 	@echo --------------------------------------------------------------
 	@echo --------------------------------------------------------------
-	@echo --------------------------------------------------------------
+	@echo FIXME installation of .h files. --------------------------------------------------------------
 	$(MAKECOOKIE)
 
 
