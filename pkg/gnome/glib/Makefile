@@ -21,7 +21,7 @@
 
 NAME =    glib
 GARNAME = glib
-GARVERSION = 2.89.2
+GARVERSION = 2.89.3
 HOME_URL = http://www.gnome.org/
       # or http://www.gtk.org
 DESCRIPTION = Low level core library for GNOME

@@ -22,7 +22,7 @@
 
 NAME = libextractor
 GARNAME = libextractor
-GARVERSION = 1.15
+GARVERSION = 1.18
 HOME_URL = http://www.gnu.org/software/libextractor/
 DESCRIPTION = Library to extract meta-data from media files
 define BLURB
