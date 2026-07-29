@@ -1,6 +1,7 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2026 
 #
-# This file is part of BioSRC.
+# This file is part of BioSRC. and GSRC
 #
 # BioSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -16,13 +17,13 @@
 # along with BioSRC.  If not, see <http://www.gnu.org/licenses/>.
 
 NAME = HTSeq
-GARNAME = python2-htseq
-UPSTREAMNAME = HTSeq
-GARVERSION = 0.6.0
-HOME_URL = http://www-huber.embl.de/users/anders/HTSeq/
+GARNAME = htseq
+GARVERSION = 2.1.2
+# dead link HOME_URL = http://www-huber.embl.de/users/anders/HTSeq/
+HOME_URL = http://pypi.org/project/HTSeq
 DESCRIPTION = A framework to process and analyze high-throughput sequencing data
 define BLURB
-HTSeq is a Python framework for processing and analyzing data from
+HTSeq is a Python 3 framework for processing and analyzing data from
 high-throughput sequencing assays.  Its purpose is to allow you to
 write your own, customized analysis scripts without having to
 implement the basic functionality.
@@ -31,17 +32,16 @@ LICENSE = GPLV3 or later
 CITE = doi:10.1101/002824
 
 ######################################################################
-
-MASTER_SITES = http://pypi.python.org/packages/
-MASTER_SUBDIR = source/H/$(UPSTREAMNAME)/
-DISTFILES = $(DISTNAME).tar.gz
+# https://files.pythonhosted.org/packages/03/4c/6ad404122b3a872f76c5d6e2a73dd992861a582d0c7b7269453bf8943ce2/htseq-2.1.2.tar.gz
+MASTER_SITES = https://files.pythonhosted.org/
+MASTER_SUBDIR = packages/03/4c/6ad404122b3a872f76c5d6e2a73dd992861a582d0c7b7269453bf8943ce2/
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
 BUILD_SCRIPTS = $(WORKSRC)/setup.py
 INSTALL_SCRIPTS = $(WORKSRC)/setup.py
 
 BUILDDEPS =
-LIBDEPS = python2-numpy #python-setuptools
+LIBDEPS = # python2-numpy #python-setuptools
 
-PYTHON ?= $(prefix)/bin/python2
 
 ######################################################################
 

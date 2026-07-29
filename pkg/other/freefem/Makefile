@@ -1,4 +1,4 @@
-# Copyright © 2017, 2019-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2019-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 NAME =    FreeFem
 GARNAME = freefem
 UPSTREAMNAME =  freefem
-GARVERSION = 4.15
+GARVERSION = 4.17
 HOME_URL = http://www.freefem.org/
 DESCRIPTION =  partial differential equation solver, finite element analysis
 define BLURB
@@ -33,7 +33,7 @@ such as fluid-structure interactions require interpolations of data
 on several meshes and their manipulation within one program. FreeFem
 includes a fast 2^d-tree-based interpolation algorithm and a language
 for the manipulation of data on multiple meshes (as a follow up of bamg,
-now a part of FreeFem). Formerly called "FreeFEM++". 
+now a part of FreeFem). Formerly called "FreeFEM++".
 endef
 
 LICENSE = GNU LGPL Version 3.0
@@ -43,7 +43,7 @@ LICENSE = GNU LGPL Version 3.0
 
 MASTER_SITES =  $(MASTER_GITHUB)/
 MASTER_SUBDIR = FreeFem/FreeFem-sources/archive/refs/tags/
-DISTFILES = v$(GARVERSION).tar.gz 
+DISTFILES = v$(GARVERSION).tar.gz
 SIGFILES =
 
 WORKSRC = $(WORKDIR)/FreeFem-sources-$(GARVERSION)
@@ -60,12 +60,15 @@ include config.mk
 
 .PHONY: post-fetch configure-my build-my
 
+CONFIGURE_ARGS = LDFLAGS="$LDFLAGS"
+
 post-fetch:
 	cp download/$(DISTFILES) download/$(DISTNAME).tar.gz
 	$(MAKECOOKIE)
 
 # downloads other packages, figure out what to do.....
-#
+# FIXME
+
 configure-my:
 	cd $(WORKSRC) && autoreconf -i
 	cd $(WORKSRC) && ./configure --enable-download --enable-optim --prefix=${PREFIX}
@@ -73,6 +76,7 @@ configure-my:
 	cd $(WORKSRC) &&  echo "--enable-download" >>config.param
 	$(MAKECOOKIE)
 
+# FIXME
 build-my:
 	cd $(WORKSRC)/ && ./3rdparty/getall -a
 	cd $(WORKSRC)/3rdparty/ff-petsc  && $(MAKE) petsc-slepc
@@ -80,6 +84,6 @@ build-my:
 	cd $(WORKSRC) && $(MAKE) 
 	$(MAKECOOKIE)
 
-clean:
-	echo donot clean, do not want to remove extra downloads
+clean cleanwork:
+	echo donot clean, do not want to remove extra downloads, to be improved....
 

@@ -21,7 +21,7 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME = Biopython
-GARNAME = python-biopython
+GARNAME = biopython
 UPSTREAMNAME = biopython
 GARVERSION = 1.87
 HOME_URL = http://www.biopython.org
