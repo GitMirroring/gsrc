@@ -74,9 +74,8 @@ install-myinstall:
 	mkdir -p $(packageprefix)/share/fonts/X11/misc
 	mkdir -p $(packageprefix)/share/fonts/truetype
 	mkdir -p $(packageprefix)/share/fonts/opentype/unifont
-	$(MAKE)  -C $(WORKSRC)    DESTDIR=$(packageprefix) USRDIR="" PKGDEST="share" \
-		PREFIX=$(packageprefix)   install
-	echo 00000000000000000000000000000000000000000000000 afterafter
+	$(MAKE)  -C $(WORKSRC)    DESTDIR=$(packageprefix) USRDIR="" PKGDEST="share"  PREFIX=$(packageprefix)   install
+	echo 00000000000000000000000000000000000000000000000 FIXME afterafter
 	cd $(WORKSRC)/doc &&  $(INSTALL_INFO)  unifont.info
 	cd $(WORKSRC) &&  $(INSTALL_FONTS)  ./font/compiled/*.pcf.gz
 

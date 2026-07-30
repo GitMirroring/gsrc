@@ -34,29 +34,31 @@ MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
-CONFIGURE_SCRIPTS = $(WORKSRC)/setup
-BUILD_SCRIPTS = $(WORKSRC)/Makefile
+CONFIGURE_SCRIPTS = setup
+BUILD_SCRIPTS = buildit
 INSTALL_SCRIPTS = libs headers
 
 #LS = "ld $(LDFLAGS)"
 
-BUILDDEPS = 
+WORKOBJ = $(WORKSRC)
+
+BUILDDEPS =
 LIBDEPS =
 #LIBDEPS = gtk2 cairo pango gdk-pixbuf atk
-
+LICENSE = GPLv3
 ######################################################################
 
 include ../../../gar/gar.mk
 include config.mk
 
-CONFIGURE_ENV += CFLAG="$(CFLAGS)" 
+BUILD_ARGS = LDFLAGS="-L/usr/lib -L/usr/lib/x86_64-linux-gnu"
 
-configure-%/setup:
-	cd $* && $(CONFIGURE_ENV) ./setup $(CONFIGURE_OPTS) 
+configure-setup:
+	cd $(WORKSRC) && $(CONFIGURE_ENV) $(CFLAGS) ./setup $(CONFIGURE_OPTS) 
 	$(MAKECOOKIE)
 
-build-%/Makefile:
-	$(BUILD_ENV) $(MAKE) -C $* $(BUILD_ARGS) 
+build-buildit:
+	$(BUILD_ENV) $(MAKE) -C $(WORKSRC) $(BUILD_ARGS) 
 	$(MAKECOOKIE)
 
 install-libs:

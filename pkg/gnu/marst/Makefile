@@ -20,9 +20,9 @@ NAME = MARST
 GARNAME = marst
 GARVERSION = 2.8
 HOME_URL = http://www.gnu.org/software/marst/
-DESCRIPTION = Algol-to-C translator
+DESCRIPTION = Algol-60-to-C translator
 define BLURB
-GNU MARST is an Algol-to-C translator.  The package consists of the
+GNU MARST is an Algol-60-to-C translator.  The package consists of the
 translator itself, a library that contains the necessary Algol 60
 procedures, and a converter that converts existing Algol 60 programs
 from other representations to the MARST representation.
@@ -56,4 +56,5 @@ install-info:
 	mkdir -p $(packageprefix)/share/info
 	$(INSTALL_INFO) $(WORKSRC)/doc/marst.info
 	$(MAKECOOKIE)
+
 

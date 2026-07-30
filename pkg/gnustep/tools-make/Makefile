@@ -54,22 +54,28 @@ BUILD_SCRIPTS = nothing
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+.PHONY:  configure-gsrc build-nothing custom-post-install
+
 fetch: fetch-git
 
 pre-extract: fetch
 	mkdir -p $(WORKSRC)
 	mkdir -p $(WORKOBJ)
-	cp -a $(GITSRC)/$(GARNAME)/*   $(WORKSRC)/ 
+	cp -a $(GITSRC)/$(GARNAME)/*   $(WORKSRC)/
 
 configure-gsrc:
 	@echo configuring --with-layout=fhs  --prefix=$(prefix)
 	cd $(WORKSRC) &&  ./configure --with-layout=fhs  --prefix=$(prefix)
 
 build-nothing:
-	@echo Nothing to compile, just do make install
+	@echo Nothing to compile, just do "make install"
 
-post-install:
-	make -C $(WORKSRC)/Documentation/ install
+custom-post-install:
+	@echo Installing $(prefix)/GNUstep/Documentation
+	@echo Installing $(prefix)/GNUstep/Documentation
+	@echo Installing $(prefix)/GNUstep/Documentation
+	@echo Installing $(prefix)/GNUstep/Documentation
+	make -C $(WORKSRC)/Documentation/ install  DESTDIR=$(packageDESTDIR)
 
 #info files; not right,not using DEST...
 
