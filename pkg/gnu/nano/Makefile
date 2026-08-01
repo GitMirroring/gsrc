@@ -22,12 +22,12 @@
 
 NAME = nano
 GARNAME = nano
-GARVERSION = 9.1
+GARVERSION = 9.2
 HOME_URL = http://www.gnu.org/software/nano/
 DESCRIPTION = Small, user-friendly console text editor
 define BLURB
 GNU nano is a small and simple text editor for use in a terminal.
-Besides basic editing, it supports: undo/redo, syntax highlighting,
+Besides basic editing, it supports undo/redo, syntax highlighting,
 spell checking, justifying, auto-indentation, bracket matching,
 interactive search-and-replace (with regular expressions), and the
 editing of multiple files.

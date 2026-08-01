@@ -20,7 +20,7 @@
 
 NAME = anastasis-gtk
 GARNAME = anastasis-gtk
-GARVERSION = 0.7.0
+GARVERSION = 0.8.0
 HOME_URL = http://www.gnu.org/software/anastasis
 DESCRIPTION = GNU key manager gui
 define BLURB
@@ -33,13 +33,13 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS =
+BUILDDEPS = anastasis
 LIBDEPS =
 
 
 ######################################################################
 
-include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 

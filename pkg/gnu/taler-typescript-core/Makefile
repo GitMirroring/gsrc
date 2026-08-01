@@ -35,7 +35,6 @@ MASTER_SUBDIR = taler/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-CONFIGURE_SCRIPTS =
 BUILDDEPS =
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
@@ -44,12 +43,6 @@ WORKOBJ = $(WORKSRC)
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-help build:
-	@echo  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	@echo  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	@echo  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	@echo installation, on your own
-	@echo  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	@echo  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	@echo  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+CONFIGURE_ARGS = --prefix=$(prefix)
+
 

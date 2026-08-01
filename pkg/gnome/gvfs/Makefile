@@ -19,7 +19,7 @@
 
 NAME =    gvfs
 GARNAME = gvfs
-GARVERSION = 1.61.1
+GARVERSION = 1.61.90
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Virtual filesystem implementation for GIO
 define BLURB

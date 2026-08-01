@@ -18,9 +18,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = anastasis
+NAME    = anastasis
 GARNAME = anastasis
-GARVERSION = 0.7.0
+GARVERSION = 0.8.0
 HOME_URL = http://www.gnu.org/software/anastasis
 DESCRIPTION = GNU Anastasis is a key backup and recovery tool
 define BLURB
@@ -38,6 +38,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
