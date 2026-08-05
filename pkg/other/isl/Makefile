@@ -1,4 +1,4 @@
-# Copyright ©2017,2018,2019,2021,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017,2018,2019,2021,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,10 +20,10 @@
 
 NAME =    isl
 GARNAME = isl
-GARVERSION = 0.27
+GARVERSION = 0.28
 HOME_URL = https://libisl.sourceforge.io/
 	# https://repo.or.cz/w/isl.git
-DESCRIPTION = Integer Set Library  
+DESCRIPTION = Integer Set Library
 define BLURB
 isl is a library for manipulating sets and relations of integer points
 bounded by linear constraints. Supported operations on sets include
@@ -38,8 +38,8 @@ endef
 
 #https://libisl.sourceforge.io/isl-0.24.tar.xz
 MASTER_SITES = http://libisl.sourceforge.io/
-MASTER_SUBDIR = 
-DISTFILES = $(DISTNAME).tar.xz 
+MASTER_SUBDIR =
+DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =
 LICENSE = MIT
 

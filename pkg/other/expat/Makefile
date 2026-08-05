@@ -22,8 +22,8 @@
 
 NAME =    expat
 GARNAME = expat
-GARVERSION = 2.8.1
-GARVALT = 2_8_1
+GARVERSION = 2.8.2
+GARVALT = 2_8_2
 HOME_URL = https://libexpat.github.io/
 DESCRIPTION = XML parser C library
 define BLURB
@@ -31,13 +31,13 @@ endef
 
 LICENSE = same as the MIT/X Consortium
 ######################################################################
-# https://github.com/libexpat/libexpat/releases/download/R_2_7_2/expat-2.7.2.tar.lz
 # https://github.com/libexpat/libexpat/releases/download/R_2_8_1/expat-2.8.1.tar.lz
 MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR = libexpat/libexpat/releases/download/R_$(GARVALT)/
 DISTFILES =  $(DISTNAME).tar.lz
 SIGFILES =   $(DISTNAME).tar.lz.asc
 
+INSTALL_SCRIPTS = me
 BUILDDEPS =
 LIBDEPS =
 
@@ -48,5 +48,10 @@ include config.mk
 
 # avoiding annoyance, your option
 #CONFIGURE_ARGS = --without-docbook --prefix=$(prefix)
+CONFIGURE_ARGS = DOCBOOK_TO_MAN="xmlto man --skip-validation"
+
+install-me:
+	make install DESTDIR=$(packageDESTDIR)
+# not right.. FIXME
 
 
