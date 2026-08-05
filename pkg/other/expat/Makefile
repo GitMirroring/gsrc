@@ -37,7 +37,7 @@ MASTER_SUBDIR = libexpat/libexpat/releases/download/R_$(GARVALT)/
 DISTFILES =  $(DISTNAME).tar.lz
 SIGFILES =   $(DISTNAME).tar.lz.asc
 
-INSTALL_SCRIPTS = me
+#INSTALL_SCRIPTS = me
 BUILDDEPS =
 LIBDEPS =
 
@@ -50,8 +50,8 @@ include config.mk
 #CONFIGURE_ARGS = --without-docbook --prefix=$(prefix)
 CONFIGURE_ARGS = DOCBOOK_TO_MAN="xmlto man --skip-validation"
 
-install-me:
-	make install DESTDIR=$(packageDESTDIR)
+#install-me:
+#	make install DESTDIR=$(packageDESTDIR)
 # not right.. FIXME
 
 
