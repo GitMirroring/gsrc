@@ -34,23 +34,17 @@ built-in interface to the Tk widget system.
 endef
 
 ######################################################################
-# https://git.savannah.gnu.org/cgit/gcl.git/snapshot/gcl-Version_2_6_13.tar.gz
 # https://git.savannah.gnu.org/cgit/gcl.git/snapshot/gcl-Version_2_7_0pre26.tar.gz
 MASTER_SITES = $(MASTER_GNU)
 #MASTER_SITES =  https://git.savannah.gnu.org/
-#MASTER_SUBDIR = cgit/gcl.git/snapshot/
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
-WORKOBJ =  $(WORKSRC)
-#PATCHFILES = $(DISTNAME)-emacs-default.diff
 INFO_FILES = $(GARNAME)-si.info $(GARNAME)-tk.info
 
-#WORKSRC = $(WORKDIR)/$(DISTNAME)/gcl/
-#WORKOBJ = $(WORKDIR)/$(DISTNAME)-build
 WORKOBJ = $(WORKSRC)
 BUILDDEPS =
-LIBDEPS = 
+LIBDEPS =
 #readline
 ######################################################################
 
@@ -58,3 +52,4 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+# FIXME build install usr/local

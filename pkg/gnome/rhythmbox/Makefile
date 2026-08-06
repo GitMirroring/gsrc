@@ -20,7 +20,7 @@
 
 NAME =    rhythmbox
 GARNAME = rhythmbox
-GARVERSION = 3.4.8
+GARVERSION = 3.5.0
 HOME_URL = https://wiki.gnome.org/Apps/Rhythmbox
 DESCRIPTION = Music playback and management application
 define BLURB

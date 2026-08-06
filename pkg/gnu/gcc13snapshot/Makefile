@@ -22,14 +22,14 @@
 NAME = The GNU Compiler Collection version 13 development version
 GARNAME = gcc13snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 13-20260729
+GARVERSION = 13-20260805
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 13 snapshot
 define BLURB
 GCC is the GNU Compiler Collection.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
-Fortran, Ada, D, Go, and Modula 2. With runtime
-support libraries for these languages.
+Fortran, Ada, D, Go, and Modula 2. With runtime support libraries for
+these languages.
 endef
 
 # if downloading not working, look here:
