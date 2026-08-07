@@ -22,11 +22,11 @@
 NAME = The GNU Compiler Collection version 16
 GARNAME = gcc16
 UPSTREAMNAME = gcc
-GARVERSION = 16.1.0
+GARVERSION = 16.2.0
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 16
 define BLURB
-GCC is the GNU Compiler Collection.  It provides compiler front-ends
+GCC is the GNU Compiler Collection 16.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
 Fortran, Ada, D, Go, Rust, Modula 2, Cobol, and Algol68 with runtime
 support libraries for these languages.
