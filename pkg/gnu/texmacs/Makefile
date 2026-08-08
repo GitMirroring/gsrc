@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -19,7 +19,8 @@
 NAME = TeXmacs
 GARNAME = texmacs
 UPSTREAMNAME = TeXmacs
-GARVERSION = 2.1.1
+GARVERSION = 2.1.5
+SUBVERSION = 15315
 HOME_URL = http://www.gnu.org/software/texmacs/
 DESCRIPTION = Editing platform with special features for scientists
 define BLURB
@@ -36,19 +37,16 @@ endef
 MASTER_SITES = http://www.texmacs.org/
 MASTER_SUBDIR = Download/ftp/tmftp/source/
 DISTFILES = $(DISTNAME)-src.tar.gz
-SIGFILES = 
-WORKSRC = $(WORKDIR)/$(DISTNAME)-src
-WORKOBJ = $(WORKDIR)/$(DISTNAME)-build
+SIGFILES =
+WORKSRC = $(WORKDIR)/$(DISTNAME).$(SUBVERSION)
+WORKOBJ = $(WORKSRC)-build
 
 BUILDDEPS =  freetype guile
 LIBDEPS =
-#  qt 
-#  not sure which qt package is needed.... FIXME
-# HINT sudo apt install libqt5svg5-dev
 
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk
-#include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
 
