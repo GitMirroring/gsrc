@@ -24,12 +24,14 @@ GARVERSION = 3.20
 HOME_URL = http://www.gnu.org/software/emacs-muse/
 DESCRIPTION = Authoring and publishing environment for Emacs
 define BLURB
-Muse is an authoring and publishing environment for GNU Emacs.  It
-supports entering text in a convenient and easy-to-learn format.
-Later, your documents may be published in a variety of different
-formats, such as HTML, LaTeX or PDF.  Muse supports projects
-consisting of several documents, which are properly merged according
-to the output format.
+Muse is an authoring and publishing environment for GNU Emacs. It
+supports entering text in a convenient and easy-to-learn format.  Later,
+your documents may be published in a variety of different formats, such
+as HTML, LaTeX or PDF.  Muse supports projects consisting of several
+documents, which are properly merged according to the output format.
+Emacs Muse consists of two main parts: an enhanced text-mode for authoring
+documents and navigating within Muse projects, and a set of publishing
+styles for generating different kinds of output.
 endef
 
 ######################################################################
@@ -39,36 +41,39 @@ MASTER_SITES = https://github.com
 MASTER_SUBDIR = alexott
 GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/$(UPSTREAMNAME).git
 
-NOCHECKSUM = $(DISTFILES)
 SIGFILES =
+GIT_REVISION = master
+GITSRC  =  $(DOWNLOADDIRGIT)/$(UPSTREAMNAME)
 
-GIT_REVISION = master	
-GITSRC  =  $(BASEDIRABS)/$(DOWNLOADDIRGIT)/$(GARNAME)
-WORKSRC = $(GITSRC)
-
-WORKOBJ =  $(WORKSCR)
-
+WORKOBJ =  $(WORKSRC)
 CONFIGURE_SCRIPTS =
-
-BUILD_SCRIPTS = $(WORKSRC)/Makefile
-INSTALL_SCRIPTS = $(WORKSRC)/Makefile
+#BUILD_SCRIPTS = $(WORKSRC)/Makefile
+#INSTALL_SCRIPTS = $(WORKSRC)/Makefile
 INFO_FILES = $(UPSTREAMNAME)
 
-BUILDDEPS =
-LIBDEPS = # emacs
+BUILDDEPS = emacs
+LIBDEPS =
 
 ######################################################################
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-post-fetch: fetch-git
-	echo $(BASEDIRABS)
-	echo $(DOWNLOADDIRGIT)
-	echo $(GARNAME)
-	echo $(GITSRC)
-	echo $(WORKSRC)
-	echo $(WORKOBJ)
+.PHONY: checkdirs
+
+checkdirs:
+	@echo checking....
+	@echo $(DOWNLOADDIRGIT)
+	@echo $(GARNAME)
+	@echo $(GITSRC)
+	@echo $(WORKSRC)
+	@echo $(WORKOBJ)
+
+fetch: fetch-git
+
+post-fetch:
+	mkdir -p $(WORKSRC)
+	cp -a $(GITSRC)/*  $(WORKSRC)
 
 pre-build:
 	cp $(WORKSRC)/Makefile.defs.default $(WORKSRC)/Makefile.defs
@@ -76,3 +81,12 @@ pre-build:
 	sed -i -e 's|\(DESTDIR  =\)|\1$(packageDESTDIR)|' $(WORKSRC)/Makefile.defs
 	$(MAKECOOKIE)
 
+post-build post-install:
+	@echo --------------------------------------------------
+	@echo --------------------------------------------------
+	@echo --------------------------------------------------
+	@echo a lot of build errors, but in installs anyway
+	@echo just try it, maybe it works
+	@echo --------------------------------------------------
+	@echo --------------------------------------------------
+	@echo --------------------------------------------------
