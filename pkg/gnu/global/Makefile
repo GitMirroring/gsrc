@@ -22,7 +22,7 @@
 
 NAME = global
 GARNAME = global
-GARVERSION = 6.6.15
+GARVERSION = 6.7
 HOME_URL = http://www.gnu.org/software/global/
 DESCRIPTION = Cross-environment source code tag system
 define BLURB
