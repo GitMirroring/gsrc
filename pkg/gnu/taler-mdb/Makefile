@@ -21,7 +21,7 @@
 
 NAME = taler-mdb
 GARNAME = taler-mdb
-GARVERSION = 1.5.0
+GARVERSION = 1.6.0
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler is a privacy-preserving payment system, merchant snack machine
 define BLURB
@@ -38,10 +38,11 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-
+WORKOBJ = $(WORKSRC)
 
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
 

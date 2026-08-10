@@ -1,4 +1,4 @@
-# Copyright ©2021-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,12 +20,17 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = taler-twister
-GARNAME = taler-twister
-GARVERSION = 1.6.0
+NAME = paivana
+GARNAME = paivana
+GARVERSION = 1.6.2
 HOME_URL = http://taler.net
-DESCRIPTION = GNU Taler-twister
+DESCRIPTION = GNU Taler  payment system. paivana reverse proxy
 define BLURB
+Paivana is an HTTP reverse proxy that gates access to a target website
+behind a GNU Taler payment.  Unpaid visitors receive a paywall page
+where they can pay using a GNU Taler wallet; once payment is confirmed
+the request is forwarded transparently to the configured upstream
+server.
 endef
 
 ######################################################################
@@ -38,8 +43,11 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 BUILDDEPS =
 LIBDEPS =
 
+WORKOBJ = $(WORKSRC)
+
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration

@@ -21,7 +21,7 @@
 
 NAME = challenger
 GARNAME = challenger
-GARVERSION = 1.5.0
+GARVERSION = 1.6.1
 HOME_URL = http://taler.net
 DESCRIPTION = challenger is part of taler payment system
 define BLURB
@@ -43,6 +43,7 @@ BUILDDEPS =
 LIBDEPS =
 
 # needs gnunet
+WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk

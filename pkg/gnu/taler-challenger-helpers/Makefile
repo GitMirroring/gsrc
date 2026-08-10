@@ -1,8 +1,7 @@
-# Copyright ©2021-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
-#
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -20,26 +19,28 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = taler-twister
-GARNAME = taler-twister
-GARVERSION = 1.6.0
+NAME = taler-challenger-helpers
+GARNAME = taler-challenger-helpers
+GARVERSION = 1.6.1
 HOME_URL = http://taler.net
-DESCRIPTION = GNU Taler-twister
+DESCRIPTION = taler-challenger-helpers
 define BLURB
 endef
 
 ######################################################################
+#  https://ftp.gnu.org/gnu/taler/libeufin-1.2.0.tar.gz
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = taler/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = $(DISTNAME).tar.gz.sig
+SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-
+WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
 

@@ -20,7 +20,7 @@
 
 NAME    = anastasis
 GARNAME = anastasis
-GARVERSION = 0.8.0
+GARVERSION = 0.8.1
 HOME_URL = http://www.gnu.org/software/anastasis
 DESCRIPTION = GNU Anastasis is a key backup and recovery tool
 define BLURB

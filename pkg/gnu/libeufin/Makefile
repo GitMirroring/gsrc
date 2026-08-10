@@ -1,4 +1,4 @@
-# Copyright ©2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = libeufin
 GARNAME = libeufin
-GARVERSION = 1.5.0
+GARVERSION = 1.6.8
 HOME_URL = http://taler.net
 DESCRIPTION = libeufin some EU thing for taler payment system
 define BLURB
@@ -37,7 +37,6 @@ SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-WORKSRC = $(WORKDIR)/libeufin-v1.5.0-git-2cd963d8-sources
 WORKOBJ = $(WORKSRC)
 ######################################################################
 

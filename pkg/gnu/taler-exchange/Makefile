@@ -22,7 +22,7 @@
 
 NAME = taler-exchange
 GARNAME = taler-exchange
-GARVERSION = 1.5.2
+GARVERSION = 1.6.13
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler is a privacy-preserving payment system. Exchange part.
 define BLURB
@@ -39,9 +39,11 @@ BUILDDEPS =
 LIBDEPS = #gnunet libmicrohttpd
 # libjansson ? postgresql
 
+WORKOBJ = $(WORKSRC)
+
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-
+BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration

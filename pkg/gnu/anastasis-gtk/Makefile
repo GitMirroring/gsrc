@@ -20,7 +20,7 @@
 
 NAME = anastasis-gtk
 GARNAME = anastasis-gtk
-GARVERSION = 0.8.0
+GARVERSION = 0.8.1
 HOME_URL = http://www.gnu.org/software/anastasis
 DESCRIPTION = GNU key manager gui
 define BLURB

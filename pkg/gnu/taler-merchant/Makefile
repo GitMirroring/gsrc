@@ -22,7 +22,7 @@
 
 NAME = taler-merchant
 GARNAME = taler-merchant
-GARVERSION = 1.5.9
+GARVERSION = 1.6.16
 HOME_URL = http://taler.net
 DESCRIPTION = GNU Taler is a privacy-preserving payment system, merchant part.
 define BLURB
@@ -39,6 +39,7 @@ BUILDDEPS =
 LIBDEPS = # libgcrypt gnunet
 # libjansson , ? some json thing; postgresql
 
+WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
