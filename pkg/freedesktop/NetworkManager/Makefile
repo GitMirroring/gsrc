@@ -20,7 +20,7 @@
 
 NAME =    NetworkManager
 GARNAME = NetworkManager
-GARVERSION = 1.56.0
+GARVERSION = 1.58.0
 HOME_URL = https://wiki.gnome.org/Projects/NetworkManager
 DESCRIPTION =  NetworkManager
 define BLURB
@@ -28,18 +28,9 @@ endef
 
 ######################################################################
 
-#empty:=
-#space:= $(empty) $(empty)
-#VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-#SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
-#
-#MASTER_SITES = $(MASTER_GNOME)
-#MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
-#DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
-#SIGFILES =
 # https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/archive/1.56.0/NetworkManager-1.56.0.tar.bz2
 MASTER_SITES = https://gitlab.freedesktop.org/
-MASTER_SUBDIR = NetworkManager/NetworkManager/-/archive/1.56.0/
+MASTER_SUBDIR = NetworkManager/NetworkManager/-/archive/$(GARVERSION)/
 DISTFILES  = $(DISTNAME).tar.bz2
 
 # HINT:
@@ -48,9 +39,7 @@ DISTFILES  = $(DISTNAME).tar.bz2
 #  libnetw-dev libaudit-dev  libndp
 BUILDDEPS =
 LIBDEPS =
-
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
-

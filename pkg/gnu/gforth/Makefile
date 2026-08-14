@@ -22,7 +22,7 @@
 NAME = Gforth
 GARNAME = gforth
 #GARVERSION = 0.7.3
-GARVERSION = 0.7.9_20260715
+GARVERSION = 0.7.9_20260729
 HOME_URL = https://gforth.org
 # or HOME_URL = https://www.gnu.org/software/gforth/
 DESCRIPTION = Forth interpreter, with virtual machine generator "vmgen"
@@ -40,7 +40,6 @@ MASTER_SUBDIR = forth/$(GARNAME)/Snapshots/$(GARVERSION)/
 #  https://git.savannah.gnu.org/cgit/gforth.git/snapshot/gforth-0.7.9_20241113.tar.gz
 #MASTER_SITES = http://git.savannah.gnu.org/
 #MASTER_SUBDIR = cgit/gforth.git/snapshot/
-#DISTFILES = $(DISTNAME).tar.gz
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES  =
 INFO_FILES = $(GARNAME).info vmgen.info

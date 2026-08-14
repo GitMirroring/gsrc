@@ -15,9 +15,9 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
-NAME = Wdiff
+NAME = wdiff
 GARNAME = wdiff
-GARVERSION = 1.2.2
+GARVERSION = 1.2.3
 HOME_URL = http://www.gnu.org/software/wdiff/
 DESCRIPTION = Word difference finder
 define BLURB

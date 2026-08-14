@@ -40,9 +40,10 @@ MASTER_SUBDIR = $(UPSTREAMNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
+
 BUILDDEPS = 
 LIBDEPS = 
-
+WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk

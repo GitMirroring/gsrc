@@ -1,4 +1,4 @@
-# Copyright © 2017,2018,2020-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017,2018,2020-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME =    fontconfig
 GARNAME = fontconfig
-GARVERSION = 2.18.1
+GARVERSION = 2.18.3
 HOME_URL = https://www.freedesktop.org/wiki/Software/fontconfig/
 	# or fontconfig.org
 DESCRIPTION = Library for configuring and customizing font access.

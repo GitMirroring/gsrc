@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2019,2021,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2019,2021,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,10 +20,10 @@
 
 NAME =    gtkmm
 GARNAME = gtkmm
-GARVERSION = 4.23.0
+GARVERSION = 4.23.2
 #HOME_URL = http://www.gnome.org/
 HOME_URL = http://www.gtkmm.org/
-DESCRIPTION = C++ bindings for GTK+
+DESCRIPTION = C++ bindings for GTK
 define BLURB
 endef
 

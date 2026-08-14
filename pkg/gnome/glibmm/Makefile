@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2021, 2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2021, 2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    glibmm
 GARNAME = glibmm
-GARVERSION = 2.88.1
+GARVERSION = 2.89.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = C++ bindings for Glib
 define BLURB
