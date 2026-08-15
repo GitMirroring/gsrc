@@ -33,7 +33,6 @@ Scheme procedures and syntax.
 endef
 
 ######################################################################
-# http://groups.csail.mit.edu/mac/ftpdir/scm/slib-3b7.tar.gz
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
@@ -42,7 +41,7 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES =  $(DISTNAME).tar.gz.sig
 
-BUILDDEPS = guile 
+BUILDDEPS =
 # guile,  scm, or other scheme; see README
 LIBDEPS  =
 
@@ -57,8 +56,8 @@ BUILD_SCRIPTS = my
 # Choose the targets you want to install SLIB for. `system' installs SLIB to 
 # $(prefix)/lib/slib for general use with Scheme interpreters; `guile' installs
 # it to $(prefix)/share/guile/slib for use with Guile
-INSTALL_TARGETS =  guile
-#INSTALL_TARGETS = system guile
+#INSTALL_TARGETS =  guile
+INSTALL_TARGETS =  system
 INSTALL_SCRIPTS = $(INSTALL_TARGETS) info
 
 include ../../../gar/gar.lib/autotools.mk
@@ -71,14 +70,9 @@ include config.mk
 atest:
 	@echo $(GNU_INSTALL_ARGS)
 
-#post-extract:
-#	echo s
-##	cd $(WORKDIR) &&  cp -a slib $(packageprefix)/share/
-#	$(MAKECOOKIE)
-
 configure-my:
 	@echo make intro
-	cd $(WORKSRC) &&  DESTDIR=$(packageprefix) ./configure --prefix=$(prefix)
+	cd $(WORKSRC) &&  DESTDIR=$(packageDESTDIR) ./configure --prefix=$(prefix)
 	$(MAKECOOKIE)
 
 #cd $(WORKDIR) &&  ln -s $(DISTNAME) slib
@@ -86,22 +80,29 @@ configure-my:
 
 build-my: 
 	@echo make infoz
-	$(MAKE)	-C $(WORKSRC) DESTDIR=$(packageprefix)  intro
-	$(MAKE) -C $(WORKSRC) DESTDIR=$(packageprefix) infoz
+	$(MAKE)	-C $(WORKSRC) DESTDIR=$(packageDESTDIR)  intro
+	$(MAKE) -C $(WORKSRC) DESTDIR=$(packageDESTDIR) infoz
 	$(MAKECOOKIE)
 
-custom-pre-install:
-	@echo installing
-	DESTDIR=$(packageprefix)   $(MAKE) -C $(WORKSRC) install
+#custom-pre-install:
+#	@echo installing
+#	DESTDIR=$(packageprefix)   $(MAKE) -C $(WORKSRC) install
+
+pre-install:
+	@echo  pre-install
+	mkdir -p $(packageDESTDIR)/share/slib
+	cd $(WORKDIR) &&  cp -a slib-$(GARVERSION)/* $(packageDESTDIR)/share/slib
+#	$(MAKECOOKIE)
+
 
 #DESTDIR=$(packageprefix)   $(MAKE) -C $(WORKSRC) install
 #$(MAKECOOKIE)
 
-install-guile:
-	@echo -e "[$(OK)install$(OFF)] $(MSG)Installing SLIB for Guile$(OFF)"
-	$(MAKE) -C $(WORKSRC) install-lib DESTDIR=$(packageprefix)  \
-		libdir=$(prefix)/share/guile/ $(OUTPUT)
-	$(MAKECOOKIE)
+#install-guile:
+#	@echo -e "[$(OK)install$(OFF)] $(MSG)Installing SLIB for Guile$(OFF)"
+#	$(MAKE) -C $(WORKSRC) install-lib DESTDIR=$(packageprefix)  \
+#		libdir=$(prefix)/share/guile/ $(OUTPUT)
+##	$(MAKECOOKIE)
 #@$(MAKE) -C $(WORKSRC) install-lib DESTDIR=$(packageDESTDIR) \
 
 #install-system: install-$(WORKSRC)/Makefile-DESTDIR

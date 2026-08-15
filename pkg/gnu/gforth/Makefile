@@ -49,7 +49,7 @@ BUILDDEPS =
 LIBDEPS =
 
 #needed:  to find generated config.h . could be different
-WORKOBJ = $(WORKSRC)
+#WORKOBJ = $(WORKSRC)
 
 #CONFIGURE_SCRIPTS = myconfigure
 #BUILD_SCRIPTS = mybuild
@@ -77,8 +77,8 @@ include config.mk
 #	# installs the dependencies for a tarball build
 #	  look at install-deps.sh
 
-CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)  INCLUDE_PATH=arch/amd64
-BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR=$(packageDESTDIR)   CFLAGS+="-I./wayland -I./generic -I./arch/amd64 -I./arch -UBUGGY_LL_MUL -I./work/gforth-0.7.9_20260715/arch/amd64"
+CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR="$(packageDESTDIR)"  INCLUDE_PATH=$(WORKSRC)/arch/amd64  --enable-year2038
+BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR="$(packageDESTDIR)"   CFLAGS="-I./wayland -I./generic -I./arch/amd64 -I./arch -UBUGGY_LL_MUL -I./$(WORKSRC)/arch/amd64"
 
 #./gforth-0.7.9_20260610/wayland/
 

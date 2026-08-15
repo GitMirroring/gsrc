@@ -1,7 +1,6 @@
-# Copyright © 2016,2017,2018,2019,2020,2023-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
-# http://www.gnu.org/software/gsrc
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -18,16 +17,16 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    pygobject
-GARNAME = pygobject
-GARVERSION = 3.57.1
+NAME =    glycin-loaders
+GARNAME = glycin-loaders
+GARVERSION = 1.0.1
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = Python bindings for GObject Introspection
+DESCRIPTION = glycin-loader of images
 define BLURB
 endef
 
 ######################################################################
-
+# https://download.gnome.org/sources/glycin/1.2/glycin-1.2.alpha.9.tar.xz
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
@@ -35,10 +34,9 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
-DISTFILES = $(DISTNAME).tar.gz  $(DISTNAME).sha256sum
+DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
-# apt install python-dev  python3-cairo  python3-cairo-dev python-cairo-dev
 BUILDDEPS =
 LIBDEPS =
 
@@ -46,4 +44,4 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
-
+# FIXME  libjxl wants earlier version

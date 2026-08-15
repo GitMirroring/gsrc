@@ -22,8 +22,8 @@
 
 NAME =    mesa
 GARNAME = mesa
-GARVERSION = 26.1.5
-GVER = 26.1
+GARVERSION = 26.2.0
+GVER = 26.2
 HOME_URL = http://www.mesa3d.org/
 DESCRIPTION = Mesa, 3D graphics, OpenGL 4.5 implementation and more
 define BLURB
@@ -46,10 +46,10 @@ BUILDDEPS = libffi
 LIBDEPS =
 ######################################################################
 # this is annoying:
-SOMEVERSION=bcf312ff5c0d32dd6a80370a51929179613a0ff9
-SRC = mesa-26.1-$(SOMEVERSION)
+SOMEVERSION=aacd123e027ef6d47ba6292ce1e6d20422e070f9
+SRC = mesa-$(GVER)-$(SOMEVERSION)
 WORKSRC = $(WORKDIR)/$(SRC)
-WORKOBJ = $(WORKDIR)/$(SRC)-build
+WORKOBJ = $(WORKSRC)-build
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk

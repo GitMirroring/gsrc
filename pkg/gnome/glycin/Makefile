@@ -19,13 +19,13 @@
 
 NAME =    glycin
 GARNAME = glycin
-GARVERSION = 2.2.alpha.7
+GARVERSION = 2.2.beta
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = glycin, loader of images
 define BLURB
 Glycin allows  decoding images into gdk::Texture
-(https://gtk-rs.org/gtk4-rs/stable/latest/docs/gdk4/struct.Texture.html)
-and to extract image metadata.  The decoding happens in sandboxed modular
+(https://gtk-rs.org/gtk4-rs/stable/latest/docs/gdk4/struct.Texture.html),
+and extracting image metadata.  The decoding happens in sandboxed modular
 image loaders.
 endef
 

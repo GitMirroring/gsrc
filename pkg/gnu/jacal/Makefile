@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020,2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020,2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,8 +22,7 @@
 
 NAME = JACAL
 GARNAME = jacal
-GARVERSION = 1c7
-#GARVERSION = 1c8 seems to have disappeared
+GARVERSION = 2a1
 HOME_URL =  http://www.gnu.org/software/jacal
 DESCRIPTION = Symbolic mathematics system in scheme
 define BLURB
@@ -44,14 +43,18 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 
-BUILDDEPS = scm
-LIBDEPS = slib
+BUILDDEPS = #scm
+LIBDEPS = #slib
 
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+pre-configure:
+	cd $(WORKSRC) && chmod a+x configure
+
 
 # for the old website, relics saved for sanity purposes
 #post-extract:
