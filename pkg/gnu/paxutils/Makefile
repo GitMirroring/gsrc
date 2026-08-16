@@ -39,10 +39,12 @@ COLLISIONS = bin/tar
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=-std=c89  -Wno-implicit-int
+
 pre-configure:
-	@chmod +x $(WORKSRC)/configure
+	chmod +x $(WORKSRC)/configure
 	$(MAKECOOKIE)

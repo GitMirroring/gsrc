@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020, 2022, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020, 2022, 2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = SLIB scheme library
 GARNAME = slib
-GARVERSION = 3c1
+GARVERSION = 3c2
 HOME_URL =  http://www.gnu.org/software/slib
 DESCRIPTION = Portable library for Scheme
 define BLURB

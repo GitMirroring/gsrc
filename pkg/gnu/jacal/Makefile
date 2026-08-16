@@ -35,11 +35,13 @@ endef
 
 # old MASTER_SITES = http://groups.csail.mit.edu/
 # old MASTER_SUBDIR = mac/ftpdir/scm/
-# old DISTFILES = $(DISTNAME).zip
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
+#AlgebraLambda.pdf .sig
+# ratint.pdf
+# jacal-2a1.pdf
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 

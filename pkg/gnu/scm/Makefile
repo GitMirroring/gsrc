@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2020, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2020, 2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,8 +21,8 @@
 
 NAME = SCM
 GARNAME = scm
-GARVERSION = 5f4
-HOME_URL =  http://www.gnu.org/software/scm 
+GARVERSION = 5f5
+HOME_URL =  http://www.gnu.org/software/scm
   # or http://people.csail.mit.edu/jaffer/SCM
 DESCRIPTION = A scheme implementation, includes scheme-to-c compiler
 define BLURB
@@ -35,41 +35,37 @@ endef
 ######################################################################
 
 # old MASTER_SITES = http://groups.csail.mit.edu/
-# old MASTER_SUBDIR = mac/ftpdir/$(GARNAME)/
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz 
+DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
-
 
 INFO_FILES = $(GARNAME).info hobbit.info Xlibscm.info
 
-BUILDDEPS = 
+BUILDDEPS =
 # slib readline
-LIBDEPS = 
-
+LIBDEPS =
+WORKSRC = $(WORKDIR)/$(GARNAME)-$(GARVERSION)
 WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
- 
+
 #PATCHOPTS = -p2
 #CONFIGURE_ARGS += --oldincludedir=$(prefix)/include
 #CONFIGURE_ARGS += DESTDIR=$(packageprefix)
 
 #BUILD_ARGS += SCHEME_LIBRARY_PATH=$(prefix)/lib/slib/
 
-CONFIGURE_SCRIPTS = my  
-BUILD_SCRIPTS = my  
+CONFIGURE_SCRIPTS = my
+BUILD_SCRIPTS = my
 
 configure-my:
 	echo my conf
 	cd $(WORKSRC) && DESTDIR=$(packageprefix)  ./configure
-
-
 
 build-my: configure-my
 	$(MAKE) -C $(WORKSRC)  scmlit all
@@ -79,7 +75,7 @@ build-my: configure-my
 #  post-configure: configure
 #  	sed -i 's|}\([a-z]\)|}/\1|' $(WORKSRC)/config.status
 #  	$(MAKECOOKIE)
-#  
+#
 #  #	build scmlit
 #  pre-build:  configure
 #  	cd $(WORKDIR) && ln -f  -s scm-$(GARVERSION)  scm
@@ -88,17 +84,15 @@ build-my: configure-my
 #   	$(WORKSRC)/Makefile
 #  	cd $(WORKSRC) && $(BUILD_ENV) make scmlit $(BUILD_ARGS)
 #  	$(MAKECOOKIE)
-#  
+#
 #  build-$(WORKSRC)/Makefile:
 #  	@printf "[$(OK)build$(OFF)] $(MSG)Running make$(OFF)\n"
 #  	cd $(WORKSRC) && $(BUILD_ENV) make all $(BUILD_ARGS)
 #  	$(MAKECOOKIE)
-#  
-#  
+#
 #  #custom-post-install:
 #  #	$(prefix)/bin/scm -br new-catalog
 #  #	$(MAKECOOKIE)
-#  
+#
 #  # ln -s ......slib work/slib
-#  # ...
-  
+
