@@ -56,13 +56,10 @@ post-extract:
 	cd $(WORKDIR) && ln -s  $(DISTNAME) $(GARNAME)
 	$(MAKECOOKIE)
 
-
 post-configure:
 	sed -i -e 's|\(\$${prefix}\)|\1/|' $(WORKSRC)/config.status
 	sed -i -e 's|\(\$${exec_prefix}\)|\1/|' $(WORKSRC)/config.status
 	$(MAKECOOKIE)
-
-
 
 pre-build:
 	sed -i -e 's|ginstall-info|install-info|g' $(WORKSRC)/Makefile
@@ -71,4 +68,4 @@ pre-build:
 	sed -i -e '/\@include csharp/d' $(WORKSRC)/wb.texi
 	$(MAKECOOKIE)
 
-BUILD_ARGS = CFLAGS+="-Wno-incompatible-pointer-types -Wno-pointer-sign"
+BUILD_ARGS = CFLAGS="-Wno-incompatible-pointer-types -Wno-pointer-sign"

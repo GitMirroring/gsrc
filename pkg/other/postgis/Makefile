@@ -1,4 +1,4 @@
-# Copyright ©2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    postgis
 GARNAME = postgis
-GARVERSION = 3.6.0
+GARVERSION = 3.6.4
 HOME_URL = http://osgeo.org/
 DESCRIPTION =  Geospatial Data in postgresql
 define BLURB
@@ -30,8 +30,8 @@ endef
 # https://download.osgeo.org/postgis/source/postgis-3.3.2.tar.gz
 MASTER_SITES =  http://download.osgeo.org/
 MASTER_SUBDIR = $(GARNAME)/source/
-DISTFILES = $(DISTNAME).tar.gz  
-SIGFILES =  
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =

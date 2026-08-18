@@ -1,4 +1,4 @@
-# Copyright © 2019,2022,2024-2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019,2022,2024-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    Weston
 GARNAME = weston
-GARVERSION = 14.0.2
+GARVERSION = 16.0.0
 HOME_URL = https://wayland.freedesktop.org/
 DESCRIPTION = a compositor for Wayland
 define BLURB
@@ -29,7 +29,7 @@ endef
 ######################################################################
 # https://gitlab.freedesktop.org/wayland/weston/-/releases/14.0.1/downloads/weston-14.0.1.tar.xz
 MASTER_SITES = http://gitlab.freedesktop.org/
-MASTER_SUBDIR = wayland/weston/-/releases/$(GARVERSION)/downloads/ 
+MASTER_SUBDIR = wayland/weston/-/releases/$(GARVERSION)/downloads/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =  $(DISTNAME).tar.xz.sig
 

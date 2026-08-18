@@ -1,4 +1,4 @@
-# Copyright ©2021-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -18,9 +18,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =   GNU poke 
+NAME =   GNU poke
 GARNAME = poke
-GARVERSION = 4.3
+GARVERSION = 5.0
 HOME_URL =   http://www.jemarch.net/poke.html
 DESCRIPTION = GNU poke, an extensible editor for structured binary data
 define BLURB

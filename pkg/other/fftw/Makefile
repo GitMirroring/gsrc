@@ -1,4 +1,4 @@
-# Copyright © 2018, 2021,2-26 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -30,8 +30,8 @@ endef
 # http://www.fftw.org/fftw-3.3.8.tar.gz
 MASTER_SITES = http://www.fftw.org/
 MASTER_SUBDIR = /
-DISTFILES = $(DISTNAME).tar.gz  
-SIGFILES  = 
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES  =
 
 BUILDDEPS =
 LIBDEPS =

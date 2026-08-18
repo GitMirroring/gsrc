@@ -1,4 +1,4 @@
-# Copyright © 2017,2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017,2022,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    zlib
 GARNAME = zlib
-GARVERSION = 1.3.1
+GARVERSION = 1.3.2
 HOME_URL = http://www.zlib.net
 DESCRIPTION = zlib compression library 
 define BLURB
@@ -30,8 +30,8 @@ endef
 # https://www.zlib.net/zlib-1.2.12.tar.xz
 
 MASTER_SITES = https://www.zlib.net/
-MASTER_SUBDIR = 
-DISTFILES = $(DISTNAME).tar.xz 
+MASTER_SUBDIR =
+DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.asc
 
 BUILDDEPS =

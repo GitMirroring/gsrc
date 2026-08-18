@@ -22,8 +22,8 @@
 
 NAME =    expat
 GARNAME = expat
-GARVERSION = 2.8.2
-GARVALT = 2_8_2
+GARVERSION = 2.8.3
+GARVALT = 2_8_3
 HOME_URL = https://libexpat.github.io/
 DESCRIPTION = XML parser C library
 define BLURB

@@ -21,7 +21,7 @@
 
 NAME =       boost
 GARNAME =    boost
-GARVERSION = 1.92.0.beta1
+GARVERSION = 1.92.0
 HOME_URL =   https://www.boost.org
 DESCRIPTION =  Peer-reviewed portable C++ source libraries.
 define BLURB
@@ -40,14 +40,14 @@ LICENSE =  Boost Software License, Version 1.0
 # https://archives.boost.io/beta/1.92.0.beta1/source/boost_1_92_0_b1.tar.bz2
 MASTER_SITES = https://archives.boost.io/
 	# fixed: . vs _
-#MASTER_SUBDIR  = release/$(GARVERSION)/source/
-MASTER_SUBDIR  = beta/$(GARVERSION)/source/
+MASTER_SUBDIR  = release/$(GARVERSION)/source/
+#MASTER_SUBDIR  = beta/$(GARVERSION)/source/
 #MASTER_SITES = https://github.com/
 #MASTER_SUBDIR = boostorg/boost/releases/download/boost-$(GARVERSION)/
 GARVERSIONUNDER:= $(subst .,_,$(GARVERSION))
 #DISTFILES =   $(GARNAME)_$(GARVERSIONUNDER).tar.bz2
 # annoying beta name
-DISTFILES =   $(GARNAME)_1_92_0_b1.tar.bz2
+DISTFILES =   $(GARNAME)_1_92_0.tar.bz2
 SIGFILES  =
 
 #WORKSRC =  $(WORKDIR)/$(GARNAME)_$(GARVERSIONUNDER)

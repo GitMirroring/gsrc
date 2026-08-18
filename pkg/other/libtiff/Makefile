@@ -22,7 +22,7 @@
  
 NAME = libtiff
 GARNAME = libtiff
-GARVERSION = 4.7.1
+GARVERSION = 4.7.2
 #HOME_URL = http://gitlab.com/libtiff
 HOME_URL =	http://www.simplesystems.org/libtiff/
 	# www.libtiff.org
@@ -40,7 +40,7 @@ LICENSE = MIT license
 #GIT_REVISION = master	
 
 #https://download.osgeo.org/libtiff/tiff-4.5.0.tar.xz.sig
-MASTER_SITES = https://download.osgeo.org/ 
+MASTER_SITES = https://download.osgeo.org/
 MASTER_SUBDIR = libtiff/
 DISTNAME = tiff-$(GARVERSION)
 DISTFILES = $(DISTNAME).tar.xz
