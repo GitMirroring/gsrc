@@ -1,6 +1,18 @@
-diff -x config.log -x config.status -ru work/nana-2.5/man/Makefile.in work/nana-2.5/man/Makefile.in
---- work/nana-2.5/man/Makefile.in	1999-09-14 00:58:15.000000000 +0200
-+++ work/nana-2.5/man/Makefile.in	2013-01-04 23:37:15.523454655 +0100
+diff -x config.log -x config.status -ru tmp/nana-2.5/configure work/nana-2.5/configure
+--- tmp/nana-2.5/configure	1999-09-11 20:29:27.000000000 -0700
++++ work/nana-2.5/configure	2026-08-18 18:56:28.931526893 -0700
+@@ -1179,7 +1179,7 @@
+ #line 1180 "configure"
+ #include "confdefs.h"
+ 
+-main(){return(0);}
++int main(){return(0);}
+ EOF
+ if { (eval echo configure:1185: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+   ac_cv_prog_cc_works=yes
+diff -x config.log -x config.status -ru tmp/nana-2.5/man/Makefile.in work/nana-2.5/man/Makefile.in
+--- tmp/nana-2.5/man/Makefile.in	1999-09-13 15:58:15.000000000 -0700
++++ work/nana-2.5/man/Makefile.in	2026-08-18 18:52:57.451035327 -0700
 @@ -273,8 +273,8 @@
  install-data-local:
  	@sect=1;				\
@@ -12,3 +24,36 @@ diff -x config.log -x config.status -ru work/nana-2.5/man/Makefile.in work/nana-
  
  # Tell versions [3.59,3.63) of GNU make to not export all variables.
  # Otherwise a system limit (for SysV at least) may be exceeded.
+diff -x config.log -x config.status -ru tmp/nana-2.5/src/I.c work/nana-2.5/src/I.c
+--- tmp/nana-2.5/src/I.c	1999-09-11 20:26:49.000000000 -0700
++++ work/nana-2.5/src/I.c	2026-08-18 19:03:25.150511519 -0700
+@@ -30,6 +30,7 @@
+ 
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <I.h>
+ 
+ /*
+diff -x config.log -x config.status -ru tmp/nana-2.5/src/nana_error.c work/nana-2.5/src/nana_error.c
+--- tmp/nana-2.5/src/nana_error.c	1999-09-11 20:26:50.000000000 -0700
++++ work/nana-2.5/src/nana_error.c	2026-08-18 19:01:18.864033236 -0700
+@@ -30,6 +30,7 @@
+ 
+ #include <nana_error.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ 
+ void nana_error(const char *message) {
+   fprintf(stderr, "nana_error: %s\n", message);
+diff -x config.log -x config.status -ru tmp/nana-2.5/src/nanafilter.c work/nana-2.5/src/nanafilter.c
+--- tmp/nana-2.5/src/nanafilter.c	1999-09-11 20:26:50.000000000 -0700
++++ work/nana-2.5/src/nanafilter.c	2026-08-18 18:58:39.261956447 -0700
+@@ -33,6 +33,7 @@
+ static const char rcs[] ="Id: nanafilter.c,v 1.2 1998/06/10 06:58:55 pjm Exp ";
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ 
+ void do_input(void);
+ void do_string(void);

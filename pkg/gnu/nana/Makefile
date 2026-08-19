@@ -1,4 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
+# 2026
 #
 # This file is part of GSRC.
 #
@@ -15,7 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
-NAME = Nana
+NAME = nana
 GARNAME = nana
 GARVERSION = 2.5
 HOME_URL = http://www.gnu.org/software/nana/
@@ -41,6 +42,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
