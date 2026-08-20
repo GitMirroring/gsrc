@@ -55,7 +55,6 @@ WORKOBJ = $(WORKSRC)-build
 BUILDDEPS =
 LIBDEPS =
 
-#BUILD_SCRIPTS = it
 LICENSE = apache
 ######################################################################
 
@@ -66,16 +65,4 @@ include config.mk
 CMAKE_CONFIGURE_ARGS += --preset="release" -B . -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$(prefix) -DINSTALL_PREFIX=$(prefix)
 CMAKE_INSTALL_PREFIX = $(prefix)
 
-# abandon git approach for now:
-#.PHONY: build-it
-#fetch: fetch-git
-
-#post-fetch:
-#	$(MAKE) fetch-gitrecursive
-#	#cd $(GITSRC) && git pull --recurse-submodules
-
-#build-it:  post-fetch
-#	mkdir -p $(WORKOBJ)
-#	cd $(WORKOBJ)  && $(MAKE)
-#	$(MAKECOOKIE)
-
+# abandon git approach for now

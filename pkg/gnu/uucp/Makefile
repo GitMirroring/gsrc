@@ -42,4 +42,4 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types
+BUILD_ARGS = CFLAGS="-Wno-incompatible-pointer-types -std=c89"

@@ -20,7 +20,7 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Tar
+NAME = tar
 GARNAME = tar
 GARVERSION = 1.35
 HOME_URL = http://www.gnu.org/software/tar/
@@ -50,3 +50,4 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=-DHAVE_ACL
