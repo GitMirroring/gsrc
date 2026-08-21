@@ -22,7 +22,7 @@
 
 NAME = ed
 GARNAME = ed
-GARVERSION = 1.22.5
+GARVERSION = 1.22.6
 HOME_URL = http://www.gnu.org/software/ed/
 DESCRIPTION = Line-oriented text editor
 define BLURB
