@@ -35,7 +35,6 @@ endef
 LICENSE =  Boost Software License, Version 1.0
 
 ######################################################################
-# https://github.com/boostorg/boost/releases/download/boost-1.89.0.beta1/boost-1.89.0.beta1-cmake.7z
 # https://archives.boost.io/release/1.90.0/source/boost_1_90_0.tar.bz2
 # https://archives.boost.io/beta/1.92.0.beta1/source/boost_1_92_0_b1.tar.bz2
 MASTER_SITES = https://archives.boost.io/
