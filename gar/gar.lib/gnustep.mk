@@ -16,5 +16,6 @@ CONFIGURE_ENV += $(GS_SETUP) &&
 BUILD_ENV += $(GS_SETUP) &&
 INSTALL_ENV += $(GS_SETUP) &&
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
+
 

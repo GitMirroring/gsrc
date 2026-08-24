@@ -1,6 +1,6 @@
 
 # for diagnostic purposes
-inf varb:
+inf varb what:
 	@echo prefix       $(prefix)
 	@echo WORKSRC       $(WORKSRC)
 	@echo WORKOBJ       $(WORKOBJ)

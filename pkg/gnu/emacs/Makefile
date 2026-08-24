@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = Emacs
 GARNAME = emacs
-GARVERSION = 30.2
+GARVERSION = 31.1
 MINOR_UPDATE = ""
 HOME_URL = http://www.gnu.org/software/emacs/
 DESCRIPTION = The extensible, customizable, self-documenting text editor

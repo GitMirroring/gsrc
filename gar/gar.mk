@@ -113,6 +113,7 @@ include $(GARDIR)/gar.master.mk
 include $(GARDIR)/gar.lib.mk
 # for maintainers; anyone could be one
 include $(GARDIR)/gsrc-maint.mk
+include $(GARDIR)/diag.mk
 
 -include $(GARDIR)/gar.site.mk
 

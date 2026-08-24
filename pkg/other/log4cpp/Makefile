@@ -1,4 +1,4 @@
-# Copyright © 2019,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019,2024,2026Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -17,7 +17,7 @@
 
 NAME = log4cpp
 GARNAME = log4cpp
-GARVERSION = 1.1.5rc1
+GARVERSION = 1.1.6
 HOME_URL =	https://sourceforge.net/projects/log4cpp/
 DESCRIPTION = logging tools and library for C++
 define BLURB
@@ -39,7 +39,6 @@ WORKSRC = $(WORKDIR)/$(GARNAME)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
-#include ../../../gar/gar.lib/info.mk
 include config.mk
 
 

@@ -24,7 +24,7 @@
 
 NAME = GNUstep-tools-make
 #GARNAME = gnustep-make 
-GARNAME = tools-make
+GARNAME = gnustep-tools-make
 GARVERSION = master
 HOME_URL = http://www.gnustep.org/
 DESCRIPTION = global GNUstep Makefile package tools-make
@@ -47,14 +47,14 @@ WORKOBJ =  $(WORKSRC)
 
 BUILDDEPS =
 LIBDEPS =
-CONFIGURE_SCRIPTS = gsrc
+CONFIGURE_SCRIPTS = forgsrc
 BUILD_SCRIPTS = nothing
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-.PHONY:  configure-gsrc build-nothing custom-post-install
+.PHONY:  configure-forgsrc build-nothing custom-post-install
 
 fetch: fetch-git
 
@@ -63,7 +63,7 @@ pre-extract: fetch
 	mkdir -p $(WORKOBJ)
 	cp -a $(GITSRC)/$(GARNAME)/*   $(WORKSRC)/
 
-configure-gsrc:
+configure-forgsrc:
 	@echo configuring --with-layout=fhs  --prefix=$(prefix)
 	cd $(WORKSRC) &&  ./configure --with-layout=fhs  --prefix=$(prefix)
 
@@ -76,8 +76,6 @@ custom-post-install:
 	@echo Installing $(prefix)/GNUstep/Documentation
 	@echo Installing $(prefix)/GNUstep/Documentation
 	make -C $(WORKSRC)/Documentation/ install  DESTDIR=$(packageDESTDIR)
-
-#info files; not right,not using DEST...
 
 
 
