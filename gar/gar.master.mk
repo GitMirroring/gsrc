@@ -1,5 +1,6 @@
-# Master site definitions for GARStow ports.
-#
+# Master site definitions for GARStow ports, and more recently GSRC.
+
+# 2026 more tweaks
 # Copyright (C) 2013, 2014 Brandon Invergo <brandon@invergo.net>
 # Copyright (C) 2010, 2011, 2012 Free Software Foundation
 # Copyright (C) 2006, 2007, 2008, 2009, 2010 Adam Sampson
@@ -19,16 +20,16 @@ MASTER_BERLIOS ?= \
     http://download.berlios.de/ \
     http://download2.berlios.de/
 MASTER_CPAN ?= \
-    ftp://ftp.cpan.org/pub/CPAN/ \
-    http://search.cpan.org/CPAN/
+    http://search.cpan.org/CPAN/  \
+    ftp://ftp.cpan.org/pub/CPAN/
 MASTER_CTAN ?= \
     ftp://tug.ctan.org/tex-archive/ \
     ftp://cam.ctan.org/tex-archive/ \
     ftp://dante.ctan.org/tex-archive/
 MASTER_DEBIAN ?= \
+    http://archive.debian.org/debian/pool/ \
     ftp://ftp.us.debian.org/debian/pool/ \
-    ftp://ftp.de.debian.org/debian/pool/ \
-    http://archive.debian.org/debian/pool/ 
+    ftp://ftp.de.debian.org/debian/pool/
 MASTER_DISTFILES ?= \
     http://offog.org/files/garstow-distfiles/ \
     ftp://ftp.i-scream.org/pub/offog.org/files/garstow-distfiles/
@@ -121,16 +122,16 @@ MASTER_WHEREVER ?= \
     http://search.mirrorservice.org/wherever/
 MASTER_XORG ?= \
         https://xorg.freedesktop.org/ \
-    http://www.mirrorservice.org/sites/ftp.x.org/pub/ \
-    http://ftp.gwdg.de/pub/x11/x.org/pub/ \
-    http://ftp.skynet.be/pub/ftp.x.org/pub/ \
+    https://www.x.org/pub/ \
+    https://www.mirrorservice.org/sites/ftp.x.org/pub/ \
+    https://ftp.gwdg.de/pub/x11/x.org/pub/ \
+    https://ftp.skynet.be/pub/ftp.x.org/pub/ \
     ftp://ftp.opengroup.org/pub/x.org/pub/ \
-    http://www2.x.org/pub/ \
     ftp://ftp.x.org/pub/
 MASTER_XORG_INDIVIDUAL ?= \
-    http://xorg.freedesktop.org/releases/individual/
+    https://xorg.freedesktop.org/releases/individual/
 MASTER_FREEDESKTOP ?= \
-    http://freedesktop.org/
+    https://freedesktop.org/
 MASTER_GSTREAMER ?= \
-    http://gstreamer.freedesktop.org
+    https://gstreamer.freedesktop.org
 

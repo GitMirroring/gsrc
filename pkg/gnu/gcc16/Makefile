@@ -39,7 +39,7 @@ endef
 ######################################################################
 # https://ftp.gnu.org/gnu/gcc/gcc-16.1.0/gcc-16.1.0.tar.xz
 
-#MASTER_SITES = $(MASTER_GNU)
+MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = gnu/gcc/gcc-$(GARVERSION)/
 DISTNAME= $(UPSTREAMNAME)-$(GARVERSION)
 DISTFILES = $(DISTNAME).tar.xz

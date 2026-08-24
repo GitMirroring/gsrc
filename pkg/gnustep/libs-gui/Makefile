@@ -66,8 +66,8 @@ WORKOBJ  = $(WORKSRC)
 
 SIGFILES =
 
-BUILDDEPS = tools-make libs-base  libtiff
-LIBDEPS = 
+BUILDDEPS =  tools-make libs-base # libtiff
+LIBDEPS =
 ######################################################################
 
 include ../../../gar/gar.lib/gnustep.mk
@@ -75,7 +75,7 @@ include config.mk
 
 fetch: fetch-git
 
-pre-extract: fetch
+post-fetch: fetch-git
 	mkdir -p $(WORKSRC)
 	cp -a $(GITSRC)/* $(WORKSRC)
 

@@ -25,6 +25,7 @@ DESCRIPTION = Perl code which is useful in biology
 define BLURB
 BioPerl is a collection of Perl modules that facilitate the development of Perl
 scripts for bioinformatics applications.
+Called "bioperl-live" on github.
 endef
 LICENSE = Artistic License or GPLv3
 
@@ -51,3 +52,6 @@ build-$(WORKSRC)/Build.PL:
 install-Build:
 	cd $(WORKSRC) && ./Build install
 	$(MAKECOOKIE)
+
+
+# FIXME probably better to use cpan in a cpan way.

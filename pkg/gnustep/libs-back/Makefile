@@ -46,18 +46,20 @@ WORKOBJ  = $(WORKSRC)
 
 SIGFILES =
 
-BUILDDEPS =# tools-make libs-base  libs-gui cairo
+BUILDDEPS = tools-make libs-base   libs-gui cairo
 LIBDEPS =
 ######################################################################
 
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
+BUILD_ARGS = LDFLAGS=-lgnustep-base
+
 .PHONY: post-intall
 
 fetch: fetch-git
 
-pre-extract: fetch
+post-fetch: fetch-git
 	mkdir -p $(WORKSRC)
 	cp -a $(GITSRC)/*   $(WORKSRC)
 

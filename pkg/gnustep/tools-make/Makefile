@@ -24,7 +24,7 @@
 
 NAME = GNUstep-tools-make
 #GARNAME = gnustep-make 
-GARNAME = gnustep-tools-make
+GARNAME = tools-make
 GARVERSION = master
 HOME_URL = http://www.gnustep.org/
 DESCRIPTION = global GNUstep Makefile package tools-make
