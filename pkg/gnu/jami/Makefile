@@ -20,9 +20,9 @@
 
 NAME =  Jami, formerly "Ring"
 GARNAME = jami
-GARVERSION = 20260811.0
+GARVERSION = 20260819.0
 HOME_URL = https://jami.net
-DESCRIPTION = A privacy-respecting communication program for video, voice, text, data
+DESCRIPTION = A privacy-respecting comm program for video, voice, text, data
 define BLURB
 Jami is a program for universal communication which respects freedoms and
 privacy of its users. Jami uses distributed hash tables for establishing
@@ -52,15 +52,14 @@ LIBDEPS =
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-# not  right
-CMAKE_CONFIGURE_ARGS = -DENABLE_LIBWRAP=0 --debug-find-pkg=Qt6Positioning    -DQT_DEBUG_FIND_PACKAGE=ON 
+# not  right yet?
+CMAKE_CONFIGURE_ARGS = -DENABLE_LIBWRAP=0 --debug-find-pkg=Qt6Positioning    -DQT_DEBUG_FIND_PACKAGE=ON
 #--debug-find-pkg=Qt6WebEngineCore
 # CMAKE_CONFIGURE_ARGS =  --debug-find-pkg=Qt6WebEngineCore
-# something wrong  FIXME
-#BUILD_ARGS = CFLAGS+=ENABLE_LIBWRAP=0
 
 pre-install:
 	@echo read INSTALL.md to be told how to install qt6.6 which is needed...
 
 #  HINT apt install libqt6webenginecore libqt6webenginecore6-bin/
 #  sudo apt install qt6-multimedia-dev
+

@@ -32,7 +32,7 @@ endef
 ######################################################################
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR =  $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz 
+DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  =  $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
