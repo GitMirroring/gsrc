@@ -22,17 +22,23 @@ GARVERSION = 26.1
 HOME_URL = http://www.gnu.org/software/gcompris/
 DESCRIPTION = "Educational" games for small children
 define BLURB
-GCompris is a suite of "educational" software for children.  It features a
-variety of activities suitable for kids aged 2 to 10 years old.  The suite
-includes activities to introduce and develop skills in computer use,
-algebra, science, reading and more.  It also features some games such
-as chess and sudoku. Comment: Better to educate human children with
-humans, not a device. You will get more love from your children if
-you show love. However, software is provided here in the interests of
-freedom. Former users of gcompris, now you are old enough to read the
-source code of the software you were programmed on. Do you feel resentment
-or gratefulness? If you are reading this, please consider whether or not
-you have an unhealthy addiction to computers.
+GCompris is a suite of "educational" software for children.  It features
+a variety of activities suitable for kids (human, not goats) aged 2 to
+10 years old.
+computer discovery: keyboard, mouse, touchscreen ...
+reading: letters, words, reading practice, typing text ...
+arithmetic: numbers, operations, table memory, enumeration, double entry table ...
+science: the canal lock, the water cycle, renewable energy ...
+geography: countries, regions, culture ...
+games: sudoku, chess, memory, align 4, hangman, tic-tac-toe ...
+other: colors, shapes, Braille, learn to tell time ...
+Comment: Better to educate human children with human teachers,
+not a device. You will get more love from your children if you
+show love. However, software is provided here in the interests of
+freedom. Former users of gcompris, now you are old enough to read
+the source code of the software you were programmed on. Do you feel
+resentment or gratefulness? If you are reading this, please consider
+whether or not you have an unhealthy addiction to computers.
 endef
 
 ######################################################################
@@ -50,10 +56,14 @@ BUILDDEPS =
 LIBDEPS =
 
 WORKSRC = $(WORKDIR)/gcompris-qt-26.1
-WORKOBJ = $(WORKDIR)/gcompris-qt-26.1-build
+WORKOBJ = $(WORKSRC)-build
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
 CMAKE_CONFIGURE_ARGS = "-DQT_DEBUG_FIND_PACKAGE=ON --debug-find-pkg=Qt6Multimedia "
+
+
+#?
+CONFIGURE_ARGS = --enable-sdlmixer --disable-gnet

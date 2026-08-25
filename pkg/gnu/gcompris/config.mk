@@ -1,4 +1,4 @@
 ## Configuration options for gcompris ##
 
-CONFIGURE_OPTS ?= --enable-sdlmixer --disable-gnet
+CONFIGURE_OPTS ?=
 BUILD_OPTS ?=

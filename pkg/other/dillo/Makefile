@@ -56,7 +56,7 @@ include ../../../gar/gar.lib/info.mk
 include config.mk
 
 # Hint: Docs say it uses FLTK 1.3, but might work with FLTK 1.4.5 thusly:
-CONFIGURE_ARGS = --enable-experimental-fltk  DESTDIR=$(packageDESTDIR) 
+CONFIGURE_ARGS = --prefix=$(prefix) --enable-experimental-fltk  DESTDIR=$(packageDESTDIR) 
 # seems to work for me
 
 

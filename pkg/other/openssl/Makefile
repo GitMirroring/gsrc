@@ -20,7 +20,7 @@
 
 NAME =    openssl
 GARNAME = openssl
-GARVERSION = 4.0.1
+GARVERSION = 4.0.2
 HOME_URL = http://www.openssl.org/
 DESCRIPTION = Secure Sockets Layer, TLS, cryptography library 
 define BLURB
@@ -33,8 +33,8 @@ endef
 MASTER_SITES = https://github.com/
 MASTER_SUBDIR =  openssl/openssl/releases/download/$(DISTNAME)/
 DISTFILES = $(DISTNAME).tar.gz $(DISTNAME).tar.gz.sha256
-SIGFILES = 
-CONFIGURE_SCRIPTS = 
+SIGFILES =
+CONFIGURE_SCRIPTS =
 LICENSE =  Apache License v2
 
 BUILDDEPS =
@@ -44,11 +44,10 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
-include ../../../gar/varb.mk
 
 pre-configure: $(WORKOBJ)
-	cd $(WORKOBJ)    && pwd 
 	cd $(WORKOBJ)    &&    ../../$(WORKSRC)/Configure --prefix=$(prefix) 
 	$(MAKECOOKIE)
+
 
 

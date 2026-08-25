@@ -53,12 +53,12 @@ include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
 # not  right yet?
-CMAKE_CONFIGURE_ARGS = -DENABLE_LIBWRAP=0 --debug-find-pkg=Qt6Positioning    -DQT_DEBUG_FIND_PACKAGE=ON
+#CMAKE_CONFIGURE_ARGS = -DENABLE_LIBWRAP=0 --debug-find-pkg=Qt6Positioning    -DQT_DEBUG_FIND_PACKAGE=ON
 #--debug-find-pkg=Qt6WebEngineCore
 # CMAKE_CONFIGURE_ARGS =  --debug-find-pkg=Qt6WebEngineCore
 
-pre-install:
-	@echo read INSTALL.md to be told how to install qt6.6 which is needed...
+#pre-install:
+#	@echo read INSTALL.md to be told how to install qt6.6 which is needed...
 
 #  HINT apt install libqt6webenginecore libqt6webenginecore6-bin/
 #  sudo apt install qt6-multimedia-dev
