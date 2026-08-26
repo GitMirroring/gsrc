@@ -52,11 +52,13 @@ BUILDDEPS =
 # to be debugged, what goes here
 #glib gtk pango gdk-pixbuf libxml2
 # chess libsdl_mixer glib gtk pango gdk-pixbuf libxml2
-# bunch of prerequisits
+# bunch of prerequisites
+#  some thing imperfect...
 LIBDEPS =
 
 WORKSRC = $(WORKDIR)/gcompris-qt-26.1
 WORKOBJ = $(WORKSRC)-build
+LICENCE = GNU Affero Public Licence
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk

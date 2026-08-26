@@ -1,4 +1,4 @@
-# Copyright © 2022,2024 Carl Hansen carlhansen@gnu.org
+# Copyright © 2022,2024,2026 Carl Hansen carlhansen@gnu.org
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    rhythmbox
 GARNAME = rhythmbox
-GARVERSION = 3.5.0
+GARVERSION = 3.5.1
 HOME_URL = https://wiki.gnome.org/Apps/Rhythmbox
 DESCRIPTION = Music playback and management application
 define BLURB
@@ -41,7 +41,7 @@ SIGFILES =
 BUILDDEPS =
 LIBDEPS =
 # apt install libtdb-dev
-#
+
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk

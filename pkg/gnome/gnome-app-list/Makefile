@@ -1,4 +1,4 @@
-# Copyright ©2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gnome-app-list
 GARNAME = gnome-app-list
-GARVERSION = 3.0
+GARVERSION = 2026.08
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  gnome-app-list
 define BLURB
@@ -31,7 +31,7 @@ endef
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
+SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
