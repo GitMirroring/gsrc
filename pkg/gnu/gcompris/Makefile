@@ -19,7 +19,8 @@
 NAME = GCompris
 GARNAME = gcompris
 GARVERSION = 26.1
-HOME_URL = http://www.gnu.org/software/gcompris/
+HOME_URL = https://www.gnu.org/software/gcompris/
+# or https://gcompres.net
 DESCRIPTION = "Educational" games for small children
 define BLURB
 GCompris is a suite of "educational" software for children.  It features
@@ -58,7 +59,7 @@ LIBDEPS =
 
 WORKSRC = $(WORKDIR)/gcompris-qt-26.1
 WORKOBJ = $(WORKSRC)-build
-LICENCE = GNU Affero Public Licence
+LICENSE = GNU Affero Public License
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk
