@@ -1,4 +1,4 @@
-# Copyright © 2016,2019,2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2019,2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnote
 GARNAME = gnote
-GARVERSION = 50.1
+GARVERSION = 51.alpha
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A note taking application 
 define BLURB

@@ -19,7 +19,7 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = GNU Virtual Private Ethernet
+NAME = gvpe GNU Virtual Private Ethernet
 GARNAME = gvpe
 GARVERSION = 3.1
 HOME_URL = https://www.gnu.org/software/gvpe
@@ -40,7 +40,7 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
 LIBDEPS =
-
+LICENSE = GNU GPL2
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk

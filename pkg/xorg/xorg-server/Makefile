@@ -21,7 +21,7 @@
 
 NAME =    xorg-server
 GARNAME = xorg-server
-GARVERSION = 21.1.24
+GARVERSION = 26.0.99.901
 HOME_URL = http://www.x.org
 	# same as http://xorg.freedesktop.org
 DESCRIPTION = xorg-server
@@ -40,6 +40,6 @@ LIBDEPS =
 #HINT: apt install libxfont2 libxfont-dev libpciaccess-dev
 ######################################################################
 
-include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
