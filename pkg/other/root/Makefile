@@ -20,7 +20,7 @@
 
 NAME = ROOT
 GARNAME = root
-GARVERSION = 6.40.02
+GARVERSION = 6.40.04
 
 HOME_URL = https://root.cern.ch
 DESCRIPTION = Scientific data framework from CERN, includes a C++ interpreter.
@@ -47,7 +47,7 @@ endef
 # https://github.com/root-project/root/archive/refs/tags/v6-36-08.tar.gz
 MASTER_SITES =  https://github.com/
 MASTER_SUBDIR =  root-project/root/archive/refs/tags/
-DISTFILES =  v6-40-02.tar.gz
+DISTFILES =  v6-40-04.tar.gz
 SIGFILES =
 LICENSE = LGPL 2.1
 
@@ -57,8 +57,8 @@ Nucl. Inst. Meth. in Phys. Res. A 389 (1997) 81-86.
 
 BUILDDEPS =
 LIBDEPS =
-PATCHFILES = root6-40-02.patch
-WORKSRC = $(WORKDIR)/root-6-40-02
+#PATCHFILES = root6-40-02.patch
+WORKSRC = $(WORKDIR)/root-6-40-04
 WORKOBJ = $(WORKSRC)-build
 # HINT if problems:
 # apt install openssl libxpm-dev libxpm4 libxft-dev libxft2  libxext-dev

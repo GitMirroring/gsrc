@@ -19,7 +19,7 @@
 
 NAME =    msgraph
 GARNAME = msgraph
-GARVERSION = 0.3.4
+GARVERSION = 0.3.5
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = lib to access msgraph protocol 
 define BLURB

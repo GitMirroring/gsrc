@@ -22,7 +22,7 @@ NAME = mcrl2
 GARNAME = mcrl2
 GARVERSION = 202607.0
 HOME_URL =  http://www.mcrl2.org/
-DESCRIPTION = mcrl2
+DESCRIPTION = mCRL2 a formal specification language
 define BLURB
 mCRL2 is a formal specification language with an associated toolset. The
 toolset can be used for modelling, validation and verification of

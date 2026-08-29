@@ -22,7 +22,7 @@
 
 NAME = GNU MP
 GARNAME = gmp
-GARVERSION =  6.3.0-20260726095625
+GARVERSION =  6.3.0-20260817130954
 HOME_URL = http://www.gnu.org/software/gmp/
 # other site, gmplib.org...
 DESCRIPTION = Multiple-precision arithmetic library
@@ -35,7 +35,7 @@ aimed at use in, for example, cryptography and computational algebra.
 endef
 
 ######################################################################
-# https://gmplib.org/download/snapshot/gmp-next/gmp-6.3.0-20260726095625.tar.zst
+# https://gmplib.org/download/snapshot/gmp-next/gmp-6.3.0-20260817130954.tar.zst
 # other site, gmplib.org...
 #MASTER_SITES = $(MASTER_GNU)
 #MASTER_SUBDIR = $(GARNAME)/
