@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnome-calculator
 GARNAME = gnome-calculator
-GARVERSION = 50.0
+GARVERSION = 51.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Desktop calculator
 define BLURB
