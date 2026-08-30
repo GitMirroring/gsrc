@@ -19,7 +19,7 @@
 
 NAME =    gnome-autoar
 GARNAME = gnome-autoar
-GARVERSION = 0.4.5
+GARVERSION = 0.5.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Automatic archive-creating and extracting library
 define BLURB

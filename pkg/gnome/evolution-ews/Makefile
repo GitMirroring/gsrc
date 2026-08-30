@@ -21,7 +21,7 @@
 
 NAME =    evolution-ews
 GARNAME = evolution-ews
-GARVERSION = 3.61.2
+GARVERSION = 3.61.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = MS Exchange integration through Exchange Web Services
 define BLURB

@@ -20,7 +20,7 @@
 
 NAME =    evolution-data-server
 GARNAME = evolution-data-server
-GARVERSION = 3.61.2
+GARVERSION = 3.61.3
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Centralized access to appointments and contacts
 define BLURB

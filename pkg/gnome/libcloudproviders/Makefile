@@ -19,7 +19,7 @@
 
 NAME =    libcloudproviders
 GARNAME = libcloudproviders
-GARVERSION = 0.4.0
+GARVERSION = 0.4.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = libcloudproviders
 define BLURB

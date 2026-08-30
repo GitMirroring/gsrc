@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2019, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2019, 2022, 2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gjs
 GARNAME = gjs
-GARVERSION = 1.89.2
+GARVERSION = 1.89.90
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME JavaScript/Spidermonkey bindings
 define BLURB
