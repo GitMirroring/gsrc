@@ -1,4 +1,4 @@
-# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,9 +20,9 @@
 
 NAME =    geos
 GARNAME = geos
-GARVERSION = 3.14.1
+GARVERSION = 3.15.0rc1
 HOME_URL = http://libgeos.org/
-DESCRIPTION = geospatial library 
+DESCRIPTION = geospatial library
 define BLURB
 endef
 
@@ -32,8 +32,8 @@ endef
 # https://download.osgeo.org/geos/geos-3.12.0beta2.tar.bz2
 MASTER_SITES =  http://download.osgeo.org/
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.bz2  
-SIGFILES = 
+DISTFILES = $(DISTNAME).tar.bz2
+SIGFILES =
 
 
 BUILDDEPS =

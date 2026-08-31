@@ -20,7 +20,7 @@
 
 NAME =    valkey
 GARNAME = valkey
-GARVERSION = 9.1.0
+GARVERSION = 9.1.1
 HOME_URL = http://github.com/valkey-io
 DESCRIPTION = in-memory data structure store
 define BLURB
@@ -59,12 +59,12 @@ build-buildme:
 	cd $(WORKSRC) && $(MAKE)
 
 install-valkeyinstall:
-	@echo  HERE IT GOES $(prefix)/packages/$(DISTNAME) 
-	@echo  PREFIX=$(packageprefix)/ 
-	mkdir -p $(prefix)/packages/$(DISTNAME) 
+	@echo  HERE IT GOES $(prefix)/packages/$(DISTNAME)
+	@echo  PREFIX=$(packageprefix)/
+	mkdir -p $(prefix)/packages/$(DISTNAME)
 	$(MAKE) -C $(WORKSRC)  PREFIX=$(packageprefix)/ install
 	$(MAKECOOKIE)
-	
+
 #sysinstall
 # server install script in util
 #  see github page

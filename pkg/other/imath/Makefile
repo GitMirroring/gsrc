@@ -1,5 +1,5 @@
-# Copyright ©2021-2025 Carl Hansen <carlhansen@gnu.org>
-# 
+# Copyright ©2021-2026 Carl Hansen <carlhansen@gnu.org>
+#
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
 #
@@ -20,7 +20,7 @@
 
 NAME =    Imath
 GARNAME = imath
-GARVERSION = 3.2.2
+GARVERSION = 3.2.3
 HOME_URL = http://www.openexr.com
 DESCRIPTION =  lib of 2D and 3D vectors, matrices, and functions for graphics
 define BLURB
@@ -37,13 +37,13 @@ MASTER_SITES = $(MASTER_GITHUB)
 MASTER_SUBDIR = AcademySoftwareFoundation/imath/archive/
 DISTFILES =  $(strip v$(GARVERSION).tar.gz)
 
-SIGFILES = 
+SIGFILES =
 NOCHECKSUM = $(DISTNAME).tar.gz
 
 LICENSE = Modified BSD License, 3 clause 
 
 WORKSRC = $(WORKDIR)/Imath-$(GARVERSION)
-WORKOBJ = $(WORKDIR)/Imath-$(GARVERSION)-build
+WORKOBJ = $(WORKSRC)-build
 
 BUILDDEPS =
 LIBDEPS =

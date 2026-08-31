@@ -20,7 +20,7 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 #  I can't build, gnome2 problems...
 
-NAME = Ignuit
+NAME = ignuit
 GARNAME = ignuit
 GARVERSION = 2.24.3
 HOME_URL = http://www.gnu.org/software/ignuit/
@@ -48,6 +48,14 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+#configure: error: Package requirements (
+#libgnomeui-2.0 >= 2.24.5
+#libglade-2.0 >= 2.6.4
+#libxslt >= 1.1.28
+#gconf-2.0 >= 3.2.6
+#gstreamer-1.0 >= 1.8.2)
+
+# FIXME

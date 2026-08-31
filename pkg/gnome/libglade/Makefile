@@ -20,6 +20,8 @@ GARNAME = libglade
 GARVERSION = 2.6.4
 HOME_URL = http://glade.gnome.org/
 DESCRIPTION = GNOME interface definition library
+define BLURB
+endef
 
 ######################################################################
 
@@ -31,12 +33,14 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = python2
+BUILDDEPS = # python2
 LIBDEPS =
+
+# old interface, not current
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk

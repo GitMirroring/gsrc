@@ -20,7 +20,7 @@
 
 NAME =    postgis
 GARNAME = postgis
-GARVERSION = 3.6.4
+GARVERSION = 3.7.0rc1
 HOME_URL = http://osgeo.org/
 DESCRIPTION =  Geospatial Data in postgresql
 define BLURB
@@ -41,3 +41,5 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+# unexplained glitch, for now
+CONFIGURE_ARGS = --without-raster

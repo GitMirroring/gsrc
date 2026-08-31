@@ -1,4 +1,3 @@
-
 # Copyright © 2016,2018 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
@@ -22,9 +21,8 @@ NAME =    libgnome
 GARNAME = libgnome
 GARVERSION = 2.32.1
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = GNOME 2 library 
+DESCRIPTION = GNOME 2 library
 define BLURB
-
 endef
 #  apt install libpopt0 libpopt-dev   libcanberra-dev
 #
@@ -45,6 +43,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

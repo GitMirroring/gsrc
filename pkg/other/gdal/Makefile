@@ -1,4 +1,4 @@
-# Copyright © 2018, 2020-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2020-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    GDAL
 GARNAME = gdal
-GARVERSION = 3.13.2
+GARVERSION = 3.13.3
 HOME_URL = http://www.gdal.org/
 DESCRIPTION = GDAL - Geospatial Data Abstraction Library
 define BLURB

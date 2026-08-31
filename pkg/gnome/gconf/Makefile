@@ -20,7 +20,9 @@ GARNAME = gconf
 UPSTREAMNAME = GConf
 GARVERSION = 3.2.6
 HOME_URL = http://gnome.org/
-DESCRIPTION = Process-transparent configuration system (deprecated) 
+DESCRIPTION = Process-transparent configuration system (deprecated)
+define BLURB
+endef
 
 ######################################################################
 
@@ -35,9 +37,12 @@ DISTFILES = $(DISTNAME).tar.xz $(DISTNAME).sha256sum
 SIGFILES =
 
 BUILDDEPS =
-LIBDEPS = #glib intltool #dbus dbus-glib
+LIBDEPS =
+# glib intltool #dbus dbus-glib
 
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types
