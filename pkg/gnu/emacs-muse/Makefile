@@ -86,6 +86,7 @@ post-build post-install:
 	@echo --------------------------------------------------
 	@echo --------------------------------------------------
 	@echo a lot of build errors, but in installs anyway
+	@echo try "make; make"
 	@echo just try it, maybe it works
 	@echo --------------------------------------------------
 	@echo --------------------------------------------------

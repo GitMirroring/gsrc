@@ -1,8 +1,8 @@
-# Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020-2024,2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
+#
 #
 # GSRC is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by
@@ -16,31 +16,38 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
+
+
+
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Libksba
-GARNAME = libksba
-GARVERSION = 1.8.1
-HOME_URL = http://www.gnupg.org/related_software/libksba/index.en.html
-DESCRIPTION = A library for working with X.509 certificates and CMS  data
+NAME = git-merge-changelog vc-changelog
+GARNAME = git-merge-changelog
+GARVERSION = 1.0
+HOME_URL = http://www.gnu.org/software/
+DESCRIPTION = append to changelog from git.
 define BLURB
 endef
 
 ######################################################################
 
-MASTER_SITES = $(MASTER_GNUPG)
+MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.bz2
-SIGFILES = $(DISTNAME).tar.bz2.sig
-INFO_FILES = ksba.info
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES  = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
-LIBDEPS = libgpg-error
-
+LIBDEPS =
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+
+fetch:
+	mkdir -p $(DOWNLOADDIR)
+	cd $(DOWNLOADDIR)  &&  wget $(WGET_OPTS)  https://ftpmirror.gnu.org/gnu/vc-changelog/$(DISTFILES)
+	cd $(DOWNLOADDIR)  &&  wget $(WGET_OPTS)  https://ftpmirror.gnu.org/gnu/vc-changelog/$(SIGFILES)
+	$(MAKECOOKIE)
+

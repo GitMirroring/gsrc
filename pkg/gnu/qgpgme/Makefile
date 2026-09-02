@@ -1,5 +1,4 @@
-# Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020-2024,2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,11 +19,11 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Libksba
-GARNAME = libksba
-GARVERSION = 1.8.1
-HOME_URL = http://www.gnupg.org/related_software/libksba/index.en.html
-DESCRIPTION = A library for working with X.509 certificates and CMS  data
+NAME = qgpgme
+GARNAME = qgpgme
+GARVERSION =  2.2.0
+HOME_URL = http://www.gnu.org/software/gnupg
+DESCRIPTION = qgpgme, GPG Made Easy, library connection to GNU Privacy Guard
 define BLURB
 endef
 
@@ -32,15 +31,15 @@ endef
 
 MASTER_SITES = $(MASTER_GNUPG)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.bz2
-SIGFILES = $(DISTNAME).tar.bz2.sig
-INFO_FILES = ksba.info
+DISTFILES = $(DISTNAME).tar.xz
+SIGFILES = $(DISTNAME).tar.xz.sig
 
-BUILDDEPS =
-LIBDEPS = libgpg-error
+BUILDDEPS = gpgme gpgmepp
+LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/cmake.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
