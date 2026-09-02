@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2019,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,9 +19,9 @@
 
 NAME =    gnome-control-center
 GARNAME = gnome-control-center
-GARVERSION = 50.2
+GARVERSION = 51.rc.1
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = GNOME s main interface to configure various aspects of the desktop
+DESCRIPTION = GNOME_s main interface to configure various aspects of the desktop
 define BLURB
 endef
 

@@ -23,9 +23,9 @@
 NAME = autogen-alpha
 GARNAME = autogen-alpha
 UPSTREAMNAME = autogen
-GARVERSION = 5.19.98
+GARVERSION = 5.19.96
 HOME_URL = http://www.gnu.org/software/autogen/
-DESCRIPTION =  autogen
+DESCRIPTION =  autogen, alpha version
 define BLURB
 endef
 

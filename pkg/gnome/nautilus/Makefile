@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2019, 2024-2025  Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2019, 2024-2026  Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    nautilus
 GARNAME = nautilus
-GARVERSION = 50.2.2
+GARVERSION = 51.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A file manager for GNOME, also is web-browser
 define BLURB

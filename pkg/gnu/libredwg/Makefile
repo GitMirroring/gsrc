@@ -1,4 +1,4 @@
-# Copyright © 2018, 2019, 2020, 2021, 2022, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2019, 2020, 2021, 2022, 2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = LibreDWG
 GARNAME = libredwg
-GARVERSION = 0.13.3
+GARVERSION = 0.14
 HOME_URL = http://www.gnu.org/software/libredwg/
 DESCRIPTION =  3d CAD dwg format library
 define BLURB

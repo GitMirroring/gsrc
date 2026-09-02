@@ -21,7 +21,7 @@
 
 NAME =    localsearch
 GARNAME = localsearch
-GARVERSION = 3.12.alpha
+GARVERSION = 3.12.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = localsearch
 define BLURB

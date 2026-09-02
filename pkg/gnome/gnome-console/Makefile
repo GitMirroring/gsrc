@@ -1,4 +1,4 @@
-# Copyright © 2022,2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2022,2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,9 +20,9 @@
 
 NAME =    gnome-console
 GARNAME = gnome-console
-GARVERSION = 50.0
+GARVERSION = 51.rc
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = Command line terminal
+DESCRIPTION = GNOME command line terminal
 define BLURB
 endef
 

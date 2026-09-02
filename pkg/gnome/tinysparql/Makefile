@@ -1,4 +1,4 @@
-# Copyright ©2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    tinysparql
 GARNAME = tinysparql
-GARVERSION = 3.12.alpha
+GARVERSION = 3.12.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = tinysparql
 define BLURB
