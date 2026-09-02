@@ -39,7 +39,7 @@ endef
 ######################################################################
 #https://alpha.gnu.org/gnu/texinfo/texinfo-7.2.90.tar.xz
 #https://alpha.gnu.org/gnu/texinfo/texinfo-7.2.90.tar.xz.sig
-MASTER_SITES = $(MASTER_GNU_ALPHA)
+MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME)$(RELEASE).tar.xz
 SIGFILES  = $(DISTNAME)$(RELEASE).tar.xz.sig
