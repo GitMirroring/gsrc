@@ -17,10 +17,10 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
-NAME = Emacs Muse
-GARNAME = emacs-muse
+NAME =  muse emacs-muse
+GARNAME = muse
 UPSTREAMNAME = muse
-GARVERSION = 3.20
+GARVERSION = mastergit
 HOME_URL = http://www.gnu.org/software/emacs-muse/
 DESCRIPTION = Authoring and publishing environment for Emacs
 define BLURB
@@ -71,7 +71,7 @@ checkdirs:
 
 fetch: fetch-git
 
-post-fetch:
+post-fetch: fetch-git
 	mkdir -p $(WORKSRC)
 	cp -a $(GITSRC)/*  $(WORKSRC)
 

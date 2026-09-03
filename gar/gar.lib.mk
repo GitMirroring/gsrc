@@ -187,7 +187,10 @@ gitpullrecurse:
 
 # don't MAKECOOKIE I think
 
+
 #-d $(DOWNLOADDIRGIT)/$(GARNAME)/.git ];  problematic if name is something else
+# e.g.   emacs-muse, muse
+
 fetch-git:
 	@if [ -d $(DOWNLOADDIRGIT)/$(GARNAME)/.git ]; then    $(MAKE) gitpull ;  else  \
         printf "git cloning and checking out $(GARNAME)\n"; \
