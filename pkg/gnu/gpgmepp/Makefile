@@ -25,6 +25,8 @@ GARVERSION =  2.2.0
 HOME_URL = http://www.gnu.org/software/gnupg
 DESCRIPTION = gpgmepp, gpgme++, GPG Made Easy, library connection to GNU Privacy Guard
 define BLURB
+gpgmepp, gpgme++, C++ wrapper for  gpgme, GPG Made Easy,
+library connection to GNU Privacy Guard
 endef
 
 ######################################################################

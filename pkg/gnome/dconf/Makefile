@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2016, 2017, 2018, 2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2019, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -20,11 +20,10 @@
 
 NAME =    dconf
 GARNAME = dconf
-GARVERSION = 0.49.0
+GARVERSION = 51.rc
 HOME_URL = https://wiki.gnome.org/Projects/dconf
 DESCRIPTION = Configuration database system
 define BLURB
-
 endef
 
 ######################################################################
@@ -32,7 +31,7 @@ endef
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
+SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/

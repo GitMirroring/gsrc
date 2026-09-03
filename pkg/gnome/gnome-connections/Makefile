@@ -1,4 +1,4 @@
-# Copyright © 2021,2022,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2021,2022,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gnome-connections
 GARNAME = gnome-connections
-GARVERSION = 50.0
+GARVERSION = 51.rc.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = remote desktop client for the GNOME desktop environment
 define BLURB

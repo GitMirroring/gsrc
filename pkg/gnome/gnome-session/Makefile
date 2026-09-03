@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnome-session
 GARNAME = gnome-session
-GARVERSION = 50.1
+GARVERSION = 51.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = The GNOME Session Manager
 define BLURB

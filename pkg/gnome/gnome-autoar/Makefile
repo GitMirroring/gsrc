@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnome-autoar
 GARNAME = gnome-autoar
-GARVERSION = 0.5.0
+GARVERSION = 0.5.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Automatic archive-creating and extracting library
 define BLURB

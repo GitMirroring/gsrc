@@ -20,7 +20,7 @@
 # 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Scute
+NAME = scute
 GARNAME = scute
 GARVERSION = 1.7.0
 HOME_URL = http://www.gnu.org/software/gnupg

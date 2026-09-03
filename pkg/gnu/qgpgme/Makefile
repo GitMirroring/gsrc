@@ -23,7 +23,7 @@ NAME = qgpgme
 GARNAME = qgpgme
 GARVERSION =  2.2.0
 HOME_URL = http://www.gnu.org/software/gnupg
-DESCRIPTION = qgpgme, GPG Made Easy, library connection to GNU Privacy Guard
+DESCRIPTION = QT version, qgpgme, GPG Made Easy, library connection to GNU Privacy Guard
 define BLURB
 endef
 
