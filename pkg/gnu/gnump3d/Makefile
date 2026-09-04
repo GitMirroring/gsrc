@@ -34,9 +34,9 @@ then be played in any player that supports streaming over HTTP.
 endef
 
 ######################################################################
-
-MASTER_SITES = http://savannah.gnu.org/download/
-MASTER_SUBDIR = $(GARNAME)/
+#https://download.savannah.gnu.org/releases/gnump3d/gnump3d-3.0.tar.gz
+MASTER_SITES = http://download.savannah.gnu.org/
+MASTER_SUBDIR = releases/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 PATCHFILES = Makefile.patch
