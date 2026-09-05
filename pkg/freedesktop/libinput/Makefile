@@ -37,7 +37,7 @@ SIGFILES  =
 
 BUILDDEPS =
 LIBDEPS =
-#Hint apt install libwacom doxygen libmtdev-dev  libudev-dev check libunwind-dev  libgudev-1.0-dev
+#Hint apt install libwacom-bin doxygen libmtdev-dev  libudev-dev check libunwind-dev  libgudev-1.0-dev
 #
 ######################################################################
 

@@ -23,6 +23,7 @@ GARNAME = isl
 GARVERSION = 0.28
 HOME_URL = https://libisl.sourceforge.io/
 	# https://repo.or.cz/w/isl.git
+# https://libisl.sourceforge.io/
 DESCRIPTION = Integer Set Library
 define BLURB
 isl is a library for manipulating sets and relations of integer points

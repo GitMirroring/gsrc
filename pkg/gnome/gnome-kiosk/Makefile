@@ -1,4 +1,4 @@
-# Copyright © 2022,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2022,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    gnome-kiosk
 GARNAME = gnome-kiosk
-GARVERSION = 50.1
+GARVERSION = 51.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = gnome-kiosk
 define BLURB

@@ -23,7 +23,7 @@ NAME = UCB logo
 GARNAME = ucblogo-code
 GARVERSION = master
 HOME_URL = https://people.eecs.berkeley.edu/~bh/logo.html
-DESCRIPTION = Logo language, from UCB
+DESCRIPTION = Logo language, from UC Berkeley
 define BLURB
 endef
 LICENSE = GPL3
@@ -39,14 +39,18 @@ BUILDDEPS =
 LIBDEPS =
 
 USE_AUTORECONF =y
-WORKSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
-# WORKOBJ the usual
+GITSRC = $(DOWNLOADDIRGIT)/$(GARNAME)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 fetch: fetch-git
+
+post-fetch: fetch-git
+	mkdir -p $(WORKSRC)
+	mkdir -p $(WORKOBJ)
+	cp -a $(GITSRC)/* $(WORKSRC)
 
 pre-build: 
 	cp $(WORKSRC)/usermanual $(WORKOBJ)/
