@@ -45,3 +45,5 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
+# HINT:  Edit meson_options.txt to set lua   to "false" if problem
+

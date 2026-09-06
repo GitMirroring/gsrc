@@ -1,4 +1,4 @@
-# Copyright © 2016 Carl Hansen
+# Copyright © 2016,2026 Carl Hansen
 #
 # This file is part of GSRC.
 #
@@ -22,25 +22,30 @@
 
 NAME =    uhttpmock
 GARNAME = uhttpmock
-GARVERSION = 0.5.1
-HOME_URL = http://www.gnome.org/
+GARVERSION = 0.11.0
+HOME_URL = https://gitlab.freedesktop.org/pwithnall/uhttpmock
+# http://tecnocode.co.uk/
 DESCRIPTION = library for mocking web service APIs which use HTTP or HTTPS
 define BLURB
-
+uhttpmock is a project for mocking web service APIs which use HTTP or HTTPS. It
+provides a library, libuhttpmock, which implements recording and playback of
+HTTP request–response traces.
 endef
 
 ######################################################################
-
+# http://tecnocode.co.uk/downloads/uhttpmock/uhttpmock-0.11.0.tar.xz
+# or https://gitlab.freedesktop.org/pwithnall/uhttpmock/-/archive/0.11.0/uhttpmock-0.11.0.tar.bz2
 MASTER_SITES = http://tecnocode.co.uk/
 MASTER_SUBDIR = downloads/uhttpmock/
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = #  glib libsoup
+BUILDDEPS =
+LIBDEPS =
+#  glib libsoup etc
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
