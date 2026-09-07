@@ -20,7 +20,7 @@
 
 NAME = nyacc
 GARNAME = nyacc
-GARVERSION =  3.04.6
+GARVERSION =  4.0.0
 HOME_URL =  http://www.nongnu.org/nyacc
 DESCRIPTION =  Guile modules for nyacc compiler creation and parsers
 define BLURB
@@ -33,15 +33,15 @@ implemented) compilers based on above mentioned parsers to allow execution
 with Guile as extension languages.
 endef
 ######################################################################
-# https://download.savannah.gnu.org/releases/nyacc/nyacc-1.09.4.tar.gz.sig
+# http://download.savannah.nongnu.org/releases/nyacc/nyacc-4.0.0.tar.gz.sig
 # future versions, see github
-#MASTER_SITES =  https://download.savannah.gnu.org/
-#MASTER_SUBDIR = releases/$(GARNAME)/
+MASTER_SITES =  https://download.savannah.nongnu.org/
+MASTER_SUBDIR = releases/$(GARNAME)/
 # mwette/nyacc/archive/refs/tags/V3.00.0.tar.gz
-MASTER_SITES = https://github.com/
-MASTER_SUBDIR = mwette/nyacc/archive/refs/tags/
-DISTFILES = V$(GARVERSION).tar.gz
-SIGFILES  =
+#MASTER_SITES = https://github.com/
+#MASTER_SUBDIR = mwette/nyacc/archive/refs/tags/
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
+SIGFILES  = $(DISTFILES).sig
 INFO_FILES = cdata.info nyacc-ug.info nyacc-c99-ug.info nyacc-fh-ug.info
 
 # There exists pdfs in the doc/ in the sources, not herewith installed.
@@ -54,6 +54,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
-
-
 

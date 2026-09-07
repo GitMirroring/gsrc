@@ -51,3 +51,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS="-Wno-int-conversion -Wno-implicit-function-declaration"
