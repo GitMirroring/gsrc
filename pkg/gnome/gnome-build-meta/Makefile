@@ -19,7 +19,7 @@
 
 NAME =    gnome-build-meta
 GARNAME = gnome-build-meta
-GARVERSION = 50.3
+GARVERSION = 51.rc
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Collection of build scripts for Gnome project, or something 
 define BLURB
@@ -42,10 +42,16 @@ CONFIGURE_SCRIPTS =
 
 BUILDDEPS =
 LIBDEPS =
-WORKSRC = $(WORKDIR)/gnome-$(GARVERSION)
-WORKOBJ = $(WORKSRC)-build
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+configure build install:
+	@echo =======================================
+	@echo =======================================
+	@echo On your own. You have the download.
+	@echo No further steps automated.
+	@echo =======================================
+	@echo =======================================
 

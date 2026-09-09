@@ -1,4 +1,4 @@
-# Copyright © 2017, 2021, 2022, 2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2021, 2022, 2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@ NAME =    libsdl
 GARNAME = libsdl
 UPSTREAMNAME = SDL3
 HOME_URL = https://www.libsdl.org
-GARVERSION = 3.4.10
+GARVERSION = 3.4.16
 DESCRIPTION = simple direct media layer library
 define BLURB
 Simple DirectMedia Layer is a cross-platform development library designed

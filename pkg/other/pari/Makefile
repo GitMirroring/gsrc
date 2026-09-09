@@ -23,8 +23,14 @@ NAME =    pari
 GARNAME = pari
 GARVERSION = 2.18.1.alpha
 HOME_URL = http://pari.math.u-bordeaux.fr/
-DESCRIPTION = math calculator and library, unlimited-precision, discrete math etc.
+DESCRIPTION = computer algebra and library, unlimited-precision, discrete math etc.
 define BLURB
+PARI/GP is computer algebra system designed for fast computations in number
+theory: factorizations, algebraic number theory, elliptic curves, modular
+forms, L functions... functions to compute with mathematical entities
+such as matrices, polynomials, power series, algebraic numbers, etc.,
+and a lot of transcendental functions as well as numerical summation and
+integration routines.  also a C library to allow for faster computations.
 endef
 
 ######################################################################
