@@ -23,7 +23,7 @@
 
 NAME = Automake
 GARNAME = automake
-GARVERSION = 1.18.1
+GARVERSION = 1.19
 HOME_URL = http://www.gnu.org/software/automake/
 DESCRIPTION = Making GNU standards-compliant Makefiles
 define BLURB
