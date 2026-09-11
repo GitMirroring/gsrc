@@ -1,4 +1,4 @@
-# Copyright ©2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,14 +22,14 @@
 NAME = The GNU Compiler Collection version 13 
 GARNAME = gcc13
 UPSTREAMNAME = gcc
-GARVERSION = 13.4.0
+GARVERSION = 13.5.0
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 13
 define BLURB
 GCC is the GNU Compiler Collection.  It provides compiler front-ends
 for several languages, including C, C++, Objective-C, Objective-C++,
-Fortran, Ada, D, Go, and Modula 2. With runtime 
-support libraries for these languages.
+Fortran, Ada, D, Go, and Modula 2. With runtime support libraries for
+these languages.
 endef
 
 #HINT: to compile Ada compiler a.k.a. "gnats", you need to have earlier Ada compiler....
@@ -144,18 +144,16 @@ CONFIGURE_ARGS = --prefix=$(prefix)  \
 --disable-werror 
 
 #  -m32 -m32x?
-
 #--enable-bootstrap \
 #--build=x86_64-linux-gnu \
 #--host=x86_64-linux-gnu \
 #--target=x86_64-linux-gnu 
-
 # --with-arch-32=i686  \
+
 # enable-bootstrap might not be necessary, but it solves some problems
 # of building when not using recent gcc to build.
 
-# due to compile problems with gccgo
-#
+#optional
 BUILD_ARGS  =  CFLAGS+="--save-temps -Wall  -Wextra  " \
              CXXFLAGS+="--save-temps -Wall  -Wextra  "  \
              CPPFLAGS="-I. -I.. "

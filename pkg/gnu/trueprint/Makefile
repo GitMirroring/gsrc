@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2025 Carl Hansen
+# Copyright © 2025-2026 Carl Hansen
 #
 # This file is part of GSRC.
 #
@@ -16,7 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
-NAME = Trueprint
+NAME = trueprint
 GARNAME = trueprint
 GARVERSION = 5.4
 HOME_URL = http://www.gnu.org/software/trueprint/
@@ -37,8 +37,8 @@ SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
-PATCHFILES = trueprint.missing.headers.patch
-PATCHOPTS = -p2
+#PATCHFILES = trueprint.missing.headers.patch
+#PATCHOPTS = -p2
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
