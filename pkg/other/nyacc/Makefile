@@ -42,7 +42,7 @@ MASTER_SUBDIR = releases/$(GARNAME)/
 #MASTER_SUBDIR = mwette/nyacc/archive/refs/tags/
 DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
 SIGFILES  = $(DISTFILES).sig
-INFO_FILES = cdata.info nyacc-ug.info nyacc-c99-ug.info nyacc-fh-ug.info
+INFO_FILES =  nyacc-ug.info nyacc-c99-ug.info nyacc-fh-ug.info
 
 # There exists pdfs in the doc/ in the sources, not herewith installed.
 

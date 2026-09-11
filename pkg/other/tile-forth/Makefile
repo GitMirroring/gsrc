@@ -76,3 +76,9 @@ custom-install: custom-pre-install
 	$(MAKECOOKIE)
 
 
+post-install:
+	@echo =========================================
+	@echo =========================================
+	@echo the executable is named \"forth\"
+	@echo =========================================
+	@echo =========================================

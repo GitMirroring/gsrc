@@ -46,7 +46,7 @@ include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
 
-custom-post-install: install
+pre-install: 
 	@echo install docs
 	$(INSTALL_DOCS)  $(WORKSRC)/docs/*
 
