@@ -20,7 +20,7 @@
 
 NAME =    gnome-initial-setup
 GARNAME = gnome-initial-setup
-GARVERSION = 51.rc
+GARVERSION = 51.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Bootstrapping your gnomish OS
 define BLURB

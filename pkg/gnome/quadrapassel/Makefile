@@ -20,7 +20,7 @@
 
 NAME =    quadrapassel
 GARNAME = quadrapassel
-GARVERSION = 51.rc.1
+GARVERSION = 51.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = game of fitting falling blocks together
 define BLURB

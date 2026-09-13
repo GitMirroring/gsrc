@@ -19,7 +19,7 @@
 
 NAME =    libsecret
 GARNAME = libsecret
-GARVERSION = 0.21.7
+GARVERSION = 0.21.8.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Secret Service D-Bus client library
 define BLURB

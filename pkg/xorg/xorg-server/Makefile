@@ -21,7 +21,7 @@
 
 NAME =    xorg-server
 GARNAME = xorg-server
-GARVERSION = 26.0.99.901
+GARVERSION = 26.0.99.902
 HOME_URL = http://www.x.org
 	# same as http://xorg.freedesktop.org
 DESCRIPTION = xorg-server

@@ -20,7 +20,7 @@
 
 NAME =    ghex
 GARNAME = ghex
-GARVERSION = 50.3
+GARVERSION = 50.4
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Hex Editor
 define BLURB
