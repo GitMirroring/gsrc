@@ -23,13 +23,13 @@
 
 NAME =    orc
 GARNAME = orc
-GARVERSION = 0.4.43
+GARVERSION = 0.4.44
 HOME_URL = http://gstreamer.freedesktop.org
-DESCRIPTION = gstreamer, Optmised inner loop Runtime Compiler
+DESCRIPTION = gstreamer ORC, Optmised inner loop Runtime Compiler
 define BLURB
 liborc, the Optimized Inner Loop Runtime Compiler, which is used for
 SIMD acceleration in GStreamer plugins such as audioconvert, audiomixer,
-compositor, videoscale, and videoconvert, to name just a few.
+compositor, videoscale, and videoconvert, et cetera.
 endef
 
 ######################################################################
@@ -39,8 +39,8 @@ MASTER_SUBDIR =  src/$(GARNAME)/
 DISTFILES =  $(DISTNAME).tar.xz
 SIGFILES  =  $(DISTNAME).tar.xz.asc
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 
