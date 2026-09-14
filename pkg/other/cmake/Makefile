@@ -21,7 +21,7 @@
 NAME =    cmake
 GARNAME = cmake
 #GARVERSION = 3.31.5
-GARVERSION = 4.4.2
+GARVERSION = 4.4.3
 HOME_URL = https://cmake.org/
 # or http://kitware.com/cmake
 DESCRIPTION =  cmake build utility, works with or as "make" or other build systems
@@ -33,8 +33,8 @@ LICENSE = OSI-approved BSD 3-clause License
 #https://github.com/Kitware/CMake/releases/download/v4.1.0-rc1/cmake-4.1.0-rc1.tar.gz
 MASTER_SITES = https://github.com/
 MASTER_SUBDIR = Kitware/CMake/releases/download/v$(GARVERSION)/
-DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz 
-SIGFILES = 
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
+SIGFILES =
 
 BUILDDEPS = # openssl
 LIBDEPS =

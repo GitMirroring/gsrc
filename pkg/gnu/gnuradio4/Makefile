@@ -54,4 +54,5 @@ include ../../../gar/gar.mk
 include config.mk
 
 #BUILD_ARGS = CXXFLAGS=-Wno-error=unused-result
-CMAKE_CONFIGURE_ARGS = --compile-no-warning-as-error
+CMAKE_CONFIGURE_ARGS = --compile-no-warning-as-error CXXFLAGS=-Wwarning=unused-result
+# not right
