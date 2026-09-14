@@ -22,7 +22,7 @@
 
 NAME = coreutils
 GARNAME = coreutils
-GARVERSION = 9.11
+GARVERSION = 9.12
 HOME_URL = http://www.gnu.org/software/coreutils/
 DESCRIPTION = Core GNU utilities (file, text, shell)
 define BLURB
