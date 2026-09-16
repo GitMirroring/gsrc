@@ -20,7 +20,7 @@
 
 NAME =    shotwell
 GARNAME = shotwell
-GARVERSION = 33.beta
+GARVERSION = 33.0
 HOME_URL = https://wiki.gnome.org/Apps/Shotwell
 DESCRIPTION = Digital photo organizer
 define BLURB
@@ -31,7 +31,11 @@ endef
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
+#SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
+
+# special case , bug at origin downloads.gnome.org
+
+SERIES = 33.0
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/

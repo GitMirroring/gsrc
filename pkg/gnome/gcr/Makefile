@@ -20,7 +20,7 @@
 
 NAME =    gcr
 GARNAME = gcr
-GARVERSION = 4.4.0.1
+GARVERSION = 4.4.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A library for bits of crypto UI and parsing etc.
 define BLURB

@@ -20,7 +20,7 @@
 
 NAME =    pangomm
 GARNAME = pangomm
-GARVERSION = 2.56.2
+GARVERSION = 2.58.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = C++ bindings for Pango
 define BLURB

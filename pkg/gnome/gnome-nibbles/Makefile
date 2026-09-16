@@ -1,4 +1,4 @@
-# Copyright © 2016,2018,2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2018,2023-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    gnome-nibbles
 GARNAME = gnome-nibbles
-GARVERSION = 4.6.rc1
+GARVERSION = 4.6.0
 HOME_URL = https://wiki.gnome.org/Apps/Nibbles/
 DESCRIPTION = Guide a worm around a maze game
 define BLURB

@@ -21,13 +21,13 @@
 
 NAME = unifont
 GARNAME = unifont
-GARVERSION = 17.0.05
+GARVERSION = 18.0.01
 HOME_URL = http://unifoundry.com
 #HOME_URL = http://www.gnu.org/software/unifont/
-DESCRIPTION = Large bitmap font covering Unicode s Basic Multilingual Plane
+DESCRIPTION = Large bitmap font covering Unicode_s Basic Multilingual Plane
 define BLURB
 GNU Unifont is a bitmap font covering essentially all of
-Unicode s Basic Multilingual Plane.  The package also includes
+Unicode_s Basic Multilingual Plane.  The package also includes
 utilities to ease adding new glyphs to the font. Includes APL font.
 endef
 ######################################################################

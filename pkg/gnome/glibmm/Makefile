@@ -20,7 +20,7 @@
 
 NAME =    glibmm
 GARNAME = glibmm
-GARVERSION = 2.89.1
+GARVERSION = 2.90.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = C++ bindings for Glib
 define BLURB

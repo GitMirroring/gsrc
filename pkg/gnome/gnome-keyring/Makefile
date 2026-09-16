@@ -21,7 +21,7 @@
 
 NAME =    gnome-keyring
 GARNAME = gnome-keyring
-GARVERSION = 50.0
+GARVERSION = 51.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Stores passwords and encryption keys
 define BLURB

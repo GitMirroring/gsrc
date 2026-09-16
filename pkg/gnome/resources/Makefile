@@ -19,7 +19,7 @@
 
 NAME =    resources
 GARNAME = resources
-GARVERSION = 	51.beta
+GARVERSION = 	51.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = system resources display
 define BLURB

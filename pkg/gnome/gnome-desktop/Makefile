@@ -21,7 +21,7 @@
 
 NAME =    gnome-desktop
 GARNAME = gnome-desktop
-GARVERSION = 44.5
+GARVERSION = 51.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Library with common API for various GNOME modules
 define BLURB

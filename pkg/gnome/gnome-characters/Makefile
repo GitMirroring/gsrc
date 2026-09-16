@@ -19,7 +19,7 @@
 
 NAME =    gnome-characters
 GARNAME = gnome-characters
-GARVERSION = 50.0
+GARVERSION = 51.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A character map application
 define BLURB

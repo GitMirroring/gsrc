@@ -20,7 +20,7 @@
 
 NAME =    gnome-settings-daemon
 GARNAME = gnome-settings-daemon
-GARVERSION = 51.rc
+GARVERSION = 51.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = GNOME Settings Daemon
 define BLURB

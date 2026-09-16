@@ -20,7 +20,7 @@
 
 NAME =    dconf
 GARNAME = dconf
-GARVERSION = 51.rc
+GARVERSION = 51.0
 HOME_URL = https://wiki.gnome.org/Projects/dconf
 DESCRIPTION = Configuration database system
 define BLURB
