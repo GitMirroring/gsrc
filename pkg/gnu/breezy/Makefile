@@ -25,7 +25,7 @@ NAME = breezy aka brz
 GARNAME = brz
 GARVERSION = 3.3.22
 HOME_URL = http://www.breezy-vcs.org
-# and githup.com
+# and github.com
 DESCRIPTION =   distributed version control system
 define BLURB
 The later version of GNU distributed version control system. Do not confuse this with

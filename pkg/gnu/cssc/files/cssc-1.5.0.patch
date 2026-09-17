@@ -1,0 +1,12 @@
+diff -x config.log -x config.status -ru tmp/CSSC-1.5.0/unit-tests/googletest/googletest/src/gtest-death-test.cc work/CSSC-1.5.0/unit-tests/googletest/googletest/src/gtest-death-test.cc
+--- tmp/CSSC-1.5.0/unit-tests/googletest/googletest/src/gtest-death-test.cc	2026-06-16 03:46:06.000000000 -0700
++++ work/CSSC-1.5.0/unit-tests/googletest/googletest/src/gtest-death-test.cc	2026-09-16 16:52:35.590683694 -0700
+@@ -83,6 +83,8 @@
+ #include "gtest/internal/gtest-string.h"
+ #include "src/gtest-internal-inl.h"
+ 
++#include <cstdint>
++
+ namespace testing {
+ 
+ // Constants.

@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 NAME = CSSC
 GARNAME = cssc
 UPSTREAMNAME = CSSC
-GARVERSION = 1.4.1
+GARVERSION = 1.5.0
 HOME_URL = http://www.gnu.org/software/cssc/
 DESCRIPTION = File-based version control replacing SCCS
 define BLURB
@@ -33,25 +33,24 @@ accessed and migrated on modern systems. The executable is still called
 "sccs".
 endef
 
-
-
 ######################################################################
-
-MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = $(GARNAME)/
+# for now
+#https://alpha.gnu.org/gnu/cssc/CSSC-1.5.0.tar.gz.sig
+#MASTER_SITES = $(MASTER_GNU)
+#MASTER_SUBDIR = $(GARNAME)/
+MASTER_SITES = https://alpha.gnu.org/
+MASTER_SUBDIR = gnu/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-PATCH_FILES = cssc.1.4.1.lndir.patch
-
 BUILDDEPS =
 LIBDEPS =
+PATCHFILES =  cssc-1.5.0.patch
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
-
 
 
