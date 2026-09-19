@@ -70,7 +70,10 @@ export PYTHONPATH=$GSRC/lib/python3.13:$GSRC/lib64/python3.13${PYTHONPATH:+:$PYT
 # for GNOME programs, this might be needed:
 #                    this might vary on your system:
 export ORIG_GI_TYPELIB_PATH=$GI_TYPELIB_PATH
-export GI_TYPELIB_PATH=$GSRC/lib64/girepository-1.0:$GSRC/lib/girepository-1.0:/usr/lib/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}
+# x86 ism:
+export GI_TYPELIB_PATH=$GSRC/lib/x86_64-linux-gnu/girepository-1.0:$GSRC/lib64/girepository-1.0:$GSRC/lib/girepository-1.0:/usr/lib/girepository-1.0${GI_TYPELIB_PATH:+:$GI_TYPELIB_PATH}
+
+# GIR dirs todo?
 
 # for systems using XDG, needed to make icons work right
 export ORIG_XDG_DATA_DIRS=$XDG_DATA_DIRS

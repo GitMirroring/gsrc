@@ -21,7 +21,7 @@
 
 NAME =    lean4
 GARNAME = lean4
-GARVERSION = 4.34.0-rc1
+GARVERSION = 4.34.0
 HOME_URL =  https://lean-lang.org
 DESCRIPTION = Lean4 theorem prover and functional language
 define BLURB
@@ -43,6 +43,7 @@ MASTER_SUBDIR =  leanprover/lean4/archive/refs/tags/
 DISTFILES = v$(GARVERSION).tar.gz
 SIGFILES  =
 
+# abandon git approach for now
 #GIT_PATH = $(MASTER_SITES)/$(MASTER_SUBDIR)/$(GARNAME).git
 #GIT_REVISION = master
 #GITSRC =               $(DOWNLOADDIRGIT)/$(GARNAME)
@@ -65,4 +66,3 @@ include config.mk
 CMAKE_CONFIGURE_ARGS += --preset="release" -B . -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$(prefix) -DINSTALL_PREFIX=$(prefix)
 CMAKE_INSTALL_PREFIX = $(prefix)
 
-# abandon git approach for now
