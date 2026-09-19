@@ -1,4 +1,4 @@
-# Copyright ©2017,2018,2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017,2018,2019,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    chronojump
 GARNAME = chronojump
-GARVERSION = 1.9.0
+GARVERSION = 2.6.1
 HOME_URL = http://chronojump.org
 # or http://www.gnome.org/
 DESCRIPTION = Athletic jump timer software
@@ -30,6 +30,7 @@ endef
 
 ######################################################################
 
+# https://gitlab.gnome.org/GNOME/chronojump.git
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
@@ -46,6 +47,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

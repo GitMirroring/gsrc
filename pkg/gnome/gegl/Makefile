@@ -20,7 +20,7 @@
 
 NAME =    gegl
 GARNAME = gegl
-GARVERSION = 0.4.70
+GARVERSION = 0.4.72
 HOME_URL = http://www.gimp.org/
 DESCRIPTION = GEGL (Generic Graphics Library) is a data flow based image processing framework.
 define BLURB
@@ -50,5 +50,8 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
+
+# needed for gimp:
+MESON_OPTS =  -Dcairo=enabled  -Dintrospection=true
 
 

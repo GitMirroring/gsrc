@@ -20,11 +20,11 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = GNU Image Manipulation Program
+NAME = gimp, GNU Image Manipulation Program
 GARNAME = gimp
-GARVERSION = 3.2.4
+GARVERSION = 3.2.6
 HOME_URL = http://www.gnu.org/software/gimp
-DESCRIPTION = GNU Image Manipulation Program
+DESCRIPTION = gimp, GNU Image Manipulation Program
 define BLURB
 GIMP is an application for image manipulation tasks such as photo
 retouching, composition and authoring.  It supports all common image
@@ -45,7 +45,8 @@ DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =
 
 #  HINT: apt install libgexiv2-dev
-BUILDDEPS =    gegl babl
+# many dependencies and options discussed in file "INSTALL"
+BUILDDEPS =    babl gegl
 LIBDEPS =
 
 ######################################################################

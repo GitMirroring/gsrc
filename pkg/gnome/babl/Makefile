@@ -21,7 +21,7 @@
 
 NAME =    babl
 GARNAME = babl
-GARVERSION = 0.1.126
+GARVERSION = 0.1.128
 HOME_URL = http://www.gimp.org/
 DESCRIPTION =  babl is a dynamic, any to any, pixel format translation library.
 define BLURB
@@ -48,3 +48,5 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
+# needed for gimp:
+MESON_OPTS =  -Denable-gir=true 
