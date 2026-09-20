@@ -21,7 +21,7 @@
 
 NAME = GnuPG
 GARNAME = gnupg
-GARVERSION = 2.5.21
+GARVERSION = 2.5.22
 HOME_URL = http://www.gnu.org/software/gnupg
 DESCRIPTION = GNU Privacy Guard gpg gnupg
 define BLURB
@@ -44,10 +44,22 @@ BUILDDEPS =  libgpg-error libgcrypt libassuan libksba npth   zlib nettle gnutls
 #pinentry readline
 LIBDEPS = 
 
-######################################################################
+###################################################################### aa
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+# wget https://gnupg.org/signature_key.asc
+# signing key, for verifying
 
+# use old gpg
+# import keys
+# /bin/gpg --import signature_key.asc
+
+# check integrity
+# /bin/gpg --verify gnupg-2.5.22.tar.bz2.sig gnupg-2.5.22.tar.bz2
+
+# check signatures at 
+
+# https://gnupg.org/signature_key.html

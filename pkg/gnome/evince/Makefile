@@ -21,6 +21,7 @@
 NAME =    evince
 GARNAME = evince
 GARVERSION = 49.alpha.1
+# 48.4
 HOME_URL = https://wiki.gnome.org/Apps/Evince
 DESCRIPTION = View multipage documents, ps pdf dvi djvu etc
 define BLURB

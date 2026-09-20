@@ -22,7 +22,7 @@
 
 NAME = Libgcrypt
 GARNAME = libgcrypt
-GARVERSION = 1.12.3
+GARVERSION = 1.12.4
 HOME_URL = http://www.gnu.org/software/libgcrypt/
 DESCRIPTION = Cryptographic function library
 define BLURB
