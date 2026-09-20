@@ -26,7 +26,6 @@ DESCRIPTION = lib of brushstroke code
 define BLURB
 library of brushstroke code. Gimp depends on this.
 endef
-# https://github.com/mypaint/libmypaint/archive/v1.3.0.tar.gz
 ######################################################################
 
 MASTER_SITES =  $(MASTER_GITHUB)

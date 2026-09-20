@@ -22,7 +22,7 @@ NAME =    mypaint
 GARNAME = mypaint
 GARVERSION =   2.0.1
 HOME_URL =  https://github.com/mypaint/mypaint
-DESCRIPTION = paint program 
+DESCRIPTION = paint program, good for tablets 
 define BLURB
 endef
 ######################################################################
@@ -32,7 +32,7 @@ MASTER_SUBDIR = mypaint/mypaint/releases/download/v$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = 
 
-BUILDDEPS = mypaint-brushes
+#BUILDDEPS = #mypaint-brushes
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
 ######################################################################

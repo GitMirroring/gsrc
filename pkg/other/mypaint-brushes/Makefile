@@ -1,4 +1,4 @@
-# Copyright ©2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,15 +20,15 @@
 
 NAME =    mypaint-brushes
 GARNAME = mypaint-brushes
-GARVERSION =   1.3.1
+GARVERSION =   1.6.1
 HOME_URL =  https://github.com/mypaint/libmypaint
 DESCRIPTION = lib of brushstroke code
 define BLURB
-mypaint library of brushs code. Gimp depends on this.
+mypaint library of brushes code. Gimp depends on this.
 endef
 ######################################################################
-#https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
-
+# https://github.com/mypaint/mypaint-brushes/releases/download/v1.3.1/mypaint-brushes-1.3.1.tar.xz
+# https://github.com/mypaint/libmypaint/releases/download/v1.6.1/libmypaint-1.6.1.tar.xz
 MASTER_SITES =  $(MASTER_GITHUB)
 MASTER_SUBDIR = mypaint/mypaint-brushes/releases/download/v$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.xz
@@ -36,7 +36,7 @@ SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
-WORKOBJ = $(WORKSRC)
+#WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
