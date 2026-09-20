@@ -1,4 +1,4 @@
-# Copyright ©2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
  
 NAME = giflib
 GARNAME = giflib
-GARVERSION = 5.2.2
+GARVERSION = 6.1.3
 HOME_URL =   https://sourceforge.net/projects/giflib
 DESCRIPTION =  library to read and write gif images
 define BLURB
@@ -44,7 +44,7 @@ BUILDDEPS =
 LIBDEPS =
 
 WORKOBJ = $(WORKSRC)
-PATCHFILES = giflib.prefix.patch
+#PATCHFILES = giflib.prefix.patch
 
 ######################################################################
 

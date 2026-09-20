@@ -23,7 +23,7 @@
 NAME = jpeg
 GARNAME = jpeg
 UPSTREAMNAME = jpegsrc
-GARVERSION =  9f
+GARVERSION = 10
 HOME_URL = http://ijg.org/
 DESCRIPTION =  library to encode/decode jpeg images
 define BLURB

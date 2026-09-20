@@ -1,4 +1,4 @@
-# Copyright © 2022-2023,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2022-2023,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
  
 NAME = libjpeg-turbo
 GARNAME = libjpeg-turbo
-GARVERSION = 3.1.1
+GARVERSION = 3.2.0
 HOME_URL =   https://libjpeg-turbo.org/
 DESCRIPTION =  library to encode/decode jpeg images, faster than ijg jpeg
 define BLURB
