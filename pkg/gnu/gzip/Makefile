@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2021-2023,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2021-2023,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,9 +20,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Gzip
+NAME = gzip
 GARNAME = gzip
-GARVERSION = 1.14
+GARVERSION = 1.15
 HOME_URL = http://www.gnu.org/software/gzip/
 DESCRIPTION = General file (de)compression (using lzw)
 define BLURB
