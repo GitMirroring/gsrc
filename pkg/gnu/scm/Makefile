@@ -19,9 +19,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = SCM
+NAME = scm  scheme
 GARNAME = scm
-GARVERSION = 5f5
+GARVERSION = 5f6
 HOME_URL =  http://www.gnu.org/software/scm
   # or http://people.csail.mit.edu/jaffer/SCM
 DESCRIPTION = A scheme implementation, includes scheme-to-c compiler
@@ -96,3 +96,4 @@ build-my: configure-my
 #
 #  # ln -s ......slib work/slib
 
+# FIXME

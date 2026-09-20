@@ -22,7 +22,7 @@
 
 NAME = SLIB scheme library
 GARNAME = slib
-GARVERSION = 3c2
+GARVERSION = 3c3
 HOME_URL =  http://www.gnu.org/software/slib
 DESCRIPTION = Portable library for Scheme
 define BLURB
@@ -137,3 +137,4 @@ pre-install:
 #	$(MAKECOOKIE)
 #
 
+# FIXME

@@ -23,7 +23,7 @@
 
 NAME = PSPP
 GARNAME = pspp
-GARVERSION = 2.1.1
+GARVERSION = 2.1.2
 HOME_URL = http://www.gnu.org/software/pspp/
 DESCRIPTION = Statistical analysis
 define BLURB
