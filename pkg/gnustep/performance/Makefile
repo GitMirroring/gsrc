@@ -20,8 +20,9 @@ GARNAME = performance
 UPSTREAMNAME = Performance
 GARVERSION = 0.5.0
 HOME_URL = http://www.gnustep.org/
-DESCRIPTION = Performance improvement and measuring classes for \
-GNUstep
+DESCRIPTION = Performance improvement and measuring classes for GNUstep
+define BLURB
+endef
 
 ######################################################################
 
@@ -32,7 +33,7 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 CONFIGURE_SCRIPTS =
 
 BUILDDEPS =
-LIBDEPS = libs-base
+LIBDEPS =
 
 ######################################################################
 

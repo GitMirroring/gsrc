@@ -36,7 +36,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
-LIBDEPS = libs-base performance
+LIBDEPS =  performance
 
 ######################################################################
 

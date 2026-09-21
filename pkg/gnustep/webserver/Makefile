@@ -39,10 +39,10 @@ MASTER_SITES = $(MASTER_GNUSTEP)
 MASTER_SUBDIR = libs/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
-CONFIGURE_SCRIPTS = 
+CONFIGURE_SCRIPTS =
 
 BUILDDEPS =
-LIBDEPS = libs-base performance
+LIBDEPS =  performance
 
 ######################################################################
 

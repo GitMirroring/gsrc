@@ -19,8 +19,8 @@
 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-# To use other GNUstep software first install these four packages in this order:
-# tools-make libs-base libs-gui libs-back
+# To use  and build GNUstep software first install these four packages in this order:
+# gnustep-tools-make gnustep-libs-base gnustep-libs-gui gnustep-libs-back
 
 NAME = GNUstep-tools-make
 GARNAME = gnustep-tools-make
@@ -29,7 +29,7 @@ GARVERSION = master
 HOME_URL = http://www.gnustep.org/
 DESCRIPTION = gnustep-tools-make  global Makefile package
 define BLURB
-gnustep-tools-make, GNUstep global Makefile package 
+gnustep-tools-make, GNUstep global Makefile package
 endef
 
 ######################################################################
