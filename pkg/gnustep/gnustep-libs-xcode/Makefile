@@ -23,8 +23,8 @@
 # To use GNUstep, install these packages in this order:
 # gnustep-make gnustep-base gnustep-gui gnustep-back
 
-NAME = GNUstep  libs-xcode
-GARNAME = libs-xcode
+NAME = GNUstep libs-xcode
+GARNAME = gnustep-libs-xcode
 GARVERSION = 0_5_0
 HOME_URL = http://www.gnustep.org/
 DESCRIPTION = GNUstep library to allow building Xcode projects
@@ -43,7 +43,7 @@ MASTER_SUBDIR = gnustep/libs-xcode/archive/refs/tags/
 DISTFILES = XCode-$(GARVERSION).tar.gz
 SIGFILES =
 CONFIGURE_SCRIPTS =
-WORKSRC = $(WORKDIR)/$(GARNAME)-XCode-$(GARVERSION)/
+WORKSRC = $(WORKDIR)/libs-xcode-XCode-$(GARVERSION)/
 WORKOBJ  = $(WORKSRC)
 
 BUILDDEPS = gnustep-tools-make gnustep-libs-base
