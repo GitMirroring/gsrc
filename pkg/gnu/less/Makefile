@@ -22,7 +22,7 @@
 
 NAME = less
 GARNAME = less
-GARVERSION = 704
+GARVERSION = 710
 #HOME_URL = http://www.gnu.org/software/less/
 HOME_URL = http://greenwoodsoftware.com/less/
 DESCRIPTION = Paginator for terminals

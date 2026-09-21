@@ -32,19 +32,15 @@ MASTER_SUBDIR =  gnunet/
 DISTFILES = $(DISTNAME).tar.gz 
 SIGFILES =  $(DISTNAME).tar.gz.sig
 
-
 BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
 
-#USE_AUTORECONF=y
-
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-#pre-configure:	
-#	(cd $(WORKSRC);  ./buildconf)
-#	$(MAKECOOKIE)
+# see options in config.mk
+
 
 
