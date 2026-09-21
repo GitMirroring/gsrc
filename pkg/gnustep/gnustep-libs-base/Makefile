@@ -1,5 +1,5 @@
 # Copyright ©2013, 2014, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2017, 2019, 2020, 2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017, 2019, 2020, 2023-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -27,7 +27,7 @@
 
 
 NAME = GNUstep libs-base
-GARNAME = libs-base
+GARNAME = gnustep-libs-base
 GARVERSION = master
 HOME_URL = http://www.gnustep.org/
 DESCRIPTION = GNUstep base  foundation library
@@ -57,13 +57,13 @@ MASTER_SUBDIR = gnustep
 GIT_PATH = $(MASTER_SITES)$(MASTER_SUBDIR)/libs-base.git
 
 GIT_REVISION = master
-GITSRC =  $(DOWNLOADDIRGIT)/$(GARNAME)
+GITSRC =  $(DOWNLOADDIRGIT)/libs-base
 WORKSRC  = $(WORKDIR)/$(DISTNAME)
 WORKOBJ  = $(WORKSRC)
 
 SIGFILES =
 
-BUILDDEPS = tools-make libffi libxml2
+BUILDDEPS = gnustep-tools-make libffi libxml2
 #gnutls
 LIBDEPS =
 ######################################################################
@@ -78,12 +78,12 @@ CONFIGURE_ARGS = --enable-libffi --enable-nxconstantstring
 
 fetch: fetch-git
 
-pre-extract: fetch
+pre-extract: fetch-git
 	mkdir -p $(WORKSRC)
-	mkdir -p $(WORKOBJ)
 	cp -a $(GITSRC)/*  $(WORKSRC)
 
 post-install:
+	@echo installing Documentation
 	make -C $(WORKOBJ)/Documentation/ install
 	$(MAKECOOKIE)
 

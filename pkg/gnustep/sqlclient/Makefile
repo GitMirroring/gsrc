@@ -29,7 +29,7 @@ MASTER_SUBDIR = libs/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS = tools-make libs-base performance
+BUILDDEPS = gnustep-tools-make gnustep-libs-base performance
 LIBDEPS = 
 
 ######################################################################

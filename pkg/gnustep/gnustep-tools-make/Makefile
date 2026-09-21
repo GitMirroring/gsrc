@@ -1,5 +1,5 @@
 # Copyright © 2013, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2020, 2021, 2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2020, 2021, 2023-2026 Carl Hansen <carlhansen@gnu.org>
 
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,12 +23,13 @@
 # tools-make libs-base libs-gui libs-back
 
 NAME = GNUstep-tools-make
-#GARNAME = gnustep-make 
-GARNAME = tools-make
+GARNAME = gnustep-tools-make
+UPSTREAMNAME = tools-make
 GARVERSION = master
 HOME_URL = http://www.gnustep.org/
-DESCRIPTION = global GNUstep Makefile package tools-make
+DESCRIPTION = gnustep-tools-make  global Makefile package
 define BLURB
+gnustep-tools-make, GNUstep global Makefile package 
 endef
 
 ######################################################################
@@ -42,8 +43,11 @@ GIT_REVISION = master
 SIGFILES =
 
 GITSRC =   $(DOWNLOADDIRGIT)/
-WORKSRC =  $(WORKDIR)/$(DISTNAME)
+WORKSRC =  $(WORKDIR)/$(UPSTREAMNAME)-$(GARVERSION)
 WORKOBJ =  $(WORKSRC)
+
+INFO_FILES = gnustep-make.info gnustep-userfaq.info  \
+  gnustep-filesystem.info gnustep-howto.info gnustep-faq.info
 
 BUILDDEPS =
 LIBDEPS =
@@ -52,16 +56,16 @@ BUILD_SCRIPTS = nothing
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/info.mk
 include config.mk
 
-.PHONY:  configure-forgsrc build-nothing custom-post-install
+.PHONY:  configure-forgsrc build-nothing 
 
 fetch: fetch-git
 
-pre-extract: fetch
+pre-extract: fetch-git
 	mkdir -p $(WORKSRC)
-	mkdir -p $(WORKOBJ)
-	cp -a $(GITSRC)/$(GARNAME)/*   $(WORKSRC)/
+	cp -a $(GITSRC)/$(UPSTREAMNAME)/*   $(WORKSRC)/
 
 configure-forgsrc:
 	@echo configuring --with-layout=fhs  --prefix=$(prefix)
@@ -70,11 +74,8 @@ configure-forgsrc:
 build-nothing:
 	@echo Nothing to compile, just do "make install"
 
-custom-post-install:
-	@echo Installing $(prefix)/GNUstep/Documentation
-	@echo Installing $(prefix)/GNUstep/Documentation
-	@echo Installing $(prefix)/GNUstep/Documentation
-	@echo Installing $(prefix)/GNUstep/Documentation
+pre-install:
+	@echo Installing additional $(prefix)/GNUstep/Documentation
 	make -C $(WORKSRC)/Documentation/ install  DESTDIR=$(packageDESTDIR)
 
 

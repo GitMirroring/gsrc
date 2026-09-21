@@ -42,7 +42,7 @@ DISTFILES = $(GARNAME)-1_5_0.tar.gz
 SIGFILES = 
 CONFIGURE_SCRIPTS =
 
-BUILDDEPS = tools-make libs-base libs-gui libs-back
+BUILDDEPS = gnustep-tools-make gnustep-libs-base gnustep-libs-gui gnustep-libs-back
 LIBDEPS = 
 
 WORKSRC = $(WORKDIR)/apps-gorm-gorm-1_5_0

@@ -41,7 +41,7 @@ WORKOBJ = $(WORKDIR)/trunk
 
 # This program uses GNUstep libraries.
 # Before building FisicaLab, install these packages in this order:
-BUILDDEPS = tools-make libs-base libs-gui libs-back gsl libs-renaissance
+BUILDDEPS = gnustep-tools-make gnustep-libs-base gnustep-libs-gui gnustep-libs-back gsl gnustep-libs-renaissance
 LIBDEPS =
 
 ######################################################################

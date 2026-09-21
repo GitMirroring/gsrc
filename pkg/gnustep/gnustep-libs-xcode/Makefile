@@ -1,5 +1,4 @@
-# Copyright ©2013, 2017  Brandon Invergo <brandon@invergo.net>
-# Copyright ©2017-2021,2024  Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2025 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -17,53 +16,55 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
-# 
-# 
+#
+#
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 #
-# To use GNUstep software first install these four packages in this order:
+# To use GNUstep, install these packages in this order:
 # gnustep-make gnustep-base gnustep-gui gnustep-back
 
-
-NAME = GNUstep libs-back
-GARNAME = libs-back
-GARVERSION = master
+NAME = GNUstep  libs-xcode
+GARNAME = libs-xcode
+GARVERSION = 0_5_0
 HOME_URL = http://www.gnustep.org/
-DESCRIPTION = GNUstep generic graphical backend
+DESCRIPTION = GNUstep library to allow building Xcode projects
 define BLURB
 endef
 
-
 ######################################################################
+# https://github.com/gnustep/libs-xcode/archive/refs/tags/XCode-0_5_0.tar.gz
 
-MASTER_SITES = $(MASTER_GITHUB)
-MASTER_SUBDIR = gnustep
-GIT_PATH = $(MASTER_SITES)$(MASTER_SUBDIR)/libs-back.git
+MASTER_SITES = $(MASTER_GITHUB)/
+MASTER_SUBDIR = gnustep/libs-xcode/archive/refs/tags/
+#GIT_PATH = $(MASTER_SITES)$(MASTER_SUBDIR)/libs-gui.git
+#GIT_REVISION = master
+#GITSRC =  $(DOWNLOADDIRGIT)/$(GARNAME)
 
-GIT_REVISION = master
-GITSRC =  $(DOWNLOADDIRGIT)/$(GARNAME)
+DISTFILES = XCode-$(GARVERSION).tar.gz
+SIGFILES =
+CONFIGURE_SCRIPTS =
+WORKSRC = $(WORKDIR)/$(GARNAME)-XCode-$(GARVERSION)/
 WORKOBJ  = $(WORKSRC)
 
-SIGFILES =
-
-BUILDDEPS = tools-make libs-base   libs-gui cairo
-LIBDEPS =
+BUILDDEPS = gnustep-tools-make gnustep-libs-base
+LIBDEPS = 
 ######################################################################
 
 include ../../../gar/gar.lib/gnustep.mk
 include config.mk
 
-BUILD_ARGS = LDFLAGS=-lgnustep-base
-
-.PHONY: post-intall
-
-fetch: fetch-git
-
-post-fetch: fetch-git
-	mkdir -p $(WORKSRC)
-	cp -a $(GITSRC)/*   $(WORKSRC)
-
-post-install:
-	make -C $(WORKOBJ)/Documentation/ install
-
+#fetch: fetch-git
+#
+#pre-extract: fetch
+#	mkdir -p $(WORKSRC)
+#	cp -a $(GITSRC)/* $(WORKSRC)
+#
+#post-install:
+#	make -C $(WORKOBJ)/Documentation/ install
+#	$(MAKECOOKIE)
+#
+#
+#check: build
+#	cd $(WORKOBJ) && $(MAKE) check
+# 
 

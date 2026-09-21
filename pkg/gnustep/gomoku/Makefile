@@ -19,7 +19,7 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 # To use other GNUstep software first install these four packages in this order:
-# tools-make libs-base libs-gui libs-back
+# gnustep-tools-make gnustep-libs-base gnustep-libs-gui gnustep-libs-back
 
 NAME = Gomoku
 GARNAME = gomoku
@@ -52,7 +52,7 @@ include config.mk
 
 fetch: fetch-git
 
-pre-extract: fetch
+pre-extract: fetch-git
 	mkdir -p $(WORKSRC)
 	cp -a $(GITSRC)/*   $(WORKSRC)/
 

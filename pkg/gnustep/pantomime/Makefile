@@ -43,7 +43,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES =
 CONFIGURE_SCRIPTS =
 
-BUILDDEPS = tools-make libs-base
+BUILDDEPS = gnustep-tools-make gnustep-libs-base
 LIBDEPS =
 
 ######################################################################

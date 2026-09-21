@@ -21,7 +21,7 @@
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
 NAME = GNUstep CoreBase
-GARNAME = gnustep-corebase
+GARNAME = gnustep-libs-corebase
 GARVERSION = 0.1.1git
 HOME_URL = http://www.gnustep.org/
 DESCRIPTION = GNUstep corebase library
@@ -34,7 +34,6 @@ It provides functionality that aims to implement the non-graphical
 portion of Apple.s CoreFoundation framework.
 endef
 LICENSE = LGPL
-#PATCHFILES = corebase-extern.diff
 
 ######################################################################
 
@@ -47,7 +46,7 @@ GITSRC =  $(DOWNLOADDIRGIT)/libs-corebase
 WORKSRC  = $(WORKDIR)/$(DISTNAME)
 WORKOBJ  = $(WORKSRC)
 
-BUILDDEPS = tools-make
+BUILDDEPS = gnustep-tools-make
 LIBDEPS =
 ######################################################################
 

@@ -33,7 +33,7 @@ SIGFILES =
 
 BUILDDEPS =
 # install these in this order, if not already installed:
-LIBDEPS = tools-make libs-base libs-gui libs-back
+LIBDEPS = gnustep-tools-make gnustep-libs-base gnustep-libs-gui gnustep-libs-back
 #PATCHFILES = gworkspace-extern.diff
 
 ######################################################################

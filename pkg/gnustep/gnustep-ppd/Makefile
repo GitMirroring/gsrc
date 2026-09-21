@@ -39,7 +39,7 @@ CONFIGURE_SCRIPTS =
 PATCHFILES = ppd-make.diff
 PATCHOPTS = -p2
 
-BUILDDEPS = tools-make libs-base libs-gui libs-back
+BUILDDEPS = gnustep-tools-make gnustep-libs-base gnustep-libs-gui gnustep-libs-back
 LIBDEPS = 
 
 WORKOBJ = $(WORKSRC)
