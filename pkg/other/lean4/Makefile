@@ -60,7 +60,7 @@ LICENSE = apache
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk
-include ../../../gar/varb.mk
+include ../../../gar/diag.mk
 include config.mk
 
 CMAKE_CONFIGURE_ARGS += --preset="release" -B . -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$(prefix) -DINSTALL_PREFIX=$(prefix)

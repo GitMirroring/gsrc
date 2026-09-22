@@ -23,7 +23,7 @@
 
 NAME =    pcre2
 GARNAME = pcre2
-GARVERSION = 10.47
+GARVERSION = 10.48
 HOME_URL = http://www.pcre.org/
 DESCRIPTION = pcre.2 perl compatible regular expressions library
 define BLURB

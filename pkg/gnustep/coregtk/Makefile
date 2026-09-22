@@ -17,7 +17,6 @@
 # You should have received a copy of the GNU General Public License
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
-
 NAME = CoreGTK
 GARNAME = coregtk
 GARVERSION = 3.22.0
@@ -58,6 +57,7 @@ install-it: build
 	@echo --------------------------------------------------------------
 	@echo --------------------------------------------------------------
 	@echo --------------------------------------------------------------
+	@echo installation is as you wish, could be better
 	@echo --------------------------------------------------------------
 	@echo Grab appropiate files and add to your project.
 	@echo A library might be created in the future.
@@ -67,7 +67,9 @@ install-it: build
 	@echo --------------------------------------------------------------
 	@echo --------------------------------------------------------------
 	@echo --------------------------------------------------------------
-	@echo FIXME installation of .h files. --------------------------------------------------------------
+	@echo FIXME installation of .h files. ------------------------------
+	@echo --------------------------------------------------------------
+	@echo --------------------------------------------------------------
 	$(MAKECOOKIE)
 
 

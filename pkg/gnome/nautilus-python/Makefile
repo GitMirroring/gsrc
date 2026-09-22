@@ -21,7 +21,7 @@
 
 NAME =    nautilus-python 
 GARNAME = nautilus-python
-GARVERSION = 4.1.0
+GARVERSION = 4.2.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION =  nautilus python components
 define BLURB
