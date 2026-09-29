@@ -21,9 +21,9 @@
 
 NAME =  gdb GNU debugger
 GARNAME = gdb
-GARVERSION = 17.2
+GARVERSION = 18.1
 HOME_URL = http://www.gnu.org/software/gdb/
-DESCRIPTION = gdb The GNU debugger
+DESCRIPTION = gdb, The GNU debugger
 define BLURB
 GDB is the GNU debugger.  With it, you can monitor what a program is
 doing while it runs or what it was doing just before a crash.  It

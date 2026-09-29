@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME = Gengetopt
 GARNAME = gengetopt
-GARVERSION = 2.23
+GARVERSION = 2.23.1
 HOME_URL = http://www.gnu.org/software/gengetopt/
 DESCRIPTION = Create parsers for command line options
 define BLURB
@@ -49,6 +49,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk

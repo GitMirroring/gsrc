@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2019, 2021, 2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019, 2021, 2022, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,9 +21,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Parted
+NAME = parted
 GARNAME = parted
-GARVERSION = 3.7
+GARVERSION = 3.8
 HOME_URL = http://www.gnu.org/software/parted/
 DESCRIPTION = Disk partition editor
 define BLURB

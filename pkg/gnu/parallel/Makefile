@@ -22,7 +22,7 @@
 
 NAME = parallel
 GARNAME = parallel
-GARVERSION = 20260822
+GARVERSION = 20260922
 HOME_URL = http://www.gnu.org/software/parallel/
 DESCRIPTION = Build and execute command lines in parallel
 define BLURB
@@ -50,8 +50,15 @@ WORKOBJ = $(WORKSRC)
 
 #CITE =  Tange, Ole (2026, July 22). GNU Parallel 20260722 (\"Chat Control\"). Zenodo. https://doi.org/10.5281/zenodo.21476260
 
-CITE =    Tange, Ole (2026, August 22). GNU Parallel 20260822 ("Ceuta"). Zenodo. https://doi.org/10.5281/zenodo.22180990
+#CITE =    Tange, Ole (2026, August 22). GNU Parallel 20260822 ("Ceuta"). Zenodo. https://doi.org/10.5281/zenodo.22180990
 # get rid of single quotes
+
+
+
+CITE =    Tange, Ole. (2026, September 22). GNU Parallel 20260922 ('Parton'). Zenodo. https://doi.org/10.5281/zenodo.22904078
+
+
+
 LICENSE = GNU GPL 3 or later
 
 ######################################################################
