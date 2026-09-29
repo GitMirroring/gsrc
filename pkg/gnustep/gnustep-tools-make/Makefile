@@ -74,7 +74,7 @@ configure-forgsrc:
 build-nothing:
 	@echo Nothing to compile, just do "make install"
 
-pre-install:
+post-install:
 	@echo Installing additional $(prefix)/GNUstep/Documentation
 	make -C $(WORKSRC)/Documentation/ install  DESTDIR=$(packageDESTDIR)
 
