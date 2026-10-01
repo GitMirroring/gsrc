@@ -78,5 +78,6 @@ post-install:
 	@echo Installing additional $(prefix)/GNUstep/Documentation
 	make -C $(WORKSRC)/Documentation/ install  DESTDIR=$(packageDESTDIR)
 
-
+# install is messed . do mkae install twixe
+# to be fixed FIXME
 

@@ -29,7 +29,7 @@ define BLURB
 GNU Parallel is a tool for executing shell jobs in parallel using one
 or more computers.  Jobs can consist of single commands or of scripts
 and they are executed on lists of files, hosts, users or other items.
-Can extend 'xargs' type functionality.  Also includes the programs:
+Can extend "xargs" type functionality.  Also includes the programs:
 env_parallel niceload parallel parcat parset parsort sem sql
 endef
 
@@ -47,16 +47,11 @@ WORKOBJ = $(WORKSRC)
 # CITE =  Tange, Ole (2026, May 22). GNU Parallel 20260522  (\"Hantavirus\") . Zenodo. https://doi.org/10.5281/zenodo.20402000
 # CITE = Tange, O. (2026, June 22). GNU Parallel 20260622 ("Rape Gang Inquiry"). Zenodo. https://doi.org/10.5281/zenodo.20959929
 #   622 version withdrawn
-
-#CITE =  Tange, Ole (2026, July 22). GNU Parallel 20260722 (\"Chat Control\"). Zenodo. https://doi.org/10.5281/zenodo.21476260
-
-#CITE =    Tange, Ole (2026, August 22). GNU Parallel 20260822 ("Ceuta"). Zenodo. https://doi.org/10.5281/zenodo.22180990
+# CITE =  Tange, Ole (2026, July 22). GNU Parallel 20260722 (\"Chat Control\"). Zenodo. https://doi.org/10.5281/zenodo.21476260
+# CITE =    Tange, Ole (2026, August 22). GNU Parallel 20260822 ("Ceuta"). Zenodo. https://doi.org/10.5281/zenodo.22180990
 # get rid of single quotes
 
-
-
-CITE =    Tange, Ole. (2026, September 22). GNU Parallel 20260922 ('Parton'). Zenodo. https://doi.org/10.5281/zenodo.22904078
-
+CITE =    Tange, Ole. (2026, September 22). GNU Parallel 20260922 ("Parton"). Zenodo. https://doi.org/10.5281/zenodo.22904078
 
 
 LICENSE = GNU GPL 3 or later
