@@ -27,7 +27,7 @@ DESCRIPTION = CD/DVD mastering tool
 define BLURB
 
 endef
-GARVERSION = 3.12.3
+GARVERSION = 3.12.4
 
 ######################################################################
 

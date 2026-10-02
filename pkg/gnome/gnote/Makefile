@@ -19,7 +19,7 @@
 
 NAME =    gnote
 GARNAME = gnote
-GARVERSION = 50.2
+GARVERSION = 51.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A note taking application 
 define BLURB
