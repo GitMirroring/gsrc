@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -21,7 +21,7 @@
 
 NAME = UnRTF
 GARNAME = unrtf
-GARVERSION = 0.21.10
+GARVERSION = 0.21.12
 HOME_URL = http://www.gnu.org/software/unrtf/
 DESCRIPTION = Convert Rich Text Format documents to other formats
 define BLURB
@@ -39,8 +39,6 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS = 
 LIBDEPS = 
-
-#USE_AUTORECONF = Y
 
 ######################################################################
 

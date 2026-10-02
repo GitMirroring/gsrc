@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2024-2025 Carl Hansen
+# Copyright ©2024-2026 Carl Hansen
 #
 # This file is part of GSRC.
 #
@@ -18,7 +18,7 @@
 
 NAME = Ghostscript
 GARNAME = ghostscript
-GARVERSION = 10.05.0
+GARVERSION = 10.08.0
 HOME_URL = http://www.gnu.org/software/ghostscript/
 DESCRIPTION = PostScript and PDF interpreter
 define BLURB
