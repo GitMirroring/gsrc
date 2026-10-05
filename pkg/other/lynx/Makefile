@@ -1,4 +1,4 @@
-# Copyright ©2022-2024 Carl Hansen <carlhansen@gnu.org> 
+# Copyright ©2022-2024,2026 Carl Hansen <carlhansen@gnu.org> 
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = lynx
 GARNAME = lynx
-GARVERSION = 2.9.2
+GARVERSION = 2.9.3
 HOME_URL = http://invisible-island.net/lynx
 DESCRIPTION =  command line WWW browser using text only
 define BLURB

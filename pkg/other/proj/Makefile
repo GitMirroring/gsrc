@@ -22,7 +22,7 @@
 
 NAME =    proj
 GARNAME = proj
-GARVERSION =  9.8.1
+GARVERSION =  9.9.0
 HOME_URL = http://www.proj.org
 # additional data and docs there
 DESCRIPTION =  library for doing geodesic and cartographic projections
@@ -62,5 +62,6 @@ pre-install:
 	cd  $(packageDESTDIR)/ && ls -Ra
 
 FIXME = to do install correctly
+
 
 

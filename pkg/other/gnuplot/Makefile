@@ -20,7 +20,7 @@
 
 NAME =    gnuplot
 GARNAME = gnuplot
-GARVERSION =  6.0.4
+GARVERSION =  6.0.5
 HOME_URL = http://gnuplot.sourceforge.net
 DESCRIPTION =  plotting tool, not related to GNU organization
 define BLURB

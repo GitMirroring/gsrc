@@ -22,7 +22,7 @@
 
 NAME =    mesa
 GARNAME = mesa
-GARVERSION = 26.2.3
+GARVERSION = 26.2.4
 GVER = 26.2
 HOME_URL = http://www.mesa3d.org/
 DESCRIPTION = Mesa, 3D graphics, OpenGL 4.5 implementation and more
@@ -46,7 +46,7 @@ BUILDDEPS = libffi
 LIBDEPS =
 ######################################################################
 # this is annoying:
-SOMEVERSION=afe29290a02105390cbf2e4c1e5147d2fb1f2928
+SOMEVERSION=9a0169f2a72d8d844124801b7abbdc75cc37f874
 SRC = mesa-$(GVER)-$(SOMEVERSION)
 WORKSRC = $(WORKDIR)/$(SRC)
 WORKOBJ = $(WORKSRC)-build
