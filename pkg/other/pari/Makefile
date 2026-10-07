@@ -21,7 +21,7 @@
 
 NAME =    pari
 GARNAME = pari
-GARVERSION = 2.18.1.alpha
+GARVERSION = 2.19.0
 HOME_URL = http://pari.math.u-bordeaux.fr/
 DESCRIPTION = computer algebra and library, unlimited-precision, discrete math etc.
 define BLURB
@@ -34,12 +34,10 @@ integration routines.  also a C library to allow for faster computations.
 endef
 
 ######################################################################
-# https://pari.math.u-bordeaux.fr/pub/pari/snapshots/pari-2.18.0-1109-gfe71f20e54.tar.gz
-# https://pari.math.u-bordeaux.fr/pub/pari/unstable/pari-2.18.1.alpha.tar.gz
+# https://pari.math.u-bordeaux.fr/pub/pari/unix/pari-2.19.0.tar.gz
 MASTER_SITES = https://pari.math.u-bordeaux.fr/
-MASTER_SUBDIR = pub/pari/unstable/
-#MASTER_SUBDIR = pub/pari/unix/
-#MASTER_SUBDIR = pub/pari/snapshots/
+#MASTER_SUBDIR = pub/pari/unstable/
+MASTER_SUBDIR = pub/pari/unix/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES  = #$(DISTNAME).tar.gz.asc
 

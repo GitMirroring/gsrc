@@ -74,10 +74,17 @@ configure-forgsrc:
 build-nothing:
 	@echo Nothing to compile, just do "make install"
 
+# separate installation steps for the Doc
 post-install:
-	@echo Installing additional $(prefix)/GNUstep/Documentation
-	make -C $(WORKSRC)/Documentation/ install  DESTDIR=$(packageDESTDIR)
+	@echo Installing  $(prefix)/GNUstep/Documentation
+	$(MAKE) -C $(WORKSRC)/Documentation/ install  DESTDIR=$(packageDESTDIR)
+	$(MAKE) sysinstall-packagevars
+	$(MAKE) sysinstall-install
+	if [ -d $(packagedir)  ]    ; then \
+	    rm -rf $(packageDESTDIR) $(OUTPUT); \
+		else echo "not erasing packageDESTDIR $(packageDESTDIDR) for now, something strange."; \
+	fi ;
 
-# install is messed . do mkae install twixe
+# install is messed . do mpae install twixe
 # to be fixed FIXME
 

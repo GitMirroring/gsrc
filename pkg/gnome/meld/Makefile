@@ -19,7 +19,7 @@
 
 NAME =    meld
 GARNAME = meld
-GARVERSION = 3.24.0
+GARVERSION = 3.24.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Compare files, directories and working copies
 define BLURB
@@ -41,7 +41,7 @@ BUILDDEPS =
 LIBDEPS =
 ######################################################################
 
-#include ../../../gar/gar.lib/python.mk
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
+#HIN%:  sudo apt install libgtksourceview-4\*``

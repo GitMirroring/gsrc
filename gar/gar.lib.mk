@@ -773,16 +773,15 @@ MERGE_DIRS = \
 
 .PHONY: prepare-install finish-package-install
 
-# ?? what is this doing?
-#rm -fr $(packageDESTDIR)
 
 prepare-install:
 	@printf "[$(OK)prepare-install$(OFF)] $(MSG)Preparing staging area packageDESTDIR/prefix...$(OFF)\n"
 	@printf  "packageDESTDIR/prefix is $(packageDESTDIR)$(prefix) \n"
+	rm -fr $(packageDESTDIR)
 	mkdir -p $(packageDESTDIR)$(prefix)
 	rm -rf    $(COOKIEDIR)/sysinstall* $(COOKIEDIR)/install*
 	@set -e; \
-		echo in function "prepare-install" \
+		echo in "make" command "prepare-install" \
               set -- $(CREATED_MERGE_DIRS); \
                   echo echoing 1 src... $$1 $$src; \
               while [ "$$1" != "" ]; do \
@@ -820,13 +819,13 @@ finish-package-install:
 	    rmdir -v $(packagedotgardir)/$$1 $(OUTPUT) || true; \
 	    shift; shift; \
         done $(OUTPUT)
-	@echo making directory packagedir is $(packagedir)
+	@echo making directory packagedir which is $(packagedir)
 	mkdir -p $(packagedir) $(OUTPUT)
 	@echo  packageDESTDIR/prefix is $(packageDESTDIR)$(prefix)
 	cp -a $(packageDESTDIR)$(prefix)/* $(packagedir)
 	if [ -d $(packagedir)  ]    ; then \
 	    rm -rf $(packageDESTDIR) $(OUTPUT); \
-	    else echo "not erasing DESTDIR for now"; \
+		else echo "not erasing packageDESTDIR $(packageDESTDIDR) for now, something strange."; \
 	fi ;
 	@echo end of finish-package-install
 
@@ -1184,7 +1183,7 @@ sysinstall-normalise:
          normalise () { \
          rmdir $$1 2>/dev/null || true; \
          if [ -d $$1 ]; then \
-            printf "[$(OK)sysinstall normalise $(OFF)] $(MSG)Moving contents of $$1 to $$2$(OFF)\n"; \
+            printf "[$(OK)sysinstall-normalise $(OFF)] $(MSG)Moving contents of $$1 to $$2$(OFF)\n"; \
             mkdir -p $$2; \
             cp -a $$1/* $$2; \
             rm -fr $$1; \
@@ -1199,7 +1198,10 @@ sysinstall-normalise:
           normalise $(packagedir)/games $(packagedir)/bin  $(OUTPUT)
 	$(MAKECOOKIE)
 
-#examples wrong... FIXME
+# shouldn;t be needed normalise $(packagedir)/usr/local  $(packagedir); \
+# cause it recureses
+
+#examples wrong... FIXME maybe
 
 sysinstall-packagevars:
 	@printf "[$(OK)sysinstall-packagevars$(OFF)] $(MSG)Writing package metadata FILES DIRS BUILD$(OFF)\n"

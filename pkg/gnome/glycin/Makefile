@@ -19,7 +19,7 @@
 
 NAME =    glycin
 GARNAME = glycin
-GARVERSION = 2.2.1
+GARVERSION = 2.2.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = glycin, loader of images
 define BLURB
@@ -48,4 +48,6 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
+
+MAKEFLAGS="CARGO_HOME=/home/carl/.cargo"
 

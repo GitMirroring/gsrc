@@ -22,7 +22,7 @@
 
 NAME = gprolog
 GARNAME = gprolog
-GARVERSION = 1.6git
+GARVERSION = 1.6.0
 #HOME_URL = http://www.gnu.org/software/gprolog/
 HOME_URL = http://www.gprolog.org
  # https://github.com/didoudiaz/gprolog.git
@@ -53,12 +53,12 @@ WORKOBJ = $(WORKSRC)
 
 BUILDDEPS =
 LIBDEPS =
-CONFIGURE_ARGS = prefix=$(prefix)
+CONFIGURE_ARGS = "prefix=$(prefix) --with-install-dir=$(packageDESTDIR) "
 LICENSE = dual GPL and-or LGPL, see COPYING
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
-include ../../../gar/varb.mk
+include ../../../gar/diag.mk
 include config.mk
 
 #--with-install-dir=$(prefix)/packages/$(DISTNAME)
@@ -88,8 +88,12 @@ post-fetch: fetch-git
 
 #      - another location can be specified using --with-install-dir=INSTALL_DIR
 
-#install:
-#	cd $(WORKOBJ)  && make -n install --with-install-dir=$(packageEDESTDIR)
+pre-install: build
+	cd $(WORKOBJ)  && $(MAKE)  install -f Makefile 
+	echo $(packageprefix) 
+#	cd $(packageprefix) && mv gprolog-1.6.0/*   .
+#	cd $(packageprefix) && rmdir gprolog-1.6.0
+# FIXME
 
 check:
 	cd $(WORKSRC)   &&  $(MAKE) check
