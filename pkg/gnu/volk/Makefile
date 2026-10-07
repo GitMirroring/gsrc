@@ -19,7 +19,7 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Vector Optimized Library of Kernels
+NAME = volk Vector Optimized Library of Kernels
 GARNAME = volk
 GARVERSION =  3.3.0
 HOME_URL = https://www.libvolk.org

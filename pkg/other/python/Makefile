@@ -24,7 +24,7 @@
 NAME = Python
 GARNAME = python
 UPSTREAMNAME = Python
-GARVERSION = 3.14.7
+GARVERSION = 3.14.8
 BASEVERSION = 3.14
 HOME_URL = http://python.org
 DESCRIPTION = A general-purpose, high-level programming language
