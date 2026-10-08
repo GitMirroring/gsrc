@@ -41,7 +41,6 @@ DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
 INFO_FILES = $(GARNAME).info annotate.info bfd.info stabs.info
 
-
 BUILDDEPS =
 LIBDEPS =
 ######################################################################
@@ -49,4 +48,6 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+BUILD_ARGS = CFLAGS=-fPIC CXXFLAGS=-fPIC
 

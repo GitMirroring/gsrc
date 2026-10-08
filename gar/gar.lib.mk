@@ -1159,6 +1159,7 @@ PACKAGE_IDENT_FILES = \
     Makefile
 
 # carl ls ? backtick or $sheel
+# make better check if
 #
 sysinstall-check:
 	@printf "[$(OK)sysinstall-check$(OFF)] $(MSG)Checking status of package $(packagedir) staging$(OFF)\n"
@@ -1177,6 +1178,7 @@ sysinstall-collisions:
 	rm -rf $(foreach FILE,$(COLLISIONS),$(packagedir)/$(FILE))
 	$(MAKECOOKIE)
 
+# recursing ??? if change, call self again
 sysinstall-normalise:
 	@printf "[$(OK)sysinstall-normalise$(OFF)] $(MSG)Normalising directory layout in packages staging$(OFF)\n"
 	@set -e; \

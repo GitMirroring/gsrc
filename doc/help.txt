@@ -1,6 +1,6 @@
 Usage: make -C pkg/DIR/PACKAGE [target]
 
-DIR is currently one of: gnu gnualpha gnustep gnome bio other gstreamer freedesktop xorg
+DIR is currently one of: gnu  gnustep gnome bio  gstreamer freedesktop xorg hurd other
 
 Example: to build and install "GNU Hello"
 
@@ -20,7 +20,7 @@ The main targets are:
  * configure      - run configure
  * build          - compile it (default)
  * check          - run the testsuite
- * install        - install to $(prefix)/
+ * install        - install and stow into $(prefix)/
  * clean          - delete temporary files in build directory
  * uninstall      - un-stow a package
  * uninstall-pkg  - completely remove a package
@@ -32,3 +32,4 @@ For a list of available packages, type "make package-list"
 or "make package-list.html"
 
 To build all currently tested packages, type "make"
+But better to start small...

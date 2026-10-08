@@ -44,66 +44,29 @@ DISTFILES = $(DISTNAME).tar.xz
 SIGFILES  =
 INFO_FILES = $(GARNAME).info vmgen.info
 
-BUILDDEPS =
-# maybe swig
+BUILDDEPS = swig
+# maybe swig, not strictly necessary
 LIBDEPS =
 
-#needed:  to find generated config.h . could be different
-#WORKOBJ = $(WORKSRC)
-
-#CONFIGURE_SCRIPTS = myconfigure
-#BUILD_SCRIPTS = mybuild
-#INSTALL_SCRIPTS = myinst
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-# HINT:  apt install texi2html
-
-#BUILD_ARGS = CFLAGS+="-Wno-implicit-function-declaration  -Iwayland"
-
 # Note: If you have old version of gforth, you might have to clear out
 # $HOME/.gforth before building.
-# and
-# make uninstall
-# make uninstall-pkg
 #
 #  if needed:
-#pre-configure:
+# pre-configure:
 #	BUILD_FROM=tarball . ./install-deps.sh
-#	# installs the dependencies for a tarball build
-#	  look at install-deps.sh
+#	installs the dependencies for a tarball build
+#	look at install-deps.sh
 
-CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR="$(packageDESTDIR)"  INCLUDE_PATH=$(WORKSRC)/arch/amd64  --enable-year2038
-BUILD_ARGS     =    BUILDFROM=tarball   DESTDIR="$(packageDESTDIR)"   CFLAGS="-I./wayland -I./generic -I./arch/amd64 -I./arch -UBUGGY_LL_MUL -I./$(WORKSRC)/arch/amd64"
+CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR="$(packageDESTDIR)"   --enable-year2038 --prefix=$(prefix)
+BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration -I$(WORKOBJ)/engine"
 
-#./gforth-0.7.9_20260610/wayland/
-
-#CFLAGS=-Wno-implicit-function-declaration
-
-.PHONY: configure-myconfigure
-#build-mybuild install-myinstall
-
-#configure-myconfigure:
-#	echo $(prefix)
-#	mkdir -p $(WORKOBJ)
-#	cd $(WORKOBJ) && BUILDFROM=tarball configure  --prefix=$(prefix)
-#	$(MAKECOOKIE)
-
-#build-mybuild:
-#	cd $(WORKOBJ) && BUILDFROM=tarball  VERBOSE=1 DESTDIR=$(packageDESTDIR) $(MAKE)
-
+# FIZME install build/*.fi into bin\
 #pre-install:
-#	$(INSTALL_INFO) $(WORKSRC)/doc/vmgen.info
-#	$(INSTALL_INFO) $(WORKSRC)/doc/gforth.info
-
-# is this still needed?
-#install-myinst: pre-install
-#	cd $(WORKOBJ) && $(MAKE)  -k install  VERBOSE=1 DESTDIR=$(packageDESTDIR)
-#	cd $(WORKOBJ)  && $(INSTALL_BIN)  gforth.fi
-
-# HINT rm -rf ~/.cache/gforth ; old stuff
-
+#	mkdir -p $()
 

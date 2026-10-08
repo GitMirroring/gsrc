@@ -1,4 +1,4 @@
-# Copyright © 2019,2024,2026Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
