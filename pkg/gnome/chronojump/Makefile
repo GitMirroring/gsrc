@@ -23,25 +23,25 @@ GARNAME = chronojump
 GARVERSION = 2.6.1
 HOME_URL = http://chronojump.org
 # or http://www.gnome.org/
-DESCRIPTION = Athletic jump timer software
+DESCRIPTION = Athletic jump-timer software
 define BLURB
-
 endef
 
 ######################################################################
-
+# https://gitlab.gnome.org/GNOME/chronojump/-/archive/2.6.1/chronojump-2.6.1.tar.bz2?ref_type=tags
 # https://gitlab.gnome.org/GNOME/chronojump.git
 empty:=
 space:= $(empty) $(empty)
 VERSION_LIST = $(subst .,$(space),$(GARVERSION))
 SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 
-MASTER_SITES = $(MASTER_GNOME)
-MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
-DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
-SIGFILES =
+#MASTER_SITES = $(MASTER_GNOME)
+#MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
+#DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
+#SIGFILES =
 
-# uses mono  mono-reference-assemblies-4.0 , probably others
+include ../../../gar/gitlabgnome.mk
+
 BUILDDEPS =
 LIBDEPS =
 
@@ -49,4 +49,6 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+
 

@@ -35,10 +35,10 @@ endef
 #DISTFILES = $(DISTNAME).tar.xz
 #SIGFILES = $(DISTNAME).tar.xz.sig
 
-# https://github.com/ArtifexSoftware/ghostpdl-downloads/archive/refs/tags/gs10050.tar.gz
-# https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10050/ghostscript-10.05.0.tar.xz
+# https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/ghostscript-10.08.0.tar.gz
 MASTER_SITES = $(MASTER_GITHUB)
-MASTER_SUBDIR = ArtifexSoftware/ghostpdl-downloads/releases/download/gs10050/
+MASTER_SUBDIR = ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/
+#                                                                   ^^^^^^^^^
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = 
 
@@ -46,8 +46,6 @@ BUILDDEPS =
 LIBDEPS =
 # libpng tiff zlib libiconv  libjpeg liblcms2-dev
 
-# seems to be needed:
-#WORKOBJ = $(WORKSRC)
 
 ######################################################################
 

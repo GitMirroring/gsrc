@@ -35,6 +35,7 @@ endef
 
 ## http://www.complang.tuwien.ac.at/forth/gforth/Snapshots/0.7.9_20180103/gforth-0.7.9_20180103.tar.xz
 # or savannah
+#  Austria
 MASTER_SITES = http://www.complang.tuwien.ac.at/
 MASTER_SUBDIR = forth/$(GARNAME)/Snapshots/$(GARVERSION)/
 #  https://git.savannah.gnu.org/cgit/gforth.git/snapshot/gforth-0.7.9_20241113.tar.gz
@@ -47,6 +48,7 @@ INFO_FILES = $(GARNAME).info vmgen.info
 BUILDDEPS = swig
 # maybe swig, not strictly necessary
 LIBDEPS =
+BUILD_SCRIPTS = me
 
 ######################################################################
 
@@ -54,9 +56,12 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+
+
 # Note: If you have old version of gforth, you might have to clear out
 # $HOME/.gforth before building.
-#
+# also might need to rm $HOME/.cache/gforth
+
 #  if needed:
 # pre-configure:
 #	BUILD_FROM=tarball . ./install-deps.sh
@@ -64,9 +69,19 @@ include config.mk
 #	look at install-deps.sh
 
 CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR="$(packageDESTDIR)"   --enable-year2038 --prefix=$(prefix)
-BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration -I$(WORKOBJ)/engine"
+BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration "
+#BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration -I$(WORKOBJ)/engine"
 
 # FIZME install build/*.fi into bin\
 #pre-install:
 #	mkdir -p $()
+ 
+#pre-build: 
+#	@echo  copy just created "onfig.h"  back into the source directory so as to be found
+#	if [ -e $(WORKSRC)/engine/config.h  ]; then \
+#      mv  $(WORKSRC)/engine/config.h $(WORKSRC)/engine.config.h.previous  ; \
+#    fi
+#	cp $(WORKOBJ)/engine/config.h  $(WORKSRC)/engine/config.h; 
 
+build-me:
+	cd $(WORKOBJ) &&  $(MAKE) 

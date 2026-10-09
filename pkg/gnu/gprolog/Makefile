@@ -61,14 +61,6 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/diag.mk
 include config.mk
 
-#--with-install-dir=$(prefix)/packages/$(DISTNAME)
-# --with-install-dir=$(packagedir)
-# --with-install-dir=$(packagedir)
-# --with-doc-dir=share/doc/$(GARNAME)
-
-# @echo $(packageexamples)
-# @echo $(packagedocs)
-# packageexamples := $(packagedocs)/examples
 
 # HINT: need latexmk for reproducing pdf docs
 # dnf install latexmk
@@ -76,9 +68,13 @@ include config.mk
 fetch: fetch-git
 
 # sic:
-post-fetch: fetch-git
+post-fetch: 
 	mkdir -p $(WORKSRC)
-	cp -a $(GITSRC)/* $(WORKSRC)/../
+	cp -a $(GITSRC)/* $(WORKDIR)/$(DISTNAME)
+
+
+pre-stow:
+	# mvoestuff around in DESTDIR
 
 #pre-install:
 #	@echo pre-installing
@@ -86,14 +82,11 @@ post-fetch: fetch-git
 #	$(INSTALL_DOCS) $(WORKSRC)/../doc/gprolog.pdf
 #	$(INSTALL_DOCS) $(WORKSRC)/../doc/gprolog.chm
 
-#      - another location can be specified using --with-install-dir=INSTALL_DIR
 
-pre-install: build
-	cd $(WORKOBJ)  && $(MAKE)  install -f Makefile 
-	echo $(packageprefix) 
-#	cd $(packageprefix) && mv gprolog-1.6.0/*   .
-#	cd $(packageprefix) && rmdir gprolog-1.6.0
-# FIXME
+#pre-install: build
+#	cd $(WORKOBJ)  && $(MAKE)  install -f Makefile 
+#	echo $(packageprefix) 
+#    FIXME
 
 check:
 	cd $(WORKSRC)   &&  $(MAKE) check

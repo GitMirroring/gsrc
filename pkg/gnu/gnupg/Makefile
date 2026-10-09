@@ -40,15 +40,20 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.bz2
 SIGFILES  = $(DISTNAME).tar.bz2.sig
 
-BUILDDEPS =  libgpg-error libgcrypt libassuan libksba npth   zlib nettle gnutls
+BUILDDEPS =  libgpg-error libgcrypt libassuan libksba npth zlib nettle gnutls
 #pinentry readline
-LIBDEPS = 
+LIBDEPS =
 
-###################################################################### aa
+######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+# To comply with the rules on GNU systems you should have build time
+# configured 'gnupg' using:
+
+CONFIGURE_ARGS = --sysconfdir=/etc --localstatedir=/var --prefix=$(prefix)
 
 # wget https://gnupg.org/signature_key.asc
 # signing key, for verifying
