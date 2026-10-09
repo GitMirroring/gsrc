@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019,2020,2023-2026 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -18,32 +18,34 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME =    pygobject
-GARNAME = pygobject
-GARVERSION = 3.58.1
-HOME_URL = http://www.gnome.org/
-DESCRIPTION = Python bindings for GObject Introspection
+
+
+NAME =    g-wrap
+GARNAME = g-wrap
+GARVERSION = 1.9.15
+HOME_URL =  https://savannah.gnu.org
+DESCRIPTION = program to make guile warpers for C library code
 define BLURB
 endef
 
 ######################################################################
+# https://download.savannah.gnu.org/releases/g-wrap/g-wrap-1.9.15.tar.gz.sig
 
-empty:=
-space:= $(empty) $(empty)
-VERSION_LIST = $(subst .,$(space),$(GARVERSION))
-SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 
-MASTER_SITES = $(MASTER_GNOME)
-MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
-DISTFILES = $(DISTNAME).tar.gz  $(DISTNAME).sha256sum
-SIGFILES =
+MASTER_SITES = $(MASTER_SAVANNAH_RELEASES)/
+MASTER_SUBDIR = $(GARNAME)/
+DISTFILES = $(DISTNAME).tar.gz
+SIGFILES  = $(DISTNAME).tar.gz.sig
 
-# apt install python-dev  python3-cairo  python3-cairo-dev python-cairo-dev
+#INFO_FILES =
 BUILDDEPS =
 LIBDEPS =
 
+WORKOBJ = $(WORKSRC)
+
 ######################################################################
 
-include ../../../gar/gar.lib/mesonninja.mk
+include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/gar.lib/info.mk
 include config.mk
 

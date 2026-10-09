@@ -20,7 +20,7 @@
 
 NAME =    evolution
 GARNAME = evolution
-GARVERSION = 3.62.0
+GARVERSION = 3.62.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = Manage your email, contacts and schedule
 define BLURB
