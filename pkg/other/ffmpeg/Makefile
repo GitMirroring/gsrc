@@ -18,7 +18,7 @@
 
 NAME = ffmpeg
 GARNAME = ffmpeg
-GARVERSION = 9.0.1
+GARVERSION = 9.0.2
 HOME_URL =  http://ffmpeg.org
 DESCRIPTION = video player, transcoder, video format converter, etc
 define BLURB
@@ -39,5 +39,6 @@ include config.mk
 
 # couldn't find drm.h without this. Adjust as necessary.
 # some evidence this needed; complaints from ld in other projects
-BUILD_ARGS = CFLAGS+='-fPIC -I/usr/include/drm'
+BUILD_ARGS = CFLAGS+='-fPIC -I/usr/include/drm -I/usr/include/SDL2'
+# not SDL3
 

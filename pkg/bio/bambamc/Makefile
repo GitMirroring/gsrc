@@ -47,3 +47,4 @@ USE_AUTORECONF = yes
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS="-std=c11 -Wno-implicit-function-declaration"

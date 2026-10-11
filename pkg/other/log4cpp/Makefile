@@ -39,6 +39,9 @@ WORKSRC = $(WORKDIR)/$(GARNAME)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
+include ../../../gar/diag.mk
 include config.mk
 
+pre-stow: prepare-install
+	ls -lRa $(packageprefix)
 

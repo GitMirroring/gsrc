@@ -61,7 +61,6 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/diag.mk
 include config.mk
 
-
 # HINT: need latexmk for reproducing pdf docs
 # dnf install latexmk
 
@@ -72,8 +71,8 @@ post-fetch:
 	mkdir -p $(WORKSRC)
 	cp -a $(GITSRC)/* $(WORKDIR)/$(DISTNAME)
 
-
 pre-stow:
+	echo prestorme..............
 	# mvoestuff around in DESTDIR
 
 #pre-install:
@@ -81,7 +80,6 @@ pre-stow:
 ##	$(INSTALL_DOCS) $(WORKSRC)/../doc/gprolog.html
 #	$(INSTALL_DOCS) $(WORKSRC)/../doc/gprolog.pdf
 #	$(INSTALL_DOCS) $(WORKSRC)/../doc/gprolog.chm
-
 
 #pre-install: build
 #	cd $(WORKOBJ)  && $(MAKE)  install -f Makefile 

@@ -22,7 +22,7 @@ NAME =    glade
 GARNAME = glade
 GARVERSION = 3.40.0
 HOME_URL = http://www.gnome.org/
-DESCRIPTION = User Interface Builder for GTK+ and Gnome applications
+DESCRIPTION = User Interface Builder for GTK+ and Gnome 3 applications
 define BLURB
 endef
 
@@ -44,10 +44,6 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
+include ../../../gar/diag.mk
 
-a:
-	@echo b $(BASEDIRABS)
-	@echo w $(WORKDIR)
-	@echo s $(WORKSRC)
-	@echo o $(WORKOBJ)
 

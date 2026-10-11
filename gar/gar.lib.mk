@@ -815,9 +815,9 @@ finish-package-install:
 	@set -e; \
         set -- $(CREATED_MERGE_DIRS); \
         while [ "$$1" != "" ]; do \
-            echo echoing .... finish-package-install to packages t 1  $$1 and 2 $$2; \
-	    rmdir -v $(packagedotgardir)/$$1 $(OUTPUT) || true; \
-	    shift; shift; \
+            echo echoing .... finish-package-install to packages  1  $$1 and 2 $$2; \
+	          rmdir -v $(packagedotgardir)/$$1 $(OUTPUT) || true; \
+	          shift; shift; \
         done $(OUTPUT)
 	@echo making directory packagedir which is $(packagedir)
 	mkdir -p $(packagedir) $(OUTPUT)
@@ -825,7 +825,7 @@ finish-package-install:
 	cp -a $(packageDESTDIR)$(prefix)/* $(packagedir)
 	if [ -d $(packagedir)  ]    ; then \
 	    rm -rf $(packageDESTDIR) $(OUTPUT); \
-		else echo "not erasing packageDESTDIR $(packageDESTDIDR) for now, something strange."; \
+		else echo "not erasing packageDESTDIR $(packageDESTDIDR) for now, $(packagedir) not right."; \
 	fi ;
 	@echo end of finish-package-install
 
