@@ -22,7 +22,7 @@
 
 NAME =    ibus
 GARNAME = ibus
-GARVERSION = 1.5.33
+GARVERSION = 1.5.35-rc1
 HOME_URL = http://github.com/ibus/ibus
 DESCRIPTION = ibus Intelligent Input Bus 
 define BLURB

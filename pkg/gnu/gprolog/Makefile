@@ -53,8 +53,9 @@ WORKOBJ = $(WORKSRC)
 
 BUILDDEPS =
 LIBDEPS =
-CONFIGURE_ARGS = "prefix=$(prefix) --with-install-dir=$(packageDESTDIR) "
+CONFIGURE_ARGS = "--prefix=$(prefix) --with-install-dir=$(packageDESTDIR) "
 LICENSE = dual GPL and-or LGPL, see COPYING
+BUILD_SCRIPTS = me
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
@@ -64,6 +65,8 @@ include config.mk
 # HINT: need latexmk for reproducing pdf docs
 # dnf install latexmk
 
+.PHONY:  build-me
+
 fetch: fetch-git
 
 # sic:
@@ -72,8 +75,15 @@ post-fetch:
 	cp -a $(GITSRC)/* $(WORKDIR)/$(DISTNAME)
 
 pre-stow:
-	echo prestorme..............
-	# mvoestuff around in DESTDIR
+	@echo pre-stor  me..............
+	cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then  ls -RalR . ; fi
+	cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then mv gprolog-1.6.0/*  . ; fi
+	cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then rmdir gprolog-1.6.0   ; fi
+	cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then  ls -RalR . ; fi
+
+
+build-me:
+	cd $(WORKSRC) && $(MAKE)
 
 #pre-install:
 #	@echo pre-installing
