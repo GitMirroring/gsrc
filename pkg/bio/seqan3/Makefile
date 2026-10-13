@@ -51,3 +51,6 @@ include config.mk
 #	mkdir -p $(packageprefix)/include
 #	cp -r $(WORKSRC)/include/seqan $(packageprefix)/include
 #	$(MAKECOOKIE)
+
+# a work around for now
+CMAKE_CONFIGURE_ARGS += -DCMAKE_POLICY_VERSION_MINIMUM=3.5 

@@ -6,7 +6,7 @@ GARBALLDIR ?= $(GARDIR)/cache/garstow/garballs
 
 # Flags to pass to "make" to build in parallel.
 # adjust to your machine
-#  eg  
+#  eg
 #  cat /proc/cpuinfo | grep processor | wc -l
 #  or
 #  nproc  # from coreutils
@@ -52,7 +52,9 @@ endif
 # not a good idea, since you won't be able to monitor the build
 # process.  If you change REDIRECT_OUTPUT to anything other than n,
 # the default is to suppress normal output and only print errors.
+
 # redirect or pipe > |
+
 REDIRECT_OUTPUT ?= n
 ifeq ($(REDIRECT_OUTPUT),n)
     OUTPUT = 

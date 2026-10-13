@@ -1,4 +1,4 @@
-@set UPDATED 25 October 2025
-@set UPDATED-MONTH October 2025
+@set UPDATED 11 October 2026
+@set UPDATED-MONTH October 2026
 @set EDITION 2026.04.11
 @set VERSION 2026.04.11

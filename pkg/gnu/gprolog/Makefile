@@ -69,21 +69,24 @@ include config.mk
 
 fetch: fetch-git
 
-# sic:
-post-fetch: 
+# _sic_:
+post-fetch:
 	mkdir -p $(WORKSRC)
 	cp -a $(GITSRC)/* $(WORKDIR)/$(DISTNAME)
 
-pre-stow:
-	@echo pre-stor  me..............
-	cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then  ls -RalR . ; fi
-	cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then mv gprolog-1.6.0/*  . ; fi
-	cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then rmdir gprolog-1.6.0   ; fi
-	cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then  ls -RalR . ; fi
-
-
 build-me:
 	cd $(WORKSRC) && $(MAKE)
+
+
+pre-stow:
+	@echo pre-stor  me..............
+	cd $(packageprefix) &&   ls -RalR .
+	cd /opt/gsrc/packages/ &&   ls -RalR  ./gprolog*
+	#cd $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then  ls -RalR . ; fi
+	#d $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then mv gprolog-1.6.0/*  . ; fi
+	#d $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then rmdir gprolog-1.6.0   ; fi
+	#d $(packageprefix) && if [ -e gprolog-1.6.0   ] ; then  ls -RalR . ; fi
+
 
 #pre-install:
 #	@echo pre-installing

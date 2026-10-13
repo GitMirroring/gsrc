@@ -21,7 +21,7 @@
 
 NAME = config
 GARNAME = config
-GARVERSION = 20250710
+GARVERSION = 20260517
 HOME_URL = http://www.gnu.org/software/config/
 DESCRIPTION =  config.guess and config.sub scripts
 define BLURB
@@ -62,7 +62,7 @@ include config.mk
 
 fetch: fetch-git
 
-build-my:   fetch-git   
+build-my:   fetch-git
 	@echo             recommended: make check
 	$(MAKECOOKIE)
 

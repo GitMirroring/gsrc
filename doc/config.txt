@@ -1,1 +1,1 @@
-#Edit the file gar.conf.mk to change these settings.
+# Edit the file ../gar/gar.conf.mk to change settings.

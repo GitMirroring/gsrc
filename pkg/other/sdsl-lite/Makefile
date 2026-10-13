@@ -20,8 +20,8 @@
 
 NAME =    sdsl-lite
 GARNAME = sdsl-lite
-GARVERSION = 2.1.1
-HOME_URL = https://github.com/simongog/sdsl-lite
+GARVERSION = 3.0.4
+HOME_URL = https://github.com/xxsds/sdsl-lite
 DESCRIPTION =  Succinct Data Structure Library
 define BLURB
 The Succinct Data Structure Library (SDSL) is a powerful and flexible
@@ -37,26 +37,24 @@ endef
 
 
 ######################################################################
-#https://github.com/simongog/sdsl-lite/releases/download/v2.1.1/sdsl-lite-2.1.1.tar.gz.offline.install.gz
+# https://github.com/xxsds/sdsl-lite/archive/refs/tags/v3.0.4.tar.gz
 MASTER_SITES = $(MASTER_GITHUB)
-MASTER_SUBDIR =  simongog/sdsl-lite/releases/download/v$(GARVERSION)/
-DISTFILES = $(DISTNAME).tar.gz.offline.install.gz
+MASTER_SUBDIR =  xxsds/sdsl-lite/archive/refs/tags/
+DISTFILES = v$(GARVERSION).tar.gz
 SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
-
+WORKOJB = $(WORKSRC)
 ######################################################################
 
-include ../../../gar/gar.mk
-#include ../../../gar/gar.lib/cmake.mk
+# include ../../../gar/gar.mk
+include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-extract:
-	cd $(WORKDIR) && tar -xf ../download/$(DISTFILES)
 
-post-build:
-	cd $(WORKSRC)/examples  && $(MAKE)
+CMAKE_CONFIGURE_ARGS = -DSDSL_BUILD_TESTS=0
+# avoids external packages
 
-FIXME = need to adjust INCLUDE_PATH  correctly
+
 

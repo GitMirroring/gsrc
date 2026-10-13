@@ -959,7 +959,7 @@ different scenarios.
 
 The directory @file{gar.lib} contains Makefiles that set common
 variable values for packages that share similar build systems. It has
-a file called @file{auto.mk}, for example, that defines the settings
+a file called @file{autotools.mk}, for example, that defines the settings
 for a package that uses the standard Autotools process.
 
 
@@ -1225,7 +1225,7 @@ all the programs and/or libraries required at run-time by the package.
 
 The final section of the GSRC Makefile contains the specifics of
 building the package. For most cases, it is sufficient to just add
-@code{include ../../gar.lib/auto.mk}, which will work for any package
+@code{include ../../gar.lib/autotools.mk}, which will work for any package
 that follows the GNU building and installation standards. This will,
 among other actions, automatically define the
 @code{CONFIGURE_SCRIPTS}, @code{BUILD_SCRIPTS} and
@@ -1247,7 +1247,7 @@ CONFIGURE_ARGS += --some-option
 @end example
 
 Finally, if necessary, the actual recipes are written. Note that if
-@file{gar.lib/auto.mk} was included, no recipes should need to be
+@file{gar.lib/autotools.mk} was included, no recipes should need to be
 written. In general, there are two kinds of targets for which recipes
 may need to be written.
 
@@ -1299,7 +1299,7 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../gar.lib/auto.mk
+include ../../gar.lib/autotools.mk
 include config.mk
 @end example
 
