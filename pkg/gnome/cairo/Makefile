@@ -1,4 +1,4 @@
-# Copyright © 2016, 2017, 2018, 2021, 2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2017, 2018, 2021, 2023-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    cairo
 GARNAME = cairo
-GARVERSION = 1.18.4
+GARVERSION = 1.18.6
 HOME_URL = http://cairographics.org
 DESCRIPTION = cairo, 2d graphics library
 define BLURB

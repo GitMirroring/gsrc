@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2025-2026
+# Copyright © 2025-2026 c
 #
 # This file is part of GSRC.
 #
@@ -17,10 +17,8 @@
 # along with GSRC.  If not, see <http://www.gnu.org/licenses/>.
 
 NAME = SQLAlchemy
-GARNAME = python-sqlalchemy
-UPSTREAMNAME = sqlalchemy
-GARVERSION = 2.1.0b2
-#GARVERSION = 0.9.4
+GARNAME = sqlalchemy
+GARVERSION = 2.1.4
 HOME_URL = http://www.sqlalchemy.org
 DESCRIPTION = The Python SQL toolkit and Object Relational Mapper
 define BLURB
@@ -32,18 +30,18 @@ LICENSE = Expat License
 CITE =
 
 ######################################################################
-# https://files.pythonhosted.org/packages/3b/20/93ea2518df4d7a14ebe9ace9ab8bb92aaf7df0072b9007644de74172b06c/sqlalchemy-2.0.37.tar.gz
-MASTER_SITES = https://files.pythonhosted.org/
-MASTER_SUBDIR = packages/3b/20/93ea2518df4d7a14ebe9ace9ab8bb92aaf7df0072b9007644de74172b06c/
-DISTFILES = $(DISTNAME).tar.gz
+#  https://github.com/sqlalchemy/sqlalchemy/archive/refs/tags/rel_2_1_4.tar.gz
+MASTER_SITES = https://github.com/
+MASTER_SUBDIR = sqlalchemy/sqlalchemy/archive/refs/tags/
+GARVERSIONUNDER:= $(subst .,_,$(GARVERSION))
+DISTFILES = rel_$(GARVERSIONUNDER).tar.gz
+# FIXME rename DISTFILES 
 SIGFILES =
 
 BUILDDEPS =
 LIBDEPS = 
 
-#PYTHON = $(prefix)/bin/python
-
-WORKSRC = $(WORKDIR)/$(DISTNAME)
+WORKSRC = $(WORKDIR)/$(GARNAME)-rel_$(GARVERSIONUNDER)
 WORKOBJ = $(WORKSRC)
 ######################################################################
 
