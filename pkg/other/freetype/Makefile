@@ -21,7 +21,7 @@
 
 NAME =    freetype
 GARNAME = freetype
-GARVERSION = 2.14.3
+GARVERSION = 2.15.0
 HOME_URL = http://freetype.org
 DESCRIPTION =  Typeface renderer
 define BLURB

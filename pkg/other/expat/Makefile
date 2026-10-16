@@ -22,8 +22,8 @@
 
 NAME =    expat
 GARNAME = expat
-GARVERSION = 2.8.3
-GARVALT = 2_8_3
+GARVERSION = 2.9.0
+GARVALT = 2_9_0
 HOME_URL = https://libexpat.github.io/
 DESCRIPTION = XML parser C library
 define BLURB
@@ -48,7 +48,7 @@ include config.mk
 
 # avoiding annoyance, your option
 #CONFIGURE_ARGS = --without-docbook --prefix=$(prefix)
-CONFIGURE_ARGS = DOCBOOK_TO_MAN="xmlto man --skip-validation"
+CONFIGURE_ARGS = DOCBOOK_TO_MAN="xmlto man --skip-validation" --prefix=$(prefix)
 
 #install-me:
 #	make install DESTDIR=$(packageDESTDIR)
