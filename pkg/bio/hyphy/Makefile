@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2023-2024 Carl Hansen
+# Copyright © 2023-2024, 2026 Carl Hansen
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = HyPhy
 GARNAME = hyphy
-GARVERSION = 2.5.93
+GARVERSION = 2.5.103
 HOME_URL = http://www.hyphy.org
 DESCRIPTION = Hypothesis testing using Phylogenies
 define BLURB

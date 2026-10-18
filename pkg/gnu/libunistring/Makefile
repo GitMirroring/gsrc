@@ -22,7 +22,7 @@
 
 NAME = libunistring
 GARNAME = libunistring
-GARVERSION = 1.4.2
+GARVERSION = 1.5
 HOME_URL = http://www.gnu.org/software/libunistring/
 DESCRIPTION = C library for manipulating Unicode strings
 define BLURB
