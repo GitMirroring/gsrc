@@ -22,7 +22,7 @@
 
 NAME = ncurses
 GARNAME = ncurses
-GARVERSION = 6.6-20261010
+GARVERSION = 6.6-20261017
 GARVERSIONMAJOR = 6.6
 
 HOME_URL = http://www.gnu.org/software/ncurses/

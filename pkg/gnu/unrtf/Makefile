@@ -21,13 +21,13 @@
 
 NAME = UnRTF
 GARNAME = unrtf
-GARVERSION = 0.21.12
+GARVERSION = 0.21.13
 HOME_URL = http://www.gnu.org/software/unrtf/
 DESCRIPTION = Convert Rich Text Format documents to other formats
 define BLURB
-GNU UnRTF converts text documents from RTF to HTML,
-LaTeX, or troff.  It supports changes in font characteristics,
-underlines and strikethroughs, superscripts and subscripts, and more.
+GNU UnRTF converts text documents from RTF to HTML, LaTeX, troff, or text.
+It supports changes in font characteristics, underlines and strikethroughs,
+superscripts and subscripts, and more.
 endef
 
 ######################################################################
