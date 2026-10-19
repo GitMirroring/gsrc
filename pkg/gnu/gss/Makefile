@@ -20,7 +20,7 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Generic Security Service
+NAME = gss Generic Security Service
 GARNAME = gss
 GARVERSION = 1.0.4
 HOME_URL = http://www.gnu.org/software/gss/
