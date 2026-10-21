@@ -1,4 +1,4 @@
-# Copyright ©2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -19,7 +19,7 @@
 
 NAME =    xdg-utils
 GARNAME = xdg-utils
-GARVERSION = 1.2.1
+GARVERSION = 1.3.0-rc.1
 HOME_URL = https://www.freedesktop.org/wiki/
 DESCRIPTION = xdg-utils
 define BLURB
@@ -32,7 +32,7 @@ MASTER_SITES = https://gitlab.freedesktop.org/
 MASTER_SUBDIR =  /xdg/$(GARNAME)/-/archive/v$(GARVERSION)/
 DISTFILES = $(GARNAME)-v$(GARVERSION).tar.bz2
 SIGFILES =
-CONFIGURE_SCRIPTS = myconf
+#CONFIGURE_SCRIPTS = myconf
 BUILDDEPS = 
 LIBDEPS = 
 
@@ -43,9 +43,10 @@ WORKOBJ = $(WORKSRC)
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+CONFIGURE_ARGS = --prefix=$(prefix)
 
-configure-myconf:
-	cd $(WORKSRC) && ./configure --prefix=$(prefix)
+#configure-myconf:
+#	cd $(WORKSRC) && ./configure --prefix=$(prefix)
 
 check:
 	cd $(WORKSRC) &&  $(MAKE)  test

@@ -22,7 +22,7 @@
 
 NAME = nano
 GARNAME = nano
-GARVERSION = 9.2
+GARVERSION = 9.3
 HOME_URL = http://www.gnu.org/software/nano/
 DESCRIPTION = Small, user-friendly console text editor
 define BLURB

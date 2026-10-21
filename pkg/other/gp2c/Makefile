@@ -20,7 +20,7 @@
 
 NAME =    gp2c
 GARNAME = gp2c
-GARVERSION =  0.0.14pl1
+GARVERSION =  0.0.15
 HOME_URL = http://pari.math.u-bordeaux.fr/
 DESCRIPTION = convert gp scripts to C code for pari math library
 define BLURB
@@ -60,3 +60,5 @@ build-gpanddoc:
 #	$(MAKECOOKIE)
 
 
+
+CONFIGURE_ARGS ?=    --with-paricfg=$(prefix)/lib/pari/pari.cfg   --prefix=$(prefix)
