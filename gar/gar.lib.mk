@@ -190,6 +190,7 @@ gitpullrecurse:
 
 #-d $(DOWNLOADDIRGIT)/$(GARNAME)/.git ];  problematic if name is something else
 # e.g.   emacs-muse, muse
+# use UPSTREAMENAME?
 
 fetch-git:
 	@if [ -d $(DOWNLOADDIRGIT)/$(GARNAME)/.git ]; then    $(MAKE) gitpull ;  else  \

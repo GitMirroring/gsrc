@@ -21,7 +21,7 @@
 
 NAME =    lean4
 GARNAME = lean4
-GARVERSION = 4.34.1
+GARVERSION = 4.36.0-rc1
 HOME_URL =  https://lean-lang.org
 DESCRIPTION = Lean4 theorem prover and functional language
 define BLURB
@@ -60,7 +60,6 @@ LICENSE = apache
 ######################################################################
 
 include ../../../gar/gar.lib/cmake.mk
-include ../../../gar/diag.mk
 include config.mk
 
 CMAKE_CONFIGURE_ARGS += --preset="release" -B . -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_INSTALL_PREFIX=$(prefix) -DINSTALL_PREFIX=$(prefix)
