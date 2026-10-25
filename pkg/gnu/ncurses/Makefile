@@ -22,7 +22,7 @@
 
 NAME = ncurses
 GARNAME = ncurses
-GARVERSION = 6.6-20261017
+GARVERSION = 6.6-20261024
 GARVERSIONMAJOR = 6.6
 
 HOME_URL = http://www.gnu.org/software/ncurses/
@@ -57,7 +57,6 @@ LIBDEPS =
 
 ##########################################
 include ../../../gar/gar.lib/autotools.mk
-include ../../../gar/diag.mk
 include config.mk
 
 # HINT. there are many config options. In the source directory, do "configure --help" .

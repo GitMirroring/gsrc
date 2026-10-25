@@ -34,23 +34,23 @@ include ../../../gar/gar.mk
 
 #LC_ALL=$(LOCALLOCALE)  meson setup --prefix=$(packageprefix)  $(WORKSRC) $(WORKOBJ)
 #cd  $(WORKSRC) && meson  setup  $(WORKOBJ) --prefix=$(prefix)  
-#@echo  XXXX  cd  $(WORKSRC)  and.... meson  setup  $(WORKOBJ) --prefix=$(prefix)  
+#@echo  XXXX  cd  $(WORKSRC)  and.... meson  setup  $(WORKOBJ) --prefix=$(prefix)
 
 BUILD_SCRIPTS += build-nin
 
-MESON_OPTS ?= 
-configure-mes: 
+MESON_OPTS ?=
+configure-mes:
 	@echo start configure-mes----------------------------------------------
 	@echo
 	mkdir -p $(WORKOBJ)
-	@echo  WORKSRC==$(WORKSRC) 
-	@echo  WORKOBJ==$(WORKOBJ)
+	@echo  WORKSRC is $(WORKSRC)
+	@echo  WORKOBJ is $(WORKOBJ)
+	@echo  MESON_BUILD_ROOT is $(MESON_BUILD_ROOT)
+	@echo  MESON_SOURCE_ROOT is $(MESON_SOURCE_ROOT)
 	@echo  MESON_OPTS are $(MESON_OPTS)
 	@echo
 	cd $(WORKSRC) &&  meson setup   ../../$(WORKOBJ) --prefix=$(prefix)  $(MESON_OPTS) 
-	@echo mbr $(MESON_BUILD_ROOT)
-	@echo msr $(MESON_SOURCE_ROOT)
-	@echo end.configure-meson----------------------------------------------
+	@echo end.configure-mes----------------------------------------------
 	$(MAKECOOKIE)
 
 #LC_ALL=C.UTF-8  meson setup   $(WORKSRC) $(WORKOBJ)

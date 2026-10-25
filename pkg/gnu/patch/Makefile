@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -21,9 +21,9 @@
 
 NAME = patch
 GARNAME = patch
-GARVERSION = 2.8
+GARVERSION = 2.8.1
 HOME_URL = http://www.gnu.org/software/patch
-DESCRIPTION = Apply differences to originals, with optional backups
+DESCRIPTION = Apply differences to files, with optional backups
 define BLURB
 Patch is a program that applies changes to files based on differences
 laid out as by the program "diff".  The changes may be applied to one or

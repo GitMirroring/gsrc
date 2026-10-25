@@ -23,9 +23,9 @@
 
 NAME = PSPP
 GARNAME = pspp
-GARVERSION = 2.1.2
+GARVERSION = 2.1.3
 HOME_URL = http://www.gnu.org/software/pspp/
-DESCRIPTION = Statistical analysis
+DESCRIPTION = PSPP Statistical analysis
 define BLURB
 GNU PSPP is a statistical analysis program.  It can perform descriptive
 statistics, T-tests, linear regression and non-parametric tests.  It

@@ -1,4 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
+# 2026
 #
 # This file is part of GSRC.
 #
@@ -17,7 +18,7 @@
 
 NAME = gxmessage
 GARNAME = gxmessage
-GARVERSION = 3.4.3
+GARVERSION = 4.1.1
 HOME_URL = http://www.gnu.org/software/gxmessage/
 DESCRIPTION = Open popup message window with buttons for return
 define BLURB
@@ -40,3 +41,5 @@ LIBDEPS = # gtk intltool
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
+
+

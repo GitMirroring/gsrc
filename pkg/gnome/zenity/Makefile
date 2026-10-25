@@ -45,3 +45,5 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
+MESON_OPTS = 
+
