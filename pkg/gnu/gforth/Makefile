@@ -19,10 +19,10 @@
 
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Gforth
+NAME = gforth
 GARNAME = gforth
 #GARVERSION = 0.7.3
-GARVERSION = 0.7.9_20260923
+GARVERSION = 0.7.9_20261024
 HOME_URL = https://gforth.org
 # or HOME_URL = https://www.gnu.org/software/gforth/
 DESCRIPTION = Forth interpreter, with virtual machine generator "vmgen"
@@ -56,8 +56,6 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-
-
 # Note: If you have old version of gforth, you might have to clear out
 # $HOME/.gforth before building.
 # also might need to rm $HOME/.cache/gforth
@@ -69,19 +67,12 @@ include config.mk
 #	look at install-deps.sh
 
 CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR="$(packageDESTDIR)"   --enable-year2038 --prefix=$(prefix)
-BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration "
-#BUILD_ARGS = CFLAGS="-Wno-implicit-function-declaration -I$(WORKOBJ)/engine"
 
-# FIZME install build/*.fi into bin\
-#pre-install:
-#	mkdir -p $()
- 
-#pre-build: 
-#	@echo  copy just created "onfig.h"  back into the source directory so as to be found
-#	if [ -e $(WORKSRC)/engine/config.h  ]; then \
-#      mv  $(WORKSRC)/engine/config.h $(WORKSRC)/engine.config.h.previous  ; \
-#    fi
-#	cp $(WORKOBJ)/engine/config.h  $(WORKSRC)/engine/config.h; 
 
 build-me:
-	cd $(WORKOBJ) &&  $(MAKE) 
+	cd $(WORKOBJ) &&  $(MAKE)
+
+
+# HINT:   make -k install
+# FIXME  install .info
+
