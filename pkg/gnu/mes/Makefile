@@ -1,4 +1,4 @@
-# Copyright © 2018-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =  GNU Mes
 GARNAME = mes
-GARVERSION =  0.27.1
+GARVERSION =  0.27.2
 HOME_URL = http://www.gnu.org/software/mes/
 DESCRIPTION = GNU Mes is a Scheme interpreter and C compiler for bootstrapping the GNU System
 define BLURB
@@ -38,15 +38,15 @@ MASTER_SITES = $(MASTER_GNU)/
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(GARNAME)-$(GARVERSION).tar.gz
 SIGFILES  = $(GARNAME)-$(GARVERSION).tar.gz.sig
-            
+
 BUILDDEPS =
 LIBDEPS =
 # Missing dependencies: blood-elf M1 hex2
-#  
+#
 #  on Debian, etc:
 #  sudo apt install mescc-tools
 
- WORKOBJ = $(WORKSRC)
+# WORKOBJ = $(WORKSRC)
  # this seems to be needed, "pre-install-env" not found in -build
 ######################################################################
 
@@ -54,3 +54,6 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+#BUILD_ARGS = CFLAGS="-std=c11 -Wno-implicit-function-declaration"
+
+# FIXME
