@@ -1,5 +1,5 @@
 # Copyright ©2013, 2014, 2015, 2016 Brandon Invergo <brandon@invergo.net>
-# Copyright ©2018,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2018,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC.
 #
@@ -18,8 +18,9 @@
 
 NAME = GnuCash
 GARNAME = gnucash
-GARVERSION = 5.9
+GARVERSION = 5.17
 HOME_URL = http://www.gnu.org/software/gnucash
+# gnucash.org
 DESCRIPTION = Personal and small business financial accounting software
 define BLURB
 GnuCash is personal and professional financial-accounting

@@ -22,7 +22,7 @@
 
 NAME = Hyperbole
 GARNAME = hyperbole
-GARVERSION = 9.3.1
+GARVERSION = 9.3.2
 HOME_URL = http://www.gnu.org/software/hyperbole/
 DESCRIPTION = Emacs hypertext system via customizable buttons
 define BLURB
