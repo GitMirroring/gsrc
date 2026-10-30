@@ -20,7 +20,7 @@
 
 NAME =    systemd
 GARNAME = systemd
-GARVERSION =  261.1
+GARVERSION =  261.4
 
 HOME_URL = https://systemd.io
 #	www.freedesktop.org/wiki/Software/systemd/

@@ -22,7 +22,7 @@
 
 NAME = parallel
 GARNAME = parallel
-GARVERSION = 20260922
+GARVERSION = 20261022
 HOME_URL = http://www.gnu.org/software/parallel/
 DESCRIPTION = Build and execute command lines in parallel
 define BLURB

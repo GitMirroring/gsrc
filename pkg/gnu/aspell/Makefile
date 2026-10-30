@@ -20,9 +20,9 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = Aspell
+NAME = aspell
 GARNAME = aspell
-GARVERSION = 0.60.8.2
+GARVERSION = 0.60.8.3
 HOME_URL = http://www.gnu.org/software/aspell
 DESCRIPTION = Spell checker, library or stand-alone
 define BLURB

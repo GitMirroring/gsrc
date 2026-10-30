@@ -46,11 +46,10 @@ SIGFILES =
 BUILDDEPS =
 LIBDEPS =
 
-
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
-# 
-#  
+
+
 #might need to mess with GDK_PIXBUF_MODULEDIR if wrong path is built in  

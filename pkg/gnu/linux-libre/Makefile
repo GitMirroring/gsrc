@@ -21,7 +21,7 @@
 
 NAME = Linux Libre kernel
 GARNAME = linux-libre
-GARVER     = 7.1
+GARVER     = 7.3
 GARVERSION = $(GARVER)-gnu
 HOME_URL = http://www.gnu.org/software/linux-libre
 #   http://linux-libre.fsfla.org/pub/linux-libre/releases/
@@ -46,17 +46,10 @@ SIGFILE_SUBDIR = $(PATCHFILE_SUBDIR)
 DISTFILES = $(DISTNAME).tar.lz
 SIGFILES  = $(DISTNAME).tar.lz.sign 
 
-# to be fixed, some how
-# http://linux-libre.fsfla.org/pub/linux-libre/releases/6.10-gnu/erratum-a/
-#	scripts-6.10-gnu-6.10-gnua.patch	2024-07-15 12:00 	2.2K	 
-#	scripts-6.10-gnu-6.10-gnua.patch.sign	2024-07-15 12:02 	195 	 
-#	sources-6.10-gnu-6.10-gnua.patch	2024-07-15 12:01 	2.1K	 
-#	sources-6.10-gnu-6.10-gnua.patch.sign	2024-07-15 12:02 	195
 
 WORKSRC = $(WORKDIR)/linux-$(GARVER)
 WORKOBJ = $(WORKDIR)/linux-$(GARVERSION)-build
 
-#CONFIGURE_SCRIPTS = $(WORKSRC)/Makefile
 CONFIGURE_SCRIPTS = 
 #BUILD_SCRIPTS = $(WORKSRC)/Makefile
 #INSTALL_SCRIPTS = kernel
@@ -67,7 +60,6 @@ LIBDEPS =
 
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
-include ../../../gar/varb.mk
 include config.mk
 
 # architecture of the GSRC build system (i.e. x86_64)

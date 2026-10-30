@@ -22,7 +22,7 @@
 
 NAME =    libevdev
 GARNAME = libevdev
-GARVERSION = 1.13.3
+GARVERSION = 1.14.0
 HOME_URL = https://www.freedesktop.org/software/libevdev/doc/
 DESCRIPTION =  wrapper library for kernel event devices.
 define BLURB

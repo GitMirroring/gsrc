@@ -20,7 +20,7 @@
 
 NAME = ROOT
 GARNAME = root
-GARVERSION = 6.40.04
+GARVERSION = 6.42.00-rc1
 
 HOME_URL = https://root.cern.ch
 DESCRIPTION = Scientific data framework from CERN, includes a C++ interpreter.

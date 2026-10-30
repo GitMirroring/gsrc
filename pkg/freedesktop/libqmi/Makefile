@@ -1,4 +1,4 @@
-# Copyright © 2016,2017,2018,2019,2020,2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016,2017,2018,2019,2020,2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME =    libqmi
 GARNAME = libqmi
-GARVERSION = 1.30.2
+GARVERSION = 1.30.8
 HOME_URL = http://www.freedesktop.org/
 DESCRIPTION = open source library to manage QMI-powered mobile broadband modems. 
 define BLURB
@@ -41,6 +41,6 @@ LIBDEPS = #  glib gtk-doc
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

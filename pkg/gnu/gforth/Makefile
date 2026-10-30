@@ -22,7 +22,7 @@
 NAME = gforth
 GARNAME = gforth
 #GARVERSION = 0.7.3
-GARVERSION = 0.7.9_20261024
+GARVERSION = 1.0.0
 HOME_URL = https://gforth.org
 # or HOME_URL = https://www.gnu.org/software/gforth/
 DESCRIPTION = Forth interpreter, with virtual machine generator "vmgen"
@@ -34,15 +34,14 @@ environment, \"vmgen\", is also included.
 endef
 
 ## http://www.complang.tuwien.ac.at/forth/gforth/Snapshots/0.7.9_20180103/gforth-0.7.9_20180103.tar.xz
-# or savannah
-#  Austria
+# or savannah #  Austria
+#  https://www.complang.tuwien.ac.at/forth/gforth/gforth-1.0.0.tar.xz.sig
 MASTER_SITES = http://www.complang.tuwien.ac.at/
-MASTER_SUBDIR = forth/$(GARNAME)/Snapshots/$(GARVERSION)/
-#  https://git.savannah.gnu.org/cgit/gforth.git/snapshot/gforth-0.7.9_20241113.tar.gz
+MASTER_SUBDIR = forth/$(GARNAME)/
 #MASTER_SITES = http://git.savannah.gnu.org/
 #MASTER_SUBDIR = cgit/gforth.git/snapshot/
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES  =
+SIGFILES = $(DISTNAME).tar.xz.sig
 INFO_FILES = $(GARNAME).info vmgen.info
 
 BUILDDEPS = swig
@@ -67,7 +66,7 @@ include config.mk
 #	look at install-deps.sh
 
 CONFIGURE_ARGS =    BUILDFROM=tarball   DESTDIR="$(packageDESTDIR)"   --enable-year2038 --prefix=$(prefix)
-
+BUILD_ARGS = CFLAGS=-Wno-implicit-function-declaration
 
 build-me:
 	cd $(WORKOBJ) &&  $(MAKE)

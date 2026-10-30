@@ -1,4 +1,4 @@
-# Copyright ©2016,2017,2018,2020,2021 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2016,2017,2018,2020,2021,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME =    PackageKit
 GARNAME = PackageKit
-GARVERSION = 1.2.4
+GARVERSION = 1.4.0
 HOME_URL = http://www.freedesktop.org/
 DESCRIPTION = PackageKit
 define BLURB

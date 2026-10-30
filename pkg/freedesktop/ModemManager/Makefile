@@ -23,7 +23,7 @@
 
 NAME =    ModemManager
 GARNAME = ModemManager
-GARVERSION = 1.18.4
+GARVERSION = 1.18.12
 HOME_URL = http://www.freedesktop.org/
 DESCRIPTION =  DBus service API for mobile broadband modems.
 define BLURB
@@ -43,6 +43,6 @@ LIBDEPS = #  glib dbus-glib gtk-doc polkit-gobject gudev ppp libmbim libqmi
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

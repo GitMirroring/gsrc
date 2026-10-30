@@ -21,7 +21,7 @@
 
 NAME =  GNU Mes
 GARNAME = mes
-GARVERSION =  0.27.2
+GARVERSION =  0.28
 HOME_URL = http://www.gnu.org/software/mes/
 DESCRIPTION = GNU Mes is a Scheme interpreter and C compiler for bootstrapping the GNU System
 define BLURB

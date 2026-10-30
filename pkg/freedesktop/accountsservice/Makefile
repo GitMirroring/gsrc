@@ -22,7 +22,7 @@
 
 NAME =    AccountsService
 GARNAME = accountsservice
-GARVERSION = 23.13.9
+GARVERSION = 26.27.3
 HOME_URL = http://www.freedesktop.org/
 DESCRIPTION = AccountsService is a D-Bus service for accessing the list of user accounts. 
 define BLURB
@@ -31,10 +31,10 @@ and information attached to those accounts.
 endef
 
 ######################################################################
-
-MASTER_SITES = http://www.freedesktop.org/
-MASTER_SUBDIR = software/$(GARNAME)/
-DISTFILES = $(GARNAME)-$(GARVERSION).tar.xz
+ # https://gitlab.freedesktop.org/accountsservice/accountsservice/-/archive/26.27.3/accountsservice-26.27.3.tar.bz2
+MASTER_SITES = http://gitlab.freedesktop.org/
+MASTER_SUBDIR = $(GARNAME)/$(GARNAME)/-/archive/$(GARVERSION)/
+DISTFILES = $(GARNAME)-$(GARVERSION).tar.bz2
 SIGFILES = 
 
 BUILDDEPS = 
