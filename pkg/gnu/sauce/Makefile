@@ -17,32 +17,40 @@
 
 NAME = SAUCE
 GARNAME = sauce
-GARVERSION = 0.7.7
+GARVERSION = 0.9.6
 HOME_URL = http://www.gnu.org/software/sauce/
+#http://www.chiark.greenend.org.uk/~ian/sauce/
 DESCRIPTION = An anti-spam SMTP mail filter
 define BLURB
+SAUCE, a.k.a. "Software Against Unsolicited Commercial Email", an
+SMTP Rejection Agent. It mediates access to your real MTA and tries to
+block spam.
 endef
-
 ######################################################################
+# http://deb.debian.org/debian/pool/main/s/sauce/sauce_0.9.6.tar.gz
+#MASTER_SITES = $(MASTER_GNU)
+#MASTER_SUBDIR = $(GARNAME)/
+MASTER_SITES = https://deb.debian.org/
+MASTER_SUBDIR = debian/pool/main/s/sauce/
+DISTFILES = $(GARNAME)_$(GARVERSION).tar.gz
+SIGFILES =
+#PATCHFILES = $(DISTNAME)-fix-install.diff
+#CONFIGURE_SCRIPTS =
+#BUILD_SCRIPTS = $(WORKSRC)/Makefile
+# needs work
+#INSTALL_SCRIPTS = $(WORKSRC)/Makefile-DESTDIR
 
-MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = 
-PATCHFILES = $(DISTNAME)-fix-install.diff
-BUILD_SCRIPTS = $(WORKSRC)/Makefile
-INSTALL_SCRIPTS = $(WORKSRC)/Makefile-DESTDIR
-
-BUILDDEPS = 
-#tcl 
-LIBDEPS = 
+BUILDDEPS =
+# uses tclsh
+LIBDEPS =
+WORKOBJ = $(WORKSRC)
 
 ######################################################################
 
 include ../../../gar/gar.mk
 include config.mk
 
-BUILD_ARGS += prefix=$(prefix) 
 DESTDIR_INSTALL_ARGS += prefix=$(prefix) INSTALL=$(prefix)/bin/install
 
-# FIXME
+# FIXME install
+# all tcl

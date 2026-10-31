@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2020-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2020-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,21 +23,25 @@
 
 NAME = mtools
 GARNAME = mtools
-GARVERSION = 4.0.49
+GARVERSION = 4.0.50
 HOME_URL = http://www.gnu.org/software/mtools/
 DESCRIPTION = Access MS-DOS disks without mounting
 define BLURB
-GNU Mtools is a set of utilities for accessing MS-DOS disks from
+GNU mtools is a set of utilities for accessing MS-DOS disks from
 a GNU or Unix system.  It supports long file names and multiple disk
 formats.  It also supports some FAT-specific features such as volume
-labels and FAT-specific file attributes.
+labels and FAT-specific file attributes. Thus:
+amuFormat.sh floppyd floppyd_installtest lz mattrib mbadblocks mcat
+mcd mcheck mcomp mcopy mdel mdeltree mdir mdoctorfat mdu mformat minfo
+mkmanifest mlabel mmd mmount mmove mpartition mrd mren mshortname mshowfat
+mtools mtoolstest mtype mxtar mzip tgz uz
 endef
 
 ######################################################################
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-DISTFILES = $(DISTNAME).tar.lz
+DISTFILES = $(DISTNAME).tar.lz mtools.spec mtools.spec.sig
 SIGFILES  = $(DISTNAME).tar.lz.sig
 
 BUILDDEPS =

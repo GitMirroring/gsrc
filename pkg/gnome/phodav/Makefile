@@ -1,4 +1,4 @@
-# Copyright © 2016, 2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2019, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    phodav
 GARNAME = phodav
-GARVERSION = 2.5
+GARVERSION = 3.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A soup DAV server
 define BLURB

@@ -1,5 +1,5 @@
 # Copyright © 2013, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2022 Carl Hansen
+# Copyright © 2022,2026 Carl Hansen
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = userv
 GARNAME = userv
-GARVERSION = 1.2.0
+GARVERSION = 1.2.3
 HOME_URL = http://www.gnu.org/software/userv/
 DESCRIPTION = Daemon to control service access
 define BLURB
@@ -36,21 +36,39 @@ endef
 MASTER_SITES = http://www.chiark.greenend.org.uk/
 MASTER_SUBDIR = ~ian/userv/
 DISTFILES = $(GARNAME).tar.gz
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = 
-WORKOBJ = $(WORKSRC)
+BUILDDEPS =
+LIBDEPS =
+PATCHFILES = userv-1.2.3.patch
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-#BUILD_ENV += INSTALL_USER=$(INSTALL_USER) INSTALL_GROUP=$(INSTALL_GROUP)
-#INSTALL_ENV += INSTALL_USER=$(INSTALL_USER) INSTALL_GROUP=$(INSTALL_GROUP)
+# maybe be root, to be fixed.....
+# set in config.mk
+BUILD_ENV += INSTALL_USER=$(INSTALL_USER) INSTALL_GROUP=$(INSTALL_GROUP)
+INSTALL_ENV += INSTALL_USER=$(INSTALL_USER) INSTALL_GROUP=$(INSTALL_GROUP)
 
+# This nameing is suboptimal;
+#WORKSRC = $(WORKDIR)/userv
+ WORKOBJ = $(WORKDIR)/userv-$(GARVERSION)-build
 
+#WORKOBJ = $(WORKSRC) It really is, through soft link
+
+# pointless, but the source of the problem....
+#post-fetch:
+#	cd $(DOWNLOADDIR) && ln -f userv.tar.gz userv-$(GARVERSION).tar.gz
+
+# kludge
 post-extract:
-	cd 	$(WORKDIR)  &&  ln -s userv   $(DISTNAME)
-	$(MAKECOOKIE)
+	@echo extra link so script works
+	cd $(WORKDIR) && rm -rf userv-$(GARVERSION)
+	cd $(WORKDIR) && ln -s userv userv-$(GARVERSION)
+	cd $(WORKDIR) && rm -rf userv-$(GARVERSION)-build
+	cd $(WORKDIR) && ln -s userv userv-$(GARVERSION)-build
+
+
+# install, be root...
 

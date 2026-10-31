@@ -50,8 +50,10 @@ WORKOBJ = $(WORKSRC)
 # CITE =  Tange, Ole (2026, July 22). GNU Parallel 20260722 (\"Chat Control\"). Zenodo. https://doi.org/10.5281/zenodo.21476260
 # CITE =    Tange, Ole (2026, August 22). GNU Parallel 20260822 ("Ceuta"). Zenodo. https://doi.org/10.5281/zenodo.22180990
 # get rid of single quotes
+#CITE =    Tange, Ole. (2026, September 22). GNU Parallel 20260922 ("Parton"). Zenodo. https://doi.org/10.5281/zenodo.22904078
 
-CITE =    Tange, Ole. (2026, September 22). GNU Parallel 20260922 ("Parton"). Zenodo. https://doi.org/10.5281/zenodo.22904078
+
+CITE =    Tange, Ole (2026, October 22). GNU Parallel 20261022 ('Lycée'). Zenodo. https://doi.org/10.5281/zenodo.23745544
 
 
 LICENSE = GNU GPL 3 or later

@@ -23,7 +23,7 @@
 
 NAME = adns
 GARNAME = adns
-GARVERSION = 1.6.0
+GARVERSION = 1.7.0
 HOME_URL = http://www.gnu.org/software/adns/
 DESCRIPTION = Asynchronous DNS client library and utilities
 define BLURB
@@ -35,20 +35,20 @@ endef
 
 ######################################################################
 
-#MASTER_SITES = http://www.chiark.greenend.org.uk/
-#MASTER_SUBDIR = ~ian/adns/ftp/
-MASTER_SITES = $(MASTER_GNU)
-MASTER_SUBDIR = $(GARNAME)/
+MASTER_SITES = http://www.chiark.greenend.org.uk/
+MASTER_SUBDIR = ~ian/adns/ftp/
+#MASTER_SITES = $(MASTER_GNU)
+#MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
-#PATCHFILES = $(DISTNAME)-fix-install.diff
 
 BUILDDEPS =
 LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-# HINT;  do "make build" more than once. some glitch in Makefile i guess
+# HINT;  do "make build" more than once. some glitch in Makefile I guess
+#      or try  "make -k build"

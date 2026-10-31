@@ -23,7 +23,7 @@
 
 NAME = libiconv
 GARNAME = libiconv
-GARVERSION = 1.19
+GARVERSION = 1.19.1
 HOME_URL = http://www.gnu.org/software/libiconv/
 DESCRIPTION = Character set conversion library
 define BLURB
@@ -39,8 +39,8 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 NOCHECKSUM =  $(DISTFILES)
 
 ######################################################################

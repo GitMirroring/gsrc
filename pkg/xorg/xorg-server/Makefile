@@ -21,7 +21,7 @@
 
 NAME =    xorg-server
 GARNAME = xorg-server
-GARVERSION = 26.0.99.902
+GARVERSION = 26.0.99.903
 HOME_URL = http://www.x.org
 	# same as http://xorg.freedesktop.org
 DESCRIPTION = xorg-server
@@ -35,8 +35,8 @@ MASTER_SUBDIR = releases/individual/xserver/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 #HINT: apt install libxfont2 libxfont-dev libpciaccess-dev
 ######################################################################
 

@@ -1,4 +1,4 @@
-# Copyright ©2016-2019,2022-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2016-2019,2022-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    libsoup
 GARNAME = libsoup
-GARVERSION = 3.8.0
+GARVERSION = 3.8.1
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = HTTP client/server library for GNOME
 define BLURB
@@ -45,6 +45,5 @@ LIBDEPS =
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
-include ../../../gar/varb.mk
 include config.mk
 

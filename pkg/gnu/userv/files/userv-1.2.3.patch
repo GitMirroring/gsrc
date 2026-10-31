@@ -1,0 +1,31 @@
+diff -x config.log -x config.status -ru tmp/userv/configure work/userv/configure
+--- tmp/userv/configure	2012-06-02 07:33:56.000000000 -0700
++++ work/userv/configure	2026-10-31 14:05:16.816855361 -0700
+@@ -678,7 +678,7 @@
+ #line 679 "configure"
+ #include "confdefs.h"
+ 
+-main(){return(0);}
++int main(){return(0);}
+ EOF
+ if { (eval echo configure:684: \"$ac_link\") 1>&5; (eval $ac_link) 2>&5; } && test -s conftest${ac_exeext}; then
+   ac_cv_prog_cc_works=yes
+diff -x config.log -x config.status -ru tmp/userv/parser.c work/userv/parser.c
+--- tmp/userv/parser.c	2017-01-23 09:11:43.000000000 -0800
++++ work/userv/parser.c	2026-10-31 14:08:25.061714429 -0700
+@@ -1152,12 +1152,12 @@
+ }
+ 
+ int df_if(int dtoken) {
+-  int r, true, done;
++  int r, localtrue, done;
+   
+   done= 0;
+   do {
+-    r= pa_condition(&true); if (r) return r;
+-    if (!done && true) { r= parser(tokv_word_if); done= 1; }
++    r= pa_condition(&localtrue); if (r) return r;
++    if (!done && localtrue) { r= parser(tokv_word_if); done= 1; }
+     else { r= skip(tokv_word_if); }
+     if (!(r & tokt_controlend)) return r;
+   } while (r == tokv_word_elif);
