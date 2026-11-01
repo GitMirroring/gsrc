@@ -26,18 +26,21 @@ GARVERSION = 4.0.6
 #   http://www.cenon.zone/download/source/Cenon-4.0.6.tar.bz2
 #   http://www.cenon.zone/download/source/CenonLibrary-4.0.0-1.tar.bz2
 
-HOME_URL = http://www.cenon.zone
+HOME_URL = http://www.cenon.info
 DESCRIPTION =  vector graphics drawing app and desktop publishing
 define BLURB
 vector graphics drawing app and desktop publishing, many formats
 endef
 
 ######################################################################
-
-MASTER_SITES = http://www.cenon.zone/ 
+# source code seems to be off the net 
+# https://cenon.download/source/Cenon-4.0.6.tar.bz2
+#MASTER_SITES = http://www.cenon.zone
+MASTER_SITES = http://www.cenon.info/
 MASTER_SUBDIR = download/source/
-DISTFILES = $(DISTNAME).tar.bz2    CenonLibrary-4.0.0-1.tar.bz2
-SIGFILES = 
+DISTFILES = $(DISTNAME).tar.bz2
+#CenonLibrary-4.0.0-1.tar.bz2
+SIGFILES =
 CONFIGURE_SCRIPTS =
 WORKSRC = $(WORKDIR)/Cenon
 WORKOBJ = $(WORKSRC)

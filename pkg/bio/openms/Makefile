@@ -1,5 +1,5 @@
 # Copyright © 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2023 Carl Hansen
+# Copyright © 2023, 2026 Carl Hansen
 #
 # This file is part of GSRC.
 #
