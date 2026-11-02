@@ -53,7 +53,7 @@ WORKOBJ = $(WORKSRC)
 #CITE =    Tange, Ole. (2026, September 22). GNU Parallel 20260922 ("Parton"). Zenodo. https://doi.org/10.5281/zenodo.22904078
 
 
-CITE =    Tange, Ole (2026, October 22). GNU Parallel 20261022 ('Lycée'). Zenodo. https://doi.org/10.5281/zenodo.23745544
+CITE =    Tange, Ole (2026, October 22). GNU Parallel 20261022 ("Lycée"). Zenodo. https://doi.org/10.5281/zenodo.23745544
 
 
 LICENSE = GNU GPL 3 or later

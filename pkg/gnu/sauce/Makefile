@@ -38,7 +38,7 @@ SIGFILES =
 #CONFIGURE_SCRIPTS =
 #BUILD_SCRIPTS = $(WORKSRC)/Makefile
 # needs work
-#INSTALL_SCRIPTS = $(WORKSRC)/Makefile-DESTDIR
+INSTALL_SCRIPTS = $(WORKSRC)/Makefile-DESTDIR
 
 BUILDDEPS =
 # uses tclsh
@@ -51,6 +51,6 @@ include ../../../gar/gar.mk
 include config.mk
 
 DESTDIR_INSTALL_ARGS += prefix=$(prefix) INSTALL=$(prefix)/bin/install
-
+DESTDIR = $(packageDESTDIR)
 # FIXME install
 # all tcl
