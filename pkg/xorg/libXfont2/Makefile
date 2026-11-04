@@ -1,4 +1,4 @@
-# Copyright ©2021,2022,2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2021,2022,2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    libXfont2
 GARNAME = libXfont2
-GARVERSION = 2.0.7
+GARVERSION = 2.0.9
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = libXfont2 library
 define BLURB

@@ -22,7 +22,7 @@
 
 NAME =    xrdb
 GARNAME = xrdb
-GARVERSION = 1.2.2
+GARVERSION = 1.2.3
 HOME_URL = http://www.xorg.org
 DESCRIPTION = xrdb
 define BLURB

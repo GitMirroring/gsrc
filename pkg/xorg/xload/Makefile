@@ -1,4 +1,4 @@
-# Copyright ©2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,9 +21,9 @@
 
 NAME =    xload
 GARNAME = xload
-GARVERSION = 1.2.0
+GARVERSION = 1.2.2
 HOME_URL = http://xorg.freedesktop.org
-DESCRIPTION = xload  displayer
+DESCRIPTION = xload displayer
 define BLURB
 endef
 

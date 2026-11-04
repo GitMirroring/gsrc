@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2020, 2021, 2023-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2020, 2021, 2023-2026 Hansen <carlhansen@gnu.org>
 
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,7 +23,7 @@
 
 NAME = Automake
 GARNAME = automake
-GARVERSION = 1.19.92
+GARVERSION = 1.19.94
 HOME_URL = http://www.gnu.org/software/automake/
 DESCRIPTION = Making GNU standards-compliant Makefiles
 define BLURB

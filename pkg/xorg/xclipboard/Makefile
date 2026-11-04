@@ -21,7 +21,7 @@
 
 NAME =    xclipboard
 GARNAME = xclipboard
-GARVERSION =  1.1.5
+GARVERSION =  1.1.6
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION =  xclipboard
 define BLURB

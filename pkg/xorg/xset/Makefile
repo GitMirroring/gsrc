@@ -1,4 +1,4 @@
-# Copyright ©2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME =    xset
 GARNAME = xset
-GARVERSION = 1.2.5
+GARVERSION = 1.2.6
 HOME_URL = http://www.x.org
 DESCRIPTION = xset, set parameters
 define BLURB
@@ -35,7 +35,7 @@ endef
 
 MASTER_SITES = http://www.x.org/
 MASTER_SUBDIR =  releases/individual/app/
-DISTFILES = $(DISTNAME).tar.xz 
+DISTFILES = $(DISTNAME).tar.xz
 SIGFILES  = $(DISTNAME).tar.xz.sig
 
 BUILDDEPS = 

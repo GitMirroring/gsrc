@@ -1,4 +1,4 @@
-# Copyright ©2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2022,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME =    xsetroot
 GARNAME = xsetroot
-GARVERSION = 1.1.3
+GARVERSION = 1.1.4
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = xsetroot
 define BLURB

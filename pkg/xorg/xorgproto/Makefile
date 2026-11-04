@@ -23,7 +23,7 @@
 
 NAME =    xorgproto
 GARNAME = xorgproto
-GARVERSION = 2025.1
+GARVERSION = 2026.1
 HOME_URL = https://xorg.freedesktop.org
 DESCRIPTION = xorgproto, combines xproto and other protos
 # replaces xorg-xproto, etc.

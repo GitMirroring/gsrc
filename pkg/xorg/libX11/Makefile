@@ -21,7 +21,7 @@
 
 NAME =    libX11
 GARNAME = libX11
-GARVERSION = 1.8.13
+GARVERSION = 1.8.14
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = libX11 library
 define BLURB

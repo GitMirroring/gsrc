@@ -21,7 +21,7 @@
 
 NAME =    igt-gpu-tools
 GARNAME = igt-gpu-tools
-GARVERSION = 2.3
+GARVERSION = 2.6
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION = igt-gpu-tools
 define BLURB

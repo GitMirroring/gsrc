@@ -21,7 +21,7 @@
 
 NAME =    xkbprint
 GARNAME = xkbprint
-GARVERSION =  1.0.7
+GARVERSION =  1.0.8
 HOME_URL = http://xorg.freedesktop.org
 DESCRIPTION =  xkbprint
 define BLURB

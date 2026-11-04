@@ -1,4 +1,4 @@
-# Copyright ©2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2024,2o26 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME =    xwd
 GARNAME = xwd
-GARVERSION = 1.0.9
+GARVERSION = 1.0.10
 HOME_URL = http://www.xorg.org
 DESCRIPTION = xwd x screen grabber
 define BLURB

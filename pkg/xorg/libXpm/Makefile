@@ -22,7 +22,7 @@
 
 NAME =    libXpm
 GARNAME = libXpm
-GARVERSION = 3.5.19
+GARVERSION = 3.5.20
 HOME_URL = https://xorg.freedesktop.org
 DESCRIPTION = libXpm, library for libXpm pixmap
 define BLURB
