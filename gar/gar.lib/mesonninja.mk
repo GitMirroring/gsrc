@@ -39,6 +39,9 @@ include ../../../gar/gar.mk
 BUILD_SCRIPTS += build-nin
 
 MESON_OPTS ?=
+
+.PHONY: configure-mes build-nin
+
 configure-mes:
 	@echo start configure-mes----------------------------------------------
 	@echo
@@ -70,14 +73,24 @@ configure-mes:
 # below, for testing:  ninja -j 1 -v   -C $(WORKOBJ) 
 # was   ninja  -v   -C $(WORKOBJ) 
 # now just meson compile ...
+#cd $(WORKOBJ)  &&  pwd && ninja -C . -k 0  --verbose
+#	cd $(WORKOBJ)  &&  pwd && ninja -C .   --verbose
 
 build-nin: 
 	@echo start build-nin--------------------------------------------
 	@echo ----------------------------------------------
-	@echo LC_ALL==$(LC_ALL) WORKSRC==$(WORKSRC)  WORKOBJ==$(WORKOBJ)
-	cd $(WORKOBJ)  &&  pwd && ninja -k 0  -v -C .  
+	@echo LC_ALL is $(LC_ALL) WORKSRC is $(WORKSRC)  WORKOBJ is $(WORKOBJ)
+	cd $(WORKOBJ) ; echo $$PWD ;echo "NNNNNNNNNNNNNNNNNNNNNNNNNNN"
+	cd $(WORKOBJ) && ninja   --verbose
 	@echo ----------------------------------------------
 	@echo ----------------------------------------------
+	@echo end build-nin--------------------------------------------
+	@echo end build-nin--------------------------------------------
+	@echo end build-nin--------------------------------------------
+	@echo end build-nin--------------------------------------------
+	@echo end build-nin--------------------------------------------
+	@echo end build-nin--------------------------------------------
+	@echo end build-nin--------------------------------------------
 	@echo end build-nin--------------------------------------------
 	$(MAKECOOKIE)
 
@@ -93,7 +106,7 @@ pre-install:
 	mkdir -p $(prefix)/packages/$(DISTNAME)-DEST
 	mkdir -p  $(packageprefix)/
 	@echo ----------install with  ninja -v ----------------------------
-	DESTDIR=$(prefix)/packages/$(DISTNAME)-DEST LC_ALL=$(LOCALLOCALE)  ninja -v -C $(WORKOBJ)  install 
+	DESTDIR=$(prefix)/packages/$(DISTNAME)-DEST LC_ALL=$(LOCALLOCALE)  ninja  -C $(WORKOBJ) --verbose  install
 	@echo ----------------------------------------------
 	@echo end preinstall with ninja ----------------------------------------
 	$(MAKECOOKIE)

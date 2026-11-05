@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2019, 2020, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2019, 2020, 2022, 2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -24,7 +24,7 @@
 NAME = Readline
 GARNAME = readline
 GARVERSION = 8.3
-PATCHNUM = 3
+PATCHNUM = 6
 HOME_URL = http://www.gnu.org/software/readline/
 DESCRIPTION = Edit command lines while typing, with history support
 define BLURB

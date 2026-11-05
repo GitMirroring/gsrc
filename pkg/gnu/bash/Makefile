@@ -22,7 +22,7 @@
 
 NAME = bash
 GARNAME = bash
-PATCHNUM = 15
+PATCHNUM = 20
 GARVERSION = 5.3
 HOME_URL = http://www.gnu.org/software/bash/
 DESCRIPTION = The GNU Bourne-Again SHell
@@ -69,5 +69,4 @@ PATCHOPTS = -p0
 CONFIGURE_ARGS ?= --with-curses --enable-readline --enable-progcomp \
 		  --enable-process-substitution --enable-job-control \
 		  --enable-history --enable-help-builtin
-BUILD_OPTS ?=
 

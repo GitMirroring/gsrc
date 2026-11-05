@@ -19,7 +19,7 @@
 
 NAME =    gthumb
 GARNAME = gthumb
-GARVERSION = 4.0.rc
+GARVERSION = 4.0.1
 HOME_URL = https://wiki.gnome.org/Apps/Gthumb
 #http://www.gnome.org/
 DESCRIPTION = Image viewer and browser, also imports from cameras.
@@ -46,6 +46,5 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
-BUILD_ARGS =  CFLAGS=-Wno-incompatible-pointer-types
 
 

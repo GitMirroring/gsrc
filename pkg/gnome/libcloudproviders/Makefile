@@ -1,4 +1,4 @@
-# Copyright ©2023 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2023,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -19,7 +19,7 @@
 
 NAME =    libcloudproviders
 GARNAME = libcloudproviders
-GARVERSION = 0.4.1
+GARVERSION = 0.4.2
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = libcloudproviders
 define BLURB
