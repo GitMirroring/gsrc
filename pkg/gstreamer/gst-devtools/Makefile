@@ -21,7 +21,7 @@
 
 NAME =    gst-devtools
 GARNAME = gst-devtools
-GARVERSION = 1.28.8
+GARVERSION = 1.28.9
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION =  gst developer tools
 define BLURB
@@ -34,7 +34,7 @@ MASTER_SUBDIR =  src/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.xz $(DISTNAME).tar.xz.sha256sum
 SIGFILES  = $(DISTNAME).tar.xz.asc
 
-BUILDDEPS =  gst-plugins-base
+BUILDDEPS = gstreamer  gst-plugins-base
 LIBDEPS = 
 
 ######################################################################

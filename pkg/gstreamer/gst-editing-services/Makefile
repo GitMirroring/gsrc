@@ -23,7 +23,7 @@
 
 NAME =    gst-editing-services
 GARNAME = gst-editing-services
-GARVERSION = 1.28.8
+GARVERSION = 1.28.9
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gstreamer editing services
 define BLURB
@@ -35,8 +35,8 @@ MASTER_SUBDIR =  src/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.xz $(DISTNAME).tar.xz.sha256sum
 SIGFILES  = $(DISTNAME).tar.xz.asc
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS = gstreamer
+LIBDEPS =
 
 ######################################################################
 

@@ -20,7 +20,7 @@
 
 NAME =    gst-plugins-base
 GARNAME = gst-plugins-base
-GARVERSION = 1.28.8
+GARVERSION = 1.28.9
 HOME_URL = http://gstreamer.freedesktop.org
 DESCRIPTION = gst-plugins-base, essential exemplary set of elements
 define BLURB
@@ -33,7 +33,7 @@ MASTER_SUBDIR =  src/$(GARNAME)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).tar.xz.sha256sum
 SIGFILES =   $(DISTNAME).tar.xz.asc
 
-BUILDDEPS =# gstreamer gtk iso-codes
+BUILDDEPS = gstreamer # gtk iso-codes
 LIBDEPS = 
 
 # HINT:  make -i install  # some problem with docs

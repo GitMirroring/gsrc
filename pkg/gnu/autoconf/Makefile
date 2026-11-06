@@ -50,6 +50,4 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-inf:
-	@echo $(WORKSRC)
-	@echo $(WORKOBJ)
+
