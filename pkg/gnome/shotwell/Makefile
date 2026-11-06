@@ -20,7 +20,7 @@
 
 NAME =    shotwell
 GARNAME = shotwell
-GARVERSION = 33.0
+GARVERSION = 33.2
 HOME_URL = https://wiki.gnome.org/Apps/Shotwell
 DESCRIPTION = Digital photo organizer
 define BLURB
@@ -34,15 +34,14 @@ VERSION_LIST = $(subst .,$(space),$(GARVERSION))
 #SERIES = $(subst $(space),.,$(wordlist 1,1,$(VERSION_LIST)))
 
 # special case , bug at origin downloads.gnome.org
-
-SERIES = 33.0
+SERIES = 33.2
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/$(SERIES)/
 DISTFILES = $(DISTNAME).tar.xz  $(DISTNAME).sha256sum
 SIGFILES =
 
-# apt install libgexiv2-2  libgexiv2-dev  libraw-bin libraw-dev  gexiv2
+# apt install libgexiv2-2  libgexiv2-dev  libraw-bin libraw-dev 
 BUILDDEPS =
 LIBDEPS =
 

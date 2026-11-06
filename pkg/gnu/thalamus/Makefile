@@ -22,7 +22,7 @@
 NAME = thalamus
 GARNAME = thalamus
 GARVERSION = 0.9.18
-HOME_URL = http://www.gnu.org/software/health/
+HOME_URL = https://www.gnu.org/software/health/
 DESCRIPTION = Thalamus  The GNU Health Federation Message and Authentication Server
 define BLURB
 Thalamus: The GNU Health Federation Message and Authentication Server.
@@ -66,7 +66,7 @@ post-extract pre-build configure build install:
 	@echo =======================================================
 	@echo This script makes no attempt to install the program, it simply
 	@echo downloads it. Installation must be customized to your system.
-	@echo It is python, use pip.
+	@echo It is python, maybe use pip.
 	@echo =======================================================
 	@echo =======================================================
 	@echo =======================================================

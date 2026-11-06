@@ -22,7 +22,7 @@
 NAME = The GNU Compiler Collection version 14 development version
 GARNAME = gcc14snapshot
 UPSTREAMNAME = gcc
-GARVERSION = 14-20261029
+GARVERSION = 14-20261105
 HOME_URL = https://www.gnu.org/software/gcc
 DESCRIPTION = GNU Compiler Collection 14 snapshot
 define BLURBR
@@ -38,6 +38,7 @@ endef
 # HINT: to compile Ada aka "gnat", you need to have earlier Ada compiler
 # already installed....
 # Likewise for the D compliper, called "gdc"
+# Of course you already need a C compiler to compile gcc...
 
 
 ######################################################################

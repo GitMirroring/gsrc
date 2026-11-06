@@ -20,7 +20,7 @@
 
 NAME =    openssl
 GARNAME = openssl
-GARVERSION = 4.0.3
+GARVERSION = 4.1.0
 HOME_URL = http://www.openssl.org/
 DESCRIPTION = Secure Sockets Layer, TLS, cryptography library
 define BLURB
@@ -46,7 +46,7 @@ include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 pre-configure: $(WORKOBJ)
-	cd $(WORKOBJ)    &&    ../../$(WORKSRC)/Configure --prefix=$(prefix) 
+	cd $(WORKOBJ)    &&    ../../$(WORKSRC)/Configure --prefix=$(prefix)
 	$(MAKECOOKIE)
 
 
