@@ -20,11 +20,11 @@
 #
 # Send bug reports and comments about GSRC problems to bug-gsrc@gnu.org
 
-NAME = GNU MP
+NAME = GNU MP, gmp
 GARNAME = gmp
-GARVERSION =  6.3.0-20260817130954
-HOME_URL = http://www.gnu.org/software/gmp/
-# other site, gmplib.org...
+GARVERSION = 6.3.0-20261101102428
+HOME_URL = https://www.gnu.org/software/gmp/
+# other site, https://gmplib.org
 DESCRIPTION = Multiple-precision arithmetic library
 define BLURB
 GMP is a library for arbitrary precision arithmetic, operating on
@@ -35,14 +35,14 @@ aimed at use in, for example, cryptography and computational algebra.
 endef
 
 ######################################################################
-# https://gmplib.org/download/snapshot/gmp-next/gmp-6.3.0-20260817130954.tar.zst
-# other site, gmplib.org...
+# https://gmplib.org/download/snapshot/gmp-next/gmp-6.3.0-20261101102428.tar.zst
 #MASTER_SITES = $(MASTER_GNU)
 #MASTER_SUBDIR = $(GARNAME)/
+# other site, gmplib.org...
 MASTER_SITES =  https://gmplib.org/
 MASTER_SUBDIR = download/snapshot/gmp-next/
 DISTFILES = $(DISTNAME).tar.zst
-SIGFILES = # $(DISTNAME).tar.lz.sig
+SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =

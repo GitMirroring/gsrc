@@ -23,7 +23,7 @@
 
 NAME = Automake
 GARNAME = automake
-GARVERSION = 1.19.94
+GARVERSION = 1.20
 HOME_URL = http://www.gnu.org/software/automake/
 DESCRIPTION = Making GNU standards-compliant Makefiles
 define BLURB
@@ -35,9 +35,9 @@ endef
 
 ######################################################################
 #https://alpha.gnu.org/gnu/automake/automake-1.16j.tar.xz
-#MASTER_SITES = $(MASTER_GNU)
+MASTER_SITES = $(MASTER_GNU)
 #MASTER_SUBDIR = $(GARNAME)/
-MASTER_SITES = $(MASTER_GNU_ALPHA)
+#MASTER_SITES = $(MASTER_GNU_ALPHA)
 MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.xz
 SIGFILES = $(DISTNAME).tar.xz.sig

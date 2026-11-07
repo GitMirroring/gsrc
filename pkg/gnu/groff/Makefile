@@ -20,7 +20,7 @@
 
 NAME =  groff, troff etc
 GARNAME = groff
-GARVERSION = 1.24.2
+GARVERSION = 1.25.0
 HOME_URL = http://www.gnu.org/software/groff/
 DESCRIPTION = Typesetting from plain text mixed with formatting commands
 define BLURB
@@ -35,7 +35,12 @@ AT&T Unix, groff is widely available on POSIX and other systems owing
 to its long association with Unix manuals, including man pages.  It
 and its predecessor have produced several best-selling software
 engineering texts.  groff can create typographically sophisticated
-documents while consuming minimal system resources.
+documents while consuming minimal system resources. Executables:
+addftinfo afmtodit chem eqn eqn2graph gdiffmk glilypond gperl gpinyin
+grap2graph grn grodvi groff grog grolbp grolj4 gropdf grops grotty
+gxditview hpftodit indxbib lkbib lookbib mmroff neqn nroff pdfmom pfbtops
+pic pic2graph post-grohtml preconv pre-grohtml refer soelim tbl tfmtodit
+troff xtotroff
 endef
 
 ######################################################################
@@ -46,7 +51,7 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS =# ghostscript #perl
+BUILDDEPS =  # ghostscript #perl
 LIBDEPS =
 
 ######################################################################
