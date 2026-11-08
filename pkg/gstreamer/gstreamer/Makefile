@@ -23,7 +23,7 @@ NAME =    gstreamer
 GARNAME = gstreamer
 GARVERSION = 1.28.9
 HOME_URL = http://gstreamer.freedesktop.org
-DESCRIPTION =  multimedia core library and elements
+DESCRIPTION = gstreamer multimedia core library and elements
 define BLURB
 endef
 

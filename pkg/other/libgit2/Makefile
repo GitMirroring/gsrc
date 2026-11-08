@@ -21,7 +21,7 @@
 
 NAME    = libgit2
 GARNAME = libgit2
-GARVERSION = 1.9.6
+GARVERSION = 1.9.7
 HOME_URL = https://libgit2.github.com/
 DESCRIPTION = libgit2 is a portable, pure C implementation of the Git core methods
 LICENSE = GPLv2 with Linking Exception
@@ -60,7 +60,7 @@ include config.mk
 
 fetch: fetch-git
 
-post-fetch: 
+post-fetch: fetch-git
 	mkdir -p $(WORKSRC)
 	mkdir -p $(WORKOBJ)
 	cp -a $(GITSRC)/* $(WORKSRC)

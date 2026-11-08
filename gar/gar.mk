@@ -96,14 +96,14 @@ all: build
 $(sort $(DOWNLOADDIR) $(COOKIEDIR) $(LOGDIR) $(WORKSRC) $(WORKOBJ) $(WORKDIR) $(EXTRACTDIR) $(FILEDIR) $(SCRATCHDIR) $(DOWNLOADDIRGIT)) :
 	@echo ------ check dir $@
 	@if test -d "$@"; then : ; else \
-       mkdir -p "$@"; \
-     fi
+	  mkdir -p "$@"; \
+        fi
 
 $(COOKIEDIR)/%:
 	@echo ------ check cookie dir $@
 	@if test -d "$@"; then : ; else \
-        mkdir -p "$@"; \
-     fi
+           mkdir -p "$@"; \
+        fi
 
 
 # include the configuration file to override any of these variables

@@ -326,6 +326,14 @@ checksig-%.sig:
 	$(GPGV) $(DOWNLOADDIR)/$*.sig $(DOWNLOADDIR)/$*
 	$(MAKECOOKIE)
 
+# is this right? a python thing; pip install sigstore
+checksig-%.sigstore:
+	@printf "[$(OK)checksig$(OFF)] $(MSG)Checking GPG signature $(OFF)$*\n"
+	$(GPGV) $(DOWNLOADDIR)/$*.sigstore $(DOWNLOADDIR)/$*
+	$(MAKECOOKIE)
+
+
+
 checksig-%.sign:
 	@printf "[$(OK)checksig$(OFF)] $(MSG)Checking GPG signature $(OFF)$*\n"
 	$(GPGV) $(DOWNLOADDIR)/$*.sign   $(DOWNLOADDIR)/$*

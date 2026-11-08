@@ -24,8 +24,8 @@
 NAME = Python
 GARNAME = python
 UPSTREAMNAME = Python
-GARVERSION = 3.14.8
-BASEVERSION = 3.14
+GARVERSION = 3.15.2
+BASEVERSION = 3.15
 HOME_URL = http://python.org
 DESCRIPTION = A general-purpose, high-level programming language
 define BLURB
@@ -40,10 +40,11 @@ LICENSE = Python Software Foundation License
 ######################################################################
 
 # https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz
+# https://www.python.org/ftp/python/3.15.2/Python-3.15.2.tar.xz.sigstore
 MASTER_SITES = http://www.python.org/
 MASTER_SUBDIR = ftp/python/$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES  = $(DISTNAME).tar.xz.sig
+SIGFILES  = $(DISTNAME).tar.xz.sigstore
 
 BUILDDEPS =
 LIBDEPS =

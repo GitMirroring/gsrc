@@ -21,7 +21,7 @@
 
 NAME = gettext
 GARNAME = gettext
-GARVERSION = 1.0 
+GARVERSION = 1.0
 HOME_URL = http://www.gnu.org/software/gettext/
 DESCRIPTION = Tools and documentation for language translation
 define BLURB
@@ -40,8 +40,8 @@ DISTFILES = $(DISTNAME).tar.lz
 SIGFILES = $(DISTNAME).tar.lz.sig
 INFO_FILES = $(GARNAME).info autosprintf.info libtextstyle.info
 
-BUILDDEPS = 
-LIBDEPS =  
+BUILDDEPS =
+LIBDEPS =
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
