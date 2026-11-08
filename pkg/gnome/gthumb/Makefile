@@ -46,5 +46,6 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
-
+aa:
+	(cd $(WORKOBJ) && pwd && ninja)
 

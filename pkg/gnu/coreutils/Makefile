@@ -57,11 +57,18 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-# NOTE. Quirk of "install". If you have a previous version
-# of coreutils you have installed, "make install" might try to
-# use that instance of "cp", and refuses to overwrite itself.
-# A solution is to put "cp" somewhere else in your $PATH,
-# and remove the one it is trying to install. Then, "make install"
-# (and then remove the temporary "cp").
+custom-post-install:
+	@echo ============================================================
+	@echo ============================================================
+	@echo ============================================================
+	@echo NOTE. Quirk of \"make install\". If you have a previous version
+	@echo of coreutils installed, \"make install\" might try to
+	@echo use that instance of \"cp\", and refuses to overwrite itself.
+	@echo A solution is to put the old \"cp\" somewhere else in your PATH,
+	@echo Then, \"make install\" and then remove the temporary \"cp\".
+	@echo ============================================================
+	@echo ============================================================
+	@echo ============================================================
+
 
 

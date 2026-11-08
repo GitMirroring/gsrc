@@ -26,6 +26,11 @@ HOME_URL = https://e2fsprogs.sourceforge.net/
 # https://mirrors.edge.kernel.org/pub/linux/e2fsprogs
 DESCRIPTION = utilities for creating, fixing, configuring, and debugging ext2/3/4 filesystems
 define BLURB
+Utilities for creating, fixing, configuring, and debugging ext2/3/4 filesystems:
+badblocks chattr compile_et debugfs dumpe2fs e2freefrag e2fsck e2image
+e2label e2mmpstatus e2scrub e2scrub_all e2undo e4crypt e4defrag filefrag
+fsck fsck.ext2 fsck.ext3 fsck.ext4 fuse2fs logsave lsattr mk_cmds mke2fs
+mkfs.ext2 mkfs.ext3 mkfs.ext4 mklost+found resize2fs tune2fs
 endef
 ######################################################################
 # https://kernel.org/pub/linux/kernel/people/tytso/e2fsprogs/v1.47.4/e2fsprogs-1.47.4.tar.xz
