@@ -19,7 +19,7 @@
 
 NAME =    gtk-vnc
 GARNAME = gtk-vnc
-GARVERSION = 1.5.0
+GARVERSION = 1.6.0
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = A VNC viewer widget for GTK+ 
 define BLURB

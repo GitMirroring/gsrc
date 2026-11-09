@@ -21,9 +21,9 @@
 
 NAME = xterm
 GARNAME = xterm
-GARVERSION = 411
+GARVERSION = 412
 
-HOME_URL = http://invisible-island.net/xterm
+HOME_URL = https://invisible-island.net/xterm
 DESCRIPTION = famous terminal for X displays
 define BLURB
 famous terminal for X displays, decades old, updated 2026
@@ -31,7 +31,7 @@ endef
 
 ######################################################################
 # https://invisible-island.net/archives/xterm/current/xterm-372.tgz
-MASTER_SITES = http://invisible-island.net/
+MASTER_SITES = https://invisible-island.net/
 MASTER_SUBDIR = archives/$(GARNAME)/
 DISTFILES = $(DISTNAME).tgz
 SIGFILES = $(DISTNAME).tgz.asc

@@ -20,7 +20,7 @@
 
 NAME =    valkey
 GARNAME = valkey
-GARVERSION = 9.1.1
+GARVERSION = 9.1.3
 HOME_URL = http://github.com/valkey-io
 DESCRIPTION = in-memory data structure store
 define BLURB
@@ -54,6 +54,7 @@ LICENSE = BSD licensed
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+.PHONY: build-buildme install-valkeyinstall
 
 build-buildme:
 	cd $(WORKSRC) && $(MAKE)

@@ -23,7 +23,7 @@
 
 NAME =    bluez
 GARNAME = bluez
-GARVERSION = 5.85
+GARVERSION = 5.88
 HOME_URL = http://www.kernel.org/
 DESCRIPTION = bluez, bluetooth kernel module
 define BLURB

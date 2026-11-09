@@ -19,7 +19,7 @@
 
 NAME =    telegnome
 GARNAME = telegnome
-GARVERSION = 0.3.6
+GARVERSION = 0.3.8
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = telegnome displays teletext pages over the internet
 
