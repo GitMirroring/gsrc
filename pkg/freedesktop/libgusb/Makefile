@@ -24,8 +24,12 @@ NAME =    libgusb
 GARNAME = libgusb
 GARVERSION = 0.4.9
 HOME_URL = http://people.freedesktop.org/~hughsient
-DESCRIPTION = libgusb
+DESCRIPTION = libgusb, GUsb is a GObject wrapper for libusb1 
 define BLURB
+GUsb is a GObject wrapper for libusb1 that makes it easy to do asynchronous
+control, bulk and interrupt transfers with proper cancellation and
+integration into a mainloop. This makes it easy to integrate low level
+USB transfers with your high-level application or system daemon.
 endef
 
 ######################################################################
@@ -34,7 +38,7 @@ endef
 MASTER_SITES = https://github.com/
 MASTER_SUBDIR =  hughsie/libgusb/releases/download/$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.xz
-SIGFILES = 
+SIGFILES =
 
 BUILDDEPS = 
 LIBDEPS = #  glib gobject-introspection vala libusb1

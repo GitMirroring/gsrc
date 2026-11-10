@@ -1,4 +1,4 @@
-# Copyright © 2016, 2022 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2016, 2022, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -23,24 +23,31 @@
 
 NAME =    upower
 GARNAME = upower
-GARVERSION = v1.90.2
+GARVERSION = v1.91.5
 HOME_URL = https://upower.freedesktop.org/
-DESCRIPTION = upower , gather info about power devices
+DESCRIPTION = upower, gather info about power devices
 define BLURB
 UPower is an abstraction for enumerating power devices, listening to
 device events and querying history and statistics.
 endef
 
 ######################################################################
-#https://gitlab.freedesktop.org/upower/upower/-/archive/v1.90.2/upower-v1.90.2.tar.bz2
-
+#https://gitlab.freedesktop.org/upower/upower/-/archive/v1.91.5/upower-v1.91.5.tar.bz2
 MASTER_SITES = http://gitlab.freedesktop.org/
-MASTER_SUBDIR =  /upower/upower/-/archive/v1.90.2/
+MASTER_SUBDIR =  /upower/upower/-/archive/$(GARVERSION)/
 DISTFILES = $(DISTNAME).tar.bz2
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = #  dbus-glib gobject-introspection
+BUILDDEPS =
+LIBDEPS =
+
+#Requirements:
+#  glib-2.0             >= 2.66.0
+#  gio-2.0              >= 2.16.1
+#  gudev-1.0            >= 235    (Linux)
+#  libimobiledevice-1.0 >= 0.9.7  (optional)
+#  polkit-gobject-1     >= 124
+
 
 ######################################################################
 

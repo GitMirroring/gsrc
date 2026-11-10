@@ -1,4 +1,6 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
+# Copyright © 2026 
+
 #
 # This file is part of GSRC.
 #
@@ -17,7 +19,7 @@
 
 NAME = libmatheval
 GARNAME = libmatheval
-GARVERSION = 1.1.11
+GARVERSION = 1.1.12
 HOME_URL = http://www.gnu.org/software/libmatheval/
 DESCRIPTION = Library for evaluating symbolic expressions
 define BLURB
@@ -38,7 +40,7 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
-LIBDEPS = #guile
+LIBDEPS =
 
 ######################################################################
 
@@ -46,6 +48,3 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
-BUILD_ARGS = CFLAGS="-Wno-int-conversion -Wno-implicit-function-declaration  -Wno-incompatible-pointer-types"
-# make -k install, skip tests/matheval.c  needs study
-#

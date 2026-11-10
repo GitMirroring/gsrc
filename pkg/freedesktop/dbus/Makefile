@@ -20,11 +20,10 @@
 
 NAME =   D-Bus 
 GARNAME = dbus
-#GARVERSION =  master
 GARVERSION =  1.16.2
 HOME_URL = https://www.freedesktop.org/wiki/Software/dbus/
 DESCRIPTION =  dbus communicates among processes
-define BLURB 
+define BLURB
 D-Bus is a message bus system, a simple way for applications
 to talk to one another. In addition to interprocess communication, D-Bus
 helps coordinate process lifecycle; it makes it simple and reliable to
@@ -37,7 +36,7 @@ endef
 
 MASTER_SITES = https://gitlab.freedesktop.org/
 MASTER_SUBDIR = dbus/dbus/-/archive/dbus-$(GARVERSION)/
-DISTFILES = dbus-$(DISTNAME).tar.bz2 
+DISTFILES = dbus-$(DISTNAME).tar.bz2
 SIGFILES = 
 
 BUILDDEPS =
@@ -51,6 +50,4 @@ WORKOBJ = $(WORKSRC)-build
 include ../../../gar/gar.lib/cmake.mk
 include config.mk
 
-inf:
-	echo $(WORKOBJ)
 

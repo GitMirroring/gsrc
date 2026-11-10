@@ -43,7 +43,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/mesonninja.mk
 include config.mk
 
-inf:
-	echo $(WORKSRC)
-	echo $(WORKOBJ)
 

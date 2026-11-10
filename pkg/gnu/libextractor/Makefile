@@ -22,7 +22,7 @@
 
 NAME = libextractor
 GARNAME = libextractor
-GARVERSION = 1.18
+GARVERSION = 1.20
 HOME_URL = http://www.gnu.org/software/libextractor/
 DESCRIPTION = Library to extract meta-data from media files
 define BLURB
@@ -43,8 +43,6 @@ SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS = libtool
 LIBDEPS = 
-# experiment:
-#LIBDEPS =  glib
 
 
 ######################################################################
@@ -52,5 +50,8 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
+
+# needed?:
+BUILD_ARGS = LDFLAGS=-liconv
 
 

@@ -21,7 +21,7 @@
 
 NAME =    almanah
 GARNAME = almanah
-GARVERSION = 0.12.3
+GARVERSION = 0.12.4
 HOME_URL = https://git.gnome.org/browse/almanah/
 DESCRIPTION = Small GTK+ application to allow you to keep a diary of your life
 define BLURB
@@ -41,13 +41,13 @@ SERIES = $(subst $(space),.,$(wordlist 1,2,$(VERSION_LIST)))
 
 MASTER_SITES = $(MASTER_GNOME)
 MASTER_SUBDIR = $(GARNAME)/0.12/
-DISTFILES = $(DISTNAME).tar.xz  
+DISTFILES = $(DISTNAME).tar.xz
 SIGFILES =
 
 BUILDDEPS =
 LIBDEPS =
 
-# apt install libcryptui-dev  libcryptui-doc  libcryptui0a 
+# apt install libcryptui-dev  libcryptui-doc  libcryptui0a
 ######################################################################
 
 include ../../../gar/gar.lib/mesonninja.mk
