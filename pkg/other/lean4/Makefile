@@ -21,7 +21,7 @@
 
 NAME =    lean4
 GARNAME = lean4
-GARVERSION = 4.36.0-rc1
+GARVERSION = 4.36.0-rc2
 HOME_URL =  https://lean-lang.org
 DESCRIPTION = Lean4 theorem prover and functional language
 define BLURB

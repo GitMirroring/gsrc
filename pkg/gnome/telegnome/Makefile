@@ -1,4 +1,4 @@
-# Copyright © 2019 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2019,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 #
@@ -24,7 +24,6 @@ HOME_URL = http://www.gnome.org/
 DESCRIPTION = telegnome displays teletext pages over the internet
 
 define BLURB
-
 endef
 
 ######################################################################
@@ -44,6 +43,6 @@ LIBDEPS =
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 

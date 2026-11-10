@@ -74,14 +74,16 @@ configure-mes:
 # was   ninja  -v   -C $(WORKOBJ) 
 # now just meson compile ...
 #cd $(WORKOBJ)  &&  pwd && ninja -C . -k 0  --verbose
+#
 #	cd $(WORKOBJ)  &&  pwd && ninja -C .   --verbose
+# LC_ALL=C.UTF-8   ninja  -v  -C  ${MESON_BUILD_ROOT}
 
 build-nin: 
 	@echo start build-nin--------------------------------------------
 	@echo ----------------------------------------------
 	@echo LC_ALL is $(LC_ALL) WORKSRC is $(WORKSRC)  WORKOBJ is $(WORKOBJ)
 	cd $(WORKOBJ) ; echo $$PWD ;echo "NNNNNNNNNNNNNNNNNNNNNNNNNNN"
-	cd $(WORKOBJ) && ninja   --verbose
+	cd $(WORKOBJ) && CARGO_HOME=$$CARGO_HOME  ninja   --verbose
 	@echo ----------------------------------------------
 	@echo ----------------------------------------------
 	@echo end build-nin--------------------------------------------
@@ -94,7 +96,6 @@ build-nin:
 	@echo end build-nin--------------------------------------------
 	$(MAKECOOKIE)
 
-#LC_ALL=C.UTF-8   ninja  -v  -C  ${MESON_BUILD_ROOT}
 
 #install-ninj:  
 

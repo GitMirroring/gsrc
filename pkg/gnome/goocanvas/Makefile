@@ -47,3 +47,4 @@ LIBDEPS =
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
+BUILD_ARGS = CFLAGS=-Wno-incompatible-pointer-types

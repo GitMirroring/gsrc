@@ -21,7 +21,7 @@
 
 NAME =    loupe
 GARNAME = loupe
-GARVERSION = 51.1
+GARVERSION = 51.2
 HOME_URL = http://gnome.org/
 DESCRIPTION =  loupe image viewer
 define BLURB
