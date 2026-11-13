@@ -1,5 +1,5 @@
 # Copyright © 2013, 2014, 2015 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2017, 2018, 2021-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2017, 2018, 2021-2024,2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,7 +22,7 @@
 
 NAME = Autoconf Archive
 GARNAME = autoconf-archive
-GARVERSION =  2024.10.16
+GARVERSION =  2026.11.11
 HOME_URL = http://www.gnu.org/software/autoconf-archive/
 DESCRIPTION = Collection of freely reusable Autoconf macros
 define BLURB
