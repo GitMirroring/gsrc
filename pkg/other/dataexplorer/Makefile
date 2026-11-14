@@ -20,7 +20,7 @@
 
 NAME =   DataExplorer
 GARNAME = dataexplorer
-GARVERSION = 4.0.7
+GARVERSION = 4.0.8
 HOME_URL = http://www.nongnu.org/dataexplorer
 DESCRIPTION = data explorer, chart data from serial port, files, devices
 define BLURB
@@ -29,10 +29,10 @@ endef
 ######################################################################
 
 #http://download.savannah.nongnu.org/releases/dataexplorer/dataexplorer-3.7.7-src.tar.gz.sig
-MASTER_SITES = http://download.savannah.nongnu.org/ 
+MASTER_SITES = http://download.savannah.nongnu.org/
 MASTER_SUBDIR = releases/$(GARNAME)/
-DISTFILES = $(DISTNAME)-src.tar.gz 
-SIGFILES  = $(DISTNAME)-src.tar.gz.sig 
+DISTFILES = $(DISTNAME)-src.tar.gz
+SIGFILES  = $(DISTNAME)-src.tar.gz.sig
 
 INSTALL_SCRIPTS  = dataexplorerinstall
 

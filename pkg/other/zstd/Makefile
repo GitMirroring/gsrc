@@ -50,7 +50,7 @@ PATCHFILES = zstd.path.patch
 include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
-.PHONY: build-me install-me
+.PHONY: build-me install-me ime
 
 # let it do it its way, makes its own build dir
 build-me:

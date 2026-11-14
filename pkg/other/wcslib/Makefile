@@ -1,5 +1,5 @@
 # Copyright © 2013, 2015, 2016, 2017 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2019, 2021, 2022, 2024-2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2019, 2021, 2022, 2024-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,25 +22,25 @@
 
 NAME =    wcslib
 GARNAME = wcslib
-GARVERSION = 8.4
+GARVERSION = 8.10
 HOME_URL = https://www.atnf.csiro.au/people/mcalabre/WCS/index.html
 	# see also https://www.gnu.org/software/gnuastro/manual/html_node/
 DESCRIPTION =  astronomical World Coordinate System library
-define BLURB 
+define BLURB
 The FITS "World Coordinate System" (WCS) standard defines keywords and
 usage that provide for the description of astronomical coordinate systems
-in a FITS image header.  
+in a FITS image header.
 endef
 
 ######################################################################
-# http://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-7.12.tar.bz2
+# https://www.atnf.csiro.au/computing/software/wcs/wcslib-releases/wcslib-8.10.tar.bz2
 MASTER_SITES = https://www.atnf.csiro.au/
-MASTER_SUBDIR =  people/mcalabre/WCS/
+MASTER_SUBDIR = computing/software/wcs/wcslib-releases/
 DISTFILES =  $(DISTNAME).tar.bz2
-SIGFILES = 
+SIGFILES =
 LICENSE = GNU LGPL version 3 or later
 
-BUILDDEPS = 
+BUILDDEPS =
 LIBDEPS =
 WORKOBJ = $(WORKSRC)
 

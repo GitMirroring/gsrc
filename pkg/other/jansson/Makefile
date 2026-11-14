@@ -1,4 +1,4 @@
-# Copyright ©2023 Carl Hansen <carlhansen1234@gmail.com>
+# Copyright ©2023,2026 Carl Hansen <carlhansen1234@gmail.com>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -21,7 +21,7 @@
 
 NAME = jansson
 GARNAME = jansson
-GARVERSION = 2.15.0
+GARVERSION = 2.15.1
 HOME_URL =  http://www.digip.org/jansson/
 DESCRIPTION = json parser and manipulator
 define BLURB

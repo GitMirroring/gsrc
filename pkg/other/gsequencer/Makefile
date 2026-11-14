@@ -61,7 +61,6 @@ LIBDEPS =
 #BUILD_ARGS = LDFLAGS="-L/usr/lib/x86_64-linux-gnu/pulseaudio -Wl,-lpulse -Wl,-lpulsecommon-16.1"
 ######################################################################
 include ../../../gar/gar.lib/autotools.mk
-include ../../../gar/varb.mk
 include config.mk
 
 

@@ -78,7 +78,7 @@ configure-mes:
 #	cd $(WORKOBJ)  &&  pwd && ninja -C .   --verbose
 # LC_ALL=C.UTF-8   ninja  -v  -C  ${MESON_BUILD_ROOT}
 
-build-nin: 
+build-nin:
 	@echo start build-nin--------------------------------------------
 	@echo ----------------------------------------------
 	@echo LC_ALL is $(LC_ALL) WORKSRC is $(WORKSRC)  WORKOBJ is $(WORKOBJ)
@@ -87,17 +87,10 @@ build-nin:
 	@echo ----------------------------------------------
 	@echo ----------------------------------------------
 	@echo end build-nin--------------------------------------------
-	@echo end build-nin--------------------------------------------
-	@echo end build-nin--------------------------------------------
-	@echo end build-nin--------------------------------------------
-	@echo end build-nin--------------------------------------------
-	@echo end build-nin--------------------------------------------
-	@echo end build-nin--------------------------------------------
-	@echo end build-nin--------------------------------------------
 	$(MAKECOOKIE)
 
 
-#install-ninj:  
+#install-ninj:
 
 pre-install:
 	@echo start preinstall using ninja ----------------------------------------

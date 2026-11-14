@@ -1,5 +1,5 @@
 # Copyright © 2013 Brandon Invergo <brandon@invergo.net>
-# Copyright © 2018, 2021, 2022,2025 Carl Hansen <carlhansen@gnu.org>
+# Copyright © 2018, 2021, 2022,2025-2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -22,15 +22,14 @@
 
 NAME = libsigsegv
 GARNAME = libsigsegv
-GARVERSION = 2.15
+GARVERSION = 2.16
 HOME_URL = http://www.gnu.org/software/libsigsegv/
 DESCRIPTION = Library for handling page faults
 define BLURB
 GNU libsigsegv is a library to handle page faults, which occur when a
-program tries to access an unavailable region of memory, in user
-mode.  By catching and handling page faults, the program can
-implement pageable virtual memory, stack overflow handlers, and so
-on.
+program tries to access an unavailable region of memory, in user mode.
+By catching and handling page faults, the program can implement pageable
+virtual memory, stack overflow handlers, and so on.
 endef
 
 ######################################################################

@@ -20,7 +20,7 @@
 
 NAME =    mobile-broadband-provider-info
 GARNAME = mobile-broadband-provider-info
-GARVERSION =  20251101
+GARVERSION =  20261111
 HOME_URL =  https://wiki.gnome.org/
 DESCRIPTION = mobile broadband provider info
 define BLURB
