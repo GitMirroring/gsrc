@@ -38,7 +38,8 @@ DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 INFO_FILES = $(GARNAME).info regex.info
 
-BUILDDEPS =  bdw-gc libpaper  help2man
+BUILDDEPS =  bdw-gc help2man
+# libpaper
 # recommended: psutils groff
 LIBDEPS =
 
