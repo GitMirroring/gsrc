@@ -45,8 +45,9 @@ WORKOBJ = $(WORKSRC)
 ######################################################################
 
 include ../../../gar/gar.lib/autotools.mk
-include ../../../gar/varb.mk
 include config.mk
+
+.PHONY: install-dataexplorerinstall
 
 pre-build:
 	ant -Dprefix=$(packageprefix) -f $(WORKSRC)/build/build.xml install
@@ -55,13 +56,18 @@ pre-build:
 
 pre-install:  build
 	mkdir -p $(prefix)/packages/$(DISTNAME)
-	mkdir -p $(prefix)/packages/$(DISTNAME)-DEST
-	ant -Dprefix=$(packageprefix) -f $(WORKSRC)/build/build.xml install
+	#mkdir -p $(prefix)/packages/$(DISTNAME)-DEST/share
+	mkdir -p $(packageprefix)/share
+	ant -Dprefix=$(packageprefix)/share -f $(WORKSRC)/build/build.xml install
 	chmod 755 $(packageprefix)/DataExplorer/DataExplorer
 	$(MAKECOOKIE)
 
-install-dataexplorerinstall: build
-	echo $(MAKE) -C $(WORKSRC) $(prefix)=$(packageprefix)  PREFIX=$(packageprefix) install
+install-dataexplorerinstall: pre-install
+	echo $(MAKE) -C $(WORKSRC) $(prefix)=$(packageprefix)  PREFIX=$(packageprefix)/share install
+	$(MAKE) -C $(WORKSRC)   PREFIX=$(packageprefix)/share install
+
+# $(prefix)=$(packageprefix)
+
 	#$(MAKE) -C $(WORKSRC) $(prefix)=$(packageprefix)  PREFIX=$(packageprefix) install
 	#$(MAKECOOKIE)
 
@@ -81,3 +87,5 @@ install-dataexplorerinstall: build
 
 # FIXME install
 
+# doc
+#  https://download-mirror.savannah.gnu.org/releases/dataexplorer/DataExplorer%20-%20Users%20Guide.pdf
