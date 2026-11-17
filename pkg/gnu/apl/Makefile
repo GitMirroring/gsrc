@@ -29,7 +29,7 @@ DESCRIPTION = APL interpreter
 define BLURB
 GNU APL is a free version of a programming language, GNU APL
 ("GNUS Not Unix A Programing Language"), and is intended to be a full
-implementation of what is known as "Programming Language APL, Extended",
+implementation of what is also known as "Programming Language APL, Extended",
 "APL with nested arrays", or "ISO/IEC13751".
 endef
 
@@ -37,17 +37,12 @@ endef
 
 MASTER_SITES = $(MASTER_GNU)
 MASTER_SUBDIR = $(GARNAME)/
-#DISTFILES = $(DISTNAME).tar.gz
-#SIGFILES = $(DISTNAME).tar.gz.sig
 
 BUILDDEPS =
-# readline # lapack
+# readline  lapack
 LIBDEPS =
 
-
-#  move to SVN  for up to date version
-#  svn co svn://svn.savannah.gnu.org/apl/trunk
-WORKSRC = $(WORKDIR)/apl-2.0
+WORKSRC = $(WORKDIR)/apl-2.0-build
 WORKOBJ = $(WORKSRC)
 ######################################################################
 
@@ -55,15 +50,25 @@ include ../../../gar/gar.lib/autotools.mk
 include ../../../gar/gar.lib/info.mk
 include config.mk
 
+#  moved from tarwad to SVN  for up to date version
+#   svn co svn://svn.savannah.gnu.org/apl/trunk
 SVN_PATH = svn://svn.savannah.gnu.org/apl/trunk
 SVN_CO_OPTS =
+SVNDOWNLOAD = "worksvn/apl"
 
 CONFIGURE_ARGS = --prefix=$(prefix)  DESTDIR=$(packageDESTDIR)
 
-fetch:
-	mkdir -p $(WORKDIR)/apl
-	mkdir -p $(WORKDIR)/apl-2.0
-	cd $(WORKDIR)/apl && svn co $(SVN_CO_OPTS) $(SVN_PATH)
-	cp -a $(WORKDIR)/apl/trunk/*   $(WORKSRC)/
+.PHONY: fetch-svn
+
+fetch: fetch-svn
+
+fetch-svn:
+	mkdir -p $(SVNDOWNLOAD)
+	mkdir -p $(WORKSRC)
+	cd $(SVNDOWNLOAD) && svn co $(SVN_CO_OPTS) $(SVN_PATH)
+
+post-fetch:  fetch-svn
+	mkdir -p $(WORKSRC)
+	cp -a $(SVNDOWNLOAD)/trunk/*   $(WORKSRC)/
 	$(MAKECOOKIE)
 

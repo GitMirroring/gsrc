@@ -32,15 +32,20 @@ endef
 MASTER_SITES = http://www.antcom.de/gtick/
 MASTER_SUBDIR = download/
 DISTFILES = $(DISTNAME).tar.gz
-SIGFILES = 
+SIGFILES =
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 #LIBDEPS = gtk2
 
 ######################################################################
 
-include ../../../gar/gar.lib/auto.mk
+include ../../../gar/gar.lib/autotools.mk
 include config.mk
 
 # HINT pulselib.problem,in.sub.dir
+# guess:
+BUILD_ARGS = CFLAGS+=-std=c99
+# not right yet
+# FIXME _U_
+
