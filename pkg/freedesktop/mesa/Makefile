@@ -36,7 +36,6 @@ MASTER_SUBDIR = mesa/mesa/-/archive/$(GVER)/
 DISTFILES = $(DISTNAME).tar.bz2
 SIGFILES =
 
-
 # apt install  libomxil-bellagio-dev libelf-dev llvm-dev \
 #   libelf1 libelf-dev libva-dev  libxvmc-dev libxvmc1  \
 #   libxcb-glx0 libxcb-glx0-dev libxcb-dri2-0-dev libxcb-dri3-0 libxcb-dri3-dev \
@@ -46,8 +45,7 @@ BUILDDEPS = libffi
 LIBDEPS =
 ######################################################################
 # this is annoying:
-SOMEVERSION = a44c011e2d745b7b0aa9eca84c4fe545c2888231
-
+SOMEVERSION = c8bb568978cc2bcafc958ee771d43822d6ff3116
 
 SRC = mesa-$(GVER)-$(SOMEVERSION)
 WORKSRC = $(WORKDIR)/$(SRC)
