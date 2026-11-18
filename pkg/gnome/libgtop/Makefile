@@ -20,7 +20,7 @@
 
 NAME =    libgtop
 GARNAME = libgtop
-GARVERSION = 2.41.3
+GARVERSION = 2.41.4
 HOME_URL = http://www.gnome.org/
 DESCRIPTION = LibGTop2
 define BLURB
