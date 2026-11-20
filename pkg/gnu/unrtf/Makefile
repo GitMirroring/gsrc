@@ -21,7 +21,7 @@
 
 NAME = UnRTF
 GARNAME = unrtf
-GARVERSION = 0.21.13
+GARVERSION = 0.21.14
 HOME_URL = http://www.gnu.org/software/unrtf/
 DESCRIPTION = Convert Rich Text Format documents to other formats
 define BLURB
@@ -37,8 +37,8 @@ MASTER_SUBDIR = $(GARNAME)/
 DISTFILES = $(DISTNAME).tar.gz
 SIGFILES = $(DISTNAME).tar.gz.sig
 
-BUILDDEPS = 
-LIBDEPS = 
+BUILDDEPS =
+LIBDEPS =
 
 ######################################################################
 

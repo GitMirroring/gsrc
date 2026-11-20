@@ -1,4 +1,4 @@
-# Copyright ©2017, 2018, 2019, 2021, 2023-2024 Carl Hansen <carlhansen@gnu.org>
+# Copyright ©2017, 2018, 2019, 2021, 2023-2024, 2026 Carl Hansen <carlhansen@gnu.org>
 #
 # This file is part of GSRC, the GNU Source Release Collection.
 # http://www.gnu.org/software/gsrc
@@ -20,7 +20,7 @@
 
 NAME =    libffcall
 GARNAME = libffcall
-GARVERSION = 2.5
+GARVERSION = 2.6
 HOME_URL = http://www.gnu.org/
 DESCRIPTION =  foreign function call library
 define BLURB

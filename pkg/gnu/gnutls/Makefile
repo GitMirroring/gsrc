@@ -22,7 +22,7 @@
 
 NAME = GnuTLS
 GARNAME = gnutls
-GARVERSION = 3.8.13
+GARVERSION = 3.8.14
 SERIES = 3.8
 HOME_URL =  http://gnutls.org
        # http://www.gnu.org/software/gnutls/
